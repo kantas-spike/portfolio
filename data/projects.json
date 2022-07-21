@@ -1,0 +1,183 @@
+{
+    "mytools": [
+        {
+            "name": "repo-info.py",
+            "full_name": "kantas-spike/repo-info.py",
+            "html_url": "https://github.com/kantas-spike/repo-info.py",
+            "description": "GitHub REST APIを使って、設定ファイルに定義したリポジトリの情報を取得し、`JSON`形式で出力するツールです。",
+            "size": 3,
+            "pushed_at": "2022-07-21T07:15:27Z",
+            "project_type": "mytools",
+            "langs": [
+                "Python"
+            ],
+            "merged": []
+        },
+        {
+            "name": "slide2video.py",
+            "full_name": "kantas-spike/slide2video.py",
+            "html_url": "https://github.com/kantas-spike/slide2video.py",
+            "description": "Blenderを利用して、スライド資料と、その資料用の音声データから動画編集ファイルを作成するツールです。",
+            "size": 20,
+            "pushed_at": "2022-07-11T21:09:05Z",
+            "project_type": "mytools",
+            "langs": [
+                "Python",
+                "Shell",
+                "Makefile"
+            ],
+            "merged": []
+        },
+        {
+            "name": "vv_wav2slide_wav.py",
+            "full_name": "kantas-spike/vv_wav2slide_wav.py",
+            "html_url": "https://github.com/kantas-spike/vv_wav2slide_wav.py",
+            "description": "VOICEVOXで生成した音声ファイルを、スライド資料用にスライド単位にグループ化した音声ファイルに変換します。",
+            "size": 12,
+            "pushed_at": "2022-07-11T18:18:58Z",
+            "project_type": "mytools",
+            "langs": [
+                "Python",
+                "Shell",
+                "Makefile"
+            ],
+            "merged": []
+        },
+        {
+            "name": "odp2jpg.sh",
+            "full_name": "kantas-spike/odp2jpg.sh",
+            "html_url": "https://github.com/kantas-spike/odp2jpg.sh",
+            "description": "Convert each slide in LibreOffice's Impress into a JPEG file.",
+            "size": 4,
+            "pushed_at": "2022-07-11T15:23:57Z",
+            "project_type": "mytools",
+            "langs": [
+                "Shell",
+                "Makefile"
+            ],
+            "merged": []
+        }
+    ],
+    "IHC": [
+        {
+            "name": "kantas-theme",
+            "full_name": "kantas-spike/kantas-theme",
+            "html_url": "https://github.com/kantas-spike/kantas-theme",
+            "description": "Hugo theme for programming learner portfolio",
+            "size": 19,
+            "pushed_at": "2022-07-21T22:40:33Z",
+            "project_type": "IHC",
+            "langs": [
+                "HTML",
+                "CSS",
+                "JavaScript"
+            ],
+            "merged": [
+                {
+                    "html_url": "https://github.com/kantas-spike/kantas-theme/pull/14",
+                    "title": "Itr02: tag,tags対応、ページング対応等",
+                    "state": "closed",
+                    "body": null,
+                    "created_at": "2022-07-21T22:40:07Z",
+                    "merged_at": "2022-07-21T22:40:33Z",
+                    "closed_at": "2022-07-21T22:40:33Z",
+                    "user": "kantas-spike"
+                },
+                {
+                    "html_url": "https://github.com/kantas-spike/kantas-theme/pull/7",
+                    "title": "Itr01: 記事系とプロジェクト情報系をコンテンツとして扱う",
+                    "state": "closed",
+                    "body": null,
+                    "created_at": "2022-07-21T08:28:54Z",
+                    "merged_at": "2022-07-21T08:29:04Z",
+                    "closed_at": "2022-07-21T08:29:04Z",
+                    "user": "kantas-spike"
+                }
+            ]
+        },
+        {
+            "name": "Pong-Game-with-Pygame",
+            "full_name": "kantas-spike/Pong-Game-with-Pygame",
+            "html_url": "https://github.com/kantas-spike/Pong-Game-with-Pygame",
+            "description": "A simple Pong game with Pygame",
+            "size": 23,
+            "pushed_at": "2022-07-05T18:45:27Z",
+            "project_type": "IHC",
+            "langs": [
+                "Python"
+            ],
+            "merged": [
+                {
+                    "html_url": "https://github.com/kantas-spike/Pong-Game-with-Pygame/pull/17",
+                    "title": "ドキュメント修正 フォント設定についての記述を追加",
+                    "state": "closed",
+                    "body": null,
+                    "created_at": "2022-07-03T18:15:38Z",
+                    "merged_at": "2022-07-03T18:15:51Z",
+                    "closed_at": "2022-07-03T18:15:51Z",
+                    "user": "kantas-spike"
+                },
+                {
+                    "html_url": "https://github.com/kantas-spike/Pong-Game-with-Pygame/pull/16",
+                    "title": "画面の表示要素をクラスにまとめた(fix #14)",
+                    "state": "closed",
+                    "body": null,
+                    "created_at": "2022-07-03T13:14:54Z",
+                    "merged_at": "2022-07-03T13:15:02Z",
+                    "closed_at": "2022-07-03T13:15:02Z",
+                    "user": "kantas-spike"
+                },
+                {
+                    "html_url": "https://github.com/kantas-spike/Pong-Game-with-Pygame/pull/15",
+                    "title": "スコア表示追加(fix #10)",
+                    "state": "closed",
+                    "body": null,
+                    "created_at": "2022-07-03T11:43:24Z",
+                    "merged_at": "2022-07-03T11:43:32Z",
+                    "closed_at": "2022-07-03T11:43:32Z",
+                    "user": "kantas-spike"
+                },
+                {
+                    "html_url": "https://github.com/kantas-spike/Pong-Game-with-Pygame/pull/13",
+                    "title": "pygameのチュートリアルを読み、学んだ作法に従いコードを修正 (fix #13)",
+                    "state": "closed",
+                    "body": "[pygame入門](https://raw.githubusercontent.com/kantas-spike/pygame/translate-to-ja/docs/reST/tut/ja/PygameIntro.rst)と、\r\n[pygame初心者ガイド](https://github.com/kantas-spike/pygame/blob/translate-to-ja/docs/reST/tut/ja/newbieguide.rst)を読み、そこで得た内容をコードに反映しました。\r\n\r\n * 画面部品を surface + rect で表現\r\n * 次のフレーム用に、各rectを移動\r\n * screenを初期化\r\n * 画面部品をscreenにblit\r\n * screenをflip",
+                    "created_at": "2022-07-01T14:07:42Z",
+                    "merged_at": "2022-07-01T14:08:32Z",
+                    "closed_at": "2022-07-01T14:08:32Z",
+                    "user": "kantas-spike"
+                },
+                {
+                    "html_url": "https://github.com/kantas-spike/Pong-Game-with-Pygame/pull/11",
+                    "title": "lintertとしてflake8を導入(fix #7)",
+                    "state": "closed",
+                    "body": null,
+                    "created_at": "2022-06-29T14:08:17Z",
+                    "merged_at": "2022-06-29T14:08:38Z",
+                    "closed_at": "2022-06-29T14:08:38Z",
+                    "user": "kantas-spike"
+                },
+                {
+                    "html_url": "https://github.com/kantas-spike/Pong-Game-with-Pygame/pull/6",
+                    "title": "AI?を改善しBallの到達点を計算しパドルを移動させる(fix #4)",
+                    "state": "closed",
+                    "body": "ボール位置と傾きから、上下枠線との接点を計算し、\r\nさらに、その地点からP2への接点を計算し、パドルを移動させた。",
+                    "created_at": "2022-06-29T12:19:51Z",
+                    "merged_at": "2022-06-29T12:20:37Z",
+                    "closed_at": "2022-06-29T12:20:37Z",
+                    "user": "kantas-spike"
+                },
+                {
+                    "html_url": "https://github.com/kantas-spike/Pong-Game-with-Pygame/pull/5",
+                    "title": "Iter0: 開発環境まわりの変更(poetry, black)と上下キーを設定で変更可能に",
+                    "state": "closed",
+                    "body": "- `poetry`の導入 (fix #1)\r\n- formatterとして`black`導入 (fix #2)\r\n- 上下キーを設定で変更可能に (fix #3)",
+                    "created_at": "2022-06-28T21:45:15Z",
+                    "merged_at": "2022-06-28T21:47:30Z",
+                    "closed_at": "2022-06-28T21:47:30Z",
+                    "user": "kantas-spike"
+                }
+            ]
+        }
+    ]
+}

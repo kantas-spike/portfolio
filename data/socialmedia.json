@@ -1,0 +1,20 @@
+{
+    "accounts":
+    [
+        {
+            "name": "Twitter",
+            "icon": "fa-twitter-square",
+            "url": "https://twitter.com/KantasSpike"
+        },
+        {
+            "name": "Youtube",
+            "icon": "fa-youtube-square",
+            "url": "https://www.youtube.com/channel/UCnVBuUGMYAt7ZuIkadxnMfw"
+        },
+        {
+            "name": "GitHub",
+            "icon": "fa-github-square",
+            "url": "https://github.com/kantas-spike"
+        }
+    ]
+}
