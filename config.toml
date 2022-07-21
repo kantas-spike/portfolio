@@ -1,5 +1,9 @@
-baseURL = 'http://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = 'https://kantas-spike.github.io/portfolio/'
+languageCode = 'ja-jp'
+title = "kanta's spike"
 
 theme = 'kantas'
+
+copyright = "Copyright 2022 kanta's spike"
+
+publishDir = "docs"
