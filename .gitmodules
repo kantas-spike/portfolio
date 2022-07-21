@@ -1,0 +1,3 @@
+[submodule "themes/kantas"]
+	path = themes/kantas
+	url = https://github.com/kantas-spike/kantas-theme.git
