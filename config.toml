@@ -7,3 +7,7 @@ theme = 'kantas'
 copyright = "Copyright 2022 kanta's spike"
 
 publishDir = "docs"
+
+[permalinks]
+  blog = "/:year/:month/:filename/"
+  til = "/:year/:month/:filename/"
