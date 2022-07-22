@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>markdown on kanta&#39;s spike</title>
+    <link>https://kantas-spike.github.io/portfolio/tags/markdown/</link>
+    <description>Recent content in markdown on kanta&#39;s spike</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <copyright>Copyright 2022 kanta&#39;s spike</copyright>
+    <lastBuildDate>Fri, 22 Jul 2022 15:31:39 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Markdown内でコードブロックを引用したい</title>
+      <link>https://kantas-spike.github.io/portfolio/2022/07/07-quote-code-block-in-markdown/</link>
+      <pubDate>Fri, 22 Jul 2022 15:31:39 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/2022/07/07-quote-code-block-in-markdown/</guid>
+      <description>&lt;p&gt;コードブロックの表記自体を引用したい。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

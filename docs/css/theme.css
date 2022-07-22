@@ -839,10 +839,12 @@ video {
   font-weight: 700;
 }
 .article p > code,  .article li > code {
+  margin-left: 0.125rem;
+  margin-right: 0.125rem;
   --tw-bg-opacity: 1;
   background-color: rgb(209 213 219 / var(--tw-bg-opacity));
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
+  padding-left: 0.125rem;
+  padding-right: 0.125rem;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 .article .highlight {

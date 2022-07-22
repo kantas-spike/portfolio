@@ -9,6 +9,83 @@
     <copyright>Copyright 2022 kanta&#39;s spike</copyright>
     <lastBuildDate>Fri, 22 Jul 2022 08:24:06 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>gitでsubmoduleの更新を取り込みたい</title>
+      <link>https://kantas-spike.github.io/portfolio/2022/07/08-git-submodule-update/</link>
+      <pubDate>Fri, 22 Jul 2022 17:22:37 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/2022/07/08-git-submodule-update/</guid>
+      <description>gitでsubmoduleの上流での更新を取り込みたい。
+解決策 以下を実行する。
+git submodule update --remote 参考  上流の変更の取り込み  </description>
+    </item>
+    
+    <item>
+      <title>Markdown内でコードブロックを引用したい</title>
+      <link>https://kantas-spike.github.io/portfolio/2022/07/07-quote-code-block-in-markdown/</link>
+      <pubDate>Fri, 22 Jul 2022 15:31:39 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/2022/07/07-quote-code-block-in-markdown/</guid>
+      <description>&lt;p&gt;コードブロックの表記自体を引用したい。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>HugoでシンタックスハイライトCSSを利用したい</title>
+      <link>https://kantas-spike.github.io/portfolio/2022/07/06-hugo-with-syntax-highlighter-css/</link>
+      <pubDate>Fri, 22 Jul 2022 14:35:35 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/2022/07/06-hugo-with-syntax-highlighter-css/</guid>
+      <description>&lt;p&gt;デフォルトだと&lt;code&gt;hugo&lt;/code&gt;の&lt;code&gt;Markdown&lt;/code&gt;のコードブロックには、シンタックスハイライト用の&lt;code&gt;style&lt;/code&gt;が直接埋め込まれる。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;style&lt;/code&gt;ではなく&lt;code&gt;class&lt;/code&gt;名の埋め込みに変更し、&lt;code&gt;css&lt;/code&gt;によりハイライトの表示を変更可能にしたい。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>hugoにコンテンツ追加時にvscodeですぐに編集したい</title>
+      <link>https://kantas-spike.github.io/portfolio/2022/07/05-hugo-with-editor/</link>
+      <pubDate>Fri, 22 Jul 2022 14:13:39 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/2022/07/05-hugo-with-editor/</guid>
+      <description>&lt;p&gt;&lt;code&gt;hugo&lt;/code&gt;でコンテンツを追加したときに、すぐに&lt;code&gt;vscode&lt;/code&gt;で編集したい。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>hugoでmermaid.jsを使いたい</title>
+      <link>https://kantas-spike.github.io/portfolio/2022/07/04-hugo-with-mermaid/</link>
+      <pubDate>Fri, 22 Jul 2022 13:49:28 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/2022/07/04-hugo-with-mermaid/</guid>
+      <description>&lt;p&gt;Hugoで&lt;a href=&#34;https://mermaid-js.github.io/mermaid/#/&#34;&gt;mermaid.js&lt;/a&gt;を使いたい。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>hugoで環境に依存しないタグのリンクを取得したい</title>
+      <link>https://kantas-spike.github.io/portfolio/2022/07/03-hugo-tag-link/</link>
+      <pubDate>Fri, 15 Jul 2022 11:28:26 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/2022/07/03-hugo-tag-link/</guid>
+      <description>&lt;p&gt;ページに定義されたタグから環境に依存しないURLを生成したい。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>hugoで出力ディレクトリを削除してから実行したい</title>
+      <link>https://kantas-spike.github.io/portfolio/2022/07/02-hugo-options/</link>
+      <pubDate>Fri, 15 Jul 2022 09:31:02 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/2022/07/02-hugo-options/</guid>
+      <description>&lt;p&gt;削除済みのファイルが出力ディレクトリに残るのを防ぐため、
+&lt;code&gt;hugo&lt;/code&gt;で、最初に出力ディレクトリを削除してから実行したい。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>hugo serverをキャッシュ無しで表示させる</title>
+      <link>https://kantas-spike.github.io/portfolio/2022/07/01-hugo-server-options/</link>
+      <pubDate>Fri, 15 Jul 2022 09:16:56 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/2022/07/01-hugo-server-options/</guid>
+      <description>&lt;p&gt;&lt;code&gt;hugo server&lt;/code&gt; でサイトを確認してもキャッシュが表示される。
+キャッシュなしで表示したい。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>ポートフォリオサイトを作成する</title>
       <link>https://kantas-spike.github.io/portfolio/2022/07/01-create-my-portfolio-site/</link>
       <pubDate>Fri, 15 Jul 2022 06:13:30 +0900</pubDate>

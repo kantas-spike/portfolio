@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html><head>
+    <title>kanta's spike</title>
+    <link rel="stylesheet" href="/portfolio/css/theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/portfolio/css/syntax.css">
+</head><body class="bg-background text-gray-800"><header class="bg-primary-dark text-accent text-6xl font-serif font-extrabold px-4 py-3">
+    <h1 class="container mx-auto px-4">kanta&#39;s spike</h1>
+</header>
+<div>
+    <nav class="container mx-auto bg-primary text-on-primary text-center flex flex-col md:flex-row justify-start">
+            <a href="/portfolio/" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Home</a>
+            <a href="/portfolio/blog" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Blog</a>
+            <a href="/portfolio/til" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">TIL</a>
+            <a href="/portfolio/mytools" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">My Tools</a>
+            <a href="/portfolio/ihc" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">IHC</a>
+    </nav>
+    </div>
+</div><main id="content" class="container mx-auto bg-surface pt-4 pb-8">
+<div class="area_border  px-4 py-3 mx-4 pb-6">
+    
+
+
+
+<div class="mb-4">
+    <h3 class="border-b-2 border-primary text-primary-dark text-xl font-bold"><i class="fa-solid fa-note-sticky"></i> <a href="https://kantas-spike.github.io/portfolio/2022/07/05-hugo-with-editor/">hugoにコンテンツ追加時にvscodeですぐに編集したい</a></h3>
+    <div class="flex justify-between mt-1 mx-2">
+        <div>
+            <ul class="flex gap-2 justify-end">
+            
+            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/hugo/">#hugo</a></li>
+            
+            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/vscode/">#vscode</a></li>
+            
+            </ul>
+        </div>
+        <div>
+            <div class="text-right text-sm font-bold">2022/07/22</div>
+        </div>
+    </div>
+</div>
+
+    <div class="article mx-2">
+        <p><code>hugo</code>でコンテンツを追加したときに、すぐに<code>vscode</code>で編集したい。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">hugo new til/hogehoge.md
+</span></span></code></pre></div><h3 id="解決策">解決策</h3>
+<p><code>hugo</code>には <code>--editor</code>オプションがあるため、エディタを指定して実行すれば良い。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">hugo new --editor code til/hogehoge.md
+</span></span></code></pre></div><p>ただし、デフォルト設定では、以下のように許可<code>code</code>(vscodeのexe名)は許可exeに設定されていないため、エラーになる。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">security</span><span class="p">.</span><span class="nx">exec</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">allow</span> <span class="p">=</span> <span class="p">[</span><span class="s1">&#39;^dart-sass-embedded$&#39;</span><span class="p">,</span> <span class="s1">&#39;^go$&#39;</span><span class="p">,</span> <span class="s1">&#39;^npx$&#39;</span><span class="p">,</span> <span class="s1">&#39;^postcss$&#39;</span><span class="p">]</span>
+</span></span></code></pre></div><p>そのため、<code>config.toml</code>に以下を追記する必要がある。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="c"># ..略..</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">security</span><span class="p">.</span><span class="nx">exec</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">allow</span> <span class="p">=</span> <span class="p">[</span><span class="s1">&#39;^dart-sass-embedded$&#39;</span><span class="p">,</span> <span class="s1">&#39;^go$&#39;</span><span class="p">,</span> <span class="s1">&#39;^npx$&#39;</span><span class="p">,</span> <span class="s1">&#39;^postcss$&#39;</span><span class="p">,</span> <span class="s1">&#39;code&#39;</span><span class="p">]</span>
+</span></span></code></pre></div><h3 id="参考">参考</h3>
+<ul>
+<li><a href="https://gohugo.io/commands/hugo_new/#options">hugo new Options</a></li>
+<li><a href="https://gohugo.io/about/security-model/#security-policy">Security Policy</a></li>
+</ul>
+    </div>
+</div>
+
+        </main><footer class="bg-primary-dark text-center text-on-primary-dark fixed bottom-0 w-full h-8">
+    <div class="container mx-auto grid grid-cols-3">
+        <div class="col-start-2">
+            <div class="text-sm pt-2">Copyright 2022 kanta&#39;s spike</div>
+        </div>
+        <div class="flex justify-end gap-2 mr-2">
+            
+                
+            <a title="Twitter" class="text-2xl" href="https://twitter.com/KantasSpike"><i class="fa-brands fa-twitter-square"></i></a>
+                
+            <a title="Youtube" class="text-2xl" href="https://www.youtube.com/channel/UCnVBuUGMYAt7ZuIkadxnMfw"><i class="fa-brands fa-youtube-square"></i></a>
+                
+            <a title="GitHub" class="text-2xl" href="https://github.com/kantas-spike"><i class="fa-brands fa-github-square"></i></a>
+                
+            <a title="Blog" class="text-2xl" href="https://kantas-spike.github.io/portfolio/"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                
+            
+        </div>
+    </div>
+</footer>
+    </body>
+</html>

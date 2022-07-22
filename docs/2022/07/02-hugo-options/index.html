@@ -17,24 +17,18 @@
     </nav>
     </div>
 </div><main id="content" class="container mx-auto bg-surface pt-4 pb-8">
-<h3 class="page_h3 my-4 mx-4"><i class="fa-solid fa-tag"></i> hacking <span class="text-sm">(<a class="normal_link" href="https://kantas-spike.github.io/portfolio/tags/">他のタグ..</a>)</span></h2>
+<div class="area_border  px-4 py-3 mx-4 pb-6">
+    
 
-<section class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-2 my-4 mx-4">
-    
-        <div class="area_border  px-4 py-3">
-    
+
 
 <div class="mb-4">
-    <h3 class="border-b-2 border-primary text-primary-dark text-xl font-bold"><i class="fa-solid fa-file-lines"></i> <a href="https://kantas-spike.github.io/portfolio/2022/07/01-create-my-portfolio-site/">ポートフォリオサイトを作成する</a></h3>
+    <h3 class="border-b-2 border-primary text-primary-dark text-xl font-bold"><i class="fa-solid fa-note-sticky"></i> <a href="https://kantas-spike.github.io/portfolio/2022/07/02-hugo-options/">hugoで出力ディレクトリを削除してから実行したい</a></h3>
     <div class="flex justify-between mt-1 mx-2">
         <div>
             <ul class="flex gap-2 justify-end">
             
-            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/html/">#html</a></li>
-            
             <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/hugo/">#hugo</a></li>
-            
-            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/hacking/">#hacking</a></li>
             
             </ul>
         </div>
@@ -45,12 +39,21 @@
 </div>
 
     <div class="article mx-2">
-        <p><a href="https://gohugo.io/">Hugo</a>と<a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/">GitHub Pages</a>を使って、プログラミングの学習記録サイトを作りたいと思います。</p>
+        <p>削除済みのファイルが出力ディレクトリに残るのを防ぐため、
+<code>hugo</code>で、最初に出力ディレクトリを削除してから実行したい。</p>
+<h3 id="解決方法">解決方法</h3>
+<p>以下により出力ディレクトリを毎回クリアしてから実行できる。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">hugo --cleanDestinationDir
+</span></span></code></pre></div><h4 id="オプションの意味">オプションの意味</h4>
+<ul>
+<li><code>--cleanDestinationDir</code>: 静的ディレクトリに存在しないファイルを出力ディレクトリから削除する(削除したファイルが出力ディレクトリに残るの防ぐ)</li>
+</ul>
+<h4 id="参考">参考</h4>
+<ul>
+<li><a href="https://gohugo.io/commands/hugo/#options">Options | hugo</a></li>
+</ul>
     </div>
 </div>
-    
-</section>
-
 
         </main><footer class="bg-primary-dark text-center text-on-primary-dark fixed bottom-0 w-full h-8">
     <div class="container mx-auto grid grid-cols-3">

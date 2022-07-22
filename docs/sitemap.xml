@@ -2,6 +2,45 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/git/</loc>
+    <lastmod>2022-07-22T17:22:37+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/2022/07/08-git-submodule-update/</loc>
+    <lastmod>2022-07-22T17:22:37+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/</loc>
+    <lastmod>2022-07-22T17:22:37+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/hugo/</loc>
+    <lastmod>2022-07-22T15:31:39+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/markdown/</loc>
+    <lastmod>2022-07-22T15:31:39+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/2022/07/07-quote-code-block-in-markdown/</loc>
+    <lastmod>2022-07-22T15:31:39+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/2022/07/06-hugo-with-syntax-highlighter-css/</loc>
+    <lastmod>2022-07-22T14:35:35+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/syntax_highlight/</loc>
+    <lastmod>2022-07-22T14:35:35+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/2022/07/05-hugo-with-editor/</loc>
+    <lastmod>2022-07-22T14:13:39+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/vscode/</loc>
+    <lastmod>2022-07-22T14:13:39+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/2022/07/04-hugo-with-mermaid/</loc>
+    <lastmod>2022-07-22T13:49:28+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/mermaid.js/</loc>
+    <lastmod>2022-07-22T13:49:28+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/render_hooks/</loc>
+    <lastmod>2022-07-22T13:49:28+09:00</lastmod>
+  </url><url>
     <loc>https://kantas-spike.github.io/portfolio/</loc>
     <lastmod>2022-07-22T08:24:06+09:00</lastmod>
   </url><url>
@@ -17,16 +56,19 @@
     <loc>https://kantas-spike.github.io/portfolio/til/</loc>
     <lastmod>2022-07-22T08:15:27+09:00</lastmod>
   </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/2022/07/03-hugo-tag-link/</loc>
+    <lastmod>2022-07-15T11:28:26+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/2022/07/02-hugo-options/</loc>
+    <lastmod>2022-07-15T09:31:02+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/2022/07/01-hugo-server-options/</loc>
+    <lastmod>2022-07-15T09:16:56+09:00</lastmod>
+  </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/hacking/</loc>
     <lastmod>2022-07-15T06:13:30+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/html/</loc>
-    <lastmod>2022-07-15T06:13:30+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/hugo/</loc>
-    <lastmod>2022-07-15T06:13:30+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/</loc>
     <lastmod>2022-07-15T06:13:30+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/2022/07/01-create-my-portfolio-site/</loc>
