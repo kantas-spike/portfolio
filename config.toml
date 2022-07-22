@@ -11,3 +11,7 @@ publishDir = "docs"
 [permalinks]
   blog = "/:year/:month/:filename/"
   til = "/:year/:month/:filename/"
+
+[security.exec]
+  allow = ['^dart-sass-embedded$', '^go$', '^npx$', '^postcss$', 'code']
+
