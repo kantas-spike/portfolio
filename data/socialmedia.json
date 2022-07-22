@@ -3,18 +3,23 @@
     [
         {
             "name": "Twitter",
-            "icon": "fa-twitter-square",
+            "icon": "fa-brands fa-twitter-square",
             "url": "https://twitter.com/KantasSpike"
         },
         {
             "name": "Youtube",
-            "icon": "fa-youtube-square",
+            "icon": "fa-brands fa-youtube-square",
             "url": "https://www.youtube.com/channel/UCnVBuUGMYAt7ZuIkadxnMfw"
         },
         {
             "name": "GitHub",
-            "icon": "fa-github-square",
+            "icon": "fa-brands fa-github-square",
             "url": "https://github.com/kantas-spike"
+        },
+        {
+            "name": "Blog",
+            "icon": "fa-solid fa-square-arrow-up-right",
+            "url": "https://kantas-spike.github.io/portfolio/"
         }
     ]
 }
