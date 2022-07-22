@@ -176,3 +176,9 @@ Your site is published at https://kantas-spike.github.io/portfolio/
 
 また、今後、ポートフォリオサイト自体に機能やレイアウト、デザインを変更したくなると思います。
 ポートフォリオサイトのテーマをインクリメンタルハッキングサイクルの対象にすると良さそうです。
+
+#### 参考
+
+Hugoの簡単な使い方を動画にもまとめています。
+
+{{< youtube BOP7IegsCl8 >}}
