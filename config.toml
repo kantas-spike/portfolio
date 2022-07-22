@@ -15,3 +15,5 @@ publishDir = "docs"
 [security.exec]
   allow = ['^dart-sass-embedded$', '^go$', '^npx$', '^postcss$', 'code']
 
+[markup.highlight]
+  noClasses = false
