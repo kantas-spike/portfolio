@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>shortcodes on kanta&#39;s spike</title>
+    <link>https://kantas-spike.github.io/portfolio/tags/shortcodes/</link>
+    <description>Recent content in shortcodes on kanta&#39;s spike</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <copyright>Copyright 2022 kanta&#39;s spike</copyright>
+    <lastBuildDate>Sat, 23 Jul 2022 11:55:13 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/shortcodes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>hugoでyoutubeのplaylistを埋め込みたい</title>
+      <link>https://kantas-spike.github.io/portfolio/2022/07/09-hugo-with-youtube-playlist/</link>
+      <pubDate>Sat, 23 Jul 2022 11:55:13 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/2022/07/09-hugo-with-youtube-playlist/</guid>
+      <description>&lt;p&gt;youtube用の標準ショートコードのplaylist版が欲しい。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

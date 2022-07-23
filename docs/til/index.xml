@@ -9,6 +9,34 @@
     <copyright>Copyright 2022 kanta&#39;s spike</copyright>
     <lastBuildDate>Fri, 22 Jul 2022 08:15:27 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/til/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Hugoでショートコードの記述をエスケープして表示したい</title>
+      <link>https://kantas-spike.github.io/portfolio/2022/07/11-hugo-escape-shortcodes/</link>
+      <pubDate>Sat, 23 Jul 2022 12:34:13 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/2022/07/11-hugo-escape-shortcodes/</guid>
+      <description>&lt;p&gt;説明用に、ショートコードをエスケープして表記方法を記載したい。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>HugoのMarkdownでHTMLをそのまま記述したい</title>
+      <link>https://kantas-spike.github.io/portfolio/2022/07/10-hugo-with-rawhtml/</link>
+      <pubDate>Sat, 23 Jul 2022 12:13:01 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/2022/07/10-hugo-with-rawhtml/</guid>
+      <description>&lt;p&gt;HugoのMarkdown内にHTMLを直接記述すると、&lt;code&gt;&amp;lt;!-- raw HTML omitted --&amp;gt;&lt;/code&gt;に変換され無視される。
+直接HTMLを書く手段が欲しい。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>hugoでyoutubeのplaylistを埋め込みたい</title>
+      <link>https://kantas-spike.github.io/portfolio/2022/07/09-hugo-with-youtube-playlist/</link>
+      <pubDate>Sat, 23 Jul 2022 11:55:13 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/2022/07/09-hugo-with-youtube-playlist/</guid>
+      <description>&lt;p&gt;youtube用の標準ショートコードのplaylist版が欲しい。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>gitでsubmoduleの更新を取り込みたい</title>
       <link>https://kantas-spike.github.io/portfolio/2022/07/08-git-submodule-update/</link>
       <pubDate>Fri, 22 Jul 2022 17:22:37 +0900</pubDate>
