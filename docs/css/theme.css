@@ -800,6 +800,97 @@ video {
   border-top-right-radius: 0.375rem;
   border-bottom-right-radius: 0.375rem;
 }
+.burger_label {
+  position: absolute;
+  top: 3rem;
+  right: 0.75rem;
+  display: block;
+  width: 3rem;
+  border-radius: 0.25rem;
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+  stroke: #ffffff;
+  padding: 0.25rem;
+}
+@media (min-width: 768px) {
+  .burger_label {
+    display: none;
+  }
+}
+.burger_label svg {
+  fill: #ffffff;
+  stroke-width: 0;
+}
+#burger_cbx:checked ~ .burger_label {
+  display: none;
+}
+@media (min-width: 768px) {
+  #burger_cbx:checked ~ .burger_label {
+    display: none;
+  }
+}
+.close_label {
+  position: absolute;
+  top: 3rem;
+  right: 0.75rem;
+  display: none;
+  width: 3rem;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+  stroke: #ffffff;
+  stroke-width: 1;
+  padding: 0.25rem;
+}
+@media (min-width: 768px) {
+  .close_label {
+    display: none;
+  }
+}
+.close_label svg {
+  fill: #ffffff;
+  stroke-width: 0;
+}
+#burger_cbx:checked  ~ .close_label {
+  display: block;
+}
+@media (min-width: 768px) {
+  #burger_cbx:checked  ~ .close_label {
+    display: none;
+  }
+}
+#burger_cbx {
+  display: none;
+}
+.nav_area {
+  display: none;
+}
+@media (min-width: 768px) {
+  .nav_area {
+    display: block;
+  }
+}
+#burger_cbx:checked  ~ .nav_area {
+  position: absolute;
+  right: 0.75rem;
+  top: 6rem;
+  display: block;
+  width: 14rem;
+  border-radius: 0.25rem;
+  border-top-right-radius: 0px;
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+@media (min-width: 768px) {
+  #burger_cbx:checked  ~ .nav_area {
+    display: block;
+    border-width: 0px;
+  }
+}
 /* HTMLに変換された markdown 文書用のスタイル */
 .article h3 {
   margin-top: 1.5rem;

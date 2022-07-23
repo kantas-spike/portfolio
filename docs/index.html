@@ -2,13 +2,37 @@
 <html><head>
 	<meta name="generator" content="Hugo 0.97.3" />
     <title>kanta's spike</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/portfolio/css/theme.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/portfolio/css/syntax.css">
 </head><body class="bg-background text-gray-800 pb-4"><header class="bg-primary-dark text-accent text-6xl font-serif font-extrabold px-4 py-3">
     <h1 class="container mx-auto px-4">kanta&#39;s spike</h1>
 </header>
-<div>
+<input type="checkbox" name="burger_cbx" id="burger_cbx">
+<label for="burger_cbx" class="burger_label">
+    <span class="burger_icon"><?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg version="1.1" viewBox="0 0 12.7 12.7" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <rect x="1.0369" y="2.1007" width="10.634" height="1.0426" ry=".5213"/>
+  <rect x="1.0369" y="4.571" width="10.634" height="1.0426" ry=".5213"/>
+  <rect x="1.0369" y="7.0413" width="10.634" height="1.0426" ry=".5213"/>
+  <rect x="1.0369" y="9.5115" width="10.634" height="1.0426" ry=".5213"/>
+ </g>
+</svg>
+</span>
+</label>
+<label for="burger_cbx" class="close_label">
+    <span class="close_icon"><?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg version="1.1" viewBox="0 0 12.7 12.7" xmlns="http://www.w3.org/2000/svg">
+ <rect transform="rotate(45.535)" x="3.6678" y="-.6148" width="10.634" height="1.0426" ry=".5213"/>
+ <rect transform="rotate(135.53)" x="-5.4104" y="-9.5059" width="10.634" height="1.0426" ry=".5213"/>
+</svg>
+</span>
+</label>
+<div class="nav_area">
     <nav class="container mx-auto bg-primary text-on-primary text-center flex flex-col md:flex-row justify-start">
             <a href="/portfolio/" class="flex-1 text-center no-underline bg-primary-light text-on-primary font-extrabold py-2">Home</a>
             <a href="/portfolio/blog" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Blog</a>
@@ -16,7 +40,6 @@
             <a href="/portfolio/mytools" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">My Tools</a>
             <a href="/portfolio/ihc" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">IHC</a>
     </nav>
-    </div>
 </div><main id="content" class="container mx-auto bg-surface pt-4 pb-8">
 <div class="article area_border mx-4  px-4 py-3"><p>プログラミング学習記録をまとめたサイトです。</p>
 <p>これらの学習の成果を、記事やGitHubのプロジェクトとして記録していきます。</p>
@@ -220,6 +243,10 @@ git submodule update --remote 参考  上流の変更の取り込み
         
             <div class="mr-2">Python</div>
         
+            <div class="mr-2">Makefile</div>
+        
+            <div class="mr-2">Shell</div>
+        
     </div>
 </div>
 
@@ -227,9 +254,9 @@ git submodule update --remote 参考  上流の変更の取り込み
 
 
 <div class="area_border p-2 relative  px-4 pb-7">
-    <h3 class="mb-4 text-lg"><a class="normal_link" href="https://github.com/kantas-spike/slide2video.py"><i class="fa-solid fa-screwdriver-wrench"></i> kantas-spike/slide2video.py</a></h3>
+    <h3 class="mb-4 text-lg"><a class="normal_link" href="https://github.com/kantas-spike/vv_wav2slide_wav.py"><i class="fa-solid fa-screwdriver-wrench"></i> kantas-spike/vv_wav2slide_wav.py</a></h3>
     <div class="mx-2 mb-4">
-        Blenderを利用して、スライド資料と、その資料用の音声データから動画編集ファイルを作成するツールです。
+        VOICEVOXで生成した音声ファイルを、スライド資料用にスライド単位にグループ化した音声ファイルに変換します。
     </div>
     
     <div class="flex absolute bottom-1 right-2 text-gray-600">
@@ -248,9 +275,9 @@ git submodule update --remote 参考  上流の変更の取り込み
 
 
 <div class="area_border p-2 relative  px-4 pb-7">
-    <h3 class="mb-4 text-lg"><a class="normal_link" href="https://github.com/kantas-spike/vv_wav2slide_wav.py"><i class="fa-solid fa-screwdriver-wrench"></i> kantas-spike/vv_wav2slide_wav.py</a></h3>
+    <h3 class="mb-4 text-lg"><a class="normal_link" href="https://github.com/kantas-spike/slide2video.py"><i class="fa-solid fa-screwdriver-wrench"></i> kantas-spike/slide2video.py</a></h3>
     <div class="mx-2 mb-4">
-        VOICEVOXで生成した音声ファイルを、スライド資料用にスライド単位にグループ化した音声ファイルに変換します。
+        Blenderを利用して、スライド資料と、その資料用の音声データから動画編集ファイルを作成するツールです。
     </div>
     
     <div class="flex absolute bottom-1 right-2 text-gray-600">
@@ -306,11 +333,11 @@ git submodule update --remote 参考  上流の変更の取り込み
         <h4 class="font-bold text-gray-600"><i class="fa-solid fa-code-merge"></i> 最近のイテレーション <span class="pl-1 font-normal">(<a class="tag_link" href="https://github.com/kantas-spike/kantas-theme/pulls?q=is%3Apr+is%3Aclosed">全マージ済 PR</a>)</span></h4>
         <ul class="normal_ul">
         
+            <li><a class="tag_link" href="https://github.com/kantas-spike/kantas-theme/pull/19">Itr04: レスポンシブ対応：メニュー表示</a></li>
+        
             <li><a class="tag_link" href="https://github.com/kantas-spike/kantas-theme/pull/17">Itr03: rawhtml対応、youtube playlist対応</a></li>
         
             <li><a class="tag_link" href="https://github.com/kantas-spike/kantas-theme/pull/14">Itr02: tag,tags対応、ページング対応等</a></li>
-        
-            <li><a class="tag_link" href="https://github.com/kantas-spike/kantas-theme/pull/7">Itr01: 記事系とプロジェクト情報系をコンテンツとして扱う</a></li>
         
         </ul>
     </div>
