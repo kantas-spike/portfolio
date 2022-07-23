@@ -5,11 +5,28 @@
             "full_name": "kantas-spike/repo-info.py",
             "html_url": "https://github.com/kantas-spike/repo-info.py",
             "description": "GitHub REST APIを使って、設定ファイルに定義したリポジトリの情報を取得し、`JSON`形式で出力するツールです。",
-            "size": 3,
-            "pushed_at": "2022-07-21T07:15:27Z",
+            "size": 5,
+            "pushed_at": "2022-07-23T05:31:42Z",
             "project_type": "mytools",
             "langs": [
-                "Python"
+                "Python",
+                "Makefile",
+                "Shell"
+            ],
+            "merged": []
+        },
+        {
+            "name": "vv_wav2slide_wav.py",
+            "full_name": "kantas-spike/vv_wav2slide_wav.py",
+            "html_url": "https://github.com/kantas-spike/vv_wav2slide_wav.py",
+            "description": "VOICEVOXで生成した音声ファイルを、スライド資料用にスライド単位にグループ化した音声ファイルに変換します。",
+            "size": 12,
+            "pushed_at": "2022-07-23T05:25:29Z",
+            "project_type": "mytools",
+            "langs": [
+                "Python",
+                "Shell",
+                "Makefile"
             ],
             "merged": []
         },
@@ -20,21 +37,6 @@
             "description": "Blenderを利用して、スライド資料と、その資料用の音声データから動画編集ファイルを作成するツールです。",
             "size": 20,
             "pushed_at": "2022-07-11T21:09:05Z",
-            "project_type": "mytools",
-            "langs": [
-                "Python",
-                "Shell",
-                "Makefile"
-            ],
-            "merged": []
-        },
-        {
-            "name": "vv_wav2slide_wav.py",
-            "full_name": "kantas-spike/vv_wav2slide_wav.py",
-            "html_url": "https://github.com/kantas-spike/vv_wav2slide_wav.py",
-            "description": "VOICEVOXで生成した音声ファイルを、スライド資料用にスライド単位にグループ化した音声ファイルに変換します。",
-            "size": 12,
-            "pushed_at": "2022-07-11T18:18:58Z",
             "project_type": "mytools",
             "langs": [
                 "Python",
@@ -64,8 +66,8 @@
             "full_name": "kantas-spike/kantas-theme",
             "html_url": "https://github.com/kantas-spike/kantas-theme",
             "description": "Hugo theme for programming learner portfolio",
-            "size": 36,
-            "pushed_at": "2022-07-23T02:46:42Z",
+            "size": 42,
+            "pushed_at": "2022-07-23T11:41:22Z",
             "project_type": "IHC",
             "langs": [
                 "HTML",
@@ -73,6 +75,16 @@
                 "JavaScript"
             ],
             "merged": [
+                {
+                    "html_url": "https://github.com/kantas-spike/kantas-theme/pull/19",
+                    "title": "Itr04: レスポンシブ対応：メニュー表示",
+                    "state": "closed",
+                    "body": null,
+                    "created_at": "2022-07-23T11:41:07Z",
+                    "merged_at": "2022-07-23T11:41:22Z",
+                    "closed_at": "2022-07-23T11:41:22Z",
+                    "user": "kantas-spike"
+                },
                 {
                     "html_url": "https://github.com/kantas-spike/kantas-theme/pull/17",
                     "title": "Itr03: rawhtml対応、youtube playlist対応",
