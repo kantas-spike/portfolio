@@ -15,7 +15,7 @@ Hugoで[mermaid.js](https://mermaid-js.github.io/mermaid/#/)を使いたい。
 ### 解決策
 
 [カスタムshortcode](https://gohugo.io/templates/shortcode-templates/#create-custom-shortcodes)を作成する方法もあるようですが、
-今回は、[Markdown Render Hooks](https://gohugo.io/templates/render-hooks/)を利用する方法を採用します。
+今回は、[Markdown Render Hooks](https://gohugo.io/templates/render-hooks/)を方法を採用します。
 
 `layouts/_default/_markup/render-codeblock-mermaid.html`を作成します。
 
