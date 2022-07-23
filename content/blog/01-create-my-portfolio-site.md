@@ -181,4 +181,8 @@ Your site is published at https://kantas-spike.github.io/portfolio/
 
 Hugoの簡単な使い方を動画にもまとめています。
 
+~~~rawhtml
+<div class="max-w-3xl">
 {{< youtube BOP7IegsCl8 >}}
+</div>
+~~~
