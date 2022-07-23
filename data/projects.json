@@ -64,8 +64,8 @@
             "full_name": "kantas-spike/kantas-theme",
             "html_url": "https://github.com/kantas-spike/kantas-theme",
             "description": "Hugo theme for programming learner portfolio",
-            "size": 19,
-            "pushed_at": "2022-07-21T22:40:33Z",
+            "size": 36,
+            "pushed_at": "2022-07-23T02:46:42Z",
             "project_type": "IHC",
             "langs": [
                 "HTML",
@@ -73,6 +73,16 @@
                 "JavaScript"
             ],
             "merged": [
+                {
+                    "html_url": "https://github.com/kantas-spike/kantas-theme/pull/17",
+                    "title": "Itr03: rawhtml対応、youtube playlist対応",
+                    "state": "closed",
+                    "body": null,
+                    "created_at": "2022-07-23T02:46:33Z",
+                    "merged_at": "2022-07-23T02:46:42Z",
+                    "closed_at": "2022-07-23T02:46:42Z",
+                    "user": "kantas-spike"
+                },
                 {
                     "html_url": "https://github.com/kantas-spike/kantas-theme/pull/14",
                     "title": "Itr02: tag,tags対応、ページング対応等",
