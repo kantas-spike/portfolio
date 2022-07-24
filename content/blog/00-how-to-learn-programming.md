@@ -179,13 +179,13 @@ s3-- "2,3個完了" -->s3
 ~~~
 
 
-### Pythonの学習
+#### Pythonの学習
 
 三谷純 先生の書籍[「Python ゼロからはじめるプログラミング」(ISBN：9784798169460)]("https://www.shoeisha.co.jp/book/detail/9784798169460") の[スライド教材](https://mitani.cs.tsukuba.ac.jp/book_support/python/)にナレーションを付けたものです。
 
 {{<youtube_pl PLYhWljFaYHSIgh9EBuibRFJc3sAAaOOxH>}}
 
-### AIZU ONLINE JUDGE (AOJ)
+#### AIZU ONLINE JUDGE (AOJ)
 
 AOJの簡単な説明です。
 
@@ -195,7 +195,7 @@ AOJの簡単な説明です。
 </div>
 ~~~
 
-### インクリメンタルハッキングサイクル
+#### インクリメンタルハッキングサイクル
 
 実際に小さなPongゲームのプロジェクトを選んで、IHCをやっています。
 ([元のプロジェクト](https://github.com/anilatasoyy/Pong-Game-with-Pygame)、[フォークしたプロジェクト](https://github.com/kantas-spike/Pong-Game-with-Pygame/blob/main/README.ja.md))
