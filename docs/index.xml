@@ -9,6 +9,15 @@
     <copyright>Copyright 2022 kanta&#39;s spike</copyright>
     <lastBuildDate>Fri, 22 Jul 2022 08:24:06 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>HugoでSVGを埋め込みたい</title>
+      <link>https://kantas-spike.github.io/portfolio/2022/07/12-hugo-with-svg/</link>
+      <pubDate>Sun, 24 Jul 2022 08:11:18 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/2022/07/12-hugo-with-svg/</guid>
+      <description>&lt;p&gt;HugoでSVGのアイコンを埋め込みたい。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Hugoでショートコードの記述をエスケープして表示したい</title>
       <link>https://kantas-spike.github.io/portfolio/2022/07/11-hugo-escape-shortcodes/</link>
       <pubDate>Sat, 23 Jul 2022 12:34:13 +0900</pubDate>
