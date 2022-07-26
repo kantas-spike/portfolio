@@ -131,6 +131,7 @@ s3-- "2,3個完了" -->s3
 <li><a href="https://cruel.org/freeware/hacker.html#skills1">最初のプログラミング言語</a>はPythonにする
 <li>言語の学習は<a href="https://docs.python.org/ja/3/">公式</a>・非公式の公開文書や書籍で学ぶ
 <li>学習度合いの確認に<a href="https://onlinejudge.u-aizu.ac.jp/home">AOJ</a>を活用する
+<li>一般的なツールの使い方は <a href="https://missing-semester-jp.github.io/">The Missing Semester of Your CS Education</a>で学ぶ
 <li>作成したプログラムはGitHubで公開する(英語の勉強のため、なるべくREADMEは英語で書く)
 <li>学習中に学んだ事をHTMLで文書化し公開する
 </ul>
