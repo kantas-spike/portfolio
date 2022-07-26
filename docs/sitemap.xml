@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/git/</loc>
+    <lastmod>2022-07-25T11:32:58+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/programming/</loc>
+    <lastmod>2022-07-25T11:32:58+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/</loc>
+    <lastmod>2022-07-25T11:32:58+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/tool/</loc>
+    <lastmod>2022-07-25T11:32:58+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/2022/07/03-how-to-learn-git/</loc>
+    <lastmod>2022-07-25T11:32:58+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/2022/07/02-how-to-learn-tools/</loc>
+    <lastmod>2022-07-25T07:40:38+09:00</lastmod>
+  </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/hugo/</loc>
     <lastmod>2022-07-24T08:11:18+09:00</lastmod>
   </url><url>
@@ -9,9 +27,6 @@
     <lastmod>2022-07-24T08:11:18+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/svg/</loc>
-    <lastmod>2022-07-24T08:11:18+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/</loc>
     <lastmod>2022-07-24T08:11:18+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/2022/07/11-hugo-escape-shortcodes/</loc>
@@ -35,14 +50,8 @@
     <loc>https://kantas-spike.github.io/portfolio/tags/hacking/</loc>
     <lastmod>2022-07-22T19:33:48+09:00</lastmod>
   </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/programming/</loc>
-    <lastmod>2022-07-22T19:33:48+09:00</lastmod>
-  </url><url>
     <loc>https://kantas-spike.github.io/portfolio/2022/07/00-how-to-learn-programming/</loc>
     <lastmod>2022-07-22T19:33:48+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/git/</loc>
-    <lastmod>2022-07-22T17:22:37+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/2022/07/08-git-submodule-update/</loc>
     <lastmod>2022-07-22T17:22:37+09:00</lastmod>

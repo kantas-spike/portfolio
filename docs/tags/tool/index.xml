@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blog on kanta&#39;s spike</title>
-    <link>https://kantas-spike.github.io/portfolio/blog/</link>
-    <description>Recent content in Blog on kanta&#39;s spike</description>
+    <title>tool on kanta&#39;s spike</title>
+    <link>https://kantas-spike.github.io/portfolio/tags/tool/</link>
+    <description>Recent content in tool on kanta&#39;s spike</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>Copyright 2022 kanta&#39;s spike</copyright>
-    <lastBuildDate>Fri, 22 Jul 2022 08:15:27 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 25 Jul 2022 11:32:58 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/tool/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ツールの学習 Git</title>
       <link>https://kantas-spike.github.io/portfolio/2022/07/03-how-to-learn-git/</link>
@@ -28,26 +28,6 @@ GitHubを使うためには&lt;code&gt;git&lt;/code&gt;を使えないといけ�
       <description>&lt;p&gt;&lt;a href=&#34;http://www.catb.org/~esr/faqs/hacking-howto.html&#34;&gt;How To Learn Hacking&lt;/a&gt;(&lt;a href=&#34;https://github.com/kantas-spike/how-to-learn-hacking-japanese/blob/main/how-to-learn-hacking.md&#34;&gt;翻訳:ハッキングの学び方&lt;/a&gt;)では、「言語やツールを学習する」を学習の第一段階に挙げていました。&lt;/p&gt;
 &lt;p&gt;「言語の学習」については、公式・非公式文書、書籍、練習問題などで学習できます。
 「ツールの学習」はどうするのでしょうか？&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>プログラミングの学び方</title>
-      <link>https://kantas-spike.github.io/portfolio/2022/07/00-how-to-learn-programming/</link>
-      <pubDate>Fri, 22 Jul 2022 19:33:48 +0900</pubDate>
-      
-      <guid>https://kantas-spike.github.io/portfolio/2022/07/00-how-to-learn-programming/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://www.catb.org/~esr/faqs/hacker-howto.html&#34;&gt;How To Became A Hacker&lt;/a&gt;(&lt;a href=&#34;https://cruel.org/freeware/hacker.html#believe3&#34;&gt;翻訳:ハッカーになろう&lt;/a&gt;)と、
-&lt;a href=&#34;http://www.catb.org/~esr/faqs/hacking-howto.html&#34;&gt;How To Learn Hacking&lt;/a&gt;(&lt;a href=&#34;https://github.com/kantas-spike/how-to-learn-hacking-japanese/blob/main/how-to-learn-hacking.md&#34;&gt;翻訳:ハッキングの学び方&lt;/a&gt;)を読んで、自分にあったプログラミング学習方法がわかった気がします。&lt;/p&gt;
-&lt;p&gt;これらの文書で学んだことをまとめたいと思います。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>ポートフォリオサイトを作成する</title>
-      <link>https://kantas-spike.github.io/portfolio/2022/07/01-create-my-portfolio-site/</link>
-      <pubDate>Fri, 15 Jul 2022 06:13:30 +0900</pubDate>
-      
-      <guid>https://kantas-spike.github.io/portfolio/2022/07/01-create-my-portfolio-site/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;と&lt;a href=&#34;https://gohugo.io/hosting-and-deployment/hosting-on-github/&#34;&gt;GitHub Pages&lt;/a&gt;を使って、プログラミングの学習記録サイトを作りたいと思います。&lt;/p&gt;</description>
     </item>
     
   </channel>

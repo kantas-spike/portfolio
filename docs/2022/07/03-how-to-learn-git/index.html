@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html><head>
+    <title>kanta's spike</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/portfolio/css/theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/portfolio/css/syntax.css">
+</head><body class="bg-background text-gray-800 pb-4"><header class="bg-primary-dark text-accent text-6xl font-serif font-extrabold px-4 py-3">
+    <h1 class="container mx-auto px-4">kanta&#39;s spike</h1>
+</header>
+<input type="checkbox" name="burger_cbx" id="burger_cbx">
+<label for="burger_cbx" class="burger_label">
+    <span class="burger_icon"><svg version="1.1" viewBox="0 0 12.7 12.7" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <rect x="1.0369" y="2.1007" width="10.634" height="1.0426" ry=".5213"/>
+  <rect x="1.0369" y="4.571" width="10.634" height="1.0426" ry=".5213"/>
+  <rect x="1.0369" y="7.0413" width="10.634" height="1.0426" ry=".5213"/>
+  <rect x="1.0369" y="9.5115" width="10.634" height="1.0426" ry=".5213"/>
+ </g>
+</svg>
+</span>
+</label>
+<label for="burger_cbx" class="close_label">
+    <span class="close_icon"><svg version="1.1" viewBox="0 0 12.7 12.7" xmlns="http://www.w3.org/2000/svg">
+ <rect transform="rotate(45.535)" x="3.6678" y="-.6148" width="10.634" height="1.0426" ry=".5213"/>
+ <rect transform="rotate(135.53)" x="-5.4104" y="-9.5059" width="10.634" height="1.0426" ry=".5213"/>
+</svg>
+</span>
+</label>
+<div class="nav_area">
+    <nav class="container mx-auto bg-primary text-on-primary text-center flex flex-col md:flex-row justify-start">
+            <a href="/portfolio/" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Home</a>
+            <a href="/portfolio/blog" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Blog</a>
+            <a href="/portfolio/til" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">TIL</a>
+            <a href="/portfolio/mytools" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">My Tools</a>
+            <a href="/portfolio/ihc" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">IHC</a>
+    </nav>
+</div><main id="content" class="container mx-auto bg-surface pt-4 pb-8">
+<div class="area_border  px-4 py-3 mx-4 pb-4">
+    
+
+<div class="mb-4">
+    <h3 class="border-b-2 border-primary text-primary-dark text-xl font-bold"><i class="fa-solid fa-file-lines"></i> <a href="https://kantas-spike.github.io/portfolio/2022/07/03-how-to-learn-git/">ツールの学習 Git</a></h3>
+    <div class="flex justify-between mt-1 mx-2">
+        <div>
+            <ul class="flex gap-2 justify-end">
+            
+            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/tool/">#tool</a></li>
+            
+            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/programming/">#programming</a></li>
+            
+            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/git/">#git</a></li>
+            
+            </ul>
+        </div>
+        <div>
+            <div class="text-right text-sm font-bold">2022/07/25</div>
+        </div>
+    </div>
+</div>
+
+    <div class="article mx-2">
+        <p>プログラミングの学習ではGitHubをよく使います。
+GitHubを使うためには<code>git</code>を使えないといけません。</p>
+<p>そこで、<a href="https://missing.csail.mit.edu/2020/version-control/">Version Control (Git) · the missing semester of your cs education</a>(<a href="https://missing-semester-jp.github.io/2020/version-control/">翻訳</a>)で<code>git</code>について学びたいと思います。</p>
+<h3 id="バージョン管理-git-の-まとめ">バージョン管理 (Git) の まとめ</h3>
+<p>まとめると以下になります。</p>
+<ul>
+<li>Gitのデータモデルは美しい。でも、Gitのインターフェイスは醜い</li>
+<li>コマンドの使い方を覚えるのではなく、データモデルを理解することが重要
+<ul>
+<li>Gitはスナップショット(<strong>コミット</strong>)を <strong>有向非巡回グラフ(DAG)</strong> で管理</li>
+<li>Gitのデータは、<strong>オブジェクト</strong> と <strong>リファレンス</strong></li>
+<li><code>git</code>は <strong>オブジェクト</strong> の追加と <strong>リファレンス</strong> の追加・更新によって、<strong>コミット</strong> の <strong>DAG</strong> を操作するツール</li>
+</ul>
+</li>
+<li><strong>コミット</strong> を作成するには <strong>ステージングエリア</strong> を使う</li>
+<li>コマンドの使い方は<a href="https://git-scm.com/book/ja/v2">Pro Git</a>の1〜5章を読めば、ほとんどわかるはず</li>
+</ul>
+<p>先生がGitのインターフェイスが醜いと言うぐらいですから、私が<code>git</code>のコマンドを覚えられないのも無理はありません。安心しました。</p>
+<p>コマンドの使い方を覚えるより、まず、<strong>データモデル</strong>を理解することが大事です。
+一度、データモデルを理解すれば、「データモデルをこのように変更するにはどうすれば良いのか?」という観点でコマンドを探し・その使い方を理解することができます。
+また、個人的には、<strong>データモデル</strong> に加えて、<strong>3種類のファイルグループ</strong> の関係も意識する必要があると感じました。</p>
+<p>結論としては、この講義で <strong>データモデルの概要</strong>、<strong>3種類のファイルグループ</strong> を理解してから、<a href="https://git-scm.com/book/ja/v2">Pro Git</a>にすすみましょう。</p>
+<p>以降では、データモデルなどについて整理します。</p>
+<h3 id="データモデル">データモデル</h3>
+<h4 id="スナップショットコミット">スナップショット(コミット)</h4>
+<p>バージョン管理システムは、日々の各時点でのファイルやフォルダの状態を保存します。
+ある時点のファイルやフォルダの状態を保存したものを <strong>スナップショット</strong> と呼びます。
+そして、Gitではこのスナップショットを <strong>コミット</strong> と呼びます。</p>
+<h4 id="スナップショットの管理方法">スナップショットの管理方法</h4>
+<p>バージョン管理システムは、スナップショットを関連付けて履歴を管理します。
+Gitでは、スナップショット(コミット)を <strong>有向非巡回グラフ(DAG)</strong> として管理します。</p>
+<p>丸印(○)がコミット(スナップショット)です。
+左から右に時系列でコミットが作成されます。</p>
+<p>コミットは左方向にペアレントを持ちます。(注意: コミットはチャイルドは持ちません。親を知るのみです。)
+下図では<code>C3</code>の親は<code>C2</code>になり、<code>C4</code>の親も<code>C2</code>になります。
+<code>C2</code>以降で2つの <strong>ブランチ</strong> に枝分れしています。</p>
+<div class="mermaid">flowchart LR
+  c0((C0))
+  c1((C1))
+  c2((C2))
+  c3((C3))
+  c4((C4))
+  c5((C5))
+
+  c0---c1---c2---c3
+  c2---c4---c5
+</div>
+<p>また、コミットは複数のペアレントを持つこともあります。
+下図では<code>C6</code>の親は<code>C3</code>と<code>C5</code>になります。
+別々の <strong>ブランチ</strong> が<code>C6</code>で1つに <strong>マージ</strong> されています。</p>
+<div class="mermaid">flowchart LR
+  c0((C0))
+  c1((C1))
+  c2((C2))
+  c3((C3))
+  c4((C4))
+  c5((C5))
+  c6((C6))
+  c0---c1---c2---c3---c6
+  c2---c4---c5---c6
+</div>
+<p>このように、Gitではスナップショットを一直線ではなく、分岐したり、融合したりします。
+これが <strong>有向非巡回グラフ(DAG)</strong> です。</p>
+<h4 id="データモデル-1">データモデル</h4>
+<p>Gitでは、ファイルはブロブ、フォルダはツリーとして管理されます。
+疑似コードで書くと以下になります。
+Gitはブロブとツリーとコミットで管理されるシンプルなデータモデルです。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">//</span> <span class="n">ファイルは大量のバイト</span>
+</span></span><span class="line"><span class="cl"><span class="nb">type</span> <span class="n">blob</span> <span class="o">=</span> <span class="n">array</span><span class="o">&lt;</span><span class="nb">type</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">//</span> <span class="n">フォルダは名前付きでファイルとフォルダを含む</span>
+</span></span><span class="line"><span class="cl"><span class="nb">type</span> <span class="n">tree</span> <span class="o">=</span> <span class="nb">map</span><span class="o">&lt;</span><span class="n">string</span><span class="p">,</span> <span class="n">tree</span> <span class="o">|</span> <span class="n">blob</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">//</span> <span class="n">コミットはペアレント</span><span class="err">、</span><span class="n">メタデータ</span><span class="err">、</span><span class="n">トップレベルのツリーを保持</span>
+</span></span><span class="line"><span class="cl"><span class="nb">type</span> <span class="n">commit</span> <span class="o">=</span> <span class="n">struct</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">parent</span><span class="p">:</span> <span class="n">array</span><span class="o">&lt;</span><span class="n">commit</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">author</span><span class="p">:</span> <span class="n">string</span>
+</span></span><span class="line"><span class="cl">    <span class="n">message</span><span class="p">:</span> <span class="n">string</span>
+</span></span><span class="line"><span class="cl">    <span class="n">snapshot</span><span class="p">:</span> <span class="n">tree</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h4 id="オブジェクトとアドレス管理">オブジェクトとアドレス管理</h4>
+<p>オブジェクトとは、ブロブ、ツリー、コミットのことです。</p>
+<p>疑似コードで書くと以下になります。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="nb">type</span> <span class="nb">object</span> <span class="o">=</span> <span class="n">blob</span> <span class="o">|</span> <span class="n">tree</span> <span class="o">|</span> <span class="n">commit</span>
+</span></span></code></pre></div><p>Gitではオブジェクトを、その<a href="https://ja.wikipedia.org/wiki/SHA-1">SHA-1 hash</a>をキーにして管理します。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">objects</span> <span class="o">=</span> <span class="nb">map</span><span class="o">&lt;</span><span class="n">string</span><span class="p">,</span> <span class="nb">object</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">store</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">id</span> <span class="o">=</span> <span class="n">sha1</span><span class="p">(</span><span class="nb">object</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">objects</span><span class="p">[</span><span class="nb">id</span><span class="p">]</span> <span class="o">=</span> <span class="nb">object</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">load</span><span class="p">(</span><span class="nb">id</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">objects</span><span class="p">[</span><span class="nb">id</span><span class="p">]</span>
+</span></span></code></pre></div><p>SHA-1ハッシュは以下のような40文字の16進数文字列になります。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">64d18464f08c1c870882ec79c86560cb367ea18e
+</span></span></code></pre></div><h4 id="リファレンス">リファレンス</h4>
+<p>SHA-1ハッシュは人間向きではないので、人間用にリファレンスというコミットへのポインタを用意しています。</p>
+<p><code>git</code>では、メインの開発ブランチの最新コミットを指す <strong>master</strong> や 常に「現在の作業場所」を指す <strong>HEAD</strong> などのリファレンスがあらかじめ用意されています。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">references</span> <span class="o">=</span> <span class="nb">map</span><span class="o">&lt;</span><span class="n">string</span><span class="p">,</span> <span class="n">string</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">update_reference</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="nb">id</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">references</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="nb">id</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">read_reference</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">refrences</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">load_reference</span><span class="p">(</span><span class="n">name_or_id</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">name_or_id</span> <span class="ow">in</span> <span class="n">references</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">load</span><span class="p">(</span><span class="n">references</span><span class="p">[</span><span class="n">name_or_id</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">    <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">load</span><span class="p">(</span><span class="n">name_or_id</span><span class="p">)</span>
+</span></span></code></pre></div><h4 id="リポジトリ">リポジトリ</h4>
+<p>Gitのリポジトリはオブジェクトとリファレンスのことです。</p>
+<p><code>git</code>コマンドは、オブジェクトの追加とリファレンスの追加・更新によって、コミットの有向非巡回グラフ(DAG)を操作します。</p>
+<p>コマンドを使うときは、DAGにコマンドがどのような操作を行なっているかを意識しましょう。
+逆に、DAGに対して特定の操作をするには、どのコマンドが必要なのかという観点でコマンドを選びましょう。</p>
+<h3 id="ステージングエリアと3種類のファイルグループ">ステージングエリアと3種類のファイルグループ</h3>
+<p><strong>ステージングエリア</strong> はデータモデルとは別の概念です。
+ステージングエリア は、<strong>最新のコミット</strong> を作成するためのインターフェイスになります。</p>
+<p>Gitでは、<strong>作業フォルダ</strong> の状態がそのままスナップショットとしてコミットになりません。
+コミットを作成するには、スナップショットに含めたいファイルやフォルダを、作業フォルダで選んでステージングエリアに追加します。
+つまり、コミットはステージングエリアに追加されたものを対象にします。</p>
+<p><code>git</code>で作業する時には、この3種類のファイルグループを意識する必要があります。</p>
+<ul>
+<li><strong>作業フォルダ</strong></li>
+<li><strong>ステージングエリア</strong></li>
+<li><strong>最新のコミット</strong></li>
+</ul>
+<p>3種類のファイルグループの関係は以下になります。</p>
+<div class="mermaid">sequenceDiagram
+    participant w as 作業フォルダ
+    participant s as ステージングエリア
+    participant c as 最新のコミット
+    c->>w : チェックアウト<br>(checkout ブランチ)
+    w->>s : 変更したファイルをステージングエリアに追加<br>(git add files)
+    s->>c : ステージングエリアの内容からコミットを作成<br>(git commit)
+</div>
+<p>例えば、ファイルの変更を取り消したい場合、<strong>3種類</strong> のどの(または、複数、全部)変更を取り消すのか明確にする必要があります。(参照: <a href="https://git-scm.com/book/ja/v2/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-%E3%83%AA%E3%82%BB%E3%83%83%E3%83%88%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E8%A9%B3%E8%AA%AC#_%E3%83%AA%E3%82%BB%E3%83%83%E3%83%88%E3%81%AE%E5%BD%B9%E5%89%B2">リセットの役割 | Git - リセットコマンド詳説</a>)</p>
+<p><code>git</code>を使う時は、データモデルに対してだけではなく、3種類のファイルグループのどれに操作したいのかを常に意識しましょう。</p>
+<h3 id="gitのコマンドラインインターフェイス">Gitのコマンドラインインターフェイス</h3>
+<p>本講義で紹介されているGitのコマンドラインインターフェイスと<a href="https://git-scm.com/book/ja/v2">Pro Git</a>の説明を関連づけました。</p>
+<p>コマンドの使い方の詳細は<a href="https://git-scm.com/book/ja/v2">Pro Git</a>を確認ください。</p>
+<div class="rawhtml"><table>
+<tbody>
+<tr><th colspan="2" align="left">基本的なもの<th>Pro Git<br>への参照
+<tr><td><code>git help &lt;command&gt;</code><td>Gitコマンドについての情報を得る<td><a href="https://git-scm.com/book/ja/v2/%E4%BB%98%E9%8C%B2-C%3A-Git%E3%81%AE%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89-%E3%82%BB%E3%83%83%E3%83%88%E3%82%A2%E3%83%83%E3%83%97%E3%81%A8%E8%A8%AD%E5%AE%9A#_git_help">git help</a>
+<tr><td><code>git init</code><td><code>.git</code>ディレクトリ内に保存されたデータとともに、新しいGitリポジトリを作成する<td><a href="https://git-scm.com/book/ja/v2/%E4%BB%98%E9%8C%B2-C%3A-Git%E3%81%AE%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89-%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%AE%E5%8F%96%E5%BE%97%E3%81%A8%E4%BD%9C%E6%88%90#_git_init">git init</a>
+<tr><td><code>git status</code><td>何が起っているのかを教えてくれる<td><a href="https://git-scm.com/book/ja/v2/%E4%BB%98%E9%8C%B2-C%3A-Git%E3%81%AE%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89-%E5%9F%BA%E6%9C%AC%E7%9A%84%E3%81%AA%E3%82%B9%E3%83%8A%E3%83%83%E3%83%97%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88#_git_status">git status</a>
+<tr><td><code>git add &lt;filename&gt;</code><td>ステージングエリアにファイルを追加する<td><a href="https://git-scm.com/book/ja/v2/%E4%BB%98%E9%8C%B2-C%3A-Git%E3%81%AE%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89-%E5%9F%BA%E6%9C%AC%E7%9A%84%E3%81%AA%E3%82%B9%E3%83%8A%E3%83%83%E3%83%97%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88#_git_add">git add</a>
+<tr><td><code>git commmit</code><td>新しいコミットを作成する<ul><li><a href="https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html">良いコミットメッセージ</a>を書きましょう!<li><a href="https://cbea.ms/git-commit/">良いコミットメッセージ</a>を書かなければいけないさらに多くの理由</ul><td><a href="https://git-scm.com/book/ja/v2/%E4%BB%98%E9%8C%B2-C%3A-Git%E3%81%AE%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89-%E5%9F%BA%E6%9C%AC%E7%9A%84%E3%81%AA%E3%82%B9%E3%83%8A%E3%83%83%E3%83%97%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88#_git_commit">git commit</a>
+<tr><td><code>git log</code><td>平らな履歴のログを示す<td><a href="https://git-scm.com/book/ja/v2/%E4%BB%98%E9%8C%B2-C%3A-Git%E3%81%AE%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89-%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E3%81%A8%E3%83%9E%E3%83%BC%E3%82%B8#_git_log">git log</a>
+<tr><td><code>git log --all --graph --decorate</code><td>有向非巡回グラフ(DAG)として履歴を可視化する<td><a href="https://git-scm.com/book/ja/v2/%E4%BB%98%E9%8C%B2-C%3A-Git%E3%81%AE%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89-%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E3%81%A8%E3%83%9E%E3%83%BC%E3%82%B8#_git_log">git log</a>
+<tr><td><code>git diff &lt;filename&gt;</code><td>ステージングエリアに関して行なった変更を表示する<td><a href="https://git-scm.com/book/ja/v2/%E4%BB%98%E9%8C%B2-C%3A-Git%E3%81%AE%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89-%E5%9F%BA%E6%9C%AC%E7%9A%84%E3%81%AA%E3%82%B9%E3%83%8A%E3%83%83%E3%83%97%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88#_git_diff">git diff</a>
+<tr><td><code>git diff &lt;revision&gt; &lt;filename&gt;<td>スナップショット間の、ファイル内の差異を表示する<td><a href="https://git-scm.com/book/ja/v2/%E4%BB%98%E9%8C%B2-C%3A-Git%E3%81%AE%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89-%E5%9F%BA%E6%9C%AC%E7%9A%84%E3%81%AA%E3%82%B9%E3%83%8A%E3%83%83%E3%83%97%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88#_git_diff">git diff</a>
+<tr><td><code>git checkout &lt;revision&gt;<td>HEADと現在のブランチを更新する<td><a href="https://git-scm.com/book/ja/v2/%E4%BB%98%E9%8C%B2-C%3A-Git%E3%81%AE%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89-%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E3%81%A8%E3%83%9E%E3%83%BC%E3%82%B8#_git_checkout">git checkout</a>
+<tr><td colspan="3">&nbsp;
+<tr><th colspan="2" align="left">ブランチング(branching)とマージング(merging)<th>Pro Git<br>への参照
+<tr><td><code>git branch</code><td>ブランチを表示する<td><a href="https://git-scm.com/book/ja/v2/%E4%BB%98%E9%8C%B2-C%3A-Git%E3%81%AE%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89-%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E3%81%A8%E3%83%9E%E3%83%BC%E3%82%B8#_git_branch">git branch</a>
+<tr><td><code>git branch &lt;name&gt;</code><td>ブランチを作る<td><a href="https://git-scm.com/book/ja/v2/%E4%BB%98%E9%8C%B2-C%3A-Git%E3%81%AE%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89-%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E3%81%A8%E3%83%9E%E3%83%BC%E3%82%B8#_git_branch">git branch</a>
+<tr><td><code>git checkout -b &lt;name&gt;</code><td>ブランチを作り、そのブランチに切り替える<ul><li><code>git branch &lt;name&gt;; git checkout &lt;name&gt;</code>と同様<td><a href="https://git-scm.com/book/ja/v2/%E4%BB%98%E9%8C%B2-C%3A-Git%E3%81%AE%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89-%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E3%81%A8%E3%83%9E%E3%83%BC%E3%82%B8#_git_checkout">git checkout</a>
+<tr><td><code>git merge &lt;revision&gt;</code><td>現在のブランチにマージする<td><a href="https://git-scm.com/book/ja/v2/%E4%BB%98%E9%8C%B2-C%3A-Git%E3%81%AE%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89-%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E3%81%A8%E3%83%9E%E3%83%BC%E3%82%B8#_git_merge">git merge</a>
+<tr><td><code>git mergetooll</code><td>マージコンフリクト(結合衝突)を解決するために便利なツールを使用する<td><a href="https://git-scm.com/book/ja/v2/%E4%BB%98%E9%8C%B2-C%3A-Git%E3%81%AE%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89-%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E3%81%A8%E3%83%9E%E3%83%BC%E3%82%B8#_git_mergetool">git mergetool</a>
+<tr><td><code>git rebase</code><td>パッチのセットを新しいベース(土台)の上にベース(作業が完了したブランチを分岐元のブランチにくっつける)する<td><a href=https://git-scm.com/book/ja/v2/%E4%BB%98%E9%8C%B2-C%3A-Git%E3%81%AE%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89-%E3%83%91%E3%83%83%E3%83%81%E3%81%AE%E9%81%A9%E7%94%A8#_git_rebase>git rebase</a>
+<tr><td colspan="3">&nbsp;
+<tr><th colspan="2" align="left">リモート<th>Pro Git<br>への参照
+<tr><td><code>git remote</code><td>リモートをリスト化する<td><a href="https://git-scm.com/book/ja/v2/%E4%BB%98%E9%8C%B2-C%3A-Git%E3%81%AE%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89-%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%AE%E5%85%B1%E6%9C%89%E3%81%A8%E3%82%A2%E3%83%83%E3%83%97%E3%83%87%E3%83%BC%E3%83%88#_git_remote">git remote</a>
+<tr><td><code>git remote add &lt;name&gt; &lt;url&gt;<td>リモートを追加する<td><a href="https://git-scm.com/book/ja/v2/%E4%BB%98%E9%8C%B2-C%3A-Git%E3%81%AE%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89-%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%AE%E5%85%B1%E6%9C%89%E3%81%A8%E3%82%A2%E3%83%83%E3%83%97%E3%83%87%E3%83%BC%E3%83%88#_git_remote">git remote</a>
+<tr><td><code>git push &lt;remote&gt; &lt;local branch&gt;:&lt;remote branch&gt;<td>リモートにオブジェクトを送信し、リモートのリファレンスを更新する<td><a href="https://git-scm.com/book/ja/v2/%E4%BB%98%E9%8C%B2-C%3A-Git%E3%81%AE%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89-%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%AE%E5%85%B1%E6%9C%89%E3%81%A8%E3%82%A2%E3%83%83%E3%83%97%E3%83%87%E3%83%BC%E3%83%88#_git_push">git push</a>
+<tr><td><code>git branch --set-upstream-to=&lt;remote&gt;/&lt;remote branch&gt;<td>ローカルブランチとリモートブランチ間の通信を設定する<td><a href="https://git-scm.com/book/ja/v2/%E4%BB%98%E9%8C%B2-C%3A-Git%E3%81%AE%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89-%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E3%81%A8%E3%83%9E%E3%83%BC%E3%82%B8#_git_branch">git branch</a>
+<tr><td><code>git fetch</code><td>リモートからオブジェクトとリファレンスを回収する<td><a href="https://git-scm.com/book/ja/v2/%E4%BB%98%E9%8C%B2-C%3A-Git%E3%81%AE%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89-%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%AE%E5%85%B1%E6%9C%89%E3%81%A8%E3%82%A2%E3%83%83%E3%83%97%E3%83%87%E3%83%BC%E3%83%88#_git_fetch">git fetch</a>
+<tr><td><code>git pull</code><td><code>git fetch; git merge</code>と同様<td><a href="https://git-scm.com/book/ja/v2/%E4%BB%98%E9%8C%B2-C%3A-Git%E3%81%AE%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89-%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%AE%E5%85%B1%E6%9C%89%E3%81%A8%E3%82%A2%E3%83%83%E3%83%97%E3%83%87%E3%83%BC%E3%83%88#_git_pull">git pull</a>
+<tr><td><code>git clone</code><td>リモートからリポジトリをダウンロード(クローン)する<td><a href="https://git-scm.com/book/ja/v2/%E4%BB%98%E9%8C%B2-C%3A-Git%E3%81%AE%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89-%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%AE%E5%8F%96%E5%BE%97%E3%81%A8%E4%BD%9C%E6%88%90#_git_clone">git clone</a>
+<tr><td colspan="3">&nbsp;
+<tr><th colspan="2" align="left">取り消し(Undo)<th>Pro Git<br>への参照
+<tr><td><code>git commit --amend</code><td>コミットの内容やメッセージを編集する<td><a href="https://git-scm.com/book/ja/v2/Git-%E3%81%AE%E5%9F%BA%E6%9C%AC-%E4%BD%9C%E6%A5%AD%E3%81%AE%E3%82%84%E3%82%8A%E7%9B%B4%E3%81%97#r_undoing">作業のやり直し</a>
+<tr><td><code>git reset HEAD &lt;file&gt;</code><td>ファイルのステージングを解除する<td><a href="https://git-scm.com/book/ja/v2/%E4%BB%98%E9%8C%B2-C%3A-Git%E3%81%AE%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89-%E5%9F%BA%E6%9C%AC%E7%9A%84%E3%81%AA%E3%82%B9%E3%83%8A%E3%83%83%E3%83%97%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88#_git_reset">git reset</a>
+<tr><td><code>git checkout -- &lt;file&gt;</code><td>変更を破棄する<td><a href="https://git-scm.com/book/ja/v2/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-%E3%83%AA%E3%82%BB%E3%83%83%E3%83%88%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E8%A9%B3%E8%AA%AC#_%E3%83%91%E3%82%B9%E6%8C%87%E5%AE%9A%E3%81%82%E3%82%8A%E3%81%AE%E5%A0%B4%E5%90%88">パス指定ありの場合</a>
+<tr><td colspan="3">&nbsp;
+<tr><th colspan="2" align="left">Git上級者向けコマンド<th>Pro Git<br>への参照
+<tr><td><code>git config</code><td>Gitを<a href="https://git-scm.com/docs/git-config">もっとカスタマイズする</a><td><a href="https://git-scm.com/book/ja/v2/%E4%BB%98%E9%8C%B2-C%3A-Git%E3%81%AE%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89-%E3%82%BB%E3%83%83%E3%83%88%E3%82%A2%E3%83%83%E3%83%97%E3%81%A8%E8%A8%AD%E5%AE%9A#_git_config">git config</a>
+<tr><td><code>git clone --depth=1</code><td>バージョン履歴全体を持ってこない、浅いクローン(ダウンロード)<td><a href="https://git-scm.com/book/ja/v2/%E4%BB%98%E9%8C%B2-C%3A-Git%E3%81%AE%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89-%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%AE%E5%8F%96%E5%BE%97%E3%81%A8%E4%BD%9C%E6%88%90#_git_clone">git clone</a>
+<tr><td><code>git add -p</code><td>対話的なステージング<td><a href="https://git-scm.com/book/ja/v2/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-%E5%AF%BE%E8%A9%B1%E7%9A%84%E3%81%AA%E3%82%B9%E3%83%86%E3%83%BC%E3%82%B8%E3%83%B3%E3%82%B0#_%E3%83%91%E3%83%83%E3%83%81%E3%81%AE%E3%82%B9%E3%83%86%E3%83%BC%E3%82%B8">パッチのステージ</a>
+<tr><td><code>git rebase -i</code><td>対話的なリベース<td><a href="https://git-scm.com/book/ja/v2/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-%E6%AD%B4%E5%8F%B2%E3%81%AE%E6%9B%B8%E3%81%8D%E6%8F%9B%E3%81%88#r_changing_multiple">複数のコミットメッセージの変更</a>
+<tr><td><code>git blame</code><td>どの行を誰が最後に編集したのかを表示する<td><a href="https://git-scm.com/book/ja/v2/%E4%BB%98%E9%8C%B2-C%3A-Git%E3%81%AE%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89-%E3%83%87%E3%83%90%E3%83%83%E3%82%B0#_git_blame">git blame</a>
+<tr><td><code>git stash</code><td>作業ディレクトリへの変更を一時的に削除する<td><a href="https://git-scm.com/book/ja/v2/%E4%BB%98%E9%8C%B2-C%3A-Git%E3%81%AE%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89-%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E3%81%A8%E3%83%9E%E3%83%BC%E3%82%B8#_git_stash">git stach</a>
+<tr><td><code>git bisect</code><td>履歴のバイナリサーチ(二分探索)を行う(ソフトウェアの後戻り、デグレードなど)<td><a href="https://git-scm.com/book/ja/v2/%E4%BB%98%E9%8C%B2-C%3A-Git%E3%81%AE%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89-%E3%83%87%E3%83%90%E3%83%83%E3%82%B0#_git_binsect">git binsect</a>
+<tr><td><code>.gitignore</code><td>無視するために、意図的に追跡しないファイルを指定する<td><a href="https://git-scm.com/book/ja/v2/Git-%E3%81%AE%E5%9F%BA%E6%9C%AC-%E5%A4%89%E6%9B%B4%E5%86%85%E5%AE%B9%E3%81%AE%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%81%B8%E3%81%AE%E8%A8%98%E9%8C%B2#r_ignoring">ファイルの無視</a>
+</tbody>
+</table>
+</div><h3 id="参考">参考</h3>
+<ul>
+<li><a href="https://missing.csail.mit.edu/2020/version-control/">Version Control (Git) · the missing semester of your cs education</a>
+<ul>
+<li><a href="https://missing-semester-jp.github.io/2020/version-control/">日本語版</a></li>
+</ul>
+</li>
+<li><a href="https://git-scm.com/book/en/v2">Pro Git</a>
+<ul>
+<li><a href="https://git-scm.com/book/ja/v2">日本語版</a></li>
+</ul>
+</li>
+<li><a href="https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html">A Note About Git Commit Messages</a>
+<ul>
+<li><a href="http://keijinsonyaban.blogspot.com/2011/01/git.html">日本語版</a></li>
+</ul>
+</li>
+<li><a href="https://cbea.ms/git-commit/">How to Write a Git Commit Message</a>
+<ul>
+<li><a href="https://postd.cc/how-to-write-a-git-commit-message/">日本語版</a></li>
+</ul>
+</li>
+</ul>
+    </div>
+</div>
+
+        </main><footer class="bg-primary-dark text-center text-on-primary-dark fixed bottom-0 w-full h-8">
+    <div class="container mx-auto grid grid-cols-3">
+        <div class="col-start-2">
+            <div class="text-sm pt-2">Copyright 2022 kanta&#39;s spike</div>
+        </div>
+        <div class="flex justify-end gap-2 mr-2">
+            
+                
+            <a title="Twitter" class="text-2xl" href="https://twitter.com/KantasSpike"><i class="fa-brands fa-twitter-square"></i></a>
+                
+            <a title="Youtube" class="text-2xl" href="https://www.youtube.com/channel/UCnVBuUGMYAt7ZuIkadxnMfw"><i class="fa-brands fa-youtube-square"></i></a>
+                
+            <a title="GitHub" class="text-2xl" href="https://github.com/kantas-spike"><i class="fa-brands fa-github-square"></i></a>
+                
+            <a title="Blog" class="text-2xl" href="https://kantas-spike.github.io/portfolio/"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                
+            
+        </div>
+    </div>
+</footer>
+        <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+        <script>
+            mermaid.initialize({ startOnLoad: true, sequence: { mirrorActors: false } });
+        </script>
+        
+    </body>
+</html>

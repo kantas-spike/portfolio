@@ -7,7 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>Copyright 2022 kanta&#39;s spike</copyright>
-    <lastBuildDate>Fri, 22 Jul 2022 17:22:37 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 25 Jul 2022 11:32:58 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ツールの学習 Git</title>
+      <link>https://kantas-spike.github.io/portfolio/2022/07/03-how-to-learn-git/</link>
+      <pubDate>Mon, 25 Jul 2022 11:32:58 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/2022/07/03-how-to-learn-git/</guid>
+      <description>&lt;p&gt;プログラミングの学習ではGitHubをよく使います。
+GitHubを使うためには&lt;code&gt;git&lt;/code&gt;を使えないといけません。&lt;/p&gt;
+&lt;p&gt;そこで、&lt;a href=&#34;https://missing.csail.mit.edu/2020/version-control/&#34;&gt;Version Control (Git) · the missing semester of your cs education&lt;/a&gt;(&lt;a href=&#34;https://missing-semester-jp.github.io/2020/version-control/&#34;&gt;翻訳&lt;/a&gt;)で&lt;code&gt;git&lt;/code&gt;について学びたいと思います。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>gitでsubmoduleの更新を取り込みたい</title>
       <link>https://kantas-spike.github.io/portfolio/2022/07/08-git-submodule-update/</link>

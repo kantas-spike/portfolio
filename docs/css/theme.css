@@ -944,7 +944,7 @@ video {
 .article a:hover {
   font-weight: 700;
 }
-.article p > code,  .article li > code {
+.article p > code,  .article li > code,  .article td > code {
   margin-left: 0.125rem;
   margin-right: 0.125rem;
   --tw-bg-opacity: 1;
