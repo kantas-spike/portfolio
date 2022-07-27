@@ -80,9 +80,10 @@ GitHubを使うためには<code>git</code>を使えないといけません。<
 <p>先生がGitのインターフェイスが醜いと言うぐらいですから、私が<code>git</code>のコマンドを覚えられないのも無理はありません。安心しました。</p>
 <p>コマンドの使い方を覚えるより、まず、<strong>データモデル</strong>を理解することが大事です。
 一度、データモデルを理解すれば、「データモデルをこのように変更するにはどうすれば良いのか?」という観点でコマンドを探し・その使い方を理解することができます。
-また、個人的には、<strong>データモデル</strong> に加えて、<strong>3種類のファイルグループ</strong> の関係も意識する必要があると感じました。</p>
-<p>結論としては、この講義で <strong>データモデルの概要</strong>、<strong>3種類のファイルグループ</strong> を理解してから、<a href="https://git-scm.com/book/ja/v2">Pro Git</a>にすすみましょう。</p>
-<p>以降では、データモデルなどについて整理します。</p>
+また、個人的には、<strong>データモデル</strong> に加えて、<strong>作業フォルダ</strong>、<strong>ステージングエリア</strong>、<strong>最新のコミット(HEAD)</strong> という <strong>3種類のファイルグループ</strong> の関係も意識する必要があると感じました。</p>
+<p>結論としては、この講義で <strong>データモデルの概要</strong>、<strong>3種類のファイルグループ</strong> を理解してから、<a href="https://git-scm.com/book/ja/v2">Pro Git</a>にすすみましょう。
+あと、いつも悩むコミットのメッセージの書き方についても、<a href="https://cbea.ms/git-commit/">How to Write a Git Commit Message</a>(<a href="https://postd.cc/how-to-write-a-git-commit-message/">日本語版</a>)という文書を紹介してくれています。</p>
+<p>以降では、データモデル、3種類のファイルグループについて整理します。</p>
 <h3 id="データモデル">データモデル</h3>
 <h4 id="スナップショットコミット">スナップショット(コミット)</h4>
 <p>バージョン管理システムは、日々の各時点でのファイルやフォルダの状態を保存します。
@@ -96,30 +97,26 @@ Gitでは、スナップショット(コミット)を <strong>有向非巡回グ
 <p>コミットは左方向にペアレントを持ちます。(注意: コミットはチャイルドは持ちません。親を知るのみです。)
 下図では<code>C3</code>の親は<code>C2</code>になり、<code>C4</code>の親も<code>C2</code>になります。
 <code>C2</code>以降で2つの <strong>ブランチ</strong> に枝分れしています。</p>
-<div class="mermaid">flowchart LR
-  c0((C0))
-  c1((C1))
-  c2((C2))
-  c3((C3))
-  c4((C4))
-  c5((C5))
-
-  c0---c1---c2---c3
-  c2---c4---c5
+<div class="mermaid">stateDiagram-v2
+    direction RL
+    C3 --> C2
+    C2 --> C1
+    C1 --> C0
+    C5 --> C4
+    C4 --> C2
 </div>
 <p>また、コミットは複数のペアレントを持つこともあります。
 下図では<code>C6</code>の親は<code>C3</code>と<code>C5</code>になります。
 別々の <strong>ブランチ</strong> が<code>C6</code>で1つに <strong>マージ</strong> されています。</p>
-<div class="mermaid">flowchart LR
-  c0((C0))
-  c1((C1))
-  c2((C2))
-  c3((C3))
-  c4((C4))
-  c5((C5))
-  c6((C6))
-  c0---c1---c2---c3---c6
-  c2---c4---c5---c6
+<div class="mermaid">stateDiagram-v2
+    direction RL
+    C6 --> C3
+    C3 --> C2
+    C2 --> C1
+    C1 --> C0
+    C6 --> C5
+    C5 --> C4
+    C4 --> C2
 </div>
 <p>このように、Gitではスナップショットを一直線ではなく、分岐したり、融合したりします。
 これが <strong>有向非巡回グラフ(DAG)</strong> です。</p>
@@ -188,17 +185,130 @@ Gitはブロブとツリーとコミットで管理されるシンプルなデ�
 <li><strong>ステージングエリア</strong></li>
 <li><strong>最新のコミット</strong></li>
 </ul>
-<p>3種類のファイルグループの関係は以下になります。</p>
+<p>この3種類のファイルグループの関係を、<code>git</code> の作業から例示します。</p>
+<h4 id="ブランチのチェックアウト編集コミット">ブランチのチェックアウト〜編集〜コミット</h4>
+<ol>
+<li><strong>チェックアウト</strong> により、3種類のファイルグループは同じものに</li>
+<li>ファイルを変更</li>
+<li><code>git add</code>により、ファイルの変更内容を <strong>作業フォルダ</strong> から <strong>ステージングエリア</strong> へ反映</li>
+<li><code>git commit</code>により、 <strong>ステージングエリア</strong> をもとに新しいコミットが作成され、 <strong>HEAD</strong> に反映</li>
+</ol>
 <div class="mermaid">sequenceDiagram
+    participant u as 利用者
+    participant g as git
     participant w as 作業フォルダ
     participant s as ステージングエリア
-    participant c as 最新のコミット
-    c->>w : チェックアウト<br>(checkout ブランチ)
-    w->>s : 変更したファイルをステージングエリアに追加<br>(git add files)
-    s->>c : ステージングエリアの内容からコミットを作成<br>(git commit)
+    participant c as 最新のコミット(HEAD)
+    u->>g : 1. checkout main
+    Note over w,c: 3種類のファイルグループが同じ内容に
+    u->>w : 2. ファイルを変更
+    u->>g : 3. git add files
+    g->>s : 変更したファイルをステージングエリアへ反映
+    Note over w,s: 作業フォルダ→ステージングエリア
+    u->>g : 4. git commit
+    g->>c : ステージングエリアの内容からコミットを作成
+    Note over s,c: ステージングエリア→HEAD
 </div>
-<p>例えば、ファイルの変更を取り消したい場合、<strong>3種類</strong> のどの(または、複数、全部)変更を取り消すのか明確にする必要があります。(参照: <a href="https://git-scm.com/book/ja/v2/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-%E3%83%AA%E3%82%BB%E3%83%83%E3%83%88%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E8%A9%B3%E8%AA%AC#_%E3%83%AA%E3%82%BB%E3%83%83%E3%83%88%E3%81%AE%E5%BD%B9%E5%89%B2">リセットの役割 | Git - リセットコマンド詳説</a>)</p>
-<p><code>git</code>を使う時は、データモデルに対してだけではなく、3種類のファイルグループのどれに操作したいのかを常に意識しましょう。</p>
+<h4 id="変更を戻すgit-resetの場合">変更を戻す(<code>git reset</code>の場合)</h4>
+<p>さきほどの変更を元に戻したいと思います。</p>
+<p>データモデルで考えると、
+さきほど、編集したファイルを反映したコミットにより、メインブランチ、HEADともに<strong>C3</strong>を指すようになりました。</p>
+<div class="mermaid">stateDiagram-v2
+    direction RL
+    C3 --> C2
+    C2 --> C1
+    C1 --> C0
+    note left of C3 : HEAD
+    note left of C3 : main
+</div>
+<p>これを、1つ前の <strong>C2</strong> に戻します。</p>
+<div class="mermaid">stateDiagram-v2
+    direction RL
+    C3 --> C2
+    C2 --> C1
+    C1 --> C0
+    note left of C2 : HEAD
+    note left of C2 : main
+</div>
+<p>いろいろな方法で元に戻せますが、今回は<code>git reset C2</code>(もしくは<code>git reset HEAD^</code>)で戻します。</p>
+<p>ただし、<code>git reset</code> には3つのオプションがあります。</p>
+<ul>
+<li><code>git reset --soft &lt;commit&gt;</code></li>
+<li><code>git reset --miixed &lt;commit&gt;</code> (<code>--mixed</code>は<code>git reset</code>のデフォルトであるため、オプションを省略可能)</li>
+<li><code>git reset --hard &lt;commit&gt;</code></li>
+</ul>
+<p>いずれも、ブランチおよびHEADを指定した<code>&lt;commit&gt;</code>に移動させます。
+違いは3種類のファイルグループの扱い方になります。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">オプション</th>
+<th style="text-align:left">作業フォルダ</th>
+<th style="text-align:left">ステージングエリア</th>
+<th style="text-align:left">HEAD</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">&ndash;soft</td>
+<td style="text-align:left">変更しない</td>
+<td style="text-align:left">変更しない</td>
+<td style="text-align:left">ブランチおよびHEADを指定した &lt;commit&gt; に移動</td>
+</tr>
+<tr>
+<td style="text-align:left">&ndash;mixed</td>
+<td style="text-align:left">変更しない</td>
+<td style="text-align:left">移動した &lt;commit&gt; の内容に変更</td>
+<td style="text-align:left">ブランチおよびHEADを指定した &lt;commit&gt; に移動</td>
+</tr>
+<tr>
+<td style="text-align:left">&ndash;hard</td>
+<td style="text-align:left">移動した &lt;commit&gt; の内容に変更</td>
+<td style="text-align:left">移動した &lt;commit&gt; の内容に変更</td>
+<td style="text-align:left">ブランチおよびHEADを指定した &lt;commit&gt; に移動</td>
+</tr>
+</tbody>
+</table>
+<p>このように、<code>git</code>を使う時は、データモデルに対してだけではなく、
+3種類のファイルグループがどのように変更されるのかを意識する必要があります。</p>
+<h4 id="例1-タイポなどの軽微な修正コミットを削除したい">例1 タイポなどの軽微な修正コミットを削除したい</h4>
+<p>例えば、以下のようにタイポなどの軽微な修正だった<strong>C2</strong>を削除したい場合、</p>
+<div class="mermaid">stateDiagram-v2
+    direction RL
+    C3 --> C2
+    C2 --> C1
+    C3' --> C1
+    C1 --> C0
+    note left of C3' : 新しいHEADとmain
+    note right of C3' : C2を削除した上で、<br>C3と同じ内容のコミットを作成
+    note left of C3 : 現在のHEADとmain
+</div>
+<p><code>--soft</code>オプションで以下の操作をすると簡単です。</p>
+<ol>
+<li><strong>チェックアウト</strong> により、3種類のファイルグループは<strong>C3</strong>の内容に</li>
+<li><code>git reset --soft C1</code>により、<strong>HEAD</strong>の内容を<strong>C1</strong>に変更。ただし、<strong>作業フォルダ</strong>と<strong>ステージングエリア</strong>は<strong>C3</strong>のまま</li>
+<li><code>git commit</code>により、 <strong>C3</strong>の内容をもつ<strong>ステージングエリア</strong> から新しいコミット <strong>C3&rsquo;</strong> が作成され、 <strong>HEAD</strong> に反映</li>
+</ol>
+<div class="mermaid">sequenceDiagram
+    participant u as 利用者
+    participant g as git
+    participant w as 作業フォルダ
+    participant s as ステージングエリア
+    participant c as 最新のコミット(HEAD)
+    u->>g : 1. checkout main
+    Note over w,c: C3の内容になる
+    u->>g : 2。 reset --soft C1
+    Note over c: C1に変更
+    Note over w,s: C3の内容のまま
+    u->>g : 3. git commit
+    g->>c : ステージングエリアの内容からコミットを作成
+    Note over s,c: ステージングエリア→HEAD
+    Note over c: C3の内容を持つ新しいコミット(C3')が作成
+</div>
+<h4 id="例2-作業フォルダの変更を破棄して最新コミットの内容に戻したい">例2 作業フォルダの変更を破棄して最新コミットの内容に戻したい</h4>
+<p>例えば、いろいろ修正した <strong>作業フォルダ</strong> の内容を破棄して元に戻したい場合、<code>git reset --hard HEAD</code>を実行すると、
+最新のコミットの状態に <strong>作業フォルダ</strong> も <strong>ステージングエリア</strong> も強制的に更新されます。</p>
+<p>ただし、<strong>作業フォルダ</strong>の変更が完全に失なわれるため注意して実行してください。</p>
 <h3 id="gitのコマンドラインインターフェイス">Gitのコマンドラインインターフェイス</h3>
 <p>本講義で紹介されているGitのコマンドラインインターフェイスと<a href="https://git-scm.com/book/ja/v2">Pro Git</a>の説明を関連づけました。</p>
 <p>コマンドの使い方の詳細は<a href="https://git-scm.com/book/ja/v2">Pro Git</a>を確認ください。</p>
@@ -295,9 +405,9 @@ Gitはブロブとツリーとコミットで管理されるシンプルなデ�
         </div>
     </div>
 </footer>
-        <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/9.1.3/mermaid.min.js" integrity="sha512-E/owfVh8/U1xwhvIT4HSI064DRc1Eo/xf7AYax84rt9gVqA8tc/JNH/lvTl1tuw9PUHQIMGUtObkjYkgRjFqAA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script>
-            mermaid.initialize({ startOnLoad: true, sequence: { mirrorActors: false } });
+            mermaid.initialize({ startOnLoad: true});
         </script>
         
     </body>
