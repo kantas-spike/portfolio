@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>Copyright 2022 kanta&#39;s spike</copyright>
-    <lastBuildDate>Sun, 24 Jul 2022 08:11:18 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 27 Jul 2022 10:44:53 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugoでtailwindcssを使いたい</title>
+      <link>https://kantas-spike.github.io/portfolio/2022/07/13-hugo-with-tailwindcss/</link>
+      <pubDate>Wed, 27 Jul 2022 10:44:53 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/2022/07/13-hugo-with-tailwindcss/</guid>
+      <description>&lt;p&gt;Hugoで&lt;strong&gt;PostCSS&lt;/strong&gt;のプラグインとして&lt;strong&gt;tailwindcss&lt;/strong&gt;を使いたい。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>HugoでSVGを埋め込みたい</title>
       <link>https://kantas-spike.github.io/portfolio/2022/07/12-hugo-with-svg/</link>
