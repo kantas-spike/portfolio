@@ -45,8 +45,8 @@ module.exports = {
 
 ### 解決策
 
-いくつか方法がある。本サイトでは、トリッキーだがシンプルな方法2を採用している。
-方法1は、bundlerツールのインストールや設定が複雑なため採用しない。
+いくつか方法がある。本サイトでは、トリッキーだがシンプルな[方法2](#方法2-hugoのpostcss機能を利用する)を採用している。
+[方法1](#方法1-cssファイルの生成はwebpack-などのbundlerツールにまかせる) は、bundlerツールのインストールや設定が複雑なため採用しない。
 
 #### 方法1： CSSファイルの生成は、webpack などのbundlerツールにまかせる
 
@@ -98,12 +98,12 @@ Hugoには、リソースとして、`assets`フォルダに格納した`css`フ
 この機能を利用すれば、**PostCSS**をプリプロセッサにして**tailwindcss**を利用できる。
 
 しかし、**tailwindcss** は、設定ファイルの`content`に指定されたCSSファイルやHTMLファイルを解析し、使用されているユーティリティクラスのみ抽出しCSSファイルに保存する。
-そのため、HTMLファイルの変更ごとに、**PostCSS**関数を実行する必要がある。
+そのため、解析対象のCSSファイルやHTMLファイルが更新されるたびに、**PostCSS**関数を実行する必要がある。
 
-ただ、Hugoの**PostCSS**関数は、インプットのCSSファイルに変更がなければ処理を行わないため、HTMLファイルの変更時などはCSSファイルが更新されない。
+ただ、Hugoの**PostCSS**関数は、インプットのCSSファイルに変更がなければ処理を行わないため、たとえ解析対象のファイルが更新されたとしても、**PostCSS**関数が実行されないため、CSSファイルが処理されない。
 
-そこで、開発時は、[resources.ExecuteAsTemplate](https://gohugo.io/hugo-pipes/resource-from-template/) 関数を使って、画面更新毎に、擬似的にCSSファイル名を変更させて、
-毎回 **PostCSS**関数が実行されるようにしている。
+そこで、[resources.ExecuteAsTemplate](https://gohugo.io/hugo-pipes/resource-from-template/) 関数を使い、開発時は画面更新毎に、擬似的にCSSファイル名を変更させて、
+毎回、強制的に**PostCSS**関数が実行されるようにする。
 
 ~~~html
     {{- $css := resources.Get "css/theme.css" -}}
