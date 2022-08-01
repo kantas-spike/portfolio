@@ -36,11 +36,7 @@
             <a href="https://kantas-spike.github.io/portfolio/ihc" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">IHC</a>
     </nav>
 </div><main id="content" class="container mx-auto bg-surface pt-4 pb-8">
-<h3 class="page_h3 my-4 mx-4"><i class="fa-solid fa-tag"></i> python <span class="text-sm">(<a class="normal_link" href="https://kantas-spike.github.io/portfolio/tags/">他のタグ..</a>)</span></h2>
-
-<section class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-2 my-4 mx-4">
-    
-        <div class="area_border  px-4 py-3">
+<div class="area_border  px-4 py-3 mx-4 pb-4">
     
 
 
@@ -69,69 +65,50 @@
         <p>背景色にあったテキスト色を選べるようにしたい。
 赤に白い字は読めるが、薄黄に白い字は読めない。</p>
 <p>背景色とテキスト色の差から文字色を変更できるようにしたい。</p>
+<ul>
+<li>赤に白い字</li>
+</ul>
+<div class="rawhtml"><div class="bg-[#e63110] w-1/3 h-24 flex justify-center items-center">
+<div class="text-white text-3xl">赤に白</div>
+</div>
+</div><ul>
+<li>薄黄に白い字(読めない)</li>
+</ul>
+<div class="rawhtml"><div class="bg-yellow-50 w-1/3 h-24 flex justify-center items-center">
+<div class="text-white text-3xl">薄黄に白</div>
+</div>
+</div><h3 id="解決策">解決策</h3>
+<p>2つの色の相対輝度を求めて、そのコントラスト比から判断する。</p>
+<p><a href="https://www.w3.org/TR/2008/REC-WCAG20-20081211/#relativeluminancedef">Web Content Accessibility Guidelines</a>のサイトによると、
+コントラスト比が最低でも4.5になるようにする必要がある。</p>
+<p>背景色と文字色(白)のコントラスト比が4.5以上の場合は文字色を白のままに、それ以外は、文字色を黒に変える。</p>
+<h4 id="相対輝度">相対輝度</h4>
+<p>相対輝度(<strong>L</strong>)の定義は以下になる。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">L = 0.2126 * R + 0.7152 * G + 0.0722 * B
+</span></span></code></pre></div><p>そして、<strong>R</strong>、<strong>G</strong>、<strong>B</strong>の定義は以下になる。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">if RsRGB &lt;= 0.03928 then R = RsRGB/12.92 else R = ((RsRGB+0.055)/1.055) ^ 2.4
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">if GsRGB &lt;= 0.03928 then G = GsRGB/12.92 else G = ((GsRGB+0.055)/1.055) ^ 2.4
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">if BsRGB &lt;= 0.03928 then B = BsRGB/12.92 else B = ((BsRGB+0.055)/1.055) ^ 2.4
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">ただし、
+</span></span><span class="line"><span class="cl">RsRGB = R8bit/255
+</span></span><span class="line"><span class="cl">GsRGB = G8bit/255
+</span></span><span class="line"><span class="cl">BsRGB = B8bit/255
+</span></span></code></pre></div><h4 id="コントラスト比">コントラスト比</h4>
+<p>また、コントラスト比の定義は以下になる。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">(L1 + 0.05) / (L2 + 0.05)
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">※ L1は明るい色の相対輝度、L2は暗い色の相対輝度
+</span></span></code></pre></div><h3 id="参考">参考</h3>
+<ul>
+<li><a href="https://ux.stackexchange.com/questions/82056/how-to-measure-the-contrast-between-any-given-color-and-white/82068#82068">How to measure the contrast between any given color and white?</a></li>
+<li><a href="https://www.w3.org/TR/2008/REC-WCAG20-20081211/#contrast-ratiodef">contrast ratio</a></li>
+<li><a href="https://www.w3.org/TR/2008/REC-WCAG20-20081211/#relativeluminancedef">relative luminance</a></li>
+</ul>
     </div>
 </div>
-    
-        <div class="area_border  px-4 py-3">
-    
-
-
-
-<div class="mb-4">
-    <h3 class="border-b-2 border-primary text-primary-dark text-xl font-bold"><i class="fa-solid fa-note-sticky"></i> <a href="https://kantas-spike.github.io/portfolio/2022/08/16-python-option-parser/">Pythonでコマンドラインオプション取得したい</a></h3>
-    <div class="flex justify-between mt-1 mx-2">
-        <div>
-            <ul class="flex gap-2 justify-end">
-            
-            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/python/">#python</a></li>
-            
-            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/argparse/">#argparse</a></li>
-            
-            </ul>
-        </div>
-        <div>
-            <div class="text-right text-sm font-bold">2022/08/01</div>
-        </div>
-    </div>
-</div>
-
-    <div class="article mx-2">
-        <p>Pythonで作った自作のコマンドラインツールで、コマンドラインオプションを利用したい。</p>
-    </div>
-</div>
-    
-        <div class="area_border  px-4 py-3">
-    
-
-
-
-<div class="mb-4">
-    <h3 class="border-b-2 border-primary text-primary-dark text-xl font-bold"><i class="fa-solid fa-note-sticky"></i> <a href="https://kantas-spike.github.io/portfolio/2022/07/15-python-graph/">Pythonでグラフを描きたい</a></h3>
-    <div class="flex justify-between mt-1 mx-2">
-        <div>
-            <ul class="flex gap-2 justify-end">
-            
-            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/python/">#python</a></li>
-            
-            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/matplotlib/">#matplotlib</a></li>
-            
-            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/numpy/">#numpy</a></li>
-            
-            </ul>
-        </div>
-        <div>
-            <div class="text-right text-sm font-bold">2022/07/31</div>
-        </div>
-    </div>
-</div>
-
-    <div class="article mx-2">
-        <p>プログラムの処理中に出てくる数式の意味を理解するために、Pythonでグラフを描いて数式を確認したい。</p>
-    </div>
-</div>
-    
-</section>
-
 
         </main><footer class="bg-primary-dark text-center text-on-primary-dark fixed bottom-0 w-full h-8">
     <div class="container mx-auto grid grid-cols-3">
