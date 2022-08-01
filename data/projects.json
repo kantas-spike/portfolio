@@ -1,6 +1,34 @@
 {
     "mytools": [
         {
+            "name": "create-color-wheel.py",
+            "full_name": "kantas-spike/create-color-wheel.py",
+            "html_url": "https://github.com/kantas-spike/create-color-wheel.py",
+            "description": "指定した明度(V)の範囲の色相環をまとめて作成します。",
+            "size": 0,
+            "pushed_at": "2022-08-01T07:42:29Z",
+            "project_type": "mytools",
+            "langs": [
+                "Python"
+            ],
+            "merged": []
+        },
+        {
+            "name": "slide2video.py",
+            "full_name": "kantas-spike/slide2video.py",
+            "html_url": "https://github.com/kantas-spike/slide2video.py",
+            "description": "Blenderを利用して、スライド資料と、その資料用の音声データから動画編集ファイルを作成するツールです。",
+            "size": 22,
+            "pushed_at": "2022-07-26T07:19:42Z",
+            "project_type": "mytools",
+            "langs": [
+                "Python",
+                "Shell",
+                "Makefile"
+            ],
+            "merged": []
+        },
+        {
             "name": "repo-info.py",
             "full_name": "kantas-spike/repo-info.py",
             "html_url": "https://github.com/kantas-spike/repo-info.py",
@@ -31,21 +59,6 @@
             "merged": []
         },
         {
-            "name": "slide2video.py",
-            "full_name": "kantas-spike/slide2video.py",
-            "html_url": "https://github.com/kantas-spike/slide2video.py",
-            "description": "Blenderを利用して、スライド資料と、その資料用の音声データから動画編集ファイルを作成するツールです。",
-            "size": 20,
-            "pushed_at": "2022-07-11T21:09:05Z",
-            "project_type": "mytools",
-            "langs": [
-                "Python",
-                "Shell",
-                "Makefile"
-            ],
-            "merged": []
-        },
-        {
             "name": "odp2jpg.sh",
             "full_name": "kantas-spike/odp2jpg.sh",
             "html_url": "https://github.com/kantas-spike/odp2jpg.sh",
@@ -62,12 +75,56 @@
     ],
     "IHC": [
         {
+            "name": "Color-Wheel",
+            "full_name": "kantas-spike/Color-Wheel",
+            "html_url": "https://github.com/kantas-spike/Color-Wheel",
+            "description": "A colorwheel demo tool built with Tkinter",
+            "size": 680,
+            "pushed_at": "2022-08-01T07:48:54Z",
+            "project_type": "IHC",
+            "langs": [
+                "Python"
+            ],
+            "merged": [
+                {
+                    "html_url": "https://github.com/kantas-spike/Color-Wheel/pull/12",
+                    "title": "itr03: 明度を指定可能に (fix #3)",
+                    "state": "closed",
+                    "body": "明度スライダーの変化に応じて、下記のツールで生成した明度別の背景画像を\r\n切り替えるようにした。\r\nhttps://github.com/kantas-spike/create-color-wheel.py",
+                    "created_at": "2022-08-01T07:48:42Z",
+                    "merged_at": "2022-08-01T07:48:55Z",
+                    "closed_at": "2022-08-01T07:48:55Z",
+                    "user": "kantas-spike"
+                },
+                {
+                    "html_url": "https://github.com/kantas-spike/Color-Wheel/pull/11",
+                    "title": "Itr02: ダブルクリックで色を選択可能に",
+                    "state": "closed",
+                    "body": "色選択を容易にするためダブルクリックでの色選択機能を追加 (fix #7)",
+                    "created_at": "2022-07-28T02:19:26Z",
+                    "merged_at": "2022-07-28T02:19:33Z",
+                    "closed_at": "2022-07-28T02:19:33Z",
+                    "user": "kantas-spike"
+                },
+                {
+                    "html_url": "https://github.com/kantas-spike/Color-Wheel/pull/9",
+                    "title": "Itr01: 日本語READMEを追加。formatter,linterの導入",
+                    "state": "closed",
+                    "body": null,
+                    "created_at": "2022-07-28T01:37:12Z",
+                    "merged_at": "2022-07-28T01:37:22Z",
+                    "closed_at": "2022-07-28T01:37:22Z",
+                    "user": "kantas-spike"
+                }
+            ]
+        },
+        {
             "name": "kantas-theme",
             "full_name": "kantas-spike/kantas-theme",
             "html_url": "https://github.com/kantas-spike/kantas-theme",
             "description": "Hugo theme for programming learner portfolio",
-            "size": 42,
-            "pushed_at": "2022-07-23T11:41:22Z",
+            "size": 52,
+            "pushed_at": "2022-07-27T00:05:57Z",
             "project_type": "IHC",
             "langs": [
                 "HTML",
