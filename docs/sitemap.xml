@@ -2,17 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/git/</loc>
-    <lastmod>2022-07-27T17:58:10+09:00</lastmod>
+    <loc>https://kantas-spike.github.io/portfolio/tags/hugo/</loc>
+    <lastmod>2022-08-01T12:09:43+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/python/</loc>
+    <lastmod>2022-08-01T12:09:43+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/2022/08/16-python-option-parser/</loc>
+    <lastmod>2022-08-01T12:09:43+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/</loc>
+    <lastmod>2022-08-01T12:09:43+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/matplotlib/</loc>
+    <lastmod>2022-07-31T21:13:04+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/numpy/</loc>
+    <lastmod>2022-07-31T21:13:04+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/2022/07/15-python-graph/</loc>
+    <lastmod>2022-07-31T21:13:04+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/git/</loc>
     <lastmod>2022-07-27T17:58:10+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/2022/07/14-good-commit-message/</loc>
     <lastmod>2022-07-27T17:58:10+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/hugo/</loc>
-    <lastmod>2022-07-27T10:44:53+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/2022/07/13-hugo-with-tailwindcss/</loc>
     <lastmod>2022-07-27T10:44:53+09:00</lastmod>

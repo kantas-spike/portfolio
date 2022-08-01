@@ -2,9 +2,9 @@
 <html><head>
     <title>kanta's spike</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/portfolio/css/theme.css">
+    <link rel="stylesheet" href="https://kantas-spike.github.io/portfolio/css/theme.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/portfolio/css/syntax.css">
+    <link rel="stylesheet" href="https://kantas-spike.github.io/portfolio/css/syntax.css">
 </head><body class="bg-background text-gray-800 pb-4"><header class="bg-primary-dark text-accent text-6xl font-serif font-extrabold px-4 py-3">
     <h1 class="container mx-auto px-4">kanta&#39;s spike</h1>
 </header>
@@ -29,16 +29,50 @@
 </label>
 <div class="nav_area">
     <nav class="container mx-auto bg-primary text-on-primary text-center flex flex-col md:flex-row justify-start">
-            <a href="/portfolio/" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Home</a>
-            <a href="/portfolio/blog" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Blog</a>
-            <a href="/portfolio/til" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">TIL</a>
-            <a href="/portfolio/mytools" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">My Tools</a>
-            <a href="/portfolio/ihc" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">IHC</a>
+            <a href="https://kantas-spike.github.io/portfolio/" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Home</a>
+            <a href="https://kantas-spike.github.io/portfolio/blog" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Blog</a>
+            <a href="https://kantas-spike.github.io/portfolio/til" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">TIL</a>
+            <a href="https://kantas-spike.github.io/portfolio/mytools" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">My Tools</a>
+            <a href="https://kantas-spike.github.io/portfolio/ihc" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">IHC</a>
     </nav>
 </div><main id="content" class="container mx-auto bg-surface pt-4 pb-8">
 <h3 class="page_h3 my-4 mx-4"><i class="fa-solid fa-tag"></i> hugo <span class="text-sm">(<a class="normal_link" href="https://kantas-spike.github.io/portfolio/tags/">他のタグ..</a>)</span></h2>
 
 <section class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-2 my-4 mx-4">
+    
+        <div class="area_border  px-4 py-3">
+    
+
+
+
+<div class="mb-4">
+    <h3 class="border-b-2 border-primary text-primary-dark text-xl font-bold"><i class="fa-solid fa-note-sticky"></i> <a href="https://kantas-spike.github.io/portfolio/2022/08/16-python-option-parser/">Pythonでコマンドラインオプション取得したい</a></h3>
+    <div class="flex justify-between mt-1 mx-2">
+        <div>
+            <ul class="flex gap-2 justify-end">
+            
+            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/python/">#python</a></li>
+            
+            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/hugo/">#hugo</a></li>
+            
+            </ul>
+        </div>
+        <div>
+            <div class="text-right text-sm font-bold">2022/08/01</div>
+        </div>
+    </div>
+</div>
+
+    <div class="article mx-2">
+        Pythonで作った自作のコマンドラインツールで、コマンドラインオプションを利用したい。
+解決策 argparse を使う。
+argparseでは、オプションだけでなく引数も解析できる。
+また、ヘルプを表示するメソッド(print_usage())などもあり、機能豊富で至れり尽くせりのパッケージになっている。
+例 引数に1つの数値を持つコマンドの場合 usage: hoge.py 5 ArgumentParserのインスタンスにadd_argumentで引数の名前と型を指定すれば、 解析結果として指定した名前の変数に、指定した型で引数が格納される。
+import argparse parser = argparse.ArgumentParser(description=&#39;argparse test&#39;) parser.add_argument(&#39;value&#39;, metavar=&#39;N&#39;, type=int, help=&#39;引数の数値&#39;) args = parser.parse_args([&#39;5&#39;]) # 引数なしで、parse_args()を呼びだすと`sys.argv`から取得 print(args.value, type(args.value)) # 5 &lt;class &#39;int&#39;&gt; が表示 例 引数に1つ以上の複数の数値を持つコマンドの場合 usage: hoge.py 5 6 7 ArgumentParserのインスタンスにadd_argumentにnargs='+'(1つ以上の引数)の指定を追加する。
+ その他のnargsの指定例  nargs=N(整数): N個の引数 nargs='?': 1個の引数。未指定の場合はデフォルト値を採用 nargs='*': 0個以上の複数の引数    import argparse parser = argparse.ArgumentParser(description=&#39;argparse test&#39;) parser.add_argument(&#39;values&#39;, metavar=&#39;N&#39;, type=int, nargs=&#39;+&#39;, help=&#39;引数の数値&#39;) args = parser.parse_args([&#39;5&#39;, &#39;6&#39;, &#39;7&#39;]) print(args.
+    </div>
+</div>
     
         <div class="area_border  px-4 py-3">
     
@@ -293,32 +327,6 @@
 
     <div class="article mx-2">
         <p>Hugoで<a href="https://mermaid-js.github.io/mermaid/#/">mermaid.js</a>を使いたい。</p>
-    </div>
-</div>
-    
-        <div class="area_border  px-4 py-3">
-    
-
-
-
-<div class="mb-4">
-    <h3 class="border-b-2 border-primary text-primary-dark text-xl font-bold"><i class="fa-solid fa-note-sticky"></i> <a href="https://kantas-spike.github.io/portfolio/2022/07/03-hugo-tag-link/">hugoで環境に依存しないタグのリンクを取得したい</a></h3>
-    <div class="flex justify-between mt-1 mx-2">
-        <div>
-            <ul class="flex gap-2 justify-end">
-            
-            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/hugo/">#hugo</a></li>
-            
-            </ul>
-        </div>
-        <div>
-            <div class="text-right text-sm font-bold">2022/07/15</div>
-        </div>
-    </div>
-</div>
-
-    <div class="article mx-2">
-        <p>ページに定義されたタグから環境に依存しないURLを生成したい。</p>
     </div>
 </div>
     

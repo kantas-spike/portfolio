@@ -3,9 +3,9 @@
 	<meta name="generator" content="Hugo 0.97.3" />
     <title>kanta's spike</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/portfolio/css/theme.css">
+    <link rel="stylesheet" href="https://kantas-spike.github.io/portfolio/css/theme.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/portfolio/css/syntax.css">
+    <link rel="stylesheet" href="https://kantas-spike.github.io/portfolio/css/syntax.css">
 </head><body class="bg-background text-gray-800 pb-4"><header class="bg-primary-dark text-accent text-6xl font-serif font-extrabold px-4 py-3">
     <h1 class="container mx-auto px-4">kanta&#39;s spike</h1>
 </header>
@@ -30,11 +30,11 @@
 </label>
 <div class="nav_area">
     <nav class="container mx-auto bg-primary text-on-primary text-center flex flex-col md:flex-row justify-start">
-            <a href="/portfolio/" class="flex-1 text-center no-underline bg-primary-light text-on-primary font-extrabold py-2">Home</a>
-            <a href="/portfolio/blog" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Blog</a>
-            <a href="/portfolio/til" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">TIL</a>
-            <a href="/portfolio/mytools" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">My Tools</a>
-            <a href="/portfolio/ihc" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">IHC</a>
+            <a href="https://kantas-spike.github.io/portfolio/" class="flex-1 text-center no-underline bg-primary-light text-on-primary font-extrabold py-2">Home</a>
+            <a href="https://kantas-spike.github.io/portfolio/blog" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Blog</a>
+            <a href="https://kantas-spike.github.io/portfolio/til" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">TIL</a>
+            <a href="https://kantas-spike.github.io/portfolio/mytools" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">My Tools</a>
+            <a href="https://kantas-spike.github.io/portfolio/ihc" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">IHC</a>
     </nav>
 </div><main id="content" class="container mx-auto bg-surface pt-4 pb-8">
 <div class="article area_border mx-4  px-4 py-3"><p>プログラミング学習記録をまとめたサイトです。</p>
@@ -50,6 +50,70 @@
 <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-2 mt-3 mb-8 mx-4">
 
 
+
+    <div class="area_border  px-4 py-3">
+    
+
+
+
+<div class="mb-4">
+    <h3 class="border-b-2 border-primary text-primary-dark text-xl font-bold"><i class="fa-solid fa-note-sticky"></i> <a href="https://kantas-spike.github.io/portfolio/2022/08/16-python-option-parser/">Pythonでコマンドラインオプション取得したい</a></h3>
+    <div class="flex justify-between mt-1 mx-2">
+        <div>
+            <ul class="flex gap-2 justify-end">
+            
+            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/python/">#python</a></li>
+            
+            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/hugo/">#hugo</a></li>
+            
+            </ul>
+        </div>
+        <div>
+            <div class="text-right text-sm font-bold">2022/08/01</div>
+        </div>
+    </div>
+</div>
+
+    <div class="article mx-2">
+        Pythonで作った自作のコマンドラインツールで、コマンドラインオプションを利用したい。
+解決策 argparse を使う。
+argparseでは、オプションだけでなく引数も解析できる。
+また、ヘルプを表示するメソッド(print_usage())などもあり、機能豊富で至れり尽くせりのパッケージになっている。
+例 引数に1つの数値を持つコマンドの場合 usage: hoge.py 5 ArgumentParserのインスタンスにadd_argumentで引数の名前と型を指定すれば、 解析結果として指定した名前の変数に、指定した型で引数が格納される。
+import argparse parser = argparse.ArgumentParser(description=&#39;argparse test&#39;) parser.add_argument(&#39;value&#39;, metavar=&#39;N&#39;, type=int, help=&#39;引数の数値&#39;) args = parser.parse_args([&#39;5&#39;]) # 引数なしで、parse_args()を呼びだすと`sys.argv`から取得 print(args.value, type(args.value)) # 5 &lt;class &#39;int&#39;&gt; が表示 例 引数に1つ以上の複数の数値を持つコマンドの場合 usage: hoge.py 5 6 7 ArgumentParserのインスタンスにadd_argumentにnargs='+'(1つ以上の引数)の指定を追加する。
+ その他のnargsの指定例  nargs=N(整数): N個の引数 nargs='?': 1個の引数。未指定の場合はデフォルト値を採用 nargs='*': 0個以上の複数の引数    import argparse parser = argparse.ArgumentParser(description=&#39;argparse test&#39;) parser.add_argument(&#39;values&#39;, metavar=&#39;N&#39;, type=int, nargs=&#39;+&#39;, help=&#39;引数の数値&#39;) args = parser.parse_args([&#39;5&#39;, &#39;6&#39;, &#39;7&#39;]) print(args.
+    </div>
+</div>
+
+    <div class="area_border  px-4 py-3">
+    
+
+
+
+<div class="mb-4">
+    <h3 class="border-b-2 border-primary text-primary-dark text-xl font-bold"><i class="fa-solid fa-note-sticky"></i> <a href="https://kantas-spike.github.io/portfolio/2022/07/15-python-graph/">Pythonでグラフを描きたい</a></h3>
+    <div class="flex justify-between mt-1 mx-2">
+        <div>
+            <ul class="flex gap-2 justify-end">
+            
+            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/python/">#python</a></li>
+            
+            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/matplotlib/">#matplotlib</a></li>
+            
+            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/numpy/">#numpy</a></li>
+            
+            </ul>
+        </div>
+        <div>
+            <div class="text-right text-sm font-bold">2022/07/31</div>
+        </div>
+    </div>
+</div>
+
+    <div class="article mx-2">
+        <p>プログラムの処理中に出てくる数式の意味を理解するために、Pythonでグラフを描いて数式を確認したい。</p>
+    </div>
+</div>
 
     <div class="area_border  px-4 py-3">
     
@@ -163,66 +227,48 @@ GitHubを使うためには<code>git</code>を使えないといけません。<
     </div>
 </div>
 
-    <div class="area_border  px-4 py-3">
-    
-
-
-
-<div class="mb-4">
-    <h3 class="border-b-2 border-primary text-primary-dark text-xl font-bold"><i class="fa-solid fa-note-sticky"></i> <a href="https://kantas-spike.github.io/portfolio/2022/07/12-hugo-with-svg/">HugoでSVGを埋め込みたい</a></h3>
-    <div class="flex justify-between mt-1 mx-2">
-        <div>
-            <ul class="flex gap-2 justify-end">
-            
-            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/hugo/">#hugo</a></li>
-            
-            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/svg/">#svg</a></li>
-            
-            </ul>
-        </div>
-        <div>
-            <div class="text-right text-sm font-bold">2022/07/24</div>
-        </div>
-    </div>
-</div>
-
-    <div class="article mx-2">
-        <p>HugoでSVGのアイコンを埋め込みたい。</p>
-    </div>
-</div>
-
-    <div class="area_border  px-4 py-3">
-    
-
-
-
-<div class="mb-4">
-    <h3 class="border-b-2 border-primary text-primary-dark text-xl font-bold"><i class="fa-solid fa-note-sticky"></i> <a href="https://kantas-spike.github.io/portfolio/2022/07/11-hugo-escape-shortcodes/">Hugoでショートコードの記述をエスケープして表示したい</a></h3>
-    <div class="flex justify-between mt-1 mx-2">
-        <div>
-            <ul class="flex gap-2 justify-end">
-            
-            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/hugo/">#hugo</a></li>
-            
-            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/markdown/">#markdown</a></li>
-            
-            </ul>
-        </div>
-        <div>
-            <div class="text-right text-sm font-bold">2022/07/23</div>
-        </div>
-    </div>
-</div>
-
-    <div class="article mx-2">
-        <p>説明用に、ショートコードをエスケープして表記方法を記載したい。</p>
-    </div>
-</div>
-
 </div>
 
 <h3 class="mx-4 mt-6 page_h3"><i class="fa-solid fa-square-parking"></i> 最近のプロジェクト</h3>
 <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-2 mt-3 mb-8 mx-4">
+
+    
+
+
+<div class="area_border p-2 relative  px-4 pb-7">
+    <h3 class="mb-4 text-lg"><a class="normal_link" href="https://github.com/kantas-spike/create-color-wheel.py"><i class="fa-solid fa-screwdriver-wrench"></i> kantas-spike/create-color-wheel.py</a></h3>
+    <div class="mx-2 mb-4">
+        指定した明度(V)の範囲の色相環をまとめて作成します。
+    </div>
+    
+    <div class="flex absolute bottom-1 right-2 text-gray-600">
+        <h4 class="mr-2">使用言語: </h4>
+        
+            <div class="mr-2">Python</div>
+        
+    </div>
+</div>
+
+    
+
+
+<div class="area_border p-2 relative  px-4 pb-7">
+    <h3 class="mb-4 text-lg"><a class="normal_link" href="https://github.com/kantas-spike/slide2video.py"><i class="fa-solid fa-screwdriver-wrench"></i> kantas-spike/slide2video.py</a></h3>
+    <div class="mx-2 mb-4">
+        Blenderを利用して、スライド資料と、その資料用の音声データから動画編集ファイルを作成するツールです。
+    </div>
+    
+    <div class="flex absolute bottom-1 right-2 text-gray-600">
+        <h4 class="mr-2">使用言語: </h4>
+        
+            <div class="mr-2">Python</div>
+        
+            <div class="mr-2">Shell</div>
+        
+            <div class="mr-2">Makefile</div>
+        
+    </div>
+</div>
 
     
 
@@ -270,27 +316,6 @@ GitHubを使うためには<code>git</code>を使えないといけません。<
 
 
 <div class="area_border p-2 relative  px-4 pb-7">
-    <h3 class="mb-4 text-lg"><a class="normal_link" href="https://github.com/kantas-spike/slide2video.py"><i class="fa-solid fa-screwdriver-wrench"></i> kantas-spike/slide2video.py</a></h3>
-    <div class="mx-2 mb-4">
-        Blenderを利用して、スライド資料と、その資料用の音声データから動画編集ファイルを作成するツールです。
-    </div>
-    
-    <div class="flex absolute bottom-1 right-2 text-gray-600">
-        <h4 class="mr-2">使用言語: </h4>
-        
-            <div class="mr-2">Python</div>
-        
-            <div class="mr-2">Shell</div>
-        
-            <div class="mr-2">Makefile</div>
-        
-    </div>
-</div>
-
-    
-
-
-<div class="area_border p-2 relative  px-4 pb-7">
     <h3 class="mb-4 text-lg"><a class="normal_link" href="https://github.com/kantas-spike/odp2jpg.sh"><i class="fa-solid fa-screwdriver-wrench"></i> kantas-spike/odp2jpg.sh</a></h3>
     <div class="mx-2 mb-4">
         Convert each slide in LibreOffice&#39;s Impress into a JPEG file.
@@ -312,6 +337,38 @@ GitHubを使うためには<code>git</code>を使えないといけません。<
 
 <h3 class="mx-4 mt-6 page_h3"><i class="fa-solid fa-arrow-rotate-right"></i> 最近のインクリメンタルハッキングサイクル</h3>
 <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-2 mt-3 mb-8 mx-4">
+    
+        
+
+
+
+
+<div class="area_border p-2 relative  px-4 pb-7">
+    <h3 class="mb-4 text-lg"><a class="normal_link" href="https://github.com/kantas-spike/Color-Wheel"><i class="fa-solid fa-arrows-spin"></i> kantas-spike/Color-Wheel</a></h3>
+    <div class="mx-2 mb-4">
+        A colorwheel demo tool built with Tkinter
+    </div>
+    
+    <div class="mb-2 ml-2">
+        <h4 class="font-bold text-gray-600"><i class="fa-solid fa-code-merge"></i> 最近のイテレーション <span class="pl-1 font-normal">(<a class="tag_link" href="https://github.com/kantas-spike/Color-Wheel/pulls?q=is%3Apr+is%3Aclosed">全マージ済 PR</a>)</span></h4>
+        <ul class="normal_ul">
+        
+            <li><a class="tag_link" href="https://github.com/kantas-spike/Color-Wheel/pull/12">itr03: 明度を指定可能に (fix #3)</a></li>
+        
+            <li><a class="tag_link" href="https://github.com/kantas-spike/Color-Wheel/pull/11">Itr02: ダブルクリックで色を選択可能に</a></li>
+        
+            <li><a class="tag_link" href="https://github.com/kantas-spike/Color-Wheel/pull/9">Itr01: 日本語READMEを追加。formatter,linterの導入</a></li>
+        
+        </ul>
+    </div>
+    
+    <div class="flex absolute bottom-1 right-2 text-gray-600">
+        <h4 class="mr-2">使用言語: </h4>
+        
+            <div class="mr-2">Python</div>
+        
+    </div>
+</div>
     
         
 

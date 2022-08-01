@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>python on kanta&#39;s spike</title>
+    <link>https://kantas-spike.github.io/portfolio/tags/python/</link>
+    <description>Recent content in python on kanta&#39;s spike</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <copyright>Copyright 2022 kanta&#39;s spike</copyright>
+    <lastBuildDate>Mon, 01 Aug 2022 12:09:43 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pythonでコマンドラインオプション取得したい</title>
+      <link>https://kantas-spike.github.io/portfolio/2022/08/16-python-option-parser/</link>
+      <pubDate>Mon, 01 Aug 2022 12:09:43 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/2022/08/16-python-option-parser/</guid>
+      <description>Pythonで作った自作のコマンドラインツールで、コマンドラインオプションを利用したい。
+解決策 argparse を使う。
+argparseでは、オプションだけでなく引数も解析できる。
+また、ヘルプを表示するメソッド(print_usage())などもあり、機能豊富で至れり尽くせりのパッケージになっている。
+例 引数に1つの数値を持つコマンドの場合 usage: hoge.py 5 ArgumentParserのインスタンスにadd_argumentで引数の名前と型を指定すれば、 解析結果として指定した名前の変数に、指定した型で引数が格納される。
+import argparse parser = argparse.ArgumentParser(description=&amp;#39;argparse test&amp;#39;) parser.add_argument(&amp;#39;value&amp;#39;, metavar=&amp;#39;N&amp;#39;, type=int, help=&amp;#39;引数の数値&amp;#39;) args = parser.parse_args([&amp;#39;5&amp;#39;]) # 引数なしで、parse_args()を呼びだすと`sys.argv`から取得 print(args.value, type(args.value)) # 5 &amp;lt;class &amp;#39;int&amp;#39;&amp;gt; が表示 例 引数に1つ以上の複数の数値を持つコマンドの場合 usage: hoge.py 5 6 7 ArgumentParserのインスタンスにadd_argumentにnargs=&#39;+&#39;(1つ以上の引数)の指定を追加する。
+ その他のnargsの指定例  nargs=N(整数): N個の引数 nargs=&#39;?&#39;: 1個の引数。未指定の場合はデフォルト値を採用 nargs=&#39;*&#39;: 0個以上の複数の引数    import argparse parser = argparse.ArgumentParser(description=&amp;#39;argparse test&amp;#39;) parser.add_argument(&amp;#39;values&amp;#39;, metavar=&amp;#39;N&amp;#39;, type=int, nargs=&amp;#39;+&amp;#39;, help=&amp;#39;引数の数値&amp;#39;) args = parser.parse_args([&amp;#39;5&amp;#39;, &amp;#39;6&amp;#39;, &amp;#39;7&amp;#39;]) print(args.</description>
+    </item>
+    
+    <item>
+      <title>Pythonでグラフを描きたい</title>
+      <link>https://kantas-spike.github.io/portfolio/2022/07/15-python-graph/</link>
+      <pubDate>Sun, 31 Jul 2022 21:13:04 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/2022/07/15-python-graph/</guid>
+      <description>&lt;p&gt;プログラムの処理中に出てくる数式の意味を理解するために、Pythonでグラフを描いて数式を確認したい。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
