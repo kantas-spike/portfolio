@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>argparse on kanta&#39;s spike</title>
+    <link>https://kantas-spike.github.io/portfolio/tags/argparse/</link>
+    <description>Recent content in argparse on kanta&#39;s spike</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <copyright>Copyright 2022 kanta&#39;s spike</copyright>
+    <lastBuildDate>Mon, 01 Aug 2022 12:09:43 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/argparse/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pythonでコマンドラインオプション取得したい</title>
+      <link>https://kantas-spike.github.io/portfolio/2022/08/16-python-option-parser/</link>
+      <pubDate>Mon, 01 Aug 2022 12:09:43 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/2022/08/16-python-option-parser/</guid>
+      <description>&lt;p&gt;Pythonで作った自作のコマンドラインツールで、コマンドラインオプションを利用したい。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

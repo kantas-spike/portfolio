@@ -49,7 +49,7 @@
             
             <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/python/">#python</a></li>
             
-            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/hugo/">#hugo</a></li>
+            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/argparse/">#argparse</a></li>
             
             </ul>
         </div>
@@ -61,11 +61,11 @@
 
     <div class="article mx-2">
         <p>Pythonで作った自作のコマンドラインツールで、コマンドラインオプションを利用したい。</p>
-<h2 id="解決策">解決策</h2>
+<h3 id="解決策">解決策</h3>
 <p><a href="https://docs.python.org/ja/3/library/argparse.html">argparse</a> を使う。</p>
 <p><a href="https://docs.python.org/ja/3/library/argparse.html">argparse</a>では、オプションだけでなく引数も解析できる。</p>
 <p>また、ヘルプを表示するメソッド(<code>print_usage()</code>)などもあり、機能豊富で至れり尽くせりのパッケージになっている。</p>
-<h3 id="例-引数に1つの数値を持つコマンドの場合">例 引数に1つの数値を持つコマンドの場合</h3>
+<h4 id="例-引数に1つの数値を持つコマンドの場合">例 引数に1つの数値を持つコマンドの場合</h4>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">usage: hoge.py 5
 </span></span></code></pre></div><p><code>ArgumentParser</code>のインスタンスに<code>add_argument</code>で引数の名前と型を指定すれば、
 解析結果として指定した名前の変数に、指定した型で引数が格納される。</p>
@@ -75,7 +75,7 @@
 </span></span><span class="line"><span class="cl"><span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;value&#39;</span><span class="p">,</span> <span class="n">metavar</span><span class="o">=</span><span class="s1">&#39;N&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="nb">int</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s1">&#39;引数の数値&#39;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="n">args</span> <span class="o">=</span> <span class="n">parser</span><span class="o">.</span><span class="n">parse_args</span><span class="p">([</span><span class="s1">&#39;5&#39;</span><span class="p">])</span> <span class="c1"># 引数なしで、parse_args()を呼びだすと`sys.argv`から取得</span>
 </span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">value</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">value</span><span class="p">))</span>  <span class="c1"># 5 &lt;class &#39;int&#39;&gt; が表示</span>
-</span></span></code></pre></div><h3 id="例-引数に1つ以上の複数の数値を持つコマンドの場合">例 引数に1つ以上の複数の数値を持つコマンドの場合</h3>
+</span></span></code></pre></div><h4 id="例-引数に1つ以上の複数の数値を持つコマンドの場合">例 引数に1つ以上の複数の数値を持つコマンドの場合</h4>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">usage: hoge.py 5 6 7
 </span></span></code></pre></div><p><code>ArgumentParser</code>のインスタンスに<code>add_argument</code>に<code>nargs='+'</code>(1つ以上の引数)の指定を追加する。</p>
 <ul>
@@ -93,7 +93,7 @@
 </span></span><span class="line"><span class="cl"><span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;values&#39;</span><span class="p">,</span> <span class="n">metavar</span><span class="o">=</span><span class="s1">&#39;N&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="nb">int</span><span class="p">,</span> <span class="n">nargs</span><span class="o">=</span><span class="s1">&#39;+&#39;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s1">&#39;引数の数値&#39;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="n">args</span> <span class="o">=</span> <span class="n">parser</span><span class="o">.</span><span class="n">parse_args</span><span class="p">([</span><span class="s1">&#39;5&#39;</span><span class="p">,</span> <span class="s1">&#39;6&#39;</span><span class="p">,</span> <span class="s1">&#39;7&#39;</span><span class="p">])</span>
 </span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">values</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">values</span><span class="p">))</span>  <span class="c1"># [5, 6, 7] &lt;class &#39;list&#39;&gt; が表示</span>
-</span></span></code></pre></div><h3 id="例-フラグオプションを持つコマンドの場合">例 フラグオプションを持つコマンドの場合</h3>
+</span></span></code></pre></div><h4 id="例-フラグオプションを持つコマンドの場合">例 フラグオプションを持つコマンドの場合</h4>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">usage: hoge.py -i
 </span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">argparse</span>
 </span></span><span class="line"><span class="cl">
@@ -103,7 +103,7 @@
 </span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">i</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">i</span><span class="p">))</span>  <span class="c1"># True &lt;class &#39;bool&#39;&gt; が表示</span>
 </span></span><span class="line"><span class="cl"><span class="n">args</span> <span class="o">=</span> <span class="n">parser</span><span class="o">.</span><span class="n">parse_args</span><span class="p">([])</span>
 </span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">i</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">i</span><span class="p">))</span>  <span class="c1"># False &lt;class &#39;bool&#39;&gt; が表示</span>
-</span></span></code></pre></div><h3 id="例-引数を1つ取るオプションを持つコマンドの場合">例 引数を1つ取るオプションを持つコマンドの場合</h3>
+</span></span></code></pre></div><h4 id="例-引数を1つ取るオプションを持つコマンドの場合">例 引数を1つ取るオプションを持つコマンドの場合</h4>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">usage: hoge.py --input foo.txt
 </span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">argparse</span>
 </span></span><span class="line"><span class="cl">
@@ -113,11 +113,10 @@
 </span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">input</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">input</span><span class="p">))</span>  <span class="c1"># foo.txt &lt;class &#39;str&#39;&gt; が表示</span>
 </span></span><span class="line"><span class="cl"><span class="n">args</span> <span class="o">=</span> <span class="n">parser</span><span class="o">.</span><span class="n">parse_args</span><span class="p">([])</span> <span class="c1"># 引数未指定時</span>
 </span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">n</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">n</span><span class="p">))</span>  <span class="c1"># エラーが発生 : error: the following arguments are required: --input</span>
-</span></span></code></pre></div><h2 id="参考">参考</h2>
+</span></span></code></pre></div><h3 id="参考">参考</h3>
 <ul>
 <li><a href="https://docs.python.org/ja/3/library/argparse.html">argparse</a></li>
 </ul>
-
     </div>
 </div>
 

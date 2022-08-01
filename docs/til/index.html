@@ -54,7 +54,7 @@
             
             <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/python/">#python</a></li>
             
-            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/hugo/">#hugo</a></li>
+            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/argparse/">#argparse</a></li>
             
             </ul>
         </div>
@@ -65,13 +65,7 @@
 </div>
 
     <div class="article mx-2">
-        Pythonで作った自作のコマンドラインツールで、コマンドラインオプションを利用したい。
-解決策 argparse を使う。
-argparseでは、オプションだけでなく引数も解析できる。
-また、ヘルプを表示するメソッド(print_usage())などもあり、機能豊富で至れり尽くせりのパッケージになっている。
-例 引数に1つの数値を持つコマンドの場合 usage: hoge.py 5 ArgumentParserのインスタンスにadd_argumentで引数の名前と型を指定すれば、 解析結果として指定した名前の変数に、指定した型で引数が格納される。
-import argparse parser = argparse.ArgumentParser(description=&#39;argparse test&#39;) parser.add_argument(&#39;value&#39;, metavar=&#39;N&#39;, type=int, help=&#39;引数の数値&#39;) args = parser.parse_args([&#39;5&#39;]) # 引数なしで、parse_args()を呼びだすと`sys.argv`から取得 print(args.value, type(args.value)) # 5 &lt;class &#39;int&#39;&gt; が表示 例 引数に1つ以上の複数の数値を持つコマンドの場合 usage: hoge.py 5 6 7 ArgumentParserのインスタンスにadd_argumentにnargs='+'(1つ以上の引数)の指定を追加する。
- その他のnargsの指定例  nargs=N(整数): N個の引数 nargs='?': 1個の引数。未指定の場合はデフォルト値を採用 nargs='*': 0個以上の複数の引数    import argparse parser = argparse.ArgumentParser(description=&#39;argparse test&#39;) parser.add_argument(&#39;values&#39;, metavar=&#39;N&#39;, type=int, nargs=&#39;+&#39;, help=&#39;引数の数値&#39;) args = parser.parse_args([&#39;5&#39;, &#39;6&#39;, &#39;7&#39;]) print(args.
+        <p>Pythonで作った自作のコマンドラインツールで、コマンドラインオプションを利用したい。</p>
     </div>
 </div>
     
