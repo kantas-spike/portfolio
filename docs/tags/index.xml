@@ -7,7 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>Copyright 2022 kanta&#39;s spike</copyright>
-    <lastBuildDate>Mon, 01 Aug 2022 23:45:37 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 03 Aug 2022 23:01:11 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>python</title>
+      <link>https://kantas-spike.github.io/portfolio/tags/python/</link>
+      <pubDate>Wed, 03 Aug 2022 23:01:11 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tkinter</title>
+      <link>https://kantas-spike.github.io/portfolio/tags/tkinter/</link>
+      <pubDate>Wed, 03 Aug 2022 23:01:11 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/tags/tkinter/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>color</title>
       <link>https://kantas-spike.github.io/portfolio/tags/color/</link>
@@ -23,15 +41,6 @@
       <pubDate>Mon, 01 Aug 2022 23:45:37 +0900</pubDate>
       
       <guid>https://kantas-spike.github.io/portfolio/tags/html/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>python</title>
-      <link>https://kantas-spike.github.io/portfolio/tags/python/</link>
-      <pubDate>Mon, 01 Aug 2022 23:45:37 +0900</pubDate>
-      
-      <guid>https://kantas-spike.github.io/portfolio/tags/python/</guid>
       <description></description>
     </item>
     
