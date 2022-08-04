@@ -79,13 +79,53 @@
             "full_name": "kantas-spike/Color-Wheel",
             "html_url": "https://github.com/kantas-spike/Color-Wheel",
             "description": "A colorwheel demo tool built with Tkinter",
-            "size": 1607,
-            "pushed_at": "2022-08-01T15:57:18Z",
+            "size": 1975,
+            "pushed_at": "2022-08-04T08:27:54Z",
             "project_type": "IHC",
             "langs": [
                 "Python"
             ],
             "merged": [
+                {
+                    "html_url": "https://github.com/kantas-spike/Color-Wheel/pull/18",
+                    "title": "Itr07: 配色パターンに合せて複数色を選択等",
+                    "state": "closed",
+                    "body": null,
+                    "created_at": "2022-08-04T08:27:45Z",
+                    "merged_at": "2022-08-04T08:27:55Z",
+                    "closed_at": "2022-08-04T08:27:55Z",
+                    "user": "kantas-spike"
+                },
+                {
+                    "html_url": "https://github.com/kantas-spike/Color-Wheel/pull/16",
+                    "title": "itr06: 気に入った色を保存可能に",
+                    "state": "closed",
+                    "body": "配色を検討できるように、気に入った色を保存可能にした",
+                    "created_at": "2022-08-02T07:28:57Z",
+                    "merged_at": "2022-08-02T07:29:03Z",
+                    "closed_at": "2022-08-02T07:29:03Z",
+                    "user": "kantas-spike"
+                },
+                {
+                    "html_url": "https://github.com/kantas-spike/Color-Wheel/pull/15",
+                    "title": "fix: スクリーンショット画像 ファイル名の修正漏れ対応",
+                    "state": "closed",
+                    "body": null,
+                    "created_at": "2022-08-02T00:08:13Z",
+                    "merged_at": "2022-08-02T00:08:26Z",
+                    "closed_at": "2022-08-02T00:08:26Z",
+                    "user": "kantas-spike"
+                },
+                {
+                    "html_url": "https://github.com/kantas-spike/Color-Wheel/pull/14",
+                    "title": "Itr05: 選択した色をクリップボードにコピー可能に",
+                    "state": "closed",
+                    "body": null,
+                    "created_at": "2022-08-02T00:02:43Z",
+                    "merged_at": "2022-08-02T00:02:54Z",
+                    "closed_at": "2022-08-02T00:02:54Z",
+                    "user": "kantas-spike"
+                },
                 {
                     "html_url": "https://github.com/kantas-spike/Color-Wheel/pull/13",
                     "title": "itr04: コントラスト比に応じて文字色を変更 (fix #10)",
@@ -133,8 +173,8 @@
             "full_name": "kantas-spike/kantas-theme",
             "html_url": "https://github.com/kantas-spike/kantas-theme",
             "description": "Hugo theme for programming learner portfolio",
-            "size": 52,
-            "pushed_at": "2022-07-27T00:05:57Z",
+            "size": 56,
+            "pushed_at": "2022-08-03T19:11:07Z",
             "project_type": "IHC",
             "langs": [
                 "HTML",
@@ -142,6 +182,16 @@
                 "JavaScript"
             ],
             "merged": [
+                {
+                    "html_url": "https://github.com/kantas-spike/kantas-theme/pull/20",
+                    "title": "Itr05: mathjax対応",
+                    "state": "closed",
+                    "body": null,
+                    "created_at": "2022-08-03T19:10:40Z",
+                    "merged_at": "2022-08-03T19:11:07Z",
+                    "closed_at": "2022-08-03T19:11:07Z",
+                    "user": "kantas-spike"
+                },
                 {
                     "html_url": "https://github.com/kantas-spike/kantas-theme/pull/19",
                     "title": "Itr04: レスポンシブ対応：メニュー表示",
