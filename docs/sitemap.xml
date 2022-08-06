@@ -2,25 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/python/</loc>
-    <lastmod>2022-08-03T23:01:11+09:00</lastmod>
+    <loc>https://kantas-spike.github.io/portfolio/tags/html/</loc>
+    <lastmod>2022-08-06T16:02:01+09:00</lastmod>
   </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/2022/08/18-rotate-item-with-python/</loc>
-    <lastmod>2022-08-03T23:01:11+09:00</lastmod>
+    <loc>https://kantas-spike.github.io/portfolio/tags/pdf/</loc>
+    <lastmod>2022-08-06T16:02:01+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/2022/08/20-link-to-the-page-of-pdf/</loc>
+    <lastmod>2022-08-06T16:02:01+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/</loc>
-    <lastmod>2022-08-03T23:01:11+09:00</lastmod>
+    <lastmod>2022-08-06T16:02:01+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/python/</loc>
+    <lastmod>2022-08-06T15:59:38+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/tkinter/</loc>
+    <lastmod>2022-08-06T15:59:38+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/2022/08/19-fill-bg-color-with-tkinter/</loc>
+    <lastmod>2022-08-06T15:59:38+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/2022/08/18-rotate-item-with-python/</loc>
     <lastmod>2022-08-03T23:01:11+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/2022/08/17-color-contrast/</loc>
     <lastmod>2022-08-01T23:45:37+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/color/</loc>
-    <lastmod>2022-08-01T23:45:37+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/html/</loc>
     <lastmod>2022-08-01T23:45:37+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/argparse/</loc>

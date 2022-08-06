@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>Copyright 2022 kanta&#39;s spike</copyright>
-    <lastBuildDate>Wed, 03 Aug 2022 23:01:11 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 06 Aug 2022 15:59:38 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tkinterで部品の背景色を変更したい</title>
+      <link>https://kantas-spike.github.io/portfolio/2022/08/19-fill-bg-color-with-tkinter/</link>
+      <pubDate>Sat, 06 Aug 2022 15:59:38 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/2022/08/19-fill-bg-color-with-tkinter/</guid>
+      <description>&lt;p&gt;Tkinterでウィンドウの背景色を変更した時に、部品の周りに異なる背景色が表示される。
+ウィンドウの背景色に合せるために、Tkinterで部品の背景色を変更したい。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Pythonで図形を回転させたい</title>
       <link>https://kantas-spike.github.io/portfolio/2022/08/18-rotate-item-with-python/</link>

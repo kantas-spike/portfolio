@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PDF on kanta&#39;s spike</title>
+    <link>https://kantas-spike.github.io/portfolio/tags/pdf/</link>
+    <description>Recent content in PDF on kanta&#39;s spike</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <copyright>Copyright 2022 kanta&#39;s spike</copyright>
+    <lastBuildDate>Sat, 06 Aug 2022 16:02:01 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/pdf/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PDFの特定ページにリンクを貼りたい</title>
+      <link>https://kantas-spike.github.io/portfolio/2022/08/20-link-to-the-page-of-pdf/</link>
+      <pubDate>Sat, 06 Aug 2022 16:02:01 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/2022/08/20-link-to-the-page-of-pdf/</guid>
+      <description>&lt;p&gt;PDFの特定ページにリンクを貼りたい。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -7,11 +7,29 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>Copyright 2022 kanta&#39;s spike</copyright>
-    <lastBuildDate>Wed, 03 Aug 2022 23:01:11 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 06 Aug 2022 16:02:01 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>html</title>
+      <link>https://kantas-spike.github.io/portfolio/tags/html/</link>
+      <pubDate>Sat, 06 Aug 2022 16:02:01 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/tags/html/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PDF</title>
+      <link>https://kantas-spike.github.io/portfolio/tags/pdf/</link>
+      <pubDate>Sat, 06 Aug 2022 16:02:01 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/tags/pdf/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>python</title>
       <link>https://kantas-spike.github.io/portfolio/tags/python/</link>
-      <pubDate>Wed, 03 Aug 2022 23:01:11 +0900</pubDate>
+      <pubDate>Sat, 06 Aug 2022 15:59:38 +0900</pubDate>
       
       <guid>https://kantas-spike.github.io/portfolio/tags/python/</guid>
       <description></description>
@@ -20,7 +38,7 @@
     <item>
       <title>tkinter</title>
       <link>https://kantas-spike.github.io/portfolio/tags/tkinter/</link>
-      <pubDate>Wed, 03 Aug 2022 23:01:11 +0900</pubDate>
+      <pubDate>Sat, 06 Aug 2022 15:59:38 +0900</pubDate>
       
       <guid>https://kantas-spike.github.io/portfolio/tags/tkinter/</guid>
       <description></description>
@@ -32,15 +50,6 @@
       <pubDate>Mon, 01 Aug 2022 23:45:37 +0900</pubDate>
       
       <guid>https://kantas-spike.github.io/portfolio/tags/color/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>html</title>
-      <link>https://kantas-spike.github.io/portfolio/tags/html/</link>
-      <pubDate>Mon, 01 Aug 2022 23:45:37 +0900</pubDate>
-      
-      <guid>https://kantas-spike.github.io/portfolio/tags/html/</guid>
       <description></description>
     </item>
     
