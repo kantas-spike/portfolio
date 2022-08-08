@@ -9,6 +9,16 @@
     <copyright>Copyright 2022 kanta&#39;s spike</copyright>
     <lastBuildDate>Fri, 22 Jul 2022 08:15:27 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/til/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Tkinterで部品を上手く配置したい</title>
+      <link>https://kantas-spike.github.io/portfolio/2022/08/21-layout-widgits-with-tkinter/</link>
+      <pubDate>Sun, 07 Aug 2022 02:18:55 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/2022/08/21-layout-widgits-with-tkinter/</guid>
+      <description>&lt;p&gt;Tkinterで画面に部品を上手く配置したいが、
+&lt;strong&gt;Geometry Manager&lt;/strong&gt; には幾つか種類があるが、どれを使って画面を作成するべきなのか。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>PDFの特定ページにリンクを貼りたい</title>
       <link>https://kantas-spike.github.io/portfolio/2022/08/20-link-to-the-page-of-pdf/</link>
       <pubDate>Sat, 06 Aug 2022 16:02:01 +0900</pubDate>

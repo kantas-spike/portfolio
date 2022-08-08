@@ -7,7 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>Copyright 2022 kanta&#39;s spike</copyright>
-    <lastBuildDate>Sat, 06 Aug 2022 16:02:01 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 07 Aug 2022 02:18:55 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>python</title>
+      <link>https://kantas-spike.github.io/portfolio/tags/python/</link>
+      <pubDate>Sun, 07 Aug 2022 02:18:55 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tkinter</title>
+      <link>https://kantas-spike.github.io/portfolio/tags/tkinter/</link>
+      <pubDate>Sun, 07 Aug 2022 02:18:55 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/tags/tkinter/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>html</title>
       <link>https://kantas-spike.github.io/portfolio/tags/html/</link>
@@ -23,24 +41,6 @@
       <pubDate>Sat, 06 Aug 2022 16:02:01 +0900</pubDate>
       
       <guid>https://kantas-spike.github.io/portfolio/tags/pdf/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>python</title>
-      <link>https://kantas-spike.github.io/portfolio/tags/python/</link>
-      <pubDate>Sat, 06 Aug 2022 15:59:38 +0900</pubDate>
-      
-      <guid>https://kantas-spike.github.io/portfolio/tags/python/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>tkinter</title>
-      <link>https://kantas-spike.github.io/portfolio/tags/tkinter/</link>
-      <pubDate>Sat, 06 Aug 2022 15:59:38 +0900</pubDate>
-      
-      <guid>https://kantas-spike.github.io/portfolio/tags/tkinter/</guid>
       <description></description>
     </item>
     

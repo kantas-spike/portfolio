@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/python/</loc>
+    <lastmod>2022-08-07T02:18:55+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/</loc>
+    <lastmod>2022-08-07T02:18:55+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/tkinter/</loc>
+    <lastmod>2022-08-07T02:18:55+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/2022/08/21-layout-widgits-with-tkinter/</loc>
+    <lastmod>2022-08-07T02:18:55+09:00</lastmod>
+  </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/html/</loc>
     <lastmod>2022-08-06T16:02:01+09:00</lastmod>
   </url><url>
@@ -10,15 +22,6 @@
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/2022/08/20-link-to-the-page-of-pdf/</loc>
     <lastmod>2022-08-06T16:02:01+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/</loc>
-    <lastmod>2022-08-06T16:02:01+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/python/</loc>
-    <lastmod>2022-08-06T15:59:38+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/tkinter/</loc>
-    <lastmod>2022-08-06T15:59:38+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/2022/08/19-fill-bg-color-with-tkinter/</loc>
     <lastmod>2022-08-06T15:59:38+09:00</lastmod>
