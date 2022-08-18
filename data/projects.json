@@ -5,8 +5,8 @@
             "full_name": "kantas-spike/create-color-wheel.py",
             "html_url": "https://github.com/kantas-spike/create-color-wheel.py",
             "description": "指定した明度(V)の範囲の色相環をまとめて作成します。",
-            "size": 121,
-            "pushed_at": "2022-08-01T07:42:29Z",
+            "size": 218,
+            "pushed_at": "2022-08-17T15:08:11Z",
             "project_type": "mytools",
             "langs": [
                 "Python"
@@ -79,13 +79,33 @@
             "full_name": "kantas-spike/Color-Wheel",
             "html_url": "https://github.com/kantas-spike/Color-Wheel",
             "description": "A colorwheel demo tool built with Tkinter",
-            "size": 1975,
-            "pushed_at": "2022-08-04T08:27:54Z",
+            "size": 6085,
+            "pushed_at": "2022-08-18T15:21:43Z",
             "project_type": "IHC",
             "langs": [
                 "Python"
             ],
             "merged": [
+                {
+                    "html_url": "https://github.com/kantas-spike/Color-Wheel/pull/23",
+                    "title": "itr10: RGB16進文字列に対応する場所にカーソルを移動可能に (fix #22)",
+                    "state": "closed",
+                    "body": "指定色から配色パターンを検討できるようにするため、\r\n指定したRGB16進文字列(例: #FFFFFF)に対応する\r\n場所および輝度にカーソルを移動可能にした",
+                    "created_at": "2022-08-18T15:21:21Z",
+                    "merged_at": "2022-08-18T15:21:43Z",
+                    "closed_at": "2022-08-18T15:21:43Z",
+                    "user": "kantas-spike"
+                },
+                {
+                    "html_url": "https://github.com/kantas-spike/Color-Wheel/pull/21",
+                    "title": "Itr09: カラーホイールをHLSに (fix: #20)",
+                    "state": "closed",
+                    "body": null,
+                    "created_at": "2022-08-17T15:27:39Z",
+                    "merged_at": "2022-08-17T15:27:51Z",
+                    "closed_at": "2022-08-17T15:27:51Z",
+                    "user": "kantas-spike"
+                },
                 {
                     "html_url": "https://github.com/kantas-spike/Color-Wheel/pull/18",
                     "title": "Itr07: 配色パターンに合せて複数色を選択等",
