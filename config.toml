@@ -11,8 +11,8 @@ copyright = "Copyright 2022 kanta's spike"
 publishDir = "docs"
 
 [permalinks]
-  blog = "/:year/:month/:filename/"
-  til = "/:year/:month/:filename/"
+  blog = "/blog/:year/:month/:filename/"
+  til = "/til/:year/:month/:filename/"
 
 [security.exec]
   allow = ['^dart-sass-embedded$', '^go$', '^npx$', '^postcss$', 'code']
