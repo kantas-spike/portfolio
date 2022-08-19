@@ -10,10 +10,10 @@
     <lastBuildDate>Mon, 01 Aug 2022 12:09:43 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/argparse/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Pythonでコマンドラインオプション取得したい</title>
-      <link>https://kantas-spike.github.io/portfolio/2022/08/16-python-option-parser/</link>
+      <link>https://kantas-spike.github.io/portfolio/til/2022/08/16-python-option-parser/</link>
       <pubDate>Mon, 01 Aug 2022 12:09:43 +0900</pubDate>
       
-      <guid>https://kantas-spike.github.io/portfolio/2022/08/16-python-option-parser/</guid>
+      <guid>https://kantas-spike.github.io/portfolio/til/2022/08/16-python-option-parser/</guid>
       <description>&lt;p&gt;Pythonで作った自作のコマンドラインツールで、コマンドラインオプションを利用したい。&lt;/p&gt;</description>
     </item>
     

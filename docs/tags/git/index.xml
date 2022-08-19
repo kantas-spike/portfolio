@@ -10,19 +10,19 @@
     <lastBuildDate>Wed, 27 Jul 2022 17:58:10 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/git/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>良いコミットメッセージを書きたい</title>
-      <link>https://kantas-spike.github.io/portfolio/2022/07/14-good-commit-message/</link>
+      <link>https://kantas-spike.github.io/portfolio/til/2022/07/14-good-commit-message/</link>
       <pubDate>Wed, 27 Jul 2022 17:58:10 +0900</pubDate>
       
-      <guid>https://kantas-spike.github.io/portfolio/2022/07/14-good-commit-message/</guid>
+      <guid>https://kantas-spike.github.io/portfolio/til/2022/07/14-good-commit-message/</guid>
       <description>&lt;p&gt;良いコミットメッセージを書きたい。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>ツールの学習 Git</title>
-      <link>https://kantas-spike.github.io/portfolio/2022/07/03-how-to-learn-git/</link>
+      <link>https://kantas-spike.github.io/portfolio/blog/2022/07/03-how-to-learn-git/</link>
       <pubDate>Mon, 25 Jul 2022 11:32:58 +0900</pubDate>
       
-      <guid>https://kantas-spike.github.io/portfolio/2022/07/03-how-to-learn-git/</guid>
+      <guid>https://kantas-spike.github.io/portfolio/blog/2022/07/03-how-to-learn-git/</guid>
       <description>&lt;p&gt;プログラミングの学習ではGitHubをよく使います。
 GitHubを使うためには&lt;code&gt;git&lt;/code&gt;を使えないといけません。&lt;/p&gt;
 &lt;p&gt;そこで、&lt;a href=&#34;https://missing.csail.mit.edu/2020/version-control/&#34;&gt;Version Control (Git) · the missing semester of your cs education&lt;/a&gt;(&lt;a href=&#34;https://missing-semester-jp.github.io/2020/version-control/&#34;&gt;翻訳&lt;/a&gt;)で&lt;code&gt;git&lt;/code&gt;について学びたいと思います。&lt;/p&gt;</description>
@@ -30,10 +30,10 @@ GitHubを使うためには&lt;code&gt;git&lt;/code&gt;を使えないといけ�
     
     <item>
       <title>gitでsubmoduleの更新を取り込みたい</title>
-      <link>https://kantas-spike.github.io/portfolio/2022/07/08-git-submodule-update/</link>
+      <link>https://kantas-spike.github.io/portfolio/til/2022/07/08-git-submodule-update/</link>
       <pubDate>Fri, 22 Jul 2022 17:22:37 +0900</pubDate>
       
-      <guid>https://kantas-spike.github.io/portfolio/2022/07/08-git-submodule-update/</guid>
+      <guid>https://kantas-spike.github.io/portfolio/til/2022/07/08-git-submodule-update/</guid>
       <description>gitでsubmoduleの上流での更新を取り込みたい。
 解決策 以下を実行する。
 git submodule update --remote 参考  上流の変更の取り込み  </description>

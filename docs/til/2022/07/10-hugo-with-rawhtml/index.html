@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html><head>
+    <title>kanta's spike</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://kantas-spike.github.io/portfolio/css/theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://kantas-spike.github.io/portfolio/css/syntax.css">
+</head><body class="bg-background text-primary-dark pb-4"><header class="bg-primary-dark text-site_title text-6xl font-serif font-extrabold px-4 py-3">
+    <h1 class="container mx-auto px-4"><a href="https://kantas-spike.github.io/portfolio/">kanta&#39;s spike</a></h1>
+</header>
+<input type="checkbox" name="burger_cbx" id="burger_cbx">
+<label for="burger_cbx" class="burger_label">
+    <span class="burger_icon"><svg version="1.1" viewBox="0 0 12.7 12.7" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <rect x="1.0369" y="2.1007" width="10.634" height="1.0426" ry=".5213"/>
+  <rect x="1.0369" y="4.571" width="10.634" height="1.0426" ry=".5213"/>
+  <rect x="1.0369" y="7.0413" width="10.634" height="1.0426" ry=".5213"/>
+  <rect x="1.0369" y="9.5115" width="10.634" height="1.0426" ry=".5213"/>
+ </g>
+</svg>
+</span>
+</label>
+<label for="burger_cbx" class="close_label">
+    <span class="close_icon"><svg version="1.1" viewBox="0 0 12.7 12.7" xmlns="http://www.w3.org/2000/svg">
+ <rect transform="rotate(45.535)" x="3.6678" y="-.6148" width="10.634" height="1.0426" ry=".5213"/>
+ <rect transform="rotate(135.53)" x="-5.4104" y="-9.5059" width="10.634" height="1.0426" ry=".5213"/>
+</svg>
+</span>
+</label>
+<div class="nav_area">
+    <nav class="container mx-auto bg-primary text-on-primary text-center flex flex-col md:flex-row justify-start">
+            <a href="https://kantas-spike.github.io/portfolio/" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Home</a>
+            <a href="https://kantas-spike.github.io/portfolio/blog" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Blog</a>
+            <a href="https://kantas-spike.github.io/portfolio/til" class="box-border flex-1 text-center no-underline bg-primary-light text-on-primary-light font-extrabold py-2">TIL</a>
+            <a href="https://kantas-spike.github.io/portfolio/mytools" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">My Tools</a>
+            <a href="https://kantas-spike.github.io/portfolio/ihc" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">IHC</a>
+    </nav>
+</div>
+<main id="content" class="container mx-auto bg-surface pt-4 pb-8">
+<div class="area_border  px-4 py-3 mx-4 pb-4">
+    
+
+
+
+<div class="mb-4">
+    <h3 class="border-b-2 border-primary text-primary-dark text-xl font-bold"><i class="fa-solid fa-note-sticky"></i> <a href="https://kantas-spike.github.io/portfolio/til/2022/07/10-hugo-with-rawhtml/">HugoのMarkdownでHTMLをそのまま記述したい</a></h3>
+    <div class="flex justify-between mt-1 mx-2">
+        <div>
+            <ul class="flex gap-2 justify-end">
+            
+            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/hugo/">#hugo</a></li>
+            
+            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/render_hooks/">#render_hooks</a></li>
+            
+            </ul>
+        </div>
+        <div>
+            <div class="text-right text-sm font-bold">2022/07/23</div>
+        </div>
+    </div>
+</div>
+
+    <div class="article mx-2">
+        <p>HugoのMarkdown内にHTMLを直接記述すると、<code>&lt;!-- raw HTML omitted --&gt;</code>に変換され無視される。
+直接HTMLを書く手段が欲しい。</p>
+<p>例えば、Markdownで表を書く場合、以下のように書く。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">| aa | bb | cc |
+</span></span><span class="line"><span class="cl">|:--:|:---|:---|
+</span></span><span class="line"><span class="cl">|あいうえお|かきくけこ|さしすせそ|
+</span></span></code></pre></div><table>
+<thead>
+<tr>
+<th style="text-align:center">aa</th>
+<th style="text-align:left">bb</th>
+<th style="text-align:left">cc</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">あいうえお</td>
+<td style="text-align:left">かきくけこ</td>
+<td style="text-align:left">さしすせそ</td>
+</tr>
+</tbody>
+</table>
+<p>しかし、表内にリストを書くような少し複雑な表は、HTMLを直接書けないために、書くことができない。</p>
+<h3 id="解決策">解決策</h3>
+<p>直接HTMLを書くための<a href="https://gohugo.io/templates/render-hooks/">Markdown Render Hooks</a>を利用する。</p>
+<p><code>layouts/_default/_markup/render-codeblock-rawhtm.html</code>を作成する。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;rawhtml&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    {{- .Inner | safeHTML }}
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span></code></pre></div><p>これにより、以下のように直接HTMLを記載できる。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">~~~rawhtml
+</span></span><span class="line"><span class="cl">&lt;table&gt;
+</span></span><span class="line"><span class="cl">&lt;tr&gt;&lt;th&gt;aa&lt;th&gt;bb&lt;th&gt;cc&lt;/tr&gt;
+</span></span><span class="line"><span class="cl">&lt;tr&gt;&lt;td&gt;&lt;ul&gt;&lt;li&gt;あ&lt;li&gt;い&lt;li&gt;う&lt;li&gt;え&lt;li&gt;お&lt;/ul&gt;&lt;td&gt;かきくけこ&lt;td&gt;さしすせそ&lt;/tr&gt;
+</span></span><span class="line"><span class="cl">&lt;/table&gt;
+</span></span><span class="line"><span class="cl">~~~
+</span></span></code></pre></div><div class="rawhtml"><table>
+<tr><th>aa<th>bb<th>cc</tr>
+<tr><td><ul><li>あ<li>い<li>う<li>え<li>お</ul><td>かきくけこ<td>さしすせそ</tr>
+</table>
+</div><h3 id="参考">参考</h3>
+<ul>
+<li><a href="https://github.github.com/gfm/#tables-extension-">Tables (extension) | GitHub Flavor Markdown Spec</a></li>
+<li><a href="https://gohugo.io/templates/render-hooks/#render-hooks-for-code-blocks">Render Hooks for Code Blocks</a></li>
+</ul>
+    </div>
+</div>
+
+        </main><footer class="bg-primary-dark text-center text-on-primary-dark fixed bottom-0 w-full h-8">
+    <div class="container mx-auto grid grid-cols-3">
+        <div class="col-start-2">
+            <div class="text-sm pt-2">Copyright 2022 kanta&#39;s spike</div>
+        </div>
+        <div class="flex justify-end gap-2 mr-2">
+            
+                
+            <a title="Twitter" class="text-2xl" href="https://twitter.com/KantasSpike"><i class="fa-brands fa-twitter-square"></i></a>
+                
+            <a title="Youtube" class="text-2xl" href="https://www.youtube.com/channel/UCnVBuUGMYAt7ZuIkadxnMfw"><i class="fa-brands fa-youtube-square"></i></a>
+                
+            <a title="GitHub" class="text-2xl" href="https://github.com/kantas-spike"><i class="fa-brands fa-github-square"></i></a>
+                
+            <a title="Blog" class="text-2xl" href="https://kantas-spike.github.io/portfolio/"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                
+            
+        </div>
+    </div>
+</footer>
+        
+    </body>
+</html>

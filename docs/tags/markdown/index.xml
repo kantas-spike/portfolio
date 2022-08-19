@@ -10,19 +10,19 @@
     <lastBuildDate>Sat, 23 Jul 2022 12:34:13 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugoでショートコードの記述をエスケープして表示したい</title>
-      <link>https://kantas-spike.github.io/portfolio/2022/07/11-hugo-escape-shortcodes/</link>
+      <link>https://kantas-spike.github.io/portfolio/til/2022/07/11-hugo-escape-shortcodes/</link>
       <pubDate>Sat, 23 Jul 2022 12:34:13 +0900</pubDate>
       
-      <guid>https://kantas-spike.github.io/portfolio/2022/07/11-hugo-escape-shortcodes/</guid>
+      <guid>https://kantas-spike.github.io/portfolio/til/2022/07/11-hugo-escape-shortcodes/</guid>
       <description>&lt;p&gt;説明用に、ショートコードをエスケープして表記方法を記載したい。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Markdown内でコードブロックを引用したい</title>
-      <link>https://kantas-spike.github.io/portfolio/2022/07/07-quote-code-block-in-markdown/</link>
+      <link>https://kantas-spike.github.io/portfolio/til/2022/07/07-quote-code-block-in-markdown/</link>
       <pubDate>Fri, 22 Jul 2022 15:31:39 +0900</pubDate>
       
-      <guid>https://kantas-spike.github.io/portfolio/2022/07/07-quote-code-block-in-markdown/</guid>
+      <guid>https://kantas-spike.github.io/portfolio/til/2022/07/07-quote-code-block-in-markdown/</guid>
       <description>&lt;p&gt;コードブロックの表記自体を引用したい。&lt;/p&gt;</description>
     </item>
     

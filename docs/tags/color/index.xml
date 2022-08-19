@@ -10,10 +10,10 @@
     <lastBuildDate>Mon, 01 Aug 2022 23:45:37 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/color/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>2色のコントラストの差を知りたい</title>
-      <link>https://kantas-spike.github.io/portfolio/2022/08/17-color-contrast/</link>
+      <link>https://kantas-spike.github.io/portfolio/til/2022/08/17-color-contrast/</link>
       <pubDate>Mon, 01 Aug 2022 23:45:37 +0900</pubDate>
       
-      <guid>https://kantas-spike.github.io/portfolio/2022/08/17-color-contrast/</guid>
+      <guid>https://kantas-spike.github.io/portfolio/til/2022/08/17-color-contrast/</guid>
       <description>&lt;p&gt;背景色にあったテキスト色を選べるようにしたい。
 赤に白い字は読めるが、薄黄に白い字は読めない。&lt;/p&gt;
 &lt;p&gt;背景色とテキスト色の差から文字色を変更できるようにしたい。&lt;/p&gt;</description>
