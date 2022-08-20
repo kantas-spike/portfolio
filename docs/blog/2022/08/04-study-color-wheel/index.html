@@ -150,6 +150,12 @@
 <br>
 また、輝度選択スライダー(図中4)を変更すると、カラーホイールの輝度が変わります。<br>
 配色パターン選択ラジオボタン(図中3)を変更するとパターンに応じたカーソルが表示されます。
+
+<p>以下の本自由研究の発表動画に基本的な使い方があります。</p>
+
+<div class="flex justify-center my-4">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0hrfqnDhU6I?start=328" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 </div>
 </div><h4 id="4-配色パターンを使って配色を検討">4. 配色パターンを使って配色を検討</h4>
 <p>カラーホイールツールの準備ができました。実際に配色パターンを使って配色を検討しましょう。</p>
@@ -589,7 +595,35 @@
 <p>カラーホイールは北側から時計周りに色相が変化するようなので変更したいと思います。</p>
 <p>atan2(-x, y)をグラフにすると北から時計回りに色相が変化しました。この呼び出し方を採用します。</p>
 <p><img src="https://kantas-spike.github.io/portfolio/images/til/04-atan2-xy.png" alt="atan2グラフ"></p>
+<h4 id="カラーホイール作成ツールkantas-spikecreate-color-wheelpyの作成">カラーホイール作成ツール(kantas-spike/create-color-wheel.py)の作成</h4>
 <p>これまでの調査結果をふまえ、任意の輝度、任意の半径のカラーホイールを生成するツール <a href="https://github.com/kantas-spike/create-color-wheel.py">kantas-spike/create-color-wheel.py</a> <sup id="fnref:15"><a href="#fn:15" class="footnote-ref" role="doc-noteref">15</a></sup>を作成しました。</p>
+<p>以下を実行するとツールで使用する輝度0〜100(間隔は50刻み)の半径365pxのカラーホイールを作成します。(例外的な間隔を追加したい場合は<code>--append-values</code>オプションで指定します。)</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">poetry run python3 create-color-wheel.py -r <span class="m">365</span> --outputdir ./images --color hls --start <span class="m">0</span> --end 1.0 --step 0.05 --append-values 0.97 0.98 0.99
+</span></span></code></pre></div><h5 id="ツールで作成したカラーホイールの例">ツールで作成したカラーホイールの例</h5>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">輝度</th>
+<th style="text-align:center">0</th>
+<th style="text-align:center">20</th>
+<th style="text-align:center">50</th>
+<th style="text-align:center">70</th>
+<th style="text-align:center">90</th>
+<th style="text-align:center">100</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">ホイール</td>
+<td style="text-align:center"><img src="https://kantas-spike.github.io/portfolio/images/til/04-wheel/wheel_0.00.png" alt=""></td>
+<td style="text-align:center"><img src="https://kantas-spike.github.io/portfolio/images/til/04-wheel/wheel_0.20.png" alt=""></td>
+<td style="text-align:center"><img src="https://kantas-spike.github.io/portfolio/images/til/04-wheel/wheel_0.50.png" alt=""></td>
+<td style="text-align:center"><img src="https://kantas-spike.github.io/portfolio/images/til/04-wheel/wheel_0.70.png" alt=""></td>
+<td style="text-align:center"><img src="https://kantas-spike.github.io/portfolio/images/til/04-wheel/wheel_0.90.png" alt=""></td>
+<td style="text-align:center"><img src="https://kantas-spike.github.io/portfolio/images/til/04-wheel/wheel_1.00.png" alt=""></td>
+</tr>
+</tbody>
+</table>
 <h3 id="付録2-色の論理的な組み合わせ名-で表示するカーソルの構成を変更可能に">付録2 <strong>色の論理的な組み合わせ名</strong> で表示するカーソルの構成を変更可能に</h3>
 <p>配色のパターンに合せて、ベースカラー用のカーソルと、その他の組み合わせカラー用のカーソルを表示する必要があります。</p>
 <p>ツールにおける配色パターンの組み合わせカラーの数と、カーソル表示位置を以下に整理しました。</p>
