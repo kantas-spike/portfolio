@@ -91,6 +91,12 @@ GitHub[^4]で キーワード **Color Wheel**、使用言語 **Python**、最終
 <br>
 また、輝度選択スライダー(図中4)を変更すると、カラーホイールの輝度が変わります。<br>
 配色パターン選択ラジオボタン(図中3)を変更するとパターンに応じたカーソルが表示されます。
+
+<p>以下の本自由研究の発表動画に基本的な使い方があります。</p>
+
+<div class="flex justify-center my-4">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0hrfqnDhU6I?start=328" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 </div>
 ~~~
 
@@ -548,7 +554,21 @@ atan2(-x, y)をグラフにすると北から時計回りに色相が変化し�
 
   ![atan2グラフ](/images/til/04-atan2-xy.png)
 
+#### カラーホイール作成ツール(kantas-spike/create-color-wheel.py)の作成
+
 これまでの調査結果をふまえ、任意の輝度、任意の半径のカラーホイールを生成するツール [kantas-spike/create-color-wheel.py](https://github.com/kantas-spike/create-color-wheel.py) [^11]を作成しました。
+
+以下を実行するとツールで使用する輝度0〜100(間隔は50刻み)の半径365pxのカラーホイールを作成します。(例外的な間隔を追加したい場合は`--append-values`オプションで指定します。)
+
+~~~shell
+poetry run python3 create-color-wheel.py -r 365 --outputdir ./images --color hls --start 0 --end 1.0 --step 0.05 --append-values 0.97 0.98 0.99
+~~~
+
+##### ツールで作成したカラーホイールの例
+
+|輝度|0|20|50|70|90|100|
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+|ホイール|![](/images/til/04-wheel/wheel_0.00.png)|![](/images/til/04-wheel/wheel_0.20.png) |![](/images/til/04-wheel/wheel_0.50.png) |![](/images/til/04-wheel/wheel_0.70.png) |![](/images/til/04-wheel/wheel_0.90.png) |![](/images/til/04-wheel/wheel_1.00.png) |
 
 ### 付録2 **色の論理的な組み合わせ名** で表示するカーソルの構成を変更可能に
 
