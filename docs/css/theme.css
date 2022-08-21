@@ -1250,11 +1250,11 @@ video {
 }
 .pagination .page-item.active {
   --tw-bg-opacity: 1;
-  background-color: rgb(139 154 50 / var(--tw-bg-opacity));
+  background-color: rgb(243 233 216 / var(--tw-bg-opacity));
 }
 .pagination .page-item.active > .page-link {
   --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+  color: rgb(35 39 12 / var(--tw-text-opacity));
 }
 .pagination .page-item.disabled > .page-link {
   cursor: not-allowed;
@@ -1439,6 +1439,12 @@ video {
   padding-bottom: 0.5rem;
   padding-left: 0.75rem;
   padding-right: 0.75rem;
+}
+.article hr {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  --tw-border-opacity: 1;
+  border-color: rgb(25 43 77 / var(--tw-border-opacity));
 }
 .article table,  .article .rawhtml table {
   border-collapse: collapse;
