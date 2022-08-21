@@ -92,10 +92,8 @@ GitHub[^4]で キーワード **Color Wheel**、使用言語 **Python**、最終
 また、輝度選択スライダー(図中4)を変更すると、カラーホイールの輝度が変わります。<br>
 配色パターン選択ラジオボタン(図中3)を変更するとパターンに応じたカーソルが表示されます。
 
-<p>以下の本自由研究の発表動画に基本的な使い方があります。</p>
-
 <div class="flex justify-center my-4">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/0hrfqnDhU6I?start=328" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Y_GyzQtuJVQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 </div>
 ~~~
@@ -632,7 +630,15 @@ def rotate(x, y, deg, center_x, center_y):
 
 これまでの調査結果をふまえ、配色パターンに合せたカーソルを表示する機能を追加しました。
 
----
+### 付録3 自由研究の紹介動画
+
+この自由研究を紹介する動画を作成しています。ご興味があれば参照ください。
+
+~~~rawhtml
+<div class="w-[560px]">
+{{< youtube 0hrfqnDhU6I >}}
+~~~
+
 
 [^1]: [World Wide Web を使う方法を学び、HTML を書くこと | How To Become A Hacker](https://cruel.org/freeware/hacker.html#skills3)
 
