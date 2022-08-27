@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html><head>
+    <title>kanta's spike</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://kantas-spike.github.io/portfolio/css/theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://kantas-spike.github.io/portfolio/css/syntax.css">
+</head><body class="bg-background text-primary-dark pb-4"><header class="bg-primary-dark text-site_title text-6xl font-serif font-extrabold px-4 py-3">
+    <h1 class="container mx-auto px-4"><a href="https://kantas-spike.github.io/portfolio/">kanta&#39;s spike</a></h1>
+</header>
+<input type="checkbox" name="burger_cbx" id="burger_cbx">
+<label for="burger_cbx" class="burger_label">
+    <span class="burger_icon"><svg version="1.1" viewBox="0 0 12.7 12.7" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <rect x="1.0369" y="2.1007" width="10.634" height="1.0426" ry=".5213"/>
+  <rect x="1.0369" y="4.571" width="10.634" height="1.0426" ry=".5213"/>
+  <rect x="1.0369" y="7.0413" width="10.634" height="1.0426" ry=".5213"/>
+  <rect x="1.0369" y="9.5115" width="10.634" height="1.0426" ry=".5213"/>
+ </g>
+</svg>
+</span>
+</label>
+<label for="burger_cbx" class="close_label">
+    <span class="close_icon"><svg version="1.1" viewBox="0 0 12.7 12.7" xmlns="http://www.w3.org/2000/svg">
+ <rect transform="rotate(45.535)" x="3.6678" y="-.6148" width="10.634" height="1.0426" ry=".5213"/>
+ <rect transform="rotate(135.53)" x="-5.4104" y="-9.5059" width="10.634" height="1.0426" ry=".5213"/>
+</svg>
+</span>
+</label>
+<div class="nav_area">
+    <nav class="container mx-auto bg-primary text-on-primary text-center flex flex-col md:flex-row justify-start">
+            <a href="https://kantas-spike.github.io/portfolio/" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Home</a>
+            <a href="https://kantas-spike.github.io/portfolio/blog" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Blog</a>
+            <a href="https://kantas-spike.github.io/portfolio/til" class="box-border flex-1 text-center no-underline bg-primary-light text-on-primary-light font-extrabold py-2">TIL</a>
+            <a href="https://kantas-spike.github.io/portfolio/mytools" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">My Tools</a>
+            <a href="https://kantas-spike.github.io/portfolio/ihc" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">IHC</a>
+            <a href="https://kantas-spike.github.io/portfolio/tags" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Tags</a>
+        <a id="search_menu" class="text-center no-underline text-on-primary py-2 hover:font-bold px-4"><button><i class="fa-solid fa-magnifying-glass"></i></button></a>
+    </nav>
+</div>
+<main id="content" class="container mx-auto bg-surface pt-4 pb-8">
+<div class="area_border  px-4 py-3 mx-4 pb-4">
+    
+
+
+
+<div class="mb-4">
+    <h3 class="border-b-2 border-primary text-primary-dark text-xl font-bold"><i class="fa-solid fa-note-sticky"></i> <a href="https://kantas-spike.github.io/portfolio/til/2022/08/22-introducing-vue/">Vue.jsを導入したい</a></h3>
+    <div class="flex justify-between mt-1 mx-2">
+        <div>
+            <ul class="flex gap-2 justify-end">
+            
+            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/vue/">#vue</a></li>
+            
+            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/hugo/">#hugo</a></li>
+            
+            </ul>
+        </div>
+        <div>
+            <div class="text-right text-sm font-bold">2022/08/24</div>
+        </div>
+    </div>
+</div>
+
+    <div class="article mx-2">
+        <p>今後ブログに検索機能などを追加したいので、Hugoに <code>Vue.js</code> を導入したい。</p>
+<h3 id="解決策">解決策</h3>
+<p><code>Vue.js</code>を利用するには<a href="https://v3.ja.vuejs.org/guide/installation.html#%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB">いくつか方法</a>がある。
+今回はHugo単体で完結させるために、以下の方法を採用する。</p>
+<ul>
+<li>ページ上で CDN パッケージ として取り込む</li>
+<li><code>&lt;script type=&quot;x-template&quot; /&gt;</code> からテンプレートを取得する</li>
+</ul>
+<p>以下に<code>Vue.js</code>でUIを作成する手順を示す。</p>
+<ol>
+<li>
+<p>まず、<code>Vue.js</code>作成したUIを配置する場所を作成する。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;app&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span></code></pre></div></li>
+<li>
+<p>そして、最新のVueのCDNパッケージを取り込む。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://unpkg.com/vue@next&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span></code></pre></div></li>
+<li>
+<p>次に、UIのテンプレートを定義する</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;x-template&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;app-vue&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="o">&lt;</span><span class="nx">div</span> <span class="kr">class</span><span class="o">=</span><span class="s2">&#34;border border-secondary-dark p-4 rounded-md bg-secondary-light text-on-secondary-light w-fit&#34;</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">[[</span> <span class="nx">message</span> <span class="p">]]</span>
+</span></span><span class="line"><span class="cl">  <span class="o">&lt;</span><span class="err">/div&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span></code></pre></div></li>
+<li>
+<p>最後に、Vueアプリを作成し、DOM上に配置する</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// テンプレートを指定してアプリを作成
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">app</span> <span class="o">=</span> <span class="nx">Vue</span><span class="p">.</span><span class="nx">createApp</span><span class="p">({</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">template</span><span class="o">:</span> <span class="s1">&#39;#app-vue&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">data</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="k">return</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">message</span><span class="o">:</span> <span class="s1">&#39;Hellow Vue!&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">})</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// Hugoのテンプレート言語と区切り文字が衝突するため、[[, ]] に変更
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">app</span><span class="p">.</span><span class="nx">config</span><span class="p">.</span><span class="nx">compilerOptions</span><span class="p">.</span><span class="nx">delimiters</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;[[&#34;</span><span class="p">,</span> <span class="s2">&#34;]]&#34;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 作成したアプリをDOM上に配置
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">app</span><span class="p">.</span><span class="nx">mount</span><span class="p">(</span><span class="s1">&#39;#app&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span></code></pre></div></li>
+<li>
+<p>実行結果は以下になる。</p>
+</li>
+</ol>
+<div class="rawhtml"><div id="app"></div>
+
+<script src="https://unpkg.com/vue@next"></script>
+
+<script type="x-template" id="app-vue">
+  <div class="border border-secondary-dark p-4 rounded-md bg-secondary-light text-on-secondary-light w-fit">
+      [[ message ]]
+  </div>
+</script>
+
+<script>
+// テンプレートを指定してアプリを作成
+const app = Vue.createApp({
+  template: '#app-vue',
+  data() {
+      return {
+      message: 'Hellow Vue!'
+    }
+  }
+})
+// Hugoのテンプレート言語と区切り文字が衝突するため、[[, ]] に変更
+app.config.compilerOptions.delimiters = ["[[", "]]"]
+// 作成したアプリをDOM上に配置
+app.mount('#app')
+</script>
+</div><h4 id="ソース">ソース</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;app&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://unpkg.com/vue@next&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;x-template&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;app-vue&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="o">&lt;</span><span class="nx">div</span> <span class="kr">class</span><span class="o">=</span><span class="s2">&#34;border border-secondary-dark p-4 rounded-md bg-secondary-light text-on-secondary-light w-fit&#34;</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">[[</span> <span class="nx">message</span> <span class="p">]]</span>
+</span></span><span class="line"><span class="cl">  <span class="o">&lt;</span><span class="err">/div&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// テンプレートを指定してアプリを作成
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">app</span> <span class="o">=</span> <span class="nx">Vue</span><span class="p">.</span><span class="nx">createApp</span><span class="p">({</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">template</span><span class="o">:</span> <span class="s1">&#39;#app-vue&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">data</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="k">return</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">message</span><span class="o">:</span> <span class="s1">&#39;Hellow Vue!&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">})</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// Hugoのテンプレート言語と区切り文字が衝突するため、[[, ]] に変更
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">app</span><span class="p">.</span><span class="nx">config</span><span class="p">.</span><span class="nx">compilerOptions</span><span class="p">.</span><span class="nx">delimiters</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;[[&#34;</span><span class="p">,</span> <span class="s2">&#34;]]&#34;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 作成したアプリをDOM上に配置
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">app</span><span class="p">.</span><span class="nx">mount</span><span class="p">(</span><span class="s1">&#39;#app&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span></code></pre></div><h3 id="参考">参考</h3>
+<ul>
+<li><a href="https://v3.ja.vuejs.org/guide/introduction.html">はじめに | Vue.js</a></li>
+<li><a href="https://discourse.gohugo.io/t/how-to-use-vue-js-with-a-hugo-project/25401">How to use Vue.js with a Hugo project</a></li>
+<li><a href="https://v3.ja.vuejs.org/api/application-config.html#compileroptions-delimiters">app.config.compilerOptions.delimiters</a></li>
+</ul>
+    </div>
+</div>
+
+        </main><footer class="bg-primary-dark text-center text-on-primary-dark fixed bottom-0 w-full h-8">
+    <div class="container mx-auto grid grid-cols-3">
+        <div class="col-start-2">
+            <div class="text-sm pt-2">Copyright 2022 kanta&#39;s spike</div>
+        </div>
+        <div class="flex justify-end gap-2 mr-2">
+            
+                
+            <a title="Twitter" class="text-2xl" href="https://twitter.com/KantasSpike"><i class="fa-brands fa-twitter-square"></i></a>
+                
+            <a title="Youtube" class="text-2xl" href="https://www.youtube.com/channel/UCnVBuUGMYAt7ZuIkadxnMfw"><i class="fa-brands fa-youtube-square"></i></a>
+                
+            <a title="GitHub" class="text-2xl" href="https://github.com/kantas-spike"><i class="fa-brands fa-github-square"></i></a>
+                
+            <a title="Blog" class="text-2xl" href="https://kantas-spike.github.io/portfolio/"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                
+            
+        </div>
+    </div>
+</footer>
+        <script src="https://unpkg.com/vue@next"></script>
+<script src="//unpkg.com/lunr@2.3.6/lunr.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lunr-languages@1.9.0/lunr.stemmer.support.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lunr-languages@1.9.0/tinyseg.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lunr-languages@1.9.0/lunr.ja.js"></script>
+<script src="//unpkg.com/axios@0.19.0/dist/axios.js"></script>
+<script src="https://unpkg.com/lodash@4.17.20/lodash.min.js"></script>
+
+<script type="text/x-template" id="modal-frame">
+    <a class="text-center no-underline text-on-primary py-2 font-normal cursor-pointer hover:font-bold" v-on:click="open"><i class="fa-solid fa-magnifying-glass"></i></a>
+    <teleport to="body">
+        <div v-if="modalOpen" class="fixed top-0 right-0 bottom-0 left-0 bg-black/70 flex items-center flex-col content-center" @click.self="modalOpen = false">
+            <div class="md:mt-36 mt-10">
+                <slot />
+            </div>
+        </div>
+    </teleport>
+</script>
+
+<script type="text/x-template" id="search-panel">
+    <div class="flex flex-col items-center border border-secondary-dark md:w-[700px] w-80 rounded bg-secondary-light text-secondary-dark mx-auto">
+        <div class="flex items-center justify-center m-4">
+            <div><i class="fa-solid fa-magnifying-glass text-3xl mr-2"></i></div>
+            <input type="text" v-on:input="handleInput" v-on:keyup.enter="handleInput" class="border border-secondary-dark
+            text-sm rounded-lg focus:ring-secondary-light focus:border-secondary-light block md:w-96 w-56 p-2.5" placeholder="Search this blog" required>
+        </div>
+        <div class="flex flex-col items-start mb-2 overflow-y-auto h-[440px] md:h-[540px]">
+            <div class="md:p-2 md:m-2 mb-4 px-4"  v-for="result in searchResults">
+                <a :href="result.href">[[result.title]]</a>
+            </div>
+        </div>
+    </div>
+</script>
+
+<script type="text/x-template" id="search-app">
+    <modal-frame v-on:opened="dialogOpened">
+        <search-panel v-on:update="keywordUpdated" :searchResults="results" />
+    </modal-frame>
+</script>
+
+<script>
+    const searchPanel = {
+        template: '#search-panel',
+        data() {
+            return {
+            }
+        },
+        props: ['searchResults'],
+        emits: ['update'],
+        methods: {
+            handleInput: _.debounce(function(e) {
+                const val = e.target.value
+                console.log(val)
+                this.$emit('update', val)
+            }, 500)
+        }
+    }
+
+    const modalFrame = {
+        template: '#modal-frame',
+        data() {
+            return {
+                modalOpen: false
+            }
+        },
+        emits: ['opened'],
+        methods: {
+            open: function() {
+                this.modalOpen = true
+                this.$emit('opened')
+            }
+        }
+    }
+
+    const searchInfo = {
+        searchData: {},
+        searchIndex: {}
+    }
+
+    
+    const app = Vue.createApp({
+        template: '#search-app',
+        components: {
+            'modal-frame': modalFrame,
+            'search-panel': searchPanel,
+        },
+        data() {
+            return {
+                results: []
+            }
+        },
+        methods: {
+            keywordUpdated: function(keyword) {
+                console.log(`updated: ${keyword}`)
+                if (keyword.trim().length == 0) {
+                    this.results = []
+                } else {
+                    const list = searchInfo.searchIndex.search(keyword).map(entry => {
+                        console.log(entry)
+                        const obj = searchInfo.searchData.results.filter(d => entry.ref == d.href)[0]
+                        return { 'href': obj.href, 'title': obj.title }
+                    })
+                    this.results = list
+                }
+            },
+            dialogOpened: function() {
+                axios.get('/portfolio/search/index.json')
+                    .then(res => {
+                        searchInfo.searchData = res.data
+                        searchInfo.searchIndex = lunr(function() {
+                            this.ref('href')
+                            this.field('title')
+                            this.use(lunr.ja)
+                            searchInfo.searchData.results.forEach(e => {
+                                this.add(e);
+                            })
+                        })
+                    })
+            }
+        }
+    })
+    
+    app.config.compilerOptions.delimiters = [ "[[", "]]" ]
+    
+    app.mount('#search_menu')
+</script></body>
+</html>

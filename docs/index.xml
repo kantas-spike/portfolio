@@ -9,6 +9,51 @@
     <copyright>Copyright 2022 kanta&#39;s spike</copyright>
     <lastBuildDate>Fri, 22 Jul 2022 08:24:06 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Hugoで引用した文を目立たせたい</title>
+      <link>https://kantas-spike.github.io/portfolio/til/2022/08/25-quotation-with-hugo/</link>
+      <pubDate>Sat, 27 Aug 2022 04:23:14 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/til/2022/08/25-quotation-with-hugo/</guid>
+      <description>&lt;p&gt;引用した文を目立たせたい。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Vueで検索フォームを作成したい</title>
+      <link>https://kantas-spike.github.io/portfolio/til/2022/08/24-search-dialog-with-vue/</link>
+      <pubDate>Fri, 26 Aug 2022 00:12:03 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/til/2022/08/24-search-dialog-with-vue/</guid>
+      <description>&lt;p&gt;Vueで検索フォームを作成したい。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Vueでモーダル画面を作成したい</title>
+      <link>https://kantas-spike.github.io/portfolio/til/2022/08/23-modal-window-with-vue/</link>
+      <pubDate>Wed, 24 Aug 2022 15:43:23 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/til/2022/08/23-modal-window-with-vue/</guid>
+      <description>&lt;p&gt;Vueを使ってモーダル画面を作成したい。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Vue.jsを導入したい</title>
+      <link>https://kantas-spike.github.io/portfolio/til/2022/08/22-introducing-vue/</link>
+      <pubDate>Wed, 24 Aug 2022 02:25:04 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/til/2022/08/22-introducing-vue/</guid>
+      <description>&lt;p&gt;今後ブログに検索機能などを追加したいので、Hugoに &lt;code&gt;Vue.js&lt;/code&gt; を導入したい。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Search</title>
+      <link>https://kantas-spike.github.io/portfolio/search/index.json</link>
+      <pubDate>Tue, 23 Aug 2022 01:58:01 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/search/index.json</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Webサイトの配色とカラーホイール</title>
       <link>https://kantas-spike.github.io/portfolio/blog/2022/08/04-study-color-wheel/</link>
       <pubDate>Fri, 19 Aug 2022 00:25:51 +0900</pubDate>

@@ -9,6 +9,42 @@
     <copyright>Copyright 2022 kanta&#39;s spike</copyright>
     <lastBuildDate>Fri, 22 Jul 2022 08:15:27 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/til/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Hugoで引用した文を目立たせたい</title>
+      <link>https://kantas-spike.github.io/portfolio/til/2022/08/25-quotation-with-hugo/</link>
+      <pubDate>Sat, 27 Aug 2022 04:23:14 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/til/2022/08/25-quotation-with-hugo/</guid>
+      <description>&lt;p&gt;引用した文を目立たせたい。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Vueで検索フォームを作成したい</title>
+      <link>https://kantas-spike.github.io/portfolio/til/2022/08/24-search-dialog-with-vue/</link>
+      <pubDate>Fri, 26 Aug 2022 00:12:03 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/til/2022/08/24-search-dialog-with-vue/</guid>
+      <description>&lt;p&gt;Vueで検索フォームを作成したい。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Vueでモーダル画面を作成したい</title>
+      <link>https://kantas-spike.github.io/portfolio/til/2022/08/23-modal-window-with-vue/</link>
+      <pubDate>Wed, 24 Aug 2022 15:43:23 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/til/2022/08/23-modal-window-with-vue/</guid>
+      <description>&lt;p&gt;Vueを使ってモーダル画面を作成したい。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Vue.jsを導入したい</title>
+      <link>https://kantas-spike.github.io/portfolio/til/2022/08/22-introducing-vue/</link>
+      <pubDate>Wed, 24 Aug 2022 02:25:04 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/til/2022/08/22-introducing-vue/</guid>
+      <description>&lt;p&gt;今後ブログに検索機能などを追加したいので、Hugoに &lt;code&gt;Vue.js&lt;/code&gt; を導入したい。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Tkinterで部品を上手く配置したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2022/08/21-layout-widgits-with-tkinter/</link>
       <pubDate>Sun, 07 Aug 2022 02:18:55 +0900</pubDate>

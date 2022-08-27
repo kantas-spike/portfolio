@@ -2,10 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/python/</loc>
-    <lastmod>2022-08-19T00:25:51+09:00</lastmod>
+    <loc>https://kantas-spike.github.io/portfolio/tags/hugo/</loc>
+    <lastmod>2022-08-27T04:23:14+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/til/2022/08/25-quotation-with-hugo/</loc>
+    <lastmod>2022-08-27T04:23:14+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/quotation/</loc>
+    <lastmod>2022-08-27T04:23:14+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/</loc>
+    <lastmod>2022-08-27T04:23:14+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/vue/</loc>
+    <lastmod>2022-08-26T00:12:03+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/til/2022/08/24-search-dialog-with-vue/</loc>
+    <lastmod>2022-08-26T00:12:03+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/til/2022/08/23-modal-window-with-vue/</loc>
+    <lastmod>2022-08-24T15:43:23+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/til/2022/08/22-introducing-vue/</loc>
+    <lastmod>2022-08-24T02:25:04+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/search/index.json</loc>
+    <lastmod>2022-08-23T01:58:01+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/python/</loc>
     <lastmod>2022-08-19T00:25:51+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/blog/2022/08/04-study-color-wheel/</loc>
@@ -61,9 +85,6 @@
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2022/07/14-good-commit-message/</loc>
     <lastmod>2022-07-27T17:58:10+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/hugo/</loc>
-    <lastmod>2022-07-27T10:44:53+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2022/07/13-hugo-with-tailwindcss/</loc>
     <lastmod>2022-07-27T10:44:53+09:00</lastmod>

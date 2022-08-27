@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html><head>
+    <title>kanta's spike</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://kantas-spike.github.io/portfolio/css/theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://kantas-spike.github.io/portfolio/css/syntax.css">
+</head><body class="bg-background text-primary-dark pb-4"><header class="bg-primary-dark text-site_title text-6xl font-serif font-extrabold px-4 py-3">
+    <h1 class="container mx-auto px-4"><a href="https://kantas-spike.github.io/portfolio/">kanta&#39;s spike</a></h1>
+</header>
+<input type="checkbox" name="burger_cbx" id="burger_cbx">
+<label for="burger_cbx" class="burger_label">
+    <span class="burger_icon"><svg version="1.1" viewBox="0 0 12.7 12.7" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <rect x="1.0369" y="2.1007" width="10.634" height="1.0426" ry=".5213"/>
+  <rect x="1.0369" y="4.571" width="10.634" height="1.0426" ry=".5213"/>
+  <rect x="1.0369" y="7.0413" width="10.634" height="1.0426" ry=".5213"/>
+  <rect x="1.0369" y="9.5115" width="10.634" height="1.0426" ry=".5213"/>
+ </g>
+</svg>
+</span>
+</label>
+<label for="burger_cbx" class="close_label">
+    <span class="close_icon"><svg version="1.1" viewBox="0 0 12.7 12.7" xmlns="http://www.w3.org/2000/svg">
+ <rect transform="rotate(45.535)" x="3.6678" y="-.6148" width="10.634" height="1.0426" ry=".5213"/>
+ <rect transform="rotate(135.53)" x="-5.4104" y="-9.5059" width="10.634" height="1.0426" ry=".5213"/>
+</svg>
+</span>
+</label>
+<div class="nav_area">
+    <nav class="container mx-auto bg-primary text-on-primary text-center flex flex-col md:flex-row justify-start">
+            <a href="https://kantas-spike.github.io/portfolio/" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Home</a>
+            <a href="https://kantas-spike.github.io/portfolio/blog" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Blog</a>
+            <a href="https://kantas-spike.github.io/portfolio/til" class="box-border flex-1 text-center no-underline bg-primary-light text-on-primary-light font-extrabold py-2">TIL</a>
+            <a href="https://kantas-spike.github.io/portfolio/mytools" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">My Tools</a>
+            <a href="https://kantas-spike.github.io/portfolio/ihc" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">IHC</a>
+            <a href="https://kantas-spike.github.io/portfolio/tags" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Tags</a>
+        <a id="search_menu" class="text-center no-underline text-on-primary py-2 hover:font-bold px-4"><button><i class="fa-solid fa-magnifying-glass"></i></button></a>
+    </nav>
+</div>
+<main id="content" class="container mx-auto bg-surface pt-4 pb-8">
+<div class="area_border  px-4 py-3 mx-4 pb-4">
+    
+
+
+
+<div class="mb-4">
+    <h3 class="border-b-2 border-primary text-primary-dark text-xl font-bold"><i class="fa-solid fa-note-sticky"></i> <a href="https://kantas-spike.github.io/portfolio/til/2022/08/24-search-dialog-with-vue/">Vueで検索フォームを作成したい</a></h3>
+    <div class="flex justify-between mt-1 mx-2">
+        <div>
+            <ul class="flex gap-2 justify-end">
+            
+            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/vue/">#vue</a></li>
+            
+            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/hugo/">#hugo</a></li>
+            
+            </ul>
+        </div>
+        <div>
+            <div class="text-right text-sm font-bold">2022/08/26</div>
+        </div>
+    </div>
+</div>
+
+    <div class="article mx-2">
+        <p>Vueで検索フォームを作成したい。</p>
+<h3 id="解決策">解決策</h3>
+<p>Hugoのページ情報を<a href="https://lunrjs.com/docs/index.html">Lunr.js</a>を使ってインデックス化し、検索フォームで検索させる。</p>
+<p>今回はページのタイトルのみインデックス化する。</p>
+<h4 id="手順">手順</h4>
+<ol>
+<li>
+<p><a href="https://lunrjs.com/docs/index.html">Lunr.js</a>を使い、クライアントサイドで検索インデックスを作成し、検索可能にする。</p>
+</li>
+<li>
+<p>そのために、検索インデックスの元となる情報は、Hugoで以下のコンテンツとレイアウトを用意し、<code>/portfolio/search/index.json</code> でページの情報を取得可能にする。</p>
+<ul>
+<li>
+<p>コンテンツ(content/search.md)</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-md" data-lang="md"><span class="line"><span class="cl">---
+</span></span><span class="line"><span class="cl">title: &#34;Search&#34;
+</span></span><span class="line"><span class="cl">date: 2022-08-23T01:58:01+09:00
+</span></span><span class="line"><span class="cl">draft: false
+</span></span><span class="line"><span class="cl">outputs:
+</span></span><span class="line"><span class="cl"><span class="k">-</span> JSON
+</span></span><span class="line"><span class="cl">layout: search
+</span></span><span class="line"><span class="cl">---
+</span></span></code></pre></div></li>
+<li>
+<p>レイアウト(layout/_default/search.json)</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;results&#34;</span><span class="p">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span><span class="err">{-</span> <span class="err">range</span> <span class="err">$index,</span> <span class="err">$page</span> <span class="err">:=</span> <span class="err">.Site.RegularPages</span> <span class="p">}</span><span class="err">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span><span class="err">{-</span> <span class="err">if</span> <span class="err">$index</span> <span class="err">-</span><span class="p">}</span><span class="err">}</span><span class="p">,{</span><span class="err">{-</span> <span class="err">end</span> <span class="p">}</span><span class="err">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;href&#34;</span><span class="p">:</span> <span class="p">{</span><span class="err">{</span> <span class="err">.Permalink</span> <span class="err">|</span> <span class="err">jsonify</span> <span class="p">}},</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;title&#34;</span><span class="err">:</span> <span class="p">{</span><span class="err">{</span> <span class="err">.Title</span> <span class="err">|</span> <span class="err">jsonify</span> <span class="p">}</span><span class="err">}</span>
+</span></span><span class="line"><span class="cl">    <span class="err">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span><span class="err">{-</span> <span class="err">end</span> <span class="p">}</span><span class="err">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div></li>
+</ul>
+</li>
+<li>
+<p><a href="https://github.com/axios/axios">axios</a>を使い <code>/portfolio/search/index.json</code> を取得し、インデックスを構築する。</p>
+</li>
+<li>
+<p><a href="https://v3.ja.vuejs.org/">Vue.js</a>で検索フォームを作成し、キーワード入力に応じてインデックスを検索する。</p>
+</li>
+</ol>
+<h4 id="作成した検索フォーム">作成した検索フォーム</h4>
+<div class="rawhtml"><script src="https://unpkg.com/vue@next"></script>
+<script src="//unpkg.com/lunr@2.3.6/lunr.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lunr-languages@1.9.0/lunr.stemmer.support.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lunr-languages@1.9.0/tinyseg.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lunr-languages@1.9.0/lunr.ja.js"></script>
+<script src="//unpkg.com/axios@0.19.0/dist/axios.js"></script>
+<script src="https://unpkg.com/lodash@4.17.20/lodash.min.js"></script>
+
+<div id="my_search">
+</div>
+
+<script type="text/x-template" id="my-app">
+<search-panel v-on:update="keywordUpdated" :searchResults="results" />
+</script>
+
+<script type="text/x-template" id="my-search-panel">
+    <div class="flex flex-col items-center border border-secondary-dark w-fit rounded bg-secondary-light text-secondary-dark mx-auto">
+        <div class="flex items-center justify-center m-4">
+            <div><i class="fa-solid fa-magnifying-glass text-3xl mr-2"></i></div>
+            <input type="text" v-on:input="handleInput" v-on:keyup.enter="handleInput" class="border border-secondary-dark
+            text-sm rounded-lg focus:ring-secondary-light focus:border-secondary-light block w-96 p-2.5" placeholder="Search this blog" required>
+        </div>
+        <div class="flex flex-col items-start mb-2 overflow-y-auto h-[400px]">
+            <div class="p-2 m-2"  v-for="result in searchResults">
+                <a :href="result.href">[[result.title]]</a>
+            </div>
+        </div>
+    </div>
+</script>
+
+<script>
+(()=>{
+    const panel = {
+        template: '#my-search-panel',
+        data() {
+            return {
+            }
+        },
+        props: ['searchResults'],
+        emits: ['update'],
+        methods: {
+            handleInput: _.debounce(function(e) {
+                const val = e.target.value
+                console.log(val)
+                this.$emit('update', val)
+            }, 500)
+        }
+    }
+
+    const my_searchInfo = {
+        searchData: {},
+        searchIndex: {}
+    }
+
+    axios
+        .get('/portfolio/search/index.json')
+        .then(res => {
+            my_searchInfo.searchData = res.data
+            my_searchInfo.searchIndex = lunr(function() {
+                this.ref('href')
+                this.field('title')
+                this.use(lunr.ja)
+                my_searchInfo.searchData.results.forEach(e => {
+                    this.add(e);
+                })
+            })
+        })
+
+    // app作成
+    const my_app = Vue.createApp({
+        template: '#my-app',
+        data() {
+            return {
+                results: []
+            }
+        },
+        components: {
+            'search-panel': panel
+        },
+        methods: {
+            keywordUpdated: function(keyword) {
+                console.log(`updated: ${keyword}`)
+                if (keyword.trim().length == 0) {
+                    this.results = []
+                } else {
+                    const list = my_searchInfo.searchIndex.search(keyword).map(entry => {
+                        console.log(entry)
+                        const obj = my_searchInfo.searchData.results.filter(d => entry.ref == d.href)[0]
+                        return { 'href': obj.href, 'title': obj.title }
+                    })
+                    this.results = list
+                }
+            }
+        }
+    })
+    // app設定
+    my_app.config.compilerOptions.delimiters = [ "[[", "]]" ]
+    // htmlにマウント
+    my_app.mount('#my_search')
+})()
+</script>
+</div><h4 id="ソース">ソース</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://unpkg.com/vue@next&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;//unpkg.com/lunr@2.3.6/lunr.js&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://cdn.jsdelivr.net/npm/lunr-languages@1.9.0/lunr.stemmer.support.js&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://cdn.jsdelivr.net/npm/lunr-languages@1.9.0/tinyseg.js&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://cdn.jsdelivr.net/npm/lunr-languages@1.9.0/lunr.ja.js&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;//unpkg.com/axios@0.19.0/dist/axios.js&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://unpkg.com/lodash@4.17.20/lodash.min.js&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;my_search&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text/x-template&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;my-app&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="o">&lt;</span><span class="nx">search</span><span class="o">-</span><span class="nx">panel</span> <span class="nx">v</span><span class="o">-</span><span class="nx">on</span><span class="o">:</span><span class="nx">update</span><span class="o">=</span><span class="s2">&#34;keywordUpdated&#34;</span> <span class="o">:</span><span class="nx">searchResults</span><span class="o">=</span><span class="s2">&#34;results&#34;</span> <span class="o">/&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text/x-template&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;my-search-panel&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="nx">div</span> <span class="kr">class</span><span class="o">=</span><span class="s2">&#34;flex flex-col items-center border border-secondary-dark w-fit rounded bg-secondary-light text-secondary-dark mx-auto&#34;</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="o">&lt;</span><span class="nx">div</span> <span class="kr">class</span><span class="o">=</span><span class="s2">&#34;flex items-center justify-center m-4&#34;</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;&lt;</span><span class="nx">i</span> <span class="kr">class</span><span class="o">=</span><span class="s2">&#34;fa-solid fa-magnifying-glass text-3xl mr-2&#34;</span><span class="o">&gt;&lt;</span><span class="err">/i&gt;&lt;/div&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="o">&lt;</span><span class="nx">input</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&#34;text&#34;</span> <span class="nx">v</span><span class="o">-</span><span class="nx">on</span><span class="o">:</span><span class="nx">input</span><span class="o">=</span><span class="s2">&#34;handleInput&#34;</span> <span class="nx">v</span><span class="o">-</span><span class="nx">on</span><span class="o">:</span><span class="nx">keyup</span><span class="p">.</span><span class="nx">enter</span><span class="o">=</span><span class="s2">&#34;handleInput&#34;</span> <span class="kr">class</span><span class="o">=</span><span class="s2">&#34;border border-secondary-dark
+</span></span></span><span class="line"><span class="cl"><span class="s2">            text-sm rounded-lg focus:ring-secondary-light focus:border-secondary-light block w-96 p-2.5&#34;</span> <span class="nx">placeholder</span><span class="o">=</span><span class="s2">&#34;Search this blog&#34;</span> <span class="nx">required</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="o">&lt;</span><span class="err">/div&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="o">&lt;</span><span class="nx">div</span> <span class="kr">class</span><span class="o">=</span><span class="s2">&#34;flex flex-col items-start mb-2 overflow-y-auto h-[400px]&#34;</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="o">&lt;</span><span class="nx">div</span> <span class="kr">class</span><span class="o">=</span><span class="s2">&#34;p-2 m-2&#34;</span>  <span class="nx">v</span><span class="o">-</span><span class="k">for</span><span class="o">=</span><span class="s2">&#34;result in searchResults&#34;</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="o">&lt;</span><span class="nx">a</span> <span class="o">:</span><span class="nx">href</span><span class="o">=</span><span class="s2">&#34;result.href&#34;</span><span class="o">&gt;</span><span class="p">[[</span><span class="nx">result</span><span class="p">.</span><span class="nx">title</span><span class="p">]]</span><span class="o">&lt;</span><span class="err">/a&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="o">&lt;</span><span class="err">/div&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="o">&lt;</span><span class="err">/div&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="err">/div&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">(()=&gt;{</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="nx">panel</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">template</span><span class="o">:</span> <span class="s1">&#39;#my-search-panel&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">data</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">},</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">props</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;searchResults&#39;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">emits</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;update&#39;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">methods</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">handleInput</span><span class="o">:</span> <span class="nx">_</span><span class="p">.</span><span class="nx">debounce</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="kr">const</span> <span class="nx">val</span> <span class="o">=</span> <span class="nx">e</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">value</span>
+</span></span><span class="line"><span class="cl">                <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">val</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="k">this</span><span class="p">.</span><span class="nx">$emit</span><span class="p">(</span><span class="s1">&#39;update&#39;</span><span class="p">,</span> <span class="nx">val</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="p">},</span> <span class="mi">500</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="nx">my_searchInfo</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">searchData</span><span class="o">:</span> <span class="p">{},</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">searchIndex</span><span class="o">:</span> <span class="p">{}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nx">axios</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">&#39;/portfolio/search/index.json&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">res</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">my_searchInfo</span><span class="p">.</span><span class="nx">searchData</span> <span class="o">=</span> <span class="nx">res</span><span class="p">.</span><span class="nx">data</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">my_searchInfo</span><span class="p">.</span><span class="nx">searchIndex</span> <span class="o">=</span> <span class="nx">lunr</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="k">this</span><span class="p">.</span><span class="nx">ref</span><span class="p">(</span><span class="s1">&#39;href&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="k">this</span><span class="p">.</span><span class="nx">field</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="k">this</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="nx">lunr</span><span class="p">.</span><span class="nx">ja</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="nx">my_searchInfo</span><span class="p">.</span><span class="nx">searchData</span><span class="p">.</span><span class="nx">results</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">e</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">this</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="nx">e</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                <span class="p">})</span>
+</span></span><span class="line"><span class="cl">            <span class="p">})</span>
+</span></span><span class="line"><span class="cl">        <span class="p">})</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// app作成
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kr">const</span> <span class="nx">my_app</span> <span class="o">=</span> <span class="nx">Vue</span><span class="p">.</span><span class="nx">createApp</span><span class="p">({</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">template</span><span class="o">:</span> <span class="s1">&#39;#my-app&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">data</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="nx">results</span><span class="o">:</span> <span class="p">[]</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">},</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">components</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="s1">&#39;search-panel&#39;</span><span class="o">:</span> <span class="nx">panel</span>
+</span></span><span class="line"><span class="cl">        <span class="p">},</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">methods</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">keywordUpdated</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">keyword</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`updated: </span><span class="si">${</span><span class="nx">keyword</span><span class="si">}</span><span class="sb">`</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="k">if</span> <span class="p">(</span><span class="nx">keyword</span><span class="p">.</span><span class="nx">trim</span><span class="p">().</span><span class="nx">length</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">this</span><span class="p">.</span><span class="nx">results</span> <span class="o">=</span> <span class="p">[]</span>
+</span></span><span class="line"><span class="cl">                <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="kr">const</span> <span class="nx">list</span> <span class="o">=</span> <span class="nx">my_searchInfo</span><span class="p">.</span><span class="nx">searchIndex</span><span class="p">.</span><span class="nx">search</span><span class="p">(</span><span class="nx">keyword</span><span class="p">).</span><span class="nx">map</span><span class="p">(</span><span class="nx">entry</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">entry</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                        <span class="kr">const</span> <span class="nx">obj</span> <span class="o">=</span> <span class="nx">my_searchInfo</span><span class="p">.</span><span class="nx">searchData</span><span class="p">.</span><span class="nx">results</span><span class="p">.</span><span class="nx">filter</span><span class="p">(</span><span class="nx">d</span> <span class="p">=&gt;</span> <span class="nx">entry</span><span class="p">.</span><span class="nx">ref</span> <span class="o">==</span> <span class="nx">d</span><span class="p">.</span><span class="nx">href</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">                        <span class="k">return</span> <span class="p">{</span> <span class="s1">&#39;href&#39;</span><span class="o">:</span> <span class="nx">obj</span><span class="p">.</span><span class="nx">href</span><span class="p">,</span> <span class="s1">&#39;title&#39;</span><span class="o">:</span> <span class="nx">obj</span><span class="p">.</span><span class="nx">title</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">})</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">this</span><span class="p">.</span><span class="nx">results</span> <span class="o">=</span> <span class="nx">list</span>
+</span></span><span class="line"><span class="cl">                <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">})</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// app設定
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nx">my_app</span><span class="p">.</span><span class="nx">config</span><span class="p">.</span><span class="nx">compilerOptions</span><span class="p">.</span><span class="nx">delimiters</span> <span class="o">=</span> <span class="p">[</span> <span class="s2">&#34;[[&#34;</span><span class="p">,</span> <span class="s2">&#34;]]&#34;</span> <span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// htmlにマウント
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nx">my_app</span><span class="p">.</span><span class="nx">mount</span><span class="p">(</span><span class="s1">&#39;#my_search&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">})()</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span></code></pre></div><h3 id="参考">参考</h3>
+<ul>
+<li><a href="https://lunrjs.com/docs/index.html">Lunr.js</a></li>
+<li><a href="https://pragprog.com/titles/bhhugo/build-websites-with-hugo/">Build Websites with Hugo</a></li>
+<li><a href="https://github.com/axios/axios">axios</a></li>
+<li><a href="https://v3.ja.vuejs.org/">Vue.js</a></li>
+</ul>
+    </div>
+</div>
+
+        </main><footer class="bg-primary-dark text-center text-on-primary-dark fixed bottom-0 w-full h-8">
+    <div class="container mx-auto grid grid-cols-3">
+        <div class="col-start-2">
+            <div class="text-sm pt-2">Copyright 2022 kanta&#39;s spike</div>
+        </div>
+        <div class="flex justify-end gap-2 mr-2">
+            
+                
+            <a title="Twitter" class="text-2xl" href="https://twitter.com/KantasSpike"><i class="fa-brands fa-twitter-square"></i></a>
+                
+            <a title="Youtube" class="text-2xl" href="https://www.youtube.com/channel/UCnVBuUGMYAt7ZuIkadxnMfw"><i class="fa-brands fa-youtube-square"></i></a>
+                
+            <a title="GitHub" class="text-2xl" href="https://github.com/kantas-spike"><i class="fa-brands fa-github-square"></i></a>
+                
+            <a title="Blog" class="text-2xl" href="https://kantas-spike.github.io/portfolio/"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                
+            
+        </div>
+    </div>
+</footer>
+        <script src="https://unpkg.com/vue@next"></script>
+<script src="//unpkg.com/lunr@2.3.6/lunr.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lunr-languages@1.9.0/lunr.stemmer.support.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lunr-languages@1.9.0/tinyseg.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lunr-languages@1.9.0/lunr.ja.js"></script>
+<script src="//unpkg.com/axios@0.19.0/dist/axios.js"></script>
+<script src="https://unpkg.com/lodash@4.17.20/lodash.min.js"></script>
+
+<script type="text/x-template" id="modal-frame">
+    <a class="text-center no-underline text-on-primary py-2 font-normal cursor-pointer hover:font-bold" v-on:click="open"><i class="fa-solid fa-magnifying-glass"></i></a>
+    <teleport to="body">
+        <div v-if="modalOpen" class="fixed top-0 right-0 bottom-0 left-0 bg-black/70 flex items-center flex-col content-center" @click.self="modalOpen = false">
+            <div class="md:mt-36 mt-10">
+                <slot />
+            </div>
+        </div>
+    </teleport>
+</script>
+
+<script type="text/x-template" id="search-panel">
+    <div class="flex flex-col items-center border border-secondary-dark md:w-[700px] w-80 rounded bg-secondary-light text-secondary-dark mx-auto">
+        <div class="flex items-center justify-center m-4">
+            <div><i class="fa-solid fa-magnifying-glass text-3xl mr-2"></i></div>
+            <input type="text" v-on:input="handleInput" v-on:keyup.enter="handleInput" class="border border-secondary-dark
+            text-sm rounded-lg focus:ring-secondary-light focus:border-secondary-light block md:w-96 w-56 p-2.5" placeholder="Search this blog" required>
+        </div>
+        <div class="flex flex-col items-start mb-2 overflow-y-auto h-[440px] md:h-[540px]">
+            <div class="md:p-2 md:m-2 mb-4 px-4"  v-for="result in searchResults">
+                <a :href="result.href">[[result.title]]</a>
+            </div>
+        </div>
+    </div>
+</script>
+
+<script type="text/x-template" id="search-app">
+    <modal-frame v-on:opened="dialogOpened">
+        <search-panel v-on:update="keywordUpdated" :searchResults="results" />
+    </modal-frame>
+</script>
+
+<script>
+    const searchPanel = {
+        template: '#search-panel',
+        data() {
+            return {
+            }
+        },
+        props: ['searchResults'],
+        emits: ['update'],
+        methods: {
+            handleInput: _.debounce(function(e) {
+                const val = e.target.value
+                console.log(val)
+                this.$emit('update', val)
+            }, 500)
+        }
+    }
+
+    const modalFrame = {
+        template: '#modal-frame',
+        data() {
+            return {
+                modalOpen: false
+            }
+        },
+        emits: ['opened'],
+        methods: {
+            open: function() {
+                this.modalOpen = true
+                this.$emit('opened')
+            }
+        }
+    }
+
+    const searchInfo = {
+        searchData: {},
+        searchIndex: {}
+    }
+
+    
+    const app = Vue.createApp({
+        template: '#search-app',
+        components: {
+            'modal-frame': modalFrame,
+            'search-panel': searchPanel,
+        },
+        data() {
+            return {
+                results: []
+            }
+        },
+        methods: {
+            keywordUpdated: function(keyword) {
+                console.log(`updated: ${keyword}`)
+                if (keyword.trim().length == 0) {
+                    this.results = []
+                } else {
+                    const list = searchInfo.searchIndex.search(keyword).map(entry => {
+                        console.log(entry)
+                        const obj = searchInfo.searchData.results.filter(d => entry.ref == d.href)[0]
+                        return { 'href': obj.href, 'title': obj.title }
+                    })
+                    this.results = list
+                }
+            },
+            dialogOpened: function() {
+                axios.get('/portfolio/search/index.json')
+                    .then(res => {
+                        searchInfo.searchData = res.data
+                        searchInfo.searchIndex = lunr(function() {
+                            this.ref('href')
+                            this.field('title')
+                            this.use(lunr.ja)
+                            searchInfo.searchData.results.forEach(e => {
+                                this.add(e);
+                            })
+                        })
+                    })
+            }
+        }
+    })
+    
+    app.config.compilerOptions.delimiters = [ "[[", "]]" ]
+    
+    app.mount('#search_menu')
+</script></body>
+</html>

@@ -1,0 +1,128 @@
+{
+    "results": [
+    {
+        "href": "https://kantas-spike.github.io/portfolio/til/2022/08/25-quotation-with-hugo/",
+        "title": "Hugoで引用した文を目立たせたい"
+    },
+    {
+        "href": "https://kantas-spike.github.io/portfolio/til/2022/08/24-search-dialog-with-vue/",
+        "title": "Vueで検索フォームを作成したい"
+    },
+    {
+        "href": "https://kantas-spike.github.io/portfolio/til/2022/08/23-modal-window-with-vue/",
+        "title": "Vueでモーダル画面を作成したい"
+    },
+    {
+        "href": "https://kantas-spike.github.io/portfolio/til/2022/08/22-introducing-vue/",
+        "title": "Vue.jsを導入したい"
+    },
+    {
+        "href": "https://kantas-spike.github.io/portfolio/search/index.json",
+        "title": "Search"
+    },
+    {
+        "href": "https://kantas-spike.github.io/portfolio/blog/2022/08/04-study-color-wheel/",
+        "title": "Webサイトの配色とカラーホイール"
+    },
+    {
+        "href": "https://kantas-spike.github.io/portfolio/til/2022/08/21-layout-widgits-with-tkinter/",
+        "title": "Tkinterで部品を上手く配置したい"
+    },
+    {
+        "href": "https://kantas-spike.github.io/portfolio/til/2022/08/20-link-to-the-page-of-pdf/",
+        "title": "PDFの特定ページにリンクを貼りたい"
+    },
+    {
+        "href": "https://kantas-spike.github.io/portfolio/til/2022/08/19-fill-bg-color-with-tkinter/",
+        "title": "Tkinterで部品の背景色を変更したい"
+    },
+    {
+        "href": "https://kantas-spike.github.io/portfolio/til/2022/08/18-rotate-item-with-python/",
+        "title": "Pythonで図形を回転させたい"
+    },
+    {
+        "href": "https://kantas-spike.github.io/portfolio/til/2022/08/17-color-contrast/",
+        "title": "2色のコントラストの差を知りたい"
+    },
+    {
+        "href": "https://kantas-spike.github.io/portfolio/til/2022/08/16-python-option-parser/",
+        "title": "Pythonでコマンドラインオプション取得したい"
+    },
+    {
+        "href": "https://kantas-spike.github.io/portfolio/til/2022/07/15-python-graph/",
+        "title": "Pythonでグラフを描きたい"
+    },
+    {
+        "href": "https://kantas-spike.github.io/portfolio/til/2022/07/14-good-commit-message/",
+        "title": "良いコミットメッセージを書きたい"
+    },
+    {
+        "href": "https://kantas-spike.github.io/portfolio/til/2022/07/13-hugo-with-tailwindcss/",
+        "title": "Hugoでtailwindcssを使いたい"
+    },
+    {
+        "href": "https://kantas-spike.github.io/portfolio/blog/2022/07/03-how-to-learn-git/",
+        "title": "ツールの学習 Git"
+    },
+    {
+        "href": "https://kantas-spike.github.io/portfolio/blog/2022/07/02-how-to-learn-tools/",
+        "title": "ツールの学習 はじめに"
+    },
+    {
+        "href": "https://kantas-spike.github.io/portfolio/til/2022/07/12-hugo-with-svg/",
+        "title": "HugoでSVGを埋め込みたい"
+    },
+    {
+        "href": "https://kantas-spike.github.io/portfolio/til/2022/07/11-hugo-escape-shortcodes/",
+        "title": "Hugoでショートコードの記述をエスケープして表示したい"
+    },
+    {
+        "href": "https://kantas-spike.github.io/portfolio/til/2022/07/10-hugo-with-rawhtml/",
+        "title": "HugoのMarkdownでHTMLをそのまま記述したい"
+    },
+    {
+        "href": "https://kantas-spike.github.io/portfolio/til/2022/07/09-hugo-with-youtube-playlist/",
+        "title": "hugoでyoutubeのplaylistを埋め込みたい"
+    },
+    {
+        "href": "https://kantas-spike.github.io/portfolio/blog/2022/07/00-how-to-learn-programming/",
+        "title": "プログラミングの学び方"
+    },
+    {
+        "href": "https://kantas-spike.github.io/portfolio/til/2022/07/08-git-submodule-update/",
+        "title": "gitでsubmoduleの更新を取り込みたい"
+    },
+    {
+        "href": "https://kantas-spike.github.io/portfolio/til/2022/07/07-quote-code-block-in-markdown/",
+        "title": "Markdown内でコードブロックを引用したい"
+    },
+    {
+        "href": "https://kantas-spike.github.io/portfolio/til/2022/07/06-hugo-with-syntax-highlighter-css/",
+        "title": "HugoでシンタックスハイライトCSSを利用したい"
+    },
+    {
+        "href": "https://kantas-spike.github.io/portfolio/til/2022/07/05-hugo-with-editor/",
+        "title": "hugoにコンテンツ追加時にvscodeですぐに編集したい"
+    },
+    {
+        "href": "https://kantas-spike.github.io/portfolio/til/2022/07/04-hugo-with-mermaid/",
+        "title": "hugoでmermaid.jsを使いたい"
+    },
+    {
+        "href": "https://kantas-spike.github.io/portfolio/til/2022/07/03-hugo-tag-link/",
+        "title": "hugoで環境に依存しないタグのリンクを取得したい"
+    },
+    {
+        "href": "https://kantas-spike.github.io/portfolio/til/2022/07/02-hugo-options/",
+        "title": "hugoで出力ディレクトリを削除してから実行したい"
+    },
+    {
+        "href": "https://kantas-spike.github.io/portfolio/til/2022/07/01-hugo-server-options/",
+        "title": "hugo serverをキャッシュ無しで表示させる"
+    },
+    {
+        "href": "https://kantas-spike.github.io/portfolio/blog/2022/07/01-create-my-portfolio-site/",
+        "title": "ポートフォリオサイトを作成する"
+    }
+    ]
+}
