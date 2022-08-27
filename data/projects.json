@@ -6,7 +6,7 @@
             "html_url": "https://github.com/kantas-spike/create-color-wheel.py",
             "description": "指定した明度(V)の範囲の色相環をまとめて作成します。",
             "size": 218,
-            "pushed_at": "2022-08-17T15:08:11Z",
+            "pushed_at": "2022-08-20T16:48:39Z",
             "project_type": "mytools",
             "langs": [
                 "Python"
@@ -79,8 +79,8 @@
             "full_name": "kantas-spike/kantas-theme",
             "html_url": "https://github.com/kantas-spike/kantas-theme",
             "description": "Hugo theme for programming learner portfolio",
-            "size": 62,
-            "pushed_at": "2022-08-19T18:10:27Z",
+            "size": 64,
+            "pushed_at": "2022-08-27T22:23:11Z",
             "project_type": "IHC",
             "langs": [
                 "HTML",
@@ -88,6 +88,16 @@
                 "JavaScript"
             ],
             "merged": [
+                {
+                    "html_url": "https://github.com/kantas-spike/kantas-theme/pull/24",
+                    "title": "Itr07: 検索機能の追加等",
+                    "state": "closed",
+                    "body": null,
+                    "created_at": "2022-08-27T22:23:05Z",
+                    "merged_at": "2022-08-27T22:23:12Z",
+                    "closed_at": "2022-08-27T22:23:12Z",
+                    "user": "kantas-spike"
+                },
                 {
                     "html_url": "https://github.com/kantas-spike/kantas-theme/pull/22",
                     "title": "Itr06: 配色パターンを更新",
@@ -156,7 +166,7 @@
             "html_url": "https://github.com/kantas-spike/Color-Wheel",
             "description": "A colorwheel demo tool built with Tkinter",
             "size": 6085,
-            "pushed_at": "2022-08-18T15:21:43Z",
+            "pushed_at": "2022-08-21T19:09:28Z",
             "project_type": "IHC",
             "langs": [
                 "Python"
