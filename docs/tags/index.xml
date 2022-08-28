@@ -7,13 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>Copyright 2022 kanta&#39;s spike</copyright>
-    <lastBuildDate>Sat, 27 Aug 2022 04:23:14 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 28 Aug 2022 10:52:51 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>hugo</title>
       <link>https://kantas-spike.github.io/portfolio/tags/hugo/</link>
-      <pubDate>Sat, 27 Aug 2022 04:23:14 +0900</pubDate>
+      <pubDate>Sun, 28 Aug 2022 10:52:51 +0900</pubDate>
       
       <guid>https://kantas-spike.github.io/portfolio/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tailwindcss</title>
+      <link>https://kantas-spike.github.io/portfolio/tags/tailwindcss/</link>
+      <pubDate>Sun, 28 Aug 2022 10:52:51 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/tags/tailwindcss/</guid>
       <description></description>
     </item>
     
@@ -122,15 +131,6 @@
       <pubDate>Wed, 27 Jul 2022 17:58:10 +0900</pubDate>
       
       <guid>https://kantas-spike.github.io/portfolio/tags/git/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>tailwindcss</title>
-      <link>https://kantas-spike.github.io/portfolio/tags/tailwindcss/</link>
-      <pubDate>Wed, 27 Jul 2022 10:44:53 +0900</pubDate>
-      
-      <guid>https://kantas-spike.github.io/portfolio/tags/tailwindcss/</guid>
       <description></description>
     </item>
     

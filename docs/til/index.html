@@ -2,9 +2,8 @@
 <html><head>
     <title>kanta's spike</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://kantas-spike.github.io/portfolio/css/theme.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://kantas-spike.github.io/portfolio/css/syntax.css">
+    <link rel="stylesheet" href="https://kantas-spike.github.io/portfolio/css/theme.4dfd8f06090aa80a7c7d268193679ed5acc961c20c9e706bebd9dd6c0c8b220c.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" /><link rel="stylesheet" href="https://kantas-spike.github.io/portfolio/css/syntax.d59352fe2c71602c0598c94b3cdaaef7d6553d94438605aefc2b925940f21d6a.css">
 </head><body class="bg-background text-primary-dark pb-4"><header class="bg-primary-dark text-site_title text-6xl font-serif font-extrabold px-4 py-3">
     <h1 class="container mx-auto px-4"><a href="https://kantas-spike.github.io/portfolio/">kanta&#39;s spike</a></h1>
 </header>
@@ -35,7 +34,7 @@
             <a href="https://kantas-spike.github.io/portfolio/mytools" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">My Tools</a>
             <a href="https://kantas-spike.github.io/portfolio/ihc" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">IHC</a>
             <a href="https://kantas-spike.github.io/portfolio/tags" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Tags</a>
-        <a id="search_menu" class="text-center no-underline text-on-primary py-2 hover:font-bold px-4"><button><i class="fa-solid fa-magnifying-glass"></i></button></a>
+        <div class="flex-none" id="search_menu"></div>
     </nav>
 </div>
 <main id="content" class="container mx-auto bg-surface pt-4 pb-8">
@@ -43,6 +42,34 @@
 </div>
 
 <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-2 mt-6 my-4 mx-4">
+    
+        <div class="area_border  px-4 py-3">
+    
+
+
+
+<div class="mb-4">
+    <h3 class="border-b-2 border-primary text-primary-dark text-xl font-bold"><i class="fa-solid fa-note-sticky"></i> <a href="https://kantas-spike.github.io/portfolio/til/2022/08/26-responsive-with-tailwindcss/">tailwindcss で Responsive Design したい</a></h3>
+    <div class="flex justify-between mt-1 mx-2">
+        <div>
+            <ul class="flex gap-2 justify-end">
+            
+            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/tailwindcss/">#tailwindcss</a></li>
+            
+            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/hugo/">#hugo</a></li>
+            
+            </ul>
+        </div>
+        <div>
+            <div class="text-right text-sm font-bold">2022/08/28</div>
+        </div>
+    </div>
+</div>
+
+    <div class="article mx-2">
+        <p>tailwindcss で Responsive なデザインをしたい。</p>
+    </div>
+</div>
     
         <div class="area_border  px-4 py-3">
     
@@ -185,34 +212,6 @@
     </div>
 </div>
     
-        <div class="area_border  px-4 py-3">
-    
-
-
-
-<div class="mb-4">
-    <h3 class="border-b-2 border-primary text-primary-dark text-xl font-bold"><i class="fa-solid fa-note-sticky"></i> <a href="https://kantas-spike.github.io/portfolio/til/2022/08/20-link-to-the-page-of-pdf/">PDFの特定ページにリンクを貼りたい</a></h3>
-    <div class="flex justify-between mt-1 mx-2">
-        <div>
-            <ul class="flex gap-2 justify-end">
-            
-            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/html/">#html</a></li>
-            
-            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/pdf/">#PDF</a></li>
-            
-            </ul>
-        </div>
-        <div>
-            <div class="text-right text-sm font-bold">2022/08/06</div>
-        </div>
-    </div>
-</div>
-
-    <div class="article mx-2">
-        <p>PDFの特定ページにリンクを貼りたい。</p>
-    </div>
-</div>
-    
 </div>
 <div>
     
@@ -276,7 +275,7 @@
 <script src="https://unpkg.com/lodash@4.17.20/lodash.min.js"></script>
 
 <script type="text/x-template" id="modal-frame">
-    <a class="text-center no-underline text-on-primary py-2 font-normal cursor-pointer hover:font-bold" v-on:click="open"><i class="fa-solid fa-magnifying-glass"></i></a>
+    <a class="block text-center no-underline text-on-primary py-2 px-2 font-normal cursor-pointer hover:font-bold" v-on:click="open"><i class="fa-solid fa-magnifying-glass"></i></a>
     <teleport to="body">
         <div v-if="modalOpen" class="fixed top-0 right-0 bottom-0 left-0 bg-black/70 flex items-center flex-col content-center" @click.self="modalOpen = false">
             <div class="md:mt-36 mt-10">
@@ -287,15 +286,15 @@
 </script>
 
 <script type="text/x-template" id="search-panel">
-    <div class="flex flex-col items-center border border-secondary-dark md:w-[700px] w-80 rounded bg-secondary-light text-secondary-dark mx-auto">
-        <div class="flex items-center justify-center m-4">
-            <div><i class="fa-solid fa-magnifying-glass text-3xl mr-2"></i></div>
-            <input type="text" v-on:input="handleInput" v-on:keyup.enter="handleInput" class="border border-secondary-dark
-            text-sm rounded-lg focus:ring-secondary-light focus:border-secondary-light block md:w-96 w-56 p-2.5" placeholder="Search this blog" required>
+    <div class="flex flex-col items-center border border-secondary-dark md:w-[700px] w-80 md:w-[500px] rounded-lg bg-secondary-light text-secondary-dark mx-auto">
+        <div class="flex items-center w-full border-b border-secondary-dark">
+            <div class="flex-none"><i class="fa-solid fa-magnifying-glass text-3xl mx-2"></i></div>
+            <input type="text" v-focus v-on:input="handleInput" v-on:keyup.enter="handleInput" class="grow bg-secondary-light text-on-secondary-light
+            text-sm rounded-lg focus:outline-none block p-2.5 w-full" placeholder="Search this blog" required>
         </div>
-        <div class="flex flex-col items-start mb-2 overflow-y-auto h-[440px] md:h-[540px]">
-            <div class="md:p-2 md:m-2 mb-4 px-4"  v-for="result in searchResults">
-                <a :href="result.href">[[result.title]]</a>
+        <div class="flex flex-col items-start mb-4 overflow-y-auto h-[440px] md:h-[540px] w-full">
+            <div class="pt-4 pb-2 px-6  border-b border-secondary-dark w-full hover:bg-secondary/60 hover:text-on-secondary"  v-for="result in searchResults">
+                <a class="block" :href="result.href">[[result.title]]</a>
             </div>
         </div>
     </div>
@@ -386,6 +385,12 @@
                         })
                     })
             }
+        }
+    })
+    
+    app.directive('focus', {
+        mounted(el) {
+            el.focus()
         }
     })
     
