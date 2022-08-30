@@ -2,7 +2,7 @@
 <html><head>
     <title>kanta's spike</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://kantas-spike.github.io/portfolio/css/theme.4dfd8f06090aa80a7c7d268193679ed5acc961c20c9e706bebd9dd6c0c8b220c.css">
+    <link rel="stylesheet" href="https://kantas-spike.github.io/portfolio/css/theme.0a3aac8effbe6410492f1ed021cd0c4cc6f5f49a796b5293525ff107c352e478.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" /><link rel="stylesheet" href="https://kantas-spike.github.io/portfolio/css/syntax.d59352fe2c71602c0598c94b3cdaaef7d6553d94438605aefc2b925940f21d6a.css">
 </head><body class="bg-background text-primary-dark pb-4"><header class="bg-primary-dark text-site_title text-6xl font-serif font-extrabold px-4 py-3">
     <h1 class="container mx-auto px-4"><a href="https://kantas-spike.github.io/portfolio/">kanta&#39;s spike</a></h1>
@@ -42,6 +42,34 @@
 </div>
 
 <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-2 mt-6 my-4 mx-4">
+    
+        <div class="area_border  px-4 py-3">
+    
+
+
+
+<div class="mb-4">
+    <h3 class="border-b-2 border-primary text-primary-dark text-xl font-bold"><i class="fa-solid fa-note-sticky"></i> <a href="https://kantas-spike.github.io/portfolio/til/2022/07/09-hugo-with-youtube-playlist/">hugoでyoutubeのplaylistを埋め込みたい</a></h3>
+    <div class="flex justify-between mt-1 mx-2">
+        <div>
+            <ul class="flex gap-2 justify-end">
+            
+            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/hugo/">#hugo</a></li>
+            
+            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/shortcodes/">#shortcodes</a></li>
+            
+            </ul>
+        </div>
+        <div>
+            <div class="text-right text-sm font-bold">2022/07/23</div>
+        </div>
+    </div>
+</div>
+
+    <div class="article mx-2">
+        <p>youtube用の標準ショートコードのplaylist版が欲しい。</p>
+    </div>
+</div>
     
         <div class="area_border  px-4 py-3">
     
@@ -186,32 +214,6 @@ git submodule update --remote 参考  上流の変更の取り込み
     </div>
 </div>
     
-        <div class="area_border  px-4 py-3">
-    
-
-
-
-<div class="mb-4">
-    <h3 class="border-b-2 border-primary text-primary-dark text-xl font-bold"><i class="fa-solid fa-note-sticky"></i> <a href="https://kantas-spike.github.io/portfolio/til/2022/07/03-hugo-tag-link/">hugoで環境に依存しないタグのリンクを取得したい</a></h3>
-    <div class="flex justify-between mt-1 mx-2">
-        <div>
-            <ul class="flex gap-2 justify-end">
-            
-            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/hugo/">#hugo</a></li>
-            
-            </ul>
-        </div>
-        <div>
-            <div class="text-right text-sm font-bold">2022/07/15</div>
-        </div>
-    </div>
-</div>
-
-    <div class="article mx-2">
-        <p>ページに定義されたタグから環境に依存しないURLを生成したい。</p>
-    </div>
-</div>
-    
 </div>
 <div>
     
@@ -289,7 +291,7 @@ git submodule update --remote 参考  上流の変更の取り込み
     <div class="flex flex-col items-center border border-secondary-dark md:w-[700px] w-80 md:w-[500px] rounded-lg bg-secondary-light text-secondary-dark mx-auto">
         <div class="flex items-center w-full border-b border-secondary-dark">
             <div class="flex-none"><i class="fa-solid fa-magnifying-glass text-3xl mx-2"></i></div>
-            <input type="text" v-focus v-on:input="handleInput" v-on:keyup.enter="handleInput" class="grow bg-secondary-light text-on-secondary-light
+            <input type="text" v-focus v-on:input="handleInput" v-on:keyup.enter="handleInput" v-on:keyup.esc="closeWindow" class="grow bg-secondary-light text-on-secondary-light
             text-sm rounded-lg focus:outline-none block p-2.5 w-full" placeholder="Search this blog" required>
         </div>
         <div class="flex flex-col items-start mb-4 overflow-y-auto h-[440px] md:h-[540px] w-full">
@@ -320,7 +322,12 @@ git submodule update --remote 参考  上流の変更の取り込み
                 const val = e.target.value
                 console.log(val)
                 this.$emit('update', val)
-            }, 500)
+            }, 500),
+            closeWindow: function(e) {
+                if (this.$parent) {
+                    this.$parent.modalOpen = false
+                }
+            }
         }
     }
 

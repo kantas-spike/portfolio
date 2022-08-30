@@ -1513,14 +1513,13 @@ video {
   display: flex;
   justify-content: center;
   --tw-text-opacity: 1;
-  color: rgb(69 77 25 / var(--tw-text-opacity));
+  color: rgb(25 43 77 / var(--tw-text-opacity));
 }
 .pagination .page-item {
   width: 2.5rem;
   border-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
-  padding: 0.25rem;
   text-align: center;
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
@@ -1528,13 +1527,16 @@ video {
   --tw-shadow-color: #d1d5db;
   --tw-shadow: var(--tw-shadow-colored);
 }
+.pagination .page-item a {
+  display: block;
+}
 .pagination .page-item.active {
   --tw-bg-opacity: 1;
-  background-color: rgb(243 233 216 / var(--tw-bg-opacity));
+  background-color: rgb(216 226 243 / var(--tw-bg-opacity));
 }
 .pagination .page-item.active > .page-link {
   --tw-text-opacity: 1;
-  color: rgb(35 39 12 / var(--tw-text-opacity));
+  color: rgb(12 22 39 / var(--tw-text-opacity));
 }
 .pagination .page-item.disabled > .page-link {
   cursor: not-allowed;
