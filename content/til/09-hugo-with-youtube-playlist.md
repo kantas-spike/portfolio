@@ -20,7 +20,7 @@ Hugoにはyoutube動画を埋め込むショートコードがある。
 ~~~
 
 ~~~rawhtml
-<div class="w-[560px]">
+<div class="w-[640px]">
 {{< youtube ignCTeEMaLk >}}
 </div>
 ~~~
