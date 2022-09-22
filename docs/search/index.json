@@ -1,6 +1,14 @@
 {
     "results": [
     {
+        "href": "https://kantas-spike.github.io/portfolio/blog/2022/09/06-study-blender/",
+        "title": "Blenderを学ぶ"
+    },
+    {
+        "href": "https://kantas-spike.github.io/portfolio/blog/2022/09/05-study-english/",
+        "title": "英語を学ぶ"
+    },
+    {
         "href": "https://kantas-spike.github.io/portfolio/til/2022/09/28-add-hash-to-url-with-hugo/",
         "title": "HugoでcssのURLにハッシュを付与したい"
     },

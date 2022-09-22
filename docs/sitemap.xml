@@ -2,13 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/3dcg/</loc>
+    <lastmod>2022-09-21T09:46:04+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/blender/</loc>
+    <lastmod>2022-09-21T09:46:04+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/blog/2022/09/06-study-blender/</loc>
+    <lastmod>2022-09-21T09:46:04+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/</loc>
+    <lastmod>2022-09-21T09:46:04+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/english/</loc>
+    <lastmod>2022-09-04T08:55:25+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/hacking/</loc>
+    <lastmod>2022-09-04T08:55:25+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/%E3%83%A1%E3%83%A2/</loc>
+    <lastmod>2022-09-04T08:55:25+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/blog/2022/09/05-study-english/</loc>
+    <lastmod>2022-09-04T08:55:25+09:00</lastmod>
+  </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/hugo/</loc>
     <lastmod>2022-09-04T04:28:24+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2022/09/28-add-hash-to-url-with-hugo/</loc>
-    <lastmod>2022-09-04T04:28:24+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/</loc>
     <lastmod>2022-09-04T04:28:24+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2022/08/27-filter-pages-with-hugo/</loc>
@@ -136,9 +157,6 @@
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/shortcodes/</loc>
     <lastmod>2022-07-23T11:55:13+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/hacking/</loc>
-    <lastmod>2022-07-22T19:33:48+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/blog/2022/07/00-how-to-learn-programming/</loc>
     <lastmod>2022-07-22T19:33:48+09:00</lastmod>

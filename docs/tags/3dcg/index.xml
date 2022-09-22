@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>3dcg on kanta&#39;s spike</title>
+    <link>https://kantas-spike.github.io/portfolio/tags/3dcg/</link>
+    <description>Recent content in 3dcg on kanta&#39;s spike</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <copyright>Copyright 2022 kanta&#39;s spike</copyright>
+    <lastBuildDate>Wed, 21 Sep 2022 09:46:04 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/3dcg/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blenderを学ぶ</title>
+      <link>https://kantas-spike.github.io/portfolio/blog/2022/09/06-study-blender/</link>
+      <pubDate>Wed, 21 Sep 2022 09:46:04 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/blog/2022/09/06-study-blender/</guid>
+      <description>&lt;p&gt;CGってなんか素敵な響きですよね。3DCGなんて興奮しますね。
+でも、私にとって3DCGは使う機会もなくて遠い存在です。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
