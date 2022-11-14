@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>Copyright 2022 kanta&#39;s spike</copyright>
-    <lastBuildDate>Fri, 22 Jul 2022 14:13:39 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/vscode/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 14 Nov 2022 09:32:58 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/vscode/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MacOSのFinderにVScodeを開く機能を追加したい</title>
+      <link>https://kantas-spike.github.io/portfolio/til/2022/11/30-add-finder-service-of-vscode/</link>
+      <pubDate>Mon, 14 Nov 2022 09:32:58 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/til/2022/11/30-add-finder-service-of-vscode/</guid>
+      <description>&lt;p&gt;MacOSのFinderでフォルダを選択して、右クリックですぐにVSCodeで開きたい。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>hugoにコンテンツ追加時にvscodeですぐに編集したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2022/07/05-hugo-with-editor/</link>

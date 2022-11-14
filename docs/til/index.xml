@@ -9,6 +9,25 @@
     <copyright>Copyright 2022 kanta&#39;s spike</copyright>
     <lastBuildDate>Fri, 22 Jul 2022 08:15:27 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/til/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>MacOSのFinderにVScodeを開く機能を追加したい</title>
+      <link>https://kantas-spike.github.io/portfolio/til/2022/11/30-add-finder-service-of-vscode/</link>
+      <pubDate>Mon, 14 Nov 2022 09:32:58 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/til/2022/11/30-add-finder-service-of-vscode/</guid>
+      <description>&lt;p&gt;MacOSのFinderでフォルダを選択して、右クリックですぐにVSCodeで開きたい。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>表示時の幅を指定できるYoutube動画用のShortcodeを追加したい</title>
+      <link>https://kantas-spike.github.io/portfolio/til/2022/09/29-add-shortcode-to-set-the-width-of-youtube-video/</link>
+      <pubDate>Thu, 22 Sep 2022 20:19:54 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/til/2022/09/29-add-shortcode-to-set-the-width-of-youtube-video/</guid>
+      <description>&lt;p&gt;Hugo標準のYoutube用ショートコードを使用すると、横幅一杯にYoutube動画が表示される。
+幅をスタイル指定可能なYoutube動画用のShortcodeを追加したい。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>HugoでcssのURLにハッシュを付与したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2022/09/28-add-hash-to-url-with-hugo/</link>
       <pubDate>Sun, 04 Sep 2022 04:28:24 +0900</pubDate>
