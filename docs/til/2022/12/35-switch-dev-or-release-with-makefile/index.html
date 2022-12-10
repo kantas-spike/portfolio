@@ -30,76 +30,67 @@
     <nav class="container mx-auto bg-primary text-on-primary text-center flex flex-col md:flex-row justify-start">
             <a href="https://kantas-spike.github.io/portfolio/" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Home</a>
             <a href="https://kantas-spike.github.io/portfolio/blog" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Blog</a>
-            <a href="https://kantas-spike.github.io/portfolio/til" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">TIL</a>
+            <a href="https://kantas-spike.github.io/portfolio/til" class="box-border flex-1 text-center no-underline bg-primary-light text-on-primary-light font-extrabold py-2">TIL</a>
             <a href="https://kantas-spike.github.io/portfolio/mytools" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">My Tools</a>
             <a href="https://kantas-spike.github.io/portfolio/ihc" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">IHC</a>
-            <a href="https://kantas-spike.github.io/portfolio/tags" class="box-border flex-1 text-center no-underline bg-primary-light text-on-primary-light font-extrabold py-2">Tags</a>
+            <a href="https://kantas-spike.github.io/portfolio/tags" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Tags</a>
         <div class="flex-none" id="search_menu"></div>
     </nav>
 </div>
 <main id="content" class="container mx-auto bg-surface pt-4 pb-8">
-<h3 class="page_h3 my-4 mx-4"><i class="fa-solid fa-tag"></i> blender <span class="text-sm">(<a class="normal_link" href="https://kantas-spike.github.io/portfolio/tags/">他のタグ..</a>)</span></h2>
-
-<section class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-2 my-4 mx-4">
-    
-        <div class="area_border  px-4 py-3">
+<div class="area_border  px-4 py-3 mx-4 pb-4">
     
 
 
 
 <div class="mb-4">
-    <h3 class="border-b-2 border-primary text-primary-dark text-xl font-bold"><i class="fa-solid fa-note-sticky"></i> <a href="https://kantas-spike.github.io/portfolio/til/2022/11/31-run-python-script-from-blender/">PythonスクリプトをBlenderで実行したい</a></h3>
+    <h3 class="border-b-2 border-primary text-primary-dark text-xl font-bold"><i class="fa-solid fa-note-sticky"></i> <a href="https://kantas-spike.github.io/portfolio/til/2022/12/35-switch-dev-or-release-with-makefile/">Makefileでリリース用と開発用で設定を切り替えたい</a></h3>
     <div class="flex justify-between mt-1 mx-2">
         <div>
             <ul class="flex gap-2 justify-end">
+            
+            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/makefile/">#Makefile</a></li>
             
             <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/python/">#python</a></li>
             
-            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/blender/">#blender</a></li>
-            
             </ul>
         </div>
         <div>
-            <div class="text-right text-sm font-bold">2022/11/25</div>
+            <div class="text-right text-sm font-bold">2022/12/09</div>
         </div>
     </div>
 </div>
 
     <div class="article mx-2">
-        <p>作成したPythonのスクリプトをBlender起動時に実行したい。</p>
+        <p>シェルとPythonを組合せたツールを配布する際に、Makefileでリリース用と開発用で設定を切り替えれるようにしたい。</p>
+<h3 id="解決策">解決策</h3>
+<p><code>make</code>はコマンドライン引数で以下のように変数に値を設定できる。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">make install <span class="nv">変数</span><span class="o">=</span><span class="m">1</span>
+</span></span></code></pre></div><p>例えば、以下を実行した場合、変数RELEASEには1が設定され、
+Makefileでは、変数RELEASEに1が設定された状態で実行される。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">make install <span class="nv">RELEASE</span><span class="o">=</span><span class="m">1</span>
+</span></span></code></pre></div><p>これを利用し、<code>ifeq</code>〜<code>else</code>〜<code>endif</code>を使用して、<code>RELEASE=1</code>の場合とそれ以外の場合で設定を変更する。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="c1"># リリース用(1) or 開発用(0)</span>
+</span></span><span class="line"><span class="cl">RELEASE ?<span class="o">=</span> <span class="m">0</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 環境に合せてインストール先とBlenderコマンドを変更してください</span>
+</span></span><span class="line"><span class="cl">ifeq <span class="o">(</span><span class="k">$(</span>RELEASE<span class="k">)</span>, 1<span class="o">)</span>  <span class="c1"># リリース用設定</span>
+</span></span><span class="line"><span class="cl">	<span class="nv">DST_BIN</span><span class="o">=</span><span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/bin
+</span></span><span class="line"><span class="cl">	<span class="nv">DST_DIR</span><span class="o">=</span><span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/opt/slide2video
+</span></span><span class="line"><span class="cl"><span class="k">else</span>  <span class="c1"># 開発用設定</span>
+</span></span><span class="line"><span class="cl">	<span class="nv">DST_BIN</span><span class="o">=</span>./bin
+</span></span><span class="line"><span class="cl">	<span class="nv">DST_DIR</span><span class="o">=</span>./build/slide2video
+</span></span><span class="line"><span class="cl">endif
+</span></span></code></pre></div><h3 id="参照">参照</h3>
+<ul>
+<li>
+<p><a href="https://stackoverflow.com/questions/1079832/how-can-i-configure-my-makefile-for-debug-and-release-builds/1079861#1079861https://stackoverflow.com/questions/1079832/how-can-i-configure-my-makefile-for-debug-and-release-builds/1079861#1079861">How can I configure my makefile for debug and release builds?</a></p>
+</li>
+<li>
+<p><a href="http://quruli.ivory.ne.jp/document/make_3.79.1/make-jp_6.html#Conditional-Syntax">GNU make: 7. Makefileの条件文</a></p>
+</li>
+</ul>
     </div>
-</div>
-    
-        <div class="area_border  px-4 py-3">
-    
-
-<div class="mb-4">
-    <h3 class="border-b-2 border-primary text-primary-dark text-xl font-bold"><i class="fa-solid fa-file-lines"></i> <a href="https://kantas-spike.github.io/portfolio/blog/2022/09/06-study-blender/">Blenderを学ぶ</a></h3>
-    <div class="flex justify-between mt-1 mx-2">
-        <div>
-            <ul class="flex gap-2 justify-end">
-            
-            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/blender/">#blender</a></li>
-            
-            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/3dcg/">#3dcg</a></li>
-            
-            </ul>
-        </div>
-        <div>
-            <div class="text-right text-sm font-bold">2022/09/21</div>
-        </div>
-    </div>
-</div>
-
-    <div class="article mx-2">
-        <p>CGってなんか素敵な響きですよね。3DCGなんて興奮しますね。
-でも、私にとって3DCGは使う機会もなくて遠い存在です。</p>
-    </div>
-</div>
-    
-</section>
-<div>
-    
 </div>
 
         </main><footer class="bg-primary-dark text-center text-on-primary-dark fixed bottom-0 w-full h-8">

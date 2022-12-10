@@ -9,6 +9,43 @@
     <copyright>Copyright 2022 kanta&#39;s spike</copyright>
     <lastBuildDate>Fri, 22 Jul 2022 08:24:06 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Makefileでリリース用と開発用で設定を切り替えたい</title>
+      <link>https://kantas-spike.github.io/portfolio/til/2022/12/35-switch-dev-or-release-with-makefile/</link>
+      <pubDate>Fri, 09 Dec 2022 10:10:58 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/til/2022/12/35-switch-dev-or-release-with-makefile/</guid>
+      <description>&lt;p&gt;シェルとPythonを組合せたツールを配布する際に、Makefileでリリース用と開発用で設定を切り替えれるようにしたい。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>VSCodeでターミナルとコードの間を行き来する</title>
+      <link>https://kantas-spike.github.io/portfolio/til/2022/12/34-switch-terminal-between-code-with-vscode/</link>
+      <pubDate>Fri, 09 Dec 2022 03:28:37 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/til/2022/12/34-switch-terminal-between-code-with-vscode/</guid>
+      <description>&lt;p&gt;&lt;code&gt;vscode&lt;/code&gt;を操作中に、ターミナルとコードの行き来をショートカットで行いたい&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>自作ツールをインストールしたい</title>
+      <link>https://kantas-spike.github.io/portfolio/til/2022/12/33-tool-dir/</link>
+      <pubDate>Sun, 04 Dec 2022 23:00:39 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/til/2022/12/33-tool-dir/</guid>
+      <description>&lt;p&gt;自作のShellなどのツールを作ったときに、どのディレクトリにインストールするべきなのか?&lt;/p&gt;
+&lt;p&gt;ツールのソースは、作業ディレクトリで開発しGitHubで管理するが、ツール自体はどうインストールするべき?&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>PythonスクリプトをBlenderで実行したい</title>
+      <link>https://kantas-spike.github.io/portfolio/til/2022/11/31-run-python-script-from-blender/</link>
+      <pubDate>Fri, 25 Nov 2022 06:08:32 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/til/2022/11/31-run-python-script-from-blender/</guid>
+      <description>&lt;p&gt;作成したPythonのスクリプトをBlender起動時に実行したい。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>MacOSのFinderにVScodeを開く機能を追加したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2022/11/30-add-finder-service-of-vscode/</link>
       <pubDate>Mon, 14 Nov 2022 09:32:58 +0900</pubDate>

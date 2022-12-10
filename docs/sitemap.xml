@@ -2,20 +2,41 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/makefile/</loc>
+    <lastmod>2022-12-09T10:10:58+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/til/2022/12/35-switch-dev-or-release-with-makefile/</loc>
+    <lastmod>2022-12-09T10:10:58+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/python/</loc>
+    <lastmod>2022-12-09T10:10:58+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/</loc>
+    <lastmod>2022-12-09T10:10:58+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/vscode/</loc>
+    <lastmod>2022-12-09T03:28:37+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/til/2022/12/34-switch-terminal-between-code-with-vscode/</loc>
+    <lastmod>2022-12-09T03:28:37+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/hugo/</loc>
+    <lastmod>2022-12-04T23:00:39+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/til/2022/12/33-tool-dir/</loc>
+    <lastmod>2022-12-04T23:00:39+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/blender/</loc>
+    <lastmod>2022-11-25T06:08:32+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/til/2022/11/31-run-python-script-from-blender/</loc>
+    <lastmod>2022-11-25T06:08:32+09:00</lastmod>
+  </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/macos/</loc>
     <lastmod>2022-11-14T09:32:58+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2022/11/30-add-finder-service-of-vscode/</loc>
     <lastmod>2022-11-14T09:32:58+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/</loc>
-    <lastmod>2022-11-14T09:32:58+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/vscode/</loc>
-    <lastmod>2022-11-14T09:32:58+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/hugo/</loc>
-    <lastmod>2022-09-22T20:19:54+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/shortcodes/</loc>
     <lastmod>2022-09-22T20:19:54+09:00</lastmod>
@@ -24,9 +45,6 @@
     <lastmod>2022-09-22T20:19:54+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/3dcg/</loc>
-    <lastmod>2022-09-21T09:46:04+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/blender/</loc>
     <lastmod>2022-09-21T09:46:04+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/blog/2022/09/06-study-blender/</loc>
@@ -76,9 +94,6 @@
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/search/index.json</loc>
     <lastmod>2022-08-23T01:58:01+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/python/</loc>
-    <lastmod>2022-08-19T00:25:51+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/blog/2022/08/04-study-color-wheel/</loc>
     <lastmod>2022-08-19T00:25:51+09:00</lastmod>

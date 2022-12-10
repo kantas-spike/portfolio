@@ -5,12 +5,55 @@
             "full_name": "kantas-spike/slide2video.py",
             "html_url": "https://github.com/kantas-spike/slide2video.py",
             "description": "Blenderを利用して、スライド資料と、その資料用の音声データから動画編集ファイルを作成するツールです。",
-            "size": 23,
-            "pushed_at": "2022-09-21T00:40:06Z",
+            "size": 36,
+            "pushed_at": "2022-12-09T11:50:43Z",
             "project_type": "mytools",
             "langs": [
                 "Python",
-                "Shell",
+                "Makefile",
+                "Shell"
+            ],
+            "merged": []
+        },
+        {
+            "name": "create-subtitles-movie.sh",
+            "full_name": "kantas-spike/create-subtitles-movie.sh",
+            "html_url": "https://github.com/kantas-spike/create-subtitles-movie.sh",
+            "description": "SubRip形式の字幕ファイルからBlenderで字幕アニメーションを作成します",
+            "size": 166,
+            "pushed_at": "2022-12-06T15:03:57Z",
+            "project_type": "mytools",
+            "langs": [
+                "Python",
+                "Makefile",
+                "Shell"
+            ],
+            "merged": []
+        },
+        {
+            "name": "add_article.py",
+            "full_name": "kantas-spike/add_article.py",
+            "html_url": "https://github.com/kantas-spike/add_article.py",
+            "description": "Utility script to add articles to a site managed by hugo.",
+            "size": 1,
+            "pushed_at": "2022-11-14T08:01:02Z",
+            "project_type": "mytools",
+            "langs": [
+                "Python",
+                "Makefile"
+            ],
+            "merged": []
+        },
+        {
+            "name": "spike.py",
+            "full_name": "kantas-spike/spike.py",
+            "html_url": "https://github.com/kantas-spike/spike.py",
+            "description": "Python shell command to create a working folder",
+            "size": 2,
+            "pushed_at": "2022-11-14T07:41:52Z",
+            "project_type": "mytools",
+            "langs": [
+                "Python",
                 "Makefile"
             ],
             "merged": []
@@ -89,121 +132,16 @@
     ],
     "IHC": [
         {
-            "name": "kantas-theme",
-            "full_name": "kantas-spike/kantas-theme",
-            "html_url": "https://github.com/kantas-spike/kantas-theme",
-            "description": "Hugo theme for programming learner portfolio",
-            "size": 79,
-            "pushed_at": "2022-09-21T23:46:38Z",
-            "project_type": "IHC",
-            "langs": [
-                "HTML",
-                "CSS",
-                "JavaScript"
-            ],
-            "merged": [
-                {
-                    "html_url": "https://github.com/kantas-spike/kantas-theme/pull/29",
-                    "title": "Itr09: 横幅を指定可能なyoutube動画表示用shortcodeの追加, bugfix",
-                    "state": "closed",
-                    "body": null,
-                    "created_at": "2022-09-21T23:46:11Z",
-                    "merged_at": "2022-09-21T23:46:38Z",
-                    "closed_at": "2022-09-21T23:46:38Z",
-                    "user": "kantas-spike"
-                },
-                {
-                    "html_url": "https://github.com/kantas-spike/kantas-theme/pull/26",
-                    "title": "Itr08: キャッシュ回避のためリソースファイルにハッシュを付与",
-                    "state": "closed",
-                    "body": null,
-                    "created_at": "2022-08-28T03:01:32Z",
-                    "merged_at": "2022-08-28T03:01:39Z",
-                    "closed_at": "2022-08-28T03:01:39Z",
-                    "user": "kantas-spike"
-                },
-                {
-                    "html_url": "https://github.com/kantas-spike/kantas-theme/pull/24",
-                    "title": "Itr07: 検索機能の追加等",
-                    "state": "closed",
-                    "body": null,
-                    "created_at": "2022-08-27T22:23:05Z",
-                    "merged_at": "2022-08-27T22:23:12Z",
-                    "closed_at": "2022-08-27T22:23:12Z",
-                    "user": "kantas-spike"
-                },
-                {
-                    "html_url": "https://github.com/kantas-spike/kantas-theme/pull/22",
-                    "title": "Itr06: 配色パターンを更新",
-                    "state": "closed",
-                    "body": null,
-                    "created_at": "2022-08-19T18:10:19Z",
-                    "merged_at": "2022-08-19T18:10:27Z",
-                    "closed_at": "2022-08-19T18:10:27Z",
-                    "user": "kantas-spike"
-                },
-                {
-                    "html_url": "https://github.com/kantas-spike/kantas-theme/pull/20",
-                    "title": "Itr05: mathjax対応",
-                    "state": "closed",
-                    "body": null,
-                    "created_at": "2022-08-03T19:10:40Z",
-                    "merged_at": "2022-08-03T19:11:07Z",
-                    "closed_at": "2022-08-03T19:11:07Z",
-                    "user": "kantas-spike"
-                },
-                {
-                    "html_url": "https://github.com/kantas-spike/kantas-theme/pull/19",
-                    "title": "Itr04: レスポンシブ対応：メニュー表示",
-                    "state": "closed",
-                    "body": null,
-                    "created_at": "2022-07-23T11:41:07Z",
-                    "merged_at": "2022-07-23T11:41:22Z",
-                    "closed_at": "2022-07-23T11:41:22Z",
-                    "user": "kantas-spike"
-                },
-                {
-                    "html_url": "https://github.com/kantas-spike/kantas-theme/pull/17",
-                    "title": "Itr03: rawhtml対応、youtube playlist対応",
-                    "state": "closed",
-                    "body": null,
-                    "created_at": "2022-07-23T02:46:33Z",
-                    "merged_at": "2022-07-23T02:46:42Z",
-                    "closed_at": "2022-07-23T02:46:42Z",
-                    "user": "kantas-spike"
-                },
-                {
-                    "html_url": "https://github.com/kantas-spike/kantas-theme/pull/14",
-                    "title": "Itr02: tag,tags対応、ページング対応等",
-                    "state": "closed",
-                    "body": null,
-                    "created_at": "2022-07-21T22:40:07Z",
-                    "merged_at": "2022-07-21T22:40:33Z",
-                    "closed_at": "2022-07-21T22:40:33Z",
-                    "user": "kantas-spike"
-                },
-                {
-                    "html_url": "https://github.com/kantas-spike/kantas-theme/pull/7",
-                    "title": "Itr01: 記事系とプロジェクト情報系をコンテンツとして扱う",
-                    "state": "closed",
-                    "body": null,
-                    "created_at": "2022-07-21T08:28:54Z",
-                    "merged_at": "2022-07-21T08:29:04Z",
-                    "closed_at": "2022-07-21T08:29:04Z",
-                    "user": "kantas-spike"
-                }
-            ]
-        },
-        {
             "name": "Color-Wheel",
             "full_name": "kantas-spike/Color-Wheel",
             "html_url": "https://github.com/kantas-spike/Color-Wheel",
             "description": "A colorwheel demo tool built with Tkinter",
-            "size": 14207,
-            "pushed_at": "2022-08-30T21:45:23Z",
+            "size": 14211,
+            "pushed_at": "2022-12-10T00:36:46Z",
             "project_type": "IHC",
             "langs": [
-                "Python"
+                "Python",
+                "Makefile"
             ],
             "merged": [
                 {
@@ -314,6 +252,112 @@
                     "created_at": "2022-07-28T01:37:12Z",
                     "merged_at": "2022-07-28T01:37:22Z",
                     "closed_at": "2022-07-28T01:37:22Z",
+                    "user": "kantas-spike"
+                }
+            ]
+        },
+        {
+            "name": "kantas-theme",
+            "full_name": "kantas-spike/kantas-theme",
+            "html_url": "https://github.com/kantas-spike/kantas-theme",
+            "description": "Hugo theme for programming learner portfolio",
+            "size": 84,
+            "pushed_at": "2022-11-14T05:56:56Z",
+            "project_type": "IHC",
+            "langs": [
+                "HTML",
+                "CSS",
+                "JavaScript"
+            ],
+            "merged": [
+                {
+                    "html_url": "https://github.com/kantas-spike/kantas-theme/pull/29",
+                    "title": "Itr09: 横幅を指定可能なyoutube動画表示用shortcodeの追加, bugfix",
+                    "state": "closed",
+                    "body": null,
+                    "created_at": "2022-09-21T23:46:11Z",
+                    "merged_at": "2022-09-21T23:46:38Z",
+                    "closed_at": "2022-09-21T23:46:38Z",
+                    "user": "kantas-spike"
+                },
+                {
+                    "html_url": "https://github.com/kantas-spike/kantas-theme/pull/26",
+                    "title": "Itr08: キャッシュ回避のためリソースファイルにハッシュを付与",
+                    "state": "closed",
+                    "body": null,
+                    "created_at": "2022-08-28T03:01:32Z",
+                    "merged_at": "2022-08-28T03:01:39Z",
+                    "closed_at": "2022-08-28T03:01:39Z",
+                    "user": "kantas-spike"
+                },
+                {
+                    "html_url": "https://github.com/kantas-spike/kantas-theme/pull/24",
+                    "title": "Itr07: 検索機能の追加等",
+                    "state": "closed",
+                    "body": null,
+                    "created_at": "2022-08-27T22:23:05Z",
+                    "merged_at": "2022-08-27T22:23:12Z",
+                    "closed_at": "2022-08-27T22:23:12Z",
+                    "user": "kantas-spike"
+                },
+                {
+                    "html_url": "https://github.com/kantas-spike/kantas-theme/pull/22",
+                    "title": "Itr06: 配色パターンを更新",
+                    "state": "closed",
+                    "body": null,
+                    "created_at": "2022-08-19T18:10:19Z",
+                    "merged_at": "2022-08-19T18:10:27Z",
+                    "closed_at": "2022-08-19T18:10:27Z",
+                    "user": "kantas-spike"
+                },
+                {
+                    "html_url": "https://github.com/kantas-spike/kantas-theme/pull/20",
+                    "title": "Itr05: mathjax対応",
+                    "state": "closed",
+                    "body": null,
+                    "created_at": "2022-08-03T19:10:40Z",
+                    "merged_at": "2022-08-03T19:11:07Z",
+                    "closed_at": "2022-08-03T19:11:07Z",
+                    "user": "kantas-spike"
+                },
+                {
+                    "html_url": "https://github.com/kantas-spike/kantas-theme/pull/19",
+                    "title": "Itr04: レスポンシブ対応：メニュー表示",
+                    "state": "closed",
+                    "body": null,
+                    "created_at": "2022-07-23T11:41:07Z",
+                    "merged_at": "2022-07-23T11:41:22Z",
+                    "closed_at": "2022-07-23T11:41:22Z",
+                    "user": "kantas-spike"
+                },
+                {
+                    "html_url": "https://github.com/kantas-spike/kantas-theme/pull/17",
+                    "title": "Itr03: rawhtml対応、youtube playlist対応",
+                    "state": "closed",
+                    "body": null,
+                    "created_at": "2022-07-23T02:46:33Z",
+                    "merged_at": "2022-07-23T02:46:42Z",
+                    "closed_at": "2022-07-23T02:46:42Z",
+                    "user": "kantas-spike"
+                },
+                {
+                    "html_url": "https://github.com/kantas-spike/kantas-theme/pull/14",
+                    "title": "Itr02: tag,tags対応、ページング対応等",
+                    "state": "closed",
+                    "body": null,
+                    "created_at": "2022-07-21T22:40:07Z",
+                    "merged_at": "2022-07-21T22:40:33Z",
+                    "closed_at": "2022-07-21T22:40:33Z",
+                    "user": "kantas-spike"
+                },
+                {
+                    "html_url": "https://github.com/kantas-spike/kantas-theme/pull/7",
+                    "title": "Itr01: 記事系とプロジェクト情報系をコンテンツとして扱う",
+                    "state": "closed",
+                    "body": null,
+                    "created_at": "2022-07-21T08:28:54Z",
+                    "merged_at": "2022-07-21T08:29:04Z",
+                    "closed_at": "2022-07-21T08:29:04Z",
                     "user": "kantas-spike"
                 }
             ]

@@ -7,7 +7,35 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>Copyright 2022 kanta&#39;s spike</copyright>
-    <lastBuildDate>Fri, 19 Aug 2022 00:25:51 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 09 Dec 2022 10:10:58 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Makefileでリリース用と開発用で設定を切り替えたい</title>
+      <link>https://kantas-spike.github.io/portfolio/til/2022/12/35-switch-dev-or-release-with-makefile/</link>
+      <pubDate>Fri, 09 Dec 2022 10:10:58 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/til/2022/12/35-switch-dev-or-release-with-makefile/</guid>
+      <description>&lt;p&gt;シェルとPythonを組合せたツールを配布する際に、Makefileでリリース用と開発用で設定を切り替えれるようにしたい。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>自作ツールをインストールしたい</title>
+      <link>https://kantas-spike.github.io/portfolio/til/2022/12/33-tool-dir/</link>
+      <pubDate>Sun, 04 Dec 2022 23:00:39 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/til/2022/12/33-tool-dir/</guid>
+      <description>&lt;p&gt;自作のShellなどのツールを作ったときに、どのディレクトリにインストールするべきなのか?&lt;/p&gt;
+&lt;p&gt;ツールのソースは、作業ディレクトリで開発しGitHubで管理するが、ツール自体はどうインストールするべき?&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>PythonスクリプトをBlenderで実行したい</title>
+      <link>https://kantas-spike.github.io/portfolio/til/2022/11/31-run-python-script-from-blender/</link>
+      <pubDate>Fri, 25 Nov 2022 06:08:32 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/til/2022/11/31-run-python-script-from-blender/</guid>
+      <description>&lt;p&gt;作成したPythonのスクリプトをBlender起動時に実行したい。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Webサイトの配色とカラーホイール</title>
       <link>https://kantas-spike.github.io/portfolio/blog/2022/08/04-study-color-wheel/</link>
