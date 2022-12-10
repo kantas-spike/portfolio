@@ -10,6 +10,8 @@ tags:
 
 ツールのソースは、作業ディレクトリで開発しGitHubで管理するが、ツール自体はどうインストールするべき?
 
+<!--more-->
+
 ### 解決策
 
 Linuxには、[Filesystem Hierarchy Standard](https://refspecs.linuxfoundation.org/FHS_3.0/fhs-3.0.html)という、ディレクトリ構成についての標準があります。
