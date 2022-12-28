@@ -9,6 +9,15 @@
     <copyright>Copyright 2022 kanta&#39;s spike</copyright>
     <lastBuildDate>Fri, 22 Jul 2022 08:24:06 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>InkscapeでPythonを使う</title>
+      <link>https://kantas-spike.github.io/portfolio/til/2022/12/36-inkscape-with-python/</link>
+      <pubDate>Sun, 11 Dec 2022 08:24:09 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/til/2022/12/36-inkscape-with-python/</guid>
+      <description>&lt;p&gt;&lt;code&gt;Inkscape&lt;/code&gt;でPythonを使い、縁取り文字の作成を自動化したい。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Makefileでリリース用と開発用で設定を切り替えたい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2022/12/35-switch-dev-or-release-with-makefile/</link>
       <pubDate>Fri, 09 Dec 2022 10:10:58 +0900</pubDate>

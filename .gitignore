@@ -2,3 +2,4 @@ node_modules/
 package-lock.json
 .hugo_build.lock
 resources/
+.DS_Store

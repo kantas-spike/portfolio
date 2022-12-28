@@ -38,208 +38,69 @@
     </nav>
 </div>
 <main id="content" class="container mx-auto bg-surface pt-4 pb-8">
-<div class="article area_border mx-4  px-4 py-3"><p>TILとは、Today I Learned の略です。その日に学んだ事を短くまとめます。</p>
-</div>
-
-<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-2 mt-6 my-4 mx-4">
-    
-        <div class="area_border  px-4 py-3">
+<div class="area_border  px-4 py-3 mx-4 pb-4">
     
 
 
 
 <div class="mb-4">
-    <h3 class="border-b-2 border-primary text-primary-dark text-xl font-bold"><i class="fa-solid fa-note-sticky"></i> <a href="https://kantas-spike.github.io/portfolio/til/2022/09/29-add-shortcode-to-set-the-width-of-youtube-video/">表示時の幅を指定できるYoutube動画用のShortcodeを追加したい</a></h3>
+    <h3 class="border-b-2 border-primary text-primary-dark text-xl font-bold"><i class="fa-solid fa-note-sticky"></i> <a href="https://kantas-spike.github.io/portfolio/til/2022/12/36-inkscape-with-python/">InkscapeでPythonを使う</a></h3>
     <div class="flex justify-between mt-1 mx-2">
         <div>
             <ul class="flex gap-2 justify-end">
             
-            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/shortcodes/">#shortcodes</a></li>
+            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/python/">#python</a></li>
             
-            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/hugo/">#hugo</a></li>
+            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/inkscape/">#Inkscape</a></li>
             
             </ul>
         </div>
         <div>
-            <div class="text-right text-sm font-bold">2022/09/22</div>
+            <div class="text-right text-sm font-bold">2022/12/11</div>
         </div>
     </div>
 </div>
 
     <div class="article mx-2">
-        <p>Hugo標準のYoutube用ショートコードを使用すると、横幅一杯にYoutube動画が表示される。
-幅をスタイル指定可能なYoutube動画用のShortcodeを追加したい。</p>
+        <p><code>Inkscape</code>でPythonを使い、縁取り文字の作成を自動化したい。</p>
+<h3 id="解決策">解決策</h3>
+<p>Pythonスクリプトで<code>Inkscape</code>の機能を使いやすくする<code>Simple Inkscape Scripting</code>という拡張機能がある。</p>
+<p>まず、この拡張機能をインストールする。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="nb">cd</span>  ~/Library/Application Support/org.inkscape.Inkscape/config/inkscape/extensions
+</span></span><span class="line"><span class="cl">git clone https://github.com/spakin/SimpInkScr.git
+</span></span></code></pre></div><p><code>Inkscape</code>を再起動すると利用可能になる。</p>
+<p>メニューの<code>エクステンション</code>-&gt;<code>レンダリング</code>-&gt;<code>Simple Inkscape Scripting...</code>を選択し、
+表示されるダイアログで、Pythonスクリプトファイルを選択するか、直接Pythonコードを入力すれば、
+Pythonを使ってInkscapeに描画できる。</p>
+<p>また、Inkscapeで何かを手動で描いた後、
+メニューの<code>ファイル</code>-&gt;<code>名前を付けて保存</code>を選択し、<code>ファイル保存先の選択</code>ダイアログで、
+ファイルの種類を<code>Simple Inkscape Scripting script (*.py)</code>に設定し保存すれば、
+描いたものがPythonスクリプトとして保存される。</p>
+<h4 id="使い方">使い方</h4>
+<p><code>Simple Inkscape Scripting</code>ダイアログに以下のコードを入力して実行すると、
+<code>Inkscapeで文字を書きます</code>という文字が指定したスタイルで追加されます。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">text</span><span class="p">(</span><span class="s2">&#34;Inkscapeで文字を書きます&#34;</span><span class="p">,</span> <span class="p">(</span><span class="mi">30</span><span class="p">,</span> <span class="mi">30</span><span class="p">),</span> <span class="n">font</span><span class="o">=</span><span class="s1">&#39;Dela Gothic One&#39;</span><span class="p">,</span> <span class="n">font_size</span><span class="o">=</span><span class="mi">24</span><span class="o">*</span><span class="n">pt</span><span class="p">,</span> <span class="n">font_weight</span><span class="o">=</span><span class="s1">&#39;Bold&#39;</span><span class="p">,</span> <span class="n">fill</span><span class="o">=</span><span class="s1">&#39;#2937c2&#39;</span><span class="p">,</span> <span class="n">stroke</span><span class="o">=</span><span class="s1">&#39;#c2b329&#39;</span><span class="p">,</span> <span class="n">stroke_width</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</span></span></code></pre></div><p>また、以下を入力して実行すると、<code>テストです!</code>という文字を30x4個追加します。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">OFFSET_X</span> <span class="o">=</span> <span class="mi">24</span><span class="o">*</span><span class="n">pt</span>
+</span></span><span class="line"><span class="cl"><span class="n">OFFSET_Y</span> <span class="o">=</span> <span class="mi">24</span><span class="o">*</span><span class="n">pt</span> <span class="o">*</span> <span class="mf">1.5</span>
+</span></span><span class="line"><span class="cl"><span class="n">MARGIN_X</span> <span class="o">=</span> <span class="mi">12</span><span class="o">*</span><span class="n">pt</span>
+</span></span><span class="line"><span class="cl"><span class="n">MARGIN_Y</span> <span class="o">=</span> <span class="mi">6</span><span class="o">*</span><span class="n">pt</span>
+</span></span><span class="line"><span class="cl"><span class="n">font_style</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&#34;font&#34;</span><span class="p">:</span> <span class="s1">&#39;Dela Gothic One&#39;</span><span class="p">,</span> <span class="s2">&#34;font_size&#34;</span><span class="p">:</span> <span class="mi">24</span><span class="o">*</span><span class="n">pt</span><span class="p">,</span> <span class="s2">&#34;font_weight&#34;</span><span class="p">:</span> <span class="s1">&#39;Bold&#39;</span><span class="p">,</span> <span class="s2">&#34;fill&#34;</span><span class="p">:</span> <span class="s1">&#39;#000000&#39;</span><span class="p">,</span> <span class="s2">&#34;stroke&#34;</span><span class="p">:</span> <span class="s1">&#39;#c31913&#39;</span><span class="p">,</span> <span class="s2">&#34;stroke_width&#34;</span><span class="p">:</span> <span class="mf">0.3</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="n">txt</span> <span class="o">=</span> <span class="n">text</span><span class="p">(</span><span class="s2">&#34;テストです!&#34;</span><span class="p">,</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="o">**</span><span class="n">font_style</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">box</span> <span class="o">=</span> <span class="n">txt</span><span class="o">.</span><span class="n">bounding_box</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">txt</span><span class="o">.</span><span class="n">remove</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">cursor</span> <span class="o">=</span> <span class="p">[</span><span class="n">OFFSET_X</span><span class="p">,</span> <span class="n">OFFSET_Y</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">30</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">text</span><span class="p">(</span><span class="s2">&#34;テストです!&#34;</span><span class="p">,</span> <span class="n">cursor</span><span class="p">,</span> <span class="o">**</span><span class="n">font_style</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">cursor</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+=</span> <span class="n">box</span><span class="o">.</span><span class="n">width</span> <span class="o">+</span> <span class="n">MARGIN_X</span>
+</span></span><span class="line"><span class="cl">    <span class="n">cursor</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+=</span> <span class="n">box</span><span class="o">.</span><span class="n">height</span> <span class="o">+</span> <span class="n">MARGIN_Y</span>
+</span></span><span class="line"><span class="cl">    <span class="n">cursor</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">OFFSET_X</span>
+</span></span></code></pre></div><h3 id="参考">参考</h3>
+<ul>
+<li><a href="https://github.com/spakin/SimpInkScr">Simple Inkscape Scripting</a></li>
+</ul>
     </div>
-</div>
-    
-        <div class="area_border  px-4 py-3">
-    
-
-
-
-<div class="mb-4">
-    <h3 class="border-b-2 border-primary text-primary-dark text-xl font-bold"><i class="fa-solid fa-note-sticky"></i> <a href="https://kantas-spike.github.io/portfolio/til/2022/09/28-add-hash-to-url-with-hugo/">HugoでcssのURLにハッシュを付与したい</a></h3>
-    <div class="flex justify-between mt-1 mx-2">
-        <div>
-            <ul class="flex gap-2 justify-end">
-            
-            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/hugo/">#hugo</a></li>
-            
-            </ul>
-        </div>
-        <div>
-            <div class="text-right text-sm font-bold">2022/09/04</div>
-        </div>
-    </div>
-</div>
-
-    <div class="article mx-2">
-        <p>キャッシュを回避するためにCSSやJavascriptなどのリソースファイルのURLにハッシュを付けたい。</p>
-    </div>
-</div>
-    
-        <div class="area_border  px-4 py-3">
-    
-
-
-
-<div class="mb-4">
-    <h3 class="border-b-2 border-primary text-primary-dark text-xl font-bold"><i class="fa-solid fa-note-sticky"></i> <a href="https://kantas-spike.github.io/portfolio/til/2022/08/27-filter-pages-with-hugo/">Hugoで一覧に表示するページをフィルタリングしたい</a></h3>
-    <div class="flex justify-between mt-1 mx-2">
-        <div>
-            <ul class="flex gap-2 justify-end">
-            
-            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/hugo/">#hugo</a></li>
-            
-            </ul>
-        </div>
-        <div>
-            <div class="text-right text-sm font-bold">2022/08/29</div>
-        </div>
-    </div>
-</div>
-
-    <div class="article mx-2">
-        <p>検索インデックスの元データに含めるページを選択したい。</p>
-    </div>
-</div>
-    
-        <div class="area_border  px-4 py-3">
-    
-
-
-
-<div class="mb-4">
-    <h3 class="border-b-2 border-primary text-primary-dark text-xl font-bold"><i class="fa-solid fa-note-sticky"></i> <a href="https://kantas-spike.github.io/portfolio/til/2022/08/26-responsive-with-tailwindcss/">tailwindcss で Responsive Design したい</a></h3>
-    <div class="flex justify-between mt-1 mx-2">
-        <div>
-            <ul class="flex gap-2 justify-end">
-            
-            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/tailwindcss/">#tailwindcss</a></li>
-            
-            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/hugo/">#hugo</a></li>
-            
-            </ul>
-        </div>
-        <div>
-            <div class="text-right text-sm font-bold">2022/08/28</div>
-        </div>
-    </div>
-</div>
-
-    <div class="article mx-2">
-        <p>tailwindcss で Responsive なデザインをしたい。</p>
-    </div>
-</div>
-    
-        <div class="area_border  px-4 py-3">
-    
-
-
-
-<div class="mb-4">
-    <h3 class="border-b-2 border-primary text-primary-dark text-xl font-bold"><i class="fa-solid fa-note-sticky"></i> <a href="https://kantas-spike.github.io/portfolio/til/2022/08/25-quotation-with-hugo/">Hugoで引用した文を目立たせたい</a></h3>
-    <div class="flex justify-between mt-1 mx-2">
-        <div>
-            <ul class="flex gap-2 justify-end">
-            
-            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/quotation/">#quotation</a></li>
-            
-            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/hugo/">#hugo</a></li>
-            
-            </ul>
-        </div>
-        <div>
-            <div class="text-right text-sm font-bold">2022/08/27</div>
-        </div>
-    </div>
-</div>
-
-    <div class="article mx-2">
-        <p>引用した文を目立たせたい。</p>
-    </div>
-</div>
-    
-        <div class="area_border  px-4 py-3">
-    
-
-
-
-<div class="mb-4">
-    <h3 class="border-b-2 border-primary text-primary-dark text-xl font-bold"><i class="fa-solid fa-note-sticky"></i> <a href="https://kantas-spike.github.io/portfolio/til/2022/08/24-search-dialog-with-vue/">Vueで検索フォームを作成したい</a></h3>
-    <div class="flex justify-between mt-1 mx-2">
-        <div>
-            <ul class="flex gap-2 justify-end">
-            
-            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/vue/">#vue</a></li>
-            
-            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/hugo/">#hugo</a></li>
-            
-            </ul>
-        </div>
-        <div>
-            <div class="text-right text-sm font-bold">2022/08/26</div>
-        </div>
-    </div>
-</div>
-
-    <div class="article mx-2">
-        <p>Vueで検索フォームを作成したい。</p>
-    </div>
-</div>
-    
-</div>
-<div>
-    
-    <ul class="pagination pagination-default">
-      <li class="page-item">
-        <a href="https://kantas-spike.github.io/portfolio/til/" aria-label="First" class="page-link" role="button"><span aria-hidden="true">&laquo;&laquo;</span></a>
-      </li>
-      <li class="page-item">
-        <a href="https://kantas-spike.github.io/portfolio/til/" aria-label="Previous" class="page-link" role="button"><span aria-hidden="true">&laquo;</span></a>
-      </li>
-      <li class="page-item">
-        <a href="https://kantas-spike.github.io/portfolio/til/" aria-label="Page 1" class="page-link" role="button">1</a>
-      </li>
-      <li class="page-item active">
-        <a aria-current="page" aria-label="Page 2" class="page-link" role="button">2</a>
-      </li>
-      <li class="page-item">
-        <a href="https://kantas-spike.github.io/portfolio/til/page/3/" aria-label="Page 3" class="page-link" role="button">3</a>
-      </li>
-      <li class="page-item">
-        <a href="https://kantas-spike.github.io/portfolio/til/page/4/" aria-label="Page 4" class="page-link" role="button">4</a>
-      </li>
-      <li class="page-item">
-        <a href="https://kantas-spike.github.io/portfolio/til/page/5/" aria-label="Page 5" class="page-link" role="button">5</a>
-      </li>
-      <li class="page-item">
-        <a href="https://kantas-spike.github.io/portfolio/til/page/3/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
-      </li>
-      <li class="page-item">
-        <a href="https://kantas-spike.github.io/portfolio/til/page/6/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
-      </li>
-    </ul>
 </div>
 
         </main><footer class="bg-primary-dark text-center text-on-primary-dark fixed bottom-0 w-full h-8">
