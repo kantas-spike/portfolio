@@ -5,6 +5,7 @@ draft: false
 tags:
 - python
 - Inkscape
+- SimpInkScr
 ---
 
 `Inkscape`でPythonを使い、縁取り文字の作成を自動化したい。
