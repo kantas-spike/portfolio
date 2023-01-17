@@ -1765,6 +1765,9 @@ video {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
 }
+.article .chroma {
+  overflow: auto;
+}
 .article hr {
   margin-top: 2rem;
   margin-bottom: 2rem;

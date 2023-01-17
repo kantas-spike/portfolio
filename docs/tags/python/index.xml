@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>Copyright 2022 kanta&#39;s spike</copyright>
-    <lastBuildDate>Sun, 11 Dec 2022 08:24:09 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 17 Jan 2023 13:32:46 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>コマンドラインからSimple Inkscape Scriptingを使いたい</title>
+      <link>https://kantas-spike.github.io/portfolio/til/2023/01/37-use-commandline-by-simpinkscr/</link>
+      <pubDate>Tue, 17 Jan 2023 13:32:46 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/til/2023/01/37-use-commandline-by-simpinkscr/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/spakin/SimpInkScr&#34;&gt;Simple Inkscape Scripting&lt;/a&gt;を使って作成したスクリプトをコマンドラインから実行したい。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>InkscapeでPythonを使う</title>
       <link>https://kantas-spike.github.io/portfolio/til/2022/12/36-inkscape-with-python/</link>

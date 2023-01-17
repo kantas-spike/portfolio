@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Inkscape on kanta&#39;s spike</title>
-    <link>https://kantas-spike.github.io/portfolio/tags/inkscape/</link>
-    <description>Recent content in Inkscape on kanta&#39;s spike</description>
+    <title>SimpInkScr on kanta&#39;s spike</title>
+    <link>https://kantas-spike.github.io/portfolio/tags/simpinkscr/</link>
+    <description>Recent content in SimpInkScr on kanta&#39;s spike</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>Copyright 2022 kanta&#39;s spike</copyright>
-    <lastBuildDate>Tue, 17 Jan 2023 13:32:46 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/inkscape/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 17 Jan 2023 13:32:46 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/simpinkscr/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>コマンドラインからSimple Inkscape Scriptingを使いたい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/01/37-use-commandline-by-simpinkscr/</link>
