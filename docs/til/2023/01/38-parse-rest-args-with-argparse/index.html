@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html><head>
+    <title>kanta's spike</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://kantas-spike.github.io/portfolio/css/theme.e0062655d385549c884279648c9a7fee338c623487a266a31862fd93e60c0db3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" /><link rel="stylesheet" href="https://kantas-spike.github.io/portfolio/css/syntax.d59352fe2c71602c0598c94b3cdaaef7d6553d94438605aefc2b925940f21d6a.css">
+</head><body class="bg-background text-primary-dark pb-4"><header class="bg-primary-dark text-site_title text-6xl font-serif font-extrabold px-4 py-3">
+    <h1 class="container mx-auto px-4"><a href="https://kantas-spike.github.io/portfolio/">kanta&#39;s spike</a></h1>
+</header>
+<input type="checkbox" name="burger_cbx" id="burger_cbx">
+<label for="burger_cbx" class="burger_label">
+    <span class="burger_icon"><svg version="1.1" viewBox="0 0 12.7 12.7" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <rect x="1.0369" y="2.1007" width="10.634" height="1.0426" ry=".5213"/>
+  <rect x="1.0369" y="4.571" width="10.634" height="1.0426" ry=".5213"/>
+  <rect x="1.0369" y="7.0413" width="10.634" height="1.0426" ry=".5213"/>
+  <rect x="1.0369" y="9.5115" width="10.634" height="1.0426" ry=".5213"/>
+ </g>
+</svg>
+</span>
+</label>
+<label for="burger_cbx" class="close_label">
+    <span class="close_icon"><svg version="1.1" viewBox="0 0 12.7 12.7" xmlns="http://www.w3.org/2000/svg">
+ <rect transform="rotate(45.535)" x="3.6678" y="-.6148" width="10.634" height="1.0426" ry=".5213"/>
+ <rect transform="rotate(135.53)" x="-5.4104" y="-9.5059" width="10.634" height="1.0426" ry=".5213"/>
+</svg>
+</span>
+</label>
+<div class="nav_area">
+    <nav class="container mx-auto bg-primary text-on-primary text-center flex flex-col md:flex-row justify-start">
+            <a href="https://kantas-spike.github.io/portfolio/" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Home</a>
+            <a href="https://kantas-spike.github.io/portfolio/blog" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Blog</a>
+            <a href="https://kantas-spike.github.io/portfolio/til" class="box-border flex-1 text-center no-underline bg-primary-light text-on-primary-light font-extrabold py-2">TIL</a>
+            <a href="https://kantas-spike.github.io/portfolio/mytools" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">My Tools</a>
+            <a href="https://kantas-spike.github.io/portfolio/ihc" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">IHC</a>
+            <a href="https://kantas-spike.github.io/portfolio/tags" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Tags</a>
+        <div class="flex-none" id="search_menu"></div>
+    </nav>
+</div>
+<main id="content" class="container mx-auto bg-surface pt-4 pb-8">
+<div class="area_border  px-4 py-3 mx-4 pb-4">
+    
+
+
+
+<div class="mb-4">
+    <h3 class="border-b-2 border-primary text-primary-dark text-xl font-bold"><i class="fa-solid fa-note-sticky"></i> <a href="https://kantas-spike.github.io/portfolio/til/2023/01/38-parse-rest-args-with-argparse/">Simple Inkscape Scriptingでスクリプトに追加の引数を渡したい</a></h3>
+    <div class="flex justify-between mt-1 mx-2">
+        <div>
+            <ul class="flex gap-2 justify-end">
+            
+            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/python/">#python</a></li>
+            
+            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/argparse/">#argparse</a></li>
+            
+            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/simpinkscr/">#SimpInkScr</a></li>
+            
+            </ul>
+        </div>
+        <div>
+            <div class="text-right text-sm font-bold">2023/01/17</div>
+        </div>
+    </div>
+</div>
+
+    <div class="article mx-2">
+        <p><a href="https://github.com/spakin/SimpInkScr">Simple Inkscape Scripting</a>をコマンドラインで実行するときに、スクリプトに<code>data.txt</code>のような追加の引数を渡したい。<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">% simple_inkscape_scripting.py --py-source my_script.py input.svg data.txt
+</span></span></code></pre></div><h4 id="現状のソースの解析結果">現状のソースの解析結果</h4>
+<ol>
+<li>
+<p><a href="https://github.com/spakin/SimpInkScr">Simple Inkscape Scripting</a>は、<code>SimpleInkscapeScripting</code>クラスの<code>add_arguments(self, pars)</code><sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>で、コマンドライン引数を定義している。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">SimpleInkscapeScripting</span><span class="p">(</span><span class="n">inkex</span><span class="o">.</span><span class="n">EffectExtension</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">     <span class="c1"># ..略..</span>
+</span></span><span class="line"><span class="cl">     <span class="k">def</span> <span class="nf">add_arguments</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pars</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">         <span class="s1">&#39;Process program parameters passed in from the UI.&#39;</span>
+</span></span><span class="line"><span class="cl">         <span class="n">pars</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;--tab&#39;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s1">&#39;tab&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                         <span class="n">help</span><span class="o">=</span><span class="s1">&#39;The selected UI tab when OK was pressed&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">         <span class="n">pars</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;--program&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="nb">str</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                         <span class="n">help</span><span class="o">=</span><span class="s1">&#39;Python code to execute&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">         <span class="n">pars</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;--py-source&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="nb">str</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                         <span class="n">help</span><span class="o">=</span><span class="s1">&#39;Python source file to execute&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">     <span class="c1"># ..略..</span>
+</span></span></code></pre></div></li>
+<li>
+<p><code>inkex.EffectExtension</code>の親クラスである<code>InkscapeExtension</code> <sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> と <code>SvgInputMixin</code> <sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup> のコンストラクタで標準のコマンドライン引数を定義し、さらに、<code>add_arguments(self, pars)</code>を呼び出し、子クラス固有のコマンドライン引数を定義している。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">InkscapeExtension</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># ..略..</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">            <span class="c1"># ..略..</span>
+</span></span><span class="line"><span class="cl">            <span class="bp">self</span><span class="o">.</span><span class="n">arg_parser</span> <span class="o">=</span> <span class="n">ArgumentParser</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="vm">__doc__</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="bp">self</span><span class="o">.</span><span class="n">arg_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">&#34;input_file&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="n">nargs</span><span class="o">=</span><span class="s2">&#34;?&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="n">metavar</span><span class="o">=</span><span class="s2">&#34;INPUT_FILE&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nb">type</span><span class="o">=</span><span class="n">filename_arg</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="n">help</span><span class="o">=</span><span class="s2">&#34;Filename of the input file (default is stdin)&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="n">default</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="bp">self</span><span class="o">.</span><span class="n">arg_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">&#34;--output&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nb">type</span><span class="o">=</span><span class="nb">str</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="n">default</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="n">help</span><span class="o">=</span><span class="s2">&#34;Optional output filename for saving the result (default is stdout).&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="bp">self</span><span class="o">.</span><span class="n">add_arguments</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">arg_parser</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="c1"># ..略..</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">SvgInputMixin</span><span class="p">(</span><span class="n">_Base</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">     <span class="c1"># ..略..</span>
+</span></span><span class="line"><span class="cl">     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="c1"># ..略..</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">arg_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;--id&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="n">action</span><span class="o">=</span><span class="s2">&#34;append&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nb">type</span><span class="o">=</span><span class="nb">str</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="n">dest</span><span class="o">=</span><span class="s2">&#34;ids&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="n">default</span><span class="o">=</span><span class="p">[],</span>
+</span></span><span class="line"><span class="cl">            <span class="n">help</span><span class="o">=</span><span class="s2">&#34;id attribute of object to manipulate&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">arg_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;--selected-nodes&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="n">action</span><span class="o">=</span><span class="s2">&#34;append&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nb">type</span><span class="o">=</span><span class="nb">str</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="n">dest</span><span class="o">=</span><span class="s2">&#34;selected_nodes&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="n">default</span><span class="o">=</span><span class="p">[],</span>
+</span></span><span class="line"><span class="cl">            <span class="n">help</span><span class="o">=</span><span class="s2">&#34;id:subpath:position of selected nodes, if any&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># ..略..</span>
+</span></span></code></pre></div></li>
+<li>
+<p>そのため、ターミナルから<code>simple_inkscape_scripting.py</code>に<code>-h</code>オプションを指定して実行した結果は以下となる。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">% <span class="nv">DYLD_LIBRARY_PATH</span><span class="o">=</span>/Applications/Inkscape.app/Contents/Resources/lib <span class="nv">PYTHONPATH</span><span class="o">=</span>/Applications/Inkscape.app/Contents/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages:/Applications/Inkscape.app/Contents/Resources/share/inkscape/extensions /Applications/Inkscape.app/Contents/Resources/bin/python3 ~/Library/Application<span class="se">\ </span>Support/org.inkscape.Inkscape/config/inkscape/extensions/SimpInkScr/simpinkscr/simple_inkscape_scripting.py -h
+</span></span><span class="line"><span class="cl">usage: simple_inkscape_scripting.py <span class="o">[</span>-h<span class="o">]</span> <span class="o">[</span>--output OUTPUT<span class="o">]</span> <span class="o">[</span>--tab TAB<span class="o">]</span>
+</span></span><span class="line"><span class="cl">                                    <span class="o">[</span>--program PROGRAM<span class="o">]</span>
+</span></span><span class="line"><span class="cl">                                    <span class="o">[</span>--py-source PY_SOURCE<span class="o">]</span> <span class="o">[</span>--id IDS<span class="o">]</span>
+</span></span><span class="line"><span class="cl">                                    <span class="o">[</span>--selected-nodes SELECTED_NODES<span class="o">]</span>
+</span></span><span class="line"><span class="cl">                                    <span class="o">[</span>INPUT_FILE<span class="o">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Help the user create Inkscape objects with a simple API.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">positional arguments:
+</span></span><span class="line"><span class="cl">INPUT_FILE            Filename of the input file <span class="o">(</span>default is stdin<span class="o">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">options:
+</span></span><span class="line"><span class="cl">-h, --help            show this <span class="nb">help</span> message and <span class="nb">exit</span>
+</span></span><span class="line"><span class="cl">--output OUTPUT       Optional output filename <span class="k">for</span> saving the result
+</span></span><span class="line"><span class="cl">                        <span class="o">(</span>default is stdout<span class="o">)</span>.
+</span></span><span class="line"><span class="cl">--tab TAB             The selected UI tab when OK was pressed
+</span></span><span class="line"><span class="cl">--program PROGRAM     Python code to execute
+</span></span><span class="line"><span class="cl">--py-source PY_SOURCE
+</span></span><span class="line"><span class="cl">                        Python <span class="nb">source</span> file to execute
+</span></span><span class="line"><span class="cl">--id IDS              id attribute of object to manipulate
+</span></span><span class="line"><span class="cl">--selected-nodes SELECTED_NODES
+</span></span><span class="line"><span class="cl">                        id:subpath:position of selected nodes, <span class="k">if</span> any
+</span></span></code></pre></div></li>
+</ol>
+<h3 id="解決策">解決策</h3>
+<p><code>SimpleInkscapeScripting</code>クラスの<code>add_arguments(self, pars)</code>に、以下のコマンドライン引数を<code>rest_args</code>定義し<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>、追加の引数を保持させる。<sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup></p>
+<p>そして、<code>effect(self)</code>内で、保持した引数をスクリプトのグローバル変数<code>rest_args</code>として定義すれば、<a href="https://github.com/spakin/SimpInkScr">Simple Inkscape Scripting</a>に指定したスクリプトで利用できる。<sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">SimpleInkscapeScripting</span><span class="p">(</span><span class="n">inkex</span><span class="o">.</span><span class="n">EffectExtension</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="c1"># ..略..</span>
+</span></span><span class="line"><span class="cl">        <span class="k">def</span> <span class="nf">add_arguments</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pars</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">            <span class="c1"># ..略..</span>
+</span></span><span class="line"><span class="cl">            <span class="n">pars</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;rest_args&#39;</span><span class="p">,</span> <span class="n">nargs</span><span class="o">=</span><span class="s2">&#34;*&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                              <span class="n">help</span><span class="o">=</span><span class="s1">&#39;Rest Arguments for passing Python code&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="c1"># ..略..</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">def</span> <span class="nf">effect</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">            <span class="c1"># ..略..</span>
+</span></span><span class="line"><span class="cl">            <span class="n">sis_globals</span><span class="p">[</span><span class="s1">&#39;rest_args&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">rest_args</span>
+</span></span><span class="line"><span class="cl">            <span class="c1"># ..略..</span>
+</span></span></code></pre></div><p>この修正により、追加の引数は、グローバル変数<code>rest_args</code>として利用可能となる。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">% <span class="nv">DYLD_LIBRARY_PATH</span><span class="o">=</span>/Applications/Inkscape.app/Contents/Resources/lib <span class="nv">PYTHONPATH</span><span class="o">=</span>/Applications/Inkscape.app/Contents/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages:/Applications/Inkscape.app/Contents/Resources/share/inkscape/extensions /Applications/Inkscape.app/Contents/Resources/bin/python3 ~/Library/Application<span class="se">\ </span>Support/org.inkscape.Inkscape/config/inkscape/extensions/SimpInkScr/simpinkscr/simple_inkscape_scripting.py --program <span class="s2">&#34;print(&#39;rest_args: &#39;, rest_args)&#34;</span>  --output output.svg input.svg <span class="m">1</span> <span class="m">2</span> <span class="m">3</span>
+</span></span><span class="line"><span class="cl">rest_args:  <span class="o">[</span><span class="s1">&#39;1&#39;</span>, <span class="s1">&#39;2&#39;</span>, <span class="s1">&#39;3&#39;</span><span class="o">]</span>
+</span></span></code></pre></div><p>ただし、<code>-a</code>や<code>--b</code>のように<code>-</code>で始まる引数をスクリプトに渡す場合は、位置引数として解釈させる必要があるため、ダミー引数<code>--</code>を必ず挿入する必要がある。<sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">% <span class="nv">DYLD_LIBRARY_PATH</span><span class="o">=</span>/Applications/Inkscape.app/Contents/Resources/lib <span class="nv">PYTHONPATH</span><span class="o">=</span>/Applications/Inkscape.app/Contents/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages:/Applications/Inkscape.app/Contents/Resources/share/inkscape/extensions /Applications/Inkscape.app/Contents/Resources/bin/python3 ~/Library/Application<span class="se">\ </span>Support/org.inkscape.Inkscape/config/inkscape/extensions/SimpInkScr/simpinkscr/simple_inkscape_scripting.py --program <span class="s2">&#34;print(&#39;rest_args: &#39;, rest_args)&#34;</span>  --output output.svg input.svg -- -a --b <span class="m">1</span> <span class="m">2</span> <span class="m">3</span>
+</span></span><span class="line"><span class="cl">rest_args:  <span class="o">[</span><span class="s1">&#39;-a&#39;</span>, <span class="s1">&#39;--b&#39;</span>, <span class="s1">&#39;1&#39;</span>, <span class="s1">&#39;2&#39;</span>, <span class="s1">&#39;3&#39;</span><span class="o">]</span>
+</span></span></code></pre></div><h3 id="課題">課題</h3>
+<p>ただし、この修正は、1つ問題がある。
+標準の位置引数<code>INPUT_FILE</code>を省略した場合、以下のように<code>rest_args</code>の1番目の引数が<code>INPUT_FILE</code>と解釈される。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">% <span class="nv">DYLD_LIBRARY_PATH</span><span class="o">=</span>/Applications/Inkscape.app/Contents/Resources/lib <span class="nv">PYTHONPATH</span><span class="o">=</span>/Applications/Inkscape.app/Contents/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages:/Applications/Inkscape.app/Contents/Resources/share/inkscape/extensions /Applications/Inkscape.app/Contents/Resources/bin/python3 ~/Library/Application<span class="se">\ </span>Support/org.inkscape.Inkscape/config/inkscape/extensions/SimpInkScr/simpinkscr/simple_inkscape_scripting.py --program <span class="s2">&#34;print(&#39;rest_args: &#39;, rest_args)&#34;</span>  --output output.svg a b c
+</span></span><span class="line"><span class="cl">usage: simple_inkscape_scripting.py <span class="o">[</span>-h<span class="o">]</span> <span class="o">[</span>--output OUTPUT<span class="o">]</span> <span class="o">[</span>--tab TAB<span class="o">]</span>
+</span></span><span class="line"><span class="cl">                                    <span class="o">[</span>--program PROGRAM<span class="o">]</span>
+</span></span><span class="line"><span class="cl">                                    <span class="o">[</span>--py-source PY_SOURCE<span class="o">]</span> <span class="o">[</span>--id IDS<span class="o">]</span>
+</span></span><span class="line"><span class="cl">                                    <span class="o">[</span>--selected-nodes SELECTED_NODES<span class="o">]</span>
+</span></span><span class="line"><span class="cl">                                    <span class="o">[</span>INPUT_FILE<span class="o">]</span> <span class="o">[</span>rest_args ...<span class="o">]</span>
+</span></span><span class="line"><span class="cl">simple_inkscape_scripting.py: error: argument INPUT_FILE: File not found: a
+</span></span></code></pre></div><p><code>Inkscape</code>の拡張機能では、<code>INPUT_FILE</code>を省略した場合、標準入力からSVGファイルのデータを取得する。
+この標準入力の取得と<code>rest_args</code>を共存させるために、<code>cat</code>コマンドの<code>-</code>引数のように、明示的に標準入力を指定できるように変更する必要がある。<sup id="fnref:9"><a href="#fn:9" class="footnote-ref" role="doc-noteref">9</a></sup></p>
+<p>そのため、<code>InkscapeExtension</code>で定義された<code>INPUT_FILE</code>引数を、<code>argparse</code>のトリッキーな方法<sup id="fnref:10"><a href="#fn:10" class="footnote-ref" role="doc-noteref">10</a></sup>で、以下のように変更する。<sup id="fnref:11"><a href="#fn:11" class="footnote-ref" role="doc-noteref">11</a></sup> <sup id="fnref:12"><a href="#fn:12" class="footnote-ref" role="doc-noteref">12</a></sup></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">SimpleInkscapeScripting</span><span class="p">(</span><span class="n">inkex</span><span class="o">.</span><span class="n">EffectExtension</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># ..略..</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">filename_arg</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;&#34;&#34;Existing file to read or option used in script arguments&#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">name</span> <span class="o">==</span> <span class="s2">&#34;-&#34;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="kc">None</span>  <span class="c1"># filename is set to None to read stdin</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">inkex</span><span class="o">.</span><span class="n">utils</span><span class="o">.</span><span class="n">filename_arg</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">reconfigure_input_file_argument</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pars</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">target_action</span> <span class="o">=</span> <span class="kc">None</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">action</span> <span class="ow">in</span> <span class="n">pars</span><span class="o">.</span><span class="n">_actions</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="s1">&#39;input_file&#39;</span> <span class="o">==</span> <span class="n">action</span><span class="o">.</span><span class="n">dest</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="n">target_action</span> <span class="o">=</span> <span class="n">action</span>
+</span></span><span class="line"><span class="cl">                <span class="k">break</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="n">target_action</span><span class="o">.</span><span class="n">container</span><span class="o">.</span><span class="n">_remove_action</span><span class="p">(</span><span class="n">target_action</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">pars</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;input_file&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="n">nargs</span><span class="o">=</span><span class="s2">&#34;?&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="n">metavar</span><span class="o">=</span><span class="s2">&#34;INPUT_FILE&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nb">type</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">filename_arg</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="n">help</span><span class="o">=</span><span class="s2">&#34;Filename of the input file (default is stdin). Filename can be `-` for stdin&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="n">default</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">add_arguments</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pars</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="c1"># ..略..</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">reconfigure_input_file_argument</span><span class="p">(</span><span class="n">pars</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="c1"># ..略..</span>
+</span></span></code></pre></div><p>ただし、この方法は、<code>argparse</code>の<code>_actions</code>や<code>_remove_action</code>など非公開のAPIを利用しているため、<code>Pull Request</code>しても採用されそうにないかも。</p>
+<h3 id="参考">参考</h3>
+<ul>
+<li><a href="../37-use-commandline-by-simpinkscr">コマンドラインからSimple Inkscape Scriptingを使いたい</a></li>
+<li><a href="https://github.com/spakin/SimpInkScr">spakin/SimpInkScr: Simple Inkscape Scripting</a></li>
+<li><a href="https://gitlab.com/inkscape/extensions">Inkscape / extensions · GitLab</a></li>
+<li><a href="https://docs.python.org/ja/3/library/argparse.html">argparse &mdash; コマンドラインオプション、引数、サブコマンドのパーサー — Python 3.11.1 ドキュメント</a></li>
+<li><a href="https://github.com/kantas-spike/SimpInkScr/tree/feature-pass-remaining-command-line-args-to-python-code">kantas-spike/SimpInkScr at feature-pass-remaining-command-line-args-to-python-code</a></li>
+<li><a href="https://www.baeldung.com/linux/dash-in-command-line-parameters">Use of Dash “-” in Command-Line Parameters | Baeldung on Linux</a></li>
+<li><a href="https://stackoverflow.com/questions/32807319/disable-remove-argument-in-argparse/32809642#32809642">python - Disable/Remove argument in argparse - Stack Overflow</a></li>
+</ul>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p><a href="../37-use-commandline-by-simpinkscr">コマンドラインからSimple Inkscape Scriptingを使いたい</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p><a href="https://github.com/spakin/SimpInkScr/blob/master/simpinkscr/simple_inkscape_scripting.py#L2231">SimpInkScr/simple_inkscape_scripting.py at master · spakin/SimpInkScr</a>&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+<p><a href="https://gitlab.com/inkscape/extensions/-/blob/master/inkex/base.py#L69">inkex/base.py · master · Inkscape / extensions · GitLab</a>&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4" role="doc-endnote">
+<p><a href="https://gitlab.com/inkscape/extensions/-/blob/master/inkex/base.py#L453">inkex/base.py · master · Inkscape / extensions · GitLab</a>&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:5" role="doc-endnote">
+<p><a href="https://docs.python.org/ja/3/library/argparse.html#nargs">nargs | argparse &mdash; コマンドラインオプション、引数、サブコマンドのパーサー — Python 3.11.1 ドキュメント</a>&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:6" role="doc-endnote">
+<p><a href="https://github.com/spakin/SimpInkScr/compare/master...kantas-spike:SimpInkScr:feature-pass-remaining-command-line-args-to-python-code#diff-0b0ce8676d37cd05efe0726e5ffcdd9b52e4682df9c1ffaedf96ffca8b14c199R2264">Comparing spakin:master&hellip;kantas-spike:feature-pass-remaining-command-line-args-to-python-code · spakin/SimpInkScr</a>&#160;<a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:7" role="doc-endnote">
+<p><a href="https://github.com/spakin/SimpInkScr/compare/master...kantas-spike:SimpInkScr:feature-pass-remaining-command-line-args-to-python-code#diff-0b0ce8676d37cd05efe0726e5ffcdd9b52e4682df9c1ffaedf96ffca8b14c199R2308">Comparing spakin:master&hellip;kantas-spike:feature-pass-remaining-command-line-args-to-python-code · spakin/SimpInkScr</a>&#160;<a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:8" role="doc-endnote">
+<p><a href="https://docs.python.org/ja/3/library/argparse.html#arguments-containing">- を含む引数 | argparse &mdash; コマンドラインオプション、引数、サブコマンドのパーサー — Python 3.11.1 ドキュメント</a>&#160;<a href="#fnref:8" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:9" role="doc-endnote">
+<p><a href="https://www.baeldung.com/linux/dash-in-command-line-parameters#using---to-specify-a-standard-input">Use of Dash “-” in Command-Line Parameters | Baeldung on Linux</a>&#160;<a href="#fnref:9" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:10" role="doc-endnote">
+<p><a href="https://stackoverflow.com/questions/32807319/disable-remove-argument-in-argparse/32809642#32809642">python - Disable/Remove argument in argparse - Stack Overflow</a>&#160;<a href="#fnref:10" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:11" role="doc-endnote">
+<p><a href="https://github.com/spakin/SimpInkScr/compare/master...kantas-spike:SimpInkScr:feature-pass-remaining-command-line-args-to-python-code#diff-0b0ce8676d37cd05efe0726e5ffcdd9b52e4682df9c1ffaedf96ffca8b14c199R2237">Comparing spakin:master&hellip;kantas-spike:feature-pass-remaining-command-line-args-to-python-code · spakin/SimpInkScr</a>&#160;<a href="#fnref:11" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:12" role="doc-endnote">
+<p><code>filename_arg(self, name)</code>で<code>-</code>が指定された場合は、<code>None</code>を指定し強制的に<code>INPUT_FILE</code>が標準入力なるように変換している。&#160;<a href="#fnref:12" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+    </div>
+</div>
+
+        </main><footer class="bg-primary-dark text-center text-on-primary-dark fixed bottom-0 w-full h-8">
+    <div class="container mx-auto grid grid-cols-3">
+        <div class="col-start-2">
+            <div class="text-sm pt-2">Copyright 2022 kanta&#39;s spike</div>
+        </div>
+        <div class="flex justify-end gap-2 mr-2">
+            
+                
+            <a title="Twitter" class="text-2xl" href="https://twitter.com/KantasSpike"><i class="fa-brands fa-twitter-square"></i></a>
+                
+            <a title="Youtube" class="text-2xl" href="https://www.youtube.com/channel/UCnVBuUGMYAt7ZuIkadxnMfw"><i class="fa-brands fa-youtube-square"></i></a>
+                
+            <a title="GitHub" class="text-2xl" href="https://github.com/kantas-spike"><i class="fa-brands fa-github-square"></i></a>
+                
+            <a title="Blog" class="text-2xl" href="https://kantas-spike.github.io/portfolio/"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                
+            
+        </div>
+    </div>
+</footer>
+        <script src="https://unpkg.com/vue@next"></script>
+<script src="//unpkg.com/lunr@2.3.6/lunr.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lunr-languages@1.9.0/lunr.stemmer.support.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lunr-languages@1.9.0/tinyseg.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lunr-languages@1.9.0/lunr.ja.js"></script>
+<script src="//unpkg.com/axios@0.19.0/dist/axios.js"></script>
+<script src="https://unpkg.com/lodash@4.17.20/lodash.min.js"></script>
+
+<script type="text/x-template" id="modal-frame">
+    <a class="block text-center no-underline text-on-primary py-2 px-2 font-normal cursor-pointer hover:font-bold" v-on:click="open"><i class="fa-solid fa-magnifying-glass"></i></a>
+    <teleport to="body">
+        <div v-if="modalOpen" class="fixed top-0 right-0 bottom-0 left-0 bg-black/70 flex items-center flex-col content-center" @click.self="modalOpen = false">
+            <div class="md:mt-36 mt-10">
+                <slot />
+            </div>
+        </div>
+    </teleport>
+</script>
+
+<script type="text/x-template" id="search-panel">
+    <div class="flex flex-col items-center border border-secondary-dark md:w-[700px] w-80 md:w-[500px] rounded-lg bg-secondary-light text-secondary-dark mx-auto">
+        <div class="flex items-center w-full border-b border-secondary-dark">
+            <div class="flex-none"><i class="fa-solid fa-magnifying-glass text-3xl mx-2"></i></div>
+            <input type="text" v-focus v-on:input="handleInput" v-on:keyup.enter="handleInput" v-on:keyup.esc="closeWindow" class="grow bg-secondary-light text-on-secondary-light
+            text-sm rounded-lg focus:outline-none block p-2.5 w-full" placeholder="Search this blog" required>
+        </div>
+        <div class="flex flex-col items-start mb-4 overflow-y-auto h-[440px] md:h-[540px] w-full">
+            <div class="pt-4 pb-2 px-6  border-b border-secondary-dark w-full hover:bg-secondary/60 hover:text-on-secondary"  v-for="result in searchResults">
+                <a class="block" :href="result.href">[[result.title]]</a>
+            </div>
+        </div>
+    </div>
+</script>
+
+<script type="text/x-template" id="search-app">
+    <modal-frame v-on:opened="dialogOpened">
+        <search-panel v-on:update="keywordUpdated" :searchResults="results" />
+    </modal-frame>
+</script>
+
+<script>
+    const searchPanel = {
+        template: '#search-panel',
+        data() {
+            return {
+            }
+        },
+        props: ['searchResults'],
+        emits: ['update'],
+        methods: {
+            handleInput: _.debounce(function(e) {
+                const val = e.target.value
+                console.log(val)
+                this.$emit('update', val)
+            }, 500),
+            closeWindow: function(e) {
+                if (this.$parent) {
+                    this.$parent.modalOpen = false
+                }
+            }
+        }
+    }
+
+    const modalFrame = {
+        template: '#modal-frame',
+        data() {
+            return {
+                modalOpen: false
+            }
+        },
+        emits: ['opened'],
+        methods: {
+            open: function() {
+                this.modalOpen = true
+                this.$emit('opened')
+            }
+        }
+    }
+
+    const searchInfo = {
+        searchData: {},
+        searchIndex: {}
+    }
+
+    
+    const app = Vue.createApp({
+        template: '#search-app',
+        components: {
+            'modal-frame': modalFrame,
+            'search-panel': searchPanel,
+        },
+        data() {
+            return {
+                results: []
+            }
+        },
+        methods: {
+            keywordUpdated: function(keyword) {
+                console.log(`updated: ${keyword}`)
+                if (keyword.trim().length == 0) {
+                    this.results = []
+                } else {
+                    const list = searchInfo.searchIndex.search(keyword).map(entry => {
+                        console.log(entry)
+                        const obj = searchInfo.searchData.results.filter(d => entry.ref == d.href)[0]
+                        return { 'href': obj.href, 'title': obj.title }
+                    })
+                    this.results = list
+                }
+            },
+            dialogOpened: function() {
+                axios.get('/portfolio/search/index.json')
+                    .then(res => {
+                        searchInfo.searchData = res.data
+                        searchInfo.searchIndex = lunr(function() {
+                            this.ref('href')
+                            this.field('title')
+                            this.use(lunr.ja)
+                            searchInfo.searchData.results.forEach(e => {
+                                this.add(e);
+                            })
+                        })
+                    })
+            }
+        }
+    })
+    
+    app.directive('focus', {
+        mounted(el) {
+            el.focus()
+        }
+    })
+    
+    app.config.compilerOptions.delimiters = [ "[[", "]]" ]
+    
+    app.mount('#search_menu')
+</script></body>
+</html>

@@ -7,20 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>Copyright 2022 kanta&#39;s spike</copyright>
-    <lastBuildDate>Tue, 17 Jan 2023 13:32:46 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 17 Jan 2023 15:46:23 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Inkscape</title>
-      <link>https://kantas-spike.github.io/portfolio/tags/inkscape/</link>
-      <pubDate>Tue, 17 Jan 2023 13:32:46 +0900</pubDate>
+      <title>argparse</title>
+      <link>https://kantas-spike.github.io/portfolio/tags/argparse/</link>
+      <pubDate>Tue, 17 Jan 2023 15:46:23 +0900</pubDate>
       
-      <guid>https://kantas-spike.github.io/portfolio/tags/inkscape/</guid>
+      <guid>https://kantas-spike.github.io/portfolio/tags/argparse/</guid>
       <description></description>
     </item>
     
     <item>
       <title>python</title>
       <link>https://kantas-spike.github.io/portfolio/tags/python/</link>
-      <pubDate>Tue, 17 Jan 2023 13:32:46 +0900</pubDate>
+      <pubDate>Tue, 17 Jan 2023 15:46:23 +0900</pubDate>
       
       <guid>https://kantas-spike.github.io/portfolio/tags/python/</guid>
       <description></description>
@@ -29,9 +29,18 @@
     <item>
       <title>SimpInkScr</title>
       <link>https://kantas-spike.github.io/portfolio/tags/simpinkscr/</link>
-      <pubDate>Tue, 17 Jan 2023 13:32:46 +0900</pubDate>
+      <pubDate>Tue, 17 Jan 2023 15:46:23 +0900</pubDate>
       
       <guid>https://kantas-spike.github.io/portfolio/tags/simpinkscr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Inkscape</title>
+      <link>https://kantas-spike.github.io/portfolio/tags/inkscape/</link>
+      <pubDate>Tue, 17 Jan 2023 13:32:46 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/tags/inkscape/</guid>
       <description></description>
     </item>
     
@@ -194,15 +203,6 @@
       <pubDate>Mon, 01 Aug 2022 23:45:37 +0900</pubDate>
       
       <guid>https://kantas-spike.github.io/portfolio/tags/color/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>argparse</title>
-      <link>https://kantas-spike.github.io/portfolio/tags/argparse/</link>
-      <pubDate>Mon, 01 Aug 2022 12:09:43 +0900</pubDate>
-      
-      <guid>https://kantas-spike.github.io/portfolio/tags/argparse/</guid>
       <description></description>
     </item>
     

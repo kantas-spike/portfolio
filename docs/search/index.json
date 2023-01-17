@@ -1,6 +1,10 @@
 {
     "results": [
     {
+        "href": "https://kantas-spike.github.io/portfolio/til/2023/01/38-parse-rest-args-with-argparse/",
+        "title": "Simple Inkscape Scriptingでスクリプトに追加の引数を渡したい"
+    },
+    {
         "href": "https://kantas-spike.github.io/portfolio/til/2023/01/37-use-commandline-by-simpinkscr/",
         "title": "コマンドラインからSimple Inkscape Scriptingを使いたい"
     },
