@@ -1,6 +1,10 @@
 {
     "results": [
     {
+        "href": "https://kantas-spike.github.io/portfolio/til/2023/01/39-generate-unique-id-by-python/",
+        "title": "PythonでユニークなIDを生成する"
+    },
+    {
         "href": "https://kantas-spike.github.io/portfolio/til/2023/01/38-parse-rest-args-with-argparse/",
         "title": "Simple Inkscape Scriptingでスクリプトに追加の引数を渡したい"
     },
