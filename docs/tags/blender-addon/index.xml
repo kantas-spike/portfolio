@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>blender on kanta&#39;s spike</title>
-    <link>https://kantas-spike.github.io/portfolio/tags/blender/</link>
-    <description>Recent content in blender on kanta&#39;s spike</description>
+    <title>blender-addon on kanta&#39;s spike</title>
+    <link>https://kantas-spike.github.io/portfolio/tags/blender-addon/</link>
+    <description>Recent content in blender-addon on kanta&#39;s spike</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>Copyright 2022 kanta&#39;s spike</copyright>
-    <lastBuildDate>Tue, 24 Jan 2023 22:56:25 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/blender/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 24 Jan 2023 22:56:25 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/blender-addon/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Blenderアドオン開発時の命名規則</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/01/40-naming-convention-of-blender-addon/</link>
@@ -19,25 +19,6 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;register_class&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;...&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;:
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Warning: &lt;span class=&#34;s1&#34;&gt;&amp;#39;SRTLOADER_SrtList&amp;#39;&lt;/span&gt; does not contain &lt;span class=&#34;s1&#34;&gt;&amp;#39;_PT_&amp;#39;&lt;/span&gt; with prefix and suffix
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
-    </item>
-    
-    <item>
-      <title>PythonスクリプトをBlenderで実行したい</title>
-      <link>https://kantas-spike.github.io/portfolio/til/2022/11/31-run-python-script-from-blender/</link>
-      <pubDate>Fri, 25 Nov 2022 06:08:32 +0900</pubDate>
-      
-      <guid>https://kantas-spike.github.io/portfolio/til/2022/11/31-run-python-script-from-blender/</guid>
-      <description>&lt;p&gt;作成したPythonのスクリプトをBlender起動時に実行したい。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Blenderを学ぶ</title>
-      <link>https://kantas-spike.github.io/portfolio/blog/2022/09/06-study-blender/</link>
-      <pubDate>Wed, 21 Sep 2022 09:46:04 +0900</pubDate>
-      
-      <guid>https://kantas-spike.github.io/portfolio/blog/2022/09/06-study-blender/</guid>
-      <description>&lt;p&gt;CGってなんか素敵な響きですよね。3DCGなんて興奮しますね。
-でも、私にとって3DCGは使う機会もなくて遠い存在です。&lt;/p&gt;</description>
     </item>
     
   </channel>

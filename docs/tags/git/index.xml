@@ -36,7 +36,7 @@ GitHubを使うためには&lt;code&gt;git&lt;/code&gt;を使えないといけ�
       <guid>https://kantas-spike.github.io/portfolio/til/2022/07/08-git-submodule-update/</guid>
       <description>gitでsubmoduleの上流での更新を取り込みたい。
 解決策 以下を実行する。
-git submodule update --remote 参考  上流の変更の取り込み  </description>
+git submodule update --remote 参考 上流の変更の取り込み </description>
     </item>
     
   </channel>
