@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html><head>
+    <title>kanta's spike</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://kantas-spike.github.io/portfolio/css/theme.c2eb48f2ea401a84ec430deca76d3df29f15018786d77b934965b0d7466c8446.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" /><link rel="stylesheet" href="https://kantas-spike.github.io/portfolio/css/syntax.d59352fe2c71602c0598c94b3cdaaef7d6553d94438605aefc2b925940f21d6a.css">
+</head><body class="bg-background text-primary-dark pb-4"><header class="bg-primary-dark text-site_title text-6xl font-serif font-extrabold px-4 py-3">
+    <h1 class="container mx-auto px-4"><a href="https://kantas-spike.github.io/portfolio/">kanta&#39;s spike</a></h1>
+</header>
+<input type="checkbox" name="burger_cbx" id="burger_cbx">
+<label for="burger_cbx" class="burger_label">
+    <span class="burger_icon"><svg version="1.1" viewBox="0 0 12.7 12.7" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <rect x="1.0369" y="2.1007" width="10.634" height="1.0426" ry=".5213"/>
+  <rect x="1.0369" y="4.571" width="10.634" height="1.0426" ry=".5213"/>
+  <rect x="1.0369" y="7.0413" width="10.634" height="1.0426" ry=".5213"/>
+  <rect x="1.0369" y="9.5115" width="10.634" height="1.0426" ry=".5213"/>
+ </g>
+</svg>
+</span>
+</label>
+<label for="burger_cbx" class="close_label">
+    <span class="close_icon"><svg version="1.1" viewBox="0 0 12.7 12.7" xmlns="http://www.w3.org/2000/svg">
+ <rect transform="rotate(45.535)" x="3.6678" y="-.6148" width="10.634" height="1.0426" ry=".5213"/>
+ <rect transform="rotate(135.53)" x="-5.4104" y="-9.5059" width="10.634" height="1.0426" ry=".5213"/>
+</svg>
+</span>
+</label>
+<div class="nav_area">
+    <nav class="container mx-auto bg-primary text-on-primary text-center flex flex-col md:flex-row justify-start">
+            <a href="https://kantas-spike.github.io/portfolio/" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Home</a>
+            <a href="https://kantas-spike.github.io/portfolio/blog" class="box-border flex-1 text-center no-underline bg-primary-light text-on-primary-light font-extrabold py-2">Blog</a>
+            <a href="https://kantas-spike.github.io/portfolio/til" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">TIL</a>
+            <a href="https://kantas-spike.github.io/portfolio/mytools" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">My Tools</a>
+            <a href="https://kantas-spike.github.io/portfolio/ihc" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">IHC</a>
+            <a href="https://kantas-spike.github.io/portfolio/tags" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Tags</a>
+        <div class="flex-none" id="search_menu"></div>
+    </nav>
+</div>
+<main id="content" class="container mx-auto bg-surface pt-4 pb-8">
+<div class="area_border  px-4 py-3 mx-4 pb-4">
+    
+
+<div class="mb-4">
+    <h3 class="border-b-2 border-primary text-primary-dark text-xl font-bold"><i class="fa-solid fa-file-lines"></i> <a href="https://kantas-spike.github.io/portfolio/blog/2023/01/07-adding-toc-to-a-donwloaded-pdf/">ダウンロードしたPDFに目次を追加したい</a></h3>
+    <div class="flex justify-between mt-1 mx-2">
+        <div>
+            <ul class="flex gap-2 justify-end">
+            
+            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/pdf/">#pdf</a></li>
+            
+            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/python/">#python</a></li>
+            
+            </ul>
+        </div>
+        <div>
+            <div class="text-right text-sm font-bold">2023/01/26</div>
+        </div>
+    </div>
+</div>
+
+    <div class="article mx-2">
+        <p>プログラミングを学ぶために、数学を学びなおしたいと思っています。</p>
+<p>米田優峻さんが公開されている<a href="https://speakerdeck.com/e869120/150-fen-dexue-bugao-xiao-shu-xue-noji-chu">150 分で学ぶ高校数学の基礎 - Speaker Deck</a>という資料を知りました。<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> <sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></p>
+<p>大変読み易く、わかりやすいです。PDFをダウンロードできるので、ダウンロードして勉強することにしました。
+全10章、259ページあるのですが、このPDFには目次がついていません。少し不便ですね。</p>
+<p>目次を追加する方法がないか調べてみました。</p>
+<h3 id="pdfに目次を追加する方法の調査">PDFに目次を追加する方法の調査</h3>
+<p>私はmacOSを使っています。Google先生に質問したところ、macOSの標準機能ではPDFに目次を追加できないようでした。</p>
+<p>Pythonを勉強中の私は、GitHubに目次を追加できるPythonツールがないか探すことにしました。
+そこで、見つけたのがこのリポジトリです。</p>
+<ul>
+<li><a href="https://github.com/yutayamamoto/pdfoutline">yutayamamoto/pdfoutline: A command line tool for adding an outline to pdf files</a></li>
+</ul>
+<p>これを使って、目次を作成したいと思います。</p>
+<h3 id="pdfoutline"><code>pdfoutline</code></h3>
+<p><code>pdfoutline</code>は、<a href="https://www.ghostscript.com/">Ghostscript</a>というPDFのインタプリタにもなるソフトウェアのラッパーツールのようです。<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></p>
+<p>利用しやすい独自の形式の目次ファイルを、PDFの形式に変換してから、<code>Gohstscript</code>に引き渡し、対象のPDFファイルと結合させるツールのようです。</p>
+<h4 id="事前準備">事前準備</h4>
+<p>macOS環境の場合、事前に<code>Gohstscript</code>をインストールする必要があります。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">brew install ghostscript
+</span></span></code></pre></div><h4 id="インストール">インストール</h4>
+<p>適当な作業ディレクトリに、<code>pdfoutline</code>をクローンします。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="nb">cd</span> work
+</span></span><span class="line"><span class="cl">git clone https://github.com/yutayamamoto/pdfoutline.git
+</span></span></code></pre></div><p>あとは、クローンしたディレクトリに移動し、<code>-h</code>オプションを付けて<code>pdfoutline.py</code>を実行しましょう。
+使い方が表示されます。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">% <span class="nb">cd</span> pdfoutline
+</span></span><span class="line"><span class="cl">% python3 ./pdfoutline.py -h
+</span></span><span class="line"><span class="cl">usage: pdfoutline.py <span class="o">[</span>-h<span class="o">]</span> <span class="o">[</span>-g GS_PATH<span class="o">]</span> in.pdf in.toc out.pdf
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">add table of contents to a pdf
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">positional arguments:
+</span></span><span class="line"><span class="cl">  in.pdf                the input pdf file
+</span></span><span class="line"><span class="cl">  in.toc                a table of contents file in the specified format
+</span></span><span class="line"><span class="cl">  out.pdf               the output pdf file
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">options:
+</span></span><span class="line"><span class="cl">  -h, --help            show this <span class="nb">help</span> message and <span class="nb">exit</span>
+</span></span><span class="line"><span class="cl">  -g GS_PATH, --gs_path GS_PATH
+</span></span><span class="line"><span class="cl">                        Path to the ghostscript executable
+</span></span></code></pre></div><h3 id="pdfに目次を追加する">PDFに目次を追加する</h3>
+<h4 id="pdfファイルの準備">PDFファイルの準備</h4>
+<p><a href="https://speakerdeck.com/e869120/150-fen-dexue-bugao-xiao-shu-xue-noji-chu">150 分で学ぶ高校数学の基礎 - Speaker Deck</a>のスライドの右下にある&quot;ダウンロード&quot;ボタンからPDFをダウンロードしてください。</p>
+<p>今回は<code>kiso.pdf</code>という名前でダウンロードしたファイルを保存しました。</p>
+<h4 id="目次の準備">目次の準備</h4>
+<p>目次ファイルは、基本的に、
+見出しとページを記載した行を、タブや空白でレベル指定するようです。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt"><span class="line"><span class="cl"># this is a comment
+</span></span><span class="line"><span class="cl">First Chapter 1
+</span></span><span class="line"><span class="cl">    first section 1
+</span></span><span class="line"><span class="cl">        first subsection 1
+</span></span><span class="line"><span class="cl">    second section 4
+</span></span><span class="line"><span class="cl">    third section 5
+</span></span></code></pre></div><p><a href="https://speakerdeck.com/e869120/150-fen-dexue-bugao-xiao-shu-xue-noji-chu">150 分で学ぶ高校数学の基礎 - Speaker Deck</a>の目次ファイルを作成してみます。</p>
+<p><code>toc.txt</code>という名前で作成しました。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt"><span class="line"><span class="cl"># 150分で学ぶ高校数学 米田優峻
+</span></span><span class="line"><span class="cl">序:自己紹介 2
+</span></span><span class="line"><span class="cl">序:スライドの概要/諸注意 3
+</span></span><span class="line"><span class="cl">序:目次 4
+</span></span><span class="line"><span class="cl">CHAPTER 1 数学の基礎知識 5
+</span></span><span class="line"><span class="cl">    A 基本的な数と計算 7
+</span></span><span class="line"><span class="cl">    B 文字式とは 12
+</span></span><span class="line"><span class="cl">    C 方程式とは 21
+</span></span><span class="line"><span class="cl">    &#34;本章のゴール&#34;を解こう 27
+</span></span><span class="line"><span class="cl">CHAPTER 2 場合の数 31
+</span></span><span class="line"><span class="cl">    公式1: 積の法則 33
+</span></span><span class="line"><span class="cl">    公式2: 並べ変え 38
+</span></span><span class="line"><span class="cl">    公式3: nPr (選択+並べ替え) 44
+</span></span><span class="line"><span class="cl">    公式4: nCr (選択) 49
+</span></span><span class="line"><span class="cl">    &#34;本章のゴール&#34;を解こう 53
+</span></span><span class="line"><span class="cl">CHAPTER 3 確率と期待値 56
+</span></span><span class="line"><span class="cl">    確率とは 57
+</span></span><span class="line"><span class="cl">    期待値とは 65
+</span></span><span class="line"><span class="cl">CHAPTER 4 統計的な解析 69
+</span></span><span class="line"><span class="cl">    統計の目的 70
+</span></span><span class="line"><span class="cl">    統計で使うツール1: ヒストグラム 72
+</span></span><span class="line"><span class="cl">    統計で使うツール2: 平均 76
+</span></span><span class="line"><span class="cl">    統計で使うツール3: 標準偏差 79
+</span></span><span class="line"><span class="cl">    統計で使うツール4: 相関係数 85
+</span></span><span class="line"><span class="cl">    &#34;本章のゴール&#34;を解こう 97
+</span></span><span class="line"><span class="cl">    統計のさらなる活用 102
+</span></span><span class="line"><span class="cl">CHAPTER 5 いろいろな関数 103
+</span></span><span class="line"><span class="cl">    関数とは 104
+</span></span><span class="line"><span class="cl">    関数の書き方 108
+</span></span><span class="line"><span class="cl">    いろいろな関数1: 一次関数 113
+</span></span><span class="line"><span class="cl">    いろいろな関数2: 二次関数 116
+</span></span><span class="line"><span class="cl">    いろいろな関数3: 指数関数 119
+</span></span><span class="line"><span class="cl">    いろいろな関数4: 対数関数 126
+</span></span><span class="line"><span class="cl">    補足: 指数関数の公式 131
+</span></span><span class="line"><span class="cl">    補足: 対数関数の公式 134
+</span></span><span class="line"><span class="cl">    &#34;本章のゴール&#34;を解こう 137
+</span></span><span class="line"><span class="cl">CHAPTER 6 三角比と三角関数 141
+</span></span><span class="line"><span class="cl">    三角比とは 142
+</span></span><span class="line"><span class="cl">    三角比の具体例 146
+</span></span><span class="line"><span class="cl">    三角比の拡張 150
+</span></span><span class="line"><span class="cl">    三角関数とは 153
+</span></span><span class="line"><span class="cl">    補足: ラジアンについて 155
+</span></span><span class="line"><span class="cl">    発展: 加法定理 156
+</span></span><span class="line"><span class="cl">    &#34;本章のゴール&#34;を解こう 157
+</span></span><span class="line"><span class="cl">CHAPTER 7 証明のやり方 160
+</span></span><span class="line"><span class="cl">    証明とは 161
+</span></span><span class="line"><span class="cl">    証明の例 163
+</span></span><span class="line"><span class="cl">    代表的な証明方法1: 背理法 168
+</span></span><span class="line"><span class="cl">    代表的な証明方法2: 数学的帰納法 174
+</span></span><span class="line"><span class="cl">    &#34;本章のゴール&#34;を解こう 182
+</span></span><span class="line"><span class="cl">CHAPTER 8 ベクトル 187
+</span></span><span class="line"><span class="cl">    ベクトルとは 188
+</span></span><span class="line"><span class="cl">    身近なベクトルの例 190
+</span></span><span class="line"><span class="cl">    ベクトルに関する注意点 195
+</span></span><span class="line"><span class="cl">    補足: ベクトルの大きさ 197
+</span></span><span class="line"><span class="cl">    ベクトルの演算 198
+</span></span><span class="line"><span class="cl">    ベクトルの応用 203
+</span></span><span class="line"><span class="cl">CHAPTER 9 微分法と積分法 205
+</span></span><span class="line"><span class="cl">    微分とは 206
+</span></span><span class="line"><span class="cl">    微分の例 209
+</span></span><span class="line"><span class="cl">    微分に関する記号・用語 212
+</span></span><span class="line"><span class="cl">    微分の方法 213
+</span></span><span class="line"><span class="cl">    積分とは 222
+</span></span><span class="line"><span class="cl">    積分に関する記号・用語 225
+</span></span><span class="line"><span class="cl">    積分の例 226
+</span></span><span class="line"><span class="cl">    積分計算の方法 230
+</span></span><span class="line"><span class="cl">    微分と積分の関係 235
+</span></span><span class="line"><span class="cl">    &#34;本章のゴール&#34;を解こう 237
+</span></span><span class="line"><span class="cl">CHAPTER 10 その他のトピックス 240
+</span></span><span class="line"><span class="cl">    トピックA: 数列 241
+</span></span><span class="line"><span class="cl">    トピックB: 集合 245
+</span></span><span class="line"><span class="cl">    トピックC: 整数の性質 249
+</span></span><span class="line"><span class="cl">CHAPTER FINAL スライドのまとめ 254
+</span></span><span class="line"><span class="cl">    終: スライドのまとめ 255
+</span></span><span class="line"><span class="cl">    終: さらなる学びへ 257
+</span></span><span class="line"><span class="cl">    終: 参考文献: 258
+</span></span></code></pre></div><h4 id="目次をつける">目次をつける</h4>
+<p>準備ができました。以下のコマンドを実行して目次を追加しましょう。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">python3 ./pdfoutline.py kiso.pdf toc.txt kiso_with_toc.pdf
+</span></span></code></pre></div><p><code>kiso_with_toc.pdf</code>が生成されました。</p>
+<h3 id="まとめ">まとめ</h3>
+<p><a href="https://github.com/yutayamamoto/pdfoutline">yutayamamoto/pdfoutline</a>で簡単にPDFに目次を追加できました。</p>
+<p><a href="https://www.ghostscript.com/">Ghostscript</a>を使っても目次を作成できるようですが、PDFの言語で目次を記載する必要があるためハードルが高いです。
+<a href="https://github.com/yutayamamoto/pdfoutline">yutayamamoto/pdfoutline</a>は独自の目次形式導入することで、そのハードルを下げてくれています。ありがたいですね。</p>
+<p>また、今回の高校数学の資料の著者である、米田優峻さんは<a href="https://gihyo.jp/dp/ebook/2021/978-4-297-12522-6">問題解決のための「アルゴリズム×数学」が基礎からしっかり身につく本 | Gihyo Digital Publishing</a>という本も書かれています。アルゴリズムも勉強したいので読んでみようと思います。</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>このTweetで知りました。 <a href="https://twitter.com/jujulife7/status/1609803658392408067">じゅじゅさんはTwitterを使っています: 「年末年始の時間あるタイミングでちょっとした勉強(学び直し)にお勧めなのが、無料で読める「150 分で学ぶ高校数学の基礎」。 わかりやすい説明＆デザインで非常に質が高く広めたかったのでシェア(作者は現役東大2年生とのこと)。 数学嫌いの方、改めて学ぶのに本当お勧めです https://t.co/uBAinuaPq2 https://t.co/I9LbbuAJbZ」 / Twitter</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>米田優峻さんは、アルゴリズムの基本についても資料を公開されています。 <a href="https://speakerdeck.com/e869120">E869120 (@e869120) on Speaker Deck</a>&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3">
+<p><a href="https://ja.wikipedia.org/wiki/Ghostscript">Ghostscript - Wikipedia</a>&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+    </div>
+</div>
+
+        </main><footer class="bg-primary-dark text-center text-on-primary-dark fixed bottom-0 w-full h-8">
+    <div class="container mx-auto grid grid-cols-3">
+        <div class="col-start-2">
+            <div class="text-sm pt-2">Copyright 2022 kanta&#39;s spike</div>
+        </div>
+        <div class="flex justify-end gap-2 mr-2">
+            
+                
+            <a title="Twitter" class="text-2xl" href="https://twitter.com/KantasSpike"><i class="fa-brands fa-twitter-square"></i></a>
+                
+            <a title="Youtube" class="text-2xl" href="https://www.youtube.com/channel/UCnVBuUGMYAt7ZuIkadxnMfw"><i class="fa-brands fa-youtube-square"></i></a>
+                
+            <a title="GitHub" class="text-2xl" href="https://github.com/kantas-spike"><i class="fa-brands fa-github-square"></i></a>
+                
+            <a title="Blog" class="text-2xl" href="https://kantas-spike.github.io/portfolio/"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                
+            
+        </div>
+    </div>
+</footer>
+        <script src="https://unpkg.com/vue@next"></script>
+<script src="//unpkg.com/lunr@2.3.6/lunr.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lunr-languages@1.9.0/lunr.stemmer.support.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lunr-languages@1.9.0/tinyseg.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lunr-languages@1.9.0/lunr.ja.js"></script>
+<script src="//unpkg.com/axios@0.19.0/dist/axios.js"></script>
+<script src="https://unpkg.com/lodash@4.17.20/lodash.min.js"></script>
+
+<script type="text/x-template" id="modal-frame">
+    <a class="block text-center no-underline text-on-primary py-2 px-2 font-normal cursor-pointer hover:font-bold" v-on:click="open"><i class="fa-solid fa-magnifying-glass"></i></a>
+    <teleport to="body">
+        <div v-if="modalOpen" class="fixed top-0 right-0 bottom-0 left-0 bg-black/70 flex items-center flex-col content-center" @click.self="modalOpen = false">
+            <div class="md:mt-36 mt-10">
+                <slot />
+            </div>
+        </div>
+    </teleport>
+</script>
+
+<script type="text/x-template" id="search-panel">
+    <div class="flex flex-col items-center border border-secondary-dark md:w-[700px] w-80 md:w-[500px] rounded-lg bg-secondary-light text-secondary-dark mx-auto">
+        <div class="flex items-center w-full border-b border-secondary-dark">
+            <div class="flex-none"><i class="fa-solid fa-magnifying-glass text-3xl mx-2"></i></div>
+            <input type="text" v-focus v-on:input="handleInput" v-on:keyup.enter="handleInput" v-on:keyup.esc="closeWindow" class="grow bg-secondary-light text-on-secondary-light
+            text-sm rounded-lg focus:outline-none block p-2.5 w-full" placeholder="Search this blog" required>
+        </div>
+        <div class="flex flex-col items-start mb-4 overflow-y-auto h-[440px] md:h-[540px] w-full">
+            <div class="pt-4 pb-2 px-6  border-b border-secondary-dark w-full hover:bg-secondary/60 hover:text-on-secondary"  v-for="result in searchResults">
+                <a class="block" :href="result.href">[[result.title]]</a>
+            </div>
+        </div>
+    </div>
+</script>
+
+<script type="text/x-template" id="search-app">
+    <modal-frame v-on:opened="dialogOpened">
+        <search-panel v-on:update="keywordUpdated" :searchResults="results" />
+    </modal-frame>
+</script>
+
+<script>
+    const searchPanel = {
+        template: '#search-panel',
+        data() {
+            return {
+            }
+        },
+        props: ['searchResults'],
+        emits: ['update'],
+        methods: {
+            handleInput: _.debounce(function(e) {
+                const val = e.target.value
+                console.log(val)
+                this.$emit('update', val)
+            }, 500),
+            closeWindow: function(e) {
+                if (this.$parent) {
+                    this.$parent.modalOpen = false
+                }
+            }
+        }
+    }
+
+    const modalFrame = {
+        template: '#modal-frame',
+        data() {
+            return {
+                modalOpen: false
+            }
+        },
+        emits: ['opened'],
+        methods: {
+            open: function() {
+                this.modalOpen = true
+                this.$emit('opened')
+            }
+        }
+    }
+
+    const searchInfo = {
+        searchData: {},
+        searchIndex: {}
+    }
+
+    
+    const app = Vue.createApp({
+        template: '#search-app',
+        components: {
+            'modal-frame': modalFrame,
+            'search-panel': searchPanel,
+        },
+        data() {
+            return {
+                results: []
+            }
+        },
+        methods: {
+            keywordUpdated: function(keyword) {
+                console.log(`updated: ${keyword}`)
+                if (keyword.trim().length == 0) {
+                    this.results = []
+                } else {
+                    const list = searchInfo.searchIndex.search(keyword).map(entry => {
+                        console.log(entry)
+                        const obj = searchInfo.searchData.results.filter(d => entry.ref == d.href)[0]
+                        return { 'href': obj.href, 'title': obj.title }
+                    })
+                    this.results = list
+                }
+            },
+            dialogOpened: function() {
+                axios.get('/portfolio/search/index.json')
+                    .then(res => {
+                        searchInfo.searchData = res.data
+                        searchInfo.searchIndex = lunr(function() {
+                            this.ref('href')
+                            this.field('title')
+                            this.use(lunr.ja)
+                            searchInfo.searchData.results.forEach(e => {
+                                this.add(e);
+                            })
+                        })
+                    })
+            }
+        }
+    })
+    
+    app.directive('focus', {
+        mounted(el) {
+            el.focus()
+        }
+    })
+    
+    app.config.compilerOptions.delimiters = [ "[[", "]]" ]
+    
+    app.mount('#search_menu')
+</script></body>
+</html>

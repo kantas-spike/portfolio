@@ -1,13 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>PDF on kanta&#39;s spike</title>
+    <title>pdf on kanta&#39;s spike</title>
     <link>https://kantas-spike.github.io/portfolio/tags/pdf/</link>
-    <description>Recent content in PDF on kanta&#39;s spike</description>
+    <description>Recent content in pdf on kanta&#39;s spike</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>Copyright 2022 kanta&#39;s spike</copyright>
-    <lastBuildDate>Sat, 06 Aug 2022 16:02:01 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/pdf/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 Jan 2023 04:14:58 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/pdf/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ダウンロードしたPDFに目次を追加したい</title>
+      <link>https://kantas-spike.github.io/portfolio/blog/2023/01/07-adding-toc-to-a-donwloaded-pdf/</link>
+      <pubDate>Thu, 26 Jan 2023 04:14:58 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/blog/2023/01/07-adding-toc-to-a-donwloaded-pdf/</guid>
+      <description>&lt;p&gt;プログラミングを学ぶために、数学を学びなおしたいと思っています。&lt;/p&gt;
+&lt;p&gt;米田優峻さんが公開されている&lt;a href=&#34;https://speakerdeck.com/e869120/150-fen-dexue-bugao-xiao-shu-xue-noji-chu&#34;&gt;150 分で学ぶ高校数学の基礎 - Speaker Deck&lt;/a&gt;という資料を知りました。&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; &lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;大変読み易く、わかりやすいです。PDFをダウンロードできるので、ダウンロードして勉強することにしました。
+全10章、259ページあるのですが、このPDFには目次がついていません。少し不便ですね。&lt;/p&gt;
+&lt;p&gt;目次を追加する方法がないか調べてみました。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>PDFの特定ページにリンクを貼りたい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2022/08/20-link-to-the-page-of-pdf/</link>
