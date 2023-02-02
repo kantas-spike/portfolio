@@ -7,17 +7,11 @@ tags:
 - font
 ---
 
-```quote
-昔の看板のような画像を作成したい。50年ぐらいの看板に使われているようフォントファミリーを教えてください。
-```
-<!--more-->
-
-### 質問
-
-```txt
+```chatQ
 昔の看板のような画像を作成したい。50年ぐらいの看板に使われているようフォントファミリーを教えてください。
 もし、そのようなフォントファミリーの中で、open font licenseで公開されているフォントがあれば教えてください。
 ```
+<!--more-->
 
 #### 英訳
 
@@ -29,7 +23,7 @@ If there are any fonts released under the open font license among such font fami
 
 ### 先生の回答
 
-```text
+```chatA
 Some popular font families used in billboards in the 1960s and 1970s include:
 
 Futura
