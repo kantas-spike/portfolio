@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/chatgpt/</loc>
+    <lastmod>2023-02-02T15:33:58+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/font/</loc>
+    <lastmod>2023-02-02T15:33:58+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/</loc>
+    <lastmod>2023-02-02T15:33:58+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/dialogue/01-tell-me-font-family/</loc>
+    <lastmod>2023-02-02T15:33:58+09:00</lastmod>
+  </url><url>
     <loc>https://kantas-spike.github.io/portfolio/mytools/repo_info.py/</loc>
     <lastmod>2023-02-02T06:18:17+00:00</lastmod>
   </url><url>
@@ -21,9 +33,6 @@
     <lastmod>2023-01-26T04:14:58+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/python/</loc>
-    <lastmod>2023-01-26T04:14:58+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/</loc>
     <lastmod>2023-01-26T04:14:58+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/blog/2023/01/07-adding-toc-to-a-donwloaded-pdf/</loc>
@@ -285,6 +294,9 @@
     <lastmod>2022-07-22T08:24:06+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/blog/</loc>
+    <lastmod>2022-07-22T08:15:27+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/dialogue/</loc>
     <lastmod>2022-07-22T08:15:27+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/ihc/</loc>
