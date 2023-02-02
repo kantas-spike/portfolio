@@ -9,6 +9,51 @@
     <copyright>Copyright 2022 kanta&#39;s spike</copyright>
     <lastBuildDate>Fri, 22 Jul 2022 08:24:06 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>repo-info.py</title>
+      <link>https://kantas-spike.github.io/portfolio/mytools/repo_info.py/</link>
+      <pubDate>Thu, 02 Feb 2023 06:18:17 +0000</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/mytools/repo_info.py/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>kantas-theme</title>
+      <link>https://kantas-spike.github.io/portfolio/ihc/kantas_theme/</link>
+      <pubDate>Thu, 02 Feb 2023 06:06:58 +0000</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/ihc/kantas_theme/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>add_article.py</title>
+      <link>https://kantas-spike.github.io/portfolio/mytools/add_article.py/</link>
+      <pubDate>Thu, 02 Feb 2023 04:16:35 +0000</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/mytools/add_article.py/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>create-subtitle-image</title>
+      <link>https://kantas-spike.github.io/portfolio/mytools/create_subtitle_image/</link>
+      <pubDate>Sat, 28 Jan 2023 15:13:41 +0000</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/mytools/create_subtitle_image/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>add_slide.py</title>
+      <link>https://kantas-spike.github.io/portfolio/mytools/add_slide.py/</link>
+      <pubDate>Thu, 26 Jan 2023 23:04:50 +0000</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/mytools/add_slide.py/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>ダウンロードしたPDFに目次を追加したい</title>
       <link>https://kantas-spike.github.io/portfolio/blog/2023/01/07-adding-toc-to-a-donwloaded-pdf/</link>
       <pubDate>Thu, 26 Jan 2023 04:14:58 +0900</pubDate>
@@ -32,6 +77,15 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;register_class&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;...&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;:
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Warning: &lt;span class=&#34;s1&#34;&gt;&amp;#39;SRTLOADER_SrtList&amp;#39;&lt;/span&gt; does not contain &lt;span class=&#34;s1&#34;&gt;&amp;#39;_PT_&amp;#39;&lt;/span&gt; with prefix and suffix
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>srt_loader</title>
+      <link>https://kantas-spike.github.io/portfolio/ihc/srt_loader/</link>
+      <pubDate>Sun, 22 Jan 2023 22:24:21 +0000</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/ihc/srt_loader/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -64,12 +118,39 @@
     </item>
     
     <item>
+      <title>Color-Wheel</title>
+      <link>https://kantas-spike.github.io/portfolio/ihc/color_wheel/</link>
+      <pubDate>Wed, 28 Dec 2022 11:37:26 +0000</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/ihc/color_wheel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>title_url_copier</title>
+      <link>https://kantas-spike.github.io/portfolio/mytools/title_url_copier/</link>
+      <pubDate>Tue, 27 Dec 2022 15:36:30 +0000</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/mytools/title_url_copier/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>InkscapeでPythonを使う</title>
       <link>https://kantas-spike.github.io/portfolio/til/2022/12/36-inkscape-with-python/</link>
       <pubDate>Sun, 11 Dec 2022 08:24:09 +0900</pubDate>
       
       <guid>https://kantas-spike.github.io/portfolio/til/2022/12/36-inkscape-with-python/</guid>
       <description>&lt;p&gt;&lt;code&gt;Inkscape&lt;/code&gt;でPythonを使い、縁取り文字の作成を自動化したい。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>slide2video.py</title>
+      <link>https://kantas-spike.github.io/portfolio/mytools/slide2video.py/</link>
+      <pubDate>Fri, 09 Dec 2022 11:50:43 +0000</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/mytools/slide2video.py/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -91,6 +172,15 @@
     </item>
     
     <item>
+      <title>create-subtitles-movie.sh</title>
+      <link>https://kantas-spike.github.io/portfolio/mytools/create_subtitles_movie.sh/</link>
+      <pubDate>Tue, 06 Dec 2022 15:03:57 +0000</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/mytools/create_subtitles_movie.sh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>自作ツールをインストールしたい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2022/12/33-tool-dir/</link>
       <pubDate>Sun, 04 Dec 2022 23:00:39 +0900</pubDate>
@@ -107,6 +197,15 @@
       
       <guid>https://kantas-spike.github.io/portfolio/til/2022/11/31-run-python-script-from-blender/</guid>
       <description>&lt;p&gt;作成したPythonのスクリプトをBlender起動時に実行したい。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>spike.py</title>
+      <link>https://kantas-spike.github.io/portfolio/mytools/spike.py/</link>
+      <pubDate>Mon, 14 Nov 2022 07:41:52 +0000</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/mytools/spike.py/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -139,6 +238,15 @@
     </item>
     
     <item>
+      <title>pdf2jpg.sh</title>
+      <link>https://kantas-spike.github.io/portfolio/mytools/pdf2jpg.sh/</link>
+      <pubDate>Tue, 06 Sep 2022 05:50:30 +0000</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/mytools/pdf2jpg.sh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>英語を学ぶ</title>
       <link>https://kantas-spike.github.io/portfolio/blog/2022/09/05-study-english/</link>
       <pubDate>Sun, 04 Sep 2022 08:55:25 +0900</pubDate>
@@ -155,6 +263,15 @@
       
       <guid>https://kantas-spike.github.io/portfolio/til/2022/09/28-add-hash-to-url-with-hugo/</guid>
       <description>&lt;p&gt;キャッシュを回避するためにCSSやJavascriptなどのリソースファイルのURLにハッシュを付けたい。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>create-color-wheel.py</title>
+      <link>https://kantas-spike.github.io/portfolio/mytools/create_color_wheel.py/</link>
+      <pubDate>Thu, 01 Sep 2022 07:16:10 +0000</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/mytools/create_color_wheel.py/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -350,6 +467,15 @@ GitHubを使うためには&lt;code&gt;git&lt;/code&gt;を使えないといけ�
     </item>
     
     <item>
+      <title>vv_wav2slide_wav.py</title>
+      <link>https://kantas-spike.github.io/portfolio/mytools/vv_wav2slide_wav.py/</link>
+      <pubDate>Sat, 23 Jul 2022 05:25:29 +0000</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/mytools/vv_wav2slide_wav.py/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Hugoでショートコードの記述をエスケープして表示したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2022/07/11-hugo-escape-shortcodes/</link>
       <pubDate>Sat, 23 Jul 2022 12:34:13 +0900</pubDate>
@@ -472,6 +598,24 @@ git submodule update --remote 参考 上流の変更の取り込み </descriptio
       
       <guid>https://kantas-spike.github.io/portfolio/blog/2022/07/01-create-my-portfolio-site/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;と&lt;a href=&#34;https://gohugo.io/hosting-and-deployment/hosting-on-github/&#34;&gt;GitHub Pages&lt;/a&gt;を使って、プログラミングの学習記録サイトを作りたいと思います。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>odp2jpg.sh</title>
+      <link>https://kantas-spike.github.io/portfolio/mytools/odp2jpg.sh/</link>
+      <pubDate>Mon, 11 Jul 2022 15:23:57 +0000</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/mytools/odp2jpg.sh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pong-Game-with-Pygame</title>
+      <link>https://kantas-spike.github.io/portfolio/ihc/pong_game_with_pygame/</link>
+      <pubDate>Tue, 05 Jul 2022 18:45:27 +0000</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/ihc/pong_game_with_pygame/</guid>
+      <description></description>
     </item>
     
   </channel>

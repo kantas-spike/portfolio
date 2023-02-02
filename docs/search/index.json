@@ -1,12 +1,36 @@
 {
     "results": [
     {
+        "href": "https://kantas-spike.github.io/portfolio/mytools/repo_info.py/",
+        "title": "repo-info.py"
+    },
+    {
+        "href": "https://kantas-spike.github.io/portfolio/ihc/kantas_theme/",
+        "title": "kantas-theme"
+    },
+    {
+        "href": "https://kantas-spike.github.io/portfolio/mytools/add_article.py/",
+        "title": "add_article.py"
+    },
+    {
+        "href": "https://kantas-spike.github.io/portfolio/mytools/create_subtitle_image/",
+        "title": "create-subtitle-image"
+    },
+    {
+        "href": "https://kantas-spike.github.io/portfolio/mytools/add_slide.py/",
+        "title": "add_slide.py"
+    },
+    {
         "href": "https://kantas-spike.github.io/portfolio/blog/2023/01/07-adding-toc-to-a-donwloaded-pdf/",
         "title": "ダウンロードしたPDFに目次を追加したい"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/til/2023/01/40-naming-convention-of-blender-addon/",
         "title": "Blenderアドオン開発時の命名規則"
+    },
+    {
+        "href": "https://kantas-spike.github.io/portfolio/ihc/srt_loader/",
+        "title": "srt_loader"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/til/2023/01/39-generate-unique-id-by-python/",
@@ -21,8 +45,20 @@
         "title": "コマンドラインからSimple Inkscape Scriptingを使いたい"
     },
     {
+        "href": "https://kantas-spike.github.io/portfolio/ihc/color_wheel/",
+        "title": "Color-Wheel"
+    },
+    {
+        "href": "https://kantas-spike.github.io/portfolio/mytools/title_url_copier/",
+        "title": "title_url_copier"
+    },
+    {
         "href": "https://kantas-spike.github.io/portfolio/til/2022/12/36-inkscape-with-python/",
         "title": "InkscapeでPythonを使う"
+    },
+    {
+        "href": "https://kantas-spike.github.io/portfolio/mytools/slide2video.py/",
+        "title": "slide2video.py"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/til/2022/12/35-switch-dev-or-release-with-makefile/",
@@ -33,12 +69,20 @@
         "title": "VSCodeでターミナルとコードの間を行き来する"
     },
     {
+        "href": "https://kantas-spike.github.io/portfolio/mytools/create_subtitles_movie.sh/",
+        "title": "create-subtitles-movie.sh"
+    },
+    {
         "href": "https://kantas-spike.github.io/portfolio/til/2022/12/33-tool-dir/",
         "title": "自作ツールをインストールしたい"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/til/2022/11/31-run-python-script-from-blender/",
         "title": "PythonスクリプトをBlenderで実行したい"
+    },
+    {
+        "href": "https://kantas-spike.github.io/portfolio/mytools/spike.py/",
+        "title": "spike.py"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/til/2022/11/30-add-finder-service-of-vscode/",
@@ -53,12 +97,20 @@
         "title": "Blenderを学ぶ"
     },
     {
+        "href": "https://kantas-spike.github.io/portfolio/mytools/pdf2jpg.sh/",
+        "title": "pdf2jpg.sh"
+    },
+    {
         "href": "https://kantas-spike.github.io/portfolio/blog/2022/09/05-study-english/",
         "title": "英語を学ぶ"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/til/2022/09/28-add-hash-to-url-with-hugo/",
         "title": "HugoでcssのURLにハッシュを付与したい"
+    },
+    {
+        "href": "https://kantas-spike.github.io/portfolio/mytools/create_color_wheel.py/",
+        "title": "create-color-wheel.py"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/til/2022/08/27-filter-pages-with-hugo/",
@@ -137,6 +189,10 @@
         "title": "HugoでSVGを埋め込みたい"
     },
     {
+        "href": "https://kantas-spike.github.io/portfolio/mytools/vv_wav2slide_wav.py/",
+        "title": "vv_wav2slide_wav.py"
+    },
+    {
         "href": "https://kantas-spike.github.io/portfolio/til/2022/07/11-hugo-escape-shortcodes/",
         "title": "Hugoでショートコードの記述をエスケープして表示したい"
     },
@@ -187,6 +243,14 @@
     {
         "href": "https://kantas-spike.github.io/portfolio/blog/2022/07/01-create-my-portfolio-site/",
         "title": "ポートフォリオサイトを作成する"
+    },
+    {
+        "href": "https://kantas-spike.github.io/portfolio/mytools/odp2jpg.sh/",
+        "title": "odp2jpg.sh"
+    },
+    {
+        "href": "https://kantas-spike.github.io/portfolio/ihc/pong_game_with_pygame/",
+        "title": "Pong-Game-with-Pygame"
     }
     ]
 }

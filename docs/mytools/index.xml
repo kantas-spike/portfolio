@@ -8,5 +8,113 @@
     <language>ja-jp</language>
     <copyright>Copyright 2022 kanta&#39;s spike</copyright>
     <lastBuildDate>Fri, 22 Jul 2022 08:15:27 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/mytools/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>repo-info.py</title>
+      <link>https://kantas-spike.github.io/portfolio/mytools/repo_info.py/</link>
+      <pubDate>Thu, 02 Feb 2023 06:18:17 +0000</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/mytools/repo_info.py/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>add_article.py</title>
+      <link>https://kantas-spike.github.io/portfolio/mytools/add_article.py/</link>
+      <pubDate>Thu, 02 Feb 2023 04:16:35 +0000</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/mytools/add_article.py/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>create-subtitle-image</title>
+      <link>https://kantas-spike.github.io/portfolio/mytools/create_subtitle_image/</link>
+      <pubDate>Sat, 28 Jan 2023 15:13:41 +0000</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/mytools/create_subtitle_image/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>add_slide.py</title>
+      <link>https://kantas-spike.github.io/portfolio/mytools/add_slide.py/</link>
+      <pubDate>Thu, 26 Jan 2023 23:04:50 +0000</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/mytools/add_slide.py/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>title_url_copier</title>
+      <link>https://kantas-spike.github.io/portfolio/mytools/title_url_copier/</link>
+      <pubDate>Tue, 27 Dec 2022 15:36:30 +0000</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/mytools/title_url_copier/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>slide2video.py</title>
+      <link>https://kantas-spike.github.io/portfolio/mytools/slide2video.py/</link>
+      <pubDate>Fri, 09 Dec 2022 11:50:43 +0000</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/mytools/slide2video.py/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>create-subtitles-movie.sh</title>
+      <link>https://kantas-spike.github.io/portfolio/mytools/create_subtitles_movie.sh/</link>
+      <pubDate>Tue, 06 Dec 2022 15:03:57 +0000</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/mytools/create_subtitles_movie.sh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>spike.py</title>
+      <link>https://kantas-spike.github.io/portfolio/mytools/spike.py/</link>
+      <pubDate>Mon, 14 Nov 2022 07:41:52 +0000</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/mytools/spike.py/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pdf2jpg.sh</title>
+      <link>https://kantas-spike.github.io/portfolio/mytools/pdf2jpg.sh/</link>
+      <pubDate>Tue, 06 Sep 2022 05:50:30 +0000</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/mytools/pdf2jpg.sh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>create-color-wheel.py</title>
+      <link>https://kantas-spike.github.io/portfolio/mytools/create_color_wheel.py/</link>
+      <pubDate>Thu, 01 Sep 2022 07:16:10 +0000</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/mytools/create_color_wheel.py/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vv_wav2slide_wav.py</title>
+      <link>https://kantas-spike.github.io/portfolio/mytools/vv_wav2slide_wav.py/</link>
+      <pubDate>Sat, 23 Jul 2022 05:25:29 +0000</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/mytools/vv_wav2slide_wav.py/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>odp2jpg.sh</title>
+      <link>https://kantas-spike.github.io/portfolio/mytools/odp2jpg.sh/</link>
+      <pubDate>Mon, 11 Jul 2022 15:23:57 +0000</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/mytools/odp2jpg.sh/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
