@@ -70,6 +70,16 @@ ChatGPT先生が教えてくれたフォントは、いずれも、サンセリ�
 
 [Making sense of typographic classifications – Fonts Knowledge - Google Fonts](https://fonts.google.com/knowledge/introducing_type/making_sense_of_typographic_classifications)には、フォント分類と具体的なフォント名が記載されているので参考になりそうです。
 
+| サンセリフの分類 | Google Fontsにあるフォント |
+|----|----|
+|[Geometric](https://fonts.google.com/knowledge/glossary/geometric)| [DM Sans](https://fonts.google.com/specimen/DM+Sans)|
+||[Poppins](https://fonts.google.com/specimen/Poppins)|
+||[Raleway](https://fonts.google.com/specimen/Raleway)|
+|[Grotesque & Neo-grotesque](https://fonts.google.com/knowledge/glossary/grotesque_neo_grotesque)| [Space Grotesk](https://fonts.google.com/specimen/Space+Grotesk)|
+||[Work Sans](https://fonts.google.com/specimen/Work+Sans)|
+|[Humanist, or Old Style](https://fonts.google.com/knowledge/glossary/humanist_old_style)| [Merriweather Sans](https://fonts.google.com/specimen/Merriweather+Sans)|
+||[Cabin](https://fonts.google.com/specimen/Cabin)|
+
 ### 参考
 
 - [Sans-serif - Wikipedia](https://en.wikipedia.org/wiki/Sans-serif)
