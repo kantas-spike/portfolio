@@ -1,14 +1,14 @@
 {
     "title": "kantas-theme",
-    "date": "2023-02-02T06:06:58Z",
+    "date": "2023-02-05T22:48:36Z",
     "draft": false,
     "repo": {
         "name": "kantas-theme",
         "full_name": "kantas-spike/kantas-theme",
         "html_url": "https://github.com/kantas-spike/kantas-theme",
         "description": "Hugo theme for programming learner portfolio",
-        "size": 87,
-        "pushed_at": "2023-02-02T06:06:58Z",
+        "size": 94,
+        "pushed_at": "2023-02-05T22:48:36Z",
         "project_type": "ihc",
         "langs": [
             "HTML",
@@ -16,6 +16,16 @@
             "JavaScript"
         ],
         "merged": [
+            {
+                "html_url": "https://github.com/kantas-spike/kantas-theme/pull/34",
+                "title": "feat: \u554f\u7b54\u306eQ&A\u7528\u306eMarkdown Render Hooks\u3092\u8ffd\u52a0 (fix: #33)",
+                "state": "closed",
+                "body": null,
+                "created_at": "2023-02-02T22:00:33Z",
+                "merged_at": "2023-02-02T22:00:41Z",
+                "closed_at": "2023-02-02T22:00:41Z",
+                "user": "kantas-spike"
+            },
             {
                 "html_url": "https://github.com/kantas-spike/kantas-theme/pull/32",
                 "title": "Feat changing mytools and ihc from data format to indivisual files",
