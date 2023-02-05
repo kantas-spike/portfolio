@@ -9,6 +9,15 @@
     <copyright>Copyright 2022 kanta&#39;s spike</copyright>
     <lastBuildDate>Fri, 22 Jul 2022 08:24:06 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>kantas-theme</title>
+      <link>https://kantas-spike.github.io/portfolio/ihc/kantas_theme/</link>
+      <pubDate>Sun, 05 Feb 2023 22:48:36 +0000</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/ihc/kantas_theme/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>古い看板に使うようなフォントファミリーを教えて</title>
       <link>https://kantas-spike.github.io/portfolio/dialogue/01-tell-me-font-family/</link>
       <pubDate>Thu, 02 Feb 2023 15:33:58 +0900</pubDate>
@@ -27,15 +36,6 @@
       <pubDate>Thu, 02 Feb 2023 06:18:17 +0000</pubDate>
       
       <guid>https://kantas-spike.github.io/portfolio/mytools/repo_info.py/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>kantas-theme</title>
-      <link>https://kantas-spike.github.io/portfolio/ihc/kantas_theme/</link>
-      <pubDate>Thu, 02 Feb 2023 06:06:58 +0000</pubDate>
-      
-      <guid>https://kantas-spike.github.io/portfolio/ihc/kantas_theme/</guid>
       <description></description>
     </item>
     
