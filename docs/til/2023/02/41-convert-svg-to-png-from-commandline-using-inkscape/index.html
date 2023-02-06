@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html><head>
     <title>
-        Inkscape | kanta&#39;s spike
+        Inkscapeを使ってコマンドラインからSVG画像をPNGに変換する | kanta&#39;s spike
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://kantas-spike.github.io/portfolio/css/theme.e034d56288f6791a2667c3d1b9e99fbd58533fb40c62254a137d4e9e3b142066.css">
@@ -35,20 +35,16 @@
     <nav class="container mx-auto bg-primary text-on-primary text-center flex flex-col md:flex-row justify-start">
             <a href="https://kantas-spike.github.io/portfolio/" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Home</a>
             <a href="https://kantas-spike.github.io/portfolio/blog" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Blog</a>
-            <a href="https://kantas-spike.github.io/portfolio/til" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">TIL</a>
+            <a href="https://kantas-spike.github.io/portfolio/til" class="box-border flex-1 text-center no-underline bg-primary-light text-on-primary-light font-extrabold py-2">TIL</a>
             <a href="https://kantas-spike.github.io/portfolio/dialogue" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Dialogue</a>
             <a href="https://kantas-spike.github.io/portfolio/mytools" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">My Tools</a>
             <a href="https://kantas-spike.github.io/portfolio/ihc" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">IHC</a>
-            <a href="https://kantas-spike.github.io/portfolio/tags" class="box-border flex-1 text-center no-underline bg-primary-light text-on-primary-light font-extrabold py-2">Tags</a>
+            <a href="https://kantas-spike.github.io/portfolio/tags" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Tags</a>
         <div class="flex-none" id="search_menu"></div>
     </nav>
 </div>
 <main id="content" class="container mx-auto bg-surface pt-4 pb-8">
-<h3 class="page_h3 my-4 mx-4"><i class="fa-solid fa-tag"></i> Inkscape <span class="text-sm">(<a class="normal_link" href="https://kantas-spike.github.io/portfolio/tags/">他のタグ..</a>)</span></h2>
-
-<section class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-2 my-4 mx-4">
-    
-        <div class="area_border  px-4 py-3">
+<div class="area_border  px-4 py-3 mx-4 pb-4">
     
 
 
@@ -71,72 +67,23 @@
 
     <div class="article mx-2">
         <p>Inkscapeを使ってコマンドラインからSVG画像をPNGに変換したい。</p>
+<h3 id="解決策">解決策</h3>
+<p><code>-o</code>のあとに出力先のPNG画像のパスを指定すると変換できる。
+出力形式は、パスの拡張子から自動的に判断される。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">/Applications/Inkscape.app/Contents/MacOS/inkscape -o output.png input.svg
+</span></span></code></pre></div><p>もし、画像サイズを変更する場合は、<code>-w</code>と<code>-h</code>で、それぞれ幅と高さをpx値で指定できる。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">/Applications/Inkscape.app/Contents/MacOS/inkscape -o output.png -w <span class="m">100</span> -h <span class="m">100</span> input.svg
+</span></span></code></pre></div><h4 id="例-iconsvgを各種サイズに一括して出力する場合">例: icon.svgを各種サイズに一括して出力する場合</h4>
+<p>以下のシェルを実行する</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">% <span class="k">for</span> size in <span class="m">32</span> <span class="m">180</span> <span class="m">192</span> <span class="m">512</span>
+</span></span><span class="line"><span class="cl"><span class="k">do</span>
+</span></span><span class="line"><span class="cl">/Applications/Inkscape.app/Contents/MacOS/inkscape -w <span class="si">${</span><span class="nv">size</span><span class="si">}</span> -h <span class="si">${</span><span class="nv">size</span><span class="si">}</span> -o icon<span class="si">${</span><span class="nv">size</span><span class="si">}</span>.png icon.svg
+</span></span><span class="line"><span class="cl"><span class="k">done</span>
+</span></span></code></pre></div><h3 id="参考">参考</h3>
+<ul>
+<li><a href="https://inkscape.org/doc/inkscape-man.html">MAN PAGE | Inkscape</a></li>
+</ul>
     </div>
-</div>
-    
-        <div class="area_border  px-4 py-3">
-    
-
-
-
-<div class="mb-4">
-    <h3 class="border-b-2 border-primary text-primary-dark text-xl font-bold"><i class="fa-solid fa-note-sticky"></i> <a href="https://kantas-spike.github.io/portfolio/til/2023/01/37-use-commandline-by-simpinkscr/">コマンドラインからSimple Inkscape Scriptingを使いたい</a></h3>
-    <div class="flex justify-between mt-1 mx-2">
-        <div>
-            <ul class="flex gap-2 justify-end">
-            
-            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/python/">#python</a></li>
-            
-            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/inkscape/">#Inkscape</a></li>
-            
-            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/simpinkscr/">#SimpInkScr</a></li>
-            
-            </ul>
-        </div>
-        <div>
-            <div class="text-right text-sm font-bold">2023/01/17</div>
-        </div>
-    </div>
-</div>
-
-    <div class="article mx-2">
-        <p><a href="https://github.com/spakin/SimpInkScr">Simple Inkscape Scripting</a>を使って作成したスクリプトをコマンドラインから実行したい。</p>
-    </div>
-</div>
-    
-        <div class="area_border  px-4 py-3">
-    
-
-
-
-<div class="mb-4">
-    <h3 class="border-b-2 border-primary text-primary-dark text-xl font-bold"><i class="fa-solid fa-note-sticky"></i> <a href="https://kantas-spike.github.io/portfolio/til/2022/12/36-inkscape-with-python/">InkscapeでPythonを使う</a></h3>
-    <div class="flex justify-between mt-1 mx-2">
-        <div>
-            <ul class="flex gap-2 justify-end">
-            
-            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/python/">#python</a></li>
-            
-            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/inkscape/">#Inkscape</a></li>
-            
-            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/simpinkscr/">#SimpInkScr</a></li>
-            
-            </ul>
-        </div>
-        <div>
-            <div class="text-right text-sm font-bold">2022/12/11</div>
-        </div>
-    </div>
-</div>
-
-    <div class="article mx-2">
-        <p><code>Inkscape</code>でPythonを使い、縁取り文字の作成を自動化したい。</p>
-    </div>
-</div>
-    
-</section>
-<div>
-    
 </div>
 
         </main><footer class="bg-primary-dark text-center text-on-primary-dark fixed bottom-0 w-full h-8">
