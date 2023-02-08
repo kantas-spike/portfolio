@@ -5,6 +5,7 @@ draft: false
 tags:
 - quotation
 - hugo
+- render_hooks
 ---
 
 引用した文を目立たせたい。
