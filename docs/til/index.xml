@@ -9,6 +9,24 @@
     <copyright>Copyright 2022 kanta&#39;s spike</copyright>
     <lastBuildDate>Fri, 22 Jul 2022 08:15:27 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/til/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>HugoでPlotlyによるグラフを表示したい</title>
+      <link>https://kantas-spike.github.io/portfolio/til/2023/02/44-add-render-hook-for-plotly/</link>
+      <pubDate>Wed, 08 Feb 2023 09:46:02 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/til/2023/02/44-add-render-hook-for-plotly/</guid>
+      <description>&lt;p&gt;ブログにグラフを表示したい。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>HugoでMathJaxによる数式を表示したい</title>
+      <link>https://kantas-spike.github.io/portfolio/til/2023/02/43-add-render-hook-for-mathjax/</link>
+      <pubDate>Wed, 08 Feb 2023 09:15:06 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/til/2023/02/43-add-render-hook-for-mathjax/</guid>
+      <description>&lt;p&gt;ブログに数式を表示したい。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Spotlightからシェルスクリプトを呼び出す</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/02/42-run-shellscript-using-spotlight/</link>
       <pubDate>Tue, 07 Feb 2023 00:30:31 +0900</pubDate>

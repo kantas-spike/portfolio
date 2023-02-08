@@ -1,6 +1,14 @@
 {
     "results": [
     {
+        "href": "https://kantas-spike.github.io/portfolio/til/2023/02/44-add-render-hook-for-plotly/",
+        "title": "HugoでPlotlyによるグラフを表示したい"
+    },
+    {
+        "href": "https://kantas-spike.github.io/portfolio/til/2023/02/43-add-render-hook-for-mathjax/",
+        "title": "HugoでMathJaxによる数式を表示したい"
+    },
+    {
         "href": "https://kantas-spike.github.io/portfolio/til/2023/02/42-run-shellscript-using-spotlight/",
         "title": "Spotlightからシェルスクリプトを呼び出す"
     },

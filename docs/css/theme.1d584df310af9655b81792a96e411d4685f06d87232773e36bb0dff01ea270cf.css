@@ -611,6 +611,9 @@ video {
 .block {
   display: block;
 }
+.inline {
+  display: inline;
+}
 .flex {
   display: flex;
 }
@@ -1857,6 +1860,13 @@ video {
   border-color: rgb(216 226 243 / var(--tw-border-opacity));
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+}
+.article .MathJax svg {
+        display: inline;
+    }
+.article .plotly {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 .hover\:bg-secondary\/60:hover {
   background-color: rgb(139 154 50 / 0.6);

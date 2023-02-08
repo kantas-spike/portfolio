@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/hugo/</loc>
+    <lastmod>2023-02-08T09:46:02+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/til/2023/02/44-add-render-hook-for-plotly/</loc>
+    <lastmod>2023-02-08T09:46:02+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/plotly/</loc>
+    <lastmod>2023-02-08T09:46:02+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/render_hooks/</loc>
+    <lastmod>2023-02-08T09:46:02+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/</loc>
+    <lastmod>2023-02-08T09:46:02+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/til/2023/02/43-add-render-hook-for-mathjax/</loc>
+    <lastmod>2023-02-08T09:15:06+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/mathjax/</loc>
+    <lastmod>2023-02-08T09:15:06+09:00</lastmod>
+  </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/macos/</loc>
     <lastmod>2023-02-07T00:30:31+09:00</lastmod>
   </url><url>
@@ -9,9 +30,6 @@
     <lastmod>2023-02-07T00:30:31+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2023/02/42-run-shellscript-using-spotlight/</loc>
-    <lastmod>2023-02-07T00:30:31+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/</loc>
     <lastmod>2023-02-07T00:30:31+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/inkscape/</loc>
@@ -109,9 +127,6 @@
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/mytools/create_subtitles_movie.sh/</loc>
     <lastmod>2022-12-06T15:03:57+00:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/hugo/</loc>
-    <lastmod>2022-12-04T23:00:39+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2022/12/33-tool-dir/</loc>
     <lastmod>2022-12-04T23:00:39+09:00</lastmod>
@@ -267,9 +282,6 @@
     <lastmod>2022-07-23T12:34:13+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2022/07/10-hugo-with-rawhtml/</loc>
-    <lastmod>2022-07-23T12:13:01+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/render_hooks/</loc>
     <lastmod>2022-07-23T12:13:01+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2022/07/09-hugo-with-youtube-playlist/</loc>
