@@ -22,16 +22,18 @@ macOSのSpotlightからシェルスクリプトを呼び出したい。
 
 #### 例: ~/blogフォルダをVsCodeで開く場合
 
-`~/bin/blog.command`を作成し、実行権限をつける。
+`~/bin/openblog.command`を作成し、実行権限をつける。 [^1]
 
 ```shell
-% cat ~/bin/blog.command
+% cat ~/bin/openblog.command
 code ~/blog
-% chmod u+x ~/bin/blog.command
+% chmod u+x ~/bin/openblog.command
 ```
 
-Spotlightで、`blog.command`を入力し、選択するとVsCodeが起動し、`~/blog`フォルダが開かれる。
+Spotlightで、`openblog.command`を入力し、選択するとVsCodeが起動し、`~/blog`フォルダが開かれる。
 
 ### 参考
 
 - [Launch websites from Spotlight using Terminal commands in macOS / Michael Lee](https://michaelsoolee.com/launch-websites-spotlight-macos/)
+
+[^1]: 最初は`blog.command`という名前でスクリプトを作成したが、途中からSpotlightで検索されなくなった。名前が短かすぎるのかと思い`openblog.command`に変更した。いまのところ検索できている。
