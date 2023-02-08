@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html><head>
     <title>
-        TIL | kanta&#39;s spike
+        シェルスクリプトでファイル内の各行を処理したい | kanta&#39;s spike
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://kantas-spike.github.io/portfolio/css/theme.1d584df310af9655b81792a96e411d4685f06d87232773e36bb0dff01ea270cf.css">
@@ -44,217 +44,93 @@
     </nav>
 </div>
 <main id="content" class="container mx-auto bg-surface pt-4 pb-8">
-<div class="article area_border mx-4  px-4 py-3"><p>TILとは、Today I Learned の略です。その日に学んだ事を短くまとめます。</p>
-</div>
-
-<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-2 mt-6 my-4 mx-4">
-    
-        <div class="area_border  px-4 py-3">
+<div class="area_border  px-4 py-3 mx-4 pb-4">
     
 
 
 
 <div class="mb-4">
-    <h3 class="border-b-2 border-primary text-primary-dark text-xl font-bold"><i class="fa-solid fa-note-sticky"></i> <a href="https://kantas-spike.github.io/portfolio/til/2022/08/21-layout-widgits-with-tkinter/">Tkinterで部品を上手く配置したい</a></h3>
+    <h3 class="border-b-2 border-primary text-primary-dark text-xl font-bold"><i class="fa-solid fa-note-sticky"></i> <a href="https://kantas-spike.github.io/portfolio/til/2023/02/46-process-each-line-in-a-file-using-shellscript/">シェルスクリプトでファイル内の各行を処理したい</a></h3>
     <div class="flex justify-between mt-1 mx-2">
         <div>
             <ul class="flex gap-2 justify-end">
             
-            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/python/">#python</a></li>
-            
-            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/tkinter/">#tkinter</a></li>
+            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/shellscript/">#shellscript</a></li>
             
             </ul>
         </div>
         <div>
-            <div class="text-right text-sm font-bold">2022/08/07</div>
+            <div class="text-right text-sm font-bold">2023/02/08</div>
         </div>
     </div>
 </div>
 
     <div class="article mx-2">
-        <p>Tkinterで画面に部品を上手く配置したいが、
-<strong>Geometry Manager</strong> には幾つか種類があるが、どれを使って画面を作成するべきなのか。</p>
+        <p>シェルスクリプトで、URL一覧ファイルから各URL行を取得し処理を行いたい。</p>
+<h3 id="解決策">解決策</h3>
+<p><code>url.txt</code>というテキストファイルにURL一覧が記載されている場合、
+以下のように標準入力へリダイレクトさせることで、各行を取得できる。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="k">while</span> <span class="nb">read</span> url
+</span></span><span class="line"><span class="cl"><span class="k">do</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">echo</span> <span class="nv">$rul</span>
+</span></span><span class="line"><span class="cl"><span class="k">done</span> &lt; url.txt
+</span></span></code></pre></div><h4 id="例-ファイルの最終行に改行がある場合">例: ファイルの最終行に改行がある場合</h4>
+<p><code>url.txt</code> の内容が以下の場合、</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">% cat url.txt
+</span></span><span class="line"><span class="cl">URL1
+</span></span><span class="line"><span class="cl">URL2
+</span></span><span class="line"><span class="cl">URL3
+</span></span><span class="line"><span class="cl">%
+</span></span></code></pre></div><p>以下のシェルスクリプトで、各行を処理できる。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">% <span class="k">while</span> <span class="nb">read</span> url
+</span></span><span class="line"><span class="cl"><span class="k">while</span>&gt; <span class="k">do</span>
+</span></span><span class="line"><span class="cl"><span class="k">while</span>&gt;    <span class="nb">echo</span> <span class="nv">$url</span>
+</span></span><span class="line"><span class="cl"><span class="k">while</span>&gt; <span class="k">done</span> &lt; url.txt
+</span></span><span class="line"><span class="cl">URL1
+</span></span><span class="line"><span class="cl">URL2
+</span></span><span class="line"><span class="cl">URL3
+</span></span><span class="line"><span class="cl">%
+</span></span></code></pre></div><h4 id="例-ファイルの最終行に改行がない場合">例: ファイルの最終行に改行がない場合</h4>
+<p><code>url_with_eol.txt</code> の内容が以下のように
+最終行に改行がない場合、</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">% cat url_with_eol.txt
+</span></span><span class="line"><span class="cl">URL1
+</span></span><span class="line"><span class="cl">URL2
+</span></span><span class="line"><span class="cl">URL3%
+</span></span></code></pre></div><p>以下のシェルスクリプトを実行すると、最終行が処理されない。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">% <span class="k">while</span> <span class="nb">read</span> url
+</span></span><span class="line"><span class="cl"><span class="k">while</span>&gt; <span class="k">do</span>
+</span></span><span class="line"><span class="cl"><span class="k">while</span>&gt;    <span class="nb">echo</span> <span class="nv">$url</span>
+</span></span><span class="line"><span class="cl"><span class="k">while</span>&gt; <span class="k">done</span> &lt; url_with_eol.txt
+</span></span><span class="line"><span class="cl">URL1
+</span></span><span class="line"><span class="cl">URL2
+</span></span><span class="line"><span class="cl">%
+</span></span></code></pre></div><p>これは、<code>read</code>は行内にファイルの終端があると<code>FALSE</code>を返すためらしい。</p>
+<p>回避策は2つある。</p>
+<ul>
+<li>ファイルの最終行に必ず改行を入れる</li>
+<li>シェルスクリプトの<code>while</code>文の条件を変更する</li>
+</ul>
+<h4 id="回避策-シェルスクリプトのwhile文の条件を変更する">回避策: シェルスクリプトの<code>while</code>文の条件を変更する</h4>
+<p><code>while</code>文の条件に、<code>|| [ -n &quot;${url}&quot;]</code>を追加し、
+<code>read</code>が<code>FALSE</code>を返しても、<code>url</code>に1文字以上あれば、処理を行うように修正する。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">% <span class="k">while</span> <span class="nb">read</span> url <span class="o">||</span> <span class="o">[</span> -n <span class="s2">&#34;</span><span class="si">${</span><span class="nv">url</span><span class="si">}</span><span class="s2">&#34;</span><span class="o">]</span>
+</span></span><span class="line"><span class="cl"><span class="k">while</span>&gt; <span class="k">do</span>
+</span></span><span class="line"><span class="cl"><span class="k">while</span>&gt;    <span class="nb">echo</span> <span class="nv">$url</span>
+</span></span><span class="line"><span class="cl"><span class="k">while</span>&gt; <span class="k">done</span> &lt; url_with_eol.txt
+</span></span><span class="line"><span class="cl">URL1
+</span></span><span class="line"><span class="cl">URL2
+</span></span><span class="line"><span class="cl">URL3
+</span></span><span class="line"><span class="cl">%
+</span></span></code></pre></div><h3 id="参考">参考</h3>
+<ul>
+<li><a href="https://www.server-memo.net/shellscript/read-file.html">【シェルスクリプト】ファイルの中身を一行ずつ読み込む方法 | server-memo.net</a></li>
+<li><a href="https://qiita.com/Ets/items/a7fa24b138b8ee883dac">BASHのwhile readで最終行が処理されない問題の解決方法 - Qiita</a></li>
+<li><a href="https://qiita.com/wakayama-y/items/a9b7380263da77e51711">Bash の if 文（test文）のオプションを整理してみた - Qiita</a></li>
+<li><a href="https://github.com/kantas-spike/make_book_pdf/commit/979e643fcf500d78f5327a431a3777145eb212cb">fix: 最終行がダウンロードされない不具合を修正 · kantas-spike/make_book_pdf@979e643</a></li>
+<li><a href="https://github.com/kantas-spike/make_book_pdf/commit/ce411fcf0e35e5b5aea7b54abb9eefc2143cb72f">fix: URL.txtの最終行に改行がなくてもダウンロードするように修正 · kantas-spike/make_book_pdf@ce411fc</a></li>
+</ul>
     </div>
-</div>
-    
-        <div class="area_border  px-4 py-3">
-    
-
-
-
-<div class="mb-4">
-    <h3 class="border-b-2 border-primary text-primary-dark text-xl font-bold"><i class="fa-solid fa-note-sticky"></i> <a href="https://kantas-spike.github.io/portfolio/til/2022/08/20-link-to-the-page-of-pdf/">PDFの特定ページにリンクを貼りたい</a></h3>
-    <div class="flex justify-between mt-1 mx-2">
-        <div>
-            <ul class="flex gap-2 justify-end">
-            
-            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/html/">#html</a></li>
-            
-            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/pdf/">#pdf</a></li>
-            
-            </ul>
-        </div>
-        <div>
-            <div class="text-right text-sm font-bold">2022/08/06</div>
-        </div>
-    </div>
-</div>
-
-    <div class="article mx-2">
-        <p>PDFの特定ページにリンクを貼りたい。</p>
-    </div>
-</div>
-    
-        <div class="area_border  px-4 py-3">
-    
-
-
-
-<div class="mb-4">
-    <h3 class="border-b-2 border-primary text-primary-dark text-xl font-bold"><i class="fa-solid fa-note-sticky"></i> <a href="https://kantas-spike.github.io/portfolio/til/2022/08/19-fill-bg-color-with-tkinter/">Tkinterで部品の背景色を変更したい</a></h3>
-    <div class="flex justify-between mt-1 mx-2">
-        <div>
-            <ul class="flex gap-2 justify-end">
-            
-            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/python/">#python</a></li>
-            
-            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/tkinter/">#tkinter</a></li>
-            
-            </ul>
-        </div>
-        <div>
-            <div class="text-right text-sm font-bold">2022/08/06</div>
-        </div>
-    </div>
-</div>
-
-    <div class="article mx-2">
-        <p>Tkinterでウィンドウの背景色を変更した時に、部品の周りに異なる背景色が表示される。
-ウィンドウの背景色に合せるために、Tkinterで部品の背景色を変更したい。</p>
-    </div>
-</div>
-    
-        <div class="area_border  px-4 py-3">
-    
-
-
-
-<div class="mb-4">
-    <h3 class="border-b-2 border-primary text-primary-dark text-xl font-bold"><i class="fa-solid fa-note-sticky"></i> <a href="https://kantas-spike.github.io/portfolio/til/2022/08/18-rotate-item-with-python/">Pythonで図形を回転させたい</a></h3>
-    <div class="flex justify-between mt-1 mx-2">
-        <div>
-            <ul class="flex gap-2 justify-end">
-            
-            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/python/">#python</a></li>
-            
-            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/tkinter/">#tkinter</a></li>
-            
-            </ul>
-        </div>
-        <div>
-            <div class="text-right text-sm font-bold">2022/08/03</div>
-        </div>
-    </div>
-</div>
-
-    <div class="article mx-2">
-        <p><code>tkinter</code>のCanvas内にある図形の位置を原点を中心に回転させたい。</p>
-    </div>
-</div>
-    
-        <div class="area_border  px-4 py-3">
-    
-
-
-
-<div class="mb-4">
-    <h3 class="border-b-2 border-primary text-primary-dark text-xl font-bold"><i class="fa-solid fa-note-sticky"></i> <a href="https://kantas-spike.github.io/portfolio/til/2022/08/17-color-contrast/">2色のコントラストの差を知りたい</a></h3>
-    <div class="flex justify-between mt-1 mx-2">
-        <div>
-            <ul class="flex gap-2 justify-end">
-            
-            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/python/">#python</a></li>
-            
-            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/html/">#html</a></li>
-            
-            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/color/">#color</a></li>
-            
-            </ul>
-        </div>
-        <div>
-            <div class="text-right text-sm font-bold">2022/08/01</div>
-        </div>
-    </div>
-</div>
-
-    <div class="article mx-2">
-        <p>背景色にあったテキスト色を選べるようにしたい。
-赤に白い字は読めるが、薄黄に白い字は読めない。</p>
-<p>背景色とテキスト色の差から文字色を変更できるようにしたい。</p>
-    </div>
-</div>
-    
-        <div class="area_border  px-4 py-3">
-    
-
-
-
-<div class="mb-4">
-    <h3 class="border-b-2 border-primary text-primary-dark text-xl font-bold"><i class="fa-solid fa-note-sticky"></i> <a href="https://kantas-spike.github.io/portfolio/til/2022/08/16-python-option-parser/">Pythonでコマンドラインオプション取得したい</a></h3>
-    <div class="flex justify-between mt-1 mx-2">
-        <div>
-            <ul class="flex gap-2 justify-end">
-            
-            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/python/">#python</a></li>
-            
-            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/argparse/">#argparse</a></li>
-            
-            </ul>
-        </div>
-        <div>
-            <div class="text-right text-sm font-bold">2022/08/01</div>
-        </div>
-    </div>
-</div>
-
-    <div class="article mx-2">
-        <p>Pythonで作った自作のコマンドラインツールで、コマンドラインオプションを利用したい。</p>
-    </div>
-</div>
-    
-</div>
-<div>
-    
-    <ul class="pagination pagination-default">
-      <li class="page-item">
-        <a href="https://kantas-spike.github.io/portfolio/til/" aria-label="First" class="page-link" role="button"><span aria-hidden="true">&laquo;&laquo;</span></a>
-      </li>
-      <li class="page-item">
-        <a href="https://kantas-spike.github.io/portfolio/til/page/4/" aria-label="Previous" class="page-link" role="button"><span aria-hidden="true">&laquo;</span></a>
-      </li>
-      <li class="page-item">
-        <a href="https://kantas-spike.github.io/portfolio/til/page/3/" aria-label="Page 3" class="page-link" role="button">3</a>
-      </li>
-      <li class="page-item">
-        <a href="https://kantas-spike.github.io/portfolio/til/page/4/" aria-label="Page 4" class="page-link" role="button">4</a>
-      </li>
-      <li class="page-item active">
-        <a aria-current="page" aria-label="Page 5" class="page-link" role="button">5</a>
-      </li>
-      <li class="page-item">
-        <a href="https://kantas-spike.github.io/portfolio/til/page/6/" aria-label="Page 6" class="page-link" role="button">6</a>
-      </li>
-      <li class="page-item">
-        <a href="https://kantas-spike.github.io/portfolio/til/page/7/" aria-label="Page 7" class="page-link" role="button">7</a>
-      </li>
-      <li class="page-item">
-        <a href="https://kantas-spike.github.io/portfolio/til/page/6/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
-      </li>
-      <li class="page-item">
-        <a href="https://kantas-spike.github.io/portfolio/til/page/8/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
-      </li>
-    </ul>
 </div>
 
         </main><footer class="bg-primary-dark text-center text-on-primary-dark fixed bottom-0 w-full h-8">

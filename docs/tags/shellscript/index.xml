@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>shellscript on kanta&#39;s spike</title>
+    <link>https://kantas-spike.github.io/portfolio/tags/shellscript/</link>
+    <description>Recent content in shellscript on kanta&#39;s spike</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <copyright>Copyright 2022 kanta&#39;s spike</copyright>
+    <lastBuildDate>Wed, 08 Feb 2023 23:53:39 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/shellscript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>シェルスクリプトでファイル内の各行を処理したい</title>
+      <link>https://kantas-spike.github.io/portfolio/til/2023/02/46-process-each-line-in-a-file-using-shellscript/</link>
+      <pubDate>Wed, 08 Feb 2023 23:53:39 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/til/2023/02/46-process-each-line-in-a-file-using-shellscript/</guid>
+      <description>&lt;p&gt;シェルスクリプトで、URL一覧ファイルから各URL行を取得し処理を行いたい。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
