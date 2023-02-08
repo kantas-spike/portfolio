@@ -1,6 +1,14 @@
 {
     "results": [
     {
+        "href": "https://kantas-spike.github.io/portfolio/til/2023/02/45-merge-pdfs-by-ghostscript/",
+        "title": "複数のPDFファイルをマージしたい"
+    },
+    {
+        "href": "https://kantas-spike.github.io/portfolio/blog/2023/02/09-merge-make-book/",
+        "title": "PDFで公開されているMake本をマージする"
+    },
+    {
         "href": "https://kantas-spike.github.io/portfolio/til/2023/02/44-add-render-hook-for-plotly/",
         "title": "HugoでPlotlyによるグラフを表示したい"
     },

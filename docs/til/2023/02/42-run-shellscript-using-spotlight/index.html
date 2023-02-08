@@ -75,15 +75,23 @@
 <p>また、<code>Terminal.app</code>経由でシェルスクリプトが実行されるため、デフォルトの設定の場合、実行終了後もターミナルが<code>[Process Completed]</code>を表示したまま残ってします。
 これを回避するためには、<code>Terminal.app</code>のシェル設定で、<code>シェルの終了時</code>を<code>シェルが正常に終了した場合は閉じる</code>に変更する必要がある。</p>
 <h4 id="例-blogフォルダをvscodeで開く場合">例: ~/blogフォルダをVsCodeで開く場合</h4>
-<p><code>~/bin/blog.command</code>を作成し、実行権限をつける。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">% cat ~/bin/blog.command
+<p><code>~/bin/openblog.command</code>を作成し、実行権限をつける。 <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">% cat ~/bin/openblog.command
 </span></span><span class="line"><span class="cl">code ~/blog
-</span></span><span class="line"><span class="cl">% chmod u+x ~/bin/blog.command
-</span></span></code></pre></div><p>Spotlightで、<code>blog.command</code>を入力し、選択するとVsCodeが起動し、<code>~/blog</code>フォルダが開かれる。</p>
+</span></span><span class="line"><span class="cl">% chmod u+x ~/bin/openblog.command
+</span></span></code></pre></div><p>Spotlightで、<code>openblog.command</code>を入力し、選択するとVsCodeが起動し、<code>~/blog</code>フォルダが開かれる。</p>
 <h3 id="参考">参考</h3>
 <ul>
 <li><a href="https://michaelsoolee.com/launch-websites-spotlight-macos/">Launch websites from Spotlight using Terminal commands in macOS / Michael Lee</a></li>
 </ul>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>最初は<code>blog.command</code>という名前でスクリプトを作成したが、途中からSpotlightで検索されなくなった。名前が短かすぎるのかと思い<code>openblog.command</code>に変更した。いまのところ検索できている。&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
     </div>
 </div>
 

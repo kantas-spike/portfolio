@@ -7,7 +7,43 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>Copyright 2022 kanta&#39;s spike</copyright>
-    <lastBuildDate>Wed, 08 Feb 2023 09:46:02 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 08 Feb 2023 19:54:23 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ghostscript</title>
+      <link>https://kantas-spike.github.io/portfolio/tags/ghostscript/</link>
+      <pubDate>Wed, 08 Feb 2023 19:54:23 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/tags/ghostscript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pdf</title>
+      <link>https://kantas-spike.github.io/portfolio/tags/pdf/</link>
+      <pubDate>Wed, 08 Feb 2023 19:54:23 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/tags/pdf/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>make</title>
+      <link>https://kantas-spike.github.io/portfolio/tags/make/</link>
+      <pubDate>Wed, 08 Feb 2023 16:02:46 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/tags/make/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>https://kantas-spike.github.io/portfolio/tags/python/</link>
+      <pubDate>Wed, 08 Feb 2023 16:02:46 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/tags/python/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>hugo</title>
       <link>https://kantas-spike.github.io/portfolio/tags/hugo/</link>
@@ -86,24 +122,6 @@
       <pubDate>Thu, 02 Feb 2023 15:33:58 +0900</pubDate>
       
       <guid>https://kantas-spike.github.io/portfolio/tags/font/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>pdf</title>
-      <link>https://kantas-spike.github.io/portfolio/tags/pdf/</link>
-      <pubDate>Thu, 26 Jan 2023 04:14:58 +0900</pubDate>
-      
-      <guid>https://kantas-spike.github.io/portfolio/tags/pdf/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>python</title>
-      <link>https://kantas-spike.github.io/portfolio/tags/python/</link>
-      <pubDate>Thu, 26 Jan 2023 04:14:58 +0900</pubDate>
-      
-      <guid>https://kantas-spike.github.io/portfolio/tags/python/</guid>
       <description></description>
     </item>
     
