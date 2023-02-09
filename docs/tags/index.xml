@@ -7,7 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>Copyright 2022 kanta&#39;s spike</copyright>
-    <lastBuildDate>Wed, 08 Feb 2023 23:53:39 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 09 Feb 2023 07:21:11 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>make</title>
+      <link>https://kantas-spike.github.io/portfolio/tags/make/</link>
+      <pubDate>Thu, 09 Feb 2023 07:21:11 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/tags/make/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Makefile</title>
+      <link>https://kantas-spike.github.io/portfolio/tags/makefile/</link>
+      <pubDate>Thu, 09 Feb 2023 07:21:11 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/tags/makefile/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>shellscript</title>
       <link>https://kantas-spike.github.io/portfolio/tags/shellscript/</link>
@@ -32,15 +50,6 @@
       <pubDate>Wed, 08 Feb 2023 19:54:23 +0900</pubDate>
       
       <guid>https://kantas-spike.github.io/portfolio/tags/pdf/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>make</title>
-      <link>https://kantas-spike.github.io/portfolio/tags/make/</link>
-      <pubDate>Wed, 08 Feb 2023 16:02:46 +0900</pubDate>
-      
-      <guid>https://kantas-spike.github.io/portfolio/tags/make/</guid>
       <description></description>
     </item>
     
@@ -176,15 +185,6 @@
       <pubDate>Tue, 17 Jan 2023 15:46:23 +0900</pubDate>
       
       <guid>https://kantas-spike.github.io/portfolio/tags/simpinkscr/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Makefile</title>
-      <link>https://kantas-spike.github.io/portfolio/tags/makefile/</link>
-      <pubDate>Fri, 09 Dec 2022 10:10:58 +0900</pubDate>
-      
-      <guid>https://kantas-spike.github.io/portfolio/tags/makefile/</guid>
       <description></description>
     </item>
     

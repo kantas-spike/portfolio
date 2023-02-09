@@ -2,10 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/shellscript/</loc>
-    <lastmod>2023-02-08T23:53:39+09:00</lastmod>
+    <loc>https://kantas-spike.github.io/portfolio/tags/make/</loc>
+    <lastmod>2023-02-09T07:21:11+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/makefile/</loc>
+    <lastmod>2023-02-09T07:21:11+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/blog/2023/02/10-make-make-book-using-make/</loc>
+    <lastmod>2023-02-09T07:21:11+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/</loc>
+    <lastmod>2023-02-09T07:21:11+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/shellscript/</loc>
     <lastmod>2023-02-08T23:53:39+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2023/02/46-process-each-line-in-a-file-using-shellscript/</loc>
@@ -19,9 +28,6 @@
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2023/02/45-merge-pdfs-by-ghostscript/</loc>
     <lastmod>2023-02-08T19:54:23+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/make/</loc>
-    <lastmod>2023-02-08T16:02:46+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/blog/2023/02/09-merge-make-book/</loc>
     <lastmod>2023-02-08T16:02:46+09:00</lastmod>
@@ -130,9 +136,6 @@
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/mytools/slide2video.py/</loc>
     <lastmod>2022-12-09T11:50:43+00:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/makefile/</loc>
-    <lastmod>2022-12-09T10:10:58+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2022/12/35-switch-dev-or-release-with-makefile/</loc>
     <lastmod>2022-12-09T10:10:58+09:00</lastmod>

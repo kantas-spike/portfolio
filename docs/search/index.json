@@ -1,6 +1,10 @@
 {
     "results": [
     {
+        "href": "https://kantas-spike.github.io/portfolio/blog/2023/02/10-make-make-book-using-make/",
+        "title": "makeを使って『Make本』をメイクする"
+    },
+    {
         "href": "https://kantas-spike.github.io/portfolio/til/2023/02/46-process-each-line-in-a-file-using-shellscript/",
         "title": "シェルスクリプトでファイル内の各行を処理したい"
     },
