@@ -2,6 +2,7 @@
 title: "HugoでPlotlyによるグラフを表示したい"
 date: 2023-02-08T09:46:02+09:00
 draft: false
+usePlotly: true
 tags:
 - plotly
 - hugo
@@ -26,12 +27,10 @@ tags:
 ```plotly
 <div id="out1"></div>
 <script>
-window.addEventListener('load', (event) => {
   Plotly.newPlot("out1", [{
     x: [10, 50, 100],
     y: [30, 150, 300]
   }], {}, {responsive: true});
-})
 </script>
 ```
 `````
@@ -40,12 +39,10 @@ window.addEventListener('load', (event) => {
 ```plotly
 <div id="out1"></div>
 <script>
-window.addEventListener('load', (event) => {
   Plotly.newPlot("out1", [{
     x: [10, 50, 100],
     y: [30, 150, 300]
   }], {}, {responsive: true});
-})
 </script>
 ```
 
@@ -57,7 +54,6 @@ window.addEventListener('load', (event) => {
 <div class="plotly">
     {{- .Inner | safeHTML }}
 </div>
-{{ .Page.Store.Set "usePlotly" true }}
 ```
 
 `themes/kantas/layouts/_default/baseof.html`に、以下を記載し、`Plotly`のコードブロックを呼び出し時に、`Plotly`のライブラリを読み込むようにする。
@@ -65,13 +61,14 @@ window.addEventListener('load', (event) => {
 ```html
 <html>
     <!-- 略 -->
-    <body>
+    <head>
     <!-- 略 -->
-        {{ if .Page.Store.Get "usePlotly" }}
+        {{ if .Page.Params.usePlotly }}
         <script src="https://cdn.plot.ly/plotly-2.12.1.min.js"></script>
         {{ end }}
     <!-- 略 -->
-    </body>
+    </head>
+    <body/>
 </html>
 ```
 

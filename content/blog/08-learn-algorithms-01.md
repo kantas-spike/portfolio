@@ -3,6 +3,7 @@ title: "アルゴリズムを学ぶ ch01-03"
 date: 2023-02-07T01:11:30+09:00
 draft: true
 useMathJax: true
+usePlotly: true
 tags:
 - programming
 - algorithm
@@ -91,7 +92,6 @@ $$O(1) > O(\log N) > O(N)$$
 ```plotly
 <div id="out3"></div>
 <script>
-window.addEventListener('load', (event) => {
   var data_x = {
     x: [1, 10, 50, 100, 256],
     y: [3, 30, 150, 300, 768],
@@ -113,7 +113,6 @@ window.addEventListener('load', (event) => {
   { xaxis: {title: 'データサイズ'},
     yaxis: {title: '処理ステップ数'}},
   { responsive: true });
-})
 </script>
 ```
 
