@@ -45,7 +45,7 @@ tags:
 
 [make_book_pdf/make_merged.pdf at main · kantas-spike/make_book_pdf](https://github.com/kantas-spike/make_book_pdf/blob/main/make_merged.pdf)
 
-今後は、このPDFを読んで、マージに使用したシェルスクリプトをMakefileを置き換えれるようにしたいです。
+今後は、このPDFを読んで、マージに使用したシェルスクリプトをMakefileを置き換えれるようにしたいです。[^3]
 
 ### 参考
 
@@ -60,3 +60,4 @@ tags:
 
 [^1]: [原著](https://www.oreilly.com/library/view/managing-projects-with/0596006101/) も公開されています。
 [^2]: GFDLの文書は元々PDFに含まれているので不要でしょう。
+[^3]: Makefileを作成したので、作成したシェルスクリプトは[こちら]([make_book_pdf/old_tool at main · kantas-spike/make_book_pdf](https://github.com/kantas-spike/make_book_pdf/tree/main/old_tool))にバックアップしています。
