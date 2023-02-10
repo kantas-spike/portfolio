@@ -9,6 +9,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="https://kantas-spike.github.io/portfolio/icon32.png">
 <link rel="icon" type="image/svg+xml" href="https://kantas-spike.github.io/portfolio/icon.svg">
 <link rel="manifest" href="https://kantas-spike.github.io/portfolio/site.webmanifest">
+
 </head><body class="bg-background text-primary-dark pb-4"><header class="bg-primary-dark text-site_title text-6xl font-serif font-extrabold px-4 py-3">
     <h1 class="container mx-auto px-4"><a href="https://kantas-spike.github.io/portfolio/">kanta&#39;s spike</a></h1>
 </header>
@@ -81,7 +82,7 @@
 <li><code>prereq</code>: 必須項目(または依存項目)。ターゲットが作成される前に必要なもの</li>
 <li><code>commands</code>: 必須項目からターゲットを作るためのコマンド</li>
 </ul>
-<p>シェルスクリプトをもとに、『Make本』のマージ版PDFを作成するための、依存関係を整理します。</p>
+<p>以前作成したシェルスクリプトをもとに、『Make本』のマージ版PDFを作成するための、依存関係を整理します。</p>
 <table>
 <thead>
 <tr>
@@ -92,57 +93,57 @@
 </thead>
 <tbody>
 <tr>
-<td>make_merged.pdf</td>
-<td>マージ済みPDF<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></td>
+<td>マージ版目次付きpdf<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></td>
+<td>マージ版PDF<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></td>
 <td><a href="https://github.com/kantas-spike/make_book_pdf/blob/main/old_tool/03_add_toc.sh">make_book_pdf/03_add_toc.sh</a>から整理</td>
 </tr>
 <tr>
 <td></td>
-<td>目次情報ファイル<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></td>
+<td>目次情報ファイル<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup></td>
 <td></td>
 </tr>
 <tr>
-<td>build/_make.pdf</td>
-<td>ダウンロードした章別のPDF群</td>
+<td>マージ版PDF<sup id="fnref1:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></td>
+<td>ダウンロードした章別PDF</td>
 <td><a href="https://github.com/kantas-spike/make_book_pdf/blob/main/old_tool/02_merge_pdf.sh">make_book_pdf/02_merge_pdf.sh</a>から整理</td>
 </tr>
 <tr>
 <td></td>
-<td>マージ版PDFの説明PDF<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup></td>
+<td>改訂情報PDF<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup></td>
 <td></td>
 </tr>
 <tr>
-<td>ダウンロードした章別のPDF群</td>
-<td>章別PDFのURL一覧<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup></td>
+<td>ダウンロードした章別PDF</td>
+<td>章別PDFのURL一覧<sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup></td>
 <td><a href="https://github.com/kantas-spike/make_book_pdf/blob/main/old_tool/01_download_pdf.sh">make_book_pdf/01_download_pdf.sh</a>から整理</td>
 </tr>
 <tr>
 <td></td>
-<td>PDFダウンロード用ディレクトリ<sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup></td>
+<td>PDFダウンロード用ディレクトリ<sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup></td>
 <td></td>
 </tr>
 <tr>
-<td>マージ版PDFの説明PDF<sup id="fnref1:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup></td>
-<td>マージ版PDFの説明原稿<sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup></td>
+<td>改訂情報PDF<sup id="fnref1:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup></td>
+<td>改訂情報PDFの原本<sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup></td>
 <td><code>cp</code>で作成</td>
 </tr>
 <tr>
-<td>PDFダウンロード用ディレクトリ<sup id="fnref1:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup></td>
+<td>PDFダウンロード用ディレクトリ<sup id="fnref1:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup></td>
 <td></td>
 <td><code>mkdir -p</code>で作成</td>
 </tr>
 <tr>
-<td>目次情報ファイル<sup id="fnref1:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></td>
+<td>目次情報ファイル<sup id="fnref1:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup></td>
 <td></td>
 <td>手動で作成</td>
 </tr>
 <tr>
-<td>章別PDFのURL一覧<sup id="fnref1:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup></td>
+<td>章別PDFのURL一覧<sup id="fnref1:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup></td>
 <td></td>
 <td>手動で作成</td>
 </tr>
 <tr>
-<td>マージ版PDFの説明原稿<sup id="fnref1:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup></td>
+<td>改訂情報PDFの原本<sup id="fnref1:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup></td>
 <td></td>
 <td>手動で作成</td>
 </tr>
@@ -186,15 +187,12 @@
 </span></span><span class="line"><span class="cl"><span class="nv">URL_LIST</span> <span class="o">:=</span> ./URL.txt
 </span></span><span class="line"><span class="cl"><span class="nv">TOC_FILE</span> <span class="o">:=</span> ./toc.txt
 </span></span><span class="line"><span class="cl"><span class="nv">ADDITIONAL_PDF</span> <span class="o">:=</span> ./additional_info.pdf
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="nv">COMBINED_PDF</span> <span class="o">:=</span> <span class="k">$(</span>BUILD_DIR<span class="k">)</span>/_make.pdf
 </span></span><span class="line"><span class="cl"><span class="nv">OUTPUT_PDF</span> <span class="o">:=</span> make_merged.pdf
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="nv">DOWNLOAD_INTERVAL_SEC</span> <span class="o">:=</span> <span class="m">15</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nv">QUIET</span> <span class="o">=</span> @
+</span></span><span class="line"><span class="cl"><span class="c"># for debug
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="nv">QUIET</span> <span class="o">=</span> @
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c"># commands
 </span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="nv">TOUCH</span> <span class="o">=</span> touch
@@ -205,18 +203,6 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="nf">.PHONY</span><span class="o">:</span> <span class="n">all</span>
 </span></span><span class="line"><span class="cl"><span class="nf">all</span><span class="o">:</span> <span class="k">$(</span><span class="nv">OUTPUT_PDF</span><span class="k">)</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nf">.PHONY</span><span class="o">:</span> <span class="n">clean</span>
-</span></span><span class="line"><span class="cl"><span class="nf">clean</span><span class="o">:</span>
-</span></span><span class="line"><span class="cl">	rm -rf <span class="k">$(</span>DOWNLOAD_DIR<span class="k">)</span>
-</span></span><span class="line"><span class="cl">	rm <span class="k">$(</span>COMBINED_PDF<span class="k">)</span>
-</span></span><span class="line"><span class="cl">	rm <span class="k">$(</span>BUILD_DIR<span class="k">)</span>/downloaded
-</span></span><span class="line"><span class="cl">	rm <span class="k">$(</span>OUTPUT_PDF<span class="k">)</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nf">.PHONY</span><span class="o">:</span> <span class="n">clean</span>-<span class="n">all</span>
-</span></span><span class="line"><span class="cl"><span class="nf">clean-all</span><span class="o">:</span>
-</span></span><span class="line"><span class="cl">	rm -rf <span class="k">$(</span>BUILD_DIR<span class="k">)</span>
-</span></span><span class="line"><span class="cl">	rm <span class="k">$(</span>OUTPUT_PDF<span class="k">)</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c"># add toc to combined pdf
@@ -234,29 +220,78 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c"># download from URL_LIST
 </span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="nf">$(BUILD_DIR)/downloaded</span><span class="o">:</span> <span class="k">$(</span><span class="nv">URL_LIST</span><span class="k">)</span> <span class="k">$(</span><span class="nv">DOWNLOAD_DIR</span><span class="k">)</span>
-</span></span><span class="line"><span class="cl">	<span class="k">$(</span>QUIET<span class="k">)</span> <span class="nv">idx</span><span class="o">=</span>1<span class="p">;</span>												<span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>	<span class="k">while</span> <span class="nb">read</span> line <span class="o">||</span> <span class="o">[</span> -n <span class="s2">&#34;</span><span class="nv">$$</span><span class="s2">{line}&#34;</span> <span class="o">]</span><span class="p">;</span>						<span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>	<span class="k">do</span>															<span class="se">\
+</span></span><span class="line"><span class="cl">	<span class="k">$(</span>QUIET<span class="k">)</span> <span class="nv">idx</span><span class="o">=</span>1<span class="p">;</span>							<span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>	<span class="k">while</span> <span class="nb">read</span> line <span class="o">||</span> <span class="o">[</span> -n <span class="s2">&#34;</span><span class="nv">$$</span><span class="s2">{line}&#34;</span> <span class="o">]</span><span class="p">;</span>				<span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>	<span class="k">do</span>								<span class="se">\
 </span></span></span><span class="line"><span class="cl"><span class="se"></span>		<span class="nv">output_path</span><span class="o">=</span><span class="k">$(</span>DOWNLOAD_DIR<span class="k">)</span>/<span class="sb">`</span><span class="nb">printf</span> <span class="s2">&#34;%02d&#34;</span> <span class="nv">$$</span>idx<span class="sb">`</span>0.pdf<span class="p">;</span>	<span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>		<span class="nb">echo</span> <span class="s2">&#34;download </span><span class="nv">$$</span><span class="s2">{line} to </span><span class="nv">$$</span><span class="s2">{output_path} ...&#34;</span><span class="p">;</span>		<span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>		<span class="k">$(</span>CURL<span class="k">)</span> <span class="nv">$$</span><span class="o">{</span>line<span class="o">}</span> -o <span class="nv">$$</span><span class="o">{</span>output_path<span class="o">}</span><span class="p">;</span>						<span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>		<span class="nv">idx</span><span class="o">=</span><span class="nv">$$</span><span class="o">((</span><span class="nv">$$</span>idx+1<span class="o">))</span><span class="p">;</span>										<span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>		<span class="nb">echo</span> <span class="s2">&#34;sleep </span><span class="k">$(</span>DOWNLOAD_INTERVAL_SEC<span class="k">)</span><span class="s2">sec...&#34;</span><span class="p">;</span>			<span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>		sleep <span class="k">$(</span>DOWNLOAD_INTERVAL_SEC<span class="k">)</span><span class="p">;</span>							<span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>		<span class="nb">echo</span> <span class="s2">&#34;download </span><span class="nv">$$</span><span class="s2">{line} to </span><span class="nv">$$</span><span class="s2">{output_path} ...&#34;</span><span class="p">;</span>	<span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>		<span class="k">$(</span>CURL<span class="k">)</span> <span class="nv">$$</span><span class="o">{</span>line<span class="o">}</span> -o <span class="nv">$$</span><span class="o">{</span>output_path<span class="o">}</span><span class="p">;</span>			<span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>		<span class="nv">idx</span><span class="o">=</span><span class="nv">$$</span><span class="o">((</span><span class="nv">$$</span>idx+1<span class="o">))</span><span class="p">;</span>					<span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>		<span class="nb">echo</span> <span class="s2">&#34;sleep </span><span class="k">$(</span>DOWNLOAD_INTERVAL_SEC<span class="k">)</span><span class="s2">sec...&#34;</span><span class="p">;</span>		<span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>		sleep <span class="k">$(</span>DOWNLOAD_INTERVAL_SEC<span class="k">)</span><span class="p">;</span>				<span class="se">\
 </span></span></span><span class="line"><span class="cl"><span class="se"></span>	<span class="k">done</span> &lt; $&lt;
 </span></span><span class="line"><span class="cl">	<span class="k">$(</span>TOUCH<span class="k">)</span> <span class="nv">$@</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nf">$(DOWNLOAD_DIR)</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl"><span class="c"># make download dir
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="nf">$(DOWNLOAD_DIR)</span><span class="o">:</span>
 </span></span><span class="line"><span class="cl">	mkdir -p <span class="k">$(</span>DOWNLOAD_DIR<span class="k">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># clean
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="nf">.PHONY</span><span class="o">:</span> <span class="n">clean</span>
+</span></span><span class="line"><span class="cl"><span class="nf">clean</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">	rm -rf <span class="k">$(</span>DOWNLOAD_DIR<span class="k">)</span>
+</span></span><span class="line"><span class="cl">	rm <span class="k">$(</span>COMBINED_PDF<span class="k">)</span>
+</span></span><span class="line"><span class="cl">	rm <span class="k">$(</span>BUILD_DIR<span class="k">)</span>/downloaded
+</span></span><span class="line"><span class="cl">	rm <span class="k">$(</span>OUTPUT_PDF<span class="k">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nf">.PHONY</span><span class="o">:</span> <span class="n">clean</span>-<span class="n">all</span>
+</span></span><span class="line"><span class="cl"><span class="nf">clean-all</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">	rm -rf <span class="k">$(</span>BUILD_DIR<span class="k">)</span>
+</span></span><span class="line"><span class="cl">	rm <span class="k">$(</span>OUTPUT_PDF<span class="k">)</span>
 </span></span></code></pre></div><h3 id="まとめ">まとめ</h3>
 <p>生成物(ターゲット)が依存するファイルが新しくなったら、<code>make</code>すると自動的に更新されるので、便利になりました。</p>
-<p>シェルスクリプトと組合せる場合、改行方法や、変数名を<code>$$変数名</code>に変更する必要があるなど、ややこしいですね。</p>
-<p>作成済の他ツールのMakefileを修正しながら、<code>make</code>になれていきたいと思います。</p>
+<p>作成済の他ツールのMakefileを修正しながら、もっと<code>make</code>になれていきたいと思います。</p>
+<h4 id="学んだ事">学んだ事</h4>
+<ul>
+<li>
+<p>シェルスクリプトと組合せる場合、<code>for文</code>などは1行で記載し、<code>\</code>で改行する <sup id="fnref:9"><a href="#fn:9" class="footnote-ref" role="doc-noteref">9</a></sup></p>
+<p>例えば、このような<code>for</code>文の場合を考える。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="k">for</span> i in <span class="m">1</span> <span class="m">2</span> <span class="m">3</span>
+</span></span><span class="line"><span class="cl"><span class="k">do</span>
+</span></span><span class="line"><span class="cl">	<span class="nb">echo</span> hello
+</span></span><span class="line"><span class="cl">	<span class="nb">echo</span> world
+</span></span><span class="line"><span class="cl"><span class="k">done</span>
+</span></span></code></pre></div><p>1行で記載するとこのようになる。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="k">for</span> i in <span class="m">1</span> <span class="m">2</span> 3<span class="p">;</span> <span class="k">do</span> <span class="nb">echo</span> hello<span class="p">;</span> <span class="nb">echo</span> world<span class="p">;</span> <span class="k">done</span>
+</span></span></code></pre></div><p><code>Makefile</code>内には、コマンドに1行のシェルスクリプトとして記載できる。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Makefile" data-lang="Makefile"><span class="line"><span class="cl"><span class="nf">$(ターゲット)</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">	<span class="k">for</span> i in <span class="m">1</span> <span class="m">2</span> 3<span class="p">;</span> <span class="k">do</span> <span class="nb">echo</span> hello<span class="p">;</span> <span class="nb">echo</span> world<span class="p">;</span> <span class="k">done</span>
+</span></span></code></pre></div><p>1行だと行が長すぎる場合は、<code>\</code>を使って改行する。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Makefile" data-lang="Makefile"><span class="line"><span class="cl"><span class="nf">$(ターゲット)</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">	<span class="k">for</span> i in <span class="m">1</span> <span class="m">2</span> 3<span class="p">;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>	<span class="k">do</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>	 <span class="nb">echo</span> hello<span class="p">;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>	 <span class="nb">echo</span> world<span class="p">;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>	<span class="k">done</span>
+</span></span></code></pre></div></li>
+<li>
+<p>シェルスクリプト内の変数は、makeの変数と区別するため、<code>$$変数名</code>に変更する必要がある<sup id="fnref:10"><a href="#fn:10" class="footnote-ref" role="doc-noteref">10</a></sup> <sup id="fnref:11"><a href="#fn:11" class="footnote-ref" role="doc-noteref">11</a></sup></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Makefile" data-lang="Makefile"><span class="line"><span class="cl"><span class="nv">MSG</span> <span class="o">:=</span> hello
+</span></span><span class="line"><span class="cl"><span class="nv">x</span> <span class="o">:=</span> world
+</span></span><span class="line"><span class="cl"><span class="nf">$(ターゲット)</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">	<span class="k">for</span> i in <span class="m">1</span> <span class="m">2</span> 3<span class="p">;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>	<span class="k">do</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>	 <span class="nb">echo</span> <span class="k">$(</span>MSG<span class="k">)</span> <span class="nv">$x</span> <span class="nv">$$</span>i<span class="p">;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>	<span class="k">done</span>
+</span></span></code></pre></div></li>
+</ul>
 <h3 id="参考">参考</h3>
 <ul>
 <li><a href="https://www.oreilly.co.jp/library/4873112699/">O&rsquo;Reilly Japan - GNU Make 第3版</a></li>
 <li><a href="https://missing-semester-jp.github.io/2020/metaprogramming/">メタプログラミング · the missing semester of your cs education</a></li>
+<li><a href="https://github.com/kantas-spike/make_book_pdf">kantas-spike/make_book_pdf: 『GNU Make 第3版』 各章マージ版PDF</a></li>
+<li><a href="https://github.com/yutayamamoto/pdfoutline">yutayamamoto/pdfoutline: A command line tool for adding an outline to pdf files</a></li>
 </ul>
 <div class="footnotes" role="doc-endnotes">
 <hr>
@@ -265,22 +300,34 @@
 <p>コピペでなんとなくMakefileを作成していました。&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:2">
-<p>build/_make.pdf&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>make_merged.pdf&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:3">
-<p><a href="https://github.com/kantas-spike/make_book_pdf/blob/main/toc.txt">make_book_pdf/toc.txt at main · kantas-spike/make_book_pdf</a>&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref1:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>build/_make.pdf&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref1:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:4">
-<p>build/pdf/025.pdf&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref1:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p><a href="https://github.com/kantas-spike/make_book_pdf/blob/main/toc.txt">make_book_pdf/toc.txt at main · kantas-spike/make_book_pdf</a>&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref1:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:5">
-<p><a href="https://github.com/kantas-spike/make_book_pdf/blob/main/URL.txt">make_book_pdf/URL.txt at main · kantas-spike/make_book_pdf</a>&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref1:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>build/pdf/025.pdf&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref1:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:6">
-<p>build/pdf&#160;<a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref1:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p><a href="https://github.com/kantas-spike/make_book_pdf/blob/main/URL.txt">make_book_pdf/URL.txt at main · kantas-spike/make_book_pdf</a>&#160;<a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref1:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:7">
-<p><a href="https://github.com/kantas-spike/make_book_pdf/blob/main/additional_info.pdf">make_book_pdf/additional_info.pdf at main · kantas-spike/make_book_pdf</a>&#160;<a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref1:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>build/pdf&#160;<a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref1:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:8">
+<p><a href="https://github.com/kantas-spike/make_book_pdf/blob/main/additional_info.pdf">make_book_pdf/additional_info.pdf at main · kantas-spike/make_book_pdf</a>&#160;<a href="#fnref:8" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref1:8" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:9">
+<p><a href="https://kantas-spike.github.io/portfolio/pdf/make_merged.pdf#page=111">5.1.1 長いコマンド</a>&#160;<a href="#fnref:9" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:10">
+<p><a href="https://kantas-spike.github.io/portfolio/pdf/make_merged.pdf#page=82">make は2つのドル記号($$)を見つけると、1つのドル記号($)にしてからサブシェルに渡します</a>&#160;<a href="#fnref:10" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:11">
+<p><a href="https://kantas-spike.github.io/portfolio/pdf/make_merged.pdf#page=82">makeの変数値を取得するには$(変数名)で取得する。変数名が1文字の場合は、括弧を省略して$変数名で取得できる。</a>&#160;<a href="#fnref:11" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </div>
@@ -307,7 +354,6 @@
         </div>
     </div>
 </footer>
-        
         <script src="https://unpkg.com/vue@next"></script>
 <script src="//unpkg.com/lunr@2.3.6/lunr.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/lunr-languages@1.9.0/lunr.stemmer.support.js"></script>
