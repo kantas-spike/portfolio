@@ -6,7 +6,7 @@ title = "kanta's spike"
 
 theme = 'kantas'
 
-copyright = "Copyright 2022 kanta's spike"
+copyright = "© 2022 kanta's spike"
 
 publishDir = "docs"
 
