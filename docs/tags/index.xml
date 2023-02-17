@@ -7,7 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>Copyright 2022 kanta&#39;s spike</copyright>
-    <lastBuildDate>Thu, 09 Feb 2023 07:21:11 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 17 Feb 2023 07:20:29 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>poetry</title>
+      <link>https://kantas-spike.github.io/portfolio/tags/poetry/</link>
+      <pubDate>Fri, 17 Feb 2023 07:20:29 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/tags/poetry/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>https://kantas-spike.github.io/portfolio/tags/python/</link>
+      <pubDate>Fri, 17 Feb 2023 07:20:29 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/tags/python/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>make</title>
       <link>https://kantas-spike.github.io/portfolio/tags/make/</link>
@@ -50,15 +68,6 @@
       <pubDate>Wed, 08 Feb 2023 19:54:23 +0900</pubDate>
       
       <guid>https://kantas-spike.github.io/portfolio/tags/pdf/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>python</title>
-      <link>https://kantas-spike.github.io/portfolio/tags/python/</link>
-      <pubDate>Wed, 08 Feb 2023 16:02:46 +0900</pubDate>
-      
-      <guid>https://kantas-spike.github.io/portfolio/tags/python/</guid>
       <description></description>
     </item>
     

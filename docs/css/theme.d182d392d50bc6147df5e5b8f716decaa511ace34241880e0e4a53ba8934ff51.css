@@ -526,6 +526,9 @@ video {
 .m-auto {
   margin: auto;
 }
+.m-0 {
+  margin: 0px;
+}
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
@@ -601,6 +604,9 @@ video {
 }
 .mb-3 {
   margin-bottom: 0.75rem;
+}
+.mb-0 {
+  margin-bottom: 0px;
 }
 .ml-6 {
   margin-left: 1.5rem;
@@ -1838,6 +1844,14 @@ video {
   margin-bottom: 2rem;
   --tw-border-opacity: 1;
   border-color: rgb(25 43 77 / var(--tw-border-opacity));
+}
+.article .footnotes ol > li > p {
+  margin: 0px;
+  margin-bottom: 0.125rem;
+}
+.article .footnotes .footnote-backref {
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
 }
 .article table,  .article .rawhtml table {
   border-collapse: collapse;

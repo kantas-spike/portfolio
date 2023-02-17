@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/poetry/</loc>
+    <lastmod>2023-02-17T07:20:29+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/python/</loc>
+    <lastmod>2023-02-17T07:20:29+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/til/2023/02/47-use-poetry/</loc>
+    <lastmod>2023-02-17T07:20:29+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/</loc>
+    <lastmod>2023-02-17T07:20:29+09:00</lastmod>
+  </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/make/</loc>
     <lastmod>2023-02-09T07:21:11+09:00</lastmod>
   </url><url>
@@ -9,9 +21,6 @@
     <lastmod>2023-02-09T07:21:11+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/blog/2023/02/10-make-make-book-using-make/</loc>
-    <lastmod>2023-02-09T07:21:11+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/</loc>
     <lastmod>2023-02-09T07:21:11+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/shellscript/</loc>
@@ -30,9 +39,6 @@
     <lastmod>2023-02-08T19:54:23+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/blog/2023/02/09-merge-make-book/</loc>
-    <lastmod>2023-02-08T16:02:46+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/python/</loc>
     <lastmod>2023-02-08T16:02:46+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/hugo/</loc>
