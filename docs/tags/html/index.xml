@@ -6,8 +6,25 @@
     <description>Recent content in html on kanta&#39;s spike</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <copyright>Copyright 2022 kanta&#39;s spike</copyright>
-    <lastBuildDate>Sat, 06 Aug 2022 16:02:01 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/html/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>© 2022 kanta&#39;s spike</copyright>
+    <lastBuildDate>Fri, 17 Feb 2023 11:58:17 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/html/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ホームページ用のコピーライトの書式を教えて</title>
+      <link>https://kantas-spike.github.io/portfolio/dialogue/02-tell-me-howto-write-copyright/</link>
+      <pubDate>Fri, 17 Feb 2023 11:58:17 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/dialogue/02-tell-me-howto-write-copyright/</guid>
+      <description>&lt;div class=&#34;quote text-[#ececf1] relative p-2 pt-3 pr-4 bg-[#343542] border border-[#2b2b32] rounded-sm my-2&#34;&gt;
+    &lt;div class=&#34;font-serif text-3xl absolute top-0 left-0 py-2 pl-2 pr-1 font-bold text-[#ffffff]&#34;&gt;&lt;div class=&#34;w-[2.25rem] h-[2.25rem] bg-[#e64b3b] text-center relative&#34;&gt;&lt;div class=&#34;absolute -top-[2px] inset-x-0&#34;&gt;Q&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;div class=&#34;ml-12 mt-1 mb-2 whitespace-pre-wrap&#34;&gt;自分のホームページのフッタに、以下のようなコピーライトを記載しています。
+
+Copyright 2022 my homepage name
+
+一般的なホームページのコピーライトの書式を教えてください。
+また、2022年からホームページを開始したので、2022年と記載していますが、毎年年数を更新するべきなのでしょうか?&lt;/div&gt;
+&lt;/div&gt;</description>
+    </item>
+    
     <item>
       <title>PDFの特定ページにリンクを貼りたい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2022/08/20-link-to-the-page-of-pdf/</link>
