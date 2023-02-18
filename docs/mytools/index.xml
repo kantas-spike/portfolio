@@ -9,6 +9,24 @@
     <copyright>© 2022 kanta&#39;s spike</copyright>
     <lastBuildDate>Fri, 22 Jul 2022 08:15:27 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/mytools/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>make_book_pdf</title>
+      <link>https://kantas-spike.github.io/portfolio/mytools/make_book_pdf/</link>
+      <pubDate>Thu, 09 Feb 2023 21:12:50 +0000</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/mytools/make_book_pdf/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>create-subtitle-image</title>
+      <link>https://kantas-spike.github.io/portfolio/mytools/create_subtitle_image/</link>
+      <pubDate>Tue, 07 Feb 2023 11:30:15 +0000</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/mytools/create_subtitle_image/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>repo-info.py</title>
       <link>https://kantas-spike.github.io/portfolio/mytools/repo_info.py/</link>
       <pubDate>Thu, 02 Feb 2023 06:18:17 +0000</pubDate>
@@ -23,15 +41,6 @@
       <pubDate>Thu, 02 Feb 2023 04:16:35 +0000</pubDate>
       
       <guid>https://kantas-spike.github.io/portfolio/mytools/add_article.py/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>create-subtitle-image</title>
-      <link>https://kantas-spike.github.io/portfolio/mytools/create_subtitle_image/</link>
-      <pubDate>Sat, 28 Jan 2023 15:13:41 +0000</pubDate>
-      
-      <guid>https://kantas-spike.github.io/portfolio/mytools/create_subtitle_image/</guid>
       <description></description>
     </item>
     

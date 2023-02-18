@@ -26,6 +26,11 @@ Pythonの場合、以下の3つが有名みたいだ。[^2]
 - 仮想環境の利用が簡単(`poetry run`や`poetry shell`で利用やアクティベートできる)
 - Python標準の`pyproject.toml`で依存関係が定義されるためシンプル
 
+`Poetry`により生成される以下のファイルをコミットしておくと、Pythonのバージョンとパッケージを指定できる。
+
+- `pyproject.toml`
+- `poetry.lock` [^8]
+
 ### Poetryを使う
 
 [Jupyter Notebook](https://jupyter.org/)の導入を例に、`Poetry`の使い方をまとめる。
@@ -211,3 +216,4 @@ Spawning shell within /Users/kanta/spike/69_use-jupyter-notebook/.venv
 [^5]: `add`で指定したパッケージ名からパッケージと依存するパッケージの適切なバージョン情報を取得して、インストールする。
 [^6]: `poetry.lock`が存在しない場合は、`pyproject.toml`に記載されたパッケージと、依存するパッケージの最新バージョンがインストールされる
 [^7]: 起動したシェルを抜けるには、`deactivate`を実行するか`exit`(C-dでも良い)を実行する
+[^8]: 依存関係のあるパッケージのバージョンを指定する場合は`poetry.lock`もコミットする
