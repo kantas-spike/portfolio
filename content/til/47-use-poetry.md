@@ -127,6 +127,83 @@ Package operations: 77 installs, 0 updates, 0 removals
 ..略..
 ```
 
+今回は、`numpy`と`scipy`を利用したいのでインストールしたいと思う。
+
+まず、`numpy`をインストールする。
+
+```shell
+% poetry add numpy
+Using version ^1.24.2 for numpy
+
+Updating dependencies
+Resolving dependencies... (0.5s)
+
+Writing lock file
+
+Package operations: 1 install, 0 updates, 0 removals
+
+  • Installing numpy (1.24.2)
+%
+```
+
+最後に、`scipy`をインストールする。しかし、エラーが発生した。
+
+```shell
+% poetry add scipy
+Using version ^1.10.1 for scipy
+
+Updating dependencies
+Resolving dependencies... (0.0s)
+
+The current project's Python requirement (>=3.11,<4.0) is not compatible with some of the required packages Python requirement:
+  - scipy requires Python <3.12,>=3.8, so it will not be satisfied for Python >=3.12,<4.0
+
+Because no versions of scipy match >1.10.1,<2.0.0
+ and scipy (1.10.1) requires Python <3.12,>=3.8, scipy is forbidden.
+So, because 69-use-jupyter-notebook depends on scipy (^1.10.1), version solving failed.
+
+  • Check your dependencies Python requirement: The Python requirement can be specified via the `python` or `markers` properties
+
+    For scipy, a possible solution would be to set the `python` property to ">=3.11,<3.12"
+
+    https://python-poetry.org/docs/dependency-specification/#python-restricted-dependencies,
+    https://python-poetry.org/docs/dependency-specification/#using-environment-markers
+%
+```
+
+これは、プロジェクトが許容する`python`のバージョンと、`scipy`が許容する`python`のバージョンがマッチしていないため、エラーが発生している。
+
+プロジェクトが許容する`python`のバージョンは`project.toml`に記載されている。
+今回は`python`のバージョンが、`python = "^3.11"`となっており、これは`python`のバージョンが`>=3.11.0 < 4.0`を意味する。
+
+しかし、今インストールしようとしている`scipy`は`python`の`<3.12,>=3.8`バージョンまでに対応している。 [^9] そのため、ミスマッチが発生している。
+
+これを修正するには、プロジェクトが許容する`python`のバージョンを厳密にする。
+まだ、リリースもされていない`python`のバージョンは無視して、以下のように`python = "~3.11"`とし、`python`の`>=3.11.0 < 3.12`を対象にする。 [^10]
+
+```toml
+# ..略..
+[tool.poetry.dependencies]
+python = "~3.11"
+# ..略..
+```
+
+再度、`scipy`をインストールする。今度はちゃんとインストールできる。
+
+```shell
+% poetry add scipy
+Using version ^1.10.1 for scipy
+
+Updating dependencies
+Resolving dependencies... (0.5s)
+
+Writing lock file
+
+Package operations: 1 install, 0 updates, 0 removals
+
+  • Installing scipy (1.10.1)
+```
+
 プロジェクトディレクトリ内に、仮想環境用の`.venv`ディレクトリが作成され、そこにパッケージがインストールされる。
 
 ```shell
@@ -139,8 +216,10 @@ bin             etc             lib             pyvenv.cfg      share
 ```toml
 # ..略..
 [tool.poetry.dependencies]
-python = "^3.11"
+python = "~3.11"
 notebook = "^6.5.2"
+numpy = "^1.24.2"
+scipy = "^1.10.1"
 # ..略..
 ```
 
@@ -207,6 +286,7 @@ Spawning shell within /Users/kanta/spike/69_use-jupyter-notebook/.venv
 - [pyproject.toml とは何か | I Was Perfect](https://tech.515hikaru.net/post/2019-11-23-pyproject/)
 - [Basic usage | Documentation | Poetry - Python dependency management and packaging made easy](https://python-poetry.org/docs/basic-usage/)
 - [Configuration | Documentation | Poetry - Python dependency management and packaging made easy](https://python-poetry.org/docs/configuration/#virtualenvsin-project)
+- [Dependency specification | Documentation | Poetry - Python dependency management and packaging made easy](https://python-poetry.org/docs/dependency-specification/)
 - [Project Jupyter | Installing Jupyter](https://jupyter.org/install#jupyter-notebook)
 
 [^1]: パッケージマネージャーという用語には、いくつか[分類](https://qiita.com/akkey2475/items/5b2813e62303a9c75813)があるようだ。ここでは、Python言語のパッケージ管理ツールを話題にしている。
@@ -217,3 +297,6 @@ Spawning shell within /Users/kanta/spike/69_use-jupyter-notebook/.venv
 [^6]: `poetry.lock`が存在しない場合は、`pyproject.toml`に記載されたパッケージと、依存するパッケージの最新バージョンがインストールされる
 [^7]: 起動したシェルを抜けるには、`deactivate`を実行するか`exit`(C-dでも良い)を実行する
 [^8]: 依存関係のあるパッケージのバージョンを指定する場合は`poetry.lock`もコミットする
+[^9]: まだリリースもされていない`<4.0`のバージョンなんて対応できる訳ないですよね
+[^10]: バージョンの指定方法については、[Dependency specification](https://python-poetry.org/docs/dependency-specification/)を参照
+
