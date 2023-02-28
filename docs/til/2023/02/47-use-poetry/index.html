@@ -151,14 +151,73 @@ Poetryで、<code>notebook</code>を依存するパッケージに追加する�
 </span></span><span class="line"><span class="cl">  • Installing attrs <span class="o">(</span>22.2.0<span class="o">)</span>
 </span></span><span class="line"><span class="cl">  • Installing platformdirs <span class="o">(</span>3.0.0<span class="o">)</span>
 </span></span><span class="line"><span class="cl">..略..
+</span></span></code></pre></div><p>今回は、<code>numpy</code>と<code>scipy</code>を利用したいのでインストールしたいと思う。</p>
+<p>まず、<code>numpy</code>をインストールする。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">% poetry add numpy
+</span></span><span class="line"><span class="cl">Using version ^1.24.2 <span class="k">for</span> numpy
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Updating dependencies
+</span></span><span class="line"><span class="cl">Resolving dependencies... <span class="o">(</span>0.5s<span class="o">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Writing lock file
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Package operations: <span class="m">1</span> install, <span class="m">0</span> updates, <span class="m">0</span> removals
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  • Installing numpy <span class="o">(</span>1.24.2<span class="o">)</span>
+</span></span><span class="line"><span class="cl">%
+</span></span></code></pre></div><p>最後に、<code>scipy</code>をインストールする。しかし、エラーが発生した。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">% poetry add scipy
+</span></span><span class="line"><span class="cl">Using version ^1.10.1 <span class="k">for</span> scipy
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Updating dependencies
+</span></span><span class="line"><span class="cl">Resolving dependencies... <span class="o">(</span>0.0s<span class="o">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">The current project<span class="err">&#39;</span>s Python requirement <span class="o">(</span>&gt;<span class="o">=</span>3.11,&lt;4.0<span class="o">)</span> is not compatible with some of the required packages Python requirement:
+</span></span><span class="line"><span class="cl">  - scipy requires Python &lt;3.12,&gt;<span class="o">=</span>3.8, so it will not be satisfied <span class="k">for</span> Python &gt;<span class="o">=</span>3.12,&lt;4.0
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Because no versions of scipy match &gt;1.10.1,&lt;2.0.0
+</span></span><span class="line"><span class="cl"> and scipy <span class="o">(</span>1.10.1<span class="o">)</span> requires Python &lt;3.12,&gt;<span class="o">=</span>3.8, scipy is forbidden.
+</span></span><span class="line"><span class="cl">So, because 69-use-jupyter-notebook depends on scipy <span class="o">(</span>^1.10.1<span class="o">)</span>, version solving failed.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  • Check your dependencies Python requirement: The Python requirement can be specified via the <span class="sb">`</span>python<span class="sb">`</span> or <span class="sb">`</span>markers<span class="sb">`</span> properties
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    For scipy, a possible solution would be to <span class="nb">set</span> the <span class="sb">`</span>python<span class="sb">`</span> property to <span class="s2">&#34;&gt;=3.11,&lt;3.12&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    https://python-poetry.org/docs/dependency-specification/#python-restricted-dependencies,
+</span></span><span class="line"><span class="cl">    https://python-poetry.org/docs/dependency-specification/#using-environment-markers
+</span></span><span class="line"><span class="cl">%
+</span></span></code></pre></div><p>これは、プロジェクトが許容する<code>python</code>のバージョンと、<code>scipy</code>が許容する<code>python</code>のバージョンがマッチしていないため、エラーが発生している。</p>
+<p>プロジェクトが許容する<code>python</code>のバージョンは<code>project.toml</code>に記載されている。
+今回は<code>python</code>のバージョンが、<code>python = &quot;^3.11&quot;</code>となっており、これは<code>python</code>のバージョンが<code>&gt;=3.11.0 &lt; 4.0</code>を意味する。</p>
+<p>しかし、今インストールしようとしている<code>scipy</code>は<code>python</code>の<code>&lt;3.12,&gt;=3.8</code>バージョンまでに対応している。 <sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup> そのため、ミスマッチが発生している。</p>
+<p>これを修正するには、プロジェクトが許容する<code>python</code>のバージョンを厳密にする。
+まだ、リリースもされていない<code>python</code>のバージョンは無視して、以下のように<code>python = &quot;~3.11&quot;</code>とし、<code>python</code>の<code>&gt;=3.11.0 &lt; 3.12</code>を対象にする。 <sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="c"># ..略..</span>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">tool</span><span class="p">.</span><span class="nx">poetry</span><span class="p">.</span><span class="nx">dependencies</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">python</span> <span class="p">=</span> <span class="s2">&#34;~3.11&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="c"># ..略..</span>
+</span></span></code></pre></div><p>再度、<code>scipy</code>をインストールする。今度はちゃんとインストールできる。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">% poetry add scipy
+</span></span><span class="line"><span class="cl">Using version ^1.10.1 <span class="k">for</span> scipy
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Updating dependencies
+</span></span><span class="line"><span class="cl">Resolving dependencies... <span class="o">(</span>0.5s<span class="o">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Writing lock file
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Package operations: <span class="m">1</span> install, <span class="m">0</span> updates, <span class="m">0</span> removals
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  • Installing scipy <span class="o">(</span>1.10.1<span class="o">)</span>
 </span></span></code></pre></div><p>プロジェクトディレクトリ内に、仮想環境用の<code>.venv</code>ディレクトリが作成され、そこにパッケージがインストールされる。</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">% ls .venv
 </span></span><span class="line"><span class="cl">bin             etc             lib             pyvenv.cfg      share
 </span></span></code></pre></div><p>そして、<code>pyproject.toml</code>には<code>notebook</code>パッケージとそのバージョンが記録される。</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="c"># ..略..</span>
 </span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">tool</span><span class="p">.</span><span class="nx">poetry</span><span class="p">.</span><span class="nx">dependencies</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl"><span class="nx">python</span> <span class="p">=</span> <span class="s2">&#34;^3.11&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">python</span> <span class="p">=</span> <span class="s2">&#34;~3.11&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="nx">notebook</span> <span class="p">=</span> <span class="s2">&#34;^6.5.2&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">numpy</span> <span class="p">=</span> <span class="s2">&#34;^1.24.2&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">scipy</span> <span class="p">=</span> <span class="s2">&#34;^1.10.1&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="c"># ..略..</span>
 </span></span></code></pre></div><p>さらに、<code>poetory.lock</code>に依存するパッケージも含めた詳細なパッケージの情報が記録される。</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">head poetry.lock
@@ -173,7 +232,7 @@ Poetryで、<code>notebook</code>を依存するパッケージに追加する�
 </span></span><span class="line"><span class="cl">python-versions <span class="o">=</span> <span class="s2">&#34;&gt;=3.6.2&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="nv">files</span> <span class="o">=</span> <span class="o">[</span>
 </span></span></code></pre></div><p>もし、GitHubにプロジェクトを公開する場合、<code>poetry.lock</code>を登録しておけば、
-プロジェクトをクローンしたユーザーは、以下のコマンドにより、<code>poetry.lock</code>に記載されたバージョンの依存関係も含む全パッケージをインストールできる。<sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup></p>
+プロジェクトをクローンしたユーザーは、以下のコマンドにより、<code>poetry.lock</code>に記載されたバージョンの依存関係も含む全パッケージをインストールできる。<sup id="fnref:9"><a href="#fn:9" class="footnote-ref" role="doc-noteref">9</a></sup></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">poetry install
 </span></span></code></pre></div><h4 id="jupyter-notebookの実行">Jupyter Notebookの実行</h4>
 <p><code>poetry run</code>の後に、コマンドを実行すると、プロジェクトの仮想環境で実行される。</p>
@@ -185,7 +244,7 @@ Poetryで、<code>notebook</code>を依存するパッケージに追加する�
 </span></span><span class="line"><span class="cl"><span class="o">[</span>I 11:21:44.345 NotebookApp<span class="o">]</span>  or http://127.0.0.1:8888/?token<span class="o">=</span>3f11e224193b1fe12c2241acf4f8a47eec902761062a8fe8
 </span></span><span class="line"><span class="cl"><span class="o">[</span>I 11:21:44.345 NotebookApp<span class="o">]</span> Use Control-C to stop this server and shut down all kernels <span class="o">(</span>twice to skip confirmation<span class="o">)</span>.
 </span></span><span class="line"><span class="cl"><span class="c1"># ..略..</span>
-</span></span></code></pre></div><p>また、<code>poetry shell</code>で仮想環境をアクティベートしてから、<code>jupyter notebook</code>を実行しても同様になる。<sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup></p>
+</span></span></code></pre></div><p>また、<code>poetry shell</code>で仮想環境をアクティベートしてから、<code>jupyter notebook</code>を実行しても同様になる。<sup id="fnref:10"><a href="#fn:10" class="footnote-ref" role="doc-noteref">10</a></sup></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">% poetry shell
 </span></span><span class="line"><span class="cl">Spawning shell within /Users/kanta/spike/69_use-jupyter-notebook/.venv
 </span></span><span class="line"><span class="cl">% emulate bash -c <span class="s1">&#39;. /Users/kanta/spike/69_use-jupyter-notebook/.venv/bin/activate&#39;</span>
@@ -206,6 +265,7 @@ Poetryで、<code>notebook</code>を依存するパッケージに追加する�
 <li><a href="https://tech.515hikaru.net/post/2019-11-23-pyproject/">pyproject.toml とは何か | I Was Perfect</a></li>
 <li><a href="https://python-poetry.org/docs/basic-usage/">Basic usage | Documentation | Poetry - Python dependency management and packaging made easy</a></li>
 <li><a href="https://python-poetry.org/docs/configuration/#virtualenvsin-project">Configuration | Documentation | Poetry - Python dependency management and packaging made easy</a></li>
+<li><a href="https://python-poetry.org/docs/dependency-specification/">Dependency specification | Documentation | Poetry - Python dependency management and packaging made easy</a></li>
 <li><a href="https://jupyter.org/install#jupyter-notebook">Project Jupyter | Installing Jupyter</a></li>
 </ul>
 <div class="footnotes" role="doc-endnotes">
@@ -230,10 +290,16 @@ Poetryで、<code>notebook</code>を依存するパッケージに追加する�
 <p><code>add</code>で指定したパッケージ名からパッケージと依存するパッケージの適切なバージョン情報を取得して、インストールする。&#160;<a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:7">
-<p><code>poetry.lock</code>が存在しない場合は、<code>pyproject.toml</code>に記載されたパッケージと、依存するパッケージの最新バージョンがインストールされる&#160;<a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>まだリリースもされていない<code>&lt;4.0</code>のバージョンなんて対応できる訳ないですよね&#160;<a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:8">
-<p>起動したシェルを抜けるには、<code>deactivate</code>を実行するか<code>exit</code>(C-dでも良い)を実行する&#160;<a href="#fnref:8" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>バージョンの指定方法については、<a href="https://python-poetry.org/docs/dependency-specification/">Dependency specification</a>を参照&#160;<a href="#fnref:8" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:9">
+<p><code>poetry.lock</code>が存在しない場合は、<code>pyproject.toml</code>に記載されたパッケージと、依存するパッケージの最新バージョンがインストールされる&#160;<a href="#fnref:9" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:10">
+<p>起動したシェルを抜けるには、<code>deactivate</code>を実行するか<code>exit</code>(C-dでも良い)を実行する&#160;<a href="#fnref:10" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </div>

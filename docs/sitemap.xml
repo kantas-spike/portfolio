@@ -29,6 +29,15 @@
     <loc>https://kantas-spike.github.io/portfolio/til/2023/02/47-use-poetry/</loc>
     <lastmod>2023-02-17T07:20:29+09:00</lastmod>
   </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/hugo/</loc>
+    <lastmod>2023-02-16T08:44:35+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/jupyter/</loc>
+    <lastmod>2023-02-16T08:44:35+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/blog/2023/02/12-use-jupyter-notebook/</loc>
+    <lastmod>2023-02-16T08:44:35+09:00</lastmod>
+  </url><url>
     <loc>https://kantas-spike.github.io/portfolio/mytools/make_book_pdf/</loc>
     <lastmod>2023-02-09T21:12:50+00:00</lastmod>
   </url><url>
@@ -58,9 +67,6 @@
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/blog/2023/02/09-merge-make-book/</loc>
     <lastmod>2023-02-08T16:02:46+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/hugo/</loc>
-    <lastmod>2023-02-08T09:46:02+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2023/02/44-add-render-hook-for-plotly/</loc>
     <lastmod>2023-02-08T09:46:02+09:00</lastmod>
