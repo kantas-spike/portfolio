@@ -127,7 +127,7 @@ Package operations: 77 installs, 0 updates, 0 removals
 ..略..
 ```
 
-今回は、`numpy`と`scipy`を利用したいのでインストールしたいと思う。
+今回は、`numpy`と`scipy`、`matplotlib`を利用したいのでインストールしたいと思う。
 
 まず、`numpy`をインストールする。
 
@@ -146,7 +146,7 @@ Package operations: 1 install, 0 updates, 0 removals
 %
 ```
 
-最後に、`scipy`をインストールする。しかし、エラーが発生した。
+次に、`scipy`をインストールする。しかし、エラーが発生した。
 
 ```shell
 % poetry add scipy
@@ -176,10 +176,10 @@ So, because 69-use-jupyter-notebook depends on scipy (^1.10.1), version solving 
 プロジェクトが許容する`python`のバージョンは`project.toml`に記載されている。
 今回は`python`のバージョンが、`python = "^3.11"`となっており、これは`python`のバージョンが`>=3.11.0 < 4.0`を意味する。
 
-しかし、今インストールしようとしている`scipy`は`python`の`<3.12,>=3.8`バージョンまでに対応している。 [^9] そのため、ミスマッチが発生している。
+しかし、今インストールしようとしている`scipy`は`python`の`<3.12,>=3.8`バージョンまでに対応している。[^9] そのため、ミスマッチが発生している。
 
-これを修正するには、プロジェクトが許容する`python`のバージョンを厳密にする。
-まだ、リリースもされていない`python`のバージョンは無視して、以下のように`python = "~3.11"`とし、`python`の`>=3.11.0 < 3.12`を対象にする。 [^10]
+これを修正するには、プロジェクトが許容する`python`のバージョンを厳密にする必要がある。
+まだ、リリースもされていない`python`のバージョンは無視して、以下のように`python = "~3.11"`とし、`python`の`>=3.11.0 < 3.12`を対象とした。 [^10]
 
 ```toml
 # ..略..
@@ -202,6 +202,26 @@ Writing lock file
 Package operations: 1 install, 0 updates, 0 removals
 
   • Installing scipy (1.10.1)
+```
+
+最後に、`matplotlib`をインストールする。
+
+```shell
+% poetry add matplotlib
+Using version ^3.7.0 for matplotlib
+
+Writing lock file
+
+Package operations: 7 installs, 0 updates, 0 removals
+
+  • Installing contourpy (1.0.7)
+  • Installing cycler (0.11.0)
+  • Installing fonttools (4.38.0)
+  • Installing kiwisolver (1.4.4)
+  • Installing pillow (9.4.0)
+  • Installing pyparsing (3.0.9)
+  • Installing matplotlib (3.7.0)
+%
 ```
 
 プロジェクトディレクトリ内に、仮想環境用の`.venv`ディレクトリが作成され、そこにパッケージがインストールされる。
