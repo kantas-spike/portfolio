@@ -2,13 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/english/</loc>
+    <lastmod>2023-03-14T22:14:09+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/siri/</loc>
+    <lastmod>2023-03-14T22:14:09+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/til/2023/03/52-using-wether-forecast-with-siri/</loc>
+    <lastmod>2023-03-14T22:14:09+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/</loc>
+    <lastmod>2023-03-14T22:14:09+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/til/2023/03/51-learning-english-with-siri/</loc>
+    <lastmod>2023-03-14T21:59:31+09:00</lastmod>
+  </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/inkscape/</loc>
     <lastmod>2023-03-14T12:05:30+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2023/03/48-set-color-to-object-with-inkscape/</loc>
-    <lastmod>2023-03-14T12:05:30+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/</loc>
     <lastmod>2023-03-14T12:05:30+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/ihc/kantas_theme/</loc>
@@ -202,9 +214,6 @@
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/mytools/pdf2jpg.sh/</loc>
     <lastmod>2022-09-06T05:50:30+00:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/english/</loc>
-    <lastmod>2022-09-04T08:55:25+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/hacking/</loc>
     <lastmod>2022-09-04T08:55:25+09:00</lastmod>
