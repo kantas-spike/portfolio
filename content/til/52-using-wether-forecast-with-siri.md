@@ -1,5 +1,5 @@
 ---
-title: "Siriに天気を尋ねたい"
+title: "Siriに天気を聞きたい"
 date: 2023-03-14T22:14:09+09:00
 draft: false
 tags:
@@ -7,17 +7,17 @@ tags:
 - siri
 ---
 
-Siriに天気を尋ねたい。
+Siriに天気を聞きたい。
 
 <!--more-->
 
 ### 解決策
 
-- 今日の天気を尋ねる
+- 今日の天気を質問する
   - `How is the weather today?`
   - `What's the forecast for today?`
   - `What will the weather be like today?`
-- 今週の天気を尋ねる
+- 今週の天気を質問する
   - `What's the weekly forecast?`
 
 ### 参考
