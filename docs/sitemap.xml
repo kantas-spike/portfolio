@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/inkscape/</loc>
+    <lastmod>2023-03-14T12:05:30+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/til/2023/03/48-set-color-to-object-with-inkscape/</loc>
+    <lastmod>2023-03-14T12:05:30+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/</loc>
+    <lastmod>2023-03-14T12:05:30+09:00</lastmod>
+  </url><url>
     <loc>https://kantas-spike.github.io/portfolio/ihc/kantas_theme/</loc>
     <lastmod>2023-02-18T01:18:21+00:00</lastmod>
   </url><url>
@@ -12,9 +21,6 @@
     <lastmod>2023-02-17T11:58:17+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/html/</loc>
-    <lastmod>2023-02-17T11:58:17+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/</loc>
     <lastmod>2023-02-17T11:58:17+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/dialogue/02-tell-me-howto-write-copyright/</loc>
@@ -94,9 +100,6 @@
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2023/02/42-run-shellscript-using-spotlight/</loc>
     <lastmod>2023-02-07T00:30:31+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/inkscape/</loc>
-    <lastmod>2023-02-07T00:04:37+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2023/02/41-convert-svg-to-png-from-commandline-using-inkscape/</loc>
     <lastmod>2023-02-07T00:04:37+09:00</lastmod>

@@ -151,7 +151,7 @@ Poetryで、<code>notebook</code>を依存するパッケージに追加する�
 </span></span><span class="line"><span class="cl">  • Installing attrs <span class="o">(</span>22.2.0<span class="o">)</span>
 </span></span><span class="line"><span class="cl">  • Installing platformdirs <span class="o">(</span>3.0.0<span class="o">)</span>
 </span></span><span class="line"><span class="cl">..略..
-</span></span></code></pre></div><p>今回は、<code>numpy</code>と<code>scipy</code>を利用したいのでインストールしたいと思う。</p>
+</span></span></code></pre></div><p>今回は、<code>numpy</code>と<code>scipy</code>、<code>matplotlib</code>を利用したいのでインストールしたいと思う。</p>
 <p>まず、<code>numpy</code>をインストールする。</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">% poetry add numpy
 </span></span><span class="line"><span class="cl">Using version ^1.24.2 <span class="k">for</span> numpy
@@ -165,7 +165,7 @@ Poetryで、<code>notebook</code>を依存するパッケージに追加する�
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">  • Installing numpy <span class="o">(</span>1.24.2<span class="o">)</span>
 </span></span><span class="line"><span class="cl">%
-</span></span></code></pre></div><p>最後に、<code>scipy</code>をインストールする。しかし、エラーが発生した。</p>
+</span></span></code></pre></div><p>次に、<code>scipy</code>をインストールする。しかし、エラーが発生した。</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">% poetry add scipy
 </span></span><span class="line"><span class="cl">Using version ^1.10.1 <span class="k">for</span> scipy
 </span></span><span class="line"><span class="cl">
@@ -189,9 +189,9 @@ Poetryで、<code>notebook</code>を依存するパッケージに追加する�
 </span></span></code></pre></div><p>これは、プロジェクトが許容する<code>python</code>のバージョンと、<code>scipy</code>が許容する<code>python</code>のバージョンがマッチしていないため、エラーが発生している。</p>
 <p>プロジェクトが許容する<code>python</code>のバージョンは<code>project.toml</code>に記載されている。
 今回は<code>python</code>のバージョンが、<code>python = &quot;^3.11&quot;</code>となっており、これは<code>python</code>のバージョンが<code>&gt;=3.11.0 &lt; 4.0</code>を意味する。</p>
-<p>しかし、今インストールしようとしている<code>scipy</code>は<code>python</code>の<code>&lt;3.12,&gt;=3.8</code>バージョンまでに対応している。 <sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup> そのため、ミスマッチが発生している。</p>
-<p>これを修正するには、プロジェクトが許容する<code>python</code>のバージョンを厳密にする。
-まだ、リリースもされていない<code>python</code>のバージョンは無視して、以下のように<code>python = &quot;~3.11&quot;</code>とし、<code>python</code>の<code>&gt;=3.11.0 &lt; 3.12</code>を対象にする。 <sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup></p>
+<p>しかし、今インストールしようとしている<code>scipy</code>は<code>python</code>の<code>&lt;3.12,&gt;=3.8</code>バージョンまでに対応している。<sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup> そのため、ミスマッチが発生している。</p>
+<p>これを修正するには、プロジェクトが許容する<code>python</code>のバージョンを厳密にする必要がある。
+まだ、リリースもされていない<code>python</code>のバージョンは無視して、以下のように<code>python = &quot;~3.11&quot;</code>とし、<code>python</code>の<code>&gt;=3.11.0 &lt; 3.12</code>を対象とした。 <sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="c"># ..略..</span>
 </span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">tool</span><span class="p">.</span><span class="nx">poetry</span><span class="p">.</span><span class="nx">dependencies</span><span class="p">]</span>
 </span></span><span class="line"><span class="cl"><span class="nx">python</span> <span class="p">=</span> <span class="s2">&#34;~3.11&#34;</span>
@@ -208,6 +208,22 @@ Poetryで、<code>notebook</code>を依存するパッケージに追加する�
 </span></span><span class="line"><span class="cl">Package operations: <span class="m">1</span> install, <span class="m">0</span> updates, <span class="m">0</span> removals
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">  • Installing scipy <span class="o">(</span>1.10.1<span class="o">)</span>
+</span></span></code></pre></div><p>最後に、<code>matplotlib</code>をインストールする。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">% poetry add matplotlib
+</span></span><span class="line"><span class="cl">Using version ^3.7.0 <span class="k">for</span> matplotlib
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Writing lock file
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Package operations: <span class="m">7</span> installs, <span class="m">0</span> updates, <span class="m">0</span> removals
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  • Installing contourpy <span class="o">(</span>1.0.7<span class="o">)</span>
+</span></span><span class="line"><span class="cl">  • Installing cycler <span class="o">(</span>0.11.0<span class="o">)</span>
+</span></span><span class="line"><span class="cl">  • Installing fonttools <span class="o">(</span>4.38.0<span class="o">)</span>
+</span></span><span class="line"><span class="cl">  • Installing kiwisolver <span class="o">(</span>1.4.4<span class="o">)</span>
+</span></span><span class="line"><span class="cl">  • Installing pillow <span class="o">(</span>9.4.0<span class="o">)</span>
+</span></span><span class="line"><span class="cl">  • Installing pyparsing <span class="o">(</span>3.0.9<span class="o">)</span>
+</span></span><span class="line"><span class="cl">  • Installing matplotlib <span class="o">(</span>3.7.0<span class="o">)</span>
+</span></span><span class="line"><span class="cl">%
 </span></span></code></pre></div><p>プロジェクトディレクトリ内に、仮想環境用の<code>.venv</code>ディレクトリが作成され、そこにパッケージがインストールされる。</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">% ls .venv
 </span></span><span class="line"><span class="cl">bin             etc             lib             pyvenv.cfg      share

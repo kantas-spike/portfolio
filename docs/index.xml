@@ -9,6 +9,15 @@
     <copyright>© 2022 kanta&#39;s spike</copyright>
     <lastBuildDate>Fri, 22 Jul 2022 08:24:06 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Inkscapeでオブジェクトを作成する前に色を設定したい</title>
+      <link>https://kantas-spike.github.io/portfolio/til/2023/03/48-set-color-to-object-with-inkscape/</link>
+      <pubDate>Tue, 14 Mar 2023 12:05:30 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/til/2023/03/48-set-color-to-object-with-inkscape/</guid>
+      <description>&lt;p&gt;Inkscapeで矩形などのオブジェクトを配置する際に、配置してから色を設定するのではなく、事前にオブジェクトの色を設定しておきたい。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>kantas-theme</title>
       <link>https://kantas-spike.github.io/portfolio/ihc/kantas_theme/</link>
       <pubDate>Sat, 18 Feb 2023 01:18:21 +0000</pubDate>
