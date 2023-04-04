@@ -9,12 +9,22 @@
     <copyright>© 2022 kanta&#39;s spike</copyright>
     <lastBuildDate>Fri, 22 Jul 2022 08:24:06 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Siriに天気を尋ねたい</title>
+      <title>「プログラミング演習 Python 2021」を学ぶ</title>
+      <link>https://kantas-spike.github.io/portfolio/blog/2023/04/13-learn-programming-practice-python-2021/</link>
+      <pubDate>Wed, 05 Apr 2023 02:16:01 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/blog/2023/04/13-learn-programming-practice-python-2021/</guid>
+      <description>&lt;p&gt;京都大学が無料公開しているPythonの教科書『&lt;a href=&#34;https://repository.kulib.kyoto-u.ac.jp/dspace/handle/2433/265459&#34;&gt;プログラミング演習 Python 2021&lt;/a&gt;』の存在を知りました。&lt;/p&gt;
+&lt;p&gt;ありがとうございます。京都大学!! この演習をやっていきたいと思います。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Siriに天気を聞きたい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/03/52-using-wether-forecast-with-siri/</link>
       <pubDate>Tue, 14 Mar 2023 22:14:09 +0900</pubDate>
       
       <guid>https://kantas-spike.github.io/portfolio/til/2023/03/52-using-wether-forecast-with-siri/</guid>
-      <description>&lt;p&gt;Siriに天気を尋ねたい。&lt;/p&gt;</description>
+      <description>&lt;p&gt;Siriに天気を聞きたい。&lt;/p&gt;</description>
     </item>
     
     <item>
