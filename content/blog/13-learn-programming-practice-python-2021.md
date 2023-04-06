@@ -47,6 +47,15 @@ tags:
 プログラミングの学習は、外国語や数学と似ているそうだ。動機付けと沢山の読み書きが重要。
 実際に手を動かして、プログラムを作成し、実際にプログラムを動かしながら学ぶ必要がある。
 
+#### 2. Pythonの実行環境と使い方
+
+読んだ。
+
+IDLEを使った開発環境について説明されていた。
+私はmacOSでVsCocdeを利用しているので、IDLEは使用しないので、あまり関係なかった。
+
+ただ、macOSでは、Tkinterやmatplotlibを利用する時に、環境設定が必要であることを教えてくれた。
+
 ### 参考
 
 - [Kyoto University Research Information Repository: プログラミング演習 Python 2021](https://repository.kulib.kyoto-u.ac.jp/dspace/handle/2433/265459)
