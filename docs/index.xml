@@ -9,6 +9,15 @@
     <copyright>© 2022 kanta&#39;s spike</copyright>
     <lastBuildDate>Fri, 22 Jul 2022 08:24:06 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Kindle.appで指定した購入済み書籍を直接開きたい</title>
+      <link>https://kantas-spike.github.io/portfolio/til/2023/04/53-open-book-by-kindle-app/</link>
+      <pubDate>Tue, 25 Apr 2023 17:54:10 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/til/2023/04/53-open-book-by-kindle-app/</guid>
+      <description>&lt;p&gt;macOSのKindle.appで指定した購入済み書籍を直接開きたい。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>「プログラミング演習 Python 2021」を学ぶ</title>
       <link>https://kantas-spike.github.io/portfolio/blog/2023/04/13-learn-programming-practice-python-2021/</link>
       <pubDate>Wed, 05 Apr 2023 02:16:01 +0900</pubDate>
