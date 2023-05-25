@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>© 2022 kanta&#39;s spike</copyright>
-    <lastBuildDate>Thu, 16 Feb 2023 08:44:35 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 26 May 2023 00:44:53 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugoでtailwindcssを使いたい</title>
+      <link>https://kantas-spike.github.io/portfolio/til/2023/05/13-hugo-with-tailwindcss/</link>
+      <pubDate>Fri, 26 May 2023 00:44:53 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/til/2023/05/13-hugo-with-tailwindcss/</guid>
+      <description>&lt;p&gt;Hugoで&lt;strong&gt;PostCSS&lt;/strong&gt;のプラグインとして&lt;strong&gt;tailwindcss&lt;/strong&gt;を使いたい。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Jupyter Notebookを使う</title>
       <link>https://kantas-spike.github.io/portfolio/blog/2023/02/12-use-jupyter-notebook/</link>
@@ -117,15 +126,6 @@
       
       <guid>https://kantas-spike.github.io/portfolio/til/2022/08/22-introducing-vue/</guid>
       <description>&lt;p&gt;今後ブログに検索機能などを追加したいので、Hugoに &lt;code&gt;Vue.js&lt;/code&gt; を導入したい。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Hugoでtailwindcssを使いたい</title>
-      <link>https://kantas-spike.github.io/portfolio/til/2022/07/13-hugo-with-tailwindcss/</link>
-      <pubDate>Wed, 27 Jul 2022 10:44:53 +0900</pubDate>
-      
-      <guid>https://kantas-spike.github.io/portfolio/til/2022/07/13-hugo-with-tailwindcss/</guid>
-      <description>&lt;p&gt;Hugoで&lt;strong&gt;PostCSS&lt;/strong&gt;のプラグインとして&lt;strong&gt;tailwindcss&lt;/strong&gt;を使いたい。&lt;/p&gt;</description>
     </item>
     
     <item>

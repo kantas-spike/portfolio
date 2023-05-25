@@ -4,7 +4,7 @@
         Hugoでtailwindcssを使いたい | kanta&#39;s spike
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://kantas-spike.github.io/portfolio/css/theme.min.e4578fb5da523cf8f4972e8e5cda9a632e000f820656eda262e9d457927ac17a.css">
+    <link rel="stylesheet" href="https://kantas-spike.github.io/portfolio/css/theme.min.415a243d36764902d66d2a79ad034dd3d42503f460768a4c17dc5b284267ce67.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" /><link rel="stylesheet" href="https://kantas-spike.github.io/portfolio/css/syntax.min.70c02160dee6bd55baaa2b10019d735294451730e282f7fa645466392ba0cfb6.css"><link rel="apple-touch-icon" sizes="180x180" href="https://kantas-spike.github.io/portfolio/icon180.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://kantas-spike.github.io/portfolio/icon32.png">
 <link rel="icon" type="image/svg+xml" href="https://kantas-spike.github.io/portfolio/icon.svg">
@@ -51,7 +51,7 @@
 
 
 <div class="mb-4">
-    <h3 class="border-b-2 border-primary text-primary-dark text-xl font-bold"><i class="fa-solid fa-note-sticky"></i> <a href="https://kantas-spike.github.io/portfolio/til/2022/07/13-hugo-with-tailwindcss/">Hugoでtailwindcssを使いたい</a></h3>
+    <h3 class="border-b-2 border-primary text-primary-dark text-xl font-bold"><i class="fa-solid fa-note-sticky"></i> <a href="https://kantas-spike.github.io/portfolio/til/2023/05/13-hugo-with-tailwindcss/">Hugoでtailwindcssを使いたい</a></h3>
     <div class="flex justify-between mt-1 mx-2">
         <div>
             <ul class="flex gap-2 justify-end">
@@ -63,7 +63,7 @@
             </ul>
         </div>
         <div>
-            <div class="text-right text-sm font-bold">2022/07/27</div>
+            <div class="text-right text-sm font-bold">2023/05/26</div>
         </div>
     </div>
 </div>
@@ -126,12 +126,12 @@
 </span></span></code></pre></div><p>サイト生成時は、<code>webpack</code>を実行後に<code>hugo</code>を実行する。</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">webpack
 </span></span><span class="line"><span class="cl">hugo --cleanDestinationDir
-</span></span></code></pre></div><h4 id="方法2-hugoのpostcss機能を利用する">方法2: Hugoの<strong>PostCSS</strong>機能を利用する</h4>
+</span></span></code></pre></div><h4 id="方法2-hugoのpostcss機能とresourcesexecuteastemplateを利用するhugo-v01113以前">方法2: Hugoの<strong>PostCSS</strong>機能と<strong>resources.ExecuteAsTemplate</strong>を利用する(Hugo v0.111.3以前)</h4>
 <p>Hugoには、リソースとして、<code>assets</code>フォルダに格納した<code>css</code>ファイルを取得し、<strong>resources.PostCSS</strong>関数により変換する機能がある。</p>
 <p>この機能を利用すれば、<strong>PostCSS</strong>をプリプロセッサにして<strong>tailwindcss</strong>を利用できる。</p>
 <p>しかし、<strong>tailwindcss</strong> は、設定ファイルの<code>content</code>に指定されたCSSファイルやHTMLファイルを解析し、使用されているユーティリティクラスのみ抽出しCSSファイルに保存する。
 そのため、解析対象のCSSファイルやHTMLファイルが更新されるたびに、<strong>PostCSS</strong>関数を実行する必要がある。</p>
-<p>ただ、Hugoの<strong>PostCSS</strong>関数は、インプットのCSSファイルに変更がなければ処理を行わないため、たとえ解析対象のファイルが更新されたとしても、<strong>PostCSS</strong>関数が実行されないため、CSSファイルが処理されない。</p>
+<p>ただ、たとえ解析対象のファイルが更新されたとしても、CSSファイルが既にHugoにキャッシュされているため、CSSファイルの更新を検知できず、<strong>PostCSS</strong>関数はCSSファイルを処理できない。</p>
 <p>そこで、<a href="https://gohugo.io/hugo-pipes/resource-from-template/">resources.ExecuteAsTemplate</a> 関数を使い、開発時は画面更新毎に、擬似的にCSSファイル名を変更させて、
 毎回、強制的に<strong>PostCSS</strong>関数が実行されるようにする。</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">    {{- $css := resources.Get &#34;css/theme.css&#34; -}}
@@ -142,7 +142,85 @@
 </span></span><span class="line"><span class="cl">            | resources.PostCSS }}
 </span></span><span class="line"><span class="cl">    {{- end }}
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;{{ $css.RelPermalink }}&#34;</span><span class="p">&gt;</span>
-</span></span></code></pre></div><h4 id="参考-resourcesexecuteastemplate-について">参考 resources.ExecuteAsTemplate について</h4>
+</span></span></code></pre></div><h4 id="方法3-hugoのpostcss機能とnew-cache-busterを利用するhugo-v01120以降">方法3: Hugoの<strong>PostCSS</strong>機能と<strong>new cache buster</strong>を利用する(Hugo v0.112.0以降)</h4>
+<p><a href="https://github.com/gohugoio/hugo/releases/tag/v0.112.0">Hugo Release v0.112.0</a>で、<code>TailwindCSS v3.x Support, new cache buster configuration</code>という機能が追加された。</p>
+<p>これは、既に存在する<code>CSS purging with PostCSS</code>のための仕組みである<code>hugo_stats.json</code>を利用し、ページ変更にともなうCSSファイルの変更要否を検知し、
+変更要の場合は、CSSファイルをHugoのキャッシュから削除し、<strong>PostCSS</strong>関数で再度CSSファイルを処理するようにする方法である。</p>
+<p>この方法を利用すると、CSSファイルの読み込みは以下のようにシンプルになる。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">    {{- $css := resources.Get &#34;css/theme.css&#34; -}}
+</span></span><span class="line"><span class="cl">    {{- $css := $css | resources.PostCSS -}}
+</span></span><span class="line"><span class="cl">    {{- if hugo.IsProduction }}
+</span></span><span class="line"><span class="cl">        {{- $css = $css | resources.Minify | resources.Fingerprint }}
+</span></span><span class="line"><span class="cl">    {{- end }}
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;{{ $css.RelPermalink }}&#34;</span><span class="p">&gt;</span>
+</span></span></code></pre></div><p>設定手順は以下になる。</p>
+<ol>
+<li>
+<p><code>hugo_hugo_stats.json</code>を出力するように<code>config.toml</code>を修正</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="c"># config.toml or hugo.toml</span>
+</span></span><span class="line"><span class="cl"><span class="c">#  ... 略 ...</span>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">build</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="c"># 手順1. hugo_hugo_stats.jsonを出力</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">writeStats</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl"><span class="c">#  ... 略 ...</span>
+</span></span></code></pre></div></li>
+<li>
+<p><code>tailwindc.config.js</code>の<code>content</code>設定に<code>hugo_hugo_stats.json</code>を追加</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="c1">// tailwindc.config.js
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">path</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;path&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">theme_dir</span> <span class="o">=</span> <span class="nx">path</span><span class="p">.</span><span class="nx">basename</span><span class="p">(</span><span class="nx">__dirname</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1">//  ... 略 ...
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">// 手順2. `content`設定に`hugo_hugo_stats.json`を追加
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="nx">content</span><span class="o">:</span> <span class="p">[</span><span class="sb">`./hugo_stats.json`</span><span class="p">,</span> <span class="sb">`./themes/</span><span class="si">${</span><span class="nx">theme_dir</span><span class="si">}</span><span class="sb">/assets/**/*.{js,css}`</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl"><span class="c1">//  ... 略 ...
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
+</span></span></code></pre></div></li>
+<li>
+<p>Hugoで<code>hugo_hugo_stats.json</code>を監視するために、Assetとしてマウントするように<code>config.toml</code>を修正 <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="c"># config.toml or hugo.toml</span>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">module</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="p">[[</span><span class="nx">module</span><span class="p">.</span><span class="nx">mounts</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl">    <span class="c"># 手順3. hugo_stats.jsonをmountし、Hugoの監視対象に</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">source</span> <span class="p">=</span> <span class="s2">&#34;hugo_stats.json&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">target</span> <span class="p">=</span> <span class="s2">&#34;assets/watching/hugo_stats.json&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">#  ... 略 ...</span>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">build</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="c"># 手順1. hugo_hugo_stats.jsonを出力</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">writeStats</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl"><span class="c">#  ... 略 ...</span>
+</span></span></code></pre></div></li>
+<li>
+<p><code>hugo_hugo_stats.json</code>の更新を検知したら、<code>theme.css</code>をキャッシュから外すように<code>cachebusters</code>に設定する</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="c"># config.toml or hugo.toml</span>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">module</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="p">[[</span><span class="nx">module</span><span class="p">.</span><span class="nx">mounts</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl">    <span class="c"># 手順3. hugo_stats.jsonをmountし、Hugoの監視対象に</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">source</span> <span class="p">=</span> <span class="s2">&#34;hugo_stats.json&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">target</span> <span class="p">=</span> <span class="s2">&#34;assets/watching/hugo_stats.json&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">#  ... 略 ...</span>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">build</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="c"># 手順1. hugo_hugo_stats.jsonを出力</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">writeStats</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">  <span class="p">[[</span><span class="nx">build</span><span class="p">.</span><span class="nx">cachebusters</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl">    <span class="c"># 手順4. hugo_stats.jsonに変更があれば、theme.cssを更新する</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">source</span> <span class="p">=</span> <span class="s2">&#34;assets/watching/hugo_stats\\.json&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">target</span> <span class="p">=</span> <span class="s2">&#34;theme\\.css&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="c">#  ... 略 ...</span>
+</span></span></code></pre></div></li>
+</ol>
+<p>以上の設定後に、<code>--debug</code>オプション付きでHugoのサーバーを起動すると、コンソールにログが出力される。
+そのなかの<code>cachebusterl:</code>というプレフィックスのログメッセージを確認すると<code>hugo_stats.json</code>の監視状況を確認できる。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">hugo server --debug
+</span></span></code></pre></div><p>また、実際の<code>tailwind.config.js</code>や<code>config.toml</code>の例は以下を参照のこと。</p>
+<ul>
+<li><a href="https://github.com/kantas-spike/kantas-theme/blob/main/tailwind.config.js">kantas-theme/tailwind.config.js at main · kantas-spike/kantas-theme</a></li>
+<li><a href="https://github.com/kantas-spike/portfolio/blob/main/config.toml">portfolio/config.toml at main · kantas-spike/portfolio</a></li>
+</ul>
+<h4 id="参考-resourcesexecuteastemplate-について">参考 resources.ExecuteAsTemplate について</h4>
 <p>本来、<a href="https://gohugo.io/hugo-pipes/resource-from-template/">resources.ExecuteAsTemplate</a> 関数は、
 ロジックを含むテンプレートファイルを処理するための関数である。</p>
 <p>例えば、以下のような<code>test.css.tmpl</code>を、</p>
@@ -163,7 +241,16 @@
 </ul>
 </li>
 <li><a href="https://www.brycewray.com/posts/2022/03/making-tailwind-jit-work-hugo-version-3-edition/">Making Tailwind JIT work with Hugo, the Version 3 edition</a></li>
+<li><a href="https://github.com/gohugoio/hugo/releases/tag/v0.112.0">Release v0.112.0 · gohugoio/hugo</a></li>
 </ul>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>Hugoの初回起動時は<code>hugo_stats.json</code>が存在しないため、<code>hugo_stats.json</code>をマウントできない。あらかじめ空の<code>hugo_stats.json</code>を作成するか、再度Hugoを起動する必要がある。&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
     </div>
 </div>
 

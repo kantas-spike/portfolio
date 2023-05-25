@@ -9,6 +9,15 @@
     <copyright>© 2022 kanta&#39;s spike</copyright>
     <lastBuildDate>Fri, 22 Jul 2022 08:15:27 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/til/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Hugoでtailwindcssを使いたい</title>
+      <link>https://kantas-spike.github.io/portfolio/til/2023/05/13-hugo-with-tailwindcss/</link>
+      <pubDate>Fri, 26 May 2023 00:44:53 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/til/2023/05/13-hugo-with-tailwindcss/</guid>
+      <description>&lt;p&gt;Hugoで&lt;strong&gt;PostCSS&lt;/strong&gt;のプラグインとして&lt;strong&gt;tailwindcss&lt;/strong&gt;を使いたい。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Kindle.appで指定した購入済み書籍を直接開きたい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/04/53-open-book-by-kindle-app/</link>
       <pubDate>Tue, 25 Apr 2023 17:54:10 +0900</pubDate>
@@ -351,15 +360,6 @@
       
       <guid>https://kantas-spike.github.io/portfolio/til/2022/07/14-good-commit-message/</guid>
       <description>&lt;p&gt;良いコミットメッセージを書きたい。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Hugoでtailwindcssを使いたい</title>
-      <link>https://kantas-spike.github.io/portfolio/til/2022/07/13-hugo-with-tailwindcss/</link>
-      <pubDate>Wed, 27 Jul 2022 10:44:53 +0900</pubDate>
-      
-      <guid>https://kantas-spike.github.io/portfolio/til/2022/07/13-hugo-with-tailwindcss/</guid>
-      <description>&lt;p&gt;Hugoで&lt;strong&gt;PostCSS&lt;/strong&gt;のプラグインとして&lt;strong&gt;tailwindcss&lt;/strong&gt;を使いたい。&lt;/p&gt;</description>
     </item>
     
     <item>

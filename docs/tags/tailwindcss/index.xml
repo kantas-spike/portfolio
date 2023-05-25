@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>© 2022 kanta&#39;s spike</copyright>
-    <lastBuildDate>Sun, 28 Aug 2022 10:52:51 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/tailwindcss/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 26 May 2023 00:44:53 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/tailwindcss/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugoでtailwindcssを使いたい</title>
+      <link>https://kantas-spike.github.io/portfolio/til/2023/05/13-hugo-with-tailwindcss/</link>
+      <pubDate>Fri, 26 May 2023 00:44:53 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/til/2023/05/13-hugo-with-tailwindcss/</guid>
+      <description>&lt;p&gt;Hugoで&lt;strong&gt;PostCSS&lt;/strong&gt;のプラグインとして&lt;strong&gt;tailwindcss&lt;/strong&gt;を使いたい。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>tailwindcss で Responsive Design したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2022/08/26-responsive-with-tailwindcss/</link>
@@ -15,15 +24,6 @@
       
       <guid>https://kantas-spike.github.io/portfolio/til/2022/08/26-responsive-with-tailwindcss/</guid>
       <description>&lt;p&gt;tailwindcss で Responsive なデザインをしたい。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Hugoでtailwindcssを使いたい</title>
-      <link>https://kantas-spike.github.io/portfolio/til/2022/07/13-hugo-with-tailwindcss/</link>
-      <pubDate>Wed, 27 Jul 2022 10:44:53 +0900</pubDate>
-      
-      <guid>https://kantas-spike.github.io/portfolio/til/2022/07/13-hugo-with-tailwindcss/</guid>
-      <description>&lt;p&gt;Hugoで&lt;strong&gt;PostCSS&lt;/strong&gt;のプラグインとして&lt;strong&gt;tailwindcss&lt;/strong&gt;を使いたい。&lt;/p&gt;</description>
     </item>
     
   </channel>

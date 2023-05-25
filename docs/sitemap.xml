@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/hugo/</loc>
+    <lastmod>2023-05-26T00:44:53+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/til/2023/05/13-hugo-with-tailwindcss/</loc>
+    <lastmod>2023-05-26T00:44:53+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/</loc>
+    <lastmod>2023-05-26T00:44:53+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/tailwindcss/</loc>
+    <lastmod>2023-05-26T00:44:53+09:00</lastmod>
+  </url><url>
     <loc>https://kantas-spike.github.io/portfolio/ihc/kantas_theme/</loc>
     <lastmod>2023-05-25T10:27:16+00:00</lastmod>
   </url><url>
@@ -9,9 +21,6 @@
     <lastmod>2023-05-25T09:13:56+00:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/chatgpt/</loc>
-    <lastmod>2023-05-12T23:25:58+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/</loc>
     <lastmod>2023-05-12T23:25:58+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/dialogue/04-buddy/</loc>
@@ -73,9 +82,6 @@
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2023/02/47-use-poetry/</loc>
     <lastmod>2023-02-17T07:20:29+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/hugo/</loc>
-    <lastmod>2023-02-16T08:44:35+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/jupyter/</loc>
     <lastmod>2023-02-16T08:44:35+09:00</lastmod>
@@ -257,9 +263,6 @@
     <loc>https://kantas-spike.github.io/portfolio/til/2022/08/27-filter-pages-with-hugo/</loc>
     <lastmod>2022-08-29T13:51:51+09:00</lastmod>
   </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/tailwindcss/</loc>
-    <lastmod>2022-08-28T10:52:51+09:00</lastmod>
-  </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2022/08/26-responsive-with-tailwindcss/</loc>
     <lastmod>2022-08-28T10:52:51+09:00</lastmod>
   </url><url>
@@ -328,9 +331,6 @@
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2022/07/14-good-commit-message/</loc>
     <lastmod>2022-07-27T17:58:10+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/til/2022/07/13-hugo-with-tailwindcss/</loc>
-    <lastmod>2022-07-27T10:44:53+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/tool/</loc>
     <lastmod>2022-07-25T11:32:58+09:00</lastmod>
