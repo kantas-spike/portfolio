@@ -1,14 +1,14 @@
 {
     "title": "kantas-theme",
-    "date": "2023-02-18T01:18:21Z",
+    "date": "2023-05-25T10:27:16Z",
     "draft": false,
     "repo": {
         "name": "kantas-theme",
         "full_name": "kantas-spike/kantas-theme",
         "html_url": "https://github.com/kantas-spike/kantas-theme",
         "description": "Hugo theme for programming learner portfolio",
-        "size": 231,
-        "pushed_at": "2023-02-18T01:18:21Z",
+        "size": 233,
+        "pushed_at": "2023-05-25T10:27:16Z",
         "project_type": "ihc",
         "langs": [
             "HTML",
@@ -16,6 +16,16 @@
             "JavaScript"
         ],
         "merged": [
+            {
+                "html_url": "https://github.com/kantas-spike/kantas-theme/pull/36",
+                "title": "feat: TailwindCSS\u306e\u66f4\u65b0\u306f`cache buster configuration`\u306e\u5229\u7528\u3092\u524d\u63d0\u306b(fix: #35)",
+                "state": "closed",
+                "body": "Hugo v0.112.0\u3067\u5c0e\u5165\u3055\u308c\u305f`new cache buster configuration`\u3092\u5229\u7528\u3057\u3066 `TailwindCSS`\u3092\u5229\u7528\u3057\u305fcss\u3092\u66f4\u65b0\u3059\u308b\u3088\u3046\u306b\u5909\u66f4\u3002\r\n\r\nref: https://github.com/gohugoio/hugo/releases/tag/v0.112.0\r\n\r\n\u305f\u3060\u3057\u3001[build]\u3084[module]\u306e\u8a2d\u5b9a\u306f`theme.toml`\u3067\u306f\u8a2d\u5b9a\u3067\u304d\u306a\u3044\u306e\u3067\u3001\r\n\u30b5\u30a4\u30c8\u306e\u8a2d\u5b9a\u30d5\u30a1\u30a4\u30eb(`config.toml`or `hugo.toml`)\u3067\u8a2d\u5b9a\u3059\u308b\u3002",
+                "created_at": "2023-05-25T10:26:07Z",
+                "merged_at": "2023-05-25T10:27:11Z",
+                "closed_at": "2023-05-25T10:27:11Z",
+                "user": "kantas-spike"
+            },
             {
                 "html_url": "https://github.com/kantas-spike/kantas-theme/pull/34",
                 "title": "feat: \u554f\u7b54\u306eQ&A\u7528\u306eMarkdown Render Hooks\u3092\u8ffd\u52a0 (fix: #33)",
