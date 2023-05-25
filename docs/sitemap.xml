@@ -2,13 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/chatgpt/</loc>
-    <lastmod>2023-05-12T15:50:07+09:00</lastmod>
+    <loc>https://kantas-spike.github.io/portfolio/ihc/kantas_theme/</loc>
+    <lastmod>2023-05-25T10:27:16+00:00</lastmod>
   </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/english/</loc>
-    <lastmod>2023-05-12T15:50:07+09:00</lastmod>
+    <loc>https://kantas-spike.github.io/portfolio/mytools/repo_info.py/</loc>
+    <lastmod>2023-05-25T09:13:56+00:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/chatgpt/</loc>
+    <lastmod>2023-05-12T23:25:58+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/</loc>
+    <lastmod>2023-05-12T23:25:58+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/dialogue/04-buddy/</loc>
+    <lastmod>2023-05-12T23:25:58+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/english/</loc>
     <lastmod>2023-05-12T15:50:07+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/dialogue/03-shissoukan/</loc>
@@ -49,9 +58,6 @@
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2023/03/48-set-color-to-object-with-inkscape/</loc>
     <lastmod>2023-03-14T12:05:30+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/ihc/kantas_theme/</loc>
-    <lastmod>2023-02-18T01:18:21+00:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/copyright/</loc>
     <lastmod>2023-02-17T11:58:17+09:00</lastmod>
@@ -142,9 +148,6 @@
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/dialogue/01-tell-me-font-family/</loc>
     <lastmod>2023-02-02T15:33:58+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/mytools/repo_info.py/</loc>
-    <lastmod>2023-02-02T06:18:17+00:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/mytools/add_article.py/</loc>
     <lastmod>2023-02-02T04:16:35+00:00</lastmod>

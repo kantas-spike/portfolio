@@ -1,6 +1,18 @@
 {
     "results": [
     {
+        "href": "https://kantas-spike.github.io/portfolio/ihc/kantas_theme/",
+        "title": "kantas-theme"
+    },
+    {
+        "href": "https://kantas-spike.github.io/portfolio/mytools/repo_info.py/",
+        "title": "repo-info.py"
+    },
+    {
+        "href": "https://kantas-spike.github.io/portfolio/dialogue/04-buddy/",
+        "title": "名コンビといえば?"
+    },
+    {
         "href": "https://kantas-spike.github.io/portfolio/dialogue/03-shissoukan/",
         "title": "疾走感のある曲を検索したい"
     },
@@ -23,10 +35,6 @@
     {
         "href": "https://kantas-spike.github.io/portfolio/til/2023/03/48-set-color-to-object-with-inkscape/",
         "title": "Inkscapeでオブジェクトを作成する前に色を設定したい"
-    },
-    {
-        "href": "https://kantas-spike.github.io/portfolio/ihc/kantas_theme/",
-        "title": "kantas-theme"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/dialogue/02-tell-me-howto-write-copyright/",
@@ -83,10 +91,6 @@
     {
         "href": "https://kantas-spike.github.io/portfolio/dialogue/01-tell-me-font-family/",
         "title": "古い看板に使うようなフォントファミリーを教えて"
-    },
-    {
-        "href": "https://kantas-spike.github.io/portfolio/mytools/repo_info.py/",
-        "title": "repo-info.py"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/mytools/add_article.py/",
