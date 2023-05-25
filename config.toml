@@ -19,3 +19,14 @@ publishDir = "docs"
 
 [markup.highlight]
   noClasses = false
+
+[module]
+  [[module.mounts]]
+    source = "hugo_stats.json"
+    target = "assets/watching/hugo_stats.json"
+
+[build]
+  writeStats = true
+  [[build.cachebusters]]
+    source = "assets/watching/hugo_stats\\.json"
+    target = "theme\\.css"
