@@ -236,7 +236,7 @@ hugo server --debug
 ### 参考
 
 - [PostCSS | Hugo](https://gohugo.io/hugo-pipes/postcss/#readout)
-- [Creating a resource from template | Hugo ](https://gohugo.io/hugo-pipes/resource-from-template/)
+- [Creating a resource from template | Hugo](https://gohugo.io/hugo-pipes/resource-from-template/)
 - [tailwindcss](https://tailwindcss.com/docs/installation)
   - [Using PostCSS as your preprocessor | tailwindcss](https://tailwindcss.com/docs/using-with-preprocessors#using-post-css-as-your-preprocessor)
 - [Making Tailwind JIT work with Hugo, the Version 3 edition](https://www.brycewray.com/posts/2022/03/making-tailwind-jit-work-hugo-version-3-edition/)
