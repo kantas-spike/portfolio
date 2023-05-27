@@ -30,3 +30,6 @@ publishDir = "docs"
   [[build.cachebusters]]
     source = "assets/watching/hugo_stats\\.json"
     target = "theme\\.css"
+  [[build.cachebusters]]
+    source = "assets/js/.*\\.js"
+    target = "theme\\.css"
