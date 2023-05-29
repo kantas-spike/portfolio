@@ -1,12 +1,12 @@
 {
     "results": [
     {
-        "href": "https://kantas-spike.github.io/portfolio/til/2023/05/54-introducing-react/",
-        "title": "Reactを導入したい"
+        "href": "https://kantas-spike.github.io/portfolio/til/2023/05/55-sort-articles-by-lastmod-on-hugo/",
+        "title": "Hugoで記事を更新日時でソートしたい"
     },
     {
-        "href": "https://kantas-spike.github.io/portfolio/til/2023/05/13-hugo-with-tailwindcss/",
-        "title": "Hugoでtailwindcssを使いたい"
+        "href": "https://kantas-spike.github.io/portfolio/til/2023/05/54-introducing-react/",
+        "title": "Reactを導入したい"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/ihc/kantas_theme/",
@@ -259,6 +259,10 @@
     {
         "href": "https://kantas-spike.github.io/portfolio/til/2022/07/14-good-commit-message/",
         "title": "良いコミットメッセージを書きたい"
+    },
+    {
+        "href": "https://kantas-spike.github.io/portfolio/til/2022/07/13-hugo-with-tailwindcss/",
+        "title": "Hugoでtailwindcssを使いたい"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/blog/2022/07/03-how-to-learn-git/",
