@@ -98,6 +98,7 @@ tags:
 ### 参考
 
 - [React](https://react.dev/)
+  - [Quick Start – React](https://react.dev/learn)
   - [Add React to an Existing Project – React](https://react.dev/learn/add-react-to-an-existing-project)
 - [js.Build | Hugo](https://gohugo.io/hugo-pipes/js/)
 - [ESBuild Live Reloading - HUGO](https://discourse.gohugo.io/t/esbuild-live-reloading/30152/7)
