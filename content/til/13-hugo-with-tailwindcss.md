@@ -1,6 +1,7 @@
 ---
 title: "Hugoでtailwindcssを使いたい"
-date: 2023-05-26T00:44:53+09:00
+date: 2022-07-27T10:44:53+09:00
+lastmod: 2023-05-26T00:44:53+09:00
 draft: false
 tags:
 - hugo
