@@ -7819,13 +7819,24 @@
   // <stdin>
   var React = __toESM(require_react());
   var import_client = __toESM(require_client());
-  function MyButton() {
-    return /* @__PURE__ */ React.createElement("button", { className: "hover:bg-blue-500 bg-blue-700 text-white font-bold py-2 px-4 rounded m-4 outline-none shadow-lg active:scale-95 transition-transform" }, "I'm a button");
+  function MyModal({ show, close, children }) {
+    if (show) {
+      return /* @__PURE__ */ React.createElement("div", { id: "modal-overlay", onClick: close, className: "fixed top-0 left-0 w-full h-full bg-black/70 flex flex-col justify-center items-center z-10" }, /* @__PURE__ */ React.createElement("div", { onClick: (e) => e.stopPropagation(), className: "bg-slate-100 w-2/6 h-4/6 shadow-lg rounded-md flex flex-col items-center content-center justify-center" }, children, /* @__PURE__ */ React.createElement("p", null, /* @__PURE__ */ React.createElement("button", { onClick: close, className: "hover:bg-blue-500 bg-blue-700 text-white font-bold py-2 px-4 rounded m-4 outline-none shadow-lg active:scale-95 transition-transform" }, "Close"))));
+    } else {
+      return null;
+    }
   }
   function MyApp() {
-    return /* @__PURE__ */ React.createElement("div", { className: "bg-stone-200 rounded-md m-4 p-2 text-center font-bold" }, /* @__PURE__ */ React.createElement("h1", null, "Welcome to my app!!!"), /* @__PURE__ */ React.createElement(MyButton, null));
+    const [show, setShow] = React.useState(false);
+    const openModal = () => {
+      setShow(true);
+    };
+    const closeModal = () => {
+      setShow(false);
+    };
+    return /* @__PURE__ */ React.createElement("div", { className: "bg-stone-200 rounded-md m-4 p-2 text-center" }, /* @__PURE__ */ React.createElement("h1", null, "Welcom to my modal window!!!"), /* @__PURE__ */ React.createElement("button", { onClick: openModal, className: "hover:bg-blue-500 bg-blue-700 text-white font-bold py-2 px-4 rounded m-4 outline-none shadow-lg active:scale-95 transition-transform" }, "Open"), /* @__PURE__ */ React.createElement(MyModal, { show, close: closeModal }, /* @__PURE__ */ React.createElement("h1", { className: "text-lg font-bold" }, "\u3053\u308C\u304C\u30E2\u30FC\u30C0\u30EB\u30A6\u30A3\u30F3\u30C9\u30A6\u3067\u3059!!"), /* @__PURE__ */ React.createElement("p", { className: "" }, '"Close"\u30DC\u30BF\u30F3\u3092\u30AF\u30EA\u30C3\u30AF\u3068\u30E2\u30FC\u30C0\u30EB\u30A6\u30A3\u30F3\u30C9\u30A6\u3092\u9589\u3058\u307E\u3059\u3002', /* @__PURE__ */ React.createElement("br", null), "\u307E\u305F\u3001\u534A\u900F\u660E\u306E\u80CC\u666F\u3092\u30AF\u30EA\u30C3\u30AF\u3057\u3066\u3082\u30E2\u30FC\u30C0\u30EB\u30A6\u30A3\u30F3\u30C9\u30A6\u3092\u9589\u3058\u307E\u3059\u3002")));
   }
-  var container = document.getElementById("app");
+  var container = document.getElementById("modal-point");
   var root = (0, import_client.createRoot)(container);
   root.render(/* @__PURE__ */ React.createElement(MyApp, null));
 })();

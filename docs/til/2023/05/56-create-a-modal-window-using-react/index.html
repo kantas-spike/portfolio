@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html><head>
     <title>
-        Reactを導入したい | kanta&#39;s spike
+        Reactを使ってモーダルウィンドウを作成する | kanta&#39;s spike
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://kantas-spike.github.io/portfolio/css/theme.min.6327bb621fd4deddacaa58ffd64191ac25dba8c8f2b9f0f7fb0284ed49945fcd.css">
@@ -51,118 +51,102 @@
 
 
 <div class="mb-4">
-    <h3 class="border-b-2 border-primary text-primary-dark text-xl font-bold"><i class="fa-solid fa-note-sticky"></i> <a href="https://kantas-spike.github.io/portfolio/til/2023/05/54-introducing-react/">Reactを導入したい</a></h3>
+    <h3 class="border-b-2 border-primary text-primary-dark text-xl font-bold"><i class="fa-solid fa-note-sticky"></i> <a href="https://kantas-spike.github.io/portfolio/til/2023/05/56-create-a-modal-window-using-react/">Reactを使ってモーダルウィンドウを作成する</a></h3>
     <div class="flex justify-between mt-1 mx-2">
         <div>
             <ul class="flex gap-2 justify-end">
             
             <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/react/">#react</a></li>
             
-            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/hugo/">#hugo</a></li>
-            
             </ul>
         </div>
         <div>
             
-            <div class="text-right text-sm font-bold">2023/05/26</div>
+            <div class="text-right text-sm font-bold">2023/05/30</div>
             
         </div>
     </div>
 </div>
 
     <div class="article mx-2">
-        <p>今後ブログに検索機能などを追加したいので、Hugoに <a href="https://react.dev/">React</a> を導入したい。</p>
-<p>以前、<a href="https://kantas-spike.github.io/portfolio/til/2022/08/22-introducing-vue/">HugoにVue.jsを導入する方法</a>について学んだ。</p>
-<p>しかし、Hugo標準で<code>vue</code>のテンプレートに対応していないため、テンプレートを<code>&lt;script type=&quot;x-template&quot;/&gt;</code>内に記載するというトリッキーな方法で実現した。</p>
-<p>一方、<a href="https://react.dev/">React</a>は、<a href="https://gohugo.io/hugo-pipes/js/">js.Build</a>を利用すれば、Hugo標準機能で利用できるようだ。</p>
+        <p>Reactを使ってモーダルウィンドウを作成したい。</p>
 <h3 id="解決策">解決策</h3>
-<p>以下の方法を採用する。</p>
-<ul>
-<li>npmで<code>React</code>を導入する</li>
-<li><a href="https://gohugo.io/hugo-pipes/js/">js.Build</a>を使って<code>js</code>や<code>jsx</code>ファイルを処理する</li>
-</ul>
+<p><a href="https://reffect.co.jp/react/react-modal">Reactの基礎を学ぶのにモーダルウィンドウはいい教材 | アールエフェクト</a>の記事を参考にモーダルウィンドウを作成する。</p>
 <p>手順は以下となる。</p>
 <ol>
 <li>
-<p>まず、<code>react</code>と<code>react-dom</code>をインストール</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">npm install --save react react-dom
-</span></span></code></pre></div></li>
-<li>
-<p>次に、<code>React</code>で作成したUIを配置する場所を作成する。</p>
+<p>モーダルウィンドウを表示するアプリの配置場所を定義する</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">~~~rawhtml
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;app&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;modal-point&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">~~~
 </span></span></code></pre></div></li>
 <li>
-<p><code>assets/js/hello-react.jsx</code>を作成する</p>
+<p>モーダルウィンドウを表示するアプリ(<code>assets/js/hello-react-modal.jsx</code>)を作成する</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="kr">import</span> <span class="o">*</span> <span class="nx">as</span> <span class="nx">React</span> <span class="nx">from</span> <span class="s1">&#39;react&#39;</span>
 </span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">createRoot</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;react-dom/client&#39;</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">MyButton</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="kr">export</span> <span class="kd">function</span> <span class="nx">MyModal</span><span class="p">({</span><span class="nx">show</span><span class="p">,</span> <span class="nx">close</span><span class="p">,</span> <span class="nx">children</span><span class="p">})</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="nx">show</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;modal-overlay&#34;</span> <span class="na">onClick</span><span class="o">=</span><span class="p">{</span><span class="nx">close</span><span class="p">}</span> <span class="na">className</span><span class="o">=</span><span class="s">&#39;fixed top-0 left-0 w-full h-full bg-black/50 flex flex-col justify-center items-center z-10&#39;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">div</span> <span class="na">onClick</span><span class="o">=</span><span class="p">{(</span><span class="nx">e</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="nx">e</span><span class="p">.</span><span class="nx">stopPropagation</span><span class="p">()</span> <span class="p">}</span> <span class="na">className</span><span class="o">=</span><span class="s">&#39;bg-slate-100 w-2/6 h-4/6 shadow-lg rounded-md flex flex-col items-center content-center justify-center&#39;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">{</span><span class="nx">children</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;&lt;</span><span class="nt">button</span> <span class="na">onClick</span><span class="o">=</span><span class="p">{</span><span class="nx">close</span><span class="p">}</span> <span class="na">className</span><span class="o">=</span><span class="s">&#39;hover:bg-blue-500 bg-blue-700 text-white font-bold py-2 px-4 rounded m-4 outline-none shadow-lg active:scale-95 transition-transform&#39;</span><span class="p">&gt;</span><span class="nx">Close</span><span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="kc">null</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">export</span> <span class="k">default</span> <span class="kd">function</span> <span class="nx">MyApp</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="p">[</span><span class="nx">show</span><span class="p">,</span> <span class="nx">setShow</span><span class="p">]</span> <span class="o">=</span> <span class="nx">React</span><span class="p">.</span><span class="nx">useState</span><span class="p">(</span><span class="kc">false</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="nx">openModal</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">setShow</span><span class="p">(</span><span class="kc">true</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="nx">closeModal</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">setShow</span><span class="p">(</span><span class="kc">false</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
 </span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="p">(</span>
-</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">button</span> <span class="na">className</span><span class="o">=</span><span class="s">&#34;bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded m-4&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">        <span class="nx">I</span><span class="s1">&#39;m a button
-</span></span></span><span class="line"><span class="cl"><span class="s1">        &lt;/button&gt;
-</span></span></span><span class="line"><span class="cl"><span class="s1">    );
-</span></span></span><span class="line"><span class="cl"><span class="s1">}
-</span></span></span><span class="line"><span class="cl"><span class="s1">
-</span></span></span><span class="line"><span class="cl"><span class="s1">export default function MyApp() {
-</span></span></span><span class="line"><span class="cl"><span class="s1">    return (
-</span></span></span><span class="line"><span class="cl"><span class="s1">        &lt;div className=&#34;bg-stone-200 rounded-md m-4 p-2 text-center font-bold&#34;&gt;
-</span></span></span><span class="line"><span class="cl"><span class="s1">        &lt;h1&gt;Welcome to my app!!!&lt;/h1&gt;
-</span></span></span><span class="line"><span class="cl"><span class="s1">        &lt;MyButton /&gt;
-</span></span></span><span class="line"><span class="cl"><span class="s1">        &lt;/div&gt;
-</span></span></span><span class="line"><span class="cl"><span class="s1">    );
-</span></span></span><span class="line"><span class="cl"><span class="s1">}
-</span></span></span><span class="line"><span class="cl"><span class="s1">
-</span></span></span><span class="line"><span class="cl"><span class="s1">const container = document.getElementById(&#39;</span><span class="nx">app</span><span class="err">&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">className</span><span class="o">=</span><span class="s">&#34;bg-stone-200 rounded-md m-4 p-2 text-center&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span><span class="nx">Welcom</span> <span class="nx">to</span> <span class="nx">my</span> <span class="nx">modal</span> <span class="nb">window</span><span class="o">!!!</span><span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">button</span> <span class="na">onClick</span><span class="o">=</span><span class="p">{</span><span class="nx">openModal</span><span class="p">}</span> <span class="na">className</span><span class="o">=</span><span class="s">&#34;hover:bg-blue-500 bg-blue-700 text-white font-bold py-2 px-4 rounded m-4 outline-none shadow-lg active:scale-95 transition-transform&#34;</span><span class="p">&gt;</span><span class="nx">Open</span><span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">MyModal</span> <span class="na">show</span><span class="o">=</span><span class="p">{</span><span class="nx">show</span><span class="p">}</span> <span class="na">close</span><span class="o">=</span><span class="p">{</span><span class="nx">closeModal</span><span class="p">}</span> <span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">&lt;</span><span class="nt">h1</span> <span class="na">className</span><span class="o">=</span><span class="s">&#39;text-lg font-bold&#39;</span><span class="p">&gt;</span><span class="nx">これがモーダルウィンドウです</span><span class="o">!!</span><span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">&lt;</span><span class="nt">p</span> <span class="na">className</span><span class="o">=</span><span class="s">&#39;&#39;</span><span class="p">&gt;</span><span class="s2">&#34;Close&#34;</span><span class="nx">ボタンをクリックとモーダルウィンドウを閉じます</span><span class="err">。</span><span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span><span class="nx">また</span><span class="err">、</span><span class="nx">半透明の背景をクリックしてもモーダルウィンドウを閉じます</span><span class="err">。</span><span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;/</span><span class="nt">MyModal</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">container</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;modal-point&#39;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">root</span> <span class="o">=</span> <span class="nx">createRoot</span><span class="p">(</span><span class="nx">container</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="nx">root</span><span class="p">.</span><span class="nx">render</span><span class="p">(&lt;</span><span class="nt">MyApp</span> <span class="p">/&gt;)</span>
 </span></span></code></pre></div></li>
 <li>
-<p>Markdown内で<a href="https://gohugo.io/hugo-pipes/js/">js.Build</a>を使って<code>js</code>や<code>jsx</code>ファイルを処理する可能にするため、Shortcode(<code>include-with-jsbuild.html</code>)を作成する</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="c">&lt;!-- layouts/shortcodes/include-with-jsbuild.html --&gt;</span>
-</span></span><span class="line"><span class="cl">{{- $jsFile := .Get &#34;jsFile&#34; -}}
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">{{ $defines := dict &#34;process.env.NODE_ENV&#34; `&#34;development&#34;` }}
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">{{ $opts := dict &#34;defines&#34; $defines }}
-</span></span><span class="line"><span class="cl">{{ $built := resources.Get $jsFile | js.Build $opts }}
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text/javascript&#34;</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;{{ $built.RelPermalink }}&#34;</span> <span class="na">defer</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<p>以前作成したショートコード(<a href="https://kantas-spike.github.io/portfolio/til/2023/05/54-introducing-react/">include-with-jsbuild.html</a>)で<code>assets/js/hello-react-modal.jsx</code>を読み込む</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">{{<span class="p">&lt;</span> <span class="nt">include-with-jsbuild</span> <span class="na">jsFile</span><span class="o">=</span><span class="s">&#34;js/hello-react-modal.jsx&#34;</span> <span class="p">&gt;</span>}}
 </span></span></code></pre></div></li>
-<li>
-<p>Shortcode(<code>include-with-jsbuild.html</code>)を使って、<code>assets/js/hello-react.jsx</code>を読み込む</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">{{<span class="p">&lt;</span> <span class="nt">include-with-jsbuild</span> <span class="na">jsFile</span><span class="o">=</span><span class="s">&#34;js/hello-react.jsx&#34;</span> <span class="p">&gt;</span>}}
-</span></span></code></pre></div></li>
-<li>
-<p>実行結果は以下になる</p>
-</li>
 </ol>
-<div class="rawhtml"><div id="app"></div>
+<h4 id="実際の例">実際の例</h4>
+<div class="rawhtml"><div id="modal-point"></div>
 </div>
 
 
 
 
 
-<script type="text/javascript" src="https://kantas-spike.github.io/portfolio/js/hello-react.js" defer></script>
-<h3 id="参考">参考</h3>
+<script type="text/javascript" src="https://kantas-spike.github.io/portfolio/js/hello-react-modal.js" defer></script>
+<h3 id="参照">参照</h3>
 <ul>
-<li><a href="https://react.dev/">React</a>
-<ul>
-<li><a href="https://react.dev/learn">Quick Start – React</a></li>
-<li><a href="https://react.dev/learn/add-react-to-an-existing-project">Add React to an Existing Project – React</a></li>
-</ul>
-</li>
-<li><a href="https://gohugo.io/hugo-pipes/js/">js.Build | Hugo</a></li>
-<li><a href="https://discourse.gohugo.io/t/esbuild-live-reloading/30152/7">ESBuild Live Reloading - HUGO</a></li>
-<li><a href="https://right-tech.net/tips/hugo-x-react/">【Hugo】Markdownで作成する記事にReactを組み込む - 時々前進</a></li>
-<li><a href="https://esbuild.github.io/api/#platform">esbuild - API</a></li>
+<li><a href="https://reffect.co.jp/react/react-modal">Reactの基礎を学ぶのにモーダルウィンドウはいい教材 | アールエフェクト</a></li>
 </ul>
     </div>
     <div class="mt-6">
     <div class="border-t-2 border-primary-dark px-2 pt-2 text-right">
-        <span class="text-sm">作成日: 2023/05/26</span></div>
+        <span class="text-sm">作成日: 2023/05/30</span></div>
 </div>
 
 </div>
