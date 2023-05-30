@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html><head>
+    <title>
+        Reactを使って検索画面を作る | kanta&#39;s spike
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://kantas-spike.github.io/portfolio/css/theme.min.6d9676d3ba81b44d1edbd9e09eade6e82ccedd219f1b4ae7c29d827e70270279.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" /><link rel="stylesheet" href="https://kantas-spike.github.io/portfolio/css/syntax.min.70c02160dee6bd55baaa2b10019d735294451730e282f7fa645466392ba0cfb6.css"><link rel="apple-touch-icon" sizes="180x180" href="https://kantas-spike.github.io/portfolio/icon180.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://kantas-spike.github.io/portfolio/icon32.png">
+<link rel="icon" type="image/svg+xml" href="https://kantas-spike.github.io/portfolio/icon.svg">
+<link rel="manifest" href="https://kantas-spike.github.io/portfolio/site.webmanifest">
+
+</head><body class="bg-background text-primary-dark pb-4"><header class="bg-primary-dark text-site_title text-6xl font-serif font-extrabold px-4 py-3">
+    <h1 class="container mx-auto px-4"><a href="https://kantas-spike.github.io/portfolio/">kanta&#39;s spike</a></h1>
+</header>
+<input type="checkbox" name="burger_cbx" id="burger_cbx">
+<label for="burger_cbx" class="burger_label">
+    <span class="burger_icon"><svg version="1.1" viewBox="0 0 12.7 12.7" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <rect x="1.0369" y="2.1007" width="10.634" height="1.0426" ry=".5213"/>
+  <rect x="1.0369" y="4.571" width="10.634" height="1.0426" ry=".5213"/>
+  <rect x="1.0369" y="7.0413" width="10.634" height="1.0426" ry=".5213"/>
+  <rect x="1.0369" y="9.5115" width="10.634" height="1.0426" ry=".5213"/>
+ </g>
+</svg>
+</span>
+</label>
+<label for="burger_cbx" class="close_label">
+    <span class="close_icon"><svg version="1.1" viewBox="0 0 12.7 12.7" xmlns="http://www.w3.org/2000/svg">
+ <rect transform="rotate(45.535)" x="3.6678" y="-.6148" width="10.634" height="1.0426" ry=".5213"/>
+ <rect transform="rotate(135.53)" x="-5.4104" y="-9.5059" width="10.634" height="1.0426" ry=".5213"/>
+</svg>
+</span>
+</label>
+<div class="nav_area">
+    <nav class="container mx-auto bg-primary text-on-primary text-center flex flex-col md:flex-row justify-start">
+            <a href="https://kantas-spike.github.io/portfolio/" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Home</a>
+            <a href="https://kantas-spike.github.io/portfolio/blog" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Blog</a>
+            <a href="https://kantas-spike.github.io/portfolio/til" class="box-border flex-1 text-center no-underline bg-primary-light text-on-primary-light font-extrabold py-2">TIL</a>
+            <a href="https://kantas-spike.github.io/portfolio/dialogue" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Dialogue</a>
+            <a href="https://kantas-spike.github.io/portfolio/mytools" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">My Tools</a>
+            <a href="https://kantas-spike.github.io/portfolio/ihc" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">IHC</a>
+            <a href="https://kantas-spike.github.io/portfolio/tags" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Tags</a>
+        <div class="flex-none" id="search_menu"></div>
+    </nav>
+</div>
+<main id="content" class="container mx-auto bg-surface pt-4 pb-8">
+<div class="area_border  px-4 py-3 mx-4 pb-4">
+    
+
+
+
+<div class="mb-4">
+    <h3 class="border-b-2 border-primary text-primary-dark text-xl font-bold"><i class="fa-solid fa-note-sticky"></i> <a href="https://kantas-spike.github.io/portfolio/til/2023/05/57-create-search-window-using-react/">Reactを使って検索画面を作る</a></h3>
+    <div class="flex justify-between mt-1 mx-2">
+        <div>
+            <ul class="flex gap-2 justify-end">
+            
+            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/react/">#react</a></li>
+            
+            </ul>
+        </div>
+        <div>
+            
+            <div class="text-right text-sm font-bold">2023/05/31</div>
+            
+        </div>
+    </div>
+</div>
+
+    <div class="article mx-2">
+        <p>Reactを使って検索画面を作りたい。</p>
+<h3 id="解決策">解決策</h3>
+<p>Hugoのページ情報を<a href="https://lunrjs.com/docs/index.html">Lunr.js</a>を使ってインデックス化し、検索フォームで検索させる。</p>
+<p>今回はページのタイトルのみインデックス化する。</p>
+<h4 id="手順">手順</h4>
+<ol>
+<li>
+<p><code>Lunr.js</code>関連パッケージとHTTP通信用の<code>axios</code>をインストール</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">npm install lunr lunr-languages axios
+</span></span></code></pre></div></li>
+<li>
+<p>そのために、検索インデックスの元となる情報は、Hugoで以下のコンテンツとレイアウトを用意し、<code>/portfolio/search/index.json</code> でページの情報を取得可能にする。</p>
+<ul>
+<li>
+<p>コンテンツ(content/search.md)</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-md" data-lang="md"><span class="line"><span class="cl">---
+</span></span><span class="line"><span class="cl">title: &#34;Search&#34;
+</span></span><span class="line"><span class="cl">date: 2022-08-23T01:58:01+09:00
+</span></span><span class="line"><span class="cl">draft: false
+</span></span><span class="line"><span class="cl">outputs:
+</span></span><span class="line"><span class="cl"><span class="k">-</span> JSON
+</span></span><span class="line"><span class="cl">layout: search
+</span></span><span class="line"><span class="cl">---
+</span></span></code></pre></div></li>
+<li>
+<p>レイアウト(layout/_default/search.json)</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;results&#34;</span><span class="p">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span><span class="err">{-</span> <span class="err">range</span> <span class="err">$index,</span> <span class="err">$page</span> <span class="err">:=</span> <span class="err">.Site.RegularPages</span> <span class="p">}</span><span class="err">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span><span class="err">{-</span> <span class="err">if</span> <span class="err">$index</span> <span class="err">-</span><span class="p">}</span><span class="err">}</span><span class="p">,{</span><span class="err">{-</span> <span class="err">end</span> <span class="p">}</span><span class="err">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;href&#34;</span><span class="p">:</span> <span class="p">{</span><span class="err">{</span> <span class="err">.Permalink</span> <span class="err">|</span> <span class="err">jsonify</span> <span class="p">}},</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;title&#34;</span><span class="err">:</span> <span class="p">{</span><span class="err">{</span> <span class="err">.Title</span> <span class="err">|</span> <span class="err">jsonify</span> <span class="p">}</span><span class="err">}</span>
+</span></span><span class="line"><span class="cl">    <span class="err">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span><span class="err">{-</span> <span class="err">end</span> <span class="p">}</span><span class="err">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div></li>
+</ul>
+</li>
+<li>
+<p>検索画面を配置する場所を定義する</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">~~~rawhtml
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;search_menu_wk&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">~~~
+</span></span></code></pre></div></li>
+<li>
+<p>検索用モーダル画面を作成する(<code>assets/js/search-modal.jsx</code>)</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="kr">import</span> <span class="nx">React</span><span class="p">,</span> <span class="p">{</span> <span class="nx">useState</span><span class="p">,</span> <span class="nx">useEffect</span><span class="p">,</span> <span class="nx">useRef</span><span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;react&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">createRoot</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;react-dom/client&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="nx">axios</span> <span class="nx">from</span> <span class="s1">&#39;axios&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">lunr</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">&#34;lunr&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nx">require</span><span class="p">(</span><span class="s2">&#34;lunr-languages/lunr.stemmer.support&#34;</span><span class="p">)(</span><span class="nx">lunr</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nx">require</span><span class="p">(</span><span class="s2">&#34;lunr-languages/tinyseg&#34;</span><span class="p">)(</span><span class="nx">lunr</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nx">require</span><span class="p">(</span><span class="s2">&#34;lunr-languages/lunr.ja&#34;</span><span class="p">)(</span><span class="nx">lunr</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">_</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">&#34;lodash&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">export</span> <span class="k">default</span> <span class="kd">function</span> <span class="nx">SearchModal</span><span class="p">({</span><span class="nx">show</span><span class="p">,</span> <span class="nx">close</span><span class="p">})</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="nx">inputRef</span> <span class="o">=</span> <span class="nx">useRef</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="p">[</span><span class="nx">searchResults</span><span class="p">,</span> <span class="nx">setSearchResults</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">([])</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="p">[</span><span class="nx">mySearchInfo</span><span class="p">,</span> <span class="nx">setMySearchInfo</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">({</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">searchData</span><span class="o">:</span> <span class="p">{},</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">searchIndex</span><span class="o">:</span> <span class="p">{}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">})</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="nx">keywordUpdated</span> <span class="o">=</span> <span class="p">(</span><span class="nx">keyword</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`keyword updated: </span><span class="si">${</span><span class="nx">keyword</span><span class="si">}</span><span class="sb">`</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="nx">keyword</span><span class="p">.</span><span class="nx">trim</span><span class="p">().</span><span class="nx">length</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">setSearchResults</span><span class="p">([])</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="kr">const</span> <span class="nx">list</span> <span class="o">=</span> <span class="nx">mySearchInfo</span><span class="p">.</span><span class="nx">searchIndex</span><span class="p">.</span><span class="nx">search</span><span class="p">(</span><span class="nx">keyword</span><span class="p">).</span><span class="nx">map</span><span class="p">((</span><span class="nx">entry</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="c1">// console.log(entry)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                <span class="kr">const</span> <span class="nx">obj</span> <span class="o">=</span> <span class="nx">mySearchInfo</span><span class="p">.</span><span class="nx">searchData</span><span class="p">.</span><span class="nx">results</span><span class="p">.</span><span class="nx">filter</span><span class="p">(</span><span class="nx">d</span> <span class="p">=&gt;</span> <span class="nx">entry</span><span class="p">.</span><span class="nx">ref</span> <span class="o">==</span> <span class="nx">d</span><span class="p">.</span><span class="nx">href</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">                <span class="k">return</span> <span class="p">{</span> <span class="s1">&#39;href&#39;</span><span class="o">:</span> <span class="nx">obj</span><span class="p">.</span><span class="nx">href</span><span class="p">,</span> <span class="s1">&#39;title&#39;</span><span class="o">:</span> <span class="nx">obj</span><span class="p">.</span><span class="nx">title</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="p">})</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">setSearchResults</span><span class="p">(</span><span class="nx">list</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="nx">handleInput</span> <span class="o">=</span>  <span class="nx">_</span><span class="p">.</span><span class="nx">debounce</span><span class="p">((</span><span class="nx">e</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="kr">const</span> <span class="nx">val</span> <span class="o">=</span> <span class="nx">e</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">value</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">keywordUpdated</span><span class="p">(</span><span class="nx">val</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">},</span> <span class="mi">500</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="nx">handleKeydown</span> <span class="o">=</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// console.log(&#34;keyCode:&#34;, e.keyCode)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="k">if</span> <span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">keyCode</span> <span class="o">===</span> <span class="mi">27</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// ESC
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="nx">close</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nx">useEffect</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">axios</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">&#39;/portfolio/search/index.json&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">res</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="kr">const</span> <span class="nx">searchInfo</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="nx">searchData</span><span class="o">:</span> <span class="p">{},</span>
+</span></span><span class="line"><span class="cl">                    <span class="nx">searchIndex</span><span class="o">:</span> <span class="p">{}</span>
+</span></span><span class="line"><span class="cl">                <span class="p">}</span>
+</span></span><span class="line"><span class="cl">                <span class="nx">searchInfo</span><span class="p">.</span><span class="nx">searchData</span> <span class="o">=</span> <span class="nx">res</span><span class="p">.</span><span class="nx">data</span>
+</span></span><span class="line"><span class="cl">                <span class="nx">searchInfo</span><span class="p">.</span><span class="nx">searchIndex</span> <span class="o">=</span> <span class="nx">lunr</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">this</span><span class="p">.</span><span class="nx">ref</span><span class="p">(</span><span class="s1">&#39;href&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">this</span><span class="p">.</span><span class="nx">field</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">this</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="nx">lunr</span><span class="p">.</span><span class="nx">ja</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                    <span class="nx">searchInfo</span><span class="p">.</span><span class="nx">searchData</span><span class="p">.</span><span class="nx">results</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">e</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                        <span class="k">this</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="nx">e</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">})</span>
+</span></span><span class="line"><span class="cl">                <span class="p">})</span>
+</span></span><span class="line"><span class="cl">                <span class="nx">setMySearchInfo</span><span class="p">(</span><span class="nx">searchInfo</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="p">})</span>
+</span></span><span class="line"><span class="cl">    <span class="p">},</span> <span class="p">[])</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nx">useEffect</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="nx">show</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="p">(</span><span class="nx">inputRef</span><span class="p">.</span><span class="nx">current</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="nx">inputRef</span><span class="p">.</span><span class="nx">current</span><span class="p">.</span><span class="nx">focus</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">},</span> <span class="p">[</span><span class="nx">show</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="nx">show</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="kr">const</span> <span class="nx">list</span> <span class="o">=</span> <span class="nx">searchResults</span><span class="p">.</span><span class="nx">map</span><span class="p">((</span><span class="nx">result</span><span class="p">,</span> <span class="nx">idx</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">div</span> <span class="na">key</span><span class="o">=</span><span class="p">{</span><span class="nx">idx</span><span class="p">}</span> <span class="na">className</span><span class="o">=</span><span class="s">&#34;pt-4 pb-2 px-6 border-b border-primary-dark w-full hover:bg-primary/60 hover:text-on-primary text-left&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">className</span><span class="o">=</span><span class="s">&#34;block&#34;</span> <span class="na">href</span><span class="o">=</span><span class="p">{</span><span class="nx">result</span><span class="p">.</span><span class="nx">href</span><span class="p">}&gt;{</span><span class="nx">result</span><span class="p">.</span><span class="nx">title</span><span class="p">}&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">})</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;modal-overlay&#34;</span> <span class="na">onClick</span><span class="o">=</span><span class="p">{</span><span class="nx">close</span><span class="p">}</span> <span class="na">className</span><span class="o">=</span><span class="s">&#39;fixed top-0 left-0 w-full h-full bg-black/70 flex flex-col justify-start items-center z-50&#39;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">div</span> <span class="na">onClick</span><span class="o">=</span><span class="p">{(</span><span class="nx">e</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="nx">e</span><span class="p">.</span><span class="nx">stopPropagation</span><span class="p">()</span> <span class="p">}</span> <span class="na">className</span><span class="o">=</span><span class="s">&#39;flex flex-col items-center border border-primary-dark mt-4 md:mt-12 md:w-[700px] w-80 md:w-[500px] rounded-lg bg-primary-light text-primary-dark mx-auto&#39;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">className</span><span class="o">=</span><span class="s">&#34;flex items-center w-full border-b border-primary-dark&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">className</span><span class="o">=</span><span class="s">&#34;flex-none&#34;</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">className</span><span class="o">=</span><span class="s">&#34;fa-solid fa-magnifying-glass text-3xl mx-2&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                        <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span> <span class="na">ref</span><span class="o">=</span><span class="p">{</span><span class="nx">inputRef</span><span class="p">}</span> <span class="na">onInput</span><span class="o">=</span><span class="p">{</span><span class="nx">handleInput</span><span class="p">}</span> <span class="na">onKeyDown</span><span class="o">=</span><span class="p">{</span><span class="nx">handleKeydown</span><span class="p">}</span> <span class="na">className</span><span class="o">=</span><span class="s">&#34;grow bg-primary-light text-on-primary-light
+</span></span></span><span class="line"><span class="cl"><span class="s">                        text-sm rounded-lg focus:outline-none block p-2.5 w-full&#34;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&#34;Search this blog&#34;</span> <span class="na">required</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">className</span><span class="o">=</span><span class="s">&#34;flex flex-col items-start mb-4 overflow-y-auto h-[580px] md:h-[800px] w-full&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                        <span class="p">{</span><span class="nx">list</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="kc">null</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div></li>
+<li>
+<p>モーダル画面を配置する(<code>assets/js/hello-react-search-modal.jsx</code>)</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="kr">import</span> <span class="nx">React</span><span class="p">,</span> <span class="p">{</span> <span class="nx">useState</span><span class="p">,</span> <span class="nx">useEffect</span><span class="p">,</span> <span class="nx">useRef</span><span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;react&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">createRoot</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;react-dom/client&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="nx">SearchModal</span> <span class="nx">from</span> <span class="s1">&#39;js/search-modal&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">export</span> <span class="k">default</span> <span class="kd">function</span> <span class="nx">MyApp</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="p">[</span><span class="nx">show</span><span class="p">,</span> <span class="nx">setShow</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="kc">false</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="nx">openModal</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">setShow</span><span class="p">(</span><span class="kc">true</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="nx">closeModal</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">setShow</span><span class="p">(</span><span class="kc">false</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">className</span><span class="o">=</span><span class="s">&#34;bg-stone-200 rounded-md m-4 p-2 text-center&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span><span class="nx">Click</span> <span class="nx">Search</span> <span class="nx">icon</span><span class="o">!!</span><span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">a</span> <span class="na">className</span><span class="o">=</span><span class="s">&#34;block text-center no-underline text-on-primary py-2 px-2 font-normal cursor-pointer hover:font-bold&#34;</span>  <span class="na">onClick</span><span class="o">=</span><span class="p">{</span><span class="nx">openModal</span><span class="p">}&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">&lt;</span><span class="nt">i</span> <span class="na">className</span><span class="o">=</span><span class="s">&#34;fa-solid fa-magnifying-glass&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">SearchModal</span> <span class="na">show</span><span class="o">=</span><span class="p">{</span><span class="nx">show</span><span class="p">}</span> <span class="na">close</span><span class="o">=</span><span class="p">{</span><span class="nx">closeModal</span><span class="p">}</span> <span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;/</span><span class="nt">SearchModal</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">container</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;search_menu_wk&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">root</span> <span class="o">=</span> <span class="nx">createRoot</span><span class="p">(</span><span class="nx">container</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nx">root</span><span class="p">.</span><span class="nx">render</span><span class="p">(&lt;</span><span class="nt">MyApp</span> <span class="p">/&gt;)</span>
+</span></span></code></pre></div></li>
+<li>
+<p>以前作成したショートコード(<a href="https://kantas-spike.github.io/portfolio/til/2023/05/54-introducing-react/">include-with-jsbuild.html</a>)で<code>assets/js/hello-react-search-modal.jsx</code>を読み込む</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">{{<span class="p">&lt;</span> <span class="nt">include-with-jsbuild</span> <span class="na">jsFile</span><span class="o">=</span><span class="s">&#34;js/hello-react-search-modal.jsx&#34;</span> <span class="p">&gt;</span>}}
+</span></span></code></pre></div></li>
+</ol>
+<h3 id="実際の例">実際の例</h3>
+<div class="rawhtml"><div id="search_menu_wk"></div>
+</div>
+
+
+
+
+
+<script type="text/javascript" src="https://kantas-spike.github.io/portfolio/js/hello-react-search-modal.js" defer></script>
+<h3 id="参照">参照</h3>
+<ul>
+<li><a href="https://lunrjs.com/docs/index.html">Lunr.js</a></li>
+<li><a href="https://github.com/axios/axios">axios</a></li>
+<li><a href="https://pragprog.com/titles/bhhugo/build-websites-with-hugo/">Build Websites with Hugo</a></li>
+</ul>
+    </div>
+    <div class="mt-6">
+    <div class="border-t-2 border-primary-dark px-2 pt-2 text-right">
+        <span class="text-sm">作成日: 2023/05/31</span></div>
+</div>
+
+</div>
+
+        </main><footer class="bg-primary-dark text-center text-on-primary-dark fixed bottom-0 w-full h-8">
+    <div class="container mx-auto grid grid-cols-3">
+        <div class="col-start-1 col-span-2 ml-2 md:ml-0 md:col-start-2 md:col-span-1">
+            <div class="text-left md:text-center text-sm pt-2">© 2022 kanta&#39;s spike</div>
+        </div>
+        <div class="col-start-3 flex justify-end gap-2 mr-2">
+            
+                
+            <a title="Twitter" class="text-2xl" href="https://twitter.com/KantasSpike"><i class="fa-brands fa-twitter-square"></i></a>
+                
+            <a title="Youtube" class="text-2xl" href="https://www.youtube.com/channel/UCnVBuUGMYAt7ZuIkadxnMfw"><i class="fa-brands fa-youtube-square"></i></a>
+                
+            <a title="GitHub" class="text-2xl" href="https://github.com/kantas-spike"><i class="fa-brands fa-github-square"></i></a>
+                
+            <a title="Blog" class="text-2xl" href="https://kantas-spike.github.io/portfolio/"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                
+            
+        </div>
+    </div>
+</footer>
+        <script type="text/javascript" src="https://kantas-spike.github.io/portfolio/js/search-form.js" defer></script></body>
+</html>
