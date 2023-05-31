@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GitHub on kanta&#39;s spike</title>
+    <link>https://kantas-spike.github.io/portfolio/tags/github/</link>
+    <description>Recent content in GitHub on kanta&#39;s spike</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <copyright>© 2022 kanta&#39;s spike</copyright>
+    <lastBuildDate>Wed, 31 May 2023 22:17:46 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>メインブランチの保護方針を決める</title>
+      <link>https://kantas-spike.github.io/portfolio/til/2023/05/58-decide-on-a-protection-policy-for-the-main-branch/</link>
+      <pubDate>Wed, 31 May 2023 22:17:46 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/til/2023/05/58-decide-on-a-protection-policy-for-the-main-branch/</guid>
+      <description>&lt;p&gt;GitHubでメインブランチへの直接のプッシュを禁止し、プルリクエストが作成されたもののみマージしたい。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
