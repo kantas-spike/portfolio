@@ -1,6 +1,10 @@
 {
     "results": [
     {
+        "href": "https://kantas-spike.github.io/portfolio/til/2023/06/59-use-site-assets-when-using-a-theme-with-hugo/",
+        "title": "Hugoでテーマを利用時にサイト用のアセットも利用したい"
+    },
+    {
         "href": "https://kantas-spike.github.io/portfolio/til/2023/05/58-decide-on-a-protection-policy-for-the-main-branch/",
         "title": "メインブランチの保護方針を決める"
     },
