@@ -6,15 +6,17 @@ tags:
 - GitHub
 ---
 
-GitHubでメインブランチへの直接のプッシュを禁止し、プルリクエストが作成されたもののみマージしたい。
-
-<!--more-->
-
 GitHubのプロジェクトに以下のメッセージが表示されていることに気づいた。
 何となくGitHubを使用してきたが、この機会にメインブランチの保護方針を決めたい。
 
 ~~~text
 Your main branch isn't protected
+~~~
+
+方針は以下としたい。
+
+~~~text
+GitHubでメインブランチへの直接のプッシュを禁止し、プルリクエストが作成されたもののみマージしたい。
 ~~~
 
 <!--more-->
@@ -39,4 +41,4 @@ GitHubプロジェクトの`Settings`-`Code and automation`-`Branches`にある`
 - [保護されたブランチについて - GitHub Docs](https://docs.github.com/ja/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches)
 - [保護ブランチへの直 push を禁止する](https://zenn.dev/snowcait/articles/42bb6b56c806da)
 
-[^1]: 一人で開発している場合は`Require approvals`をチェックしないこと。プッシュした人は承認(approve)できないためマージできなくなる。
+[^1]: 一人で開発している場合は`Require approvals`をチェックしないこと。プルリクエストした人は承認(approve)できないためマージできなくなる。
