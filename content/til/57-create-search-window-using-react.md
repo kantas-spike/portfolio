@@ -213,7 +213,7 @@ Hugoのページ情報を[Lunr.js](https://lunrjs.com/docs/index.html)を使っ�
 <div id="search_menu_wk"></div>
 ~~~
 
-{{< include-with-jsbuild jsFile="js/hello-react-search-modal.jsx" >}}
+{{< include-with-jsbuild jsFile="sample/hello-react-search-modal.jsx" >}}
 
 ### 参照
 

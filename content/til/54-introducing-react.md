@@ -93,7 +93,7 @@ tags:
 <div id="app"></div>
 ~~~
 
-{{< include-with-jsbuild jsFile="js/hello-react.jsx" >}}
+{{< include-with-jsbuild jsFile="sample/hello-react.jsx" >}}
 
 ### 参考
 

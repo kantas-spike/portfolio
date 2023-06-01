@@ -83,7 +83,7 @@ Reactを使ってモーダルウィンドウを作成したい。
 <div id="modal-point"></div>
 ~~~
 
-{{< include-with-jsbuild jsFile="js/hello-react-modal.jsx" >}}
+{{< include-with-jsbuild jsFile="sample/hello-react-modal.jsx" >}}
 
 ### 参照
 

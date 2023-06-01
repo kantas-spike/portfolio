@@ -24,6 +24,9 @@ publishDir = "docs"
   [[module.mounts]]
     source = "hugo_stats.json"
     target = "assets/watching/hugo_stats.json"
+  [[module.mounts]]
+    source = "assets/sample"
+    target = "assets/sample"
 
 [build]
   writeStats = true
