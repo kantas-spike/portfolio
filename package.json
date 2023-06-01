@@ -2,14 +2,20 @@
   "author": "",
   "comments": {
     "dependencies": {
-      "axios": "project",
-      "lunr": "project",
-      "lunr-languages": "project",
-      "postcss-cli": "project",
-      "react": "project",
-      "react-dom": "project"
+      "axios": "kantas",
+      "lunr": "kantas",
+      "lunr-languages": "kantas",
+      "postcss-cli": "kantas",
+      "react": "kantas",
+      "react-dom": "kantas"
     },
-    "devDependencies": {}
+    "devDependencies": {
+      "autoprefixer": "kantas",
+      "postcss": "kantas",
+      "postcss-import": "kantas",
+      "postcss-nested": "kantas",
+      "tailwindcss": "kantas"
+    }
   },
   "dependencies": {
     "axios": "^1.4.0",
@@ -20,7 +26,13 @@
     "react-dom": "^18.2.0"
   },
   "description": "",
-  "devDependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "postcss": "^8.4.14",
+    "postcss-import": "^14.1.0",
+    "postcss-nested": "^5.0.6",
+    "tailwindcss": "^3.1.6"
+  },
   "keywords": [],
   "license": "ISC",
   "main": "index.js",
