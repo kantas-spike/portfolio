@@ -5,7 +5,6 @@ draft: false
 tags:
 - python
 - jupyter
-- hugo
 ---
 
 [Jupyter Notebook](https://jupyter.org/)という、文書、プログラムコード、数式、や図形を1つのドキュメントとして表現できるWebアプリケーションがあるそうです。 [^1]
