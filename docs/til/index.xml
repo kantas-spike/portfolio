@@ -9,6 +9,24 @@
     <copyright>© 2022 kanta&#39;s spike</copyright>
     <lastBuildDate>Fri, 22 Jul 2022 08:15:27 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/til/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Hugoでテーマにあるパッケージを利用したい</title>
+      <link>https://kantas-spike.github.io/portfolio/til/2023/06/61-use-packages-in-a-theme-with-hugo/</link>
+      <pubDate>Fri, 02 Jun 2023 06:20:26 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/til/2023/06/61-use-packages-in-a-theme-with-hugo/</guid>
+      <description>&lt;p&gt;Hugoでthemeで使用するJavascriptのパッケージは、theme/THEME_NAME/package.jsonで管理したい。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>scriptタグに設定されている`defer`って何？</title>
+      <link>https://kantas-spike.github.io/portfolio/til/2023/06/60-what-is-defer-in-the-script-tag/</link>
+      <pubDate>Fri, 02 Jun 2023 06:03:54 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/til/2023/06/60-what-is-defer-in-the-script-tag/</guid>
+      <description>&lt;p&gt;scriptタグに設定されている&lt;code&gt;defer&lt;/code&gt;って何だ?&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Hugoでテーマを利用時にサイト用のアセットも利用したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/06/59-use-site-assets-when-using-a-theme-with-hugo/</link>
       <pubDate>Thu, 01 Jun 2023 23:09:00 +0900</pubDate>

@@ -1,6 +1,14 @@
 {
     "results": [
     {
+        "href": "https://kantas-spike.github.io/portfolio/til/2023/06/61-use-packages-in-a-theme-with-hugo/",
+        "title": "Hugoでテーマにあるパッケージを利用したい"
+    },
+    {
+        "href": "https://kantas-spike.github.io/portfolio/til/2023/06/60-what-is-defer-in-the-script-tag/",
+        "title": "scriptタグに設定されている`defer`って何？"
+    },
+    {
         "href": "https://kantas-spike.github.io/portfolio/til/2023/06/59-use-site-assets-when-using-a-theme-with-hugo/",
         "title": "Hugoでテーマを利用時にサイト用のアセットも利用したい"
     },
