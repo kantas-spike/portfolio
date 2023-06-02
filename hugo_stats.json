@@ -210,6 +210,7 @@
       "md:grid-cols-2",
       "md:grid-cols-4",
       "md:ml-0",
+      "md:mx-10",
       "md:text-center",
       "mermaid",
       "ml-10",
