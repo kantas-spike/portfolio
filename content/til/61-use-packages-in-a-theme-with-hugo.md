@@ -1,18 +1,18 @@
 ---
-title: "Hugoでテーマにあるパッケージを利用したい"
+title: "Hugoのテーマで使用するパッケージは、テーマ内で管理したい"
 date: 2023-06-02T06:20:26+09:00
 draft: false
 tags:
 - hugo
 ---
 
-Hugoでthemeで使用するJavascriptのパッケージは、theme/THEME_NAME/package.jsonで管理したい。
+Hugoのthemeで使用するJavascriptのパッケージは、`theme/THEME_NAME/package.json` で管理したい。
 
 <!--more-->
 
 ### 解決策
 
-Hugoでthemeで使用するJavascriptのパッケージを、themeディレクトリ内の`package.json`(例: `site/theme/THEME_NAME/package.json`)で管理した場合、
+Hugoのthemeで使用するJavascriptのパッケージを、themeディレクトリ内の`package.json`(例: `site/theme/THEME_NAME/package.json`)で管理した場合、
 [js.Build](https://gohugo.io/hugo-pipes/js/)でエラーが発生する。
 
 これは、[js.Build](https://gohugo.io/hugo-pipes/js/)がサイトの`package.json`(例: `site/package.json`)を参照するためのようだ。

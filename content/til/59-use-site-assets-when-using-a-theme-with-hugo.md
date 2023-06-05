@@ -31,17 +31,17 @@ tags:
 - 記事専用のアセットは サイトの物理ディレクトリ `assets/sample`に格納
 - サイトの物理ディレクトリ `assets/sample`を、仮想ディレクトリ `assets` [^2] 配下に`article`という名前でマウント [^3]
 
-~~~toml
-# hugo.toml(or config.toml)
-# ...略...
-[module]
-# ...略...
-# マウント設定
-[[module.mounts]]
-  source = 'assets/sample'  # サイトの物理ディレクトリ(`assets/sample`)を
-  target = 'assets/article' # 仮想ディレクトリ`assets`配下に`article`という名前でマウントする
-# ...略...
-~~~
+    ~~~toml
+    # hugo.toml(or config.toml)
+    # ...略...
+    [module]
+    # ...略...
+    # マウント設定
+    [[module.mounts]]
+      source = 'assets/sample'  # サイトの物理ディレクトリ(`assets/sample`)を
+      target = 'assets/article' # 仮想ディレクトリ`assets`配下に`article`という名前でマウントする
+    # ...略...
+    ~~~
 
 これにより、`resources.Get "article/xxx.js"`で取得するJavaScriptファイルは、サイトの`assets`から取得できるようになる。
 
