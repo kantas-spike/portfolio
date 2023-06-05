@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>css on kanta&#39;s spike</title>
+    <link>https://kantas-spike.github.io/portfolio/tags/css/</link>
+    <description>Recent content in css on kanta&#39;s spike</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <copyright>© 2022 kanta&#39;s spike</copyright>
+    <lastBuildDate>Tue, 06 Jun 2023 06:30:58 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/css/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tailwind CSSでデフォルトのfont-familyを修正したい</title>
+      <link>https://kantas-spike.github.io/portfolio/til/2023/06/63-customize-default-font-family-on-tailwindcss/</link>
+      <pubDate>Tue, 06 Jun 2023 06:30:58 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/til/2023/06/63-customize-default-font-family-on-tailwindcss/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://tailwindcss.com/docs/font-family&#34;&gt;Tailwind CSS&lt;/a&gt;でブログのフォントを読みやすいフォントに修正したい。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CSSで文章を読み易くしたい</title>
+      <link>https://kantas-spike.github.io/portfolio/til/2023/06/62-adjust-the-presentaion-of-text-blocks/</link>
+      <pubDate>Tue, 06 Jun 2023 06:03:18 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/til/2023/06/62-adjust-the-presentaion-of-text-blocks/</guid>
+      <description>&lt;p&gt;私は文章を読むのが苦手なので、CSSでなるべく読み易い見た目に調整したい。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

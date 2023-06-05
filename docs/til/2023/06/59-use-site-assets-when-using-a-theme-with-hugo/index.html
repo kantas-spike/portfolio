@@ -4,7 +4,7 @@
         Hugoでテーマを利用時にサイト用のアセットも利用したい | kanta&#39;s spike
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://kantas-spike.github.io/portfolio/css/theme.min.5222c1e45fa3b08db467b29450c3cde4646677b0b25fc3e89f785868728e0273.css">
+    <link rel="stylesheet" href="https://kantas-spike.github.io/portfolio/css/theme.min.709e6655d20632b566caa12f8f13cd90685a59a2c3cc34b7e762cc0fa0a688b0.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" /><link rel="stylesheet" href="https://kantas-spike.github.io/portfolio/css/syntax.min.70c02160dee6bd55baaa2b10019d735294451730e282f7fa645466392ba0cfb6.css"><link rel="apple-touch-icon" sizes="180x180" href="https://kantas-spike.github.io/portfolio/icon180.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://kantas-spike.github.io/portfolio/icon32.png">
 <link rel="icon" type="image/svg+xml" href="https://kantas-spike.github.io/portfolio/icon.svg">
@@ -81,9 +81,11 @@
 <p>テーマのアセットとサイトのアセットを併用するためには、<a href="https://gohugo.io/hugo-modules/configuration/#module-config-mounts">Hugoのマウント機能</a>を利用すれば良さそうだ。</p>
 <p>今回の場合、以下の設定によりテーマのアセットとサイトのアセットを併用可能になる。</p>
 <ul>
-<li>記事専用のアセットは サイトの物理ディレクトリ <code>assets/sample</code>に格納</li>
-<li>サイトの物理ディレクトリ <code>assets/sample</code>を、仮想ディレクトリ <code>assets</code> <sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> 配下に<code>article</code>という名前でマウント <sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></li>
-</ul>
+<li>
+<p>記事専用のアセットは サイトの物理ディレクトリ <code>assets/sample</code>に格納</p>
+</li>
+<li>
+<p>サイトの物理ディレクトリ <code>assets/sample</code>を、仮想ディレクトリ <code>assets</code> <sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> 配下に<code>article</code>という名前でマウント <sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="c"># hugo.toml(or config.toml)</span>
 </span></span><span class="line"><span class="cl"><span class="c"># ...略...</span>
 </span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">module</span><span class="p">]</span>
@@ -93,7 +95,9 @@
 </span></span><span class="line"><span class="cl">  <span class="nx">source</span> <span class="p">=</span> <span class="s1">&#39;assets/sample&#39;</span>  <span class="c"># サイトの物理ディレクトリ(`assets/sample`)を</span>
 </span></span><span class="line"><span class="cl">  <span class="nx">target</span> <span class="p">=</span> <span class="s1">&#39;assets/article&#39;</span> <span class="c"># 仮想ディレクトリ`assets`配下に`article`という名前でマウントする</span>
 </span></span><span class="line"><span class="cl"><span class="c"># ...略...</span>
-</span></span></code></pre></div><p>これにより、<code>resources.Get &quot;article/xxx.js&quot;</code>で取得するJavaScriptファイルは、サイトの<code>assets</code>から取得できるようになる。</p>
+</span></span></code></pre></div></li>
+</ul>
+<p>これにより、<code>resources.Get &quot;article/xxx.js&quot;</code>で取得するJavaScriptファイルは、サイトの<code>assets</code>から取得できるようになる。</p>
 <p>一方、<code>resources.Get &quot;js/xxx.js&quot;</code>のように取得すると、従来通りテーマの<code>assets</code>から取得できる。</p>
 <h3 id="参考">参考</h3>
 <ul>

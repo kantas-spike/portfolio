@@ -9,12 +9,12 @@
     <copyright>© 2022 kanta&#39;s spike</copyright>
     <lastBuildDate>Fri, 02 Jun 2023 06:20:26 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Hugoでテーマにあるパッケージを利用したい</title>
+      <title>Hugoのテーマで使用するパッケージは、テーマ内で管理したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/06/61-use-packages-in-a-theme-with-hugo/</link>
       <pubDate>Fri, 02 Jun 2023 06:20:26 +0900</pubDate>
       
       <guid>https://kantas-spike.github.io/portfolio/til/2023/06/61-use-packages-in-a-theme-with-hugo/</guid>
-      <description>&lt;p&gt;Hugoでthemeで使用するJavascriptのパッケージは、theme/THEME_NAME/package.jsonで管理したい。&lt;/p&gt;</description>
+      <description>&lt;p&gt;Hugoのthemeで使用するJavascriptのパッケージは、&lt;code&gt;theme/THEME_NAME/package.json&lt;/code&gt; で管理したい。&lt;/p&gt;</description>
     </item>
     
     <item>

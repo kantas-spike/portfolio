@@ -9,12 +9,30 @@
     <copyright>© 2022 kanta&#39;s spike</copyright>
     <lastBuildDate>Fri, 22 Jul 2022 08:15:27 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/til/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Hugoでテーマにあるパッケージを利用したい</title>
+      <title>Tailwind CSSでデフォルトのfont-familyを修正したい</title>
+      <link>https://kantas-spike.github.io/portfolio/til/2023/06/63-customize-default-font-family-on-tailwindcss/</link>
+      <pubDate>Tue, 06 Jun 2023 06:30:58 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/til/2023/06/63-customize-default-font-family-on-tailwindcss/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://tailwindcss.com/docs/font-family&#34;&gt;Tailwind CSS&lt;/a&gt;でブログのフォントを読みやすいフォントに修正したい。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CSSで文章を読み易くしたい</title>
+      <link>https://kantas-spike.github.io/portfolio/til/2023/06/62-adjust-the-presentaion-of-text-blocks/</link>
+      <pubDate>Tue, 06 Jun 2023 06:03:18 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/til/2023/06/62-adjust-the-presentaion-of-text-blocks/</guid>
+      <description>&lt;p&gt;私は文章を読むのが苦手なので、CSSでなるべく読み易い見た目に調整したい。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hugoのテーマで使用するパッケージは、テーマ内で管理したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/06/61-use-packages-in-a-theme-with-hugo/</link>
       <pubDate>Fri, 02 Jun 2023 06:20:26 +0900</pubDate>
       
       <guid>https://kantas-spike.github.io/portfolio/til/2023/06/61-use-packages-in-a-theme-with-hugo/</guid>
-      <description>&lt;p&gt;Hugoでthemeで使用するJavascriptのパッケージは、theme/THEME_NAME/package.jsonで管理したい。&lt;/p&gt;</description>
+      <description>&lt;p&gt;Hugoのthemeで使用するJavascriptのパッケージは、&lt;code&gt;theme/THEME_NAME/package.json&lt;/code&gt; で管理したい。&lt;/p&gt;</description>
     </item>
     
     <item>

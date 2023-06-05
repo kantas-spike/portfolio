@@ -2,13 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/css/</loc>
+    <lastmod>2023-06-06T06:30:58+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/</loc>
+    <lastmod>2023-06-06T06:30:58+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/til/2023/06/63-customize-default-font-family-on-tailwindcss/</loc>
+    <lastmod>2023-06-06T06:30:58+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/tailwindcss/</loc>
+    <lastmod>2023-06-06T06:30:58+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/til/2023/06/62-adjust-the-presentaion-of-text-blocks/</loc>
+    <lastmod>2023-06-06T06:03:18+09:00</lastmod>
+  </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/hugo/</loc>
     <lastmod>2023-06-02T06:20:26+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2023/06/61-use-packages-in-a-theme-with-hugo/</loc>
-    <lastmod>2023-06-02T06:20:26+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/</loc>
     <lastmod>2023-06-02T06:20:26+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/html/</loc>
@@ -286,9 +298,6 @@
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2022/08/27-filter-pages-with-hugo/</loc>
     <lastmod>2022-08-29T13:51:51+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/tailwindcss/</loc>
-    <lastmod>2023-05-26T00:44:53+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2022/08/26-responsive-with-tailwindcss/</loc>
     <lastmod>2022-08-28T10:52:51+09:00</lastmod>

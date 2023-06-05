@@ -1,8 +1,16 @@
 {
     "results": [
     {
+        "href": "https://kantas-spike.github.io/portfolio/til/2023/06/63-customize-default-font-family-on-tailwindcss/",
+        "title": "Tailwind CSSでデフォルトのfont-familyを修正したい"
+    },
+    {
+        "href": "https://kantas-spike.github.io/portfolio/til/2023/06/62-adjust-the-presentaion-of-text-blocks/",
+        "title": "CSSで文章を読み易くしたい"
+    },
+    {
         "href": "https://kantas-spike.github.io/portfolio/til/2023/06/61-use-packages-in-a-theme-with-hugo/",
-        "title": "Hugoでテーマにあるパッケージを利用したい"
+        "title": "Hugoのテーマで使用するパッケージは、テーマ内で管理したい"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/til/2023/06/60-what-is-defer-in-the-script-tag/",
