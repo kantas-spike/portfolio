@@ -42,13 +42,13 @@ MacOSのFinderでフォルダを選択して、右クリックですぐにVSCode
 
         ![shell](/images/til/30-02_shell.png)
 
-3. 設定したクイックアクションを保存して、`Visual Studio Codeで開く`という名前を付けます
+3. 設定したクイックアクションを保存して、`Visual Studio Codeで開く`という名前を付けます
 
-4. 以上により、`Finder.app`で、フォルダやファイルを右クリックすると、コンテキストメニューのクイックアクション内に、`Visual Studio Codeで開く`が表示されるようになります
+4. 以上により、`Finder.app`で、フォルダやファイルを右クリックすると、コンテキストメニューのクイックアクション内に、`Visual Studio Codeで開く`が表示されるようになります
 
     ![shell](/images/til/30-03_context.png)
 
-5. `Visual Studio Codeで開く`を選択すると、該当フォルダやファイルをVSCodeで開きます
+5. `Visual Studio Codeで開く`を選択すると、該当フォルダやファイルをVSCodeで開きます
 
 ### 参考
 
