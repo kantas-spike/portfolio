@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>© 2022 kanta&#39;s spike</copyright>
-    <lastBuildDate>Wed, 05 Apr 2023 02:16:01 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 07 Jun 2023 04:30:48 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ブログ記事に使用されている文字を収集したい</title>
+      <link>https://kantas-spike.github.io/portfolio/til/2023/06/64-collect-chars-used-in-articles/</link>
+      <pubDate>Wed, 07 Jun 2023 04:30:48 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/til/2023/06/64-collect-chars-used-in-articles/</guid>
+      <description>&lt;p&gt;これまで作成した記事から文字集合を作成し、&lt;code&gt;JIS第1水準の漢字や常用漢字、ひらがなカタカナ、半角全角 英数字、半角全角 記号&lt;/code&gt;の文字集合と比較して確かめたい。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>「プログラミング演習 Python 2021」を学ぶ</title>
       <link>https://kantas-spike.github.io/portfolio/blog/2023/04/13-learn-programming-practice-python-2021/</link>

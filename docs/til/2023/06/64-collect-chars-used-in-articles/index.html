@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html><head>
+    <title>
+        ブログ記事に使用されている文字を収集したい | kanta&#39;s spike
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://kantas-spike.github.io/portfolio/css/theme.min.709e6655d20632b566caa12f8f13cd90685a59a2c3cc34b7e762cc0fa0a688b0.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" /><link rel="stylesheet" href="https://kantas-spike.github.io/portfolio/css/syntax.min.70c02160dee6bd55baaa2b10019d735294451730e282f7fa645466392ba0cfb6.css"><link rel="apple-touch-icon" sizes="180x180" href="https://kantas-spike.github.io/portfolio/icon180.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://kantas-spike.github.io/portfolio/icon32.png">
+<link rel="icon" type="image/svg+xml" href="https://kantas-spike.github.io/portfolio/icon.svg">
+<link rel="manifest" href="https://kantas-spike.github.io/portfolio/site.webmanifest">
+
+</head><body class="bg-background text-primary-dark pb-4"><header class="bg-primary-dark text-site_title text-6xl font-serif font-extrabold px-4 py-3">
+    <h1 class="container mx-auto px-4"><a href="https://kantas-spike.github.io/portfolio/">kanta&#39;s spike</a></h1>
+</header>
+<input type="checkbox" name="burger_cbx" id="burger_cbx">
+<label for="burger_cbx" class="burger_label">
+    <span class="burger_icon"><svg version="1.1" viewBox="0 0 12.7 12.7" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <rect x="1.0369" y="2.1007" width="10.634" height="1.0426" ry=".5213"/>
+  <rect x="1.0369" y="4.571" width="10.634" height="1.0426" ry=".5213"/>
+  <rect x="1.0369" y="7.0413" width="10.634" height="1.0426" ry=".5213"/>
+  <rect x="1.0369" y="9.5115" width="10.634" height="1.0426" ry=".5213"/>
+ </g>
+</svg>
+</span>
+</label>
+<label for="burger_cbx" class="close_label">
+    <span class="close_icon"><svg version="1.1" viewBox="0 0 12.7 12.7" xmlns="http://www.w3.org/2000/svg">
+ <rect transform="rotate(45.535)" x="3.6678" y="-.6148" width="10.634" height="1.0426" ry=".5213"/>
+ <rect transform="rotate(135.53)" x="-5.4104" y="-9.5059" width="10.634" height="1.0426" ry=".5213"/>
+</svg>
+</span>
+</label>
+<div class="nav_area">
+    <nav class="container mx-auto bg-primary text-on-primary text-center flex flex-col md:flex-row justify-start">
+            <a href="https://kantas-spike.github.io/portfolio/" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Home</a>
+            <a href="https://kantas-spike.github.io/portfolio/blog" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Blog</a>
+            <a href="https://kantas-spike.github.io/portfolio/til" class="box-border flex-1 text-center no-underline bg-primary-light text-on-primary-light font-extrabold py-2">TIL</a>
+            <a href="https://kantas-spike.github.io/portfolio/dialogue" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Dialogue</a>
+            <a href="https://kantas-spike.github.io/portfolio/mytools" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">My Tools</a>
+            <a href="https://kantas-spike.github.io/portfolio/ihc" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">IHC</a>
+            <a href="https://kantas-spike.github.io/portfolio/tags" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Tags</a>
+        <div class="flex-none" id="search_menu"></div>
+    </nav>
+</div>
+<main id="content" class="container mx-auto bg-surface pt-4 pb-8">
+<div class="area_border  px-4 py-3 mx-4  md:mx-10 pb-4">
+    
+
+
+
+<div class="mb-4">
+    <h3 class="border-b-4 border-primary-dark text-primary-dark text-xl font-bold tracking-wider"><i class="fa-solid fa-note-sticky"></i> <a href="https://kantas-spike.github.io/portfolio/til/2023/06/64-collect-chars-used-in-articles/">ブログ記事に使用されている文字を収集したい</a></h3>
+    <div class="flex justify-between mt-1 mx-2">
+        <div>
+            <ul class="flex gap-2 justify-end">
+            
+            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/python/">#python</a></li>
+            
+            </ul>
+        </div>
+        <div>
+            
+            <div class="text-right text-sm font-bold">2023/06/07</div>
+            
+        </div>
+    </div>
+</div>
+
+    <div class="article mx-2">
+        <p>これまで作成した記事から文字集合を作成し、<code>JIS第1水準の漢字や常用漢字、ひらがなカタカナ、半角全角 英数字、半角全角 記号</code>の文字集合と比較して確かめたい。</p>
+<p>日本語のWebフォントを利用するときはダウンロードサイズを減らすために、Webサイトで利用する文字だけを集めたフォントのサブセットを作成して利用するそうだ。</p>
+<p>その際、JIS第1水準の漢字や常用漢字、ひらがなカタカナ、半角全角 英数字、半角全角 記号など基準となる文字集合を集めたサブセットを作成するようだ。</p>
+<p>私もWebフォントのサブセットを作成したいが、その前にこれまで作成した記事が本当に上記の基準となる文字集合で収まるのか確認したい。</p>
+<h3 id="解決策">解決策</h3>
+<p>基準となる文字集合と、記事から集めた文字集合を比較するスクリプト(<code>compare-charsets.py</code>)を作成した。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">argparse</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">json</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">load_base_charset</span><span class="p">(</span><span class="n">json_path</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">base_sets</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">json_path</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">obj</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">obj</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">            <span class="n">base_sets</span> <span class="o">|=</span> <span class="nb">set</span><span class="p">(</span><span class="n">val</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">base_sets</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">update_charsets</span><span class="p">(</span><span class="n">sets</span><span class="p">,</span> <span class="n">file_path</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">file_path</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">sets</span> <span class="o">|=</span> <span class="nb">set</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">check_charsets</span><span class="p">(</span><span class="n">base_json_file</span><span class="p">,</span> <span class="n">input_files</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">base_sets</span> <span class="o">=</span> <span class="n">load_base_charset</span><span class="p">(</span><span class="n">base_json_file</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;基準文字集合ファイルの文字セット数: &#34;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">base_sets</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">    <span class="n">target_sets</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">file</span> <span class="ow">in</span> <span class="n">input_files</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">update_charsets</span><span class="p">(</span><span class="n">target_sets</span><span class="p">,</span> <span class="n">file</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;引数で指定したファイルの文字セット数: &#34;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">target_sets</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1"># check subset</span>
+</span></span><span class="line"><span class="cl">    <span class="n">is_subset</span> <span class="o">=</span> <span class="n">target_sets</span> <span class="ow">in</span> <span class="n">base_sets</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;基準文字集合の文字セットは全ファイルの文字セットを含みますか?: &#34;</span><span class="p">,</span> <span class="n">is_subset</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="ow">not</span> <span class="n">is_subset</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="c1"># list differences</span>
+</span></span><span class="line"><span class="cl">        <span class="n">diff</span> <span class="o">=</span> <span class="n">target_sets</span> <span class="o">-</span> <span class="n">base_sets</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;記事文字集合に含まれない文字セットの数: &#34;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">diff</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">char</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">diff</span><span class="p">,</span> <span class="mi">1</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">            <span class="nb">print</span><span class="p">(</span><span class="n">idx</span><span class="p">,</span> <span class="s2">&#34;:&#34;</span><span class="p">,</span> <span class="n">char</span><span class="p">,</span> <span class="s2">&#34;-&#34;</span><span class="p">,</span> <span class="nb">hex</span><span class="p">(</span><span class="nb">ord</span><span class="p">(</span><span class="n">char</span><span class="p">)))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&#34;__main__&#34;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">parser</span> <span class="o">=</span> <span class="n">argparse</span><span class="o">.</span><span class="n">ArgumentParser</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="s2">&#34;基準文字集合ファイル(JSON)の文字集合と引数のファイルの文字集合の差異をチェックする&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;-b&#39;</span><span class="p">,</span> <span class="s1">&#39;--base-chars-json&#39;</span><span class="p">,</span> <span class="n">metavar</span><span class="o">=</span><span class="s2">&#34;BASE_CHARS_FILE&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">required</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s1">&#39;基準となる文字集合を記載したJSONファイル&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;input_files&#39;</span><span class="p">,</span> <span class="n">metavar</span><span class="o">=</span><span class="s1">&#39;INPUT_FILE&#39;</span><span class="p">,</span> <span class="n">nargs</span><span class="o">=</span><span class="s1">&#39;+&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">help</span><span class="o">=</span><span class="s1">&#39;チェック対象のテキストファイル&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">args</span> <span class="o">=</span> <span class="n">parser</span><span class="o">.</span><span class="n">parse_args</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># print(args)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">check_charsets</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">base_chars_json</span><span class="p">,</span> <span class="n">args</span><span class="o">.</span><span class="n">input_files</span><span class="p">)</span>
+</span></span></code></pre></div><h4 id="準備">準備</h4>
+<p>まず、基準となる文字集合を記載したJSONファイル(<code>base.json</code>)を用意する。 <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> <sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;常用漢字(2136文字)&#34;</span><span class="p">:</span> <span class="s2">&#34;亜哀挨愛曖悪握圧扱宛嵐安案暗以衣位囲医依委威為畏胃尉異移萎偉椅彙意違維慰遺緯域育一壱逸茨芋引印因咽姻員院淫陰飲隠韻右宇羽雨唄鬱畝浦運雲永泳英映栄営詠影鋭衛易疫益液駅悦越謁閲円延沿炎怨宴媛援園煙猿遠鉛塩演縁艶汚王凹央応往押旺欧殴桜翁奥横岡屋億憶臆虞乙俺卸音恩温穏下化火加可仮何花佳価果河苛科架夏家荷華菓貨渦過嫁暇禍靴寡歌箇稼課蚊牙瓦我画芽賀雅餓介回灰会快戒改怪拐悔海界皆械絵開階塊楷解潰壊懐諧貝外劾害崖涯街慨蓋該概骸垣柿各角拡革格核殻郭覚較隔閣確獲嚇穫学岳楽額顎掛潟括活喝渇割葛滑褐轄且株釜鎌刈干刊甘汗缶完肝官冠巻看陥乾勘患貫寒喚堪換敢棺款間閑勧寛幹感漢慣管関歓監緩憾還館環簡観韓艦鑑丸含岸岩玩眼頑顔願企伎危机気岐希忌汽奇祈季紀軌既記起飢鬼帰基寄規亀喜幾揮期棋貴棄毀旗器畿輝機騎技宜偽欺義疑儀戯擬犠議菊吉喫詰却客脚逆虐九久及弓丘旧休吸朽臼求究泣急級糾宮救球給嗅窮牛去巨居拒拠挙虚許距魚御漁凶共叫狂京享供協況峡挟狭恐恭胸脅強教郷境橋矯鏡競響驚仰暁業凝曲局極玉巾斤均近金菌勤琴筋僅禁緊錦謹襟吟銀区句苦駆具惧愚空偶遇隅串屈掘窟熊繰君訓勲薫軍郡群兄刑形系径茎係型契計恵啓掲渓経蛍敬景軽傾携継詣慶憬稽憩警鶏芸迎鯨隙劇撃激桁欠穴血決結傑潔月犬件見券肩建研県倹兼剣拳軒健険圏堅検嫌献絹遣権憲賢謙鍵繭顕験懸元幻玄言弦限原現舷減源厳己戸古呼固股虎孤弧故枯個庫湖雇誇鼓錮顧五互午呉後娯悟碁語誤護口工公勾孔功巧広甲交光向后好江考行坑孝抗攻更効幸拘肯侯厚恒洪皇紅荒郊香候校耕航貢降高康控梗黄喉慌港硬絞項溝鉱構綱酵稿興衡鋼講購乞号合拷剛傲豪克告谷刻国黒穀酷獄骨駒込頃今困昆恨根婚混痕紺魂墾懇左佐沙査砂唆差詐鎖座挫才再災妻采砕宰栽彩採済祭斎細菜最裁債催塞歳載際埼在材剤財罪崎作削昨柵索策酢搾錯咲冊札刷刹拶殺察撮擦雑皿三山参桟蚕惨産傘散算酸賛残斬暫士子支止氏仕史司四市矢旨死糸至伺志私使刺始姉枝祉肢姿思指施師恣紙脂視紫詞歯嗣試詩資飼誌雌摯賜諮示字寺次耳自似児事侍治持時滋慈辞磁餌璽鹿式識軸七𠮟失室疾執湿嫉漆質実芝写社車舎者射捨赦斜煮遮謝邪蛇尺借酌釈爵若弱寂手主守朱取狩首殊珠酒腫種趣寿受呪授需儒樹収囚州舟秀周宗拾秋臭修袖終羞習週就衆集愁酬醜蹴襲十汁充住柔重従渋銃獣縦叔祝宿淑粛縮塾熟出述術俊春瞬旬巡盾准殉純循順準潤遵処初所書庶暑署緒諸女如助序叙徐除小升少召匠床抄肖尚招承昇松沼昭宵将消症祥称笑唱商渉章紹訟勝掌晶焼焦硝粧詔証象傷奨照詳彰障憧衝賞償礁鐘上丈冗条状乗城浄剰常情場畳蒸縄壌嬢錠譲醸色拭食植殖飾触嘱織職辱尻心申伸臣芯身辛侵信津神唇娠振浸真針深紳進森診寝慎新審震薪親人刃仁尽迅甚陣尋腎須図水吹垂炊帥粋衰推酔遂睡穂随髄枢崇数据杉裾寸瀬是井世正生成西声制姓征性青斉政星牲省凄逝清盛婿晴勢聖誠精製誓静請整醒税夕斥石赤昔析席脊隻惜戚責跡積績籍切折拙窃接設雪摂節説舌絶千川仙占先宣専泉浅洗染扇栓旋船戦煎羨腺詮践箋銭潜線遷選薦繊鮮全前善然禅漸膳繕狙阻祖租素措粗組疎訴塑遡礎双壮早争走奏相荘草送倉捜挿桑巣掃曹曽爽窓創喪痩葬装僧想層総遭槽踪操燥霜騒藻造像増憎蔵贈臓即束足促則息捉速側測俗族属賊続卒率存村孫尊損遜他多汰打妥唾堕惰駄太対体耐待怠胎退帯泰堆袋逮替貸隊滞態戴大代台第題滝宅択沢卓拓託濯諾濁但達脱奪棚誰丹旦担単炭胆探淡短嘆端綻誕鍛団男段断弾暖談壇地池知値恥致遅痴稚置緻竹畜逐蓄築秩窒茶着嫡中仲虫沖宙忠抽注昼柱衷酎鋳駐著貯丁弔庁兆町長挑帳張彫眺釣頂鳥朝貼超腸跳徴嘲潮澄調聴懲直勅捗沈珍朕陳賃鎮追椎墜通痛塚漬坪爪鶴低呈廷弟定底抵邸亭貞帝訂庭逓停偵堤提程艇締諦泥的笛摘滴適敵溺迭哲鉄徹撤天典店点展添転塡田伝殿電斗吐妬徒途都渡塗賭土奴努度怒刀冬灯当投豆東到逃倒凍唐島桃討透党悼盗陶塔搭棟湯痘登答等筒統稲踏糖頭謄藤闘騰同洞胴動堂童道働銅導瞳峠匿特得督徳篤毒独読栃凸突届屯豚頓貪鈍曇丼那奈内梨謎鍋南軟難二尼弐匂肉虹日入乳尿任妊忍認寧熱年念捻粘燃悩納能脳農濃把波派破覇馬婆罵拝杯背肺俳配排敗廃輩売倍梅培陪媒買賠白伯拍泊迫剝舶博薄麦漠縛爆箱箸畑肌八鉢発髪伐抜罰閥反半氾犯帆汎伴判坂阪板版班畔般販斑飯搬煩頒範繁藩晩番蛮盤比皮妃否批彼披肥非卑飛疲秘被悲扉費碑罷避尾眉美備微鼻膝肘匹必泌筆姫百氷表俵票評漂標苗秒病描猫品浜貧賓頻敏瓶不夫父付布扶府怖阜附訃負赴浮婦符富普腐敷膚賦譜侮武部舞封風伏服副幅復福腹複覆払沸仏物粉紛雰噴墳憤奮分文聞丙平兵併並柄陛閉塀幣弊蔽餅米壁璧癖別蔑片辺返変偏遍編弁便勉歩保哺捕補舗母募墓慕暮簿方包芳邦奉宝抱放法泡胞俸倣峰砲崩訪報蜂豊飽褒縫亡乏忙坊妨忘防房肪某冒剖紡望傍帽棒貿貌暴膨謀頰北木朴牧睦僕墨撲没勃堀本奔翻凡盆麻摩磨魔毎妹枚昧埋幕膜枕又末抹万満慢漫未味魅岬密蜜脈妙民眠矛務無夢霧娘名命明迷冥盟銘鳴滅免面綿麺茂模毛妄盲耗猛網目黙門紋問冶夜野弥厄役約訳薬躍闇由油喩愉諭輸癒唯友有勇幽悠郵湧猶裕遊雄誘憂融優与予余誉預幼用羊妖洋要容庸揚揺葉陽溶腰様瘍踊窯養擁謡曜抑沃浴欲翌翼拉裸羅来雷頼絡落酪辣乱卵覧濫藍欄吏利里理痢裏履璃離陸立律慄略柳流留竜粒隆硫侶旅虜慮了両良料涼猟陵量僚領寮療瞭糧力緑林厘倫輪隣臨瑠涙累塁類令礼冷励戻例鈴零霊隷齢麗暦歴列劣烈裂恋連廉練錬呂炉賂路露老労弄郎朗浪廊楼漏籠六録麓論和話賄脇惑枠湾腕&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;人名用漢字一(633字種651字体)&#34;</span><span class="p">:</span> <span class="s2">&#34;丑丞乃之乎也云亘亙些亦亥亨亮仔伊伍伽佃佑伶侃侑俄俠俣俐倭俱倦倖偲傭儲允兎兜其冴凌凜凛凧凪凰凱函劉劫勁勺勿匁匡廿卜卯卿厨厩叉叡叢叶只吾吞吻哉哨啄哩喬喧喰喋嘩嘉嘗噌噂圃圭坐尭堯坦埴堰堺堵塙壕壬夷奄奎套娃姪姥娩嬉孟宏宋宕宥寅寓寵尖尤屑峨峻崚嵯嵩嶺巌巖巫已巳巴巷巽帖幌幡庄庇庚庵廟廻弘弛彗彦彪彬徠忽怜恢恰恕悌惟惚悉惇惹惺惣慧憐戊或戟托按挺挽掬捲捷捺捧掠揃摑摺撒撰撞播撫擢孜敦斐斡斧斯於旭昂昊昏昌昴晏晃晄晒晋晟晦晨智暉暢曙曝曳朋朔杏杖杜李杭杵杷枇柑柴柘柊柏柾柚桧檜栞桔桂栖桐栗梧梓梢梛梯桶梶椛梁棲椋椀楯楚楕椿楠楓椰楢楊榎樺榊榛槙槇槍槌樫槻樟樋橘樽橙檎檀櫂櫛櫓欣欽歎此殆毅毘毬汀汝汐汲沌沓沫洸洲洵洛浩浬淵淳渚渚淀淋渥渾湘湊湛溢滉溜漱漕漣澪濡瀕灘灸灼烏焰焚煌煤煉熙燕燎燦燭燿爾牒牟牡牽犀狼猪猪獅玖珂珈珊珀玲琢琢琉瑛琥琶琵琳瑚瑞瑶瑳瓜瓢甥甫畠畢疋疏皐皓眸瞥矩砦砥砧硯碓碗碩碧磐磯祇祢禰祐祐祷禱禄祿禎禎禽禾秦秤稀稔稟稜穣穰穹穿窄窪窺竣竪竺竿笈笹笙笠筈筑箕箔篇篠簞簾籾粥粟糊紘紗紐絃紬絆絢綺綜綴緋綾綸縞徽繫繡纂纏羚翔翠耀而耶耽聡肇肋肴胤胡脩腔脹膏臥舜舵芥芹芭芙芦苑茄苔苺茅茉茸茜莞荻莫莉菅菫菖萄菩萌萠萊菱葦葵萱葺萩董葡蓑蒔蒐蒼蒲蒙蓉蓮蔭蔣蔦蓬蔓蕎蕨蕉蕃蕪薙蕾蕗藁薩蘇蘭蝦蝶螺蟬蟹蠟衿袈袴裡裟裳襖訊訣註詢詫誼諏諄諒謂諺讃豹貰賑赳跨蹄蹟輔輯輿轟辰辻迂迄辿迪迦這逞逗逢遥遙遁遼邑祁郁鄭酉醇醐醍醬釉釘釧銑鋒鋸錘錐錆錫鍬鎧閃閏閤阿陀隈隼雀雁雛雫霞靖鞄鞍鞘鞠鞭頁頌頗顚颯饗馨馴馳駕駿驍魁魯鮎鯉鯛鰯鱒鱗鳩鳶鳳鴨鴻鵜鵬鷗鷲鷺鷹麒麟麿黎黛鼎&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;人名用漢字二(212字体)&#34;</span><span class="p">:</span> <span class="s2">&#34;亞惡爲逸榮衞謁圓緣薗應櫻奧橫溫價禍悔海壞懷樂渴卷陷寬漢氣祈器僞戲虛峽狹響曉勤謹駈勳薰惠揭鷄藝擊縣儉劍險圈檢顯驗嚴廣恆黃國黑穀碎雜祉視兒濕實社者煮壽收臭從澁獸縱祝暑署緖諸敍將祥涉燒奬條狀乘淨剩疊孃讓釀神眞寢愼盡粹醉穗瀨齊靜攝節專戰纖禪祖壯爭莊搜巢曾裝僧層瘦騷增憎藏贈臟卽帶滯瀧單嘆團彈晝鑄著廳徵聽懲鎭轉傳都嶋燈盜稻德突難拜盃賣梅髮拔繁晚卑祕碑賓敏冨侮福拂佛勉步峯墨飜每萬默埜彌藥與搖樣謠來賴覽欄龍虜凉綠淚壘類禮曆歷練鍊郞朗廊錄&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;平仮名&#34;</span><span class="p">:</span> <span class="s2">&#34;あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもやゆよらりるれろわゐゑをんゔがぎぐげござじずぜぞだぢづでどばびぶべぼぱぴぷぺぽぁぃぅぇぉゕゖっゃゅょゎゔか゚き゚く゚け゚こ゚ゝゞゟ&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;片仮名&#34;</span><span class="p">:</span> <span class="s2">&#34;アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヰヱヲンガギグゲゴザジズゼゾダヂヅデドバビブベボパピプペポァィゥェォヵヶッャュョヮヴヷヸヹヺカ゚キ゚ク゚ケ゚コ゚セ゚ツ゚ト゚ㇰㇱㇲㇳㇴㇵㇶㇷㇷ゚ㇸㇹㇺㇻㇼㇽㇾㇿヽヾヿ&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;半角英数&#34;</span><span class="p">:</span> <span class="s2">&#34;abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;全角英数&#34;</span><span class="p">:</span> <span class="s2">&#34;ＡＢＣＤＥＦＧＨＩＪＫＬＭＮＯＰＱＲＳＴＵＶＷＸＹＺａｂｃｄｅｆｇｈｉｊｋｌｍｎｏｐｑｒｓｔｕｖｗｘｙｚ０１２３４５６７８９&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;半角記号&#34;</span><span class="p">:</span> <span class="s2">&#34; !\&#34;#$%&amp;&#39;()*+,-./:;&lt;=&gt;?@[\\¥]^_`{|}~&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;全角記号&#34;</span><span class="p">:</span> <span class="s2">&#34;　！″“”＃＄％＆′（｟()｠）＊※＋、,−─ー－–—。.／…‥：；＜〈《＝》〉＞？＠【［〘〖〔＼￥〕〗〙］】＿｀｛｜｝〜&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;その他&#34;</span><span class="p">:</span> <span class="s2">&#34;「『』」‹«»›·∙•●○■□▲△゜゛・…‥‼︎⁇⁈⁉︎¦‾‘’×÷±∩∪∞≦≧€¢£₽₨₩〒☎︎☏〃々仝〻→←↑↓↔︎↕︎©™&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h4 id="使い方">使い方</h4>
+<p>以下を<code>base.json</code>とブログの記事を引数に指定して、<code>compare-charsets.py</code>を実行する。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">$ python compare-charsets.py -b base.json ~/blog/content/*/*.md
+</span></span><span class="line"><span class="cl">基準文字集合ファイルの文字セット数:  <span class="m">3472</span>
+</span></span><span class="line"><span class="cl">引数で指定したファイルの文字セット数:  <span class="m">3476</span>
+</span></span><span class="line"><span class="cl">基準文字集合の文字セットは全ファイルの文字セットを含みますか?:  False
+</span></span><span class="line"><span class="cl">記事文字集合に含まれない文字セットの数:  <span class="m">4</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="m">1</span> : ⚡ - 0x26a1
+</span></span><span class="line"><span class="cl"><span class="m">2</span> :
+</span></span><span class="line"><span class="cl"> - 0xa
+</span></span><span class="line"><span class="cl"><span class="m">3</span> :      - 0x9
+</span></span><span class="line"><span class="cl"><span class="m">4</span> : ️ - 0xfe0f
+</span></span></code></pre></div><p>この例では、ブログの記事に4つ差異がみつかった。</p>
+<table>
+<thead>
+<tr>
+<th>No.</th>
+<th>文字</th>
+<th>コード</th>
+<th>備考</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>⚡</td>
+<td>0x26a1</td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td>LF(改行)</td>
+<td>0xa</td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>HT(水平タブ)</td>
+<td>0x9</td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>VARIATION SELECTOR-16(異体字セレクタ)</td>
+<td>0xfe0f</td>
+<td>絵文字のスタイル設定用のコード</td>
+</tr>
+</tbody>
+</table>
+<p>2〜4は表示される文字ではないので無視する。
+1の&quot;⚡&quot;は、利用頻度は低そうなので、現状では、基準文字集合には含めないことにする。</p>
+<h3 id="参照">参照</h3>
+<ul>
+<li><a href="https://qiita.com/flatsato/items/2872aa863c20818982c8">日本語webフォントをサブセット化するときの文字一覧 - Qiita</a></li>
+<li><a href="https://ja.wikipedia.org/wiki/%E4%BA%BA%E5%90%8D%E7%94%A8%E6%BC%A2%E5%AD%97">人名用漢字 - Wikipedia</a></li>
+<li><a href="https://support.apple.com/ja-jp/guide/mac-help/mchlp1560/mac">Macで絵文字と記号を使用する - Apple サポート (日本)</a></li>
+<li><a href="https://moji-memo.hatenablog.jp/entry/20120802/1343876603">絵文字バリエーション・シーケンスとは何か - 帰ってきた💫Unicode刑事〔デカ〕リターンズ</a></li>
+<li><a href="https://ja.wikipedia.org/wiki/%E7%95%B0%E4%BD%93%E5%AD%97%E3%82%BB%E3%83%AC%E3%82%AF%E3%82%BF">異体字セレクタ - Wikipedia</a></li>
+</ul>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>JSONファイル内のキーは説明用に使用しており何でも良い。JSONに定義された値を全てまとめて基準とする文字集合にする&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>全角記号、その他については、MacOSの文字ビューアから適当に拾ったものである&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+    </div>
+    <div class="mt-6">
+    <div class="border-t-2 border-primary-dark px-2 pt-2 text-right">
+        <span class="text-sm">作成日: 2023/06/07</span></div>
+</div>
+
+</div>
+
+        </main><footer class="bg-primary-dark text-center text-on-primary-dark fixed bottom-0 w-full h-8">
+    <div class="container mx-auto grid grid-cols-3">
+        <div class="col-start-1 col-span-2 ml-2 md:ml-0 md:col-start-2 md:col-span-1">
+            <div class="text-left md:text-center text-sm pt-2">© 2022 kanta&#39;s spike</div>
+        </div>
+        <div class="col-start-3 flex justify-end gap-2 mr-2">
+            
+                
+            <a title="Twitter" class="text-2xl" href="https://twitter.com/KantasSpike"><i class="fa-brands fa-twitter-square"></i></a>
+                
+            <a title="Youtube" class="text-2xl" href="https://www.youtube.com/channel/UCnVBuUGMYAt7ZuIkadxnMfw"><i class="fa-brands fa-youtube-square"></i></a>
+                
+            <a title="GitHub" class="text-2xl" href="https://github.com/kantas-spike"><i class="fa-brands fa-github-square"></i></a>
+                
+            <a title="Blog" class="text-2xl" href="https://kantas-spike.github.io/portfolio/"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                
+            
+        </div>
+    </div>
+</footer>
+        
+
+
+
+
+<script defer type="text/javascript" src="https://kantas-spike.github.io/portfolio/js/search-form.fbebef183ce63bc410fb778cc32a9091478f689b90a07c9d466ee04fac9bb13b9d94b06a951ce7e74ec604e8d10c2b06c11d26e58894922f1c1229b3bebca7fc.js" integrity="sha512-&#43;&#43;vvGDzmO8QQ&#43;3eMwyqQkUePaJuQoHydRm7gT6ybsTudlLBqlRzn507GBOjRDCsGwR0m5YiUki8cEimzvryn/A=="></script></body>
+</html>

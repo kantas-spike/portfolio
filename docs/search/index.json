@@ -1,6 +1,10 @@
 {
     "results": [
     {
+        "href": "https://kantas-spike.github.io/portfolio/til/2023/06/64-collect-chars-used-in-articles/",
+        "title": "ブログ記事に使用されている文字を収集したい"
+    },
+    {
         "href": "https://kantas-spike.github.io/portfolio/til/2023/06/63-customize-default-font-family-on-tailwindcss/",
         "title": "Tailwind CSSでデフォルトのfont-familyを修正したい"
     },
