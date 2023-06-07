@@ -1,6 +1,14 @@
 {
     "results": [
     {
+        "href": "https://kantas-spike.github.io/portfolio/til/2023/06/66-use-web-fonts-with-hugo/",
+        "title": "HugoでWebフォントを利用したい"
+    },
+    {
+        "href": "https://kantas-spike.github.io/portfolio/til/2023/06/65-create-a-subsetted-font/",
+        "title": "サブセット化したWebフォントを作成したい"
+    },
+    {
         "href": "https://kantas-spike.github.io/portfolio/til/2023/06/64-collect-chars-used-in-articles/",
         "title": "ブログ記事に使用されている文字を収集したい"
     },

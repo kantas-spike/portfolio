@@ -2,11 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/python/</loc>
-    <lastmod>2023-06-07T04:30:48+09:00</lastmod>
+    <loc>https://kantas-spike.github.io/portfolio/tags/font/</loc>
+    <lastmod>2023-06-07T14:50:17+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/hugo/</loc>
+    <lastmod>2023-06-07T14:50:17+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/til/2023/06/66-use-web-fonts-with-hugo/</loc>
+    <lastmod>2023-06-07T14:50:17+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/</loc>
-    <lastmod>2023-06-07T04:30:48+09:00</lastmod>
+    <lastmod>2023-06-07T14:50:17+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/python/</loc>
+    <lastmod>2023-06-07T08:43:25+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/til/2023/06/65-create-a-subsetted-font/</loc>
+    <lastmod>2023-06-07T08:43:25+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2023/06/64-collect-chars-used-in-articles/</loc>
     <lastmod>2023-06-07T04:30:48+09:00</lastmod>
@@ -22,9 +34,6 @@
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2023/06/62-adjust-the-presentaion-of-text-blocks/</loc>
     <lastmod>2023-06-06T06:03:18+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/hugo/</loc>
-    <lastmod>2023-06-02T06:20:26+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2023/06/61-use-packages-in-a-theme-with-hugo/</loc>
     <lastmod>2023-06-02T06:20:26+09:00</lastmod>
@@ -187,9 +196,6 @@
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2023/02/41-convert-svg-to-png-from-commandline-using-inkscape/</loc>
     <lastmod>2023-02-07T00:04:37+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/font/</loc>
-    <lastmod>2023-02-02T15:33:58+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/dialogue/01-tell-me-font-family/</loc>
     <lastmod>2023-02-02T15:33:58+09:00</lastmod>

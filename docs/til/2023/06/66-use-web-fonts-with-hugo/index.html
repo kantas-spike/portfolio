@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html><head>
+    <title>
+        HugoでWebフォントを利用したい | kanta&#39;s spike
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="https://kantas-spike.github.io/portfolio/css/fonts.978d33a6dcb8af5cc3fc6d102e0cbd3d4f2452dcaae53ff12d45609137df3ed9.css">
+    <link rel="stylesheet" href="https://kantas-spike.github.io/portfolio/css/theme.min.709e6655d20632b566caa12f8f13cd90685a59a2c3cc34b7e762cc0fa0a688b0.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" /><link rel="stylesheet" href="https://kantas-spike.github.io/portfolio/css/syntax.min.70c02160dee6bd55baaa2b10019d735294451730e282f7fa645466392ba0cfb6.css"><link rel="apple-touch-icon" sizes="180x180" href="https://kantas-spike.github.io/portfolio/icon180.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://kantas-spike.github.io/portfolio/icon32.png">
+<link rel="icon" type="image/svg+xml" href="https://kantas-spike.github.io/portfolio/icon.svg">
+<link rel="manifest" href="https://kantas-spike.github.io/portfolio/site.webmanifest">
+
+</head><body class="bg-background text-primary-dark pb-4"><header class="bg-primary-dark text-site_title text-6xl font-serif font-extrabold px-4 py-3">
+    <h1 class="container mx-auto px-4"><a href="https://kantas-spike.github.io/portfolio/">kanta&#39;s spike</a></h1>
+</header>
+<input type="checkbox" name="burger_cbx" id="burger_cbx">
+<label for="burger_cbx" class="burger_label">
+    <span class="burger_icon"><svg version="1.1" viewBox="0 0 12.7 12.7" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <rect x="1.0369" y="2.1007" width="10.634" height="1.0426" ry=".5213"/>
+  <rect x="1.0369" y="4.571" width="10.634" height="1.0426" ry=".5213"/>
+  <rect x="1.0369" y="7.0413" width="10.634" height="1.0426" ry=".5213"/>
+  <rect x="1.0369" y="9.5115" width="10.634" height="1.0426" ry=".5213"/>
+ </g>
+</svg>
+</span>
+</label>
+<label for="burger_cbx" class="close_label">
+    <span class="close_icon"><svg version="1.1" viewBox="0 0 12.7 12.7" xmlns="http://www.w3.org/2000/svg">
+ <rect transform="rotate(45.535)" x="3.6678" y="-.6148" width="10.634" height="1.0426" ry=".5213"/>
+ <rect transform="rotate(135.53)" x="-5.4104" y="-9.5059" width="10.634" height="1.0426" ry=".5213"/>
+</svg>
+</span>
+</label>
+<div class="nav_area">
+    <nav class="container mx-auto bg-primary text-on-primary text-center flex flex-col md:flex-row justify-start">
+            <a href="https://kantas-spike.github.io/portfolio/" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Home</a>
+            <a href="https://kantas-spike.github.io/portfolio/blog" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Blog</a>
+            <a href="https://kantas-spike.github.io/portfolio/til" class="box-border flex-1 text-center no-underline bg-primary-light text-on-primary-light font-bold py-2">TIL</a>
+            <a href="https://kantas-spike.github.io/portfolio/dialogue" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Dialogue</a>
+            <a href="https://kantas-spike.github.io/portfolio/mytools" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">My Tools</a>
+            <a href="https://kantas-spike.github.io/portfolio/ihc" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">IHC</a>
+            <a href="https://kantas-spike.github.io/portfolio/tags" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Tags</a>
+        <div class="flex-none" id="search_menu"></div>
+    </nav>
+</div>
+<main id="content" class="container mx-auto bg-surface pt-4 pb-8">
+<div class="area_border  px-4 py-3 mx-4  md:mx-10 pb-4">
+    
+
+
+
+<div class="mb-4">
+    <h3 class="border-b-4 border-primary-dark text-primary-dark text-xl font-bold tracking-wider"><i class="fa-solid fa-note-sticky"></i> <a href="https://kantas-spike.github.io/portfolio/til/2023/06/66-use-web-fonts-with-hugo/">HugoでWebフォントを利用したい</a></h3>
+    <div class="flex justify-between mt-1 mx-2">
+        <div>
+            <ul class="flex gap-2 justify-end">
+            
+            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/font/">#font</a></li>
+            
+            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/hugo/">#hugo</a></li>
+            
+            </ul>
+        </div>
+        <div>
+            
+            <div class="text-right text-sm font-bold">2023/06/07</div>
+            
+        </div>
+    </div>
+</div>
+
+    <div class="article mx-2">
+        <p>サブセット化したWebフォントをHugoで利用したい。</p>
+<h3 id="解決策">解決策</h3>
+<ol>
+<li>
+<p>テーマの<code>static</code>ディレクトリ内に<code>fonts</code>ディレクトリ(<code>themes/kantas/static/fonts</code>)を作成しWebフォントを配置する。</p>
+</li>
+<li>
+<p>CSSファイル(<code>themes/kantas/assets/css/fonts.css</code>)を追加し、<code>@font-face</code>を定義する。 <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> <sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="p">@</span><span class="k">font-face</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">font-display</span><span class="o">:</span> <span class="nt">swap</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">font-family</span><span class="o">:</span> <span class="nt">Noto</span> <span class="nt">Sans</span> <span class="nt">JP</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">font-style</span><span class="o">:</span> <span class="nt">normal</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">font-weight</span><span class="o">:</span> <span class="nt">400</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">src</span><span class="o">:</span> <span class="nt">local</span><span class="o">(</span><span class="s2">&#34;Noto Sans JP&#34;</span><span class="o">),</span><span class="nt">url</span><span class="o">(../</span><span class="nt">fonts</span><span class="o">/</span><span class="nt">NotoSansJP-Regular</span><span class="p">.</span><span class="nc">woff2</span><span class="o">)</span> <span class="nt">format</span><span class="o">(</span><span class="s2">&#34;woff2&#34;</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">@</span><span class="k">font-face</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">font-display</span><span class="o">:</span> <span class="nt">swap</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">font-family</span><span class="o">:</span> <span class="nt">Noto</span> <span class="nt">Sans</span> <span class="nt">JP</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">font-style</span><span class="o">:</span> <span class="nt">normal</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">font-weight</span><span class="o">:</span> <span class="nt">700</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">src</span><span class="o">:</span> <span class="nt">local</span><span class="o">(</span><span class="s2">&#34;Noto Sans JP&#34;</span><span class="o">),</span><span class="nt">url</span><span class="o">(../</span><span class="nt">fonts</span><span class="o">/</span><span class="nt">NotoSansJP-Bold</span><span class="p">.</span><span class="nc">woff2</span><span class="o">)</span> <span class="nt">format</span><span class="o">(</span><span class="s2">&#34;woff2&#34;</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div></li>
+<li>
+<p><code>fonts.css</code>をHTML内で読み込む</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="c">&lt;!-- 略 --&gt;</span>
+</span></span><span class="line"><span class="cl">{{- $fonts_css := resources.Get &#34;css/fonts.css&#34; | resources.Fingerprint -}}
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;{{ $fonts_css.RelPermalink }}&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="c">&lt;!-- 略 --&gt;</span>
+</span></span></code></pre></div></li>
+<li>
+<p>Webフォントが利用されているか確認する</p>
+<ol>
+<li>
+<p>Chromeの<code>DevTools</code>で、ページのWebフォントが表示されているであろう要素を選択して、右クリックして<code>検証</code>を選択</p>
+</li>
+<li>
+<p><code>DevTools</code>の<code>Elements</code>タブ内の<code>Computed</code>タブを表示し、スクロールして一番下に表示される<code>Rendered Fonts</code>を確認する</p>
+<p>以下のように、<code>Noto Sans JP</code>が<code>Network resource</code>と表示されていれば、Webフォントが利用されている。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">Noto Sans JP—Network resource(3 glyphs)
+</span></span></code></pre></div><p>もし、<code>Network resource</code>ではなく、<code>Local file</code>と表示されている場合、Webフォントではなく、自PCにインストールされているフォントが利用されている。</p>
+</li>
+</ol>
+</li>
+</ol>
+<h3 id="参考">参考</h3>
+<ul>
+<li><a href="https://developer.mozilla.org/ja/docs/Web/CSS/@font-face">@font-face - CSS: カスケーディングスタイルシート | MDN</a></li>
+<li><a href="https://fonttools.readthedocs.io/en/latest/#utilities">fontTools Docs — fontTools Documentation</a></li>
+<li><a href="https://qiita.com/yuusuke510/items/20bf219e90d22ff283be">【備忘録】Chrome DevToolsで要素に適用されているフォントを確認する方法 - Qiita</a></li>
+<li><a href="https://developer.mozilla.org/ja/docs/Web/CSS/url">url() - CSS: カスケーディングスタイルシート | MDN</a></li>
+</ul>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>WebフォントのURLは、CSSファイルからの相対パスで指定する&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p><code>local()</code>と<code>url()</code>を併記することで、自PCに該当フォントがない場合のみWebフォントを利用するようになる。&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+    </div>
+    <div class="mt-6">
+    <div class="border-t-2 border-primary-dark px-2 pt-2 text-right">
+        <span class="text-sm">作成日: 2023/06/07</span></div>
+</div>
+
+</div>
+
+        </main><footer class="bg-primary-dark text-center text-on-primary-dark fixed bottom-0 w-full h-8">
+    <div class="container mx-auto grid grid-cols-3">
+        <div class="col-start-1 col-span-2 ml-2 md:ml-0 md:col-start-2 md:col-span-1">
+            <div class="text-left md:text-center text-sm pt-2">© 2022 kanta&#39;s spike</div>
+        </div>
+        <div class="col-start-3 flex justify-end gap-2 mr-2">
+            
+                
+            <a title="Twitter" class="text-2xl" href="https://twitter.com/KantasSpike"><i class="fa-brands fa-twitter-square"></i></a>
+                
+            <a title="Youtube" class="text-2xl" href="https://www.youtube.com/channel/UCnVBuUGMYAt7ZuIkadxnMfw"><i class="fa-brands fa-youtube-square"></i></a>
+                
+            <a title="GitHub" class="text-2xl" href="https://github.com/kantas-spike"><i class="fa-brands fa-github-square"></i></a>
+                
+            <a title="Blog" class="text-2xl" href="https://kantas-spike.github.io/portfolio/"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                
+            
+        </div>
+    </div>
+</footer>
+        
+
+
+
+
+<script defer type="text/javascript" src="https://kantas-spike.github.io/portfolio/js/search-form.fbebef183ce63bc410fb778cc32a9091478f689b90a07c9d466ee04fac9bb13b9d94b06a951ce7e74ec604e8d10c2b06c11d26e58894922f1c1229b3bebca7fc.js" integrity="sha512-&#43;&#43;vvGDzmO8QQ&#43;3eMwyqQkUePaJuQoHydRm7gT6ybsTudlLBqlRzn507GBOjRDCsGwR0m5YiUki8cEimzvryn/A=="></script></body>
+</html>

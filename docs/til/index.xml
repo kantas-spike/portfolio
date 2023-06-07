@@ -9,6 +9,24 @@
     <copyright>© 2022 kanta&#39;s spike</copyright>
     <lastBuildDate>Fri, 22 Jul 2022 08:15:27 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/til/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>HugoでWebフォントを利用したい</title>
+      <link>https://kantas-spike.github.io/portfolio/til/2023/06/66-use-web-fonts-with-hugo/</link>
+      <pubDate>Wed, 07 Jun 2023 14:50:17 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/til/2023/06/66-use-web-fonts-with-hugo/</guid>
+      <description>&lt;p&gt;サブセット化したWebフォントをHugoで利用したい。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>サブセット化したWebフォントを作成したい</title>
+      <link>https://kantas-spike.github.io/portfolio/til/2023/06/65-create-a-subsetted-font/</link>
+      <pubDate>Wed, 07 Jun 2023 08:43:25 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/til/2023/06/65-create-a-subsetted-font/</guid>
+      <description>&lt;p&gt;ブログで使用するためにサブセット化したWebフォントを作成したい。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>ブログ記事に使用されている文字を収集したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/06/64-collect-chars-used-in-articles/</link>
       <pubDate>Wed, 07 Jun 2023 04:30:48 +0900</pubDate>

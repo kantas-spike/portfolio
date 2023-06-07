@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>© 2022 kanta&#39;s spike</copyright>
-    <lastBuildDate>Wed, 07 Jun 2023 04:30:48 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 07 Jun 2023 08:43:25 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>サブセット化したWebフォントを作成したい</title>
+      <link>https://kantas-spike.github.io/portfolio/til/2023/06/65-create-a-subsetted-font/</link>
+      <pubDate>Wed, 07 Jun 2023 08:43:25 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/til/2023/06/65-create-a-subsetted-font/</guid>
+      <description>&lt;p&gt;ブログで使用するためにサブセット化したWebフォントを作成したい。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>ブログ記事に使用されている文字を収集したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/06/64-collect-chars-used-in-articles/</link>
