@@ -81,7 +81,12 @@
 <p>テーマの<code>static</code>ディレクトリ内に<code>fonts</code>ディレクトリ(<code>themes/kantas/static/fonts</code>)を作成しWebフォントを配置する。</p>
 </li>
 <li>
-<p>CSSファイル(<code>themes/kantas/assets/css/fonts.css</code>)を追加し、<code>@font-face</code>を定義する。 <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> <sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></p>
+<p>HTMLの<code>&lt;head/&gt;</code>内で、あらかじめフォントを読み込む</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;preload&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;{{ .Site.BaseURL }}/fonts/NotoSansJP-Regular.woff2&#34;</span> <span class="na">as</span><span class="o">=</span><span class="s">&#34;font&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;font/woff2&#34;</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">&#34;anonymous&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;preload&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;{{ .Site.BaseURL }}/fonts/NotoSansJP-Bold.woff2&#34;</span> <span class="na">as</span><span class="o">=</span><span class="s">&#34;font&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;font/woff2&#34;</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">&#34;anonymous&#34;</span><span class="p">&gt;</span>
+</span></span></code></pre></div></li>
+<li>
+<p>CSSファイル(<code>themes/kantas/assets/css/fonts.css</code>)を追加し、<code>@font-face</code>を定義する。 <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> <sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> <sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="p">@</span><span class="k">font-face</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="nt">font-display</span><span class="o">:</span> <span class="nt">swap</span><span class="o">;</span>
 </span></span><span class="line"><span class="cl">    <span class="nt">font-family</span><span class="o">:</span> <span class="nt">Noto</span> <span class="nt">Sans</span> <span class="nt">JP</span><span class="o">;</span>
@@ -95,7 +100,7 @@
 </span></span><span class="line"><span class="cl">    <span class="nt">font-family</span><span class="o">:</span> <span class="nt">Noto</span> <span class="nt">Sans</span> <span class="nt">JP</span><span class="o">;</span>
 </span></span><span class="line"><span class="cl">    <span class="nt">font-style</span><span class="o">:</span> <span class="nt">normal</span><span class="o">;</span>
 </span></span><span class="line"><span class="cl">    <span class="nt">font-weight</span><span class="o">:</span> <span class="nt">700</span><span class="o">;</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">src</span><span class="o">:</span> <span class="nt">local</span><span class="o">(</span><span class="s2">&#34;Noto Sans JP&#34;</span><span class="o">),</span><span class="nt">url</span><span class="o">(../</span><span class="nt">fonts</span><span class="o">/</span><span class="nt">NotoSansJP-Bold</span><span class="p">.</span><span class="nc">woff2</span><span class="o">)</span> <span class="nt">format</span><span class="o">(</span><span class="s2">&#34;woff2&#34;</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">src</span><span class="o">:</span> <span class="nt">local</span><span class="o">(</span><span class="s2">&#34;Noto Sans JP Bold&#34;</span><span class="o">),</span><span class="nt">url</span><span class="o">(../</span><span class="nt">fonts</span><span class="o">/</span><span class="nt">NotoSansJP-Bold</span><span class="p">.</span><span class="nc">woff2</span><span class="o">)</span> <span class="nt">format</span><span class="o">(</span><span class="s2">&#34;woff2&#34;</span><span class="o">)</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div></li>
 <li>
@@ -135,6 +140,9 @@
 </li>
 <li id="fn:2">
 <p><code>local()</code>と<code>url()</code>を併記することで、自PCに該当フォントがない場合のみWebフォントを利用するようになる。&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3">
+<p>MacOSのChromeの場合、<code>local(&quot;Noto Sans JP&quot;)</code>と<code>font-weight: 700</code>だけでは太字にならない。<code>local(&quot;Noto Sans JP Bold&quot;)</code>のようにフルネームを指定する必要があるようだ。 参考: <a href="https://github.com/kantas-spike/kantas-theme/issues/52">@font-face で font-weight: 700を指定時に、local(Noto Sans JP)では太字にならない · Issue #52 · kantas-spike/kantas-theme</a>&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </div>
