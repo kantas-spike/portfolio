@@ -14,7 +14,14 @@ tags:
 ### 解決策
 
 1. テーマの`static`ディレクトリ内に`fonts`ディレクトリ(`themes/kantas/static/fonts`)を作成しWebフォントを配置する。
-2. CSSファイル(`themes/kantas/assets/css/fonts.css`)を追加し、`@font-face`を定義する。 [^1] [^2]
+2. HTMLの`<head/>`内で、あらかじめフォントを読み込む
+
+    ~~~html
+    <link rel="preload" href="{{ .Site.BaseURL }}/fonts/NotoSansJP-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="{{ .Site.BaseURL }}/fonts/NotoSansJP-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    ~~~
+
+3. CSSファイル(`themes/kantas/assets/css/fonts.css`)を追加し、`@font-face`を定義する。 [^1] [^2] [^3]
 
     ~~~css
     @font-face {
@@ -30,11 +37,11 @@ tags:
         font-family: Noto Sans JP;
         font-style: normal;
         font-weight: 700;
-        src: local("Noto Sans JP"),url(../fonts/NotoSansJP-Bold.woff2) format("woff2")
+        src: local("Noto Sans JP Bold"),url(../fonts/NotoSansJP-Bold.woff2) format("woff2")
     }
     ~~~
 
-3. `fonts.css`をHTML内で読み込む
+4. `fonts.css`をHTML内で読み込む
 
     ~~~html
     <!-- 略 -->
@@ -43,7 +50,7 @@ tags:
     <!-- 略 -->
     ~~~
 
-4. Webフォントが利用されているか確認する
+5. Webフォントが利用されているか確認する
 
     1. Chromeの`DevTools`で、ページのWebフォントが表示されているであろう要素を選択して、右クリックして`検証`を選択
     2. `DevTools`の`Elements`タブ内の`Computed`タブを表示し、スクロールして一番下に表示される`Rendered Fonts`を確認する
@@ -65,3 +72,4 @@ tags:
 
 [^1]: WebフォントのURLは、CSSファイルからの相対パスで指定する
 [^2]: `local()`と`url()`を併記することで、自PCに該当フォントがない場合のみWebフォントを利用するようになる。
+[^3]: MacOSのChromeの場合、`local("Noto Sans JP")`と`font-weight: 700`だけでは太字にならない。`local("Noto Sans JP Bold")`のようにフルネームを指定する必要があるようだ。 参考: [@font-face で font-weight: 700を指定時に、local(Noto Sans JP)では太字にならない · Issue #52 · kantas-spike/kantas-theme](https://github.com/kantas-spike/kantas-theme/issues/52)
