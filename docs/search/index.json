@@ -2,375 +2,468 @@
     "results": [
     {
         "href": "https://kantas-spike.github.io/portfolio/til/2023/06/66-use-web-fonts-with-hugo/",
-        "title": "HugoでWebフォントを利用したい"
+        "title": "HugoでWebフォントを利用したい",
+        "tags": "font hugo"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/til/2023/06/65-create-a-subsetted-font/",
-        "title": "サブセット化したWebフォントを作成したい"
+        "title": "サブセット化したWebフォントを作成したい",
+        "tags": "python font"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/til/2023/06/64-collect-chars-used-in-articles/",
-        "title": "ブログ記事に使用されている文字を収集したい"
+        "title": "ブログ記事に使用されている文字を収集したい",
+        "tags": "python"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/til/2023/06/63-customize-default-font-family-on-tailwindcss/",
-        "title": "Tailwind CSSでデフォルトのfont-familyを修正したい"
+        "title": "Tailwind CSSでデフォルトのfont-familyを修正したい",
+        "tags": "css tailwindcss"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/til/2023/06/62-adjust-the-presentaion-of-text-blocks/",
-        "title": "CSSで文章を読み易くしたい"
+        "title": "CSSで文章を読み易くしたい",
+        "tags": "css tailwindcss"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/til/2023/06/61-use-packages-in-a-theme-with-hugo/",
-        "title": "Hugoのテーマで使用するパッケージは、テーマ内で管理したい"
+        "title": "Hugoのテーマで使用するパッケージは、テーマ内で管理したい",
+        "tags": "hugo"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/til/2023/06/60-what-is-defer-in-the-script-tag/",
-        "title": "scriptタグに設定されている`defer`って何？"
+        "title": "scriptタグに設定されている`defer`って何？",
+        "tags": "html"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/til/2023/06/59-use-site-assets-when-using-a-theme-with-hugo/",
-        "title": "Hugoでテーマを利用時にサイト用のアセットも利用したい"
+        "title": "Hugoでテーマを利用時にサイト用のアセットも利用したい",
+        "tags": "hugo"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/til/2023/05/58-decide-on-a-protection-policy-for-the-main-branch/",
-        "title": "メインブランチの保護方針を決める"
+        "title": "メインブランチの保護方針を決める",
+        "tags": "GitHub"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/til/2023/05/57-create-search-window-using-react/",
-        "title": "Reactを使って検索画面を作る"
+        "title": "Reactを使って検索画面を作る",
+        "tags": "react"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/til/2023/05/56-create-a-modal-window-using-react/",
-        "title": "Reactを使ってモーダルウィンドウを作成する"
+        "title": "Reactを使ってモーダルウィンドウを作成する",
+        "tags": "react"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/til/2023/05/55-sort-articles-by-lastmod-on-hugo/",
-        "title": "Hugoで記事を更新日時でソートしたい"
+        "title": "Hugoで記事を更新日時でソートしたい",
+        "tags": "hugo"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/til/2023/05/54-introducing-react/",
-        "title": "Reactを導入したい"
+        "title": "Reactを導入したい",
+        "tags": "react hugo"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/ihc/kantas_theme/",
-        "title": "kantas-theme"
+        "title": "kantas-theme",
+        "tags": ""
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/mytools/repo_info.py/",
-        "title": "repo-info.py"
+        "title": "repo-info.py",
+        "tags": ""
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/dialogue/04-buddy/",
-        "title": "名コンビといえば?"
+        "title": "名コンビといえば?",
+        "tags": "ChatGPT"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/dialogue/03-shissoukan/",
-        "title": "疾走感のある曲を検索したい"
+        "title": "疾走感のある曲を検索したい",
+        "tags": "ChatGPT english"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/til/2023/04/53-open-book-by-kindle-app/",
-        "title": "Kindle.appで指定した購入済み書籍を直接開きたい"
+        "title": "Kindle.appで指定した購入済み書籍を直接開きたい",
+        "tags": "kindle uri_scheme"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/blog/2023/04/13-learn-programming-practice-python-2021/",
-        "title": "「プログラミング演習 Python 2021」を学ぶ"
+        "title": "「プログラミング演習 Python 2021」を学ぶ",
+        "tags": "programming python 学習記録"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/til/2023/03/52-using-wether-forecast-with-siri/",
-        "title": "Siriに天気を聞きたい"
+        "title": "Siriに天気を聞きたい",
+        "tags": "english siri"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/til/2023/03/51-learning-english-with-siri/",
-        "title": "Siriで英語を学びたい"
+        "title": "Siriで英語を学びたい",
+        "tags": "english siri"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/til/2023/03/48-set-color-to-object-with-inkscape/",
-        "title": "Inkscapeでオブジェクトを作成する前に色を設定したい"
+        "title": "Inkscapeでオブジェクトを作成する前に色を設定したい",
+        "tags": "inkscape"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/dialogue/02-tell-me-howto-write-copyright/",
-        "title": "ホームページ用のコピーライトの書式を教えて"
+        "title": "ホームページ用のコピーライトの書式を教えて",
+        "tags": "ChatGPT html copyright"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/til/2023/02/47-use-poetry/",
-        "title": "Pythonプロジェクトのパッケージを管理する"
+        "title": "Pythonプロジェクトのパッケージを管理する",
+        "tags": "python poetry"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/blog/2023/02/12-use-jupyter-notebook/",
-        "title": "Jupyter Notebookを使う"
+        "title": "Jupyter Notebookを使う",
+        "tags": "python jupyter"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/mytools/make_book_pdf/",
-        "title": "make_book_pdf"
+        "title": "make_book_pdf",
+        "tags": ""
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/blog/2023/02/10-make-make-book-using-make/",
-        "title": "makeを使って『Make本』をメイクする"
+        "title": "makeを使って『Make本』をメイクする",
+        "tags": "make Makefile"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/til/2023/02/46-process-each-line-in-a-file-using-shellscript/",
-        "title": "シェルスクリプトでファイル内の各行を処理したい"
+        "title": "シェルスクリプトでファイル内の各行を処理したい",
+        "tags": "shellscript"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/til/2023/02/45-merge-pdfs-by-ghostscript/",
-        "title": "複数のPDFファイルをマージしたい"
+        "title": "複数のPDFファイルをマージしたい",
+        "tags": "pdf ghostscript"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/blog/2023/02/09-merge-make-book/",
-        "title": "PDFで公開されているMake本をマージする"
+        "title": "PDFで公開されているMake本をマージする",
+        "tags": "python make pdf"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/til/2023/02/44-add-render-hook-for-plotly/",
-        "title": "HugoでPlotlyによるグラフを表示したい"
+        "title": "HugoでPlotlyによるグラフを表示したい",
+        "tags": "plotly hugo render_hooks"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/til/2023/02/43-add-render-hook-for-mathjax/",
-        "title": "HugoでMathJaxによる数式を表示したい"
+        "title": "HugoでMathJaxによる数式を表示したい",
+        "tags": "mathjax hugo render_hooks"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/mytools/create_subtitle_image/",
-        "title": "create-subtitle-image"
+        "title": "create-subtitle-image",
+        "tags": ""
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/til/2023/02/42-run-shellscript-using-spotlight/",
-        "title": "Spotlightからシェルスクリプトを呼び出す"
+        "title": "Spotlightからシェルスクリプトを呼び出す",
+        "tags": "macos spotlight"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/til/2023/02/41-convert-svg-to-png-from-commandline-using-inkscape/",
-        "title": "Inkscapeを使ってコマンドラインからSVG画像をPNGに変換する"
+        "title": "Inkscapeを使ってコマンドラインからSVG画像をPNGに変換する",
+        "tags": "inkscape"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/dialogue/01-tell-me-font-family/",
-        "title": "古い看板に使うようなフォントファミリーを教えて"
+        "title": "古い看板に使うようなフォントファミリーを教えて",
+        "tags": "ChatGPT font"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/mytools/add_article.py/",
-        "title": "add_article.py"
+        "title": "add_article.py",
+        "tags": ""
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/mytools/add_slide.py/",
-        "title": "add_slide.py"
+        "title": "add_slide.py",
+        "tags": ""
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/blog/2023/01/07-adding-toc-to-a-donwloaded-pdf/",
-        "title": "ダウンロードしたPDFに目次を追加したい"
+        "title": "ダウンロードしたPDFに目次を追加したい",
+        "tags": "pdf python"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/til/2023/01/40-naming-convention-of-blender-addon/",
-        "title": "Blenderアドオン開発時の命名規則"
+        "title": "Blenderアドオン開発時の命名規則",
+        "tags": "blender blender-addon"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/ihc/srt_loader/",
-        "title": "srt_loader"
+        "title": "srt_loader",
+        "tags": ""
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/til/2023/01/39-generate-unique-id-by-python/",
-        "title": "PythonでユニークなIDを生成する"
+        "title": "PythonでユニークなIDを生成する",
+        "tags": "python uuid"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/til/2023/01/38-parse-rest-args-with-argparse/",
-        "title": "Simple Inkscape Scriptingでスクリプトに追加の引数を渡したい"
+        "title": "Simple Inkscape Scriptingでスクリプトに追加の引数を渡したい",
+        "tags": "python argparse SimpInkScr"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/til/2023/01/37-use-commandline-by-simpinkscr/",
-        "title": "コマンドラインからSimple Inkscape Scriptingを使いたい"
+        "title": "コマンドラインからSimple Inkscape Scriptingを使いたい",
+        "tags": "python Inkscape SimpInkScr"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/ihc/color_wheel/",
-        "title": "Color-Wheel"
+        "title": "Color-Wheel",
+        "tags": ""
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/mytools/title_url_copier/",
-        "title": "title_url_copier"
+        "title": "title_url_copier",
+        "tags": ""
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/til/2022/12/36-inkscape-with-python/",
-        "title": "InkscapeでPythonを使う"
+        "title": "InkscapeでPythonを使う",
+        "tags": "python Inkscape SimpInkScr"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/mytools/slide2video.py/",
-        "title": "slide2video.py"
+        "title": "slide2video.py",
+        "tags": ""
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/til/2022/12/35-switch-dev-or-release-with-makefile/",
-        "title": "Makefileでリリース用と開発用で設定を切り替えたい"
+        "title": "Makefileでリリース用と開発用で設定を切り替えたい",
+        "tags": "Makefile python"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/til/2022/12/34-switch-terminal-between-code-with-vscode/",
-        "title": "VSCodeでターミナルとコードの間を行き来する"
+        "title": "VSCodeでターミナルとコードの間を行き来する",
+        "tags": "vscode"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/mytools/create_subtitles_movie.sh/",
-        "title": "create-subtitles-movie.sh"
+        "title": "create-subtitles-movie.sh",
+        "tags": ""
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/til/2022/12/33-tool-dir/",
-        "title": "自作ツールをインストールしたい"
+        "title": "自作ツールをインストールしたい",
+        "tags": "python hugo"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/til/2022/11/31-run-python-script-from-blender/",
-        "title": "PythonスクリプトをBlenderで実行したい"
+        "title": "PythonスクリプトをBlenderで実行したい",
+        "tags": "python blender"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/mytools/spike.py/",
-        "title": "spike.py"
+        "title": "spike.py",
+        "tags": ""
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/til/2022/11/30-add-finder-service-of-vscode/",
-        "title": "MacOSのFinderにVScodeを開く機能を追加したい"
+        "title": "MacOSのFinderにVScodeを開く機能を追加したい",
+        "tags": "vscode macos"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/til/2022/09/29-add-shortcode-to-set-the-width-of-youtube-video/",
-        "title": "表示時の幅を指定できるYoutube動画用のShortcodeを追加したい"
+        "title": "表示時の幅を指定できるYoutube動画用のShortcodeを追加したい",
+        "tags": "shortcodes hugo"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/blog/2022/09/06-study-blender/",
-        "title": "Blenderを学ぶ"
+        "title": "Blenderを学ぶ",
+        "tags": "blender 3dcg"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/mytools/pdf2jpg.sh/",
-        "title": "pdf2jpg.sh"
+        "title": "pdf2jpg.sh",
+        "tags": ""
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/blog/2022/09/05-study-english/",
-        "title": "英語を学ぶ"
+        "title": "英語を学ぶ",
+        "tags": "english hacking メモ"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/til/2022/09/28-add-hash-to-url-with-hugo/",
-        "title": "HugoでcssのURLにハッシュを付与したい"
+        "title": "HugoでcssのURLにハッシュを付与したい",
+        "tags": "hugo"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/mytools/create_color_wheel.py/",
-        "title": "create-color-wheel.py"
+        "title": "create-color-wheel.py",
+        "tags": ""
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/til/2022/08/27-filter-pages-with-hugo/",
-        "title": "Hugoで一覧に表示するページをフィルタリングしたい"
+        "title": "Hugoで一覧に表示するページをフィルタリングしたい",
+        "tags": "hugo"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/til/2022/08/26-responsive-with-tailwindcss/",
-        "title": "tailwindcss で Responsive Design したい"
+        "title": "tailwindcss で Responsive Design したい",
+        "tags": "tailwindcss hugo"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/til/2022/08/25-quotation-with-hugo/",
-        "title": "Hugoで引用した文を目立たせたい"
+        "title": "Hugoで引用した文を目立たせたい",
+        "tags": "quotation hugo render_hooks"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/blog/2022/08/04-study-color-wheel/",
-        "title": "Webサイトの配色とカラーホイール"
+        "title": "Webサイトの配色とカラーホイール",
+        "tags": "python 自由研究"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/til/2022/08/21-layout-widgits-with-tkinter/",
-        "title": "Tkinterで部品を上手く配置したい"
+        "title": "Tkinterで部品を上手く配置したい",
+        "tags": "python tkinter"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/til/2022/08/20-link-to-the-page-of-pdf/",
-        "title": "PDFの特定ページにリンクを貼りたい"
+        "title": "PDFの特定ページにリンクを貼りたい",
+        "tags": "html PDF"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/til/2022/08/19-fill-bg-color-with-tkinter/",
-        "title": "Tkinterで部品の背景色を変更したい"
+        "title": "Tkinterで部品の背景色を変更したい",
+        "tags": "python tkinter"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/til/2022/08/18-rotate-item-with-python/",
-        "title": "Pythonで図形を回転させたい"
+        "title": "Pythonで図形を回転させたい",
+        "tags": "python tkinter"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/til/2022/08/17-color-contrast/",
-        "title": "2色のコントラストの差を知りたい"
+        "title": "2色のコントラストの差を知りたい",
+        "tags": "python html color"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/til/2022/08/16-python-option-parser/",
-        "title": "Pythonでコマンドラインオプション取得したい"
+        "title": "Pythonでコマンドラインオプション取得したい",
+        "tags": "python argparse"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/til/2022/07/15-python-graph/",
-        "title": "Pythonでグラフを描きたい"
+        "title": "Pythonでグラフを描きたい",
+        "tags": "python matplotlib numpy"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/til/2022/07/14-good-commit-message/",
-        "title": "良いコミットメッセージを書きたい"
+        "title": "良いコミットメッセージを書きたい",
+        "tags": "git"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/til/2022/07/13-hugo-with-tailwindcss/",
-        "title": "Hugoでtailwindcssを使いたい"
+        "title": "Hugoでtailwindcssを使いたい",
+        "tags": "hugo tailwindcss"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/blog/2022/07/03-how-to-learn-git/",
-        "title": "ツールの学習 Git"
+        "title": "ツールの学習 Git",
+        "tags": "tool programming git"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/blog/2022/07/02-how-to-learn-tools/",
-        "title": "ツールの学習 はじめに"
+        "title": "ツールの学習 はじめに",
+        "tags": "tool programming"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/til/2022/07/12-hugo-with-svg/",
-        "title": "HugoでSVGを埋め込みたい"
+        "title": "HugoでSVGを埋め込みたい",
+        "tags": "hugo svg"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/mytools/vv_wav2slide_wav.py/",
-        "title": "vv_wav2slide_wav.py"
+        "title": "vv_wav2slide_wav.py",
+        "tags": ""
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/til/2022/07/11-hugo-escape-shortcodes/",
-        "title": "Hugoでショートコードの記述をエスケープして表示したい"
+        "title": "Hugoでショートコードの記述をエスケープして表示したい",
+        "tags": "hugo markdown"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/til/2022/07/10-hugo-with-rawhtml/",
-        "title": "HugoのMarkdownでHTMLをそのまま記述したい"
+        "title": "HugoのMarkdownでHTMLをそのまま記述したい",
+        "tags": "hugo render_hooks"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/til/2022/07/09-hugo-with-youtube-playlist/",
-        "title": "hugoでyoutubeのplaylistを埋め込みたい"
+        "title": "hugoでyoutubeのplaylistを埋め込みたい",
+        "tags": "hugo shortcodes"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/blog/2022/07/00-how-to-learn-programming/",
-        "title": "プログラミングの学び方"
+        "title": "プログラミングの学び方",
+        "tags": "programming hacking"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/til/2022/07/08-git-submodule-update/",
-        "title": "gitでsubmoduleの更新を取り込みたい"
+        "title": "gitでsubmoduleの更新を取り込みたい",
+        "tags": "git"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/til/2022/07/07-quote-code-block-in-markdown/",
-        "title": "Markdown内でコードブロックを引用したい"
+        "title": "Markdown内でコードブロックを引用したい",
+        "tags": "hugo markdown"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/til/2022/07/06-hugo-with-syntax-highlighter-css/",
-        "title": "HugoでシンタックスハイライトCSSを利用したい"
+        "title": "HugoでシンタックスハイライトCSSを利用したい",
+        "tags": "hugo syntax_highlight"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/til/2022/07/05-hugo-with-editor/",
-        "title": "hugoにコンテンツ追加時にvscodeですぐに編集したい"
+        "title": "hugoにコンテンツ追加時にvscodeですぐに編集したい",
+        "tags": "hugo vscode"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/til/2022/07/04-hugo-with-mermaid/",
-        "title": "hugoでmermaid.jsを使いたい"
+        "title": "hugoでmermaid.jsを使いたい",
+        "tags": "hugo mermaid.js render_hooks"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/til/2022/07/03-hugo-tag-link/",
-        "title": "hugoで環境に依存しないタグのリンクを取得したい"
+        "title": "hugoで環境に依存しないタグのリンクを取得したい",
+        "tags": "hugo"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/til/2022/07/02-hugo-options/",
-        "title": "hugoで出力ディレクトリを削除してから実行したい"
+        "title": "hugoで出力ディレクトリを削除してから実行したい",
+        "tags": "hugo"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/til/2022/07/01-hugo-server-options/",
-        "title": "hugo serverをキャッシュ無しで表示させる"
+        "title": "hugo serverをキャッシュ無しで表示させる",
+        "tags": "hugo"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/blog/2022/07/01-create-my-portfolio-site/",
-        "title": "ポートフォリオサイトを作成する"
+        "title": "ポートフォリオサイトを作成する",
+        "tags": "html hugo hacking"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/mytools/odp2jpg.sh/",
-        "title": "odp2jpg.sh"
+        "title": "odp2jpg.sh",
+        "tags": ""
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/ihc/pong_game_with_pygame/",
-        "title": "Pong-Game-with-Pygame"
+        "title": "Pong-Game-with-Pygame",
+        "tags": ""
     }
     ]
 }
