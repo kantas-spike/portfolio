@@ -1,14 +1,14 @@
 {
     "title": "kantas-theme",
-    "date": "2023-05-25T10:27:16Z",
+    "date": "2023-06-08T21:51:05Z",
     "draft": false,
     "repo": {
         "name": "kantas-theme",
         "full_name": "kantas-spike/kantas-theme",
         "html_url": "https://github.com/kantas-spike/kantas-theme",
         "description": "Hugo theme for programming learner portfolio",
-        "size": 233,
-        "pushed_at": "2023-05-25T10:27:16Z",
+        "size": 1508,
+        "pushed_at": "2023-06-08T21:51:05Z",
         "project_type": "ihc",
         "langs": [
             "HTML",
@@ -16,6 +16,136 @@
             "JavaScript"
         ],
         "merged": [
+            {
+                "html_url": "https://github.com/kantas-spike/kantas-theme/pull/57",
+                "title": "feat: \u691c\u7d22\u6a5f\u80fd\u3067\u30bf\u30b0\u3082\u691c\u7d22\u5bfe\u8c61\u306b\u542b\u3081\u308b(fix: #54)",
+                "state": "closed",
+                "body": null,
+                "created_at": "2023-06-08T21:50:45Z",
+                "merged_at": "2023-06-08T21:51:01Z",
+                "closed_at": "2023-06-08T21:51:01Z",
+                "user": "kantas-spike"
+            },
+            {
+                "html_url": "https://github.com/kantas-spike/kantas-theme/pull/56",
+                "title": "Improve css styling",
+                "state": "closed",
+                "body": null,
+                "created_at": "2023-06-08T21:47:38Z",
+                "merged_at": "2023-06-08T21:48:07Z",
+                "closed_at": "2023-06-08T21:48:07Z",
+                "user": "kantas-spike"
+            },
+            {
+                "html_url": "https://github.com/kantas-spike/kantas-theme/pull/53",
+                "title": "fix: loacl\u306b\u6307\u5b9a\u3059\u308b\u30d5\u30a9\u30f3\u30c8\u540d\u306b\u30d5\u30a1\u30df\u30ea\u30fc\u540d\u3067\u306a\u304f\u30d5\u30eb\u30cd\u30fc\u30e0\u3092\u8a2d\u5b9a",
+                "state": "closed",
+                "body": "macos\u306echrome\u3067\u306f\u3001local\u306b\u6307\u5b9a\u3059\u308b\u30d5\u30a9\u30f3\u30c8\u540d\u306b\u30d5\u30eb\u30cd\u30fc\u30e0\r\n\"\u4f8b: local('Noto Sans JP Bold')\"\u3092\u6307\u5b9a\u3059\u308b\u5fc5\u8981\u304c\u3042\u308b\u3088\u3046\u3060.(fix: #52)\r\n\r\n\u30c7\u30b8\u30bf\u30eb\u5e81\u306e\u30b5\u30a4\u30c8\u3067\u3082\u540c\u69d8\u306b,local('Noto Sans JP')\u6307\u5b9a\u6642\u306f\r\nmacos\u306echrome\u3067bold\u304c\u8868\u793a\u3055\u308c\u3066\u3044\u306a\u3044.",
+                "created_at": "2023-06-07T18:51:30Z",
+                "merged_at": "2023-06-07T18:51:53Z",
+                "closed_at": "2023-06-07T18:51:53Z",
+                "user": "kantas-spike"
+            },
+            {
+                "html_url": "https://github.com/kantas-spike/kantas-theme/pull/51",
+                "title": "feat: web\u30d5\u30a9\u30f3\u30c8\u3092\u30d7\u30ea\u30ed\u30fc\u30c9\u3055\u305b\u308b",
+                "state": "closed",
+                "body": null,
+                "created_at": "2023-06-07T16:49:58Z",
+                "merged_at": "2023-06-07T16:50:23Z",
+                "closed_at": "2023-06-07T16:50:23Z",
+                "user": "kantas-spike"
+            },
+            {
+                "html_url": "https://github.com/kantas-spike/kantas-theme/pull/50",
+                "title": "Feat use web fonts",
+                "state": "closed",
+                "body": null,
+                "created_at": "2023-06-07T06:18:24Z",
+                "merged_at": "2023-06-07T06:19:48Z",
+                "closed_at": "2023-06-07T06:19:48Z",
+                "user": "kantas-spike"
+            },
+            {
+                "html_url": "https://github.com/kantas-spike/kantas-theme/pull/48",
+                "title": "style: \u30c7\u30d5\u30a9\u30eb\u30c8\u30d5\u30a9\u30f3\u30c8\u30d5\u30a1\u30df\u30ea\u30fc\u3092\u4fee\u6b63",
+                "state": "closed",
+                "body": "`Noto Sans JP`\u3092\u512a\u5148\u3055\u305b\u308b",
+                "created_at": "2023-06-05T22:21:44Z",
+                "merged_at": "2023-06-05T22:22:24Z",
+                "closed_at": "2023-06-05T22:22:24Z",
+                "user": "kantas-spike"
+            },
+            {
+                "html_url": "https://github.com/kantas-spike/kantas-theme/pull/46",
+                "title": "Style adjust the visual presentation of text blocks",
+                "state": "closed",
+                "body": "\u30c6\u30ad\u30b9\u30c8\u30d6\u30ed\u30c3\u30af\u306e\u30b9\u30bf\u30a4\u30eb\u3092\u8abf\u6574(fix: #45)",
+                "created_at": "2023-06-05T20:49:25Z",
+                "merged_at": "2023-06-05T20:58:22Z",
+                "closed_at": "2023-06-05T20:58:22Z",
+                "user": "kantas-spike"
+            },
+            {
+                "html_url": "https://github.com/kantas-spike/kantas-theme/pull/44",
+                "title": "style: improve article font style",
+                "state": "closed",
+                "body": null,
+                "created_at": "2023-06-02T14:01:14Z",
+                "merged_at": "2023-06-02T14:02:06Z",
+                "closed_at": "2023-06-02T14:02:06Z",
+                "user": "kantas-spike"
+            },
+            {
+                "html_url": "https://github.com/kantas-spike/kantas-theme/pull/43",
+                "title": "style: \u8a18\u4e8b\u3092\u8aad\u307f\u3084\u3059\u304f\u3059\u308b\u305f\u3081\u884c\u9593\u7b49\u3092\u8abf\u6574",
+                "state": "closed",
+                "body": null,
+                "created_at": "2023-06-02T02:54:16Z",
+                "merged_at": "2023-06-02T02:55:29Z",
+                "closed_at": "2023-06-02T02:55:29Z",
+                "user": "kantas-spike"
+            },
+            {
+                "html_url": "https://github.com/kantas-spike/kantas-theme/pull/42",
+                "title": "fix: \u8efd\u5fae\u306a\u30d0\u30b0\u4fee\u6b63",
+                "state": "closed",
+                "body": null,
+                "created_at": "2023-06-01T23:33:20Z",
+                "merged_at": "2023-06-01T23:34:00Z",
+                "closed_at": "2023-06-01T23:34:00Z",
+                "user": "kantas-spike"
+            },
+            {
+                "html_url": "https://github.com/kantas-spike/kantas-theme/pull/41",
+                "title": "refactor: site\u3068theme\u306e\u8a2d\u5b9a\u65b9\u6cd5\u3092\u5909\u66f4",
+                "state": "closed",
+                "body": null,
+                "created_at": "2023-06-01T10:33:36Z",
+                "merged_at": "2023-06-01T10:33:47Z",
+                "closed_at": "2023-06-01T10:33:47Z",
+                "user": "kantas-spike"
+            },
+            {
+                "html_url": "https://github.com/kantas-spike/kantas-theme/pull/40",
+                "title": "fix: \u8efd\u5fae\u306a\u30d0\u30b0\u4fee\u6b63",
+                "state": "closed",
+                "body": null,
+                "created_at": "2023-05-31T14:30:22Z",
+                "merged_at": "2023-05-31T14:35:14Z",
+                "closed_at": "2023-05-31T14:35:14Z",
+                "user": "kantas-spike"
+            },
+            {
+                "html_url": "https://github.com/kantas-spike/kantas-theme/pull/39",
+                "title": "feat: til,blog\u8a18\u4e8b\u3092\u66f4\u65b0\u65e5\u6642\u306e\u9006\u9806\u3067\u30bd\u30fc\u30c8 (fix: #37)",
+                "state": "closed",
+                "body": null,
+                "created_at": "2023-05-29T05:06:50Z",
+                "merged_at": "2023-05-29T05:07:30Z",
+                "closed_at": "2023-05-29T05:07:30Z",
+                "user": "kantas-spike"
+            },
             {
                 "html_url": "https://github.com/kantas-spike/kantas-theme/pull/36",
                 "title": "feat: TailwindCSS\u306e\u66f4\u65b0\u306f`cache buster configuration`\u306e\u5229\u7528\u3092\u524d\u63d0\u306b(fix: #35)",
@@ -38,7 +168,7 @@
             },
             {
                 "html_url": "https://github.com/kantas-spike/kantas-theme/pull/32",
-                "title": "Feat changing mytools and ihc from data format to indivisual files",
+                "title": "feat: changing mytools and ihc from data format to indivisual files",
                 "state": "closed",
                 "body": null,
                 "created_at": "2023-02-02T06:06:43Z",
