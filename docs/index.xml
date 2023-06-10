@@ -9,6 +9,24 @@
     <copyright>© 2022 kanta&#39;s spike</copyright>
     <lastBuildDate>Fri, 22 Jul 2022 08:24:06 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>create-subsetted-font</title>
+      <link>https://kantas-spike.github.io/portfolio/mytools/create_subsetted_font/</link>
+      <pubDate>Sat, 10 Jun 2023 23:14:44 +0000</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/mytools/create_subsetted_font/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>kantas-theme</title>
+      <link>https://kantas-spike.github.io/portfolio/ihc/kantas_theme/</link>
+      <pubDate>Thu, 08 Jun 2023 21:51:05 +0000</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/ihc/kantas_theme/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>HugoでWebフォントを利用したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/06/66-use-web-fonts-with-hugo/</link>
       <pubDate>Wed, 07 Jun 2023 14:50:17 +0900</pubDate>
@@ -131,15 +149,6 @@
       
       <guid>https://kantas-spike.github.io/portfolio/til/2023/05/54-introducing-react/</guid>
       <description>&lt;p&gt;今後ブログに検索機能などを追加したいので、Hugoに &lt;a href=&#34;https://react.dev/&#34;&gt;React&lt;/a&gt; を導入したい。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>kantas-theme</title>
-      <link>https://kantas-spike.github.io/portfolio/ihc/kantas_theme/</link>
-      <pubDate>Thu, 25 May 2023 10:27:16 +0000</pubDate>
-      
-      <guid>https://kantas-spike.github.io/portfolio/ihc/kantas_theme/</guid>
-      <description></description>
     </item>
     
     <item>
