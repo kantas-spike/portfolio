@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>© 2022 kanta&#39;s spike</copyright>
-    <lastBuildDate>Wed, 27 Jul 2022 17:58:10 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 22 Jun 2023 14:57:38 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gitでマージ済みのローカルブランチを削除したい</title>
+      <link>https://kantas-spike.github.io/portfolio/til/2023/06/70-deleting-merged-local-branch-in-git/</link>
+      <pubDate>Thu, 22 Jun 2023 14:57:38 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/til/2023/06/70-deleting-merged-local-branch-in-git/</guid>
+      <description>&lt;p&gt;不要なブランチが増えてきたので、Gitでマージ済みのローカルブランチを削除したい。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>良いコミットメッセージを書きたい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2022/07/14-good-commit-message/</link>

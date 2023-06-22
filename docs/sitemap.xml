@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/git/</loc>
+    <lastmod>2023-06-22T14:57:38+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/til/2023/06/70-deleting-merged-local-branch-in-git/</loc>
+    <lastmod>2023-06-22T14:57:38+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/</loc>
+    <lastmod>2023-06-22T14:57:38+09:00</lastmod>
+  </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/blender/</loc>
     <lastmod>2023-06-22T11:05:26+09:00</lastmod>
   </url><url>
@@ -9,9 +18,6 @@
     <lastmod>2023-06-22T11:05:26+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/python/</loc>
-    <lastmod>2023-06-22T11:05:26+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/</loc>
     <lastmod>2023-06-22T11:05:26+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2023/06/68-bend-the-mesh-in-blender/</loc>
@@ -370,9 +376,6 @@
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2022/07/15-python-graph/</loc>
     <lastmod>2022-07-31T21:13:04+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/git/</loc>
-    <lastmod>2022-07-27T17:58:10+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2022/07/14-good-commit-message/</loc>
     <lastmod>2022-07-27T17:58:10+09:00</lastmod>

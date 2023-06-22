@@ -9,6 +9,15 @@
     <copyright>© 2022 kanta&#39;s spike</copyright>
     <lastBuildDate>Fri, 22 Jul 2022 08:15:27 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/til/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Gitでマージ済みのローカルブランチを削除したい</title>
+      <link>https://kantas-spike.github.io/portfolio/til/2023/06/70-deleting-merged-local-branch-in-git/</link>
+      <pubDate>Thu, 22 Jun 2023 14:57:38 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/til/2023/06/70-deleting-merged-local-branch-in-git/</guid>
+      <description>&lt;p&gt;不要なブランチが増えてきたので、Gitでマージ済みのローカルブランチを削除したい。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Blenderの入力フィールドに数式を入力したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/06/69-entering-formula-to-input-field-in-blender/</link>
       <pubDate>Thu, 22 Jun 2023 11:05:26 +0900</pubDate>

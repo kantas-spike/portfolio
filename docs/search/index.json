@@ -1,6 +1,11 @@
 {
     "results": [
     {
+        "href": "https://kantas-spike.github.io/portfolio/til/2023/06/70-deleting-merged-local-branch-in-git/",
+        "title": "Gitでマージ済みのローカルブランチを削除したい",
+        "tags": "git"
+    },
+    {
         "href": "https://kantas-spike.github.io/portfolio/til/2023/06/69-entering-formula-to-input-field-in-blender/",
         "title": "Blenderの入力フィールドに数式を入力したい",
         "tags": "blender python"
