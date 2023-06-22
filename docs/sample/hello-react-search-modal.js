@@ -12018,7 +12018,7 @@
   var Axios_default = Axios;
 
   // node_modules/axios/lib/cancel/CancelToken.js
-  var CancelToken = class {
+  var CancelToken = class _CancelToken {
     constructor(executor) {
       if (typeof executor !== "function") {
         throw new TypeError("executor must be a function.");
@@ -12096,7 +12096,7 @@
      */
     static source() {
       let cancel;
-      const token = new CancelToken(function executor(c) {
+      const token = new _CancelToken(function executor(c) {
         cancel = c;
       });
       return {

@@ -7,7 +7,36 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>© 2022 kanta&#39;s spike</copyright>
-    <lastBuildDate>Tue, 24 Jan 2023 22:56:25 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/blender/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 22 Jun 2023 11:05:26 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/blender/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blenderの入力フィールドに数式を入力したい</title>
+      <link>https://kantas-spike.github.io/portfolio/til/2023/06/69-entering-formula-to-input-field-in-blender/</link>
+      <pubDate>Thu, 22 Jun 2023 11:05:26 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/til/2023/06/69-entering-formula-to-input-field-in-blender/</guid>
+      <description>&lt;p&gt;Blenderの入力フィールドに数式を入力したい。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Blenderでメッシュを曲げたい 〜「|」を「)」にしたい〜</title>
+      <link>https://kantas-spike.github.io/portfolio/til/2023/06/68-bend-the-mesh-in-blender/</link>
+      <pubDate>Thu, 22 Jun 2023 10:39:45 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/til/2023/06/68-bend-the-mesh-in-blender/</guid>
+      <description>&lt;p&gt;Blendrで&lt;em&gt;平面のメッシュ&lt;/em&gt;を曲げたい。
+&lt;code&gt;|&lt;/code&gt;を&lt;code&gt;)&lt;/code&gt;のように曲げたい。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Blenderで3Dカーソルを移動させたい</title>
+      <link>https://kantas-spike.github.io/portfolio/til/2023/06/67-moving-the-3d-cursor-lin-blender.md/</link>
+      <pubDate>Thu, 22 Jun 2023 10:08:30 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/til/2023/06/67-moving-the-3d-cursor-lin-blender.md/</guid>
+      <description>&lt;p&gt;&lt;code&gt;Shift-RMB(マウスの右ボタン)&lt;/code&gt;で、Blenderで3Dカーソルの位置を移動できるが、
+簡単に3Dカーソルをグローバル座標系の原点やオブジェクトの中心に移動させる方法を知りたい。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Blenderアドオン開発時の命名規則</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/01/40-naming-convention-of-blender-addon/</link>

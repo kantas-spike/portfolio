@@ -1,6 +1,21 @@
 {
     "results": [
     {
+        "href": "https://kantas-spike.github.io/portfolio/til/2023/06/69-entering-formula-to-input-field-in-blender/",
+        "title": "Blenderの入力フィールドに数式を入力したい",
+        "tags": "blender python"
+    },
+    {
+        "href": "https://kantas-spike.github.io/portfolio/til/2023/06/68-bend-the-mesh-in-blender/",
+        "title": "Blenderでメッシュを曲げたい 〜「|」を「)」にしたい〜",
+        "tags": "blender"
+    },
+    {
+        "href": "https://kantas-spike.github.io/portfolio/til/2023/06/67-moving-the-3d-cursor-lin-blender.md/",
+        "title": "Blenderで3Dカーソルを移動させたい",
+        "tags": "blender"
+    },
+    {
         "href": "https://kantas-spike.github.io/portfolio/mytools/create_subsetted_font/",
         "title": "create-subsetted-font",
         "tags": ""

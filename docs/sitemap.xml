@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/blender/</loc>
+    <lastmod>2023-06-22T11:05:26+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/til/2023/06/69-entering-formula-to-input-field-in-blender/</loc>
+    <lastmod>2023-06-22T11:05:26+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/python/</loc>
+    <lastmod>2023-06-22T11:05:26+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/</loc>
+    <lastmod>2023-06-22T11:05:26+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/til/2023/06/68-bend-the-mesh-in-blender/</loc>
+    <lastmod>2023-06-22T10:39:45+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/til/2023/06/67-moving-the-3d-cursor-lin-blender.md/</loc>
+    <lastmod>2023-06-22T10:08:30+09:00</lastmod>
+  </url><url>
     <loc>https://kantas-spike.github.io/portfolio/mytools/create_subsetted_font/</loc>
     <lastmod>2023-06-10T23:14:44+00:00</lastmod>
   </url><url>
@@ -16,12 +34,6 @@
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2023/06/66-use-web-fonts-with-hugo/</loc>
     <lastmod>2023-06-07T14:50:17+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/</loc>
-    <lastmod>2023-06-07T14:50:17+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/python/</loc>
-    <lastmod>2023-06-07T08:43:25+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2023/06/65-create-a-subsetted-font/</loc>
     <lastmod>2023-06-07T08:43:25+09:00</lastmod>
@@ -211,9 +223,6 @@
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/blog/2023/01/07-adding-toc-to-a-donwloaded-pdf/</loc>
     <lastmod>2023-01-26T04:14:58+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/blender/</loc>
-    <lastmod>2023-01-24T22:56:25+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/blender-addon/</loc>
     <lastmod>2023-01-24T22:56:25+09:00</lastmod>
