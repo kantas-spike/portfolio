@@ -9,6 +9,16 @@
     <copyright>© 2022 kanta&#39;s spike</copyright>
     <lastBuildDate>Fri, 22 Jul 2022 08:24:06 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>動画作成のワークフローをちゃんと利用する</title>
+      <link>https://kantas-spike.github.io/portfolio/memo/01-using-movie-workflow/</link>
+      <pubDate>Fri, 23 Jun 2023 09:13:14 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/memo/01-using-movie-workflow/</guid>
+      <description>&lt;p&gt;動画作成のワークフローを簡単な動画作成時やプログラム作成時にも利用したい。&lt;/p&gt;
+&lt;p&gt;ワークフローの成果物も、なるべくGitで管理できるようにしたい。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Gitでマージ済みのローカルブランチを削除したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/06/70-deleting-merged-local-branch-in-git/</link>
       <pubDate>Thu, 22 Jun 2023 14:57:38 +0900</pubDate>
