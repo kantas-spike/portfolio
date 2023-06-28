@@ -1,9 +1,24 @@
 {
     "results": [
     {
+        "href": "https://kantas-spike.github.io/portfolio/dialogue/05-tag-name/",
+        "title": "「その他」を意味するタグ名をつけたい",
+        "tags": "ChatGPT"
+    },
+    {
+        "href": "https://kantas-spike.github.io/portfolio/memo/03-learning-blender/",
+        "title": "Blenderを学ぶための動画",
+        "tags": "blender"
+    },
+    {
+        "href": "https://kantas-spike.github.io/portfolio/memo/02-creating-font-by-inkscape/",
+        "title": "Inkscapeを使ってカスタムフォントを作成したい",
+        "tags": "fonts"
+    },
+    {
         "href": "https://kantas-spike.github.io/portfolio/memo/01-using-movie-workflow/",
         "title": "動画作成のワークフローをちゃんと利用する",
-        "tags": ""
+        "tags": "misc"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/til/2023/06/70-deleting-merged-local-branch-in-git/",

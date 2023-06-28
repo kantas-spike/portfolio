@@ -9,6 +9,39 @@
     <copyright>© 2022 kanta&#39;s spike</copyright>
     <lastBuildDate>Fri, 22 Jul 2022 08:24:06 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>「その他」を意味するタグ名をつけたい</title>
+      <link>https://kantas-spike.github.io/portfolio/dialogue/05-tag-name/</link>
+      <pubDate>Thu, 29 Jun 2023 05:51:41 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/dialogue/05-tag-name/</guid>
+      <description>&lt;div class=&#34;quote text-[#ececf1] relative p-2 pt-3 pr-4 bg-[#343542] border border-[#2b2b32] rounded-sm mt-2 mb-6&#34;&gt;
+    &lt;div class=&#34;font-serif text-3xl absolute top-0 left-0 py-2 pl-2 pr-1 font-bold text-[#ffffff]&#34;&gt;&lt;div class=&#34;w-[2.25rem] h-[2.25rem] bg-[#e64b3b] text-center relative&#34;&gt;&lt;div class=&#34;absolute -top-[2px] inset-x-0&#34;&gt;Q&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;div class=&#34;ml-12 mt-1 mb-2 whitespace-pre-wrap text_block&#34;&gt;ブログ記事に`その他`や`未分類`のような意味のタグを付けたいです。
+このようなタグに使える良い英単語を教えてくれないでしょうか?&lt;/div&gt;
+&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>Blenderを学ぶための動画</title>
+      <link>https://kantas-spike.github.io/portfolio/memo/03-learning-blender/</link>
+      <pubDate>Thu, 29 Jun 2023 05:13:02 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/memo/03-learning-blender/</guid>
+      <description>&lt;p&gt;ジオメトリノードやグリースペンシル、スカルプティングについて学ぶための動画をメモ&lt;/p&gt;
+&lt;p&gt;少しづつ勉強したい&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Inkscapeを使ってカスタムフォントを作成したい</title>
+      <link>https://kantas-spike.github.io/portfolio/memo/02-creating-font-by-inkscape/</link>
+      <pubDate>Fri, 23 Jun 2023 11:56:09 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/memo/02-creating-font-by-inkscape/</guid>
+      <description>&lt;p&gt;ブログで使用するアイコンをWebフォントとして自作したい。&lt;/p&gt;
+&lt;p&gt;InkscapeとFontForgeを使ってできるようだ。調べたり、やってみた結果をメモ&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>動画作成のワークフローをちゃんと利用する</title>
       <link>https://kantas-spike.github.io/portfolio/memo/01-using-movie-workflow/</link>
       <pubDate>Fri, 23 Jun 2023 09:13:14 +0900</pubDate>
@@ -214,7 +247,7 @@
       <pubDate>Fri, 12 May 2023 23:25:58 +0900</pubDate>
       
       <guid>https://kantas-spike.github.io/portfolio/dialogue/04-buddy/</guid>
-      <description>&lt;div class=&#34;quote text-[#ececf1] relative p-2 pt-3 pr-4 bg-[#343542] border border-[#2b2b32] rounded-sm my-2&#34;&gt;
+      <description>&lt;div class=&#34;quote text-[#ececf1] relative p-2 pt-3 pr-4 bg-[#343542] border border-[#2b2b32] rounded-sm mt-2 mb-6&#34;&gt;
     &lt;div class=&#34;font-serif text-3xl absolute top-0 left-0 py-2 pl-2 pr-1 font-bold text-[#ffffff]&#34;&gt;&lt;div class=&#34;w-[2.25rem] h-[2.25rem] bg-[#e64b3b] text-center relative&#34;&gt;&lt;div class=&#34;absolute -top-[2px] inset-x-0&#34;&gt;Q&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
     &lt;div class=&#34;ml-12 mt-1 mb-2 whitespace-pre-wrap text_block&#34;&gt;「名コンビ」の例えを知りたいです。
 例えば、「シャーロック・ホームズとDr.ワトソン」のように。
@@ -229,7 +262,7 @@
       <pubDate>Fri, 12 May 2023 15:50:07 +0900</pubDate>
       
       <guid>https://kantas-spike.github.io/portfolio/dialogue/03-shissoukan/</guid>
-      <description>&lt;div class=&#34;quote text-[#ececf1] relative p-2 pt-3 pr-4 bg-[#343542] border border-[#2b2b32] rounded-sm my-2&#34;&gt;
+      <description>&lt;div class=&#34;quote text-[#ececf1] relative p-2 pt-3 pr-4 bg-[#343542] border border-[#2b2b32] rounded-sm mt-2 mb-6&#34;&gt;
     &lt;div class=&#34;font-serif text-3xl absolute top-0 left-0 py-2 pl-2 pr-1 font-bold text-[#ffffff]&#34;&gt;&lt;div class=&#34;w-[2.25rem] h-[2.25rem] bg-[#e64b3b] text-center relative&#34;&gt;&lt;div class=&#34;absolute -top-[2px] inset-x-0&#34;&gt;Q&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
     &lt;div class=&#34;ml-12 mt-1 mb-2 whitespace-pre-wrap text_block&#34;&gt;疾走感のある曲を検索したいと思っています。日本語の「疾走感」って英語では何といいますか? また、英語で何と入力すれば「疾走感」のある曲を検索できるでしょうか?&lt;/div&gt;
 &lt;/div&gt;</description>
@@ -287,7 +320,7 @@
       <pubDate>Fri, 17 Feb 2023 11:58:17 +0900</pubDate>
       
       <guid>https://kantas-spike.github.io/portfolio/dialogue/02-tell-me-howto-write-copyright/</guid>
-      <description>&lt;div class=&#34;quote text-[#ececf1] relative p-2 pt-3 pr-4 bg-[#343542] border border-[#2b2b32] rounded-sm my-2&#34;&gt;
+      <description>&lt;div class=&#34;quote text-[#ececf1] relative p-2 pt-3 pr-4 bg-[#343542] border border-[#2b2b32] rounded-sm mt-2 mb-6&#34;&gt;
     &lt;div class=&#34;font-serif text-3xl absolute top-0 left-0 py-2 pl-2 pr-1 font-bold text-[#ffffff]&#34;&gt;&lt;div class=&#34;w-[2.25rem] h-[2.25rem] bg-[#e64b3b] text-center relative&#34;&gt;&lt;div class=&#34;absolute -top-[2px] inset-x-0&#34;&gt;Q&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
     &lt;div class=&#34;ml-12 mt-1 mb-2 whitespace-pre-wrap text_block&#34;&gt;自分のホームページのフッタに、以下のようなコピーライトを記載しています。
 
@@ -417,7 +450,7 @@ Copyright 2022 my homepage name
       <pubDate>Thu, 02 Feb 2023 15:33:58 +0900</pubDate>
       
       <guid>https://kantas-spike.github.io/portfolio/dialogue/01-tell-me-font-family/</guid>
-      <description>&lt;div class=&#34;quote text-[#ececf1] relative p-2 pt-3 pr-4 bg-[#343542] border border-[#2b2b32] rounded-sm my-2&#34;&gt;
+      <description>&lt;div class=&#34;quote text-[#ececf1] relative p-2 pt-3 pr-4 bg-[#343542] border border-[#2b2b32] rounded-sm mt-2 mb-6&#34;&gt;
     &lt;div class=&#34;font-serif text-3xl absolute top-0 left-0 py-2 pl-2 pr-1 font-bold text-[#ffffff]&#34;&gt;&lt;div class=&#34;w-[2.25rem] h-[2.25rem] bg-[#e64b3b] text-center relative&#34;&gt;&lt;div class=&#34;absolute -top-[2px] inset-x-0&#34;&gt;Q&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
     &lt;div class=&#34;ml-12 mt-1 mb-2 whitespace-pre-wrap text_block&#34;&gt;昔の看板のような画像を作成したい。50年ぐらいの看板に使われているようフォントファミリーを教えてください。
 もし、そのようなフォントファミリーの中で、open font licenseで公開されているフォントがあれば教えてください。&lt;/div&gt;

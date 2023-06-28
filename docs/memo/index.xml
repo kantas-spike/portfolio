@@ -9,6 +9,26 @@
     <copyright>© 2022 kanta&#39;s spike</copyright>
     <lastBuildDate>Fri, 23 Jun 2023 09:00:00 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/memo/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Blenderを学ぶための動画</title>
+      <link>https://kantas-spike.github.io/portfolio/memo/03-learning-blender/</link>
+      <pubDate>Thu, 29 Jun 2023 05:13:02 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/memo/03-learning-blender/</guid>
+      <description>&lt;p&gt;ジオメトリノードやグリースペンシル、スカルプティングについて学ぶための動画をメモ&lt;/p&gt;
+&lt;p&gt;少しづつ勉強したい&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Inkscapeを使ってカスタムフォントを作成したい</title>
+      <link>https://kantas-spike.github.io/portfolio/memo/02-creating-font-by-inkscape/</link>
+      <pubDate>Fri, 23 Jun 2023 11:56:09 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/memo/02-creating-font-by-inkscape/</guid>
+      <description>&lt;p&gt;ブログで使用するアイコンをWebフォントとして自作したい。&lt;/p&gt;
+&lt;p&gt;InkscapeとFontForgeを使ってできるようだ。調べたり、やってみた結果をメモ&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>動画作成のワークフローをちゃんと利用する</title>
       <link>https://kantas-spike.github.io/portfolio/memo/01-using-movie-workflow/</link>
       <pubDate>Fri, 23 Jun 2023 09:13:14 +0900</pubDate>

@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>© 2022 kanta&#39;s spike</copyright>
-    <lastBuildDate>Thu, 22 Jun 2023 11:05:26 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/blender/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 29 Jun 2023 05:13:02 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/blender/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blenderを学ぶための動画</title>
+      <link>https://kantas-spike.github.io/portfolio/memo/03-learning-blender/</link>
+      <pubDate>Thu, 29 Jun 2023 05:13:02 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/memo/03-learning-blender/</guid>
+      <description>&lt;p&gt;ジオメトリノードやグリースペンシル、スカルプティングについて学ぶための動画をメモ&lt;/p&gt;
+&lt;p&gt;少しづつ勉強したい&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Blenderの入力フィールドに数式を入力したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/06/69-entering-formula-to-input-field-in-blender/</link>
