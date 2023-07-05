@@ -4,6 +4,7 @@ date: 2023-06-29T05:51:41+09:00
 draft: false
 tags:
 - ChatGPT
+- english
 ---
 
 ```chatQ
