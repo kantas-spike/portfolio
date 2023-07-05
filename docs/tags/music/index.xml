@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>music on kanta&#39;s spike</title>
+    <link>https://kantas-spike.github.io/portfolio/tags/music/</link>
+    <description>Recent content in music on kanta&#39;s spike</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <copyright>© 2022 kanta&#39;s spike</copyright>
+    <lastBuildDate>Fri, 30 Jun 2023 21:50:28 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/music/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>音楽を学ぶ</title>
+      <link>https://kantas-spike.github.io/portfolio/memo/04-learning-music/</link>
+      <pubDate>Fri, 30 Jun 2023 21:50:28 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/memo/04-learning-music/</guid>
+      <description>&lt;p&gt;これまで音楽と縁がなかったのですが、
+デブログ(devlog)で動画を作るようになり、動画に効果音を入れたくなりました。&lt;/p&gt;
+&lt;p&gt;音楽を学びたいと思います。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

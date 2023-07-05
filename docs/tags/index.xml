@@ -7,22 +7,40 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>© 2022 kanta&#39;s spike</copyright>
-    <lastBuildDate>Fri, 30 Jun 2023 11:42:43 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 05 Jul 2023 11:33:00 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ChatGPT</title>
+      <link>https://kantas-spike.github.io/portfolio/tags/chatgpt/</link>
+      <pubDate>Wed, 05 Jul 2023 11:33:00 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/tags/chatgpt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>english</title>
+      <link>https://kantas-spike.github.io/portfolio/tags/english/</link>
+      <pubDate>Wed, 05 Jul 2023 11:33:00 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/tags/english/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>music</title>
+      <link>https://kantas-spike.github.io/portfolio/tags/music/</link>
+      <pubDate>Fri, 30 Jun 2023 21:50:28 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/tags/music/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>blender</title>
       <link>https://kantas-spike.github.io/portfolio/tags/blender/</link>
       <pubDate>Fri, 30 Jun 2023 11:42:43 +0900</pubDate>
       
       <guid>https://kantas-spike.github.io/portfolio/tags/blender/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ChatGPT</title>
-      <link>https://kantas-spike.github.io/portfolio/tags/chatgpt/</link>
-      <pubDate>Thu, 29 Jun 2023 05:51:41 +0900</pubDate>
-      
-      <guid>https://kantas-spike.github.io/portfolio/tags/chatgpt/</guid>
       <description></description>
     </item>
     
@@ -122,15 +140,6 @@
       <pubDate>Wed, 31 May 2023 02:16:55 +0900</pubDate>
       
       <guid>https://kantas-spike.github.io/portfolio/tags/react/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>english</title>
-      <link>https://kantas-spike.github.io/portfolio/tags/english/</link>
-      <pubDate>Fri, 12 May 2023 15:50:07 +0900</pubDate>
-      
-      <guid>https://kantas-spike.github.io/portfolio/tags/english/</guid>
       <description></description>
     </item>
     

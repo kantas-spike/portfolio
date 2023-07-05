@@ -2,19 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/chatgpt/</loc>
+    <lastmod>2023-07-05T11:33:00+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/english/</loc>
+    <lastmod>2023-07-05T11:33:00+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/</loc>
+    <lastmod>2023-07-05T11:33:00+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/dialogue/06-project-name/</loc>
+    <lastmod>2023-07-05T11:33:00+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/music/</loc>
+    <lastmod>2023-06-30T21:50:28+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/memo/04-learning-music/</loc>
+    <lastmod>2023-06-30T21:50:28+09:00</lastmod>
+  </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/blender/</loc>
     <lastmod>2023-06-30T11:42:43+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2023/06/71-sync-animation-to-audio-in-blender/</loc>
     <lastmod>2023-06-30T11:42:43+09:00</lastmod>
   </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/</loc>
-    <lastmod>2023-06-30T11:42:43+09:00</lastmod>
-  </url><url>
     <loc>https://kantas-spike.github.io/portfolio/dialogue/05-tag-name/</loc>
-    <lastmod>2023-06-29T05:51:41+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/chatgpt/</loc>
     <lastmod>2023-06-29T05:51:41+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/memo/03-learning-blender/</loc>
@@ -124,9 +136,6 @@
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/dialogue/04-buddy/</loc>
     <lastmod>2023-05-12T23:25:58+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/english/</loc>
-    <lastmod>2023-05-12T15:50:07+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/dialogue/03-shissoukan/</loc>
     <lastmod>2023-05-12T15:50:07+09:00</lastmod>

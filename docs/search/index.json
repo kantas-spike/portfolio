@@ -1,6 +1,16 @@
 {
     "results": [
     {
+        "href": "https://kantas-spike.github.io/portfolio/dialogue/06-project-name/",
+        "title": "開発環境が正しく動作するか確認するためのプロジェクトに名前をつけたい",
+        "tags": "ChatGPT english"
+    },
+    {
+        "href": "https://kantas-spike.github.io/portfolio/memo/04-learning-music/",
+        "title": "音楽を学ぶ",
+        "tags": "music"
+    },
+    {
         "href": "https://kantas-spike.github.io/portfolio/til/2023/06/71-sync-animation-to-audio-in-blender/",
         "title": "Blenderでアニメーションと音を同期させたい",
         "tags": "blender"
@@ -8,7 +18,7 @@
     {
         "href": "https://kantas-spike.github.io/portfolio/dialogue/05-tag-name/",
         "title": "「その他」を意味するタグ名をつけたい",
-        "tags": "ChatGPT"
+        "tags": "ChatGPT english"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/memo/03-learning-blender/",
