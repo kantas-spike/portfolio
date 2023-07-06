@@ -1,14 +1,14 @@
 {
     "title": "kantas-theme",
-    "date": "2023-06-08T21:51:05Z",
+    "date": "2023-06-28T21:23:00Z",
     "draft": false,
     "repo": {
         "name": "kantas-theme",
         "full_name": "kantas-spike/kantas-theme",
         "html_url": "https://github.com/kantas-spike/kantas-theme",
         "description": "Hugo theme for programming learner portfolio",
-        "size": 1508,
-        "pushed_at": "2023-06-08T21:51:05Z",
+        "size": 1513,
+        "pushed_at": "2023-06-28T21:23:00Z",
         "project_type": "ihc",
         "langs": [
             "HTML",
@@ -16,6 +16,36 @@
             "JavaScript"
         ],
         "merged": [
+            {
+                "html_url": "https://github.com/kantas-spike/kantas-theme/pull/61",
+                "title": "fix: QA\u306e\u9023\u7d9a\u8a18\u8f09\u6642\u7528\u306b\u30de\u30fc\u30b8\u30f3\u3092\u8abf\u6574",
+                "state": "closed",
+                "body": null,
+                "created_at": "2023-06-28T21:22:38Z",
+                "merged_at": "2023-06-28T21:22:56Z",
+                "closed_at": "2023-06-28T21:22:56Z",
+                "user": "kantas-spike"
+            },
+            {
+                "html_url": "https://github.com/kantas-spike/kantas-theme/pull/60",
+                "title": "feat: \u8a18\u4e8b\u306e\u7a2e\u985e\u306bmemo\u3092\u8ffd\u52a0 (fix: #59)",
+                "state": "closed",
+                "body": null,
+                "created_at": "2023-06-23T01:23:50Z",
+                "merged_at": "2023-06-23T01:25:19Z",
+                "closed_at": "2023-06-23T01:25:19Z",
+                "user": "kantas-spike"
+            },
+            {
+                "html_url": "https://github.com/kantas-spike/kantas-theme/pull/58",
+                "title": "Fix css 20230622",
+                "state": "closed",
+                "body": null,
+                "created_at": "2023-06-22T05:49:30Z",
+                "merged_at": "2023-06-22T05:49:59Z",
+                "closed_at": "2023-06-22T05:49:59Z",
+                "user": "kantas-spike"
+            },
             {
                 "html_url": "https://github.com/kantas-spike/kantas-theme/pull/57",
                 "title": "feat: \u691c\u7d22\u6a5f\u80fd\u3067\u30bf\u30b0\u3082\u691c\u7d22\u5bfe\u8c61\u306b\u542b\u3081\u308b(fix: #54)",
