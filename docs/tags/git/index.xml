@@ -28,10 +28,10 @@
     
     <item>
       <title>ツールの学習 Git</title>
-      <link>https://kantas-spike.github.io/portfolio/blog/2022/07/03-how-to-learn-git/</link>
+      <link>https://kantas-spike.github.io/portfolio/articles/2022/07/03-how-to-learn-git/</link>
       <pubDate>Mon, 25 Jul 2022 11:32:58 +0900</pubDate>
       
-      <guid>https://kantas-spike.github.io/portfolio/blog/2022/07/03-how-to-learn-git/</guid>
+      <guid>https://kantas-spike.github.io/portfolio/articles/2022/07/03-how-to-learn-git/</guid>
       <description>&lt;p&gt;プログラミングの学習ではGitHubをよく使います。
 GitHubを使うためには&lt;code&gt;git&lt;/code&gt;を使えないといけません。&lt;/p&gt;
 &lt;p&gt;そこで、&lt;a href=&#34;https://missing.csail.mit.edu/2020/version-control/&#34;&gt;Version Control (Git) · the missing semester of your cs education&lt;/a&gt;(&lt;a href=&#34;https://missing-semester-jp.github.io/2020/version-control/&#34;&gt;翻訳&lt;/a&gt;)で&lt;code&gt;git&lt;/code&gt;について学びたいと思います。&lt;/p&gt;</description>

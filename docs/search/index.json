@@ -1,12 +1,12 @@
 {
     "results": [
     {
-        "href": "https://kantas-spike.github.io/portfolio/dialogue/07-category-of-blog/",
+        "href": "https://kantas-spike.github.io/portfolio/dialogues/07-category-of-blog/",
         "title": "ブログ記事のカテゴリ",
         "tags": "ChatGPT english"
     },
     {
-        "href": "https://kantas-spike.github.io/portfolio/memo/06-learning-dtm/",
+        "href": "https://kantas-spike.github.io/portfolio/notes/2023/07/06-learning-dtm/",
         "title": "DTMを学びたい(DTM用語の学習)",
         "tags": "music"
     },
@@ -16,17 +16,17 @@
         "tags": ""
     },
     {
-        "href": "https://kantas-spike.github.io/portfolio/dialogue/06-project-name/",
+        "href": "https://kantas-spike.github.io/portfolio/dialogues/06-project-name/",
         "title": "開発環境が正しく動作するか確認するためのプロジェクトに名前をつけたい",
         "tags": "ChatGPT english"
     },
     {
-        "href": "https://kantas-spike.github.io/portfolio/memo/05-learning-react/",
+        "href": "https://kantas-spike.github.io/portfolio/notes/2023/06/05-learning-react/",
         "title": "Reactを学ぶ",
         "tags": "react"
     },
     {
-        "href": "https://kantas-spike.github.io/portfolio/memo/04-learning-music/",
+        "href": "https://kantas-spike.github.io/portfolio/notes/2023/06/04-learning-music/",
         "title": "音楽を学ぶ",
         "tags": "music"
     },
@@ -41,17 +41,17 @@
         "tags": ""
     },
     {
-        "href": "https://kantas-spike.github.io/portfolio/dialogue/05-tag-name/",
+        "href": "https://kantas-spike.github.io/portfolio/dialogues/05-tag-name/",
         "title": "「その他」を意味するタグ名をつけたい",
         "tags": "ChatGPT english"
     },
     {
-        "href": "https://kantas-spike.github.io/portfolio/memo/03-learning-blender/",
+        "href": "https://kantas-spike.github.io/portfolio/notes/2023/06/03-learning-blender/",
         "title": "Blenderを学ぶための動画",
         "tags": "blender"
     },
     {
-        "href": "https://kantas-spike.github.io/portfolio/memo/02-creating-font-by-inkscape/",
+        "href": "https://kantas-spike.github.io/portfolio/notes/2023/06/02-creating-font-by-inkscape/",
         "title": "Inkscapeを使ってカスタムフォントを作成したい",
         "tags": "fonts"
     },
@@ -61,7 +61,7 @@
         "tags": ""
     },
     {
-        "href": "https://kantas-spike.github.io/portfolio/memo/01-using-movie-workflow/",
+        "href": "https://kantas-spike.github.io/portfolio/notes/2023/06/01-using-movie-workflow/",
         "title": "動画作成のワークフローをちゃんと利用する",
         "tags": "misc"
     },
@@ -161,12 +161,12 @@
         "tags": "react hugo"
     },
     {
-        "href": "https://kantas-spike.github.io/portfolio/dialogue/04-buddy/",
+        "href": "https://kantas-spike.github.io/portfolio/dialogues/04-buddy/",
         "title": "名コンビといえば?",
         "tags": "ChatGPT"
     },
     {
-        "href": "https://kantas-spike.github.io/portfolio/dialogue/03-shissoukan/",
+        "href": "https://kantas-spike.github.io/portfolio/dialogues/03-shissoukan/",
         "title": "疾走感のある曲を検索したい",
         "tags": "ChatGPT english"
     },
@@ -176,7 +176,7 @@
         "tags": "kindle uri_scheme"
     },
     {
-        "href": "https://kantas-spike.github.io/portfolio/blog/2023/04/13-learn-programming-practice-python-2021/",
+        "href": "https://kantas-spike.github.io/portfolio/articles/2023/04/13-learn-programming-practice-python-2021/",
         "title": "「プログラミング演習 Python 2021」を学ぶ",
         "tags": "programming python 学習記録"
     },
@@ -196,7 +196,7 @@
         "tags": "inkscape"
     },
     {
-        "href": "https://kantas-spike.github.io/portfolio/dialogue/02-tell-me-howto-write-copyright/",
+        "href": "https://kantas-spike.github.io/portfolio/dialogues/02-tell-me-howto-write-copyright/",
         "title": "ホームページ用のコピーライトの書式を教えて",
         "tags": "ChatGPT html copyright"
     },
@@ -206,7 +206,7 @@
         "tags": "python poetry"
     },
     {
-        "href": "https://kantas-spike.github.io/portfolio/blog/2023/02/12-use-jupyter-notebook/",
+        "href": "https://kantas-spike.github.io/portfolio/articles/2023/02/12-use-jupyter-notebook/",
         "title": "Jupyter Notebookを使う",
         "tags": "python jupyter"
     },
@@ -216,7 +216,7 @@
         "tags": ""
     },
     {
-        "href": "https://kantas-spike.github.io/portfolio/blog/2023/02/10-make-make-book-using-make/",
+        "href": "https://kantas-spike.github.io/portfolio/articles/2023/02/10-make-make-book-using-make/",
         "title": "makeを使って『Make本』をメイクする",
         "tags": "make Makefile"
     },
@@ -231,7 +231,7 @@
         "tags": "pdf ghostscript"
     },
     {
-        "href": "https://kantas-spike.github.io/portfolio/blog/2023/02/09-merge-make-book/",
+        "href": "https://kantas-spike.github.io/portfolio/articles/2023/02/09-merge-make-book/",
         "title": "PDFで公開されているMake本をマージする",
         "tags": "python make pdf"
     },
@@ -261,7 +261,7 @@
         "tags": "inkscape"
     },
     {
-        "href": "https://kantas-spike.github.io/portfolio/dialogue/01-tell-me-font-family/",
+        "href": "https://kantas-spike.github.io/portfolio/dialogues/01-tell-me-font-family/",
         "title": "古い看板に使うようなフォントファミリーを教えて",
         "tags": "ChatGPT font"
     },
@@ -271,7 +271,7 @@
         "tags": ""
     },
     {
-        "href": "https://kantas-spike.github.io/portfolio/blog/2023/01/07-adding-toc-to-a-donwloaded-pdf/",
+        "href": "https://kantas-spike.github.io/portfolio/articles/2023/01/07-adding-toc-to-a-donwloaded-pdf/",
         "title": "ダウンロードしたPDFに目次を追加したい",
         "tags": "pdf python"
     },
@@ -361,7 +361,7 @@
         "tags": "shortcodes hugo"
     },
     {
-        "href": "https://kantas-spike.github.io/portfolio/blog/2022/09/06-study-blender/",
+        "href": "https://kantas-spike.github.io/portfolio/articles/2022/09/06-study-blender/",
         "title": "Blenderを学ぶ",
         "tags": "blender 3dcg"
     },
@@ -371,7 +371,7 @@
         "tags": ""
     },
     {
-        "href": "https://kantas-spike.github.io/portfolio/blog/2022/09/05-study-english/",
+        "href": "https://kantas-spike.github.io/portfolio/articles/2022/09/05-study-english/",
         "title": "英語を学ぶ",
         "tags": "english hacking メモ"
     },
@@ -401,7 +401,7 @@
         "tags": "quotation hugo render_hooks"
     },
     {
-        "href": "https://kantas-spike.github.io/portfolio/blog/2022/08/04-study-color-wheel/",
+        "href": "https://kantas-spike.github.io/portfolio/articles/2022/08/04-study-color-wheel/",
         "title": "Webサイトの配色とカラーホイール",
         "tags": "python 自由研究"
     },
@@ -451,12 +451,12 @@
         "tags": "hugo tailwindcss"
     },
     {
-        "href": "https://kantas-spike.github.io/portfolio/blog/2022/07/03-how-to-learn-git/",
+        "href": "https://kantas-spike.github.io/portfolio/articles/2022/07/03-how-to-learn-git/",
         "title": "ツールの学習 Git",
         "tags": "tool programming git"
     },
     {
-        "href": "https://kantas-spike.github.io/portfolio/blog/2022/07/02-how-to-learn-tools/",
+        "href": "https://kantas-spike.github.io/portfolio/articles/2022/07/02-how-to-learn-tools/",
         "title": "ツールの学習 はじめに",
         "tags": "tool programming"
     },
@@ -486,7 +486,7 @@
         "tags": "hugo shortcodes"
     },
     {
-        "href": "https://kantas-spike.github.io/portfolio/blog/2022/07/00-how-to-learn-programming/",
+        "href": "https://kantas-spike.github.io/portfolio/articles/2022/07/00-how-to-learn-programming/",
         "title": "プログラミングの学び方",
         "tags": "programming hacking"
     },
@@ -531,7 +531,7 @@
         "tags": "hugo"
     },
     {
-        "href": "https://kantas-spike.github.io/portfolio/blog/2022/07/01-create-my-portfolio-site/",
+        "href": "https://kantas-spike.github.io/portfolio/articles/2022/07/01-create-my-portfolio-site/",
         "title": "ポートフォリオサイトを作成する",
         "tags": "html hugo hacking"
     },

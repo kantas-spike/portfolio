@@ -10,10 +10,10 @@
     <lastBuildDate>Fri, 22 Jul 2022 08:24:06 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ブログ記事のカテゴリ</title>
-      <link>https://kantas-spike.github.io/portfolio/dialogue/07-category-of-blog/</link>
+      <link>https://kantas-spike.github.io/portfolio/dialogues/07-category-of-blog/</link>
       <pubDate>Thu, 06 Jul 2023 16:59:02 +0900</pubDate>
       
-      <guid>https://kantas-spike.github.io/portfolio/dialogue/07-category-of-blog/</guid>
+      <guid>https://kantas-spike.github.io/portfolio/dialogues/07-category-of-blog/</guid>
       <description>&lt;div class=&#34;quote text-[#ececf1] relative p-2 pr-4 bg-[#343542] border border-[#2b2b32] rounded-sm mt-2 mb-6&#34;&gt;
     &lt;div class=&#34;font-serif text-3xl absolute top-0 left-0 py-2 pl-2 pr-1 font-bold text-[#ffffff]&#34;&gt;&lt;div class=&#34;w-[2.25rem] h-[2.25rem] bg-[#e64b3b] text-center relative&#34;&gt;&lt;div class=&#34;absolute -top-[2px] inset-x-0&#34;&gt;Q&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
     &lt;div class=&#34;ml-12 mt-0.5 mb-2 whitespace-pre-wrap text_block&#34;&gt;私はブログを書いています。
@@ -32,10 +32,10 @@
     
     <item>
       <title>DTMを学びたい(DTM用語の学習)</title>
-      <link>https://kantas-spike.github.io/portfolio/memo/06-learning-dtm/</link>
+      <link>https://kantas-spike.github.io/portfolio/notes/2023/07/06-learning-dtm/</link>
       <pubDate>Wed, 05 Jul 2023 21:23:11 +0900</pubDate>
       
-      <guid>https://kantas-spike.github.io/portfolio/memo/06-learning-dtm/</guid>
+      <guid>https://kantas-spike.github.io/portfolio/notes/2023/07/06-learning-dtm/</guid>
       <description>&lt;p&gt;動画のジングルやBGMなど簡単な音楽を作成したいです。&lt;/p&gt;
 &lt;p&gt;そこで、&lt;a href=&#34;https://www.amazon.co.jp/Mac-Fan-Special-DeskTop-Music/dp/4839976333/ref=sr_1_2?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&amp;amp;crid=1D22URHNDMG42&amp;amp;keywords=mac+fan+dtm&amp;amp;qid=1688129653&amp;amp;s=books&amp;amp;sprefix=mac+fan+dtm+%2Cstripbooks%2C182&amp;amp;sr=1-2&#34;&gt;Mac Fan Special Mac Fan DTM[DeskTop Music] | - |本 | 通販 | Amazon&lt;/a&gt;を読んで、GarageBandを使った曲の作成方法を学びたいと思います。&lt;/p&gt;</description>
     </item>
@@ -51,10 +51,10 @@
     
     <item>
       <title>開発環境が正しく動作するか確認するためのプロジェクトに名前をつけたい</title>
-      <link>https://kantas-spike.github.io/portfolio/dialogue/06-project-name/</link>
+      <link>https://kantas-spike.github.io/portfolio/dialogues/06-project-name/</link>
       <pubDate>Wed, 05 Jul 2023 11:33:00 +0900</pubDate>
       
-      <guid>https://kantas-spike.github.io/portfolio/dialogue/06-project-name/</guid>
+      <guid>https://kantas-spike.github.io/portfolio/dialogues/06-project-name/</guid>
       <description>&lt;div class=&#34;quote text-[#ececf1] relative p-2 pr-4 bg-[#343542] border border-[#2b2b32] rounded-sm mt-2 mb-6&#34;&gt;
     &lt;div class=&#34;font-serif text-3xl absolute top-0 left-0 py-2 pl-2 pr-1 font-bold text-[#ffffff]&#34;&gt;&lt;div class=&#34;w-[2.25rem] h-[2.25rem] bg-[#e64b3b] text-center relative&#34;&gt;&lt;div class=&#34;absolute -top-[2px] inset-x-0&#34;&gt;Q&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
     &lt;div class=&#34;ml-12 mt-0.5 mb-2 whitespace-pre-wrap text_block&#34;&gt;プログラミング開発に使用する用語を英語にしたいと思っています。
@@ -69,20 +69,20 @@
     
     <item>
       <title>Reactを学ぶ</title>
-      <link>https://kantas-spike.github.io/portfolio/memo/05-learning-react/</link>
+      <link>https://kantas-spike.github.io/portfolio/notes/2023/06/05-learning-react/</link>
       <pubDate>Fri, 30 Jun 2023 23:04:20 +0900</pubDate>
       
-      <guid>https://kantas-spike.github.io/portfolio/memo/05-learning-react/</guid>
+      <guid>https://kantas-spike.github.io/portfolio/notes/2023/06/05-learning-react/</guid>
       <description>&lt;p&gt;Reactを勉強して、自分用のWebアプリを作成したい。&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 &lt;p&gt;そのために、&lt;a href=&#34;https://react.dev/learn&#34;&gt;Reactのチュートリアル&lt;/a&gt;を勉強したい。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>音楽を学ぶ</title>
-      <link>https://kantas-spike.github.io/portfolio/memo/04-learning-music/</link>
+      <link>https://kantas-spike.github.io/portfolio/notes/2023/06/04-learning-music/</link>
       <pubDate>Fri, 30 Jun 2023 21:50:28 +0900</pubDate>
       
-      <guid>https://kantas-spike.github.io/portfolio/memo/04-learning-music/</guid>
+      <guid>https://kantas-spike.github.io/portfolio/notes/2023/06/04-learning-music/</guid>
       <description>&lt;p&gt;これまで音楽と縁がなかったのですが、
 デブログ(devlog)で動画を作るようになり、動画に効果音を入れたくなりました。&lt;/p&gt;
 &lt;p&gt;音楽を学びたいと思います。&lt;/p&gt;</description>
@@ -108,10 +108,10 @@
     
     <item>
       <title>「その他」を意味するタグ名をつけたい</title>
-      <link>https://kantas-spike.github.io/portfolio/dialogue/05-tag-name/</link>
+      <link>https://kantas-spike.github.io/portfolio/dialogues/05-tag-name/</link>
       <pubDate>Thu, 29 Jun 2023 05:51:41 +0900</pubDate>
       
-      <guid>https://kantas-spike.github.io/portfolio/dialogue/05-tag-name/</guid>
+      <guid>https://kantas-spike.github.io/portfolio/dialogues/05-tag-name/</guid>
       <description>&lt;div class=&#34;quote text-[#ececf1] relative p-2 pr-4 bg-[#343542] border border-[#2b2b32] rounded-sm mt-2 mb-6&#34;&gt;
     &lt;div class=&#34;font-serif text-3xl absolute top-0 left-0 py-2 pl-2 pr-1 font-bold text-[#ffffff]&#34;&gt;&lt;div class=&#34;w-[2.25rem] h-[2.25rem] bg-[#e64b3b] text-center relative&#34;&gt;&lt;div class=&#34;absolute -top-[2px] inset-x-0&#34;&gt;Q&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
     &lt;div class=&#34;ml-12 mt-0.5 mb-2 whitespace-pre-wrap text_block&#34;&gt;ブログ記事に`その他`や`未分類`のような意味のタグを付けたいです。
@@ -121,20 +121,20 @@
     
     <item>
       <title>Blenderを学ぶための動画</title>
-      <link>https://kantas-spike.github.io/portfolio/memo/03-learning-blender/</link>
+      <link>https://kantas-spike.github.io/portfolio/notes/2023/06/03-learning-blender/</link>
       <pubDate>Thu, 29 Jun 2023 05:13:02 +0900</pubDate>
       
-      <guid>https://kantas-spike.github.io/portfolio/memo/03-learning-blender/</guid>
+      <guid>https://kantas-spike.github.io/portfolio/notes/2023/06/03-learning-blender/</guid>
       <description>&lt;p&gt;ジオメトリノードやグリースペンシル、スカルプティングについて学ぶための動画をメモ&lt;/p&gt;
 &lt;p&gt;少しづつ勉強したい&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Inkscapeを使ってカスタムフォントを作成したい</title>
-      <link>https://kantas-spike.github.io/portfolio/memo/02-creating-font-by-inkscape/</link>
+      <link>https://kantas-spike.github.io/portfolio/notes/2023/06/02-creating-font-by-inkscape/</link>
       <pubDate>Fri, 23 Jun 2023 11:56:09 +0900</pubDate>
       
-      <guid>https://kantas-spike.github.io/portfolio/memo/02-creating-font-by-inkscape/</guid>
+      <guid>https://kantas-spike.github.io/portfolio/notes/2023/06/02-creating-font-by-inkscape/</guid>
       <description>&lt;p&gt;ブログで使用するアイコンをWebフォントとして自作したい。&lt;/p&gt;
 &lt;p&gt;InkscapeとFontForgeを使ってできるようだ。調べたり、やってみた結果をメモ&lt;/p&gt;</description>
     </item>
@@ -150,10 +150,10 @@
     
     <item>
       <title>動画作成のワークフローをちゃんと利用する</title>
-      <link>https://kantas-spike.github.io/portfolio/memo/01-using-movie-workflow/</link>
+      <link>https://kantas-spike.github.io/portfolio/notes/2023/06/01-using-movie-workflow/</link>
       <pubDate>Fri, 23 Jun 2023 09:13:14 +0900</pubDate>
       
-      <guid>https://kantas-spike.github.io/portfolio/memo/01-using-movie-workflow/</guid>
+      <guid>https://kantas-spike.github.io/portfolio/notes/2023/06/01-using-movie-workflow/</guid>
       <description>&lt;p&gt;動画作成のワークフローを簡単な動画作成時やプログラム作成時にも利用したい。&lt;/p&gt;
 &lt;p&gt;ワークフローの成果物も、なるべくGitで管理できるようにしたい。&lt;/p&gt;</description>
     </item>
@@ -341,10 +341,10 @@
     
     <item>
       <title>名コンビといえば?</title>
-      <link>https://kantas-spike.github.io/portfolio/dialogue/04-buddy/</link>
+      <link>https://kantas-spike.github.io/portfolio/dialogues/04-buddy/</link>
       <pubDate>Fri, 12 May 2023 23:25:58 +0900</pubDate>
       
-      <guid>https://kantas-spike.github.io/portfolio/dialogue/04-buddy/</guid>
+      <guid>https://kantas-spike.github.io/portfolio/dialogues/04-buddy/</guid>
       <description>&lt;div class=&#34;quote text-[#ececf1] relative p-2 pr-4 bg-[#343542] border border-[#2b2b32] rounded-sm mt-2 mb-6&#34;&gt;
     &lt;div class=&#34;font-serif text-3xl absolute top-0 left-0 py-2 pl-2 pr-1 font-bold text-[#ffffff]&#34;&gt;&lt;div class=&#34;w-[2.25rem] h-[2.25rem] bg-[#e64b3b] text-center relative&#34;&gt;&lt;div class=&#34;absolute -top-[2px] inset-x-0&#34;&gt;Q&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
     &lt;div class=&#34;ml-12 mt-0.5 mb-2 whitespace-pre-wrap text_block&#34;&gt;「名コンビ」の例えを知りたいです。
@@ -356,10 +356,10 @@
     
     <item>
       <title>疾走感のある曲を検索したい</title>
-      <link>https://kantas-spike.github.io/portfolio/dialogue/03-shissoukan/</link>
+      <link>https://kantas-spike.github.io/portfolio/dialogues/03-shissoukan/</link>
       <pubDate>Fri, 12 May 2023 15:50:07 +0900</pubDate>
       
-      <guid>https://kantas-spike.github.io/portfolio/dialogue/03-shissoukan/</guid>
+      <guid>https://kantas-spike.github.io/portfolio/dialogues/03-shissoukan/</guid>
       <description>&lt;div class=&#34;quote text-[#ececf1] relative p-2 pr-4 bg-[#343542] border border-[#2b2b32] rounded-sm mt-2 mb-6&#34;&gt;
     &lt;div class=&#34;font-serif text-3xl absolute top-0 left-0 py-2 pl-2 pr-1 font-bold text-[#ffffff]&#34;&gt;&lt;div class=&#34;w-[2.25rem] h-[2.25rem] bg-[#e64b3b] text-center relative&#34;&gt;&lt;div class=&#34;absolute -top-[2px] inset-x-0&#34;&gt;Q&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
     &lt;div class=&#34;ml-12 mt-0.5 mb-2 whitespace-pre-wrap text_block&#34;&gt;疾走感のある曲を検索したいと思っています。日本語の「疾走感」って英語では何といいますか? また、英語で何と入力すれば「疾走感」のある曲を検索できるでしょうか?&lt;/div&gt;
@@ -377,10 +377,10 @@
     
     <item>
       <title>「プログラミング演習 Python 2021」を学ぶ</title>
-      <link>https://kantas-spike.github.io/portfolio/blog/2023/04/13-learn-programming-practice-python-2021/</link>
+      <link>https://kantas-spike.github.io/portfolio/articles/2023/04/13-learn-programming-practice-python-2021/</link>
       <pubDate>Wed, 05 Apr 2023 02:16:01 +0900</pubDate>
       
-      <guid>https://kantas-spike.github.io/portfolio/blog/2023/04/13-learn-programming-practice-python-2021/</guid>
+      <guid>https://kantas-spike.github.io/portfolio/articles/2023/04/13-learn-programming-practice-python-2021/</guid>
       <description>&lt;p&gt;京都大学が無料公開しているPythonの教科書『&lt;a href=&#34;https://repository.kulib.kyoto-u.ac.jp/dspace/handle/2433/265459&#34;&gt;プログラミング演習 Python 2021&lt;/a&gt;』の存在を知りました。&lt;/p&gt;
 &lt;p&gt;ありがとうございます。京都大学!! この演習をやっていきたいと思います。&lt;/p&gt;</description>
     </item>
@@ -414,10 +414,10 @@
     
     <item>
       <title>ホームページ用のコピーライトの書式を教えて</title>
-      <link>https://kantas-spike.github.io/portfolio/dialogue/02-tell-me-howto-write-copyright/</link>
+      <link>https://kantas-spike.github.io/portfolio/dialogues/02-tell-me-howto-write-copyright/</link>
       <pubDate>Fri, 17 Feb 2023 11:58:17 +0900</pubDate>
       
-      <guid>https://kantas-spike.github.io/portfolio/dialogue/02-tell-me-howto-write-copyright/</guid>
+      <guid>https://kantas-spike.github.io/portfolio/dialogues/02-tell-me-howto-write-copyright/</guid>
       <description>&lt;div class=&#34;quote text-[#ececf1] relative p-2 pr-4 bg-[#343542] border border-[#2b2b32] rounded-sm mt-2 mb-6&#34;&gt;
     &lt;div class=&#34;font-serif text-3xl absolute top-0 left-0 py-2 pl-2 pr-1 font-bold text-[#ffffff]&#34;&gt;&lt;div class=&#34;w-[2.25rem] h-[2.25rem] bg-[#e64b3b] text-center relative&#34;&gt;&lt;div class=&#34;absolute -top-[2px] inset-x-0&#34;&gt;Q&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
     &lt;div class=&#34;ml-12 mt-0.5 mb-2 whitespace-pre-wrap text_block&#34;&gt;自分のホームページのフッタに、以下のようなコピーライトを記載しています。
@@ -440,10 +440,10 @@ Copyright 2022 my homepage name
     
     <item>
       <title>Jupyter Notebookを使う</title>
-      <link>https://kantas-spike.github.io/portfolio/blog/2023/02/12-use-jupyter-notebook/</link>
+      <link>https://kantas-spike.github.io/portfolio/articles/2023/02/12-use-jupyter-notebook/</link>
       <pubDate>Thu, 16 Feb 2023 08:44:35 +0900</pubDate>
       
-      <guid>https://kantas-spike.github.io/portfolio/blog/2023/02/12-use-jupyter-notebook/</guid>
+      <guid>https://kantas-spike.github.io/portfolio/articles/2023/02/12-use-jupyter-notebook/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://jupyter.org/&#34;&gt;Jupyter Notebook&lt;/a&gt;という、文書、プログラムコード、数式、や図形を1つのドキュメントとして表現できるWebアプリケーションがあるそうです。 &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 &lt;p&gt;Pythonを使って、数学を勉強する時には便利そうです。今回は、実際に&lt;code&gt;Jupyter Notebook&lt;/code&gt;を使ってみます。そして、作成したノートをブログに掲載できる形式に変換できるかを検証します。&lt;/p&gt;</description>
     </item>
@@ -459,10 +459,10 @@ Copyright 2022 my homepage name
     
     <item>
       <title>makeを使って『Make本』をメイクする</title>
-      <link>https://kantas-spike.github.io/portfolio/blog/2023/02/10-make-make-book-using-make/</link>
+      <link>https://kantas-spike.github.io/portfolio/articles/2023/02/10-make-make-book-using-make/</link>
       <pubDate>Thu, 09 Feb 2023 07:21:11 +0900</pubDate>
       
-      <guid>https://kantas-spike.github.io/portfolio/blog/2023/02/10-make-make-book-using-make/</guid>
+      <guid>https://kantas-spike.github.io/portfolio/articles/2023/02/10-make-make-book-using-make/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://kantas-spike.github.io/portfolio/blog/2023/02/09-merge-make-book/&#34;&gt;PDFで公開されているMake本をマージする | kanta&amp;rsquo;s spike&lt;/a&gt;で、公開されている&lt;a href=&#34;https://www.oreilly.co.jp/library/4873112699/&#34;&gt;GNU Make 第3版&lt;/a&gt;のPDFをマージするシェルスクリプトを作成したことを紹介しました。&lt;/p&gt;
 &lt;p&gt;折角なので、この『Make本』を読んで学びたいと思います。
 そして、勉強の成果として、&lt;a href=&#34;https://kantas-spike.github.io/portfolio/blog/2023/02/09-merge-make-book/&#34;&gt;PDFで公開されているMake本をマージする | kanta&amp;rsquo;s spike&lt;/a&gt;で作成したシェルスクリプトを&lt;code&gt;makefile&lt;/code&gt;に置き換えたいと思います。&lt;/p&gt;</description>
@@ -488,10 +488,10 @@ Copyright 2022 my homepage name
     
     <item>
       <title>PDFで公開されているMake本をマージする</title>
-      <link>https://kantas-spike.github.io/portfolio/blog/2023/02/09-merge-make-book/</link>
+      <link>https://kantas-spike.github.io/portfolio/articles/2023/02/09-merge-make-book/</link>
       <pubDate>Wed, 08 Feb 2023 16:02:46 +0900</pubDate>
       
-      <guid>https://kantas-spike.github.io/portfolio/blog/2023/02/09-merge-make-book/</guid>
+      <guid>https://kantas-spike.github.io/portfolio/articles/2023/02/09-merge-make-book/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://www.oreilly.co.jp/library/4873112699/&#34;&gt;GNU Make 第3版&lt;/a&gt;がPDFで公開されていることを知りました。 &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 &lt;p&gt;ありがたいですね。でも、章ごとにPDFファイルが分割されているので少し読みにくいですね。
 章ごとに分割されたPDFを1つにまとめて、さらに目次情報を追加したいですね。&lt;/p&gt;</description>
@@ -544,10 +544,10 @@ Copyright 2022 my homepage name
     
     <item>
       <title>古い看板に使うようなフォントファミリーを教えて</title>
-      <link>https://kantas-spike.github.io/portfolio/dialogue/01-tell-me-font-family/</link>
+      <link>https://kantas-spike.github.io/portfolio/dialogues/01-tell-me-font-family/</link>
       <pubDate>Thu, 02 Feb 2023 15:33:58 +0900</pubDate>
       
-      <guid>https://kantas-spike.github.io/portfolio/dialogue/01-tell-me-font-family/</guid>
+      <guid>https://kantas-spike.github.io/portfolio/dialogues/01-tell-me-font-family/</guid>
       <description>&lt;div class=&#34;quote text-[#ececf1] relative p-2 pr-4 bg-[#343542] border border-[#2b2b32] rounded-sm mt-2 mb-6&#34;&gt;
     &lt;div class=&#34;font-serif text-3xl absolute top-0 left-0 py-2 pl-2 pr-1 font-bold text-[#ffffff]&#34;&gt;&lt;div class=&#34;w-[2.25rem] h-[2.25rem] bg-[#e64b3b] text-center relative&#34;&gt;&lt;div class=&#34;absolute -top-[2px] inset-x-0&#34;&gt;Q&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
     &lt;div class=&#34;ml-12 mt-0.5 mb-2 whitespace-pre-wrap text_block&#34;&gt;昔の看板のような画像を作成したい。50年ぐらいの看板に使われているようフォントファミリーを教えてください。
@@ -566,10 +566,10 @@ Copyright 2022 my homepage name
     
     <item>
       <title>ダウンロードしたPDFに目次を追加したい</title>
-      <link>https://kantas-spike.github.io/portfolio/blog/2023/01/07-adding-toc-to-a-donwloaded-pdf/</link>
+      <link>https://kantas-spike.github.io/portfolio/articles/2023/01/07-adding-toc-to-a-donwloaded-pdf/</link>
       <pubDate>Thu, 26 Jan 2023 04:14:58 +0900</pubDate>
       
-      <guid>https://kantas-spike.github.io/portfolio/blog/2023/01/07-adding-toc-to-a-donwloaded-pdf/</guid>
+      <guid>https://kantas-spike.github.io/portfolio/articles/2023/01/07-adding-toc-to-a-donwloaded-pdf/</guid>
       <description>&lt;p&gt;プログラミングを学ぶために、数学を学びなおしたいと思っています。&lt;/p&gt;
 &lt;p&gt;米田優峻さんが公開されている&lt;a href=&#34;https://speakerdeck.com/e869120/150-fen-dexue-bugao-xiao-shu-xue-noji-chu&#34;&gt;150 分で学ぶ高校数学の基礎 - Speaker Deck&lt;/a&gt;という資料を知りました。&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; &lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 &lt;p&gt;大変読み易く、わかりやすいです。PDFをダウンロードできるので、ダウンロードして勉強することにしました。
@@ -740,10 +740,10 @@ Copyright 2022 my homepage name
     
     <item>
       <title>Blenderを学ぶ</title>
-      <link>https://kantas-spike.github.io/portfolio/blog/2022/09/06-study-blender/</link>
+      <link>https://kantas-spike.github.io/portfolio/articles/2022/09/06-study-blender/</link>
       <pubDate>Wed, 21 Sep 2022 09:46:04 +0900</pubDate>
       
-      <guid>https://kantas-spike.github.io/portfolio/blog/2022/09/06-study-blender/</guid>
+      <guid>https://kantas-spike.github.io/portfolio/articles/2022/09/06-study-blender/</guid>
       <description>&lt;p&gt;CGってなんか素敵な響きですよね。3DCGなんて興奮しますね。
 でも、私にとって3DCGは使う機会もなくて遠い存在です。&lt;/p&gt;</description>
     </item>
@@ -759,10 +759,10 @@ Copyright 2022 my homepage name
     
     <item>
       <title>英語を学ぶ</title>
-      <link>https://kantas-spike.github.io/portfolio/blog/2022/09/05-study-english/</link>
+      <link>https://kantas-spike.github.io/portfolio/articles/2022/09/05-study-english/</link>
       <pubDate>Sun, 04 Sep 2022 08:55:25 +0900</pubDate>
       
-      <guid>https://kantas-spike.github.io/portfolio/blog/2022/09/05-study-english/</guid>
+      <guid>https://kantas-spike.github.io/portfolio/articles/2022/09/05-study-english/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://cruel.org/freeware/hacker.html&#34;&gt;ハッカーになろう&lt;/a&gt;では、&lt;strong&gt;基本的なハッキング技術&lt;/strong&gt; を4つ挙げています。
 その内の一つが&lt;strong&gt;英語&lt;/strong&gt;です。&lt;/p&gt;</description>
     </item>
@@ -823,10 +823,10 @@ Copyright 2022 my homepage name
     
     <item>
       <title>Webサイトの配色とカラーホイール</title>
-      <link>https://kantas-spike.github.io/portfolio/blog/2022/08/04-study-color-wheel/</link>
+      <link>https://kantas-spike.github.io/portfolio/articles/2022/08/04-study-color-wheel/</link>
       <pubDate>Fri, 19 Aug 2022 00:25:51 +0900</pubDate>
       
-      <guid>https://kantas-spike.github.io/portfolio/blog/2022/08/04-study-color-wheel/</guid>
+      <guid>https://kantas-spike.github.io/portfolio/articles/2022/08/04-study-color-wheel/</guid>
       <description>&lt;p&gt;プログラミング学習には、HTMLを書くと良い&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;そうです。
 なので、Webサイトを作りたいと思っています。&lt;/p&gt;
 &lt;p&gt;Webサイトは見た目よりも内容が重要なのですが、配色ぐらいは自分で選びたいです。&lt;/p&gt;
@@ -921,10 +921,10 @@ Copyright 2022 my homepage name
     
     <item>
       <title>ツールの学習 Git</title>
-      <link>https://kantas-spike.github.io/portfolio/blog/2022/07/03-how-to-learn-git/</link>
+      <link>https://kantas-spike.github.io/portfolio/articles/2022/07/03-how-to-learn-git/</link>
       <pubDate>Mon, 25 Jul 2022 11:32:58 +0900</pubDate>
       
-      <guid>https://kantas-spike.github.io/portfolio/blog/2022/07/03-how-to-learn-git/</guid>
+      <guid>https://kantas-spike.github.io/portfolio/articles/2022/07/03-how-to-learn-git/</guid>
       <description>&lt;p&gt;プログラミングの学習ではGitHubをよく使います。
 GitHubを使うためには&lt;code&gt;git&lt;/code&gt;を使えないといけません。&lt;/p&gt;
 &lt;p&gt;そこで、&lt;a href=&#34;https://missing.csail.mit.edu/2020/version-control/&#34;&gt;Version Control (Git) · the missing semester of your cs education&lt;/a&gt;(&lt;a href=&#34;https://missing-semester-jp.github.io/2020/version-control/&#34;&gt;翻訳&lt;/a&gt;)で&lt;code&gt;git&lt;/code&gt;について学びたいと思います。&lt;/p&gt;</description>
@@ -932,10 +932,10 @@ GitHubを使うためには&lt;code&gt;git&lt;/code&gt;を使えないといけ�
     
     <item>
       <title>ツールの学習 はじめに</title>
-      <link>https://kantas-spike.github.io/portfolio/blog/2022/07/02-how-to-learn-tools/</link>
+      <link>https://kantas-spike.github.io/portfolio/articles/2022/07/02-how-to-learn-tools/</link>
       <pubDate>Mon, 25 Jul 2022 07:40:38 +0900</pubDate>
       
-      <guid>https://kantas-spike.github.io/portfolio/blog/2022/07/02-how-to-learn-tools/</guid>
+      <guid>https://kantas-spike.github.io/portfolio/articles/2022/07/02-how-to-learn-tools/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.catb.org/~esr/faqs/hacking-howto.html&#34;&gt;How To Learn Hacking&lt;/a&gt;(&lt;a href=&#34;https://github.com/kantas-spike/how-to-learn-hacking-japanese/blob/main/how-to-learn-hacking.md&#34;&gt;翻訳:ハッキングの学び方&lt;/a&gt;)では、「言語やツールを学習する」を学習の第一段階に挙げていました。&lt;/p&gt;
 &lt;p&gt;「言語の学習」については、公式・非公式文書、書籍、練習問題などで学習できます。
 「ツールの学習」はどうするのでしょうか？&lt;/p&gt;</description>
@@ -989,10 +989,10 @@ GitHubを使うためには&lt;code&gt;git&lt;/code&gt;を使えないといけ�
     
     <item>
       <title>プログラミングの学び方</title>
-      <link>https://kantas-spike.github.io/portfolio/blog/2022/07/00-how-to-learn-programming/</link>
+      <link>https://kantas-spike.github.io/portfolio/articles/2022/07/00-how-to-learn-programming/</link>
       <pubDate>Fri, 22 Jul 2022 19:33:48 +0900</pubDate>
       
-      <guid>https://kantas-spike.github.io/portfolio/blog/2022/07/00-how-to-learn-programming/</guid>
+      <guid>https://kantas-spike.github.io/portfolio/articles/2022/07/00-how-to-learn-programming/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.catb.org/~esr/faqs/hacker-howto.html&#34;&gt;How To Became A Hacker&lt;/a&gt;(&lt;a href=&#34;https://cruel.org/freeware/hacker.html#believe3&#34;&gt;翻訳:ハッカーになろう&lt;/a&gt;)と、
 &lt;a href=&#34;http://www.catb.org/~esr/faqs/hacking-howto.html&#34;&gt;How To Learn Hacking&lt;/a&gt;(&lt;a href=&#34;https://github.com/kantas-spike/how-to-learn-hacking-japanese/blob/main/how-to-learn-hacking.md&#34;&gt;翻訳:ハッキングの学び方&lt;/a&gt;)を読んで、自分にあったプログラミング学習方法がわかった気がします。&lt;/p&gt;
 &lt;p&gt;これらの文書で学んだことをまとめたいと思います。&lt;/p&gt;</description>
@@ -1077,10 +1077,10 @@ git submodule update --remote 参考 上流の変更の取り込み </descriptio
     
     <item>
       <title>ポートフォリオサイトを作成する</title>
-      <link>https://kantas-spike.github.io/portfolio/blog/2022/07/01-create-my-portfolio-site/</link>
+      <link>https://kantas-spike.github.io/portfolio/articles/2022/07/01-create-my-portfolio-site/</link>
       <pubDate>Fri, 15 Jul 2022 06:13:30 +0900</pubDate>
       
-      <guid>https://kantas-spike.github.io/portfolio/blog/2022/07/01-create-my-portfolio-site/</guid>
+      <guid>https://kantas-spike.github.io/portfolio/articles/2022/07/01-create-my-portfolio-site/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;と&lt;a href=&#34;https://gohugo.io/hosting-and-deployment/hosting-on-github/&#34;&gt;GitHub Pages&lt;/a&gt;を使って、プログラミングの学習記録サイトを作りたいと思います。&lt;/p&gt;</description>
     </item>
     

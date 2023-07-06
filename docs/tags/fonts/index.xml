@@ -10,10 +10,10 @@
     <lastBuildDate>Fri, 23 Jun 2023 11:56:09 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/fonts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Inkscapeを使ってカスタムフォントを作成したい</title>
-      <link>https://kantas-spike.github.io/portfolio/memo/02-creating-font-by-inkscape/</link>
+      <link>https://kantas-spike.github.io/portfolio/notes/2023/06/02-creating-font-by-inkscape/</link>
       <pubDate>Fri, 23 Jun 2023 11:56:09 +0900</pubDate>
       
-      <guid>https://kantas-spike.github.io/portfolio/memo/02-creating-font-by-inkscape/</guid>
+      <guid>https://kantas-spike.github.io/portfolio/notes/2023/06/02-creating-font-by-inkscape/</guid>
       <description>&lt;p&gt;ブログで使用するアイコンをWebフォントとして自作したい。&lt;/p&gt;
 &lt;p&gt;InkscapeとFontForgeを使ってできるようだ。調べたり、やってみた結果をメモ&lt;/p&gt;</description>
     </item>

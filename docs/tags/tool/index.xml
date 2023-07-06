@@ -10,10 +10,10 @@
     <lastBuildDate>Mon, 25 Jul 2022 11:32:58 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/tool/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ツールの学習 Git</title>
-      <link>https://kantas-spike.github.io/portfolio/blog/2022/07/03-how-to-learn-git/</link>
+      <link>https://kantas-spike.github.io/portfolio/articles/2022/07/03-how-to-learn-git/</link>
       <pubDate>Mon, 25 Jul 2022 11:32:58 +0900</pubDate>
       
-      <guid>https://kantas-spike.github.io/portfolio/blog/2022/07/03-how-to-learn-git/</guid>
+      <guid>https://kantas-spike.github.io/portfolio/articles/2022/07/03-how-to-learn-git/</guid>
       <description>&lt;p&gt;プログラミングの学習ではGitHubをよく使います。
 GitHubを使うためには&lt;code&gt;git&lt;/code&gt;を使えないといけません。&lt;/p&gt;
 &lt;p&gt;そこで、&lt;a href=&#34;https://missing.csail.mit.edu/2020/version-control/&#34;&gt;Version Control (Git) · the missing semester of your cs education&lt;/a&gt;(&lt;a href=&#34;https://missing-semester-jp.github.io/2020/version-control/&#34;&gt;翻訳&lt;/a&gt;)で&lt;code&gt;git&lt;/code&gt;について学びたいと思います。&lt;/p&gt;</description>
@@ -21,10 +21,10 @@ GitHubを使うためには&lt;code&gt;git&lt;/code&gt;を使えないといけ�
     
     <item>
       <title>ツールの学習 はじめに</title>
-      <link>https://kantas-spike.github.io/portfolio/blog/2022/07/02-how-to-learn-tools/</link>
+      <link>https://kantas-spike.github.io/portfolio/articles/2022/07/02-how-to-learn-tools/</link>
       <pubDate>Mon, 25 Jul 2022 07:40:38 +0900</pubDate>
       
-      <guid>https://kantas-spike.github.io/portfolio/blog/2022/07/02-how-to-learn-tools/</guid>
+      <guid>https://kantas-spike.github.io/portfolio/articles/2022/07/02-how-to-learn-tools/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.catb.org/~esr/faqs/hacking-howto.html&#34;&gt;How To Learn Hacking&lt;/a&gt;(&lt;a href=&#34;https://github.com/kantas-spike/how-to-learn-hacking-japanese/blob/main/how-to-learn-hacking.md&#34;&gt;翻訳:ハッキングの学び方&lt;/a&gt;)では、「言語やツールを学習する」を学習の第一段階に挙げていました。&lt;/p&gt;
 &lt;p&gt;「言語の学習」については、公式・非公式文書、書籍、練習問題などで学習できます。
 「ツールの学習」はどうするのでしょうか？&lt;/p&gt;</description>
