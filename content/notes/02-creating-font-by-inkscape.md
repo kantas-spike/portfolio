@@ -96,7 +96,7 @@ InkscapeとFontForgeを使ってできるようだ。調べたり、やってみ
         font-display: swap;
         font-family: kantasicon;
         font-style: normal;
-        src: url(../fonts/kantasicon_v00.woff2) format("woff2")
+        src: url(../../../../fonts/kantasicon_v00.woff2) format("woff2")
     }
 
     .kantas-icons {
@@ -121,13 +121,13 @@ InkscapeとFontForgeを使ってできるようだ。調べたり、やってみ
   - 表示結果。アイコンの線が細いですね。もっと太くしないと。あともう少しアイコンの高さが欲しいかも。
 
     ~~~rawhtml
-    <link rel="preload" href="../../fonts/kantasicon_v00.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="../../../../fonts/kantasicon_v00.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <style>
     @font-face {
         font-display: swap;
         font-family: kantasicon;
         font-style: normal;
-        src: url(../../fonts/kantasicon_v00.woff2) format("woff2")
+        src: url(../../../../fonts/kantasicon_v00.woff2) format("woff2")
     }
 
     .kantas-icons {
