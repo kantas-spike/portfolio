@@ -1,14 +1,14 @@
 {
     "title": "add_article.py",
-    "date": "2023-06-23T01:13:01Z",
+    "date": "2023-07-06T10:08:00Z",
     "draft": false,
     "repo": {
         "name": "add_article.py",
         "full_name": "kantas-spike/add_article.py",
         "html_url": "https://github.com/kantas-spike/add_article.py",
         "description": "Utility script to add articles to a site managed by hugo.",
-        "size": 5,
-        "pushed_at": "2023-06-23T01:13:01Z",
+        "size": 6,
+        "pushed_at": "2023-07-06T10:08:00Z",
         "project_type": "mytools",
         "langs": [
             "Python",

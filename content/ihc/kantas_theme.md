@@ -1,14 +1,14 @@
 {
     "title": "kantas-theme",
-    "date": "2023-06-28T21:23:00Z",
+    "date": "2023-07-06T09:39:15Z",
     "draft": false,
     "repo": {
         "name": "kantas-theme",
         "full_name": "kantas-spike/kantas-theme",
         "html_url": "https://github.com/kantas-spike/kantas-theme",
         "description": "Hugo theme for programming learner portfolio",
-        "size": 1513,
-        "pushed_at": "2023-06-28T21:23:00Z",
+        "size": 1519,
+        "pushed_at": "2023-07-06T09:39:15Z",
         "project_type": "ihc",
         "langs": [
             "HTML",
@@ -16,6 +16,26 @@
             "JavaScript"
         ],
         "merged": [
+            {
+                "html_url": "https://github.com/kantas-spike/kantas-theme/pull/65",
+                "title": "Feat \u8a18\u4e8b\u306e\u5206\u985e\u3092\u518d\u7de8 (fix: #62)",
+                "state": "closed",
+                "body": null,
+                "created_at": "2023-07-06T09:37:59Z",
+                "merged_at": "2023-07-06T09:39:11Z",
+                "closed_at": "2023-07-06T09:39:12Z",
+                "user": "kantas-spike"
+            },
+            {
+                "html_url": "https://github.com/kantas-spike/kantas-theme/pull/64",
+                "title": "fix: Q&A\u306e\u30a2\u30a4\u30b3\u30f3\u3068\u6587\u7ae0\u306e\u4f4d\u7f6e\u3092\u8abf\u6574 (fix: #63)",
+                "state": "closed",
+                "body": "\u6587\u7ae0\u306emt\u304c\u7a7a\u304d\u3059\u304e\u3066\u3044\u305f\u305f\u3081\u5c11\u3057\u8a70\u3081\u305f",
+                "created_at": "2023-07-06T08:59:17Z",
+                "merged_at": "2023-07-06T08:59:54Z",
+                "closed_at": "2023-07-06T08:59:54Z",
+                "user": "kantas-spike"
+            },
             {
                 "html_url": "https://github.com/kantas-spike/kantas-theme/pull/61",
                 "title": "fix: QA\u306e\u9023\u7d9a\u8a18\u8f09\u6642\u7528\u306b\u30de\u30fc\u30b8\u30f3\u3092\u8abf\u6574",
@@ -294,16 +314,6 @@
                 "created_at": "2022-07-21T22:40:07Z",
                 "merged_at": "2022-07-21T22:40:33Z",
                 "closed_at": "2022-07-21T22:40:33Z",
-                "user": "kantas-spike"
-            },
-            {
-                "html_url": "https://github.com/kantas-spike/kantas-theme/pull/7",
-                "title": "Itr01: \u8a18\u4e8b\u7cfb\u3068\u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u60c5\u5831\u7cfb\u3092\u30b3\u30f3\u30c6\u30f3\u30c4\u3068\u3057\u3066\u6271\u3046",
-                "state": "closed",
-                "body": null,
-                "created_at": "2022-07-21T08:28:54Z",
-                "merged_at": "2022-07-21T08:29:04Z",
-                "closed_at": "2022-07-21T08:29:04Z",
                 "user": "kantas-spike"
             }
         ]
