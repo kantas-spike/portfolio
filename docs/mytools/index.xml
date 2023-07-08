@@ -9,9 +9,18 @@
     <copyright>© 2022 kanta&#39;s spike</copyright>
     <lastBuildDate>Fri, 22 Jul 2022 08:15:27 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/mytools/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>create-commit-link</title>
+      <link>https://kantas-spike.github.io/portfolio/mytools/create_commit_link/</link>
+      <pubDate>Sat, 08 Jul 2023 09:36:00 +0000</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/mytools/create_commit_link/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>add_article.py</title>
       <link>https://kantas-spike.github.io/portfolio/mytools/add_article.py/</link>
-      <pubDate>Fri, 23 Jun 2023 01:13:01 +0000</pubDate>
+      <pubDate>Thu, 06 Jul 2023 10:08:00 +0000</pubDate>
       
       <guid>https://kantas-spike.github.io/portfolio/mytools/add_article.py/</guid>
       <description></description>
@@ -20,7 +29,7 @@
     <item>
       <title>repo-info.py</title>
       <link>https://kantas-spike.github.io/portfolio/mytools/repo_info.py/</link>
-      <pubDate>Sat, 10 Jun 2023 23:32:28 +0000</pubDate>
+      <pubDate>Thu, 06 Jul 2023 07:56:13 +0000</pubDate>
       
       <guid>https://kantas-spike.github.io/portfolio/mytools/repo_info.py/</guid>
       <description></description>
