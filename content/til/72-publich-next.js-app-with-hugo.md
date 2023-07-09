@@ -48,6 +48,8 @@ Next.jsでアプリを`Static Export`し、その結果を Hugoの`static`ディ
 
 6. [http://localhost:1313/portfolio/tictactoe/](http://localhost:1313/portfolio/tictactoe/)にアクセスするとアプリが表示される
 
+7. `hugo`でスタティックサイトを生成し、GitHubにプッシュすると [https://kantas-spike.github.io/portfolio/tictactoe/](https://kantas-spike.github.io/portfolio/tictactoe/)でアプリを表示できる。
+
 ### 参考
 
 - [Static Export した Tic-Tac-Toeを Hugoで公開したい · kantas-spike/learn_react · GitHub](https://github.com/kantas-spike/learn_react/blob/main/memo/03-02_react_tutorial_tic-tac-toe.md#static-export-%E3%81%97%E3%81%9F-tic-tac-toe%E3%82%92-hugo%E3%81%A7%E5%85%AC%E9%96%8B%E3%81%97%E3%81%9F%E3%81%84)
