@@ -2,16 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://kantas-spike.github.io/portfolio/til/2023/07/73-cannot-load-exported-nextjs-app-in-github-pages/</loc>
+    <lastmod>2023-07-10T01:17:23+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/github/</loc>
+    <lastmod>2023-07-10T01:17:23+09:00</lastmod>
+  </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/hugo/</loc>
-    <lastmod>2023-07-10T00:28:07+09:00</lastmod>
+    <lastmod>2023-07-10T01:17:23+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/</loc>
+    <lastmod>2023-07-10T01:17:23+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2023/07/72-publich-next.js-app-with-hugo/</loc>
     <lastmod>2023-07-10T00:28:07+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/next.js/</loc>
-    <lastmod>2023-07-10T00:28:07+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/</loc>
     <lastmod>2023-07-10T00:28:07+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/mytools/create_commit_link/</loc>
@@ -139,9 +145,6 @@
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2023/06/59-use-site-assets-when-using-a-theme-with-hugo/</loc>
     <lastmod>2023-06-01T23:09:00+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/github/</loc>
-    <lastmod>2023-05-31T22:17:46+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2023/05/58-decide-on-a-protection-policy-for-the-main-branch/</loc>
     <lastmod>2023-05-31T22:17:46+09:00</lastmod>

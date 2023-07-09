@@ -1,6 +1,11 @@
 {
     "results": [
     {
+        "href": "https://kantas-spike.github.io/portfolio/til/2023/07/73-cannot-load-exported-nextjs-app-in-github-pages/",
+        "title": "`Static Export`したNext.jsアプリをGitHub Pagesで表示できない",
+        "tags": "GitHub hugo"
+    },
+    {
         "href": "https://kantas-spike.github.io/portfolio/til/2023/07/72-publich-next.js-app-with-hugo/",
         "title": "HugoでNext.jsアプリを公開したい",
         "tags": "next.js hugo"
