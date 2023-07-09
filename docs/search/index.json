@@ -1,6 +1,11 @@
 {
     "results": [
     {
+        "href": "https://kantas-spike.github.io/portfolio/til/2023/07/72-publich-next.js-app-with-hugo/",
+        "title": "HugoでNext.jsアプリを公開したい",
+        "tags": "next.js hugo"
+    },
+    {
         "href": "https://kantas-spike.github.io/portfolio/mytools/create_commit_link/",
         "title": "create-commit-link",
         "tags": ""

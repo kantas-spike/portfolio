@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html><head>
+    <title>
+        HugoでNext.jsアプリを公開したい | kanta&#39;s spike
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="https://kantas-spike.github.io/portfolio/fonts/NotoSansJP-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" href="https://kantas-spike.github.io/portfolio/fonts/NotoSansJP-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+<link rel="stylesheet" href="https://kantas-spike.github.io/portfolio/css/fonts.978d33a6dcb8af5cc3fc6d102e0cbd3d4f2452dcaae53ff12d45609137df3ed9.css">
+    <link rel="stylesheet" href="https://kantas-spike.github.io/portfolio/css/theme.min.b280e77f74cb9c6094b283bb971a339c95332517f64334e7745d76b796a3c3ec.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" /><link rel="stylesheet" href="https://kantas-spike.github.io/portfolio/css/syntax.min.70c02160dee6bd55baaa2b10019d735294451730e282f7fa645466392ba0cfb6.css"><link rel="apple-touch-icon" sizes="180x180" href="https://kantas-spike.github.io/portfolio/icon180.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://kantas-spike.github.io/portfolio/icon32.png">
+<link rel="icon" type="image/svg+xml" href="https://kantas-spike.github.io/portfolio/icon.svg">
+<link rel="manifest" href="https://kantas-spike.github.io/portfolio/site.webmanifest">
+
+</head><body class="bg-background text-primary-dark pb-4"><header class="bg-primary-dark text-site_title text-6xl font-serif font-extrabold px-4 py-3">
+    <h1 class="container mx-auto px-4"><a href="https://kantas-spike.github.io/portfolio/">kanta&#39;s spike</a></h1>
+</header>
+<input type="checkbox" name="burger_cbx" id="burger_cbx">
+<label for="burger_cbx" class="burger_label">
+    <span class="burger_icon"><svg version="1.1" viewBox="0 0 12.7 12.7" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <rect x="1.0369" y="2.1007" width="10.634" height="1.0426" ry=".5213"/>
+  <rect x="1.0369" y="4.571" width="10.634" height="1.0426" ry=".5213"/>
+  <rect x="1.0369" y="7.0413" width="10.634" height="1.0426" ry=".5213"/>
+  <rect x="1.0369" y="9.5115" width="10.634" height="1.0426" ry=".5213"/>
+ </g>
+</svg>
+</span>
+</label>
+<label for="burger_cbx" class="close_label">
+    <span class="close_icon"><svg version="1.1" viewBox="0 0 12.7 12.7" xmlns="http://www.w3.org/2000/svg">
+ <rect transform="rotate(45.535)" x="3.6678" y="-.6148" width="10.634" height="1.0426" ry=".5213"/>
+ <rect transform="rotate(135.53)" x="-5.4104" y="-9.5059" width="10.634" height="1.0426" ry=".5213"/>
+</svg>
+</span>
+</label>
+<div class="nav_area">
+    <nav class="container mx-auto bg-primary text-on-primary text-center flex flex-col md:flex-row justify-start">
+            <a href="https://kantas-spike.github.io/portfolio/" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Home</a>
+            <a href="https://kantas-spike.github.io/portfolio/articles" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Articles</a>
+            <a href="https://kantas-spike.github.io/portfolio/til" class="box-border flex-1 text-center no-underline bg-primary-light text-on-primary-light font-bold py-2">TIL</a>
+            <a href="https://kantas-spike.github.io/portfolio/notes" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Notes</a>
+            <a href="https://kantas-spike.github.io/portfolio/dialogues" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Dialogues</a>
+            <a href="https://kantas-spike.github.io/portfolio/mytools" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">My Tools</a>
+            <a href="https://kantas-spike.github.io/portfolio/ihc" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">IHC</a>
+            <a href="https://kantas-spike.github.io/portfolio/tags" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Tags</a>
+        <div class="flex-none" id="search_menu"></div>
+    </nav>
+</div>
+<main id="content" class="container mx-auto bg-surface pt-4 pb-8">
+<div class="area_border  px-4 py-3 mx-4  md:mx-10 pb-4">
+    
+
+
+
+<div class="mb-4">
+    <h3 class="border-b-4 border-primary-dark text-primary-dark text-xl font-bold tracking-wider"><i class="fa-solid fa-circle-info"></i> <a href="https://kantas-spike.github.io/portfolio/til/2023/07/72-publich-next.js-app-with-hugo/">HugoでNext.jsアプリを公開したい</a></h3>
+    <div class="flex justify-between mt-1 mx-2">
+        <div>
+            <ul class="flex gap-2 justify-end">
+            
+            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/next.js/">#next.js</a></li>
+            
+            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/hugo/">#hugo</a></li>
+            
+            </ul>
+        </div>
+        <div>
+            
+            <div class="text-right text-sm font-bold">2023/07/10</div>
+            
+        </div>
+    </div>
+</div>
+
+    <div class="article mx-2">
+        <p>Nest.jsで作成したアプリをHugoで作成したブログに公開したい。 <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+<h3 id="解決策">解決策</h3>
+<p>Next.jsでアプリを<code>Static Export</code>し、その結果を Hugoの<code>static</code>ディレクトリに格納すれば良い。</p>
+<p>手順を、Nest.jsで作成したアプリ <sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> を<code>static/tictactoe</code>に格納する場合を例にして説明する。</p>
+<ol>
+<li>
+<p>Next.jsのプロジェクト内で、<code>next.config.js</code>に以下を設定し、</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="cm">/** @type {import(&#39;next&#39;).NextConfig} */</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">nextConfig</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">output</span><span class="o">:</span> <span class="s1">&#39;export&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">basePath</span><span class="o">:</span> <span class="s1">&#39;/portfolio/tictactoe&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="nx">nextConfig</span>
+</span></span></code></pre></div></li>
+<li>
+<p><code>npm run build</code>を実行する</p>
+</li>
+<li>
+<p><code>out</code>ディレクトリに<code>Static Export</code>された結果が格納される</p>
+</li>
+<li>
+<p><code>out</code>ディレクトリをHugoの<code>static</code>配下にコピーする</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">cp -r ./out ~/blog/static/tictactoe
+</span></span></code></pre></div></li>
+<li>
+<p>Hugoのサイトへ移動し、サーバーを起動する</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">$ <span class="nb">cd</span> ~/blog
+</span></span><span class="line"><span class="cl">$ hugo server
+</span></span><span class="line"><span class="cl">Web Server is available at http://localhost:1313/portfolio/ <span class="o">(</span><span class="nb">bind</span> address 127.0.0.1<span class="o">)</span>
+</span></span><span class="line"><span class="cl">Press Ctrl+C to stop
+</span></span></code></pre></div></li>
+<li>
+<p><a href="http://localhost:1313/portfolio/tictactoe/">http://localhost:1313/portfolio/tictactoe/</a>にアクセスするとアプリが表示される</p>
+</li>
+</ol>
+<h3 id="参考">参考</h3>
+<ul>
+<li><a href="https://github.com/kantas-spike/learn_react/blob/main/memo/03-02_react_tutorial_tic-tac-toe.md#static-export-%E3%81%97%E3%81%9F-tic-tac-toe%E3%82%92-hugo%E3%81%A7%E5%85%AC%E9%96%8B%E3%81%97%E3%81%9F%E3%81%84">Static Export した Tic-Tac-Toeを Hugoで公開したい · kantas-spike/learn_react · GitHub</a></li>
+<li><a href="https://nextjs.org/docs/app/building-your-application/deploying/static-exports">Deploying: Static Exports | Next.js</a></li>
+<li><a href="https://nextjs.org/docs/app/api-reference/next-config-js/basePath">next.config.js Options: basePath | Next.js</a></li>
+<li><a href="https://nextjs.org/docs/app/building-your-application/deploying/static-exports#unsupported-features">Deploying: Static Exports - Unsupported Features | Next.js</a></li>
+</ul>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>Reactでアプリを作成しようと勉強中。その中でReactは生で使わずにフレームワークを使うように推奨されていたので、Next.jsを使うようにした。&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p><a href="https://react.dev/learn/tutorial-tic-tac-toe">Tutorial: Tic-Tac-Toe – React</a>を<a href="https://github.com/kantas-spike/learn_react/tree/main/exercises/03-02_react_tutorial_tic-tac-toe">Next.jsを利用して実装</a>&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+    </div>
+    <div class="mt-6">
+    <div class="border-t-2 border-primary-dark px-2 pt-2 text-right">
+        <span class="text-sm">作成日: 2023/07/10</span></div>
+</div>
+
+</div>
+
+        </main><footer class="bg-primary-dark text-center text-on-primary-dark fixed bottom-0 w-full h-8">
+    <div class="container mx-auto grid grid-cols-3">
+        <div class="col-start-1 col-span-2 ml-2 md:ml-0 md:col-start-2 md:col-span-1">
+            <div class="text-left md:text-center text-sm pt-2">© 2022 kanta&#39;s spike</div>
+        </div>
+        <div class="col-start-3 flex justify-end gap-2 mr-2">
+            
+                
+            <a title="Twitter" class="text-2xl" href="https://twitter.com/KantasSpike"><i class="fa-brands fa-twitter-square"></i></a>
+                
+            <a title="Youtube" class="text-2xl" href="https://www.youtube.com/channel/UCnVBuUGMYAt7ZuIkadxnMfw"><i class="fa-brands fa-youtube-square"></i></a>
+                
+            <a title="GitHub" class="text-2xl" href="https://github.com/kantas-spike"><i class="fa-brands fa-github-square"></i></a>
+                
+            <a title="Blog" class="text-2xl" href="https://kantas-spike.github.io/portfolio/"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                
+            
+        </div>
+    </div>
+</footer>
+        
+
+
+
+
+<script defer type="text/javascript" src="https://kantas-spike.github.io/portfolio/js/search-form.dd7ad4e4f203f408d461506b73a7cb128e641d61d86c7695ca9d2cd5e2768597efa3c2663c7a204016bb8d25de38097dc929682fc7aad45bd784ab2b4c3e6135.js" integrity="sha512-3XrU5PID9AjUYVBrc6fLEo5kHWHYbHaVyp0s1eJ2hZfvo8JmPHogQBa7jSXeOAl9ySloL8eq1FvXhKsrTD5hNQ=="></script></body>
+</html>

@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/hugo/</loc>
+    <lastmod>2023-07-10T00:28:07+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/til/2023/07/72-publich-next.js-app-with-hugo/</loc>
+    <lastmod>2023-07-10T00:28:07+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/next.js/</loc>
+    <lastmod>2023-07-10T00:28:07+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/</loc>
+    <lastmod>2023-07-10T00:28:07+09:00</lastmod>
+  </url><url>
     <loc>https://kantas-spike.github.io/portfolio/mytools/create_commit_link/</loc>
     <lastmod>2023-07-08T09:36:00+00:00</lastmod>
   </url><url>
@@ -18,9 +30,6 @@
     <lastmod>2023-07-06T16:59:02+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/english/</loc>
-    <lastmod>2023-07-06T16:59:02+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/</loc>
     <lastmod>2023-07-06T16:59:02+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/dialogues/07-category-of-blog/</loc>
@@ -96,9 +105,6 @@
     <lastmod>2023-06-10T23:14:44+00:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/font/</loc>
-    <lastmod>2023-06-07T14:50:17+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/hugo/</loc>
     <lastmod>2023-06-07T14:50:17+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2023/06/66-use-web-fonts-with-hugo/</loc>
