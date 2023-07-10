@@ -7,7 +7,7 @@ tags:
 - hugo
 ---
 
-Static Export`したNext.jsアプリをGitHub Pagesで表示できない。
+`Static Export`したNext.jsアプリをGitHub Pagesで表示できない。
 
 どうやら`_next/`配下のファイルを表示できないようだ。
 
@@ -15,7 +15,8 @@ Static Export`したNext.jsアプリをGitHub Pagesで表示できない。
 
 ### 解決策
 
-`docs/.nojekyll`ファイルを作成し、GitHub Pagesで Jekyllの処理を禁止すると良い。
+`docs/.nojekyll`ファイルを作成し、GitHub Pagesで Jekyllの処理を禁止すると良い。[^1]
+そのために、Hugoのサイト(or テーマ)に`static/.nojekyll`を作成する。
 
 GitHub Pagesでホスティングされたサイトは、デフォルトでは[Jekyll](https://jekyllrb.com/)により処理されるようだ。
 
@@ -31,3 +32,5 @@ Jekyllは`_`をプレフィックスにもつファイルやディレクトリ�
 - [GitHub Pagesで普通の静的ホスティングをしたいときは .nojekyll ファイルを置く - Qiita](https://qiita.com/sky_y/items/b96ae52c90457bcd7846)
 - [GitHub Pages について - 静的サイト ジェネレーター | GitHub Docs](https://docs.github.com/ja/pages/getting-started-with-github-pages/about-github-pages#static-site-generators)
 - [Directory Structure | Jekyll • Simple, blog-aware, static sites](https://jekyllrb.com/docs/structure/)
+
+[^1]: `.nojekyll`は空のファイルで良い
