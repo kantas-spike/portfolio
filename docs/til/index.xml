@@ -14,7 +14,7 @@
       <pubDate>Mon, 10 Jul 2023 01:17:23 +0900</pubDate>
       
       <guid>https://kantas-spike.github.io/portfolio/til/2023/07/73-cannot-load-exported-nextjs-app-in-github-pages/</guid>
-      <description>&lt;p&gt;Static Export`したNext.jsアプリをGitHub Pagesで表示できない。&lt;/p&gt;
+      <description>&lt;p&gt;&lt;code&gt;Static Export&lt;/code&gt;したNext.jsアプリをGitHub Pagesで表示できない。&lt;/p&gt;
 &lt;p&gt;どうやら&lt;code&gt;_next/&lt;/code&gt;配下のファイルを表示できないようだ。&lt;/p&gt;</description>
     </item>
     

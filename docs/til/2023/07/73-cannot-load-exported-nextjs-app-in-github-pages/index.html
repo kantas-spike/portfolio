@@ -75,10 +75,11 @@
 </div>
 
     <div class="article mx-2">
-        <p>Static Export`したNext.jsアプリをGitHub Pagesで表示できない。</p>
+        <p><code>Static Export</code>したNext.jsアプリをGitHub Pagesで表示できない。</p>
 <p>どうやら<code>_next/</code>配下のファイルを表示できないようだ。</p>
 <h3 id="解決策">解決策</h3>
-<p><code>docs/.nojekyll</code>ファイルを作成し、GitHub Pagesで Jekyllの処理を禁止すると良い。</p>
+<p><code>docs/.nojekyll</code>ファイルを作成し、GitHub Pagesで Jekyllの処理を禁止すると良い。<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>
+そのために、Hugoのサイト(or テーマ)に<code>static/.nojekyll</code>を作成する。</p>
 <p>GitHub Pagesでホスティングされたサイトは、デフォルトでは<a href="https://jekyllrb.com/">Jekyll</a>により処理されるようだ。</p>
 <p>Jekyllは<code>_</code>をプレフィックスにもつファイルやディレクトリを除外する。
 そのため、<code>_next/</code>配下のファイルが表示されなくなった。</p>
@@ -91,6 +92,14 @@
 <li><a href="https://docs.github.com/ja/pages/getting-started-with-github-pages/about-github-pages#static-site-generators">GitHub Pages について - 静的サイト ジェネレーター | GitHub Docs</a></li>
 <li><a href="https://jekyllrb.com/docs/structure/">Directory Structure | Jekyll • Simple, blog-aware, static sites</a></li>
 </ul>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p><code>.nojekyll</code>は空のファイルで良い&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
     </div>
     <div class="mt-6">
     <div class="border-t-2 border-primary-dark px-2 pt-2 text-right">
