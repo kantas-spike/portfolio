@@ -1,14 +1,14 @@
 {
     "title": "kantas-theme",
-    "date": "2023-07-06T09:39:15Z",
+    "date": "2023-07-10T02:41:14Z",
     "draft": false,
     "repo": {
         "name": "kantas-theme",
         "full_name": "kantas-spike/kantas-theme",
         "html_url": "https://github.com/kantas-spike/kantas-theme",
         "description": "Hugo theme for programming learner portfolio",
-        "size": 1519,
-        "pushed_at": "2023-07-06T09:39:15Z",
+        "size": 1520,
+        "pushed_at": "2023-07-10T02:41:14Z",
         "project_type": "ihc",
         "langs": [
             "HTML",
@@ -16,6 +16,16 @@
             "JavaScript"
         ],
         "merged": [
+            {
+                "html_url": "https://github.com/kantas-spike/kantas-theme/pull/66",
+                "title": "chore: GitHub Pages\u3067\u516c\u958b\u6642\u306bJekyll\u51e6\u7406\u3092\u7121\u52b9\u306b",
+                "state": "closed",
+                "body": "`_next`\u306e\u3088\u3046\u306a`_`\u3092\u30d7\u30ec\u30d5\u30a3\u30c3\u30af\u30b9\u306b\u6301\u3064\u30c7\u30a3\u30ec\u30af\u30c8\u30ea\u304c\u9664\u5916\u3055\u308c\u308b\u305f\u3081\u3001\r\nJekyll\u3092\u7121\u52b9\u306b",
+                "created_at": "2023-07-10T02:40:58Z",
+                "merged_at": "2023-07-10T02:41:12Z",
+                "closed_at": "2023-07-10T02:41:12Z",
+                "user": "kantas-spike"
+            },
             {
                 "html_url": "https://github.com/kantas-spike/kantas-theme/pull/65",
                 "title": "Feat \u8a18\u4e8b\u306e\u5206\u985e\u3092\u518d\u7de8 (fix: #62)",
@@ -304,16 +314,6 @@
                 "created_at": "2022-07-23T02:46:33Z",
                 "merged_at": "2022-07-23T02:46:42Z",
                 "closed_at": "2022-07-23T02:46:42Z",
-                "user": "kantas-spike"
-            },
-            {
-                "html_url": "https://github.com/kantas-spike/kantas-theme/pull/14",
-                "title": "Itr02: tag,tags\u5bfe\u5fdc\u3001\u30da\u30fc\u30b8\u30f3\u30b0\u5bfe\u5fdc\u7b49",
-                "state": "closed",
-                "body": null,
-                "created_at": "2022-07-21T22:40:07Z",
-                "merged_at": "2022-07-21T22:40:33Z",
-                "closed_at": "2022-07-21T22:40:33Z",
                 "user": "kantas-spike"
             }
         ]
