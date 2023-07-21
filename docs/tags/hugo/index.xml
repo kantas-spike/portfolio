@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>© 2022 kanta&#39;s spike</copyright>
-    <lastBuildDate>Mon, 10 Jul 2023 01:17:23 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 10 Jul 2023 06:01:59 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Markdownのページ内にNext.jsアプリを埋め込みたい</title>
+      <link>https://kantas-spike.github.io/portfolio/til/2023/07/74-add-nextjs-app-in-md/</link>
+      <pubDate>Mon, 10 Jul 2023 06:01:59 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/til/2023/07/74-add-nextjs-app-in-md/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://kantas-spike.github.io/portfolio/til/2023/07/72-publich-next.js-app-with-hugo/&#34;&gt;以前の記事&lt;/a&gt;で公開した Next.jsアプリをMarkdownページにも埋めこみたい。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>`Static Export`したNext.jsアプリをGitHub Pagesで表示できない</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/07/73-cannot-load-exported-nextjs-app-in-github-pages/</link>

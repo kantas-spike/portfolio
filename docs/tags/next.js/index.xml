@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>© 2022 kanta&#39;s spike</copyright>
-    <lastBuildDate>Mon, 10 Jul 2023 00:28:07 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/next.js/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 10 Jul 2023 06:01:59 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/next.js/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Markdownのページ内にNext.jsアプリを埋め込みたい</title>
+      <link>https://kantas-spike.github.io/portfolio/til/2023/07/74-add-nextjs-app-in-md/</link>
+      <pubDate>Mon, 10 Jul 2023 06:01:59 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/til/2023/07/74-add-nextjs-app-in-md/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://kantas-spike.github.io/portfolio/til/2023/07/72-publich-next.js-app-with-hugo/&#34;&gt;以前の記事&lt;/a&gt;で公開した Next.jsアプリをMarkdownページにも埋めこみたい。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>HugoでNext.jsアプリを公開したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/07/72-publich-next.js-app-with-hugo/</link>

@@ -7,20 +7,11 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>© 2022 kanta&#39;s spike</copyright>
-    <lastBuildDate>Mon, 10 Jul 2023 01:17:23 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>GitHub</title>
-      <link>https://kantas-spike.github.io/portfolio/tags/github/</link>
-      <pubDate>Mon, 10 Jul 2023 01:17:23 +0900</pubDate>
-      
-      <guid>https://kantas-spike.github.io/portfolio/tags/github/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Mon, 10 Jul 2023 06:01:59 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>hugo</title>
       <link>https://kantas-spike.github.io/portfolio/tags/hugo/</link>
-      <pubDate>Mon, 10 Jul 2023 01:17:23 +0900</pubDate>
+      <pubDate>Mon, 10 Jul 2023 06:01:59 +0900</pubDate>
       
       <guid>https://kantas-spike.github.io/portfolio/tags/hugo/</guid>
       <description></description>
@@ -29,9 +20,18 @@
     <item>
       <title>next.js</title>
       <link>https://kantas-spike.github.io/portfolio/tags/next.js/</link>
-      <pubDate>Mon, 10 Jul 2023 00:28:07 +0900</pubDate>
+      <pubDate>Mon, 10 Jul 2023 06:01:59 +0900</pubDate>
       
       <guid>https://kantas-spike.github.io/portfolio/tags/next.js/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GitHub</title>
+      <link>https://kantas-spike.github.io/portfolio/tags/github/</link>
+      <pubDate>Mon, 10 Jul 2023 01:17:23 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/tags/github/</guid>
       <description></description>
     </item>
     

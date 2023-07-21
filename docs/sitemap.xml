@@ -2,35 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://kantas-spike.github.io/portfolio/ihc/learn_react/</loc>
+    <lastmod>2023-07-19T12:32:15+00:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/ihc/kantas_theme/</loc>
+    <lastmod>2023-07-10T02:41:14+00:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/hugo/</loc>
+    <lastmod>2023-07-10T06:01:59+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/til/2023/07/74-add-nextjs-app-in-md/</loc>
+    <lastmod>2023-07-10T06:01:59+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/next.js/</loc>
+    <lastmod>2023-07-10T06:01:59+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/</loc>
+    <lastmod>2023-07-10T06:01:59+09:00</lastmod>
+  </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2023/07/73-cannot-load-exported-nextjs-app-in-github-pages/</loc>
     <lastmod>2023-07-10T01:17:23+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/github/</loc>
     <lastmod>2023-07-10T01:17:23+09:00</lastmod>
   </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/hugo/</loc>
-    <lastmod>2023-07-10T01:17:23+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/</loc>
-    <lastmod>2023-07-10T01:17:23+09:00</lastmod>
-  </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2023/07/72-publich-next.js-app-with-hugo/</loc>
-    <lastmod>2023-07-10T00:28:07+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/next.js/</loc>
     <lastmod>2023-07-10T00:28:07+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/mytools/create_commit_link/</loc>
     <lastmod>2023-07-08T09:36:00+00:00</lastmod>
   </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/ihc/learn_react/</loc>
-    <lastmod>2023-07-08T08:17:12+00:00</lastmod>
-  </url><url>
     <loc>https://kantas-spike.github.io/portfolio/mytools/add_article.py/</loc>
     <lastmod>2023-07-06T10:08:00+00:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/ihc/kantas_theme/</loc>
-    <lastmod>2023-07-06T09:39:15+00:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/chatgpt/</loc>
     <lastmod>2023-07-06T16:59:02+09:00</lastmod>
