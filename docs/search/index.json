@@ -1,6 +1,11 @@
 {
     "results": [
     {
+        "href": "https://kantas-spike.github.io/portfolio/dialogues/08-hey-siri-set-a-timer/",
+        "title": "Siriに5分後にタイマーのアラームをセットして欲しい",
+        "tags": "ChatGPT siri english"
+    },
+    {
         "href": "https://kantas-spike.github.io/portfolio/ihc/learn_react/",
         "title": "learn_react",
         "tags": ""

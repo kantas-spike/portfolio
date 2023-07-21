@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html><head>
     <title>
-        HugoでSVGを埋め込みたい | kanta&#39;s spike
+        Siriに5分後にタイマーのアラームをセットして欲しい | kanta&#39;s spike
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preload" href="https://kantas-spike.github.io/portfolio/fonts/NotoSansJP-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
@@ -39,8 +39,8 @@
     <nav class="container mx-auto bg-primary text-on-primary text-center flex flex-col md:flex-row justify-start">
             <a href="https://kantas-spike.github.io/portfolio/" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Home</a>
             <a href="https://kantas-spike.github.io/portfolio/notes" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Notes</a>
-            <a href="https://kantas-spike.github.io/portfolio/til" class="box-border flex-1 text-center no-underline bg-primary-light text-on-primary-light font-bold py-2">TIL</a>
-            <a href="https://kantas-spike.github.io/portfolio/dialogues" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Dialogues</a>
+            <a href="https://kantas-spike.github.io/portfolio/til" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">TIL</a>
+            <a href="https://kantas-spike.github.io/portfolio/dialogues" class="box-border flex-1 text-center no-underline bg-primary-light text-on-primary-light font-bold py-2">Dialogues</a>
             <a href="https://kantas-spike.github.io/portfolio/articles" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Articles</a>
             <a href="https://kantas-spike.github.io/portfolio/mytools" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">My Tools</a>
             <a href="https://kantas-spike.github.io/portfolio/ihc" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">IHC</a>
@@ -55,45 +55,61 @@
 
 
 <div class="mb-4">
-    <h3 class="border-b-4 border-primary-dark text-primary-dark text-xl font-bold tracking-wider pl-[1em] -indent-[1ex]"><i class="fa-solid fa-circle-info"></i> <a href="https://kantas-spike.github.io/portfolio/til/2022/07/12-hugo-with-svg/">HugoでSVGを埋め込みたい</a></h3>
+    <h3 class="border-b-4 border-primary-dark text-primary-dark text-xl font-bold tracking-wider pl-[1em] -indent-[1ex]"><i class="fa-solid fa-comments"></i> <a href="https://kantas-spike.github.io/portfolio/dialogues/08-hey-siri-set-a-timer/">Siriに5分後にタイマーのアラームをセットして欲しい</a></h3>
     <div class="flex justify-between mt-1 mx-2">
         <div>
             <ul class="flex gap-2 justify-end">
             
-            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/hugo/">#hugo</a></li>
+            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/chatgpt/">#ChatGPT</a></li>
             
-            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/svg/">#svg</a></li>
+            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/siri/">#siri</a></li>
+            
+            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/english/">#english</a></li>
             
             </ul>
         </div>
         <div>
             
-            <div class="text-right text-sm font-bold">2022/07/24</div>
+            <div class="text-right text-sm font-bold">2023/07/21</div>
             
         </div>
     </div>
 </div>
 
     <div class="article mx-2">
-        <p>HugoでSVGのアイコンを埋め込みたい。</p>
-<h3 id="解決策">解決策</h3>
-<p>いくつか方法がある。<code>&lt;img&gt;</code>タグからも読み込みたい場合は<strong>方法1</strong>、埋め込みのみの場合は<strong>方法2</strong>を採用する。</p>
-<p>ただし、Markdown内で埋め込む場合は、ショートコードでラップする必要がある。</p>
-<h4 id="方法1-readfile-を使う">方法1. <code>readFile</code> を使う</h4>
-<p><code>static/image/xxx.svg</code>のように<code>static</code>フォルダにSVGファイルを置き、<a href="https://gohugo.io/functions/readfile/">readFile</a>で読み込む。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;icon&#34;</span><span class="p">&gt;</span>{{ readFile &#34;static/img/close_icon.svg&#34; | safeHTML }}<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-</span></span></code></pre></div><h4 id="方法2-partial-を使う">方法2. <code>partial</code> を使う</h4>
-<p><code>layouts/partials/icons/xxx.svg</code>のように<code>partial</code>フォルダにSVGファイルを置き、<a href="https://gohugo.io/templates/partials/#readout">partial</a>で読み込む。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;icon&#34;</span><span class="p">&gt;</span>{{ partial &#34;icons/xxx.svg&#34; . }}<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-</span></span></code></pre></div><p>注意: 埋め込む場合は、svgファイル内にXML宣言(<code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</code>)があれば、それがそのまま文字として出力されるので、事前に削除しておく必要がある。</p>
+        <div class="quote text-[#ececf1] relative p-2 pr-4 bg-[#343542] border border-[#2b2b32] rounded-sm mt-2 mb-6">
+    <div class="font-serif text-3xl absolute top-0 left-0 py-2 pl-2 pr-1 font-bold text-[#ffffff]"><div class="w-[2.25rem] h-[2.25rem] bg-[#e64b3b] text-center relative"><div class="absolute -top-[2px] inset-x-0">Q</div></div></div>
+    <div class="ml-12 mt-0.5 mb-2 whitespace-pre-wrap text_block">AppleのSiriに、5分後にタイマーのアラームをならして欲しいと伝えたいです。
+英語でこれを伝える場合、何と言えば良いのでしょうか?</div>
+</div><h3 id="先生の回答">先生の回答</h3>
+<div class="quote text-[#d1d5db] relative p-2 pr-4 bg-[#444654] border border-[#2b2b32] rounded-sm mt-2 mb-6">
+    <div class="font-serif text-3xl absolute top-0 left-0 py-2 pl-2 pr-1 font-bold text-[#ffffff]"><div class="w-[2.25rem] h-[2.25rem] bg-[#1ca37f] text-center relative"><div class="absolute top-0 inset-x-0">A</div></div></div>
+    <div class="ml-12 mt-0.5 mb-2 whitespace-pre-wrap text_block">英語でSiriに「5分後にタイマーのアラームをならして」と伝える場合は、以下のように言えます：
+
+"Hey Siri, set a timer for 5 minutes from now."
+
+もしくは、
+
+"Hey Siri, set an alarm for 5 minutes from now."
+
+どちらの表現も、Siriがタイマーやアラームを5分後に設定するように指示するものです。
+Siriはこのような指示を理解し、要求に従ってタイマーやアラームを設定してくれるでしょう。</div>
+</div><h3 id="調べる">調べる</h3>
+<p>実際にやってみると、ちゃんとSiriが5分後にアラームを鳴らしてくれました。</p>
+<p>他のサイトで確認したところ、<code>from now</code>なしでも良いようです。(実際にSiriが動きました。)</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt"><span class="line"><span class="cl">Set a timer for xxx
+</span></span></code></pre></div><p>ただ、本筋とはズレますが、アラームが鳴った後に、Siriにアラームを止めてもらうことはできませんでした。
+<a href="https://discussions.apple.com/thread/254338315">Siri can&rsquo;t turn off alarm in macOS Ventura - Apple Community</a>によると、
+現状MacOSでは鳴っているアラームを止めることはできないようです。</p>
 <h3 id="参考">参考</h3>
 <ul>
-<li><a href="https://discourse.gohugo.io/t/solved-inject-an-svg-file-into-my-html/7446/7">[SOLVED] Inject an SVG file into my HTML</a></li>
+<li><a href="https://osxdaily.com/2022/01/18/how-set-timer-mac/">How to Set a Timer on Mac</a></li>
+<li><a href="https://discussions.apple.com/thread/254338315">Siri can&rsquo;t turn off alarm in macOS Ventura - Apple Community</a></li>
 </ul>
     </div>
     <div class="mt-6">
     <div class="border-t-2 border-primary-dark px-2 pt-2 text-right">
-        <span class="text-sm">作成日: 2022/07/24</span></div>
+        <span class="text-sm">作成日: 2023/07/21</span></div>
 </div>
 
 </div>

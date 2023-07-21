@@ -2,6 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/chatgpt/</loc>
+    <lastmod>2023-07-21T16:13:15+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/english/</loc>
+    <lastmod>2023-07-21T16:13:15+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/siri/</loc>
+    <lastmod>2023-07-21T16:13:15+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/dialogues/08-hey-siri-set-a-timer/</loc>
+    <lastmod>2023-07-21T16:13:15+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/</loc>
+    <lastmod>2023-07-21T16:13:15+09:00</lastmod>
+  </url><url>
     <loc>https://kantas-spike.github.io/portfolio/ihc/learn_react/</loc>
     <lastmod>2023-07-19T12:32:15+00:00</lastmod>
   </url><url>
@@ -15,9 +30,6 @@
     <lastmod>2023-07-10T06:01:59+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/next.js/</loc>
-    <lastmod>2023-07-10T06:01:59+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/</loc>
     <lastmod>2023-07-10T06:01:59+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2023/07/73-cannot-load-exported-nextjs-app-in-github-pages/</loc>
@@ -34,12 +46,6 @@
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/mytools/add_article.py/</loc>
     <lastmod>2023-07-06T10:08:00+00:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/chatgpt/</loc>
-    <lastmod>2023-07-06T16:59:02+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/english/</loc>
-    <lastmod>2023-07-06T16:59:02+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/dialogues/07-category-of-blog/</loc>
     <lastmod>2023-07-06T16:59:02+09:00</lastmod>
@@ -187,9 +193,6 @@
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/%E5%AD%A6%E7%BF%92%E8%A8%98%E9%8C%B2/</loc>
     <lastmod>2023-04-05T02:16:01+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/siri/</loc>
-    <lastmod>2023-03-14T22:14:09+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2023/03/52-using-wether-forecast-with-siri/</loc>
     <lastmod>2023-03-14T22:14:09+09:00</lastmod>

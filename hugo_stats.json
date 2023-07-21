@@ -50,6 +50,7 @@
       "ul"
     ],
     "classes": [
+      "-indent-[1ex]",
       "-top-[2px]",
       "absolute",
       "active",
@@ -252,6 +253,7 @@
       "pl-1",
       "pl-2",
       "pl-3",
+      "pl-[1em]",
       "plotly",
       "pr-1",
       "pr-4",
