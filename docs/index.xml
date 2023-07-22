@@ -9,6 +9,18 @@
     <copyright>© 2022 kanta&#39;s spike</copyright>
     <lastBuildDate>Fri, 22 Jul 2022 08:24:06 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Gitの使い方を整理したい</title>
+      <link>https://kantas-spike.github.io/portfolio/notes/2023/07/07-about-git/</link>
+      <pubDate>Sat, 22 Jul 2023 11:35:52 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/notes/2023/07/07-about-git/</guid>
+      <description>&lt;p&gt;&lt;code&gt;git&lt;/code&gt;は複雑で難しいですね。
+さらに、vscodeのソース管理は使いにくいですね。&lt;/p&gt;
+&lt;p&gt;vscodeには、&lt;code&gt;GitLens&lt;/code&gt;という拡張機能があるそうです。
+評判が良さそうなんで、試しに使ってみたいと思います。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Siriに5分後にタイマーのアラームをセットして欲しい</title>
       <link>https://kantas-spike.github.io/portfolio/dialogues/08-hey-siri-set-a-timer/</link>
       <pubDate>Fri, 21 Jul 2023 16:13:15 +0900</pubDate>
@@ -45,7 +57,7 @@
       <pubDate>Mon, 10 Jul 2023 06:01:59 +0900</pubDate>
       
       <guid>https://kantas-spike.github.io/portfolio/til/2023/07/74-add-nextjs-app-in-md/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://kantas-spike.github.io/portfolio/til/2023/07/72-publich-next.js-app-with-hugo/&#34;&gt;以前の記事&lt;/a&gt;で公開した Next.jsアプリをMarkdownページにも埋めこみたい。&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://kantas-spike.github.io/portfolio/til/2023/07/72-publich-next.js-app-with-hugo/&#34;&gt;以前の記事&lt;/a&gt;で公開した Next.jsアプリをMarkdownページにも埋め込みたい。&lt;/p&gt;</description>
     </item>
     
     <item>

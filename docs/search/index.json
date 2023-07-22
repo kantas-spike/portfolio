@@ -1,6 +1,11 @@
 {
     "results": [
     {
+        "href": "https://kantas-spike.github.io/portfolio/notes/2023/07/07-about-git/",
+        "title": "Gitの使い方を整理したい",
+        "tags": "git"
+    },
+    {
         "href": "https://kantas-spike.github.io/portfolio/dialogues/08-hey-siri-set-a-timer/",
         "title": "Siriに5分後にタイマーのアラームをセットして欲しい",
         "tags": "ChatGPT siri english"

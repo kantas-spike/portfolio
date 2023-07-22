@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/git/</loc>
+    <lastmod>2023-07-22T11:35:52+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/notes/2023/07/07-about-git/</loc>
+    <lastmod>2023-07-22T11:35:52+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/</loc>
+    <lastmod>2023-07-22T11:35:52+09:00</lastmod>
+  </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/chatgpt/</loc>
     <lastmod>2023-07-21T16:13:15+09:00</lastmod>
   </url><url>
@@ -12,9 +21,6 @@
     <lastmod>2023-07-21T16:13:15+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/dialogues/08-hey-siri-set-a-timer/</loc>
-    <lastmod>2023-07-21T16:13:15+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/</loc>
     <lastmod>2023-07-21T16:13:15+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/ihc/learn_react/</loc>
@@ -97,9 +103,6 @@
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/notes/</loc>
     <lastmod>2023-06-23T09:00:00+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/git/</loc>
-    <lastmod>2023-06-22T14:57:38+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2023/06/70-deleting-merged-local-branch-in-git/</loc>
     <lastmod>2023-06-22T14:57:38+09:00</lastmod>

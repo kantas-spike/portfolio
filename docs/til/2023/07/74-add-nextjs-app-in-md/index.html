@@ -7,7 +7,7 @@
     <link rel="preload" href="https://kantas-spike.github.io/portfolio/fonts/NotoSansJP-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 <link rel="preload" href="https://kantas-spike.github.io/portfolio/fonts/NotoSansJP-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 <link rel="stylesheet" href="https://kantas-spike.github.io/portfolio/css/fonts.978d33a6dcb8af5cc3fc6d102e0cbd3d4f2452dcaae53ff12d45609137df3ed9.css">
-    <link rel="stylesheet" href="https://kantas-spike.github.io/portfolio/css/theme.min.1fd04e34d47eee6f35818bac2372179606ba07a9e85608c0f00fc45e6d679db6.css">
+    <link rel="stylesheet" href="https://kantas-spike.github.io/portfolio/css/theme.min.93d342b7a8550dd4ce12ac76b61b10d1ffe9e339595230a1f4d19d9265b57401.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" /><link rel="stylesheet" href="https://kantas-spike.github.io/portfolio/css/syntax.min.70c02160dee6bd55baaa2b10019d735294451730e282f7fa645466392ba0cfb6.css"><link rel="apple-touch-icon" sizes="180x180" href="https://kantas-spike.github.io/portfolio/icon180.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://kantas-spike.github.io/portfolio/icon32.png">
 <link rel="icon" type="image/svg+xml" href="https://kantas-spike.github.io/portfolio/icon.svg">
@@ -75,38 +75,91 @@
 </div>
 
     <div class="article mx-2">
-        <p><a href="https://kantas-spike.github.io/portfolio/til/2023/07/72-publich-next.js-app-with-hugo/">以前の記事</a>で公開した Next.jsアプリをMarkdownページにも埋めこみたい。</p>
+        <p><a href="https://kantas-spike.github.io/portfolio/til/2023/07/72-publich-next.js-app-with-hugo/">以前の記事</a>で公開した Next.jsアプリをMarkdownページにも埋め込みたい。</p>
 <h3 id="解決策">解決策</h3>
-<p>以下のように、Markdown内に<a href="https://kantas-spike.github.io/portfolio/til/2022/07/10-hugo-with-rawhtml/"><code>rawhtml</code>のコードブロック(自作したMarkdown Render Hooks)</a>を記載する。</p>
+<p><code>&lt;iframe/&gt;</code>内にNext.jsアプリを埋め込むだけだと、アプリ側の高さが変更された場合、<code>&lt;iframe/&gt;</code>にはスクロールバーが表示され、アプリ全体が表示されない。</p>
+<p>まずは、この現象を避けるために、Next.jsアプリを修正し、高さが変更された場合、親ウィンドウにメッセージを表示するようにする。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="c1">// app/page.js
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="s1">&#39;use client&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="nx">Game</span> <span class="nx">from</span> <span class="s2">&#34;@/components/game&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">useEffect</span><span class="p">,</span> <span class="nx">useRef</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&#34;react&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">export</span> <span class="k">default</span> <span class="kd">function</span> <span class="nx">Home</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="nx">divRef</span> <span class="o">=</span> <span class="nx">useRef</span><span class="p">(</span><span class="kc">null</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">useEffect</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// フレーム内に表示されている場合
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">if</span> <span class="p">(</span><span class="nb">window</span><span class="p">.</span><span class="nx">self</span> <span class="o">!==</span> <span class="nb">window</span><span class="p">.</span><span class="nx">top</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;in frame&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">      <span class="c1">// アプリの高さを監視
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>      <span class="kr">const</span> <span class="nx">resizeObserver</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">ResizeObserver</span><span class="p">(</span><span class="nx">entries</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">entry</span> <span class="k">of</span> <span class="nx">entries</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">          <span class="k">if</span> <span class="p">(</span><span class="nx">entry</span><span class="p">.</span><span class="nx">borderBoxSize</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">entry</span><span class="p">.</span><span class="nx">borderBoxSize</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`h: </span><span class="si">${</span><span class="nx">entry</span><span class="p">.</span><span class="nx">borderBoxSize</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nx">blockSize</span><span class="si">}</span><span class="sb">, w: </span><span class="si">${</span><span class="nx">entry</span><span class="p">.</span><span class="nx">borderBoxSize</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nx">inlineSize</span><span class="si">}</span><span class="sb">`</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">// アプリの高さ変更があれば、親ウィンドウに高さを通知
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="nb">window</span><span class="p">.</span><span class="nx">parent</span><span class="p">.</span><span class="nx">postMessage</span><span class="p">({</span> <span class="nx">height</span><span class="o">:</span> <span class="nx">entry</span><span class="p">.</span><span class="nx">borderBoxSize</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nx">blockSize</span> <span class="p">},</span> <span class="s2">&#34;*&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">          <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">      <span class="p">})</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">resizeObserver</span><span class="p">.</span><span class="nx">observe</span><span class="p">(</span><span class="nx">divRef</span><span class="p">.</span><span class="nx">current</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;not in frame&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;resizeObserver.disconnect()...&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">resizeObserver</span><span class="p">.</span><span class="nx">disconnect</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="p">},</span> <span class="p">[])</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="nx">div</span> <span class="nx">ref</span><span class="o">=</span><span class="p">{</span><span class="nx">divRef</span><span class="p">}</span> <span class="nx">className</span><span class="o">=</span><span class="s2">&#34;m-4 p-4 border rounded-md&#34;</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="o">&lt;</span><span class="nx">Game</span><span class="o">/&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="err">/div&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>あとは、以下のように、Markdown内に<a href="https://kantas-spike.github.io/portfolio/til/2022/07/10-hugo-with-rawhtml/"><code>rawhtml</code>のコードブロック(自作したMarkdown Render Hooks)</a>を記載する。</p>
+<p><code>window.addEventListener(&quot;message&quot;, ...)</code>で、Next.jsアプリからの高さ変更通知をチェックし、変更があれば<code>&lt;iframe/&gt;</code>の高さを修正する。</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">~~~rawhtml
 </span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;hogeframe&#34;</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;/tictactoe&#34;</span> <span class="na">width</span><span class="o">=</span><span class="s">&#34;100%&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">iframe</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;hogeframe&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">margin_y</span> <span class="o">=</span> <span class="mi">16</span> <span class="o">*</span> <span class="mi">2</span> <span class="c1">// ここは手動調整 TODO 要修正
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nb">window</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&#34;message&#34;</span><span class="p">,</span> <span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`event.origin: </span><span class="si">${</span><span class="nx">event</span><span class="p">.</span><span class="nx">origin</span><span class="si">}</span><span class="sb">`</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`event.data.height: </span><span class="si">${</span><span class="nx">event</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">height</span><span class="si">}</span><span class="sb">`</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">height</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">iframe</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">height</span> <span class="o">=</span> <span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">height</span> <span class="o">+</span> <span class="nx">margin_y</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;px&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">},</span> <span class="kc">false</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">defaultHeight</span> <span class="o">=</span> <span class="nx">iframe</span><span class="p">.</span><span class="nx">contentDocument</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">scrollHeight</span>
 </span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;defaultHeight:&#34;</span><span class="p">,</span> <span class="nx">defaultHeight</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">margin_y</span> <span class="o">=</span> <span class="mi">16</span> <span class="o">*</span> <span class="mi">3</span> <span class="c1">// ここは手動調整 TODO 要修正
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">iframe</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">height</span> <span class="o">=</span> <span class="p">(</span><span class="nx">defaultHeight</span> <span class="o">+</span> <span class="nx">margin_y</span><span class="p">)</span><span class="o">+</span> <span class="s1">&#39;px&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">iframe</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">height</span> <span class="o">=</span> <span class="p">(</span><span class="nx">defaultHeight</span> <span class="o">+</span> <span class="nx">margin_y</span><span class="p">)</span><span class="o">+</span> <span class="s1">&#39;px&#39;</span>
 </span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">~~~
-</span></span></code></pre></div><div class="rawhtml"><iframe id="hogeframe" src="https://kantas-spike.github.io/portfolio/tictactoe" width="100%"></iframe>
+</span></span></code></pre></div><h3 id="埋め込まれた-nextjsアプリ">埋め込まれた Next.jsアプリ</h3>
+<div class="rawhtml"><iframe id="hogeframe" src="https://kantas-spike.github.io/portfolio/tictactoe" width="100%"></iframe>
 
 <script>
 const iframe = document.getElementById('hogeframe');
+const margin_y = 16 * 2 // ここは手動調整 TODO 要修正
+window.addEventListener("message", (event) => {
+    console.log(`event.origin: ${event.origin}`)
+    console.log(`event.data.height: ${event.data.height}`)
+    if (event.data.height) {
+        iframe.style.height = (event.data.height + margin_y) + 'px'
+    }
+}, false);
 const defaultHeight = iframe.contentDocument.body.scrollHeight
 console.log("defaultHeight:", defaultHeight)
-const margin_y = 16 * 3 // ここは手動調整 TODO 要修正
 iframe.style.height = (defaultHeight + margin_y)+ 'px'
 </script>
-</div><h3 id="課題">課題</h3>
-<p>Next.jsアプリの動作の結果、高さが大きくなるため、<code>&lt;iframe /&gt;</code>にスクロールが表示される。</p>
-<p>動的な高さに応じて、<code>&lt;iframe /&gt;</code>の高さを変化させる方法については要検討。</p>
-<h4 id="参考">参考</h4>
+</div><h4 id="参考">参考</h4>
 <ul>
-<li><a href="https://mayank1513.medium.com/embedding-and-styling-external-html-in-next-js-project-78f6bfdd511a">Embedding and Styling External HTML in Next.js Project | by Mayank Chaudhari | Medium</a></li>
-<li><a href="https://stackoverflow.com/questions/27846057/iframe-does-not-trigger-resize-event">javascript - Iframe does not trigger resize event - Stack Overflow</a></li>
 <li><a href="https://dev.to/tvanantwerp/how-to-resize-iframes-with-message-events-2fec">How to Resize iframes with Message Events - DEV Community</a></li>
-<li><a href="https://medium.com/@kaptenadhoc/how-to-make-an-iframe-automatically-resize-to-fit-its-content-31593ff54f01">Make an iframe automatically resize to fit its content | by Filip Haglund | Medium</a></li>
+<li><a href="https://developer.mozilla.org/ja/docs/Web/API/ResizeObserver">ResizeObserver - Web API | MDN</a></li>
+<li><a href="https://developer.mozilla.org/ja/docs/Web/API/Window/postMessage">Window.postMessage() - Web API | MDN</a></li>
 </ul>
     </div>
     <div class="mt-6">
