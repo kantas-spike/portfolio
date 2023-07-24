@@ -1,5 +1,5 @@
 ---
-title: "Memo"
+title: "Notes"
 date: 2023-06-23T09:00:00+09:00
 draft: false
 ---
