@@ -121,9 +121,9 @@
 <li>
 <p>コミット</p>
 <ul>
-<li><input disabled="" type="checkbox"> 複数ファイルをコミット (<code>git commit</code>)</li>
-<li><input disabled="" type="checkbox"> 直前のコミットログを修正 (<code>git commit --amend</code>)</li>
-<li><input disabled="" type="checkbox"> 複数ファイルを直前のコミットに追加コミット (<code>git commit --amend</code>)</li>
+<li><input checked="" disabled="" type="checkbox"> 複数ファイルをコミット (<code>ソース管理</code>からステージングして<code>コミット</code>)</li>
+<li><input checked="" disabled="" type="checkbox"> 直前のコミットログを修正 (<code>ソース管理</code>から<code>ステージング済みをコミット(修正)</code>)</li>
+<li><input checked="" disabled="" type="checkbox"> 複数ファイルを直前のコミットに追加コミット (<code>ソース管理</code>から<code>ステージング済みをコミット(修正)</code>)</li>
 <li><input disabled="" type="checkbox"> ファイル内の一部変更のみコミット(<code>vscode</code>の<code>Git:選択した範囲をステージする</code>)</li>
 <li><input disabled="" type="checkbox"> 直前のコミットを破棄(<code>git reset --soft HEAD^</code>)</li>
 <li><input disabled="" type="checkbox"> 直前のコミットを過去のコミットと合体させる
@@ -138,9 +138,9 @@
 <li>
 <p>ブランチ</p>
 <ul>
-<li><input disabled="" type="checkbox"> ブランチを作成する (<code>git branch &lt;branch_name&gt;</code>)</li>
-<li><input disabled="" type="checkbox"> ブランチを切り替える (<code>git checkout &lt;branch_name&gt;</code>)</li>
-<li><input disabled="" type="checkbox"> ブランチの一覧を表示する (<code>git branch</code>, <code>git branch -r</code>, <code>git branch -a</code>)</li>
+<li><input checked="" disabled="" type="checkbox"> ブランチを作成する (<code>ソース管理</code>から<code>Branches</code>の<code>Create Branches...</code>)</li>
+<li><input checked="" disabled="" type="checkbox"> ブランチを切り替える (<code>ソース管理</code>から<code>Branches</code>の<code>Switch to Another Branch</code>)</li>
+<li><input checked="" disabled="" type="checkbox"> ブランチの一覧を表示する (<code>ソース管理</code>から<code>Branches</code>)</li>
 <li><input disabled="" type="checkbox"> ブランチを削除する (<code>git branch -d &lt;branch_name&gt;</code>)</li>
 </ul>
 </li>
@@ -150,14 +150,14 @@
 <li><input disabled="" type="checkbox"> リモートリポジトリを追加する (<code>git remote add origin &lt;repositry_url&gt;</code>)</li>
 <li><input disabled="" type="checkbox"> ブランチをリモートにプッシュする (<code>git push origin &lt;branch_name&gt;</code>)</li>
 <li><input disabled="" type="checkbox"> リモートブランチを取り込む (<code>git pull origin &lt;branch_name&gt;</code>)</li>
-<li><input disabled="" type="checkbox"> リモートで削除されたブランチの情報を削除する (<code>git fetch --prune</code>)</li>
+<li><input checked="" disabled="" type="checkbox"> リモートで削除されたブランチの情報を削除する (<code>GitLens: Git Command Palettg</code>で<code>Fetch &amp; Prune</code>を選択)</li>
 </ul>
 </li>
 <li>
 <p>その他</p>
 <ul>
-<li><input disabled="" type="checkbox"> ワーキングとステージングにあるファイルを一時的に退避 (<code>git stash save</code>)</li>
-<li><input disabled="" type="checkbox"> 退避したファイルを戻す (<code>git stash pop</code>)</li>
+<li><input checked="" disabled="" type="checkbox"> ワーキングとステージングにあるファイルを一時的に退避 (<code>ソース管理</code>から<code>Stashes</code>で<code>Stash All Changes</code>)</li>
+<li><input checked="" disabled="" type="checkbox"> 退避したファイルを戻す (<code>ソース管理</code>から<code>Stashes</code>で<code>Apply Stash</code>から<code>Pop Stash</code>を選択)</li>
 </ul>
 </li>
 </ul>
