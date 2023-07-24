@@ -26,3 +26,8 @@ tags:
     - BlenderのStoryPencilを使う?
   - パーツリスト作成
     - Storybookを使う? アプリの場合はそのままパートを作成、動画の場合はパーツはダミー画像??
+
+### 参考
+
+{{< youtube_w "tiQCBc52reQ?start=1224" >}}
+
