@@ -58,9 +58,9 @@ vscodeには、`GitLens`という拡張機能があるそうです。
 
 - コミット
 
-  - [ ] 複数ファイルをコミット (`git commit`)
-  - [ ] 直前のコミットログを修正 (`git commit --amend`)
-  - [ ] 複数ファイルを直前のコミットに追加コミット (`git commit --amend`)
+  - [x] 複数ファイルをコミット (`ソース管理`からステージングして`コミット`)
+  - [x] 直前のコミットログを修正 (`ソース管理`から`ステージング済みをコミット(修正)`)
+  - [x] 複数ファイルを直前のコミットに追加コミット (`ソース管理`から`ステージング済みをコミット(修正)`)
   - [ ] ファイル内の一部変更のみコミット(`vscode`の`Git:選択した範囲をステージする`)
   - [ ] 直前のコミットを破棄(`git reset --soft HEAD^`)
   - [ ] 直前のコミットを過去のコミットと合体させる
@@ -70,9 +70,9 @@ vscodeには、`GitLens`という拡張機能があるそうです。
 
 - ブランチ
 
-  - [ ] ブランチを作成する (`git branch <branch_name>`)
-  - [ ] ブランチを切り替える (`git checkout <branch_name>`)
-  - [ ] ブランチの一覧を表示する (`git branch`, `git branch -r`, `git branch -a`)
+  - [x] ブランチを作成する (`ソース管理`から`Branches`の`Create Branches...`)
+  - [x] ブランチを切り替える (`ソース管理`から`Branches`の`Switch to Another Branch`)
+  - [x] ブランチの一覧を表示する (`ソース管理`から`Branches`)
   - [ ] ブランチを削除する (`git branch -d <branch_name>`)
 
 - remote
@@ -80,13 +80,12 @@ vscodeには、`GitLens`という拡張機能があるそうです。
   - [ ] リモートリポジトリを追加する (`git remote add origin <repositry_url>`)
   - [ ] ブランチをリモートにプッシュする (`git push origin <branch_name>`)
   - [ ] リモートブランチを取り込む (`git pull origin <branch_name>`)
-  - [ ] リモートで削除されたブランチの情報を削除する (`git fetch --prune`)
+  - [x] リモートで削除されたブランチの情報を削除する (`GitLens: Git Command Palettg`で`Fetch & Prune`を選択)
 
 - その他
 
-  - [ ] ワーキングとステージングにあるファイルを一時的に退避 (`git stash save`)
-  - [ ] 退避したファイルを戻す (`git stash pop`)
-
+  - [x] ワーキングとステージングにあるファイルを一時的に退避 (`ソース管理`から`Stashes`で`Stash All Changes`)
+  - [x] 退避したファイルを戻す (`ソース管理`から`Stashes`で`Apply Stash`から`Pop Stash`を選択)
 
 ### 参考
 
