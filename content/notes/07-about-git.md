@@ -80,7 +80,7 @@ vscodeには、`GitLens`という拡張機能があるそうです。
   - [ ] リモートリポジトリを追加する (`git remote add origin <repositry_url>`)
   - [ ] ブランチをリモートにプッシュする (`git push origin <branch_name>`)
   - [ ] リモートブランチを取り込む (`git pull origin <branch_name>`)
-  - [x] リモートで削除されたブランチの情報を削除する (`GitLens: Git Command Palettg`で`Fetch & Prune`を選択)
+  - [ ] リモートで削除されたブランチの情報を削除する (`GitLens: Git Command Palettg`の`Fetch & Prune`ではダメ)
 
 - その他
 
