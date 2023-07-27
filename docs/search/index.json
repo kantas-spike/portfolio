@@ -1,6 +1,26 @@
 {
     "results": [
     {
+        "href": "https://kantas-spike.github.io/portfolio/til/2023/07/75-convert-markdown-to-html-with-hugo/",
+        "title": "Hugoでショートコードやコードブロックの子要素にMarkdownを渡したい",
+        "tags": "hugo shortcodes render_hooks"
+    },
+    {
+        "href": "https://kantas-spike.github.io/portfolio/notes/color_system_of_material_design/",
+        "title": "マテリアルデザインのカラーシステムを勉強する",
+        "tags": "design"
+    },
+    {
+        "href": "https://kantas-spike.github.io/portfolio/notes/design-system/",
+        "title": "デジ庁のデザインシステムを勉強する",
+        "tags": "design"
+    },
+    {
+        "href": "https://kantas-spike.github.io/portfolio/notes/pern-app/",
+        "title": "100gで割るアプリ",
+        "tags": "software"
+    },
+    {
         "href": "https://kantas-spike.github.io/portfolio/notes/2023/07/07-about-git/",
         "title": "Gitの使い方を整理したい",
         "tags": "git"

@@ -2,13 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/hugo/</loc>
+    <lastmod>2023-07-27T23:27:25+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/til/2023/07/75-convert-markdown-to-html-with-hugo/</loc>
+    <lastmod>2023-07-27T23:27:25+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/render_hooks/</loc>
+    <lastmod>2023-07-27T23:27:25+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/shortcodes/</loc>
+    <lastmod>2023-07-27T23:27:25+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/</loc>
+    <lastmod>2023-07-27T23:27:25+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/design/</loc>
+    <lastmod>2023-07-27T01:19:11+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/notes/color_system_of_material_design/</loc>
+    <lastmod>2023-07-27T01:19:11+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/notes/design-system/</loc>
+    <lastmod>2023-07-26T11:02:38+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/notes/pern-app/</loc>
+    <lastmod>2023-07-22T14:14:01+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/software/</loc>
+    <lastmod>2023-07-22T14:14:01+09:00</lastmod>
+  </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/git/</loc>
     <lastmod>2023-07-22T11:35:52+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/notes/2023/07/07-about-git/</loc>
-    <lastmod>2023-07-22T11:35:52+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/</loc>
     <lastmod>2023-07-22T11:35:52+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/chatgpt/</loc>
@@ -28,9 +55,6 @@
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/ihc/kantas_theme/</loc>
     <lastmod>2023-07-10T02:41:14+00:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/hugo/</loc>
-    <lastmod>2023-07-10T06:01:59+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2023/07/74-add-nextjs-app-in-md/</loc>
     <lastmod>2023-07-10T06:01:59+09:00</lastmod>
@@ -263,9 +287,6 @@
     <loc>https://kantas-spike.github.io/portfolio/tags/plotly/</loc>
     <lastmod>2023-02-08T09:46:02+09:00</lastmod>
   </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/render_hooks/</loc>
-    <lastmod>2023-02-08T09:46:02+09:00</lastmod>
-  </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2023/02/43-add-render-hook-for-mathjax/</loc>
     <lastmod>2023-02-08T09:15:06+09:00</lastmod>
   </url><url>
@@ -358,9 +379,6 @@
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2022/11/30-add-finder-service-of-vscode/</loc>
     <lastmod>2022-11-14T09:32:58+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/shortcodes/</loc>
-    <lastmod>2022-09-22T20:19:54+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2022/09/29-add-shortcode-to-set-the-width-of-youtube-video/</loc>
     <lastmod>2022-09-22T20:19:54+09:00</lastmod>

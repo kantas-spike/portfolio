@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html><head>
+    <title>
+        マテリアルデザインのカラーシステムを勉強する | kanta&#39;s spike
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="https://kantas-spike.github.io/portfolio/fonts/NotoSansJP-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" href="https://kantas-spike.github.io/portfolio/fonts/NotoSansJP-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+<link rel="stylesheet" href="https://kantas-spike.github.io/portfolio/css/fonts.978d33a6dcb8af5cc3fc6d102e0cbd3d4f2452dcaae53ff12d45609137df3ed9.css">
+    <link rel="stylesheet" href="https://kantas-spike.github.io/portfolio/css/theme.min.877b01a0592181df5b99310831072c37f7d0f9585c6681a1036f8b08e5e60da4.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" /><link rel="stylesheet" href="https://kantas-spike.github.io/portfolio/css/syntax.min.70c02160dee6bd55baaa2b10019d735294451730e282f7fa645466392ba0cfb6.css"><link rel="apple-touch-icon" sizes="180x180" href="https://kantas-spike.github.io/portfolio/icon180.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://kantas-spike.github.io/portfolio/icon32.png">
+<link rel="icon" type="image/svg+xml" href="https://kantas-spike.github.io/portfolio/icon.svg">
+<link rel="manifest" href="https://kantas-spike.github.io/portfolio/site.webmanifest">
+
+</head><body class="bg-background text-primary-dark pb-4"><header class="bg-primary-dark text-site_title text-6xl font-serif font-extrabold px-4 py-3">
+    <h1 class="container mx-auto px-4"><a href="https://kantas-spike.github.io/portfolio/">kanta&#39;s spike</a></h1>
+</header>
+<input type="checkbox" name="burger_cbx" id="burger_cbx">
+<label for="burger_cbx" class="burger_label">
+    <span class="burger_icon"><svg version="1.1" viewBox="0 0 12.7 12.7" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <rect x="1.0369" y="2.1007" width="10.634" height="1.0426" ry=".5213"/>
+  <rect x="1.0369" y="4.571" width="10.634" height="1.0426" ry=".5213"/>
+  <rect x="1.0369" y="7.0413" width="10.634" height="1.0426" ry=".5213"/>
+  <rect x="1.0369" y="9.5115" width="10.634" height="1.0426" ry=".5213"/>
+ </g>
+</svg>
+</span>
+</label>
+<label for="burger_cbx" class="close_label">
+    <span class="close_icon"><svg version="1.1" viewBox="0 0 12.7 12.7" xmlns="http://www.w3.org/2000/svg">
+ <rect transform="rotate(45.535)" x="3.6678" y="-.6148" width="10.634" height="1.0426" ry=".5213"/>
+ <rect transform="rotate(135.53)" x="-5.4104" y="-9.5059" width="10.634" height="1.0426" ry=".5213"/>
+</svg>
+</span>
+</label>
+<div class="nav_area">
+    <nav class="container mx-auto bg-primary text-on-primary text-center flex flex-col md:flex-row justify-start">
+            <a href="https://kantas-spike.github.io/portfolio/" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Home</a>
+            <a href="https://kantas-spike.github.io/portfolio/notes" class="box-border flex-1 text-center no-underline bg-primary-light text-on-primary-light font-bold py-2">Notes</a>
+            <a href="https://kantas-spike.github.io/portfolio/til" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">TIL</a>
+            <a href="https://kantas-spike.github.io/portfolio/dialogues" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Dialogues</a>
+            <a href="https://kantas-spike.github.io/portfolio/articles" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Articles</a>
+            <a href="https://kantas-spike.github.io/portfolio/mytools" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">My Tools</a>
+            <a href="https://kantas-spike.github.io/portfolio/ihc" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">IHC</a>
+            <a href="https://kantas-spike.github.io/portfolio/tags" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Tags</a>
+        <div class="flex-none" id="search_menu"></div>
+    </nav>
+</div>
+<main id="content" class="container mx-auto bg-surface pt-4 pb-8">
+<div class="area_border  px-4 py-3 mx-4  md:mx-10 pb-4">
+    
+
+
+
+<div class="mb-4">
+    <h3 class="border-b-4 border-primary-dark text-primary-dark text-xl font-bold tracking-wider pl-[1em] -indent-[1ex]"><i class="fa-solid fa-note-sticky"></i> <a href="https://kantas-spike.github.io/portfolio/notes/color_system_of_material_design/">マテリアルデザインのカラーシステムを勉強する</a></h3>
+    <div class="flex justify-between mt-1 mx-2">
+        <div>
+            <ul class="flex gap-2 justify-end">
+            
+            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/design/">#design</a></li>
+            
+            </ul>
+        </div>
+        <div>
+            
+            <div class="text-right text-sm font-bold">2023/07/27</div>
+            
+        </div>
+    </div>
+</div>
+
+    <div class="article mx-2">
+        <p>アプリのデザインについて勉強していますが、いまいち色の選び方がわかりません。</p>
+<p>そこで、Googleが開発している<code>Design Language</code><sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>である<a href="https://m3.material.io/">Material Design</a>を学び、
+アプリの色選び方法を学びたいと思います。</p>
+<h3 id="color-system">Color System</h3>
+<ol>
+<li>キーカラーを選択しベースラインカラーを決める</li>
+<li>各キーカラーの色調パレットを用意する</li>
+<li>ベースラインカラーのロールを用意する</li>
+<li>色調をロールに割り当てる</li>
+<li>システムトークンが決定する</li>
+</ol>
+<h3 id="ベースラインカラーを決める">ベースラインカラーを決める</h3>
+<p><a href="https://m3.material.io/">Material Design</a>では<code>Key colors</code>と<code>Additional colors</code>を選ぶそうです。</p>
+<p>これら選んだ色がベースラインカラーになります。</p>
+<h4 id="key-colors">Key colors</h4>
+<p><code>Key colors</code>は2種類計5個の色が選ばれます。</p>
+<p>自分のアプリに合せて、5つの色を選びましょう。</p>
+<div class="mt-8 quote_content">
+    <div class="code_block">
+        <img src="https://lh3.googleusercontent.com/G_2Z3lRMdADfzbQyJZcZFAv61QpImyb9OhdmEpu_lAaxgPa01iY-QHPhIgCbkqPQTn9C4Jwzr2OufMQSmPcwJnmSdkmpmix_8HSrctOUjVo=s0" alt="">
+        <div class="text-right mt-2">
+            
+            <a href="https://m3.material.io/styles/color/the-color-system/key-colors-tones#5fdf196d-1e21-4d03-ae63-e802d61ad5ee">Color system – Material Design 3 | Key colors</a> から引用
+            
+        </div>
+    </div>
+</div>
+
+<p>各<code>Key colors</code>の用途をまとめてみました。</p>
+<div class="rawhtml"><table>
+<thead>
+<tr><th>種類<th>カラー名<th>説明
+</thead>
+<tbody>
+<tr><td rowspan="3">Accent colors<br>(アクセントカラー)
+<td>Primary Key Color
+<td>UI全体で利用される主要なコンポーネントの役割りを引き立てるために使用する
+<br>(例: FAB, 重要なボタン、アクティブ状態、一番上のサーフェスの色)
+<tr><td>Secondary Key Color
+<td>あまり目立たないコンポーネントに使用する
+<br>(例: フィルターチップスなど)
+<tr><td>Tertiary Key Color
+<td>primary色やsecondary色のバランスをとる目的や、特定要素に注目を集める目的のために、対照的なアクセントとして使用する
+<br>(バランス用 or アクセント用 チームの裁量で自由に使える)
+<tr><td rowspan="2">Neutral colors<br>(ニュートラルカラー)<br><div class="text-xs font-bold mt-4">無彩色 or 彩度の低いくすんだ色</div>
+<td>Neutral Key Color
+<td>背景用の表面色(surface color)として使用する。
+<br>強調するテキストやアイコンの色としても使用する
+<tr><td>Neutral Variant Key Color
+<td>テキストやアイコンやコンポーネントのアウトラインなどの中程度の強調のために使用する
+</tbody>
+</table>
+</div><h4 id="additional-colors">Additional colors</h4>
+<p>必要に応じてベースラインカラーに、<code>Additional colors</code>を追加できます。</p>
+<p>自分のアプリに合せて、必要な<code>Additional colors</code>を選び、その色を決めましょう。<code>Error colors</code>は必要になりそうです。</p>
+<div class="mt-8 quote_content">
+    <div class="code_block">
+        <img src="https://lh3.googleusercontent.com/Aq1Nj4pUsz9KSCTZfzIy3zZmVc7xsTB4ujc2ufzPUo8aU6iYjiJitr4EpGaXXuJ2tzkOzwc-AXcLdU6l2Q61-5_j4OE0yG9CPQWfon8sivso=s0" alt="">
+        <div class="text-right mt-2">
+            
+            <a href="https://m3.material.io/styles/color/the-color-system/key-colors-tones#ed9cff6c-5844-43b2-b8d8-34896bd68282">Color system – Material Design 3 | Additional colors</a> から引用
+            
+        </div>
+    </div>
+</div>
+
+<div class="rawhtml"><table>
+<thead>
+<tr><th>種類<th>カラー名<th>説明
+</thead>
+<tbody>
+<tr><td rowspan="3">Additonal Color<br>
+<td>Error colors
+<td>エラー用の色
+<tr>
+<td>Product-specific custom colors
+<td>UIの表現上必要になる色
+</tbody>
+</table>
+</div><h3 id="色調パレットを用意する">色調パレットを用意する</h3>
+<p>ベースラインカラーで選んだ色に対して、トーン(色調)を設定します。</p>
+<h4 id="neutral-colors-の色調パレット">Neutral colors の色調パレット</h4>
+<p><code>Neutral colors</code>の場合、0〜100までのトーンからなる色調パレットで表現します。</p>
+<p>各トーンの色は、キーカラー名のプレフィックス(例: <code>N-</code>, <code>NV-</code>)の後に、トーンの値を付与した名前(例: <code>N-45</code>, <code>NV-99</code>)で表現します。</p>
+<div class="mt-8 quote_content">
+    <div class="code_block">
+        <img src="https://lh3.googleusercontent.com/X7h-ccmRcbYfSo-E_YnapoUQAHlNqWtrnSwRPJ4Pd020NPa753NbKfTZfFWiHpEkGIcITeTY605XJAw7yX4I1C7yAL0j44_H7KWLFsk_IW8=s0" alt="">
+        <div class="text-right mt-2">
+            
+            <a href="https://m3.material.io/styles/color/the-color-system/key-colors-tones#a828e350-1551-45e5-8430-eb643e6a7713">Color system – Material Design 3 | Tonal palettes</a> から引用
+            
+        </div>
+    </div>
+</div>
+
+<h4 id="accent-colors-の色調パレット">Accent colors の色調パレット</h4>
+<p><code>Accent colors</code>の場合、0,100を含む13個のトーン(0, 10, 20, 30, 40, 50 60, 70, 80, 90, 95, 99, 100)からなる色調パレットで表現します。</p>
+<p>各トーンの色は、キーカラー名のプレフィックス(例: <code>primary</code>, <code>secondary</code>)の後に、トーンの値を付与した名前(例: <code>primary40</code>, <code>secondary95</code>)で表現します。</p>
+<div class="mt-8 quote_content">
+    <div class="code_block">
+        <img src="https://lh3.googleusercontent.com/EhattwVxu9U2L0bEcL_GT3Z9a6ToJ_frpwOxlAsa8jJ5-OvzH2UmbuLtpox8wDG33GkNm7g0Uxfds7uPsN0c_tgmfb-DBnMZeYK_nUiiV9kOgQ=s0" alt="">
+        <div class="text-right mt-2">
+            
+            <a href="https://m3.material.io/styles/color/the-color-system/key-colors-tones#6bdb9471-b70d-42c9-8ace-76743c1fff13">Color system – Material Design 3 | One key color becomes thirteen tones</a> から引用
+            
+        </div>
+    </div>
+</div>
+
+<h3 id="ロールを用意する">ロールを用意する</h3>
+<p>ベースラインカラーで選んだ色に対して、それぞれの役割(<code>role</code>)を設定します。</p>
+<p>各カラーとロールの組合せに対して、トーン付きの色名を割り当てます。</p>
+<h4 id="accent-colors-のロール">Accent colors のロール</h4>
+<p>4つのロールに、それぞれ異なるトーンの色を設定します。</p>
+<div class="rawhtml"><table>
+<thead>
+<tr>
+<th>Accent colors
+<th colspan="4">roles
+</thead>
+<tbody>
+<tr>
+<td>Primary Key Color
+<td>Primary
+<td>On Primary
+<td>Primary Container
+<td>On Primary Container
+<tr>
+<td>Secondary Key Color
+<td>Secondary
+<td>On Secondary
+<td>Secondary Container
+<td>On Secondary Container
+<tr>
+<td>Tertiary Key Color
+<td>Tertiary
+<td>On Tertiary
+<td>Tertiary Container
+<td>On Tertiary Container
+<tr>
+<td>(Error)
+<td>Error
+<td>On Error
+<td>Error Container
+<td>On Error Container
+</tbody>
+</table>
+</div><p>以下は、<code>Primary Key Color</code>のロールの例</p>
+<div class="mt-8 quote_content">
+    <div class="code_block">
+        <img src="https://lh3.googleusercontent.com/_XC5_qQxO-ckW4rd706nzmFVI4n7TZSdyStVcDT7zfjOP3a4lLeSOqedUKKnUV6U00Crq6cVamFuxim9cA-9nlTcguwSv0x-WeLu216fnhlk=s0" alt="">
+        <div class="text-right mt-2">
+            
+            <a href="https://m3.material.io/styles/color/the-color-system/color-roles#55d2b7d2-0202-4616-887e-f575a7946aac">Color system – Material Design 3 | Roles in a scheme</a> から引用
+            
+        </div>
+    </div>
+</div>
+
+<h4 id="neutral-colorsのロール">Neutral colorsのロール</h4>
+<p>2グループ、計12個のロールに、それぞれ異なるトーンの色を設定します。</p>
+<div class="rawhtml"><table>
+<thead>
+<tr>
+<th>Accent colors
+<th>Group
+<th colspan="5">roles
+</thead>
+<tbody>
+<tr>
+<td rowspan="3">Neutral Key Color
+<td rowspan="4">Surface
+<td colspan="2">Surface Dim
+<td>Surface
+<td colspan="2">Surface Bright
+<tr>
+<td>Surface Container Lowest
+<td>Surface Container Low
+<td>Surface Container
+<td>Surface Container High
+<td>Surface Container Highest
+<tr>
+<td colspan="5">On Surface
+<tr>
+<td rowspan="2">Neutral Variant Key Color
+<td colspan="5">On Surface Variant
+<tr>
+<td>Outline
+<td colspan="2">Outline
+<td colspan="3">Outline Variant
+</tbody>
+</table>
+</div><h3 id="色調をロールに割り当てる">色調をロールに割り当てる</h3>
+<p>各ロールにトーン付きの色を割り当てます。</p>
+<div class="mt-8 quote_content">
+    <div class="code_block">
+        <img src="https://lh3.googleusercontent.com/SXDcKYOGhQLlTHAwC5mw0Ax008YQIdUvKeevqSy_K9Kl91F_Qi3wDMoDNXAJ8ltD7wKM1Tgfeo5GZyMsf-d6GqrS2wrkWcozoXhIpCYcG2c=s0" alt="">
+        <div class="text-right mt-2">
+            
+            <a href="https://m3.material.io/styles/color/the-color-system/color-roles#f5ef005c-0aba-4e23-9d46-ffbd386ade94">Color system – Material Design 3 | By mapping and coding roles through tokens</a> から引用
+            
+        </div>
+    </div>
+</div>
+
+<h3 id="ベースラインカラースキームのトークン">ベースラインカラースキームのトークン</h3>
+<p>ベースラインカラーの仕組みで作成されたカラーは、<a href="https://m3.material.io/styles/color/the-color-system/tokens#7fd4440e-986d-443f-8b3a-4933bff16646">システムトークン</a>として定義されます。</p>
+<p>37個のシステムトークンが定義されています。</p>
+<p>さきほど説明したロール以外に、8つのロール(<code>Inverse Primary</code>、<code>Inverse surface</code>、<code>Inverse on surface</code>、<code>Background</code>、<code>On background</code>、<code>Shadow</code>、<code>Surface tint</code>、<code>Scrim</code>)が追加されています。</p>
+<div class="mt-8 quote_content">
+    <div class="code_block">
+        <table>
+<thead>
+<tr>
+<th>Role</th>
+<th>System token</th>
+<th>Light scheme ref token</th>
+<th>Dark scheme ref token</th>
+<th>Light scheme default value</th>
+<th>Dark scheme default value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Primary</td>
+<td>md.sys.color.primary</td>
+<td>md.ref.palette.primary40</td>
+<td>md.ref.palette.primary80</td>
+<td>#6750A4</td>
+<td>#D0BCFF</td>
+</tr>
+<tr>
+<td>Primary container</td>
+<td>md.sys.color.primary-container</td>
+<td>md.ref.palette.primary90</td>
+<td>md.ref.palette.primary30</td>
+<td>#EADDFF</td>
+<td>#4F378B</td>
+</tr>
+<tr>
+<td>On primary</td>
+<td>md.sys.color.on-primary</td>
+<td>md.ref.palette.primary100</td>
+<td>md.ref.palette.primary20</td>
+<td>#FFFFFF</td>
+<td>#371E73</td>
+</tr>
+<tr>
+<td>On primary container</td>
+<td>md.sys.color.on-primary-container</td>
+<td>md.ref.palette.primary10</td>
+<td>md.ref.palette.primary90</td>
+<td>#21005E</td>
+<td>#EADDFF</td>
+</tr>
+<tr>
+<td>Inverse primary</td>
+<td>md.sys.color.inverse-primary</td>
+<td>md.ref.palette.primary80</td>
+<td>md.ref.palette.primary40</td>
+<td>#D0BCFF</td>
+<td>#6750A4</td>
+</tr>
+<tr>
+<td>Secondary</td>
+<td>md.sys.color.secondary</td>
+<td>md.ref.palette.secondary40</td>
+<td>md.ref.palette.secondary80</td>
+<td>#625B71</td>
+<td>#CCC2DC</td>
+</tr>
+<tr>
+<td>Secondary container</td>
+<td>md.sys.color.secondary-container</td>
+<td>md.ref.palette.secondary90</td>
+<td>md.ref.palette.secondary30</td>
+<td>#E8DEF8</td>
+<td>#4A4458</td>
+</tr>
+<tr>
+<td>On secondary</td>
+<td>md.sys.color.on-secondary</td>
+<td>md.ref.palette.secondary100</td>
+<td>md.ref.palette.secondary20</td>
+<td>#FFFFFF</td>
+<td>#332D41</td>
+</tr>
+<tr>
+<td>On secondary container</td>
+<td>md.sys.color.on-secondary-container</td>
+<td>md.ref.palette.secondary10</td>
+<td>md.ref.palette.secondary90</td>
+<td>#1E192B</td>
+<td>#E8DEF8</td>
+</tr>
+<tr>
+<td>Tertiary</td>
+<td>md.sys.color.tertiary</td>
+<td>md.ref.palette.tertiary40</td>
+<td>md.ref.palette.tertiary80</td>
+<td>#7D5260</td>
+<td>#EFB8C8</td>
+</tr>
+<tr>
+<td>Tertiary container</td>
+<td>md.sys.color.tertiary-container</td>
+<td>md.ref.palette.tertiary90</td>
+<td>md.ref.palette.tertiary30</td>
+<td>#FFD8E4</td>
+<td>#633B48</td>
+</tr>
+<tr>
+<td>On tertiary</td>
+<td>md.sys.color.on-tertiary</td>
+<td>md.ref.palette.tertiary100</td>
+<td>md.ref.palette.tertiary20</td>
+<td>#FFFFFF</td>
+<td>#492532</td>
+</tr>
+<tr>
+<td>On tertiary container</td>
+<td>md.sys.color.on-tertiary-container</td>
+<td>md.ref.palette.tertiary10</td>
+<td>md.ref.palette.tertiary90</td>
+<td>#370B1E</td>
+<td>#FFD8E4</td>
+</tr>
+<tr>
+<td>Surface</td>
+<td>md.sys.color.surface</td>
+<td>md.ref.palette.neutral98</td>
+<td>md.ref.palette.neutral6</td>
+<td>#FEF7FF</td>
+<td>#141218</td>
+</tr>
+<tr>
+<td>Surface dim</td>
+<td>md.sys.color.surface-dim</td>
+<td>md.ref.palette.neutral87</td>
+<td>md.ref.palette.neutral6</td>
+<td>#DED8E1</td>
+<td>#141218</td>
+</tr>
+<tr>
+<td>Surface bright</td>
+<td>md.sys.color.surface-bright</td>
+<td>md.ref.palette.neutral98</td>
+<td>md.ref.palette.neutral24</td>
+<td>#FEF7FF</td>
+<td>#3B383E</td>
+</tr>
+<tr>
+<td>Surface container lowest</td>
+<td>md.sys.color.surface-container-lowest</td>
+<td>md.ref.palette.neutral100</td>
+<td>md.ref.palette.neutral4</td>
+<td>#FFFFFF</td>
+<td>#0F0D13</td>
+</tr>
+<tr>
+<td>Surface container low</td>
+<td>md.sys.color.surface-container-low</td>
+<td>md.ref.palette.neutral96</td>
+<td>md.ref.palette.neutral10</td>
+<td>#F7F2FA</td>
+<td>#1D1B20</td>
+</tr>
+<tr>
+<td>Surface container</td>
+<td>md.sys.color.surface-container</td>
+<td>md.ref.palette.neutral94</td>
+<td>md.ref.palette.neutral12</td>
+<td>#F3EDF7</td>
+<td>#211F26</td>
+</tr>
+<tr>
+<td>Surface container high</td>
+<td>md.sys.color.surface-container-high</td>
+<td>md.ref.palette.neutral92</td>
+<td>md.ref.palette.neutral17</td>
+<td>#ECE6F0</td>
+<td>#2B2930</td>
+</tr>
+<tr>
+<td>Surface container highest</td>
+<td>md.sys.color.surface-container-highest</td>
+<td>md.ref.palette.neutral90</td>
+<td>md.ref.palette.neutral22</td>
+<td>#E6E0E9</td>
+<td>#36343B</td>
+</tr>
+<tr>
+<td>Surface variant</td>
+<td>md.sys.color.surface-variant</td>
+<td>md.ref.palette.neutral-variant90</td>
+<td>md.ref.palette.neutral-variant30</td>
+<td>#E7E0EC</td>
+<td>#49454F</td>
+</tr>
+<tr>
+<td>On surface</td>
+<td>md.sys.color.on-surface</td>
+<td>md.ref.palette.neutral10</td>
+<td>md.ref.palette.neutral90</td>
+<td>#1C1B1F</td>
+<td>#E6E1E5</td>
+</tr>
+<tr>
+<td>On surface variant</td>
+<td>md.sys.color.on-surface-variant</td>
+<td>md.ref.palette.neutral-variant30</td>
+<td>md.ref.palette.neutral-variant80</td>
+<td>#49454E</td>
+<td>#CAC4D0</td>
+</tr>
+<tr>
+<td>Inverse surface</td>
+<td>md.sys.color.inverse-surface</td>
+<td>md.ref.palette.neutral20</td>
+<td>md.ref.palette.neutral90</td>
+<td>#313033</td>
+<td>#E6E1E5</td>
+</tr>
+<tr>
+<td>Inverse on surface</td>
+<td>md.sys.color.inverse-on-surface</td>
+<td>md.ref.palette.neutral95</td>
+<td>md.ref.palette.neutral20</td>
+<td>#F4EFF4</td>
+<td>#313033</td>
+</tr>
+<tr>
+<td>Background</td>
+<td>md.sys.color.background</td>
+<td>md.ref.palette.neutral98</td>
+<td>md.ref.palette.neutral6</td>
+<td>#FEF7FF</td>
+<td>#141218</td>
+</tr>
+<tr>
+<td>On background</td>
+<td>md.sys.color.on-background</td>
+<td>md.ref.palette.neutral10</td>
+<td>md.ref.palette.neutral90</td>
+<td>#1C1B1F</td>
+<td>#E6E1E5</td>
+</tr>
+<tr>
+<td>Error</td>
+<td>md.sys.color.error</td>
+<td>md.ref.palette.error40</td>
+<td>md.ref.palette.error80</td>
+<td>#B3261E</td>
+<td>#F2B8B5</td>
+</tr>
+<tr>
+<td>Error container</td>
+<td>md.sys.color.error-container</td>
+<td>md.ref.palette.error90</td>
+<td>md.ref.palette.error30</td>
+<td>#F9DEDC</td>
+<td>#8C1D18</td>
+</tr>
+<tr>
+<td>On error</td>
+<td>md.sys.color.on-error</td>
+<td>md.ref.palette.error100</td>
+<td>md.ref.palette.error20</td>
+<td>#FFFFFF</td>
+<td>#601410</td>
+</tr>
+<tr>
+<td>On error container</td>
+<td>md.sys.color.on-error-container</td>
+<td>md.ref.palette.error10</td>
+<td>md.ref.palette.error90</td>
+<td>#410E0B</td>
+<td>#F9DEDC</td>
+</tr>
+<tr>
+<td>Outline</td>
+<td>md.sys.color.outline</td>
+<td>md.ref.palette.neutral-variant50</td>
+<td>md.ref.palette.neutral-variant60</td>
+<td>#79747E</td>
+<td>#938F99</td>
+</tr>
+<tr>
+<td>Outline variant</td>
+<td>md.sys.color.outline-variant</td>
+<td>md.ref.palette.neutral-variant80</td>
+<td>md.ref.palette.neutral-variant30</td>
+<td>#C4C7C5</td>
+<td>#444746</td>
+</tr>
+<tr>
+<td>Shadow</td>
+<td>md.sys.color.shadow</td>
+<td>md.ref.palette.neutral0</td>
+<td>md.ref.palette.neutral0</td>
+<td>#000000</td>
+<td>#000000</td>
+</tr>
+<tr>
+<td>Surface tint</td>
+<td>md.sys.color.surface-tint-color</td>
+<td>md.sys.color.primary</td>
+<td>md.sys.color.primary</td>
+<td>#6750A4</td>
+<td>#D0BCFF</td>
+</tr>
+<tr>
+<td>Scrim</td>
+<td>md.sys.color.scrim</td>
+<td>md.ref.palette.neutral0</td>
+<td>md.ref.palette.neutral0</td>
+<td>#000000</td>
+<td>#000000</td>
+</tr>
+</tbody>
+</table>
+
+        <div class="text-right mt-2">
+            
+            <a href="https://m3.material.io/styles/color/the-color-system/tokens#e26e130c-fa67-48e1-81ca-d28f6e4ed398">Color system – Material Design 3 | Baseline color scheme tokens</a> から引用
+            
+        </div>
+    </div>
+</div>
+
+<h3 id="参考">参考</h3>
+<ul>
+<li>
+<p><a href="https://en.wikipedia.org/wiki/Material_Design">Material Design - Wikipedia</a></p>
+</li>
+<li>
+<p><a href="https://m3.material.io/">Material Design</a></p>
+<ul>
+<li><a href="https://m3.material.io/styles/color/the-color-system/key-colors-tones">Color system – Material Design 3</a></li>
+</ul>
+</li>
+<li>
+<p><a href="https://contents.textile-net.jp/reading-material/neutral-color/index.html">【読み物】それってどんな色のこと？　ニュートラルカラー | 生地・副資材の仕入れ・卸販売専門 | テキスタイルネット</a></p>
+</li>
+</ul>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>デザインガイドラインという意味なのかな..&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+    </div>
+    <div class="mt-6">
+    <div class="border-t-2 border-primary-dark px-2 pt-2 text-right">
+        <span class="text-sm">作成日: 2023/07/27</span></div>
+</div>
+
+</div>
+
+        </main><footer class="bg-primary-dark text-center text-on-primary-dark fixed bottom-0 w-full h-8">
+    <div class="container mx-auto grid grid-cols-3">
+        <div class="col-start-1 col-span-2 ml-2 md:ml-0 md:col-start-2 md:col-span-1">
+            <div class="text-left md:text-center text-sm pt-2">© 2022 kanta&#39;s spike</div>
+        </div>
+        <div class="col-start-3 flex justify-end gap-2 mr-2">
+            
+                
+            <a title="Twitter" class="text-2xl" href="https://twitter.com/KantasSpike"><i class="fa-brands fa-twitter-square"></i></a>
+                
+            <a title="Youtube" class="text-2xl" href="https://www.youtube.com/channel/UCnVBuUGMYAt7ZuIkadxnMfw"><i class="fa-brands fa-youtube-square"></i></a>
+                
+            <a title="GitHub" class="text-2xl" href="https://github.com/kantas-spike"><i class="fa-brands fa-github-square"></i></a>
+                
+            <a title="Blog" class="text-2xl" href="https://kantas-spike.github.io/portfolio/"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                
+            
+        </div>
+    </div>
+</footer>
+        
+
+
+
+
+<script defer type="text/javascript" src="https://kantas-spike.github.io/portfolio/js/search-form.dd7ad4e4f203f408d461506b73a7cb128e641d61d86c7695ca9d2cd5e2768597efa3c2663c7a204016bb8d25de38097dc929682fc7aad45bd784ab2b4c3e6135.js" integrity="sha512-3XrU5PID9AjUYVBrc6fLEo5kHWHYbHaVyp0s1eJ2hZfvo8JmPHogQBa7jSXeOAl9ySloL8eq1FvXhKsrTD5hNQ=="></script></body>
+</html>

@@ -9,6 +9,46 @@
     <copyright>© 2022 kanta&#39;s spike</copyright>
     <lastBuildDate>Fri, 22 Jul 2022 08:24:06 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Hugoでショートコードやコードブロックの子要素にMarkdownを渡したい</title>
+      <link>https://kantas-spike.github.io/portfolio/til/2023/07/75-convert-markdown-to-html-with-hugo/</link>
+      <pubDate>Thu, 27 Jul 2023 23:27:25 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/til/2023/07/75-convert-markdown-to-html-with-hugo/</guid>
+      <description>&lt;p&gt;ショートコードやレンダーブロックの子要素にMarkdownコンテンツを渡したい。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>マテリアルデザインのカラーシステムを勉強する</title>
+      <link>https://kantas-spike.github.io/portfolio/notes/color_system_of_material_design/</link>
+      <pubDate>Thu, 27 Jul 2023 01:19:11 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/notes/color_system_of_material_design/</guid>
+      <description>&lt;p&gt;アプリのデザインについて勉強していますが、いまいち色の選び方がわかりません。&lt;/p&gt;
+&lt;p&gt;そこで、Googleが開発している&lt;code&gt;Design Language&lt;/code&gt;&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;である&lt;a href=&#34;https://m3.material.io/&#34;&gt;Material Design&lt;/a&gt;を学び、
+アプリの色選び方法を学びたいと思います。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>デジ庁のデザインシステムを勉強する</title>
+      <link>https://kantas-spike.github.io/portfolio/notes/design-system/</link>
+      <pubDate>Wed, 26 Jul 2023 11:02:38 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/notes/design-system/</guid>
+      <description>&lt;p&gt;日本国の&lt;a href=&#34;https://www.digital.go.jp/&#34;&gt;デジタル庁&lt;/a&gt;が、&lt;a href=&#34;https://www.digital.go.jp/policies/servicedesign/designsystem/&#34;&gt;デザインシステム｜デジタル庁&lt;/a&gt;を公開しています。&lt;/p&gt;
+&lt;p&gt;このデザインシステムを学んで、自分のサイトやアプリに利用したいと思います。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>100gで割るアプリ</title>
+      <link>https://kantas-spike.github.io/portfolio/notes/pern-app/</link>
+      <pubDate>Sat, 22 Jul 2023 14:14:01 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/notes/pern-app/</guid>
+      <description>&lt;p&gt;モノを買う時の判断材料として、モノの100gあたりの価格を知りたいと思いました。&lt;/p&gt;
+&lt;p&gt;React(Next.js)を勉強したので、アプリとして作成したいと思います。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Gitの使い方を整理したい</title>
       <link>https://kantas-spike.github.io/portfolio/notes/2023/07/07-about-git/</link>
       <pubDate>Sat, 22 Jul 2023 11:35:52 +0900</pubDate>
