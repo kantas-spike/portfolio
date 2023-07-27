@@ -71,16 +71,16 @@ vscodeには、`GitLens`という拡張機能があるそうです。
 - ブランチ
 
   - [x] ブランチを作成する (`ソース管理`から`Branches`の`Create Branches...`)
-  - [x] ブランチを切り替える (`ソース管理`から`Branches`の`Switch to Another Branch`)
+  - [x] ブランチを切り替える (`ソース管理`から`Branches`の`Switch to Branch`)
   - [x] ブランチの一覧を表示する (`ソース管理`から`Branches`)
-  - [ ] ブランチを削除する (`git branch -d <branch_name>`)
+  - [x] ブランチを削除する (`ソース管理`から`Branches`で該当ブランチを右クリックで`delete`)
+  - [x] ブランチをリモートにプッシュする (`ソース管理`から`Branches`で該当ブランチの`Publish Branch`アイコンをクリック)
+  - [x] リモートブランチを取り込む (`ソース管理`から`Branches`で該当ブランチの`Pull`アイコンをクリック)
 
 - remote
 
   - [ ] リモートリポジトリを追加する (`git remote add origin <repositry_url>`)
-  - [ ] ブランチをリモートにプッシュする (`git push origin <branch_name>`)
-  - [ ] リモートブランチを取り込む (`git pull origin <branch_name>`)
-  - [ ] リモートで削除されたブランチの情報を削除する (`GitLens: Git Command Palettg`の`Fetch & Prune`ではダメ)
+  - [x] リモートで削除されたブランチの情報を削除する (`Git: Fetch(Prune)`) [^1]
 
 - その他
 
@@ -90,3 +90,5 @@ vscodeには、`GitLens`という拡張機能があるそうです。
 ### 参考
 
 - [gitkraken/vscode-gitlens: Supercharge Git inside VS Code and unlock untapped knowledge within each repository — Visualize code authorship at a glance via Git blame annotations and CodeLens, seamlessly navigate and explore Git repositories, gain valuable insights via rich visualizations and powerful comparison commands, and so much more](https://github.com/gitkraken/vscode-gitlens#repositories-view-)
+
+[^1]: `GitLens: Git Command Palettg`の`Fetch & Prune`ではダメ
