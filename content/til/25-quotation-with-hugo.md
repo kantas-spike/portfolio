@@ -35,7 +35,7 @@ Attitude is no substitute for competence.
 <div class="quote text-secondary-dark relative p-2 pt-6 pr-4 bg-secondary-light/30 border border-secondary-dark/30 rounded-md my-2">
     <div class="font-serif text-6xl absolute top-0 left-0 py-1 pl-3 font-bold text-secondary-dark/30">“</div>
     <div class="text-xl ml-10 mt-2">
-        {{- .Inner | safeHTML }}
+        {{- .Inner | markdownify }}
     </div>
     <div class="flex justify-end text-lg">
     {{ if .Attributes.author }}
