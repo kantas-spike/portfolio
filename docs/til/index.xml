@@ -9,6 +9,17 @@
     <copyright>© 2022 kanta&#39;s spike</copyright>
     <lastBuildDate>Fri, 22 Jul 2022 08:15:27 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/til/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>JavaScriptを使ってCSSの色表記を変換したい</title>
+      <link>https://kantas-spike.github.io/portfolio/til/2023/07/76-convert-css-color-notations-with-js/</link>
+      <pubDate>Fri, 28 Jul 2023 16:23:27 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/til/2023/07/76-convert-css-color-notations-with-js/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://storybook.js.org/&#34;&gt;Storybook: Frontend workshop for UI development&lt;/a&gt;の&lt;a href=&#34;https://storybook.js.org/docs/react/api/doc-block-colorpalette&#34;&gt;ColorPalette&lt;/a&gt;を使って、
+色調パレットを作成している。&lt;/p&gt;
+&lt;p&gt;色調作成時のトーン操作は&lt;code&gt;hsl()&lt;/code&gt;形式を使い、色の表記時には&lt;code&gt;16進数&lt;/code&gt;形式を使いたい。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Hugoでショートコードやコードブロックの子要素にMarkdownを渡したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/07/75-convert-markdown-to-html-with-hugo/</link>
       <pubDate>Thu, 27 Jul 2023 23:27:25 +0900</pubDate>

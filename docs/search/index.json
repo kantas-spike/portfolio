@@ -1,6 +1,11 @@
 {
     "results": [
     {
+        "href": "https://kantas-spike.github.io/portfolio/til/2023/07/76-convert-css-color-notations-with-js/",
+        "title": "JavaScriptを使ってCSSの色表記を変換したい",
+        "tags": "javascript color"
+    },
+    {
         "href": "https://kantas-spike.github.io/portfolio/til/2023/07/75-convert-markdown-to-html-with-hugo/",
         "title": "Hugoでショートコードやコードブロックの子要素にMarkdownを渡したい",
         "tags": "hugo shortcodes render_hooks"

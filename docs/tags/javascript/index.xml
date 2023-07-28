@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>javascript on kanta&#39;s spike</title>
+    <link>https://kantas-spike.github.io/portfolio/tags/javascript/</link>
+    <description>Recent content in javascript on kanta&#39;s spike</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <copyright>© 2022 kanta&#39;s spike</copyright>
+    <lastBuildDate>Fri, 28 Jul 2023 16:23:27 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JavaScriptを使ってCSSの色表記を変換したい</title>
+      <link>https://kantas-spike.github.io/portfolio/til/2023/07/76-convert-css-color-notations-with-js/</link>
+      <pubDate>Fri, 28 Jul 2023 16:23:27 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/til/2023/07/76-convert-css-color-notations-with-js/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://storybook.js.org/&#34;&gt;Storybook: Frontend workshop for UI development&lt;/a&gt;の&lt;a href=&#34;https://storybook.js.org/docs/react/api/doc-block-colorpalette&#34;&gt;ColorPalette&lt;/a&gt;を使って、
+色調パレットを作成している。&lt;/p&gt;
+&lt;p&gt;色調作成時のトーン操作は&lt;code&gt;hsl()&lt;/code&gt;形式を使い、色の表記時には&lt;code&gt;16進数&lt;/code&gt;形式を使いたい。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
