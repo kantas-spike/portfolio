@@ -26,7 +26,7 @@ tags:
 その構成は以下になります。
 
 ~~~rawhtml
-<table>
+<table class="text_block">
 <thead>
 <tr>
 <th>分類
@@ -106,7 +106,7 @@ tags:
 [100gで割るアプリ](/notes/pern-app)のデザインシステムを資料化する場合、以下の構成になりそうです。
 
 ~~~rawhtml
-<table>
+<table class="text_block">
 <thead>
 <tr>
 <th>分類</th>
