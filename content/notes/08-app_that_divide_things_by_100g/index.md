@@ -134,7 +134,7 @@ perN (発音は"パーン")
 
 [Storybook: Frontend workshop for UI development](https://storybook.js.org/)を使って、部品一覧を作成する。
 
-まずは、`perN`用のプロジェクトを`Next.js`で作成し、その中に`storybook`を作成する。
+[kantas-spike/perN](https://github.com/kantas-spike/perN)にプロジェクトを作成し、その中に`storybook`を作成する。
 
 #### ストーリーブック
 
