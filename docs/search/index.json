@@ -1,6 +1,11 @@
 {
     "results": [
     {
+        "href": "https://kantas-spike.github.io/portfolio/til/2023/07/77-leaning-arithmetic-and-logical-operation-of-hugo/",
+        "title": "Hugoで四則演算や論理演算や比較演算を使いたい",
+        "tags": "hugo"
+    },
+    {
         "href": "https://kantas-spike.github.io/portfolio/til/2023/07/76-convert-css-color-notations-with-js/",
         "title": "JavaScriptを使ってCSSの色表記を変換したい",
         "tags": "javascript color"

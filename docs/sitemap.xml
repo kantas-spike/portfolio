@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/hugo/</loc>
+    <lastmod>2023-07-31T17:16:06+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/til/2023/07/77-leaning-arithmetic-and-logical-operation-of-hugo/</loc>
+    <lastmod>2023-07-31T17:16:06+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/</loc>
+    <lastmod>2023-07-31T17:16:06+09:00</lastmod>
+  </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/color/</loc>
     <lastmod>2023-07-28T16:23:27+09:00</lastmod>
   </url><url>
@@ -10,12 +19,6 @@
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2023/07/76-convert-css-color-notations-with-js/</loc>
     <lastmod>2023-07-28T16:23:27+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/</loc>
-    <lastmod>2023-07-28T16:23:27+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/hugo/</loc>
-    <lastmod>2023-07-27T23:27:25+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2023/07/75-convert-markdown-to-html-with-hugo/</loc>
     <lastmod>2023-07-27T23:27:25+09:00</lastmod>
@@ -36,10 +39,10 @@
     <lastmod>2023-07-26T11:02:38+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/notes/pern-app/</loc>
-    <lastmod>2023-07-22T14:14:01+09:00</lastmod>
+    <lastmod>2023-07-31T17:00:00+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/software/</loc>
-    <lastmod>2023-07-22T14:14:01+09:00</lastmod>
+    <lastmod>2023-07-31T17:00:00+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/git/</loc>
     <lastmod>2023-07-22T11:35:52+09:00</lastmod>
