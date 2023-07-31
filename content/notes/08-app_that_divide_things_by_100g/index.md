@@ -1,6 +1,7 @@
 ---
 title: "100gで割るアプリ"
 date: 2023-07-22T14:14:01+09:00
+lastmod: 2023-07-31T17:00:00+09:00
 draft: false
 url: /notes/pern-app
 tags:
@@ -129,7 +130,15 @@ perN (発音は"パーン")
 ### 部品一覧
 
 デザインについては、[デジ庁のデザインシステム](/notes/design-system)を参考にする。
+(ただし、カラーについては、[Color system – Material Design 3](https://m3.material.io/styles/color/the-color-system/key-colors-tones)を参考にする。[^1])
 
 [Storybook: Frontend workshop for UI development](https://storybook.js.org/)を使って、部品一覧を作成する。
 
 まずは、`perN`用のプロジェクトを`Next.js`で作成し、その中に`storybook`を作成する。
+
+#### ストーリーブック
+
+- [Color System](./storybook-static/?path=/docs/color-system--docs)
+
+
+[^1]: [デジ庁のデザインシステム](/notes/design-system)では予め配色が決まっているため
