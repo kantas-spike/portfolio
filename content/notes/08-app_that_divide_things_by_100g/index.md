@@ -1,7 +1,7 @@
 ---
 title: "100gで割るアプリ"
 date: 2023-07-22T14:14:01+09:00
-lastmod: 2023-07-31T17:00:00+09:00
+lastmod: 2023-08-02T17:38:00+09:00
 draft: false
 url: /notes/pern-app
 tags:
@@ -138,7 +138,8 @@ perN (発音は"パーン")
 
 #### ストーリーブック
 
-- [Color System](./storybook-static/?path=/docs/color-system--docs)
+- [Color System](./storybook-static/?path=/docs/スタイル-カラー--docs)
+- [タイポグラフィ](./storybook-static/?path=/docs/スタイル-タイポグラフィ--docs)
 
 
 [^1]: [デジ庁のデザインシステム](/notes/design-system)では予め配色が決まっているため
