@@ -126,6 +126,16 @@
 <ul>
 <li><input checked="" disabled="" type="checkbox"> 複数ファイルをコミット (<code>ソース管理</code>からステージングして<code>コミット</code>)</li>
 <li><input checked="" disabled="" type="checkbox"> 直前のコミットログを修正 (<code>ソース管理</code>から<code>ステージング済みをコミット(修正)</code>)</li>
+<li><input checked="" disabled="" type="checkbox"> 過去のコミットログを修正
+<ul>
+<li>(<code>GitLens</code>から該当コミットの直前のコミットを右クリック、</li>
+<li><code>Rebase Current Branch Onto Commit..</code>を選択、</li>
+<li><code>Interactive Rebase</code>を実行</li>
+<li><code>該当コミット</code>の<code>pick</code>を<code>reword</code>に変更</li>
+<li><code>START REBASE</code>をクリック</li>
+<li>エディタのコミットメッセージを修正・保存して閉じる)</li>
+</ul>
+</li>
 <li><input checked="" disabled="" type="checkbox"> 複数ファイルを直前のコミットに追加コミット (<code>ソース管理</code>から<code>ステージング済みをコミット(修正)</code>)</li>
 <li><input checked="" disabled="" type="checkbox"> ファイル内の一部変更のみコミット(<code>ソース管理</code>から変更のあったファイルを右クリックし<code>変更を開く</code>、<code>比較画面の右側でコミットしたい行を選択</code>し、右クリックして<code>選択した範囲をステージする</code>を選択)</li>
 <li><input disabled="" type="checkbox"> 直前のコミットを破棄(<code>git reset --soft HEAD^</code>)</li>
