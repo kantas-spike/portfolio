@@ -1,7 +1,7 @@
 ---
 title: "100gで割るアプリ"
 date: 2023-07-22T14:14:01+09:00
-lastmod: 2023-08-03T07:15:00+09:00
+lastmod: 2023-08-05T15:00:00+09:00
 draft: false
 url: /notes/pern-app
 tags:
@@ -138,10 +138,16 @@ perN (発音は"パーン")
 
 #### ストーリーブック
 
-- [01. カラー](./storybook-static/?path=/docs/スタイル-01-カラー--docs)
-- [02. タイポグラフィ](./storybook-static/?path=/docs/スタイル-02-タイポグラフィ--docs)
-- [03. レイアウトカラム](./storybook-static/?path=/docs/スタイル-03-レイアウトカラム--docs)
-- [04. 余白](./storybook-static/?path=/docs/スタイル-04-余白--docs)
+- スタイル
+  - [01. カラー](./storybook-static/?path=/docs/スタイル-01-カラー--docs)
+  - [02. タイポグラフィ](./storybook-static/?path=/docs/スタイル-02-タイポグラフィ--docs)
+  - [03. レイアウトカラム](./storybook-static/?path=/docs/スタイル-03-レイアウトカラム--docs)
+  - [04. 余白](./storybook-static/?path=/docs/スタイル-04-余白--docs)
+  - [05. 画像](./storybook-static/?path=/docs/スタイル-05-画像--docs)
+  - [06. 角丸](./storybook-static/?path=/docs/スタイル-06-角丸--docs)
+  - [07. リンクテキスト](./storybook-static/?path=/docs/スタイル-07-リンクテキスト--docs)
+- コンポーネント
+  - [01. ボタン](./storybook-static/?path=/docs/コンポーネント-01-ボタン--docs)
 
 
 [^1]: [デジ庁のデザインシステム](/notes/design-system)では予め配色が決まっているため
