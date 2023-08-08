@@ -150,6 +150,6 @@ perN (発音は"パーン")
   - [01. ボタン](./storybook-static/?path=/docs/コンポーネント-01-ボタン--docs)
   - [02. リンクテキスト](./storybook-static/?path=/docs/コンポーネント-02-リンクテキスト--docs)
   - [03. テキスト入力](./storybook-static/?path=/docs/コンポーネント-03-テキスト入力--docs)
-
+  - [04. テキストエリア](./storybook-static/?path=/docs/コンポーネント-04-テキストエリア--docs)
 
 [^1]: [デジ庁のデザインシステム](/notes/design-system)では予め配色が決まっているため
