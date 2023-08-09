@@ -136,7 +136,6 @@ perN (発音は"パーン")
 
 [kantas-spike/perN](https://github.com/kantas-spike/perN)にプロジェクトを作成し、その中に`storybook`を作成する。
 
-#### ストーリーブック
 
 - スタイル
   - [01. カラー](./storybook-static/?path=/docs/スタイル-01-カラー--docs)
@@ -151,5 +150,10 @@ perN (発音は"パーン")
   - [02. リンクテキスト](./storybook-static/?path=/docs/コンポーネント-02-リンクテキスト--docs)
   - [03. テキスト入力](./storybook-static/?path=/docs/コンポーネント-03-テキスト入力--docs)
   - [04. テキストエリア](./storybook-static/?path=/docs/コンポーネント-04-テキストエリア--docs)
+  - [05. ラジオボタン](./storybook-static/?path=/docs/コンポーネント-05-ラジオボタン--docs)
+
+### コード作成
+
+スタイルと部品が決まったので、アプリを作成していく。
 
 [^1]: [デジ庁のデザインシステム](/notes/design-system)では予め配色が決まっているため
