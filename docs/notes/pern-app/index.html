@@ -67,7 +67,7 @@
         <div>
             
             
-            <div class="text-right text-sm font-bold">2023/08/07
+            <div class="text-right text-sm font-bold">2023/08/19
                 
                     <span class="text-xs text-red-600 font-thin">Updated</span>
                 
@@ -90,6 +90,7 @@
 <li>アプリの名前</li>
 <li>UIスケッチ / 絵コンテ作成</li>
 <li>部品一覧作成</li>
+<li>データの形を検討</li>
 <li>コード作成</li>
 <li>テスト?</li>
 <li>公開</li>
@@ -287,7 +288,58 @@
 </ul>
 </li>
 </ul>
-<h3 id="コード作成">コード作成</h3>
+<h3 id="データの形">データの形</h3>
+<h4 id="用語">用語</h4>
+<p>データはJSON形式になるので、日本語の単語は英語にしたい。</p>
+<ul>
+<li>料金: price</li>
+<li>税: tax</li>
+<li>税の種類: tax type
+<ul>
+<li>内税: included</li>
+<li>外税: excluded</li>
+</ul>
+</li>
+<li>税率: tax rate
+<ul>
+<li>0.1</li>
+<li>0.08</li>
+</ul>
+</li>
+<li>量: quantity</li>
+<li>量の種類: quantity type
+<ul>
+<li>g</li>
+<li>ml</li>
+<li>m</li>
+</ul>
+</li>
+<li>名前: name</li>
+<li>メモ: note</li>
+</ul>
+<h4 id="json">JSON</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">[</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;price&#34;</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;tax_type&#34;</span><span class="p">:</span> <span class="s2">&#34;excluded&#34;</span><span class="p">,</span> <span class="c1">// included or excluded
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nt">&#34;tax_rate&#34;</span><span class="p">:</span> <span class="mf">0.8</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;quantity&#34;</span><span class="p">:</span> <span class="mi">350</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;quantity_type&#34;</span><span class="p">:</span> <span class="s2">&#34;ml&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;name&#34;</span><span class="p">:</span> <span class="s2">&#34;コーラ&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;note&#34;</span><span class="p">:</span> <span class="s2">&#34;ローソン 飲料水&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="p">},</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;price&#34;</span><span class="p">:</span> <span class="mi">267</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;tax_type&#34;</span><span class="p">:</span> <span class="s2">&#34;excluded&#34;</span><span class="p">,</span> <span class="c1">// included or excluded
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nt">&#34;tax_rate&#34;</span><span class="p">:</span> <span class="mf">0.8</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;quantity&#34;</span><span class="p">:</span> <span class="mi">81</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;quantity_type&#34;</span><span class="p">:</span> <span class="s2">&#34;g&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;name&#34;</span><span class="p">:</span> <span class="s2">&#34;ハムカツサンド&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;note&#34;</span><span class="p">:</span> <span class="s2">&#34;ファミマ 飲料水&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="p">},</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">// ...
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">]</span>
+</span></span></code></pre></div><h3 id="コード作成">コード作成</h3>
 <p>スタイルと部品が決まったので、アプリを作成していく。</p>
 <div class="footnotes" role="doc-endnotes">
 <hr>
@@ -300,7 +352,7 @@
     </div>
     <div class="mt-6">
     <div class="border-t-2 border-primary-dark px-2 pt-2 text-right">
-        <span class="text-sm">作成日: 2023/07/22</span><span class="text-sm pl-2">更新日: 2023/08/07</span></div>
+        <span class="text-sm">作成日: 2023/07/22</span><span class="text-sm pl-2">更新日: 2023/08/19</span></div>
 </div>
 
 </div>
