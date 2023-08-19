@@ -1,7 +1,7 @@
 ---
 title: "100gで割るアプリ"
 date: 2023-07-22T14:14:01+09:00
-lastmod: 2023-08-07T17:30:00+09:00
+lastmod: 2023-08-19T09:30:00+09:00
 draft: false
 url: /notes/pern-app
 tags:
@@ -25,6 +25,7 @@ React(Next.js)を勉強したので、アプリとして作成したいと思い
 - アプリの名前
 - UIスケッチ / 絵コンテ作成
 - 部品一覧作成
+- データの形を検討
 - コード作成
 - テスト?
 - 公開
@@ -151,6 +152,54 @@ perN (発音は"パーン")
   - [03. テキスト入力](./storybook-static/?path=/docs/コンポーネント-03-テキスト入力--docs)
   - [04. テキストエリア](./storybook-static/?path=/docs/コンポーネント-04-テキストエリア--docs)
   - [05. ラジオボタン](./storybook-static/?path=/docs/コンポーネント-05-ラジオボタン--docs)
+
+### データの形
+
+#### 用語
+
+データはJSON形式になるので、日本語の単語は英語にしたい。
+
+- 料金: price
+- 税: tax
+- 税の種類: tax type
+  - 内税: included
+  - 外税: excluded
+- 税率: tax rate
+  - 0.1
+  - 0.08
+- 量: quantity
+- 量の種類: quantity type
+  - g
+  - ml
+  - m
+- 名前: name
+- メモ: note
+
+#### JSON
+
+~~~json
+[
+  {
+    "price": 100,
+    "tax_type": "excluded", // included or excluded
+    "tax_rate": 0.8,
+    "quantity": 350,
+    "quantity_type": "ml",
+    "name": "コーラ",
+    "note": "ローソン 飲料水",
+  },
+  {
+    "price": 267,
+    "tax_type": "excluded", // included or excluded
+    "tax_rate": 0.8,
+    "quantity": 81,
+    "quantity_type": "g",
+    "name": "ハムカツサンド",
+    "note": "ファミマ 飲料水",
+  },
+  // ...
+]
+~~~
 
 ### コード作成
 
