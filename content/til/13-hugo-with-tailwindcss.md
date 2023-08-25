@@ -46,8 +46,11 @@ module.exports = {
 
 ### 解決策
 
-いくつか方法がある。本サイトでは、トリッキーだがシンプルな[方法2](#方法2-hugoのpostcss機能を利用する)を採用している。
-[方法1](#方法1-cssファイルの生成はwebpack-などのbundlerツールにまかせる) は、bundlerツールのインストールや設定が複雑なため採用しない。
+いくつか方法がある。
+Hugo v0.112.0以降で採用された[方法3](#方法3-hugoのpostcss機能とnew-cache-busterを利用するhugo-v01120以降)を採用する。
+
+~~本サイトでは、トリッキーだがシンプルな[方法2](#方法2-hugoのpostcss機能を利用する)を採用している。
+[方法1](#方法1-cssファイルの生成はwebpack-などのbundlerツールにまかせる) は、bundlerツールのインストールや設定が複雑なため採用しない。~~
 
 #### 方法1： CSSファイルの生成は、webpack などのbundlerツールにまかせる
 
@@ -119,7 +122,7 @@ Hugoには、リソースとして、`assets`フォルダに格納した`css`フ
 
 #### 方法3: Hugoの**PostCSS**機能と**new cache buster**を利用する(Hugo v0.112.0以降)
 
-[Hugo Release v0.112.0](https://github.com/gohugoio/hugo/releases/tag/v0.112.0)で、`TailwindCSS v3.x Support, new cache buster configuration`という機能が追加された。
+[Hugo Release v0.112.0](https://github.com/gohugoio/hugo/releases/tag/v0.112.0)で、`TailwindCSS v3.x Support, new cache buster configuration`という機能が追加された。[^2]
 
 これは、既に存在する`CSS purging with PostCSS`のための仕組みである`hugo_stats.json`を利用し、ページ変更にともなうCSSファイルの変更要否を検知し、
 変更要の場合は、CSSファイルをHugoのキャッシュから削除し、**PostCSS**関数で再度CSSファイルを処理するようにする方法である。
@@ -148,7 +151,7 @@ Hugoには、リソースとして、`assets`フォルダに格納した`css`フ
     #  ... 略 ...
     ~~~
 
-2. `tailwindc.config.js`の`content`設定に`hugo_hugo_stats.json`を追加
+2. `テーマディレクトリ/tailwindc.config.js`の`content`設定に`hugo_hugo_stats.json`を追加
 
     ~~~js
     // tailwindc.config.js
@@ -244,3 +247,4 @@ hugo server --debug
 - [Release v0.112.0 · gohugoio/hugo](https://github.com/gohugoio/hugo/releases/tag/v0.112.0)
 
 [^1]: Hugoの初回起動時は`hugo_stats.json`が存在しないため、`hugo_stats.json`をマウントできない。あらかじめ空の`hugo_stats.json`を作成するか、再度Hugoを起動する必要がある。
+[^2]: [Configure cache busters - Configure Hugo | Hugo](https://gohugo.io/getting-started/configuration/#configure-cache-busters)
