@@ -1,14 +1,14 @@
 {
     "title": "kantas-theme",
-    "date": "2023-07-10T02:41:14Z",
+    "date": "2023-07-31T10:24:47Z",
     "draft": false,
     "repo": {
         "name": "kantas-theme",
         "full_name": "kantas-spike/kantas-theme",
         "html_url": "https://github.com/kantas-spike/kantas-theme",
         "description": "Hugo theme for programming learner portfolio",
-        "size": 1520,
-        "pushed_at": "2023-07-10T02:41:14Z",
+        "size": 1532,
+        "pushed_at": "2023-07-31T10:24:47Z",
         "project_type": "ihc",
         "langs": [
             "HTML",
@@ -16,6 +16,56 @@
             "JavaScript"
         ],
         "merged": [
+            {
+                "html_url": "https://github.com/kantas-spike/kantas-theme/pull/72",
+                "title": "feat: \u6761\u4ef6\u306b\u5fdc\u3058\u3066\u8a18\u4e8b\u306e\u65e5\u4ed8\u306bNew\u3068Updated\u3092\u8868\u793a (fix: #71)",
+                "state": "closed",
+                "body": "- \u8a2d\u5b9a\u306b\u3088\u308a\u8868\u793a\u671f\u9593\u3092\u6307\u5b9a\u53ef\u80fd\u306b",
+                "created_at": "2023-07-31T10:22:51Z",
+                "merged_at": "2023-07-31T10:24:44Z",
+                "closed_at": "2023-07-31T10:24:44Z",
+                "user": "kantas-spike"
+            },
+            {
+                "html_url": "https://github.com/kantas-spike/kantas-theme/pull/70",
+                "title": "feat: add shortcodes for quote markdown content",
+                "state": "closed",
+                "body": null,
+                "created_at": "2023-07-27T14:46:49Z",
+                "merged_at": "2023-07-27T14:47:26Z",
+                "closed_at": "2023-07-27T14:47:26Z",
+                "user": "kantas-spike"
+            },
+            {
+                "html_url": "https://github.com/kantas-spike/kantas-theme/pull/69",
+                "title": "style: quote\u306e\u30b3\u30fc\u30c9\u30d6\u30ed\u30c3\u30af\u306e\u30b9\u30bf\u30a4\u30eb\u3092\u6539\u5584",
+                "state": "closed",
+                "body": null,
+                "created_at": "2023-07-25T13:40:45Z",
+                "merged_at": "2023-07-25T13:41:38Z",
+                "closed_at": "2023-07-25T13:41:38Z",
+                "user": "kantas-spike"
+            },
+            {
+                "html_url": "https://github.com/kantas-spike/kantas-theme/pull/68",
+                "title": "style: \u8a18\u4e8b\u30bf\u30a4\u30eb\u306e2\u884c\u76ee\u3092\u5b57\u4e0b\u3052\u3059\u308b\u3088\u3046\u306b\u4fee\u6b63",
+                "state": "closed",
+                "body": null,
+                "created_at": "2023-07-21T07:47:12Z",
+                "merged_at": "2023-07-21T07:47:39Z",
+                "closed_at": "2023-07-21T07:47:39Z",
+                "user": "kantas-spike"
+            },
+            {
+                "html_url": "https://github.com/kantas-spike/kantas-theme/pull/67",
+                "title": "fix: \u30e1\u30cb\u30e5\u30fc\u306e\u8868\u793a\u9806\u3092\u5909\u66f4",
+                "state": "closed",
+                "body": null,
+                "created_at": "2023-07-21T01:43:04Z",
+                "merged_at": "2023-07-21T01:43:32Z",
+                "closed_at": "2023-07-21T01:43:32Z",
+                "user": "kantas-spike"
+            },
             {
                 "html_url": "https://github.com/kantas-spike/kantas-theme/pull/66",
                 "title": "chore: GitHub Pages\u3067\u516c\u958b\u6642\u306bJekyll\u51e6\u7406\u3092\u7121\u52b9\u306b",
@@ -264,56 +314,6 @@
                 "created_at": "2022-08-28T03:01:32Z",
                 "merged_at": "2022-08-28T03:01:39Z",
                 "closed_at": "2022-08-28T03:01:39Z",
-                "user": "kantas-spike"
-            },
-            {
-                "html_url": "https://github.com/kantas-spike/kantas-theme/pull/24",
-                "title": "Itr07: \u691c\u7d22\u6a5f\u80fd\u306e\u8ffd\u52a0\u7b49",
-                "state": "closed",
-                "body": null,
-                "created_at": "2022-08-27T22:23:05Z",
-                "merged_at": "2022-08-27T22:23:12Z",
-                "closed_at": "2022-08-27T22:23:12Z",
-                "user": "kantas-spike"
-            },
-            {
-                "html_url": "https://github.com/kantas-spike/kantas-theme/pull/22",
-                "title": "Itr06: \u914d\u8272\u30d1\u30bf\u30fc\u30f3\u3092\u66f4\u65b0",
-                "state": "closed",
-                "body": null,
-                "created_at": "2022-08-19T18:10:19Z",
-                "merged_at": "2022-08-19T18:10:27Z",
-                "closed_at": "2022-08-19T18:10:27Z",
-                "user": "kantas-spike"
-            },
-            {
-                "html_url": "https://github.com/kantas-spike/kantas-theme/pull/20",
-                "title": "Itr05: mathjax\u5bfe\u5fdc",
-                "state": "closed",
-                "body": null,
-                "created_at": "2022-08-03T19:10:40Z",
-                "merged_at": "2022-08-03T19:11:07Z",
-                "closed_at": "2022-08-03T19:11:07Z",
-                "user": "kantas-spike"
-            },
-            {
-                "html_url": "https://github.com/kantas-spike/kantas-theme/pull/19",
-                "title": "Itr04: \u30ec\u30b9\u30dd\u30f3\u30b7\u30d6\u5bfe\u5fdc\uff1a\u30e1\u30cb\u30e5\u30fc\u8868\u793a",
-                "state": "closed",
-                "body": null,
-                "created_at": "2022-07-23T11:41:07Z",
-                "merged_at": "2022-07-23T11:41:22Z",
-                "closed_at": "2022-07-23T11:41:22Z",
-                "user": "kantas-spike"
-            },
-            {
-                "html_url": "https://github.com/kantas-spike/kantas-theme/pull/17",
-                "title": "Itr03: rawhtml\u5bfe\u5fdc\u3001youtube playlist\u5bfe\u5fdc",
-                "state": "closed",
-                "body": null,
-                "created_at": "2022-07-23T02:46:33Z",
-                "merged_at": "2022-07-23T02:46:42Z",
-                "closed_at": "2022-07-23T02:46:42Z",
                 "user": "kantas-spike"
             }
         ]

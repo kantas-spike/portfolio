@@ -1,20 +1,30 @@
 {
     "title": "learn_react",
-    "date": "2023-07-19T12:32:15Z",
+    "date": "2023-07-22T16:46:28Z",
     "draft": false,
     "repo": {
         "name": "learn_react",
         "full_name": "kantas-spike/learn_react",
         "html_url": "https://github.com/kantas-spike/learn_react",
         "description": "React\u5b66\u7fd2\u8a18\u9332\u7528\u30ea\u30dd\u30b8\u30c8\u30ea",
-        "size": 480,
-        "pushed_at": "2023-07-19T12:32:15Z",
+        "size": 487,
+        "pushed_at": "2023-07-22T16:46:28Z",
         "project_type": "ihc",
         "langs": [
             "JavaScript",
             "CSS"
         ],
         "merged": [
+            {
+                "html_url": "https://github.com/kantas-spike/learn_react/pull/23",
+                "title": "feat: iframe\u3067\u57cb\u3081\u8fbc\u307f\u6642\u306bapp\u306e\u9ad8\u3055\u5909\u66f4\u3092\u901a\u77e5 (fix: #13)",
+                "state": "closed",
+                "body": null,
+                "created_at": "2023-07-22T16:45:30Z",
+                "merged_at": "2023-07-22T16:46:26Z",
+                "closed_at": "2023-07-22T16:46:26Z",
+                "user": "kantas-spike"
+            },
             {
                 "html_url": "https://github.com/kantas-spike/learn_react/pull/22",
                 "title": "Itr08: React\u30c1\u30e5\u30fc\u30c8\u30ea\u30a2\u30eb / LEARN REACT / \u907f\u96e3\u7528\u30cf\u30c3\u30c1 \u3092\u5b66\u3076",
