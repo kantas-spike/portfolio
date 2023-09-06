@@ -1,0 +1,10 @@
+{
+ "compilerOptions": {
+  "baseUrl": ".",
+  "paths": {
+   "*": [
+    "../../Library/Caches/hugo_cache/modules/filecache/modules/pkg/mod/github.com/kantas-spike/kantas-theme@v0.0.0-20230906064926-754f80602c4d/assets/*"
+   ]
+  }
+ }
+}

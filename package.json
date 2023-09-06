@@ -2,19 +2,19 @@
   "author": "",
   "comments": {
     "dependencies": {
-      "axios": "kantas",
-      "lunr": "kantas",
-      "lunr-languages": "kantas",
-      "postcss-cli": "kantas",
-      "react": "kantas",
-      "react-dom": "kantas"
+      "axios": "github.com/kantas-spike/kantas-theme",
+      "lunr": "github.com/kantas-spike/kantas-theme",
+      "lunr-languages": "github.com/kantas-spike/kantas-theme",
+      "postcss-cli": "github.com/kantas-spike/kantas-theme",
+      "react": "github.com/kantas-spike/kantas-theme",
+      "react-dom": "github.com/kantas-spike/kantas-theme"
     },
     "devDependencies": {
-      "autoprefixer": "kantas",
-      "postcss": "kantas",
-      "postcss-import": "kantas",
-      "postcss-nested": "kantas",
-      "tailwindcss": "kantas"
+      "autoprefixer": "github.com/kantas-spike/kantas-theme",
+      "postcss": "github.com/kantas-spike/kantas-theme",
+      "postcss-import": "github.com/kantas-spike/kantas-theme",
+      "postcss-nested": "github.com/kantas-spike/kantas-theme",
+      "tailwindcss": "github.com/kantas-spike/kantas-theme"
     }
   },
   "dependencies": {

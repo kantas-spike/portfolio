@@ -4,8 +4,6 @@ canonifyURLs = true
 languageCode = 'ja-jp'
 title = "kanta's spike"
 
-theme = 'kantas'
-
 copyright = "© 2022 kanta's spike"
 
 publishDir = "docs"
@@ -23,11 +21,16 @@ publishDir = "docs"
 
 [module]
   [[module.mounts]]
+    source = "assets"
+    target = "assets"
+  [[module.mounts]]
     source = "hugo_stats.json"
     target = "assets/watching/hugo_stats.json"
-  [[module.mounts]]
-    source = "assets/sample"
-    target = "assets/sample"
+  # テーマのインポート
+  [[module.imports]]
+    path = 'github.com/kantas-spike/kantas-theme'
+  # テーマで使用するアセットの登録
+
 
 [build]
   writeStats = true
