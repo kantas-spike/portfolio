@@ -1,6 +1,6 @@
 {
     "title": "kantas-theme",
-    "date": "2023-07-31T10:24:47Z",
+    "date": "2023-09-02T04:02:37Z",
     "draft": false,
     "repo": {
         "name": "kantas-theme",
@@ -8,7 +8,7 @@
         "html_url": "https://github.com/kantas-spike/kantas-theme",
         "description": "Hugo theme for programming learner portfolio",
         "size": 1532,
-        "pushed_at": "2023-07-31T10:24:47Z",
+        "pushed_at": "2023-09-02T04:02:37Z",
         "project_type": "ihc",
         "langs": [
             "HTML",
@@ -16,6 +16,26 @@
             "JavaScript"
         ],
         "merged": [
+            {
+                "html_url": "https://github.com/kantas-spike/kantas-theme/pull/75",
+                "title": "fix: \u8aa4\u8a18\u4fee\u6b63",
+                "state": "closed",
+                "body": null,
+                "created_at": "2023-09-02T04:02:29Z",
+                "merged_at": "2023-09-02T04:02:34Z",
+                "closed_at": "2023-09-02T04:02:34Z",
+                "user": "kantas-spike"
+            },
+            {
+                "html_url": "https://github.com/kantas-spike/kantas-theme/pull/74",
+                "title": "Env convert to hugo module (fix: #73)",
+                "state": "closed",
+                "body": null,
+                "created_at": "2023-09-02T03:54:02Z",
+                "merged_at": "2023-09-02T03:54:08Z",
+                "closed_at": "2023-09-02T03:54:08Z",
+                "user": "kantas-spike"
+            },
             {
                 "html_url": "https://github.com/kantas-spike/kantas-theme/pull/72",
                 "title": "feat: \u6761\u4ef6\u306b\u5fdc\u3058\u3066\u8a18\u4e8b\u306e\u65e5\u4ed8\u306bNew\u3068Updated\u3092\u8868\u793a (fix: #71)",
@@ -294,26 +314,6 @@
                 "created_at": "2023-02-02T04:19:40Z",
                 "merged_at": "2023-02-02T04:19:47Z",
                 "closed_at": "2023-02-02T04:19:47Z",
-                "user": "kantas-spike"
-            },
-            {
-                "html_url": "https://github.com/kantas-spike/kantas-theme/pull/29",
-                "title": "Itr09: \u6a2a\u5e45\u3092\u6307\u5b9a\u53ef\u80fd\u306ayoutube\u52d5\u753b\u8868\u793a\u7528shortcode\u306e\u8ffd\u52a0, bugfix",
-                "state": "closed",
-                "body": null,
-                "created_at": "2022-09-21T23:46:11Z",
-                "merged_at": "2022-09-21T23:46:38Z",
-                "closed_at": "2022-09-21T23:46:38Z",
-                "user": "kantas-spike"
-            },
-            {
-                "html_url": "https://github.com/kantas-spike/kantas-theme/pull/26",
-                "title": "Itr08: \u30ad\u30e3\u30c3\u30b7\u30e5\u56de\u907f\u306e\u305f\u3081\u30ea\u30bd\u30fc\u30b9\u30d5\u30a1\u30a4\u30eb\u306b\u30cf\u30c3\u30b7\u30e5\u3092\u4ed8\u4e0e",
-                "state": "closed",
-                "body": null,
-                "created_at": "2022-08-28T03:01:32Z",
-                "merged_at": "2022-08-28T03:01:39Z",
-                "closed_at": "2022-08-28T03:01:39Z",
                 "user": "kantas-spike"
             }
         ]
