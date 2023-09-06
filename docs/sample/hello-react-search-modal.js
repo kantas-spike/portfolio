@@ -10131,7 +10131,7 @@
   var import_react2 = __toESM(require_react());
   var import_client2 = __toESM(require_client());
 
-  // ns-hugo:/Users/kanta/blog/themes/kantas/assets/js/search-modal.jsx
+  // ns-hugo:/Users/kanta/Library/Caches/hugo_cache/modules/filecache/modules/pkg/mod/github.com/kantas-spike/kantas-theme@v0.0.0-20230906064926-754f80602c4d/assets/js/search-modal.jsx
   var import_react = __toESM(require_react());
   var import_client = __toESM(require_client());
 
@@ -12241,7 +12241,7 @@
     mergeConfig: mergeConfig2
   } = axios_default;
 
-  // ns-hugo:/Users/kanta/blog/themes/kantas/assets/js/search-modal.jsx
+  // ns-hugo:/Users/kanta/Library/Caches/hugo_cache/modules/filecache/modules/pkg/mod/github.com/kantas-spike/kantas-theme@v0.0.0-20230906064926-754f80602c4d/assets/js/search-modal.jsx
   var lunr = require_lunr();
   require_lunr_stemmer_support()(lunr);
   require_tinyseg()(lunr);

@@ -2,17 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://kantas-spike.github.io/portfolio/ihc/idea_bank/</loc>
+    <lastmod>2023-09-02T04:05:04+00:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/ihc/kantas_theme/</loc>
+    <lastmod>2023-09-02T04:02:37+00:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/ihc/ibank_extension/</loc>
+    <lastmod>2023-09-01T22:33:19+00:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/ihc/learn_vscode_extension/</loc>
+    <lastmod>2023-08-30T15:31:00+00:00</lastmod>
+  </url><url>
     <loc>https://kantas-spike.github.io/portfolio/mytools/add_ibank.py/</loc>
     <lastmod>2023-08-25T11:51:50+00:00</lastmod>
   </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/ihc/idea_bank/</loc>
-    <lastmod>2023-08-25T09:29:04+00:00</lastmod>
-  </url><url>
     <loc>https://kantas-spike.github.io/portfolio/ihc/pern/</loc>
     <lastmod>2023-08-09T22:26:49+00:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/ihc/kantas_theme/</loc>
-    <lastmod>2023-07-31T10:24:47+00:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/hugo/</loc>
     <lastmod>2023-07-31T17:16:06+09:00</lastmod>
@@ -21,7 +27,7 @@
     <lastmod>2023-07-31T17:16:06+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/</loc>
-    <lastmod>2023-08-19T09:30:00+09:00</lastmod>
+    <lastmod>2023-07-31T17:16:06+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/color/</loc>
     <lastmod>2023-07-28T16:23:27+09:00</lastmod>
@@ -41,32 +47,11 @@
     <loc>https://kantas-spike.github.io/portfolio/tags/shortcodes/</loc>
     <lastmod>2023-07-27T23:27:25+09:00</lastmod>
   </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/design/</loc>
-    <lastmod>2023-07-27T01:19:11+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/notes/color_system_of_material_design/</loc>
-    <lastmod>2023-07-27T01:19:11+09:00</lastmod>
-  </url><url>
     <loc>https://kantas-spike.github.io/portfolio/mytools/add_article.py/</loc>
     <lastmod>2023-07-26T02:06:59+00:00</lastmod>
   </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/notes/design-system/</loc>
-    <lastmod>2023-07-26T11:02:38+09:00</lastmod>
-  </url><url>
     <loc>https://kantas-spike.github.io/portfolio/ihc/learn_react/</loc>
     <lastmod>2023-07-22T16:46:28+00:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/notes/pern-app/</loc>
-    <lastmod>2023-08-19T09:30:00+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/software/</loc>
-    <lastmod>2023-08-19T09:30:00+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/git/</loc>
-    <lastmod>2023-07-22T11:35:52+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/notes/2023/07/07-about-git/</loc>
-    <lastmod>2023-07-22T11:35:52+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/chatgpt/</loc>
     <lastmod>2023-07-21T16:13:15+09:00</lastmod>
@@ -104,23 +89,8 @@
     <loc>https://kantas-spike.github.io/portfolio/mytools/repo_info.py/</loc>
     <lastmod>2023-07-06T07:56:13+00:00</lastmod>
   </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/notes/2023/07/06-learning-dtm/</loc>
-    <lastmod>2023-07-05T21:23:11+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/music/</loc>
-    <lastmod>2023-07-05T21:23:11+09:00</lastmod>
-  </url><url>
     <loc>https://kantas-spike.github.io/portfolio/dialogues/06-project-name/</loc>
     <lastmod>2023-07-05T11:33:00+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/react/</loc>
-    <lastmod>2023-06-30T23:04:20+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/notes/2023/06/05-learning-react/</loc>
-    <lastmod>2023-06-30T23:04:20+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/notes/2023/06/04-learning-music/</loc>
-    <lastmod>2023-06-30T21:50:28+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/blender/</loc>
     <lastmod>2023-06-30T11:42:43+09:00</lastmod>
@@ -131,23 +101,8 @@
     <loc>https://kantas-spike.github.io/portfolio/dialogues/05-tag-name/</loc>
     <lastmod>2023-06-29T05:51:41+09:00</lastmod>
   </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/notes/2023/06/03-learning-blender/</loc>
-    <lastmod>2023-06-29T05:13:02+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/fonts/</loc>
-    <lastmod>2023-06-23T11:56:09+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/notes/2023/06/02-creating-font-by-inkscape/</loc>
-    <lastmod>2023-06-23T11:56:09+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/misc/</loc>
-    <lastmod>2023-06-23T09:13:14+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/notes/2023/06/01-using-movie-workflow/</loc>
-    <lastmod>2023-06-23T09:13:14+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/notes/</loc>
-    <lastmod>2023-06-23T09:00:00+09:00</lastmod>
+    <loc>https://kantas-spike.github.io/portfolio/tags/git/</loc>
+    <lastmod>2023-06-22T14:57:38+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2023/06/70-deleting-merged-local-branch-in-git/</loc>
     <lastmod>2023-06-22T14:57:38+09:00</lastmod>
@@ -205,6 +160,9 @@
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2023/05/58-decide-on-a-protection-policy-for-the-main-branch/</loc>
     <lastmod>2023-05-31T22:17:46+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/react/</loc>
+    <lastmod>2023-05-31T02:16:55+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2023/05/57-create-search-window-using-react/</loc>
     <lastmod>2023-05-31T02:16:55+09:00</lastmod>

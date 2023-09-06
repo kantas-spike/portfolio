@@ -1,23 +1,33 @@
 {
     "results": [
     {
-        "href": "https://kantas-spike.github.io/portfolio/mytools/add_ibank.py/",
-        "title": "add_ibank.py",
-        "tags": ""
-    },
-    {
         "href": "https://kantas-spike.github.io/portfolio/ihc/idea_bank/",
         "title": "idea_bank",
         "tags": ""
     },
     {
-        "href": "https://kantas-spike.github.io/portfolio/ihc/pern/",
-        "title": "perN",
+        "href": "https://kantas-spike.github.io/portfolio/ihc/kantas_theme/",
+        "title": "kantas-theme",
         "tags": ""
     },
     {
-        "href": "https://kantas-spike.github.io/portfolio/ihc/kantas_theme/",
-        "title": "kantas-theme",
+        "href": "https://kantas-spike.github.io/portfolio/ihc/ibank_extension/",
+        "title": "ibank-extension",
+        "tags": ""
+    },
+    {
+        "href": "https://kantas-spike.github.io/portfolio/ihc/learn_vscode_extension/",
+        "title": "learn_vscode_extension",
+        "tags": ""
+    },
+    {
+        "href": "https://kantas-spike.github.io/portfolio/mytools/add_ibank.py/",
+        "title": "add_ibank.py",
+        "tags": ""
+    },
+    {
+        "href": "https://kantas-spike.github.io/portfolio/ihc/pern/",
+        "title": "perN",
         "tags": ""
     },
     {
@@ -36,34 +46,14 @@
         "tags": "hugo shortcodes render_hooks"
     },
     {
-        "href": "https://kantas-spike.github.io/portfolio/notes/color_system_of_material_design/",
-        "title": "マテリアルデザインのカラーシステムを勉強する",
-        "tags": "design"
-    },
-    {
         "href": "https://kantas-spike.github.io/portfolio/mytools/add_article.py/",
         "title": "add_article.py",
         "tags": ""
     },
     {
-        "href": "https://kantas-spike.github.io/portfolio/notes/design-system/",
-        "title": "デジ庁のデザインシステムを勉強する",
-        "tags": "design"
-    },
-    {
         "href": "https://kantas-spike.github.io/portfolio/ihc/learn_react/",
         "title": "learn_react",
         "tags": ""
-    },
-    {
-        "href": "https://kantas-spike.github.io/portfolio/notes/pern-app/",
-        "title": "100gで割るアプリ",
-        "tags": "software"
-    },
-    {
-        "href": "https://kantas-spike.github.io/portfolio/notes/2023/07/07-about-git/",
-        "title": "Gitの使い方を整理したい",
-        "tags": "git"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/dialogues/08-hey-siri-set-a-timer/",
@@ -101,24 +91,9 @@
         "tags": ""
     },
     {
-        "href": "https://kantas-spike.github.io/portfolio/notes/2023/07/06-learning-dtm/",
-        "title": "DTMを学びたい(DTM用語の学習)",
-        "tags": "music"
-    },
-    {
         "href": "https://kantas-spike.github.io/portfolio/dialogues/06-project-name/",
         "title": "開発環境が正しく動作するか確認するためのプロジェクトに名前をつけたい",
         "tags": "ChatGPT english"
-    },
-    {
-        "href": "https://kantas-spike.github.io/portfolio/notes/2023/06/05-learning-react/",
-        "title": "Reactを学ぶ",
-        "tags": "react"
-    },
-    {
-        "href": "https://kantas-spike.github.io/portfolio/notes/2023/06/04-learning-music/",
-        "title": "音楽を学ぶ",
-        "tags": "music"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/til/2023/06/71-sync-animation-to-audio-in-blender/",
@@ -129,21 +104,6 @@
         "href": "https://kantas-spike.github.io/portfolio/dialogues/05-tag-name/",
         "title": "「その他」を意味するタグ名をつけたい",
         "tags": "ChatGPT english"
-    },
-    {
-        "href": "https://kantas-spike.github.io/portfolio/notes/2023/06/03-learning-blender/",
-        "title": "Blenderを学ぶための動画",
-        "tags": "blender"
-    },
-    {
-        "href": "https://kantas-spike.github.io/portfolio/notes/2023/06/02-creating-font-by-inkscape/",
-        "title": "Inkscapeを使ってカスタムフォントを作成したい",
-        "tags": "fonts"
-    },
-    {
-        "href": "https://kantas-spike.github.io/portfolio/notes/2023/06/01-using-movie-workflow/",
-        "title": "動画作成のワークフローをちゃんと利用する",
-        "tags": "misc"
     },
     {
         "href": "https://kantas-spike.github.io/portfolio/til/2023/06/70-deleting-merged-local-branch-in-git/",

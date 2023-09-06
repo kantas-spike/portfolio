@@ -9,6 +9,42 @@
     <copyright>© 2022 kanta&#39;s spike</copyright>
     <lastBuildDate>Fri, 22 Jul 2022 08:24:06 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>idea_bank</title>
+      <link>https://kantas-spike.github.io/portfolio/ihc/idea_bank/</link>
+      <pubDate>Sat, 02 Sep 2023 04:05:04 +0000</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/ihc/idea_bank/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>kantas-theme</title>
+      <link>https://kantas-spike.github.io/portfolio/ihc/kantas_theme/</link>
+      <pubDate>Sat, 02 Sep 2023 04:02:37 +0000</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/ihc/kantas_theme/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ibank-extension</title>
+      <link>https://kantas-spike.github.io/portfolio/ihc/ibank_extension/</link>
+      <pubDate>Fri, 01 Sep 2023 22:33:19 +0000</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/ihc/ibank_extension/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>learn_vscode_extension</title>
+      <link>https://kantas-spike.github.io/portfolio/ihc/learn_vscode_extension/</link>
+      <pubDate>Wed, 30 Aug 2023 15:31:00 +0000</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/ihc/learn_vscode_extension/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>add_ibank.py</title>
       <link>https://kantas-spike.github.io/portfolio/mytools/add_ibank.py/</link>
       <pubDate>Fri, 25 Aug 2023 11:51:50 +0000</pubDate>
@@ -18,29 +54,11 @@
     </item>
     
     <item>
-      <title>idea_bank</title>
-      <link>https://kantas-spike.github.io/portfolio/ihc/idea_bank/</link>
-      <pubDate>Fri, 25 Aug 2023 09:29:04 +0000</pubDate>
-      
-      <guid>https://kantas-spike.github.io/portfolio/ihc/idea_bank/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>perN</title>
       <link>https://kantas-spike.github.io/portfolio/ihc/pern/</link>
       <pubDate>Wed, 09 Aug 2023 22:26:49 +0000</pubDate>
       
       <guid>https://kantas-spike.github.io/portfolio/ihc/pern/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>kantas-theme</title>
-      <link>https://kantas-spike.github.io/portfolio/ihc/kantas_theme/</link>
-      <pubDate>Mon, 31 Jul 2023 10:24:47 +0000</pubDate>
-      
-      <guid>https://kantas-spike.github.io/portfolio/ihc/kantas_theme/</guid>
       <description></description>
     </item>
     
@@ -74,17 +92,6 @@
     </item>
     
     <item>
-      <title>マテリアルデザインのカラーシステムを勉強する</title>
-      <link>https://kantas-spike.github.io/portfolio/notes/color_system_of_material_design/</link>
-      <pubDate>Thu, 27 Jul 2023 01:19:11 +0900</pubDate>
-      
-      <guid>https://kantas-spike.github.io/portfolio/notes/color_system_of_material_design/</guid>
-      <description>&lt;p&gt;アプリのデザインについて勉強していますが、いまいち色の選び方がわかりません。&lt;/p&gt;
-&lt;p&gt;そこで、Googleが開発している&lt;code&gt;Design Language&lt;/code&gt;&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;である&lt;a href=&#34;https://m3.material.io/&#34;&gt;Material Design&lt;/a&gt;を学び、
-アプリの色選び方法を学びたいと思います。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>add_article.py</title>
       <link>https://kantas-spike.github.io/portfolio/mytools/add_article.py/</link>
       <pubDate>Wed, 26 Jul 2023 02:06:59 +0000</pubDate>
@@ -94,44 +101,12 @@
     </item>
     
     <item>
-      <title>デジ庁のデザインシステムを勉強する</title>
-      <link>https://kantas-spike.github.io/portfolio/notes/design-system/</link>
-      <pubDate>Wed, 26 Jul 2023 11:02:38 +0900</pubDate>
-      
-      <guid>https://kantas-spike.github.io/portfolio/notes/design-system/</guid>
-      <description>&lt;p&gt;日本国の&lt;a href=&#34;https://www.digital.go.jp/&#34;&gt;デジタル庁&lt;/a&gt;が、&lt;a href=&#34;https://www.digital.go.jp/policies/servicedesign/designsystem/&#34;&gt;デザインシステム｜デジタル庁&lt;/a&gt;を公開しています。&lt;/p&gt;
-&lt;p&gt;このデザインシステムを学んで、自分のサイトやアプリに利用したいと思います。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>learn_react</title>
       <link>https://kantas-spike.github.io/portfolio/ihc/learn_react/</link>
       <pubDate>Sat, 22 Jul 2023 16:46:28 +0000</pubDate>
       
       <guid>https://kantas-spike.github.io/portfolio/ihc/learn_react/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>100gで割るアプリ</title>
-      <link>https://kantas-spike.github.io/portfolio/notes/pern-app/</link>
-      <pubDate>Sat, 22 Jul 2023 14:14:01 +0900</pubDate>
-      
-      <guid>https://kantas-spike.github.io/portfolio/notes/pern-app/</guid>
-      <description>&lt;p&gt;モノを買う時の判断材料として、モノの100gあたりの価格を知りたいと思いました。&lt;/p&gt;
-&lt;p&gt;React(Next.js)を勉強したので、アプリとして作成したいと思います。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Gitの使い方を整理したい</title>
-      <link>https://kantas-spike.github.io/portfolio/notes/2023/07/07-about-git/</link>
-      <pubDate>Sat, 22 Jul 2023 11:35:52 +0900</pubDate>
-      
-      <guid>https://kantas-spike.github.io/portfolio/notes/2023/07/07-about-git/</guid>
-      <description>&lt;p&gt;&lt;code&gt;git&lt;/code&gt;は複雑で難しいですね。
-さらに、vscodeのソース管理は使いにくいですね。&lt;/p&gt;
-&lt;p&gt;vscodeには、&lt;code&gt;GitLens&lt;/code&gt;という拡張機能があるそうです。
-評判が良さそうなんで、試しに使ってみたいと思います。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -216,16 +191,6 @@
     </item>
     
     <item>
-      <title>DTMを学びたい(DTM用語の学習)</title>
-      <link>https://kantas-spike.github.io/portfolio/notes/2023/07/06-learning-dtm/</link>
-      <pubDate>Wed, 05 Jul 2023 21:23:11 +0900</pubDate>
-      
-      <guid>https://kantas-spike.github.io/portfolio/notes/2023/07/06-learning-dtm/</guid>
-      <description>&lt;p&gt;動画のジングルやBGMなど簡単な音楽を作成したいです。&lt;/p&gt;
-&lt;p&gt;そこで、&lt;a href=&#34;https://www.amazon.co.jp/Mac-Fan-Special-DeskTop-Music/dp/4839976333/ref=sr_1_2?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&amp;amp;crid=1D22URHNDMG42&amp;amp;keywords=mac+fan+dtm&amp;amp;qid=1688129653&amp;amp;s=books&amp;amp;sprefix=mac+fan+dtm+%2Cstripbooks%2C182&amp;amp;sr=1-2&#34;&gt;Mac Fan Special Mac Fan DTM[DeskTop Music] | - |本 | 通販 | Amazon&lt;/a&gt;を読んで、GarageBandを使った曲の作成方法を学びたいと思います。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>開発環境が正しく動作するか確認するためのプロジェクトに名前をつけたい</title>
       <link>https://kantas-spike.github.io/portfolio/dialogues/06-project-name/</link>
       <pubDate>Wed, 05 Jul 2023 11:33:00 +0900</pubDate>
@@ -241,27 +206,6 @@
 そのプロジェクト名に英語にしたいのですが、「正しく動作するか確認するためのプロジェクト」であることがわかるプロジェクト名にしたいと思います。
 どのような英語が良いでしょうか?&lt;/div&gt;
 &lt;/div&gt;</description>
-    </item>
-    
-    <item>
-      <title>Reactを学ぶ</title>
-      <link>https://kantas-spike.github.io/portfolio/notes/2023/06/05-learning-react/</link>
-      <pubDate>Fri, 30 Jun 2023 23:04:20 +0900</pubDate>
-      
-      <guid>https://kantas-spike.github.io/portfolio/notes/2023/06/05-learning-react/</guid>
-      <description>&lt;p&gt;Reactを勉強して、自分用のWebアプリを作成したい。&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-&lt;p&gt;そのために、&lt;a href=&#34;https://react.dev/learn&#34;&gt;Reactのチュートリアル&lt;/a&gt;を勉強したい。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>音楽を学ぶ</title>
-      <link>https://kantas-spike.github.io/portfolio/notes/2023/06/04-learning-music/</link>
-      <pubDate>Fri, 30 Jun 2023 21:50:28 +0900</pubDate>
-      
-      <guid>https://kantas-spike.github.io/portfolio/notes/2023/06/04-learning-music/</guid>
-      <description>&lt;p&gt;これまで音楽と縁がなかったのですが、
-デブログ(devlog)で動画を作るようになり、動画に効果音を入れたくなりました。&lt;/p&gt;
-&lt;p&gt;音楽を学びたいと思います。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -284,36 +228,6 @@
     &lt;div class=&#34;ml-12 mt-0.5 mb-2 whitespace-pre-wrap text_block&#34;&gt;ブログ記事に`その他`や`未分類`のような意味のタグを付けたいです。
 このようなタグに使える良い英単語を教えてくれないでしょうか?&lt;/div&gt;
 &lt;/div&gt;</description>
-    </item>
-    
-    <item>
-      <title>Blenderを学ぶための動画</title>
-      <link>https://kantas-spike.github.io/portfolio/notes/2023/06/03-learning-blender/</link>
-      <pubDate>Thu, 29 Jun 2023 05:13:02 +0900</pubDate>
-      
-      <guid>https://kantas-spike.github.io/portfolio/notes/2023/06/03-learning-blender/</guid>
-      <description>&lt;p&gt;ジオメトリノードやグリースペンシル、スカルプティングについて学ぶための動画をメモ&lt;/p&gt;
-&lt;p&gt;少しづつ勉強したい&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Inkscapeを使ってカスタムフォントを作成したい</title>
-      <link>https://kantas-spike.github.io/portfolio/notes/2023/06/02-creating-font-by-inkscape/</link>
-      <pubDate>Fri, 23 Jun 2023 11:56:09 +0900</pubDate>
-      
-      <guid>https://kantas-spike.github.io/portfolio/notes/2023/06/02-creating-font-by-inkscape/</guid>
-      <description>&lt;p&gt;ブログで使用するアイコンをWebフォントとして自作したい。&lt;/p&gt;
-&lt;p&gt;InkscapeとFontForgeを使ってできるようだ。調べたり、やってみた結果をメモ&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>動画作成のワークフローをちゃんと利用する</title>
-      <link>https://kantas-spike.github.io/portfolio/notes/2023/06/01-using-movie-workflow/</link>
-      <pubDate>Fri, 23 Jun 2023 09:13:14 +0900</pubDate>
-      
-      <guid>https://kantas-spike.github.io/portfolio/notes/2023/06/01-using-movie-workflow/</guid>
-      <description>&lt;p&gt;動画作成のワークフローを簡単な動画作成時やプログラム作成時にも利用したい。&lt;/p&gt;
-&lt;p&gt;ワークフローの成果物も、なるべくGitで管理できるようにしたい。&lt;/p&gt;</description>
     </item>
     
     <item>
