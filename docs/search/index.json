@@ -1,6 +1,11 @@
 {
     "results": [
     {
+        "href": "https://kantas-spike.github.io/portfolio/til/2023/09/78-using_editorconfig_in_vscode/",
+        "title": "エディタ基本設定をリポジトリに登録したい",
+        "tags": "vscode"
+    },
+    {
         "href": "https://kantas-spike.github.io/portfolio/ihc/idea_bank/",
         "title": "idea_bank",
         "tags": ""

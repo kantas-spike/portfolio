@@ -9,6 +9,16 @@
     <copyright>© 2022 kanta&#39;s spike</copyright>
     <lastBuildDate>Fri, 22 Jul 2022 08:15:27 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/til/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>エディタ基本設定をリポジトリに登録したい</title>
+      <link>https://kantas-spike.github.io/portfolio/til/2023/09/78-using_editorconfig_in_vscode/</link>
+      <pubDate>Thu, 07 Sep 2023 01:05:07 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/til/2023/09/78-using_editorconfig_in_vscode/</guid>
+      <description>&lt;p&gt;タブサイズや行内文字数などのエディタ基本設定をリポジトリに登録したい。&lt;/p&gt;
+&lt;p&gt;ただし、リポジトリの利用者が使用するエディタは不明なため、なるべく汎用的な方法でエディタ基本設定を管理したい。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Hugoで四則演算や論理演算や比較演算を使いたい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/07/77-leaning-arithmetic-and-logical-operation-of-hugo/</link>
       <pubDate>Mon, 31 Jul 2023 17:16:06 +0900</pubDate>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html><head>
     <title>
-        learn_vscode_extension | kanta&#39;s spike
+        エディタ基本設定をリポジトリに登録したい | kanta&#39;s spike
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preload" href="https://kantas-spike.github.io/portfolio/fonts/NotoSansJP-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
@@ -38,11 +38,11 @@
 <div class="nav_area">
     <nav class="container mx-auto bg-primary text-on-primary text-center flex flex-col md:flex-row justify-start">
             <a href="https://kantas-spike.github.io/portfolio/" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Home</a>
-            <a href="https://kantas-spike.github.io/portfolio/til" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">TIL</a>
+            <a href="https://kantas-spike.github.io/portfolio/til" class="box-border flex-1 text-center no-underline bg-primary-light text-on-primary-light font-bold py-2">TIL</a>
             <a href="https://kantas-spike.github.io/portfolio/dialogues" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Dialogues</a>
             <a href="https://kantas-spike.github.io/portfolio/articles" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Articles</a>
             <a href="https://kantas-spike.github.io/portfolio/mytools" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">My Tools</a>
-            <a href="https://kantas-spike.github.io/portfolio/ihc" class="box-border flex-1 text-center no-underline bg-primary-light text-on-primary-light font-bold py-2">IHC</a>
+            <a href="https://kantas-spike.github.io/portfolio/ihc" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">IHC</a>
             <a href="https://kantas-spike.github.io/portfolio/tags" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Tags</a>
         <div class="flex-none" id="search_menu"></div>
     </nav>
@@ -51,18 +51,24 @@
 <div class="area_border  px-4 py-3 mx-4  md:mx-10 pb-4">
     
 
+
+
 <div class="mb-4">
-    <h3 class="border-b-4 border-primary-dark text-primary-dark text-xl font-bold tracking-wider pl-[1em] -indent-[1ex]"><i class="fa-solid fa-file-lines"></i> <a href="https://kantas-spike.github.io/portfolio/ihc/learn_vscode_extension/">learn_vscode_extension</a></h3>
+    <h3 class="border-b-4 border-primary-dark text-primary-dark text-xl font-bold tracking-wider pl-[1em] -indent-[1ex]"><i class="fa-solid fa-circle-info"></i> <a href="https://kantas-spike.github.io/portfolio/til/2023/09/78-using_editorconfig_in_vscode/">エディタ基本設定をリポジトリに登録したい</a></h3>
     <div class="flex justify-between mt-1 mx-2">
         <div>
             <ul class="flex gap-2 justify-end">
+            
+            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/vscode/">#vscode</a></li>
             
             </ul>
         </div>
         <div>
             
             
-            <div class="text-right text-sm font-bold">2023/08/30
+            <div class="text-right text-sm font-bold">2023/09/07
+                
+                    <span class="text-xs text-red-600 font-thin">New</span>
                 
             </div>
             
@@ -71,11 +77,48 @@
 </div>
 
     <div class="article mx-2">
-        
+        <p>タブサイズや行内文字数などのエディタ基本設定をリポジトリに登録したい。</p>
+<p>ただし、リポジトリの利用者が使用するエディタは不明なため、なるべく汎用的な方法でエディタ基本設定を管理したい。</p>
+<h3 id="解決策">解決策</h3>
+<p><code>.editorconfig</code>を利用すると、各種環境で利用可能なエディタ設定を記述できる。
+具体的な記述方法は、<a href="https://editorconfig.org/">EditorConfig</a>にある。</p>
+<p>今回は、参考として、<a href="https://github.com/facebook/react/blob/main/.editorconfig">facebook/react プロジェクト</a>の<code>.editorconfig</code>を紹介する。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-.editorconfig" data-lang=".editorconfig"><span class="line"><span class="cl"><span class="c1"># https://editorconfig.org</span>
+</span></span><span class="line"><span class="cl"><span class="na">root</span> <span class="o">=</span> <span class="s">true</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">[*]</span>
+</span></span><span class="line"><span class="cl"><span class="na">charset</span> <span class="o">=</span> <span class="s">utf-8</span>
+</span></span><span class="line"><span class="cl"><span class="na">end_of_line</span> <span class="o">=</span> <span class="s">lf</span>
+</span></span><span class="line"><span class="cl"><span class="na">indent_size</span> <span class="o">=</span> <span class="s">2</span>
+</span></span><span class="line"><span class="cl"><span class="na">indent_style</span> <span class="o">=</span> <span class="s">space</span>
+</span></span><span class="line"><span class="cl"><span class="na">insert_final_newline</span> <span class="o">=</span> <span class="s">true</span>
+</span></span><span class="line"><span class="cl"><span class="na">max_line_length</span> <span class="o">=</span> <span class="s">80</span>
+</span></span><span class="line"><span class="cl"><span class="na">trim_trailing_whitespace</span> <span class="o">=</span> <span class="s">true</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">[*.md]</span>
+</span></span><span class="line"><span class="cl"><span class="na">max_line_length</span> <span class="o">=</span> <span class="s">0</span>
+</span></span><span class="line"><span class="cl"><span class="na">trim_trailing_whitespace</span> <span class="o">=</span> <span class="s">false</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">[COMMIT_EDITMSG]</span>
+</span></span><span class="line"><span class="cl"><span class="na">max_line_length</span> <span class="o">=</span> <span class="s">0</span>
+</span></span></code></pre></div><p><a href="https://editorconfig.org/#pre-installed">多くのエディタ</a>が標準で<code>.editorconfig</code>に対応しているが、
+<code>vscode</code>の場合、<code>.editorconfig</code>を利用するためには別途プラグインが必要になる。</p>
+<p>そのため、<a href="https://editorconfig.org/#download">EditorConfig</a>の本家が公開しているプラグインである、<a href="https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig">EditorConfig for VS Code</a>を導入する必要がある。</p>
+<h3 id="参考">参考</h3>
+<ul>
+<li><a href="https://editorconfig.org/">EditorConfig</a>
+<ul>
+<li><a href="https://editorconfig.org/#pre-installed">No Plugin Necessary | EditorConfig</a></li>
+<li><a href="https://editorconfig.org/#download">Download a Plugin| EditorConfig</a></li>
+</ul>
+</li>
+<li><a href="https://qiita.com/taijusanagi/items/f4edee28dd00fdd9c267">vscodeにeditorconfigを設定する備忘録 - Qiita</a></li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig">EditorConfig for VS Code - Visual Studio Marketplace</a></li>
+</ul>
     </div>
     <div class="mt-6">
     <div class="border-t-2 border-primary-dark px-2 pt-2 text-right">
-        <span class="text-sm">作成日: 2023/08/30</span></div>
+        <span class="text-sm">作成日: 2023/09/07</span></div>
 </div>
 
 </div>

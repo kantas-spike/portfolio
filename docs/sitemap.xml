@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/</loc>
+    <lastmod>2023-09-07T01:05:07+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/vscode/</loc>
+    <lastmod>2023-09-07T01:05:07+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/til/2023/09/78-using_editorconfig_in_vscode/</loc>
+    <lastmod>2023-09-07T01:05:07+09:00</lastmod>
+  </url><url>
     <loc>https://kantas-spike.github.io/portfolio/ihc/idea_bank/</loc>
     <lastmod>2023-09-02T04:05:04+00:00</lastmod>
   </url><url>
@@ -24,9 +33,6 @@
     <lastmod>2023-07-31T17:16:06+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2023/07/77-leaning-arithmetic-and-logical-operation-of-hugo/</loc>
-    <lastmod>2023-07-31T17:16:06+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/</loc>
     <lastmod>2023-07-31T17:16:06+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/color/</loc>
@@ -337,9 +343,6 @@
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2022/12/35-switch-dev-or-release-with-makefile/</loc>
     <lastmod>2022-12-09T10:10:58+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/vscode/</loc>
-    <lastmod>2022-12-09T03:28:37+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2022/12/34-switch-terminal-between-code-with-vscode/</loc>
     <lastmod>2022-12-09T03:28:37+09:00</lastmod>
