@@ -9,6 +9,39 @@
     <copyright>© 2022 kanta&#39;s spike</copyright>
     <lastBuildDate>Fri, 22 Jul 2022 08:24:06 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>GitHubのコメントで複数のイシューをfixしたい</title>
+      <link>https://kantas-spike.github.io/portfolio/til/2023/09/81-fix-multi-issues-in-github/</link>
+      <pubDate>Fri, 29 Sep 2023 18:31:06 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/til/2023/09/81-fix-multi-issues-in-github/</guid>
+      <description>&lt;p&gt;GitHubのプルリクエストのコメントに&lt;code&gt;fix #xx&lt;/code&gt;のようにイシュー番号を指定すると該当イシューをクローズできる。&lt;/p&gt;
+&lt;p&gt;同様の方法で複数のイシューをまとめてクローズしたい。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>JSONの文字列値にダブルクォーテーションを含めたい</title>
+      <link>https://kantas-spike.github.io/portfolio/til/2023/09/80-use-dobulequote-in-json-string/</link>
+      <pubDate>Fri, 29 Sep 2023 16:25:24 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/til/2023/09/80-use-dobulequote-in-json-string/</guid>
+      <description>&lt;p&gt;JSONの文字列値にダブルクォーテーションを含めるため、以下のように記載したらエラーとなった。
+正しい表記となるよう修正したい。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nt&#34;&gt;&amp;#34;string&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;文字列&amp;#34;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;です&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hugoのpartialテンプレートに複数の引数を渡したい</title>
+      <link>https://kantas-spike.github.io/portfolio/til/2023/09/79-pass_multi_paramas_to_partial/</link>
+      <pubDate>Fri, 29 Sep 2023 09:32:30 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/til/2023/09/79-pass_multi_paramas_to_partial/</guid>
+      <description>&lt;p&gt;Hugoのpartialテンプレートに、コンテキスト(&lt;code&gt;.&lt;/code&gt;)以外にも、追加の情報を渡したい。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>エディタ基本設定をリポジトリに登録したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/09/78-using_editorconfig_in_vscode/</link>
       <pubDate>Thu, 07 Sep 2023 01:05:07 +0900</pubDate>

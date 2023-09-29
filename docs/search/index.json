@@ -1,6 +1,21 @@
 {
     "results": [
     {
+        "href": "https://kantas-spike.github.io/portfolio/til/2023/09/81-fix-multi-issues-in-github/",
+        "title": "GitHubのコメントで複数のイシューをfixしたい",
+        "tags": "github"
+    },
+    {
+        "href": "https://kantas-spike.github.io/portfolio/til/2023/09/80-use-dobulequote-in-json-string/",
+        "title": "JSONの文字列値にダブルクォーテーションを含めたい",
+        "tags": "javascript json"
+    },
+    {
+        "href": "https://kantas-spike.github.io/portfolio/til/2023/09/79-pass_multi_paramas_to_partial/",
+        "title": "Hugoのpartialテンプレートに複数の引数を渡したい",
+        "tags": "hugo"
+    },
+    {
         "href": "https://kantas-spike.github.io/portfolio/til/2023/09/78-using_editorconfig_in_vscode/",
         "title": "エディタ基本設定をリポジトリに登録したい",
         "tags": "vscode"

@@ -2,8 +2,29 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/github/</loc>
+    <lastmod>2023-09-29T18:31:06+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/til/2023/09/81-fix-multi-issues-in-github/</loc>
+    <lastmod>2023-09-29T18:31:06+09:00</lastmod>
+  </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/</loc>
-    <lastmod>2023-09-07T01:05:07+09:00</lastmod>
+    <lastmod>2023-09-29T18:31:06+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/javascript/</loc>
+    <lastmod>2023-09-29T16:25:24+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/json/</loc>
+    <lastmod>2023-09-29T16:25:24+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/til/2023/09/80-use-dobulequote-in-json-string/</loc>
+    <lastmod>2023-09-29T16:25:24+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/hugo/</loc>
+    <lastmod>2023-09-29T09:32:30+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/til/2023/09/79-pass_multi_paramas_to_partial/</loc>
+    <lastmod>2023-09-29T09:32:30+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/vscode/</loc>
     <lastmod>2023-09-07T01:05:07+09:00</lastmod>
@@ -29,16 +50,10 @@
     <loc>https://kantas-spike.github.io/portfolio/ihc/pern/</loc>
     <lastmod>2023-08-09T22:26:49+00:00</lastmod>
   </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/hugo/</loc>
-    <lastmod>2023-07-31T17:16:06+09:00</lastmod>
-  </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2023/07/77-leaning-arithmetic-and-logical-operation-of-hugo/</loc>
     <lastmod>2023-07-31T17:16:06+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/color/</loc>
-    <lastmod>2023-07-28T16:23:27+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/javascript/</loc>
     <lastmod>2023-07-28T16:23:27+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2023/07/76-convert-css-color-notations-with-js/</loc>
@@ -78,9 +93,6 @@
     <lastmod>2023-07-10T06:01:59+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2023/07/73-cannot-load-exported-nextjs-app-in-github-pages/</loc>
-    <lastmod>2023-07-10T01:17:23+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/github/</loc>
     <lastmod>2023-07-10T01:17:23+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2023/07/72-publich-next.js-app-with-hugo/</loc>

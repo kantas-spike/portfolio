@@ -7,7 +7,43 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>© 2022 kanta&#39;s spike</copyright>
-    <lastBuildDate>Thu, 07 Sep 2023 01:05:07 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 29 Sep 2023 18:31:06 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GitHub</title>
+      <link>https://kantas-spike.github.io/portfolio/tags/github/</link>
+      <pubDate>Fri, 29 Sep 2023 18:31:06 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/tags/github/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>javascript</title>
+      <link>https://kantas-spike.github.io/portfolio/tags/javascript/</link>
+      <pubDate>Fri, 29 Sep 2023 16:25:24 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/tags/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>json</title>
+      <link>https://kantas-spike.github.io/portfolio/tags/json/</link>
+      <pubDate>Fri, 29 Sep 2023 16:25:24 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/tags/json/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hugo</title>
+      <link>https://kantas-spike.github.io/portfolio/tags/hugo/</link>
+      <pubDate>Fri, 29 Sep 2023 09:32:30 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>vscode</title>
       <link>https://kantas-spike.github.io/portfolio/tags/vscode/</link>
@@ -18,29 +54,11 @@
     </item>
     
     <item>
-      <title>hugo</title>
-      <link>https://kantas-spike.github.io/portfolio/tags/hugo/</link>
-      <pubDate>Mon, 31 Jul 2023 17:16:06 +0900</pubDate>
-      
-      <guid>https://kantas-spike.github.io/portfolio/tags/hugo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>color</title>
       <link>https://kantas-spike.github.io/portfolio/tags/color/</link>
       <pubDate>Fri, 28 Jul 2023 16:23:27 +0900</pubDate>
       
       <guid>https://kantas-spike.github.io/portfolio/tags/color/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>javascript</title>
-      <link>https://kantas-spike.github.io/portfolio/tags/javascript/</link>
-      <pubDate>Fri, 28 Jul 2023 16:23:27 +0900</pubDate>
-      
-      <guid>https://kantas-spike.github.io/portfolio/tags/javascript/</guid>
       <description></description>
     </item>
     
@@ -95,15 +113,6 @@
       <pubDate>Mon, 10 Jul 2023 06:01:59 +0900</pubDate>
       
       <guid>https://kantas-spike.github.io/portfolio/tags/next.js/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>GitHub</title>
-      <link>https://kantas-spike.github.io/portfolio/tags/github/</link>
-      <pubDate>Mon, 10 Jul 2023 01:17:23 +0900</pubDate>
-      
-      <guid>https://kantas-spike.github.io/portfolio/tags/github/</guid>
       <description></description>
     </item>
     

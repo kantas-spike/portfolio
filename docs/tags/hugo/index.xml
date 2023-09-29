@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>© 2022 kanta&#39;s spike</copyright>
-    <lastBuildDate>Mon, 31 Jul 2023 17:16:06 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 29 Sep 2023 09:32:30 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugoのpartialテンプレートに複数の引数を渡したい</title>
+      <link>https://kantas-spike.github.io/portfolio/til/2023/09/79-pass_multi_paramas_to_partial/</link>
+      <pubDate>Fri, 29 Sep 2023 09:32:30 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/til/2023/09/79-pass_multi_paramas_to_partial/</guid>
+      <description>&lt;p&gt;Hugoのpartialテンプレートに、コンテキスト(&lt;code&gt;.&lt;/code&gt;)以外にも、追加の情報を渡したい。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Hugoで四則演算や論理演算や比較演算を使いたい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/07/77-leaning-arithmetic-and-logical-operation-of-hugo/</link>
