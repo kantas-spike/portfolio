@@ -2,13 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/git/</loc>
+    <lastmod>2023-10-26T16:29:46+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/til/2023/10/84-remove-git-submodule/</loc>
+    <lastmod>2023-10-26T16:29:46+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/hugo/</loc>
+    <lastmod>2023-10-26T16:29:46+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/</loc>
+    <lastmod>2023-10-26T16:29:46+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/til/2023/10/83-migrate-a-theme-of-hugo-to-module/</loc>
+    <lastmod>2023-10-26T14:16:56+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/til/2023/09/82-check-nodejs-version/</loc>
+    <lastmod>2023-09-30T01:42:04+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/nodejs/</loc>
+    <lastmod>2023-09-30T01:42:04+09:00</lastmod>
+  </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/github/</loc>
     <lastmod>2023-09-29T18:31:06+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2023/09/81-fix-multi-issues-in-github/</loc>
-    <lastmod>2023-09-29T18:31:06+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/</loc>
     <lastmod>2023-09-29T18:31:06+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/javascript/</loc>
@@ -19,9 +37,6 @@
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2023/09/80-use-dobulequote-in-json-string/</loc>
     <lastmod>2023-09-29T16:25:24+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/hugo/</loc>
-    <lastmod>2023-09-29T09:32:30+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2023/09/79-pass_multi_paramas_to_partial/</loc>
     <lastmod>2023-09-29T09:32:30+09:00</lastmod>
@@ -118,9 +133,6 @@
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/dialogues/05-tag-name/</loc>
     <lastmod>2023-06-29T05:51:41+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/git/</loc>
-    <lastmod>2023-06-22T14:57:38+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2023/06/70-deleting-merged-local-branch-in-git/</loc>
     <lastmod>2023-06-22T14:57:38+09:00</lastmod>

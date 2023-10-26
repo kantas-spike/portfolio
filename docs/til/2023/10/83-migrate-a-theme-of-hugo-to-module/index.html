@@ -1,0 +1,299 @@
+<!doctype html>
+<html><head>
+    <title>
+        Hugoのテーマをモジュールに移行したい | kanta&#39;s spike
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="https://kantas-spike.github.io/portfolio/fonts/NotoSansJP-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" href="https://kantas-spike.github.io/portfolio/fonts/NotoSansJP-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+<link rel="stylesheet" href="https://kantas-spike.github.io/portfolio/css/fonts.978d33a6dcb8af5cc3fc6d102e0cbd3d4f2452dcaae53ff12d45609137df3ed9.css">
+    <link rel="stylesheet" href="https://kantas-spike.github.io/portfolio/css/theme.min.ff2fa79f97f35cfc84641150adb8290d4ea82ca17a8dd28a0fd26a99f69eb2a6.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" /><link rel="stylesheet" href="https://kantas-spike.github.io/portfolio/css/syntax.min.70c02160dee6bd55baaa2b10019d735294451730e282f7fa645466392ba0cfb6.css"><link rel="apple-touch-icon" sizes="180x180" href="https://kantas-spike.github.io/portfolio/icon180.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://kantas-spike.github.io/portfolio/icon32.png">
+<link rel="icon" type="image/svg+xml" href="https://kantas-spike.github.io/portfolio/icon.svg">
+<link rel="manifest" href="https://kantas-spike.github.io/portfolio/site.webmanifest">
+
+</head><body class="bg-background text-primary-dark pb-4"><header class="bg-primary-dark text-site_title text-6xl font-serif font-extrabold px-4 py-3">
+    <h1 class="container mx-auto px-4"><a href="https://kantas-spike.github.io/portfolio/">kanta&#39;s spike</a></h1>
+</header>
+<input type="checkbox" name="burger_cbx" id="burger_cbx">
+<label for="burger_cbx" class="burger_label">
+    <span class="burger_icon"><svg version="1.1" viewBox="0 0 12.7 12.7" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <rect x="1.0369" y="2.1007" width="10.634" height="1.0426" ry=".5213"/>
+  <rect x="1.0369" y="4.571" width="10.634" height="1.0426" ry=".5213"/>
+  <rect x="1.0369" y="7.0413" width="10.634" height="1.0426" ry=".5213"/>
+  <rect x="1.0369" y="9.5115" width="10.634" height="1.0426" ry=".5213"/>
+ </g>
+</svg>
+</span>
+</label>
+<label for="burger_cbx" class="close_label">
+    <span class="close_icon"><svg version="1.1" viewBox="0 0 12.7 12.7" xmlns="http://www.w3.org/2000/svg">
+ <rect transform="rotate(45.535)" x="3.6678" y="-.6148" width="10.634" height="1.0426" ry=".5213"/>
+ <rect transform="rotate(135.53)" x="-5.4104" y="-9.5059" width="10.634" height="1.0426" ry=".5213"/>
+</svg>
+</span>
+</label>
+<div class="nav_area">
+    <nav class="container mx-auto bg-primary text-on-primary text-center flex flex-col md:flex-row justify-start">
+            <a href="https://kantas-spike.github.io/portfolio/" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Home</a>
+            <a href="https://kantas-spike.github.io/portfolio/til" class="box-border flex-1 text-center no-underline bg-primary-light text-on-primary-light font-bold py-2">TIL</a>
+            <a href="https://kantas-spike.github.io/portfolio/dialogues" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Dialogues</a>
+            <a href="https://kantas-spike.github.io/portfolio/articles" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Articles</a>
+            <a href="https://kantas-spike.github.io/portfolio/mytools" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">My Tools</a>
+            <a href="https://kantas-spike.github.io/portfolio/ihc" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">IHC</a>
+            <a href="https://kantas-spike.github.io/portfolio/tags" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Tags</a>
+        <div class="flex-none" id="search_menu"></div>
+    </nav>
+</div>
+<main id="content" class="container mx-auto bg-surface pt-4 pb-8">
+<div class="area_border px-4 py-3 mx-4 md:mx-auto pb-4 max-w-[60rem]">
+  
+
+
+
+<div class="mb-4">
+    <h3 class="border-b-4 border-primary-dark text-primary-dark text-xl font-bold tracking-wider pl-[1em] -indent-[1ex]"><i class="fa-solid fa-circle-info"></i> <a href="https://kantas-spike.github.io/portfolio/til/2023/10/83-migrate-a-theme-of-hugo-to-module/">Hugoのテーマをモジュールに移行したい</a></h3>
+    <div class="flex justify-between mt-1 mx-2">
+        <div>
+            <ul class="flex gap-2 justify-end">
+            
+            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/hugo/">#hugo</a></li>
+            
+            </ul>
+        </div>
+        <div>
+            
+            
+            <div class="text-right text-sm font-bold">2023/10/26
+                
+                    <span class="text-xs text-red-600 font-thin">New</span>
+                
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+  <div class="article mx-2"><p>Hugoのテーマをモジュールとして利用したい。</p>
+<p>これまでは、本サイトではGitHubで開発している<a href="https://github.com/kantas-spike/kantas-theme">自作のHugoテーマ</a>をコンポーネントとして利用してきた。<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+<div class="mermaid">flowchart LR
+site[Hugoサイト]
+theme[Hugoテーマ]
+
+site-- コンポーネントとして利用 -->theme
+</div>
+<p>コンポーネント方式のテーマ導入に必要なことは以下になる。</p>
+<table>
+<thead>
+<tr>
+<th>サイト側</th>
+<th>テーマ側</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>git submodule add URL</code>でテーマをダウンロード</td>
+<td>なし</td>
+</tr>
+<tr>
+<td>hugo.tomlの<code>theme</code>にテーマ名を設定</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Hugoには<a href="https://gohugo.io/hugo-modules/use-modules/#use-a-module-for-a-theme">Hugo Modules</a>という方式もあるため、そちらに移行したい。</p>
+<div class="mermaid">flowchart LR
+site[Hugoサイト]
+theme[Hugoテーマ]
+site-- モジュールとして利用 -->theme
+</div>
+<h3 id="解決策">解決策</h3>
+<h4 id="前提">前提</h4>
+<p>Hugo ModulesはGo言語のModule機能を利用しているため、予め<a href="https://go.dev/dl/">The Go Programming Language</a>のインストールが必要。 <sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></p>
+<h4 id="移行方法">移行方法</h4>
+<p>今回のモジュール方式でテーマ導入に必要なことは以下になる。</p>
+<table>
+<thead>
+<tr>
+<th>サイト側</th>
+<th>テーマ側</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>hugo mod init</code>でモジュール化</td>
+<td><code>hugo mod init</code>でモジュール化</td>
+</tr>
+<tr>
+<td>hugo.tomlの<code>module.imports</code>でテーマをインポート</td>
+<td></td>
+</tr>
+<tr>
+<td>必要に応じて、hugo.tomlの<code>module.mounts</code>でマウント</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>具体的な手順は以下となる。</p>
+<h5 id="手順1-テーマ側をhugoモジュール化">手順1. テーマ側をHugoモジュール化</h5>
+<p><a href="https://github.com/kantas-spike/kantas-theme">GitHubで管理している自作テーマ</a>をクローンする。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">git clone https://github.com/kantas-spike/kantas-theme.git
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> kantas-theme
+</span></span></code></pre></div><p>以下のコマンドを実行し、Hugoモジュール化する。</p>
+<p><code>hogo mod init</code>の後には、<code>github.com/&lt;your_user&gt;/&lt;your_project&gt;</code>を指定する必要がある。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">hugo mod init github.com/kantas-spike/kantas-theme
+</span></span></code></pre></div><p><code>go.mod</code>というファイルが追加されるので、コミットし、GitHubにプッシュする。</p>
+<h4 id="手順2-サイト側をhugoモジュール化">手順2. サイト側をHugoモジュール化</h4>
+<p>Hugoのモジュールを利用するためには、サイト側もモジュール化する必要がある。</p>
+<p>以下のコマンドを実行し、モジュール化する。</p>
+<p>サイトの場合、他のモジュールから利用されることはないため、
+<code>hogo mod init</code>の後には、適当な名前を付ける。今回は<code>myblog</code>を指定した。<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="nb">cd</span> myblog
+</span></span><span class="line"><span class="cl">hugo mod init myblog
+</span></span></code></pre></div><h4 id="手順3-サイト側のhugotomlを変更">手順3. サイト側のhugo.tomlを変更</h4>
+<ol>
+<li>
+<p>まず。<code>hugo.toml</code>の<code>theme</code>設定を削除する。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="c"># ...略...</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># 実際は以下の設定をコメントアウトではなく削除する</span>
+</span></span><span class="line"><span class="cl"><span class="c"># theme = &#39;kantas&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># ...略...</span>
+</span></span></code></pre></div></li>
+<li>
+<p><code>hugo.toml</code>でテーマをインポート</p>
+<p>以下を追加し、テーマをモジュールとしてインポートする。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="c"># ...略...</span>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">module</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="p">[[</span><span class="nx">module</span><span class="p">.</span><span class="nx">imports</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">path</span> <span class="p">=</span> <span class="s1">&#39;github.com/kantas-spike/kantas-theme&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="c"># ...略...</span>
+</span></span></code></pre></div></li>
+<li>
+<p><code>hugo.toml</code>に必要なファイルをマウントする</p>
+<p>本ブログでは、<code>tailwindcss</code>を採用している。
+<code>tailwindcss</code>の不要CSSクラスの削除用に、Hugoの<code>hugo_stats.json</code>を利用している。<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup></p>
+<p><code>hugo_stats.json</code>を生成・監視用の設定として以下を追加している。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="c"># テーマで使用するtailwindcss用の設定</span>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">build</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">writeStats</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">  <span class="p">[[</span><span class="nx">build</span><span class="p">.</span><span class="nx">cachebusters</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">source</span> <span class="p">=</span> <span class="s2">&#34;assets/watching/hugo_stats\\.json&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">target</span> <span class="p">=</span> <span class="s2">&#34;theme\\.css&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">[[</span><span class="nx">build</span><span class="p">.</span><span class="nx">cachebusters</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">source</span> <span class="p">=</span> <span class="s2">&#34;assets/js/.*\\.js&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">target</span> <span class="p">=</span> <span class="s2">&#34;theme\\.css&#34;</span>
+</span></span></code></pre></div><p>この監視用の<code>[[build.cachebusters]]</code>設定では、<code>source</code>にマウントされた仮想ファイルシステム上のパスを指定する必要がある。
+そのため、以下の<code>mount</code>設定も追加している。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="c"># ...略...</span>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">module</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">   <span class="c"># (A)のみ設定すると、</span>
+</span></span><span class="line"><span class="cl">   <span class="c"># デフォルト設定の&#34;assets&#34;のマウントが外れるため明示的に設定</span>
+</span></span><span class="line"><span class="cl">   <span class="p">[[</span><span class="nx">module</span><span class="p">.</span><span class="nx">mounts</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl">     <span class="nx">source</span> <span class="p">=</span> <span class="s2">&#34;assets&#34;</span>
+</span></span><span class="line"><span class="cl">     <span class="nx">target</span> <span class="p">=</span> <span class="s2">&#34;assets&#34;</span>
+</span></span><span class="line"><span class="cl">   <span class="p">[[</span><span class="nx">module</span><span class="p">.</span><span class="nx">mounts</span><span class="p">]]</span> <span class="c"># (A)</span>
+</span></span><span class="line"><span class="cl">     <span class="nx">source</span> <span class="p">=</span> <span class="s2">&#34;hugo_stats.json&#34;</span>
+</span></span><span class="line"><span class="cl">     <span class="nx">target</span> <span class="p">=</span> <span class="s2">&#34;assets/watching/hugo_stats.json&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="c"># ...略...</span>
+</span></span></code></pre></div><p>まとめると、<code>[module]</code>と<code>[build]</code>で<code>hugo.toml</code>に以下の設定をしている。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="c"># ...略...</span>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">module</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"> <span class="c"># テーマで使用するアセットの登録</span>
+</span></span><span class="line"><span class="cl"> <span class="p">[[</span><span class="nx">module</span><span class="p">.</span><span class="nx">mounts</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl">   <span class="nx">source</span> <span class="p">=</span> <span class="s2">&#34;assets&#34;</span>
+</span></span><span class="line"><span class="cl">   <span class="nx">target</span> <span class="p">=</span> <span class="s2">&#34;assets&#34;</span>
+</span></span><span class="line"><span class="cl"> <span class="p">[[</span><span class="nx">module</span><span class="p">.</span><span class="nx">mounts</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl">   <span class="nx">source</span> <span class="p">=</span> <span class="s2">&#34;hugo_stats.json&#34;</span>
+</span></span><span class="line"><span class="cl">   <span class="nx">target</span> <span class="p">=</span> <span class="s2">&#34;assets/watching/hugo_stats.json&#34;</span>
+</span></span><span class="line"><span class="cl"> <span class="c"># テーマのインポート</span>
+</span></span><span class="line"><span class="cl"> <span class="p">[[</span><span class="nx">module</span><span class="p">.</span><span class="nx">imports</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl">   <span class="nx">path</span> <span class="p">=</span> <span class="s1">&#39;github.com/kantas-spike/kantas-theme&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"> <span class="c"># テーマで使用するtailwindcss用の設定</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"> <span class="p">[</span><span class="nx">build</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">   <span class="nx">writeStats</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">   <span class="p">[[</span><span class="nx">build</span><span class="p">.</span><span class="nx">cachebusters</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl">     <span class="nx">source</span> <span class="p">=</span> <span class="s2">&#34;assets/watching/hugo_stats\\.json&#34;</span>
+</span></span><span class="line"><span class="cl">     <span class="nx">target</span> <span class="p">=</span> <span class="s2">&#34;theme\\.css&#34;</span>
+</span></span><span class="line"><span class="cl">   <span class="p">[[</span><span class="nx">build</span><span class="p">.</span><span class="nx">cachebusters</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl">     <span class="nx">source</span> <span class="p">=</span> <span class="s2">&#34;assets/js/.\*\\.js&#34;</span>
+</span></span><span class="line"><span class="cl">     <span class="nx">target</span> <span class="p">=</span> <span class="s2">&#34;theme\\.css&#34;</span>
+</span></span><span class="line"><span class="cl"> <span class="c"># ...略...</span>
+</span></span></code></pre></div></li>
+<li>
+<p>最後に、テーマ側に必要なパッケージをサイト側にインストールする</p>
+<p>以下を実行して、テーマで利用しているパッケージをサイト側で収集する。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">hugo mod npm pack
+</span></span></code></pre></div><p><code>package.json</code>に、テーマに必要なパッケージが反映されるので、
+以下を実行し、パッケージをインストールする。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">npm install
+</span></span></code></pre></div></li>
+</ol>
+<h3 id="参考">参考</h3>
+<ul>
+<li><a href="https://gohugo.io/hugo-modules/use-modules/#use-a-module-for-a-theme">Use Hugo Modules | Hugo</a></li>
+<li><a href="https://maku77.github.io/p/bqar8o6/">Hugo Modules の仕組みで Hugo サイト用のコンテンツを分割して管理する - まくまく Hugo ノート</a></li>
+<li><a href="https://github.com/kantas-spike/kantas-theme/blob/main/README.md">kantas-spike/kantas-theme: Hugo theme for programming learner portfolio</a></li>
+<li><a href="https://kantas-spike.github.io/portfolio/til/2023/10/84-remove-git-submodule/">gitのsubmoduleを削除したい | kanta&rsquo;s spike</a></li>
+</ul>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p><a href="https://gohugo.io/getting-started/quick-start/">Quick start | Hugo</a>に従った方法である。&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p><a href="https://gohugo.io/hugo-modules/use-modules/#prerequisite">Prerequisite | Use Hugo Modules | Hugo</a>&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3">
+<p>サイトはGitHubではなく、ローカルの<code>myblog</code>フォルダーで管理されているものとする。&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4">
+<p><a href="https://gohugo.io/getting-started/configuration/#configure-build">Configure Hugo | Hugo</a>, <a href="https://gohugo.io/getting-started/configuration/#configure-cache-busters">Configure Hugo | Hugo</a>&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div></div>
+  <div class="mt-6">
+    <div class="border-t-2 border-primary-dark px-2 pt-2 text-right">
+        <span class="text-sm">作成日: 2023/10/26</span></div>
+</div>
+
+</div>
+
+
+    </main><footer class="bg-primary-dark text-center text-on-primary-dark fixed bottom-0 w-full h-8">
+    <div class="container mx-auto grid grid-cols-3">
+        <div class="col-start-1 col-span-2 ml-2 md:ml-0 md:col-start-2 md:col-span-1">
+            <div class="text-left md:text-center text-sm pt-2">© 2022 kanta&#39;s spike</div>
+        </div>
+        <div class="col-start-3 flex justify-end gap-2 mr-2">
+            
+                
+            <a title="Twitter" class="text-2xl" href="https://twitter.com/KantasSpike"><i class="fa-brands fa-twitter-square"></i></a>
+                
+            <a title="Youtube" class="text-2xl" href="https://www.youtube.com/channel/UCnVBuUGMYAt7ZuIkadxnMfw"><i class="fa-brands fa-youtube-square"></i></a>
+                
+            <a title="GitHub" class="text-2xl" href="https://github.com/kantas-spike"><i class="fa-brands fa-github-square"></i></a>
+                
+            <a title="Blog" class="text-2xl" href="https://kantas-spike.github.io/portfolio/"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                
+            
+        </div>
+    </div>
+</footer>
+    <script type="module">
+      import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
+      mermaid.initialize({ startOnLoad: true });
+    </script>
+     
+
+
+
+
+<script defer type="text/javascript" src="https://kantas-spike.github.io/portfolio/js/search-form.dd7ad4e4f203f408d461506b73a7cb128e641d61d86c7695ca9d2cd5e2768597efa3c2663c7a204016bb8d25de38097dc929682fc7aad45bd784ab2b4c3e6135.js" integrity="sha512-3XrU5PID9AjUYVBrc6fLEo5kHWHYbHaVyp0s1eJ2hZfvo8JmPHogQBa7jSXeOAl9ySloL8eq1FvXhKsrTD5hNQ=="></script></body>
+</html>

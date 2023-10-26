@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html><head>
     <title>
         HugoでcssのURLにハッシュを付与したい | kanta&#39;s spike
@@ -7,7 +7,7 @@
     <link rel="preload" href="https://kantas-spike.github.io/portfolio/fonts/NotoSansJP-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 <link rel="preload" href="https://kantas-spike.github.io/portfolio/fonts/NotoSansJP-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 <link rel="stylesheet" href="https://kantas-spike.github.io/portfolio/css/fonts.978d33a6dcb8af5cc3fc6d102e0cbd3d4f2452dcaae53ff12d45609137df3ed9.css">
-    <link rel="stylesheet" href="https://kantas-spike.github.io/portfolio/css/theme.min.35208669b72f05b988e5a43a095e3edd97cc408a1b4178b48cf1d5039fb3fada.css">
+    <link rel="stylesheet" href="https://kantas-spike.github.io/portfolio/css/theme.min.ff2fa79f97f35cfc84641150adb8290d4ea82ca17a8dd28a0fd26a99f69eb2a6.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" /><link rel="stylesheet" href="https://kantas-spike.github.io/portfolio/css/syntax.min.70c02160dee6bd55baaa2b10019d735294451730e282f7fa645466392ba0cfb6.css"><link rel="apple-touch-icon" sizes="180x180" href="https://kantas-spike.github.io/portfolio/icon180.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://kantas-spike.github.io/portfolio/icon32.png">
 <link rel="icon" type="image/svg+xml" href="https://kantas-spike.github.io/portfolio/icon.svg">
@@ -48,8 +48,8 @@
     </nav>
 </div>
 <main id="content" class="container mx-auto bg-surface pt-4 pb-8">
-<div class="area_border  px-4 py-3 mx-4  md:mx-10 pb-4">
-    
+<div class="area_border px-4 py-3 mx-4 md:mx-auto pb-4 max-w-[60rem]">
+  
 
 
 
@@ -74,8 +74,7 @@
     </div>
 </div>
 
-    <div class="article mx-2">
-        <p>キャッシュを回避するためにCSSやJavascriptなどのリソースファイルのURLにハッシュを付けたい。</p>
+  <div class="article mx-2"><p>キャッシュを回避するためにCSSやJavascriptなどのリソースファイルのURLにハッシュを付けたい。</p>
 <h3 id="解決策">解決策</h3>
 <p><code>resources.Fingerprint</code> を使う。</p>
 <p>以下のように、リソースファイルを取得時に、<code>resources.Fingerprint</code> を適用する。</p>
@@ -92,16 +91,16 @@
 </span></span></code></pre></div><h3 id="参考">参考</h3>
 <ul>
 <li><a href="https://gohugo.io/hugo-pipes/fingerprint/">Fingerprinting and SRI | Hugo</a></li>
-</ul>
-    </div>
-    <div class="mt-6">
+</ul></div>
+  <div class="mt-6">
     <div class="border-t-2 border-primary-dark px-2 pt-2 text-right">
         <span class="text-sm">作成日: 2022/09/04</span></div>
 </div>
 
 </div>
 
-        </main><footer class="bg-primary-dark text-center text-on-primary-dark fixed bottom-0 w-full h-8">
+
+    </main><footer class="bg-primary-dark text-center text-on-primary-dark fixed bottom-0 w-full h-8">
     <div class="container mx-auto grid grid-cols-3">
         <div class="col-start-1 col-span-2 ml-2 md:ml-0 md:col-start-2 md:col-span-1">
             <div class="text-left md:text-center text-sm pt-2">© 2022 kanta&#39;s spike</div>
@@ -120,8 +119,7 @@
             
         </div>
     </div>
-</footer>
-        
+</footer> 
 
 
 

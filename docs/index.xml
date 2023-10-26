@@ -9,6 +9,34 @@
     <copyright>© 2022 kanta&#39;s spike</copyright>
     <lastBuildDate>Fri, 22 Jul 2022 08:24:06 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>gitのsubmoduleを削除したい</title>
+      <link>https://kantas-spike.github.io/portfolio/til/2023/10/84-remove-git-submodule/</link>
+      <pubDate>Thu, 26 Oct 2023 16:29:46 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/til/2023/10/84-remove-git-submodule/</guid>
+      <description>&lt;p&gt;Hugoテーマのモジュール化に伴ない、不要になったgitのsubmoduleを削除したい。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hugoのテーマをモジュールに移行したい</title>
+      <link>https://kantas-spike.github.io/portfolio/til/2023/10/83-migrate-a-theme-of-hugo-to-module/</link>
+      <pubDate>Thu, 26 Oct 2023 14:16:56 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/til/2023/10/83-migrate-a-theme-of-hugo-to-module/</guid>
+      <description>&lt;p&gt;Hugoのテーマをモジュールとして利用したい。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Node.jsのバージョンを確認したい</title>
+      <link>https://kantas-spike.github.io/portfolio/til/2023/09/82-check-nodejs-version/</link>
+      <pubDate>Sat, 30 Sep 2023 01:42:04 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/til/2023/09/82-check-nodejs-version/</guid>
+      <description>&lt;p&gt;vscode拡張機能で利用できるNode.jsのAPIを確認するために、
+Electron上で動作しているNode.jsのバージョンを知りたい。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>GitHubのコメントで複数のイシューをfixしたい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/09/81-fix-multi-issues-in-github/</link>
       <pubDate>Fri, 29 Sep 2023 18:31:06 +0900</pubDate>

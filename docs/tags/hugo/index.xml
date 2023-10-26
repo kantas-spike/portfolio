@@ -7,7 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>© 2022 kanta&#39;s spike</copyright>
-    <lastBuildDate>Fri, 29 Sep 2023 09:32:30 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 Oct 2023 16:29:46 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>gitのsubmoduleを削除したい</title>
+      <link>https://kantas-spike.github.io/portfolio/til/2023/10/84-remove-git-submodule/</link>
+      <pubDate>Thu, 26 Oct 2023 16:29:46 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/til/2023/10/84-remove-git-submodule/</guid>
+      <description>&lt;p&gt;Hugoテーマのモジュール化に伴ない、不要になったgitのsubmoduleを削除したい。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hugoのテーマをモジュールに移行したい</title>
+      <link>https://kantas-spike.github.io/portfolio/til/2023/10/83-migrate-a-theme-of-hugo-to-module/</link>
+      <pubDate>Thu, 26 Oct 2023 14:16:56 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/til/2023/10/83-migrate-a-theme-of-hugo-to-module/</guid>
+      <description>&lt;p&gt;Hugoのテーマをモジュールとして利用したい。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Hugoのpartialテンプレートに複数の引数を渡したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/09/79-pass_multi_paramas_to_partial/</link>

@@ -1,6 +1,21 @@
 {
     "results": [
     {
+        "href": "https://kantas-spike.github.io/portfolio/til/2023/10/84-remove-git-submodule/",
+        "title": "gitのsubmoduleを削除したい",
+        "tags": "git hugo"
+    },
+    {
+        "href": "https://kantas-spike.github.io/portfolio/til/2023/10/83-migrate-a-theme-of-hugo-to-module/",
+        "title": "Hugoのテーマをモジュールに移行したい",
+        "tags": "hugo"
+    },
+    {
+        "href": "https://kantas-spike.github.io/portfolio/til/2023/09/82-check-nodejs-version/",
+        "title": "Node.jsのバージョンを確認したい",
+        "tags": "nodejs"
+    },
+    {
         "href": "https://kantas-spike.github.io/portfolio/til/2023/09/81-fix-multi-issues-in-github/",
         "title": "GitHubのコメントで複数のイシューをfixしたい",
         "tags": "github"
