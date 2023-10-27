@@ -1,6 +1,11 @@
 {
     "results": [
     {
+        "href": "https://kantas-spike.github.io/portfolio/til/2023/10/85-replace-theme-module-with-local-module/",
+        "title": "Hugoのテーマモジュールをローカルのモジュールに置き換えたい",
+        "tags": "hugo"
+    },
+    {
         "href": "https://kantas-spike.github.io/portfolio/til/2023/10/84-remove-git-submodule/",
         "title": "gitのsubmoduleを削除したい",
         "tags": "git hugo"
