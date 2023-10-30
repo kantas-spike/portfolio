@@ -1,7 +1,7 @@
 <!doctype html>
 <html><head>
     <title>
-        macos | kanta&#39;s spike
+        Vscodeでcommit(修正)をキャンセルしたい | kanta&#39;s spike
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preload" href="https://kantas-spike.github.io/portfolio/fonts/NotoSansJP-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
@@ -38,32 +38,30 @@
 <div class="nav_area">
     <nav class="container mx-auto bg-primary text-on-primary text-center flex flex-col md:flex-row justify-start">
             <a href="https://kantas-spike.github.io/portfolio/" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Home</a>
-            <a href="https://kantas-spike.github.io/portfolio/til" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">TIL</a>
+            <a href="https://kantas-spike.github.io/portfolio/til" class="box-border flex-1 text-center no-underline bg-primary-light text-on-primary-light font-bold py-2">TIL</a>
             <a href="https://kantas-spike.github.io/portfolio/dialogues" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Dialogues</a>
             <a href="https://kantas-spike.github.io/portfolio/articles" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Articles</a>
             <a href="https://kantas-spike.github.io/portfolio/mytools" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">My Tools</a>
             <a href="https://kantas-spike.github.io/portfolio/ihc" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">IHC</a>
-            <a href="https://kantas-spike.github.io/portfolio/tags" class="box-border flex-1 text-center no-underline bg-primary-light text-on-primary-light font-bold py-2">Tags</a>
+            <a href="https://kantas-spike.github.io/portfolio/tags" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Tags</a>
         <div class="flex-none" id="search_menu"></div>
     </nav>
 </div>
 <main id="content" class="container mx-auto bg-surface pt-4 pb-8">
-<h3 class="page_h3 my-4 mx-4"><i class="fa-solid fa-tag"></i> macos <span class="text-sm">(<a class="normal_link" href="https://kantas-spike.github.io/portfolio/tags/">他のタグ..</a>)</span></h2>
-
-<section class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-2 my-4 mx-4">
-    
-        <div class="area_border  px-4 py-3">
-    
+<div class="area_border px-4 py-3 mx-4 md:mx-auto pb-4 max-w-[60rem]">
+  
 
 
 
 <div class="mb-4">
-    <h3 class="border-b-4 border-primary-dark text-primary-dark text-xl font-bold tracking-wider pl-[1em] -indent-[1ex]"><i class="fa-solid fa-circle-info"></i> <a href="https://kantas-spike.github.io/portfolio/til/2023/10/87-remove-extended-attrs/">MacOSで拡張属性を削除したい</a></h3>
+    <h3 class="border-b-4 border-primary-dark text-primary-dark text-xl font-bold tracking-wider pl-[1em] -indent-[1ex]"><i class="fa-solid fa-circle-info"></i> <a href="https://kantas-spike.github.io/portfolio/til/2023/10/86-canceling-git-commit---amend/">Vscodeでcommit(修正)をキャンセルしたい</a></h3>
     <div class="flex justify-between mt-1 mx-2">
         <div>
             <ul class="flex gap-2 justify-end">
             
-            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/macos/">#macos</a></li>
+            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/vscode/">#vscode</a></li>
+            
+            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/git/">#git</a></li>
             
             </ul>
         </div>
@@ -80,83 +78,23 @@
     </div>
 </div>
 
-    <div class="article mx-2">
-        <p>ダウンロードしたファイルなどを<code>ls -l</code>すると<code>@</code>が付く。</p>
-<p>これは、<code>Extended Attributes(拡張属性)</code>と呼ぶそうだ。
-この<code>拡張属性</code>を削除したい。</p>
-    </div>
-</div>
-    
-        <div class="area_border  px-4 py-3">
-    
-
-
-
-<div class="mb-4">
-    <h3 class="border-b-4 border-primary-dark text-primary-dark text-xl font-bold tracking-wider pl-[1em] -indent-[1ex]"><i class="fa-solid fa-circle-info"></i> <a href="https://kantas-spike.github.io/portfolio/til/2023/02/42-run-shellscript-using-spotlight/">Spotlightからシェルスクリプトを呼び出す</a></h3>
-    <div class="flex justify-between mt-1 mx-2">
-        <div>
-            <ul class="flex gap-2 justify-end">
-            
-            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/macos/">#macos</a></li>
-            
-            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/spotlight/">#spotlight</a></li>
-            
-            </ul>
-        </div>
-        <div>
-            
-            
-            <div class="text-right text-sm font-bold">2023/02/07
-                
-            </div>
-            
-        </div>
-    </div>
+  <div class="article mx-2"><p>vscodeの<code>コミット(修正)</code>をキャンセルしたい。</p>
+<p>vscodeのソース管理で、<code>コミット(修正)</code>をクリックし、エディターにコミットメッセージが表示されるが、
+この状態でキャンセルしたい場合どうすればいい?</p>
+<p>そのまま、エディターを閉じるとコミットされてしまう。</p>
+<h3 id="解決策">解決策</h3>
+<p>エディターのコミットメッセージを全て削除してから保存すると、<code>コミット(修正)</code>はキャンセルされる。</p>
+<h3 id="参考">参考</h3>
+<ul>
+<li><a href="https://mz-kb.com/blog/2018/07/12/git-commit-amend-how-to-cancel/">git commit -amendを取り消すorキャンセルする方法 - まさかろぐ</a></li>
+</ul></div>
+  <div class="mt-6">
+    <div class="border-t-2 border-primary-dark px-2 pt-2 text-right">
+        <span class="text-sm">作成日: 2023/10/31</span></div>
 </div>
 
-    <div class="article mx-2">
-        <p>macOSのSpotlightからシェルスクリプトを呼び出したい。</p>
-    </div>
-</div>
-    
-        <div class="area_border  px-4 py-3">
-    
-
-
-
-<div class="mb-4">
-    <h3 class="border-b-4 border-primary-dark text-primary-dark text-xl font-bold tracking-wider pl-[1em] -indent-[1ex]"><i class="fa-solid fa-circle-info"></i> <a href="https://kantas-spike.github.io/portfolio/til/2022/11/30-add-finder-service-of-vscode/">MacOSのFinderにVScodeを開く機能を追加したい</a></h3>
-    <div class="flex justify-between mt-1 mx-2">
-        <div>
-            <ul class="flex gap-2 justify-end">
-            
-            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/vscode/">#vscode</a></li>
-            
-            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/macos/">#macos</a></li>
-            
-            </ul>
-        </div>
-        <div>
-            
-            
-            <div class="text-right text-sm font-bold">2022/11/14
-                
-            </div>
-            
-        </div>
-    </div>
 </div>
 
-    <div class="article mx-2">
-        <p>MacOSのFinderでフォルダを選択して、右クリックですぐにVSCodeで開きたい。</p>
-    </div>
-</div>
-    
-</section>
-<div>
-    
-</div>
 
     </main><footer class="bg-primary-dark text-center text-on-primary-dark fixed bottom-0 w-full h-8">
     <div class="container mx-auto grid grid-cols-3">

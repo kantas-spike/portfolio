@@ -1,6 +1,16 @@
 {
     "results": [
     {
+        "href": "https://kantas-spike.github.io/portfolio/til/2023/10/87-remove-extended-attrs/",
+        "title": "MacOSで拡張属性を削除したい",
+        "tags": "macos"
+    },
+    {
+        "href": "https://kantas-spike.github.io/portfolio/til/2023/10/86-canceling-git-commit---amend/",
+        "title": "Vscodeでcommit(修正)をキャンセルしたい",
+        "tags": "vscode git"
+    },
+    {
         "href": "https://kantas-spike.github.io/portfolio/til/2023/10/85-replace-theme-module-with-local-module/",
         "title": "Hugoのテーマモジュールをローカルのモジュールに置き換えたい",
         "tags": "hugo"

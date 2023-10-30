@@ -2,17 +2,29 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/macos/</loc>
+    <lastmod>2023-10-31T04:56:13+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/til/2023/10/87-remove-extended-attrs/</loc>
+    <lastmod>2023-10-31T04:56:13+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/</loc>
+    <lastmod>2023-10-31T04:56:13+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/git/</loc>
+    <lastmod>2023-10-31T04:42:57+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/vscode/</loc>
+    <lastmod>2023-10-31T04:42:57+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/til/2023/10/86-canceling-git-commit---amend/</loc>
+    <lastmod>2023-10-31T04:42:57+09:00</lastmod>
+  </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/hugo/</loc>
     <lastmod>2023-10-27T10:20:16+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2023/10/85-replace-theme-module-with-local-module/</loc>
     <lastmod>2023-10-27T10:20:16+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/</loc>
-    <lastmod>2023-10-27T10:20:16+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/git/</loc>
-    <lastmod>2023-10-26T16:29:46+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2023/10/84-remove-git-submodule/</loc>
     <lastmod>2023-10-26T16:29:46+09:00</lastmod>
@@ -43,9 +55,6 @@
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2023/09/79-pass_multi_paramas_to_partial/</loc>
     <lastmod>2023-09-29T09:32:30+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/vscode/</loc>
-    <lastmod>2023-09-07T01:05:07+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2023/09/78-using_editorconfig_in_vscode/</loc>
     <lastmod>2023-09-07T01:05:07+09:00</lastmod>
@@ -307,9 +316,6 @@
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/mytools/create_subtitle_image/</loc>
     <lastmod>2023-02-07T11:30:15+00:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/macos/</loc>
-    <lastmod>2023-02-07T00:30:31+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/spotlight/</loc>
     <lastmod>2023-02-07T00:30:31+09:00</lastmod>

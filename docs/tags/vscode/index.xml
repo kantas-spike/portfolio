@@ -7,7 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>© 2022 kanta&#39;s spike</copyright>
-    <lastBuildDate>Thu, 07 Sep 2023 01:05:07 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/vscode/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 31 Oct 2023 04:42:57 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/vscode/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vscodeでcommit(修正)をキャンセルしたい</title>
+      <link>https://kantas-spike.github.io/portfolio/til/2023/10/86-canceling-git-commit---amend/</link>
+      <pubDate>Tue, 31 Oct 2023 04:42:57 +0900</pubDate>
+      
+      <guid>https://kantas-spike.github.io/portfolio/til/2023/10/86-canceling-git-commit---amend/</guid>
+      <description>&lt;p&gt;vscodeの&lt;code&gt;コミット(修正)&lt;/code&gt;をキャンセルしたい。&lt;/p&gt;
+&lt;p&gt;vscodeのソース管理で、&lt;code&gt;コミット(修正)&lt;/code&gt;をクリックし、エディターにコミットメッセージが表示されるが、
+この状態でキャンセルしたい場合どうすればいい?&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>エディタ基本設定をリポジトリに登録したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/09/78-using_editorconfig_in_vscode/</link>
