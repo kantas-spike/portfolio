@@ -7,28 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>© 2022 kanta&#39;s spike</copyright>
-    <lastBuildDate>Thu, 09 Feb 2023 07:21:11 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/make/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 09 Feb 2023 07:21:11 +0900</lastBuildDate>
+    <atom:link href="https://kantas-spike.github.io/portfolio/tags/make/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>makeを使って『Make本』をメイクする</title>
       <link>https://kantas-spike.github.io/portfolio/articles/2023/02/10-make-make-book-using-make/</link>
       <pubDate>Thu, 09 Feb 2023 07:21:11 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/articles/2023/02/10-make-make-book-using-make/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://kantas-spike.github.io/portfolio/blog/2023/02/09-merge-make-book/&#34;&gt;PDFで公開されているMake本をマージする | kanta&amp;rsquo;s spike&lt;/a&gt;で、公開されている&lt;a href=&#34;https://www.oreilly.co.jp/library/4873112699/&#34;&gt;GNU Make 第3版&lt;/a&gt;のPDFをマージするシェルスクリプトを作成したことを紹介しました。&lt;/p&gt;
 &lt;p&gt;折角なので、この『Make本』を読んで学びたいと思います。
 そして、勉強の成果として、&lt;a href=&#34;https://kantas-spike.github.io/portfolio/blog/2023/02/09-merge-make-book/&#34;&gt;PDFで公開されているMake本をマージする | kanta&amp;rsquo;s spike&lt;/a&gt;で作成したシェルスクリプトを&lt;code&gt;makefile&lt;/code&gt;に置き換えたいと思います。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>PDFで公開されているMake本をマージする</title>
       <link>https://kantas-spike.github.io/portfolio/articles/2023/02/09-merge-make-book/</link>
       <pubDate>Wed, 08 Feb 2023 16:02:46 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/articles/2023/02/09-merge-make-book/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://www.oreilly.co.jp/library/4873112699/&#34;&gt;GNU Make 第3版&lt;/a&gt;がPDFで公開されていることを知りました。 &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 &lt;p&gt;ありがたいですね。でも、章ごとにPDFファイルが分割されているので少し読みにくいですね。
 章ごとに分割されたPDFを1つにまとめて、さらに目次情報を追加したいですね。&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

@@ -7,12 +7,12 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>© 2022 kanta&#39;s spike</copyright>
-    <lastBuildDate>Fri, 29 Sep 2023 16:25:24 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/json/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 29 Sep 2023 16:25:24 +0900</lastBuildDate>
+    <atom:link href="https://kantas-spike.github.io/portfolio/tags/json/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>JSONの文字列値にダブルクォーテーションを含めたい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/09/80-use-dobulequote-in-json-string/</link>
       <pubDate>Fri, 29 Sep 2023 16:25:24 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2023/09/80-use-dobulequote-in-json-string/</guid>
       <description>&lt;p&gt;JSONの文字列値にダブルクォーテーションを含めるため、以下のように記載したらエラーとなった。
 正しい表記となるよう修正したい。&lt;/p&gt;
@@ -21,6 +21,5 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
-    
   </channel>
 </rss>

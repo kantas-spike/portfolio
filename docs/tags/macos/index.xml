@@ -7,35 +7,30 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>© 2022 kanta&#39;s spike</copyright>
-    <lastBuildDate>Tue, 31 Oct 2023 04:56:13 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/macos/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 31 Oct 2023 04:56:13 +0900</lastBuildDate>
+    <atom:link href="https://kantas-spike.github.io/portfolio/tags/macos/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>MacOSで拡張属性を削除したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/10/87-remove-extended-attrs/</link>
       <pubDate>Tue, 31 Oct 2023 04:56:13 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2023/10/87-remove-extended-attrs/</guid>
       <description>&lt;p&gt;ダウンロードしたファイルなどを&lt;code&gt;ls -l&lt;/code&gt;すると&lt;code&gt;@&lt;/code&gt;が付く。&lt;/p&gt;
 &lt;p&gt;これは、&lt;code&gt;Extended Attributes(拡張属性)&lt;/code&gt;と呼ぶそうだ。
 この&lt;code&gt;拡張属性&lt;/code&gt;を削除したい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Spotlightからシェルスクリプトを呼び出す</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/02/42-run-shellscript-using-spotlight/</link>
       <pubDate>Tue, 07 Feb 2023 00:30:31 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2023/02/42-run-shellscript-using-spotlight/</guid>
       <description>&lt;p&gt;macOSのSpotlightからシェルスクリプトを呼び出したい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>MacOSのFinderにVScodeを開く機能を追加したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2022/11/30-add-finder-service-of-vscode/</link>
       <pubDate>Mon, 14 Nov 2022 09:32:58 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2022/11/30-add-finder-service-of-vscode/</guid>
       <description>&lt;p&gt;MacOSのFinderでフォルダを選択して、右クリックですぐにVSCodeで開きたい。&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

@@ -7,15 +7,14 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>© 2022 kanta&#39;s spike</copyright>
-    <lastBuildDate>Wed, 08 Feb 2023 09:15:06 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/mathjax/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 08 Feb 2023 09:15:06 +0900</lastBuildDate>
+    <atom:link href="https://kantas-spike.github.io/portfolio/tags/mathjax/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>HugoでMathJaxによる数式を表示したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/02/43-add-render-hook-for-mathjax/</link>
       <pubDate>Wed, 08 Feb 2023 09:15:06 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2023/02/43-add-render-hook-for-mathjax/</guid>
       <description>&lt;p&gt;ブログに数式を表示したい。&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

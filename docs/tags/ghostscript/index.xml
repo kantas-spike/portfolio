@@ -7,15 +7,14 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>© 2022 kanta&#39;s spike</copyright>
-    <lastBuildDate>Wed, 08 Feb 2023 19:54:23 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/ghostscript/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 08 Feb 2023 19:54:23 +0900</lastBuildDate>
+    <atom:link href="https://kantas-spike.github.io/portfolio/tags/ghostscript/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>複数のPDFファイルをマージしたい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/02/45-merge-pdfs-by-ghostscript/</link>
       <pubDate>Wed, 08 Feb 2023 19:54:23 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2023/02/45-merge-pdfs-by-ghostscript/</guid>
       <description>&lt;p&gt;複数あるPDFファイルをマージして1つのファイルにまとめたい。&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

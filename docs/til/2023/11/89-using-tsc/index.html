@@ -1,0 +1,212 @@
+<!doctype html>
+<html><head>
+    <title>
+        tscコマンドの基本的な使い方を知りたい | kanta&#39;s spike
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="https://kantas-spike.github.io/portfolio/fonts/NotoSansJP-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" href="https://kantas-spike.github.io/portfolio/fonts/NotoSansJP-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+<link rel="stylesheet" href="https://kantas-spike.github.io/portfolio/css/fonts.978d33a6dcb8af5cc3fc6d102e0cbd3d4f2452dcaae53ff12d45609137df3ed9.css">
+    <link rel="stylesheet" href="https://kantas-spike.github.io/portfolio/css/theme.min.ff2fa79f97f35cfc84641150adb8290d4ea82ca17a8dd28a0fd26a99f69eb2a6.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" /><link rel="stylesheet" href="https://kantas-spike.github.io/portfolio/css/syntax.min.70c02160dee6bd55baaa2b10019d735294451730e282f7fa645466392ba0cfb6.css"><link rel="apple-touch-icon" sizes="180x180" href="https://kantas-spike.github.io/portfolio/icon180.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://kantas-spike.github.io/portfolio/icon32.png">
+<link rel="icon" type="image/svg+xml" href="https://kantas-spike.github.io/portfolio/icon.svg">
+<link rel="manifest" href="https://kantas-spike.github.io/portfolio/site.webmanifest">
+
+</head><body class="bg-background text-primary-dark pb-4"><header class="bg-primary-dark text-site_title text-6xl font-serif font-extrabold px-4 py-3">
+    <h1 class="container mx-auto px-4"><a href="https://kantas-spike.github.io/portfolio/">kanta&#39;s spike</a></h1>
+</header>
+<input type="checkbox" name="burger_cbx" id="burger_cbx">
+<label for="burger_cbx" class="burger_label">
+    <span class="burger_icon"><svg version="1.1" viewBox="0 0 12.7 12.7" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <rect x="1.0369" y="2.1007" width="10.634" height="1.0426" ry=".5213"/>
+  <rect x="1.0369" y="4.571" width="10.634" height="1.0426" ry=".5213"/>
+  <rect x="1.0369" y="7.0413" width="10.634" height="1.0426" ry=".5213"/>
+  <rect x="1.0369" y="9.5115" width="10.634" height="1.0426" ry=".5213"/>
+ </g>
+</svg>
+</span>
+</label>
+<label for="burger_cbx" class="close_label">
+    <span class="close_icon"><svg version="1.1" viewBox="0 0 12.7 12.7" xmlns="http://www.w3.org/2000/svg">
+ <rect transform="rotate(45.535)" x="3.6678" y="-.6148" width="10.634" height="1.0426" ry=".5213"/>
+ <rect transform="rotate(135.53)" x="-5.4104" y="-9.5059" width="10.634" height="1.0426" ry=".5213"/>
+</svg>
+</span>
+</label>
+<div class="nav_area">
+    <nav class="container mx-auto bg-primary text-on-primary text-center flex flex-col md:flex-row justify-start">
+            <a href="https://kantas-spike.github.io/portfolio/" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Home</a>
+            <a href="https://kantas-spike.github.io/portfolio/til" class="box-border flex-1 text-center no-underline bg-primary-light text-on-primary-light font-bold py-2">TIL</a>
+            <a href="https://kantas-spike.github.io/portfolio/dialogues" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Dialogues</a>
+            <a href="https://kantas-spike.github.io/portfolio/articles" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Articles</a>
+            <a href="https://kantas-spike.github.io/portfolio/mytools" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">My Tools</a>
+            <a href="https://kantas-spike.github.io/portfolio/ihc" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">IHC</a>
+            <a href="https://kantas-spike.github.io/portfolio/tags" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Tags</a>
+        <div class="flex-none" id="search_menu"></div>
+    </nav>
+</div>
+<main id="content" class="container mx-auto bg-surface pt-4 pb-8">
+<div class="area_border px-4 py-3 mx-4 md:mx-auto pb-4 max-w-[60rem]">
+  
+
+
+
+<div class="mb-4">
+    <h3 class="border-b-4 border-primary-dark text-primary-dark text-xl font-bold tracking-wider pl-[1em] -indent-[1ex]"><i class="fa-solid fa-circle-info"></i> <a href="https://kantas-spike.github.io/portfolio/til/2023/11/89-using-tsc/">tscコマンドの基本的な使い方を知りたい</a></h3>
+    <div class="flex justify-between mt-1 mx-2">
+        <div>
+            <ul class="flex gap-2 justify-end">
+            
+            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/typescript/">#typescript</a></li>
+            
+            </ul>
+        </div>
+        <div>
+            
+            
+            <div class="text-right text-sm font-bold">2023/11/07
+                
+                    <span class="text-xs text-red-600 font-thin">New</span>
+                
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+  <div class="article mx-2"><p><code>tsc</code>は、主にTypeScriptで書かれたソースコードをJavaScriptにトランスパイルするためのコマンドです。</p>
+<p>TypeScriptの学習にあたり、基本的な<code>tsc</code>コマンドの使い方を知りたい。</p>
+<p>これまでに、<code>tsc</code>について学んだ内容を以下にまとめる。</p>
+<p>※TypeScriptはローカルにインストール、使用バージョンは<code>5.2.2</code></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">$ npm init -y
+</span></span><span class="line"><span class="cl">$ npm install typescript
+</span></span><span class="line"><span class="cl">$ npx tsc --version
+</span></span><span class="line"><span class="cl">Version 5.2.2
+</span></span></code></pre></div><p>※また、説明用にトランスパイル対象の以下のソースファイルを作成</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">touch index.ts
+</span></span></code></pre></div><h3 id="デフォルトのtsconfigjsonを作成する">デフォルトの<code>tsconfig.json</code>を作成する</h3>
+<p>まずは<code>tsc --init</code>でデフォルトのTypeScriptの構成ファイル(<code>tsconfig.json</code>)を作成する。</p>
+<p>以下を実行すると、推奨設定で<code>tsconfig.json</code>が作成される。
+また、ドキュメントへのリンクや、その他の設定可能な項目の説明がコメントとして記載される。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">$ npx tsc --init
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Created a new tsconfig.json with:
+</span></span><span class="line"><span class="cl">                                                                                                                     TS
+</span></span><span class="line"><span class="cl">  target: es2016
+</span></span><span class="line"><span class="cl">  module: commonjs
+</span></span><span class="line"><span class="cl">  strict: <span class="nb">true</span>
+</span></span><span class="line"><span class="cl">  esModuleInterop: <span class="nb">true</span>
+</span></span><span class="line"><span class="cl">  skipLibCheck: <span class="nb">true</span>
+</span></span><span class="line"><span class="cl">  forceConsistentCasingInFileNames: <span class="nb">true</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">You can learn more at https://aka.ms/tsconfig
+</span></span></code></pre></div><h3 id="構成ファイルtsconfigjsonの内容を確認する">構成ファイル<code>tsconfig.json</code>の内容を確認する</h3>
+<p>構成ファイル<code>tsconfig.json</code>の内容を確認するには<code>tsc --showConfig</code>を使う。</p>
+<p><code>npx tsc --init</code>で作成した<code>tsconfig.json</code>はコメントが沢山あり内容を把握しにくいが、
+以下のコマンドにより、設定内容を確認できる。</p>
+<p><code>files</code>項目には、<code>tsconfig.json</code>の設定により、プロジェクト内で処理対象となるソースファイルが自動的に検出される。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">$ npx tsc --showConfig
+</span></span><span class="line"><span class="cl"><span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;compilerOptions&#34;</span>: <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;target&#34;</span>: <span class="s2">&#34;es2016&#34;</span>,
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;module&#34;</span>: <span class="s2">&#34;commonjs&#34;</span>,
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;esModuleInterop&#34;</span>: true,
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;forceConsistentCasingInFileNames&#34;</span>: true,
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;strict&#34;</span>: true,
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;skipLibCheck&#34;</span>: <span class="nb">true</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>,
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;files&#34;</span>: <span class="o">[</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;./index.ts&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">]</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><h3 id="tscコマンドには直接ソースファイルのパスを指定しない">tscコマンドには直接ソースファイルのパスを指定しない</h3>
+<p>tscコマンドの引数にソースファイルのパスは指定すると<code>tsconfig.json</code>の設定は無効になる。</p>
+<p>引数に<code>index.ts</code>を指定して<code>tsc</code>を実行すると、トランスパイルされた<code>index.js</code>が作成されるが、
+この方法だと、<code>tsconfig.json</code>の設定が読み込まれない。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">npx tsc index.ts
+</span></span></code></pre></div><p><code>--showConfig</code>をつけて確認すると、前述の設定が読み込まれていないことがわかる。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">$ npx tsc index.ts --showConfig
+</span></span><span class="line"><span class="cl"><span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;compilerOptions&#34;</span>: <span class="o">{}</span>,
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;files&#34;</span>: <span class="o">[</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;./index.ts&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">]</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><p>トランスパイルする場合は、シンプルに以下を実行する。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">npx tsc
+</span></span></code></pre></div><h3 id="トランスパイルせずに型チェックのみ実施できる">トランスパイルせずに型チェックのみ実施できる</h3>
+<p>TypeScriptの型チェックだけ行う場合は、<code>npx tsc --noEmit</code>を実行する。</p>
+<p>以下を実行すると、トランスパイルせずに、型チェックのみ行う。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">npx tsc --noEmit
+</span></span></code></pre></div><h3 id="tscの監視モードを使うと便利である"><code>tsc</code>の監視モードを使うと便利である</h3>
+<p>毎回<code>npx tsc</code>コマンドを実行したくない場合は、<code>npx tsc --watch</code>でソースファイルを監視し自動でトランスパイルさせる。</p>
+<p><code>--watch</code>(or <code>-w</code>)オプションをつけて実行すると、<code>tsc</code>は監視モードになる。</p>
+<p>監視モードでは、<code>tsc</code>コマンドは終了せずに動き続け、<code>tsconfig.json</code>で処理対象となっているソースファイルに更新があった場合、自動的にトランスパイルする。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">npx tsc --watch
+</span></span></code></pre></div><h3 id="tscのビルドモードも便利である"><code>tsc</code>のビルドモードも便利である</h3>
+<p><code>--build</code>(or <code>-b</code>)オプションを実行すると、<code>tsc</code>はビルドモードになる。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">npx tsc --build
+</span></span></code></pre></div><p>ビルドモードは、他のプロジェクトを参照するように<code>tsconfig.json</code>で設定した場合に、参照先の複数プロジェクトをまとめてトランスパイルするためのモードである。</p>
+<p>毎回全てのプロジェクトをトランスパイルするのではなく、更新のあったプロジェクトのみを効率良くトランスパイルすることができる。</p>
+<p>また、ビルドモードにはいくつかオプション機能を利用でき、複数のプロジェクトを参照しない場合でも有用である。</p>
+<h4 id="プロジェクト内の生成ファイルをまとめて削除できる">プロジェクト内の生成ファイルをまとめて削除できる</h4>
+<p><code>--clean</code>オプションにより、プロジェクト内のトランスパイルにより生成されたファイルをまとめて削除できる。</p>
+<p>以下により、プロジェクト内のトランスパイル済みの<code>*.js</code>をまとめて削除できる。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">npx tsc --build --clean
+</span></span></code></pre></div><p>また、<code>--dry</code>オプションを付けることで、実際には削除せずに、何が行なわれるかだけを確認できる。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">$ npx tsc --build --clean --dry
+</span></span><span class="line"><span class="cl"><span class="o">[</span>7:02:35<span class="o">]</span> A non-dry build would delete the following files:
+</span></span><span class="line"><span class="cl">  * /Users/kanta/hacking/learning/006_learning-typescriptを学ぶ/01/index.js
+</span></span></code></pre></div><h4 id="監視モードも使える">監視モードも使える</h4>
+<p><code>--watch</code>(or <code>-w</code>)オプションも使える。</p>
+<p>通常の監視モードと同様に、更新のあったファイルを自動的にトランスパイルする。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">npx tsc --build --watch
+</span></span></code></pre></div><h3 id="参考">参考</h3>
+<ul>
+<li><a href="https://qiita.com/suin/items/f562db2bd15f1cc91017">tscの&ndash;showConfigオプション。これ、TypeScriptのコンパイル設定を確認するときに便利。 #TypeScript - Qiita</a></li>
+<li><a href="https://www.typescriptlang.org/docs/handbook/project-references.html#build-mode-for-typescript">Build Mode for TypeSc&hellip; # TypeScript: Documentation - Project References</a></li>
+<li><a href="https://www.oreilly.co.jp/books/9784814400362/">O&rsquo;Reilly Japan - 初めてのTypeScript</a>
+<ul>
+<li>13.1.2　監視モード</li>
+<li>13.5.5　noEmit</li>
+<li>13.10.3　ビルドモード</li>
+</ul>
+</li>
+</ul></div>
+  <div class="mt-6">
+    <div class="border-t-2 border-primary-dark px-2 pt-2 text-right">
+        <span class="text-sm">作成日: 2023/11/07</span></div>
+</div>
+
+</div>
+
+
+    </main><footer class="bg-primary-dark text-center text-on-primary-dark fixed bottom-0 w-full h-8">
+    <div class="container mx-auto grid grid-cols-3">
+        <div class="col-start-1 col-span-2 ml-2 md:ml-0 md:col-start-2 md:col-span-1">
+            <div class="text-left md:text-center text-sm pt-2">© 2022 kanta&#39;s spike</div>
+        </div>
+        <div class="col-start-3 flex justify-end gap-2 mr-2">
+            
+                
+            <a title="Twitter" class="text-2xl" href="https://twitter.com/KantasSpike"><i class="fa-brands fa-twitter-square"></i></a>
+                
+            <a title="Youtube" class="text-2xl" href="https://www.youtube.com/channel/UCnVBuUGMYAt7ZuIkadxnMfw"><i class="fa-brands fa-youtube-square"></i></a>
+                
+            <a title="GitHub" class="text-2xl" href="https://github.com/kantas-spike"><i class="fa-brands fa-github-square"></i></a>
+                
+            <a title="Blog" class="text-2xl" href="https://kantas-spike.github.io/portfolio/"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                
+            
+        </div>
+    </div>
+</footer> 
+
+
+
+
+<script defer type="text/javascript" src="https://kantas-spike.github.io/portfolio/js/search-form.dd7ad4e4f203f408d461506b73a7cb128e641d61d86c7695ca9d2cd5e2768597efa3c2663c7a204016bb8d25de38097dc929682fc7aad45bd784ab2b4c3e6135.js" integrity="sha512-3XrU5PID9AjUYVBrc6fLEo5kHWHYbHaVyp0s1eJ2hZfvo8JmPHogQBa7jSXeOAl9ySloL8eq1FvXhKsrTD5hNQ=="></script></body>
+</html>

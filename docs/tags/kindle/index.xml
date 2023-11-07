@@ -7,15 +7,14 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>© 2022 kanta&#39;s spike</copyright>
-    <lastBuildDate>Tue, 25 Apr 2023 17:54:10 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/kindle/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 25 Apr 2023 17:54:10 +0900</lastBuildDate>
+    <atom:link href="https://kantas-spike.github.io/portfolio/tags/kindle/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Kindle.appで指定した購入済み書籍を直接開きたい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/04/53-open-book-by-kindle-app/</link>
       <pubDate>Tue, 25 Apr 2023 17:54:10 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2023/04/53-open-book-by-kindle-app/</guid>
       <description>&lt;p&gt;macOSのKindle.appで指定した購入済み書籍を直接開きたい。&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

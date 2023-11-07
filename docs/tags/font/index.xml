@@ -7,30 +7,26 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>© 2022 kanta&#39;s spike</copyright>
-    <lastBuildDate>Wed, 07 Jun 2023 14:50:17 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/font/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 07 Jun 2023 14:50:17 +0900</lastBuildDate>
+    <atom:link href="https://kantas-spike.github.io/portfolio/tags/font/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>HugoでWebフォントを利用したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/06/66-use-web-fonts-with-hugo/</link>
       <pubDate>Wed, 07 Jun 2023 14:50:17 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2023/06/66-use-web-fonts-with-hugo/</guid>
       <description>&lt;p&gt;サブセット化したWebフォントをHugoで利用したい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>サブセット化したWebフォントを作成したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/06/65-create-a-subsetted-font/</link>
       <pubDate>Wed, 07 Jun 2023 08:43:25 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2023/06/65-create-a-subsetted-font/</guid>
       <description>&lt;p&gt;ブログで使用するためにサブセット化したWebフォントを作成したい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>古い看板に使うようなフォントファミリーを教えて</title>
       <link>https://kantas-spike.github.io/portfolio/dialogues/01-tell-me-font-family/</link>
       <pubDate>Thu, 02 Feb 2023 15:33:58 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/dialogues/01-tell-me-font-family/</guid>
       <description>&lt;div class=&#34;quote text-[#ececf1] relative p-2 pr-4 bg-[#343542] border border-[#2b2b32] rounded-sm mt-2 mb-6&#34;&gt;
     &lt;div class=&#34;font-serif text-3xl absolute top-0 left-0 py-2 pl-2 pr-1 font-bold text-[#ffffff]&#34;&gt;&lt;div class=&#34;w-[2.25rem] h-[2.25rem] bg-[#e64b3b] text-center relative&#34;&gt;&lt;div class=&#34;absolute -top-[2px] inset-x-0&#34;&gt;Q&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
@@ -38,6 +34,5 @@
 もし、そのようなフォントファミリーの中で、open font licenseで公開されているフォントがあれば教えてください。&lt;/div&gt;
 &lt;/div&gt;</description>
     </item>
-    
   </channel>
 </rss>

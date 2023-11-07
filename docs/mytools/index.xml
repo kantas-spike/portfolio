@@ -7,150 +7,119 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>© 2022 kanta&#39;s spike</copyright>
-    <lastBuildDate>Fri, 22 Jul 2022 08:15:27 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/mytools/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 22 Jul 2022 08:15:27 +0900</lastBuildDate>
+    <atom:link href="https://kantas-spike.github.io/portfolio/mytools/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>add_ibank.py</title>
       <link>https://kantas-spike.github.io/portfolio/mytools/add_ibank.py/</link>
       <pubDate>Fri, 25 Aug 2023 11:51:50 +0000</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/mytools/add_ibank.py/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>add_article.py</title>
       <link>https://kantas-spike.github.io/portfolio/mytools/add_article.py/</link>
       <pubDate>Wed, 26 Jul 2023 02:06:59 +0000</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/mytools/add_article.py/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>create-commit-link</title>
       <link>https://kantas-spike.github.io/portfolio/mytools/create_commit_link/</link>
       <pubDate>Sat, 08 Jul 2023 09:36:00 +0000</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/mytools/create_commit_link/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>repo-info.py</title>
       <link>https://kantas-spike.github.io/portfolio/mytools/repo_info.py/</link>
       <pubDate>Thu, 06 Jul 2023 07:56:13 +0000</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/mytools/repo_info.py/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>create-subsetted-font</title>
       <link>https://kantas-spike.github.io/portfolio/mytools/create_subsetted_font/</link>
       <pubDate>Sat, 10 Jun 2023 23:14:44 +0000</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/mytools/create_subsetted_font/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>make_book_pdf</title>
       <link>https://kantas-spike.github.io/portfolio/mytools/make_book_pdf/</link>
       <pubDate>Thu, 09 Feb 2023 21:12:50 +0000</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/mytools/make_book_pdf/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>create-subtitle-image</title>
       <link>https://kantas-spike.github.io/portfolio/mytools/create_subtitle_image/</link>
       <pubDate>Tue, 07 Feb 2023 11:30:15 +0000</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/mytools/create_subtitle_image/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>add_slide.py</title>
       <link>https://kantas-spike.github.io/portfolio/mytools/add_slide.py/</link>
       <pubDate>Thu, 26 Jan 2023 23:04:50 +0000</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/mytools/add_slide.py/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>title_url_copier</title>
       <link>https://kantas-spike.github.io/portfolio/mytools/title_url_copier/</link>
       <pubDate>Tue, 27 Dec 2022 15:36:30 +0000</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/mytools/title_url_copier/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>slide2video.py</title>
       <link>https://kantas-spike.github.io/portfolio/mytools/slide2video.py/</link>
       <pubDate>Fri, 09 Dec 2022 11:50:43 +0000</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/mytools/slide2video.py/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>create-subtitles-movie.sh</title>
       <link>https://kantas-spike.github.io/portfolio/mytools/create_subtitles_movie.sh/</link>
       <pubDate>Tue, 06 Dec 2022 15:03:57 +0000</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/mytools/create_subtitles_movie.sh/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>spike.py</title>
       <link>https://kantas-spike.github.io/portfolio/mytools/spike.py/</link>
       <pubDate>Mon, 14 Nov 2022 07:41:52 +0000</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/mytools/spike.py/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>pdf2jpg.sh</title>
       <link>https://kantas-spike.github.io/portfolio/mytools/pdf2jpg.sh/</link>
       <pubDate>Tue, 06 Sep 2022 05:50:30 +0000</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/mytools/pdf2jpg.sh/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>create-color-wheel.py</title>
       <link>https://kantas-spike.github.io/portfolio/mytools/create_color_wheel.py/</link>
       <pubDate>Thu, 01 Sep 2022 07:16:10 +0000</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/mytools/create_color_wheel.py/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>vv_wav2slide_wav.py</title>
       <link>https://kantas-spike.github.io/portfolio/mytools/vv_wav2slide_wav.py/</link>
       <pubDate>Sat, 23 Jul 2022 05:25:29 +0000</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/mytools/vv_wav2slide_wav.py/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>odp2jpg.sh</title>
       <link>https://kantas-spike.github.io/portfolio/mytools/odp2jpg.sh/</link>
       <pubDate>Mon, 11 Jul 2022 15:23:57 +0000</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/mytools/odp2jpg.sh/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

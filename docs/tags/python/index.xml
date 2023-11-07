@@ -7,79 +7,65 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>© 2022 kanta&#39;s spike</copyright>
-    <lastBuildDate>Thu, 22 Jun 2023 11:05:26 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 22 Jun 2023 11:05:26 +0900</lastBuildDate>
+    <atom:link href="https://kantas-spike.github.io/portfolio/tags/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Blenderの入力フィールドに数式を入力したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/06/69-entering-formula-to-input-field-in-blender/</link>
       <pubDate>Thu, 22 Jun 2023 11:05:26 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2023/06/69-entering-formula-to-input-field-in-blender/</guid>
       <description>&lt;p&gt;Blenderの入力フィールドに数式を入力したい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>サブセット化したWebフォントを作成したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/06/65-create-a-subsetted-font/</link>
       <pubDate>Wed, 07 Jun 2023 08:43:25 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2023/06/65-create-a-subsetted-font/</guid>
       <description>&lt;p&gt;ブログで使用するためにサブセット化したWebフォントを作成したい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>ブログ記事に使用されている文字を収集したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/06/64-collect-chars-used-in-articles/</link>
       <pubDate>Wed, 07 Jun 2023 04:30:48 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2023/06/64-collect-chars-used-in-articles/</guid>
       <description>&lt;p&gt;これまで作成した記事から文字集合を作成し、&lt;code&gt;JIS第1水準の漢字や常用漢字、ひらがなカタカナ、半角全角 英数字、半角全角 記号&lt;/code&gt;の文字集合と比較して確かめたい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>「プログラミング演習 Python 2021」を学ぶ</title>
       <link>https://kantas-spike.github.io/portfolio/articles/2023/04/13-learn-programming-practice-python-2021/</link>
       <pubDate>Wed, 05 Apr 2023 02:16:01 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/articles/2023/04/13-learn-programming-practice-python-2021/</guid>
       <description>&lt;p&gt;京都大学が無料公開しているPythonの教科書『&lt;a href=&#34;https://repository.kulib.kyoto-u.ac.jp/dspace/handle/2433/265459&#34;&gt;プログラミング演習 Python 2021&lt;/a&gt;』の存在を知りました。&lt;/p&gt;
 &lt;p&gt;ありがとうございます。京都大学!! この演習をやっていきたいと思います。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Pythonプロジェクトのパッケージを管理する</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/02/47-use-poetry/</link>
       <pubDate>Fri, 17 Feb 2023 07:20:29 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2023/02/47-use-poetry/</guid>
       <description>&lt;p&gt;GitHubにPythonのプログラムを公開する時に、利用しているPythonのバージョンとパッケージを指定したい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Jupyter Notebookを使う</title>
       <link>https://kantas-spike.github.io/portfolio/articles/2023/02/12-use-jupyter-notebook/</link>
       <pubDate>Thu, 16 Feb 2023 08:44:35 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/articles/2023/02/12-use-jupyter-notebook/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://jupyter.org/&#34;&gt;Jupyter Notebook&lt;/a&gt;という、文書、プログラムコード、数式、や図形を1つのドキュメントとして表現できるWebアプリケーションがあるそうです。 &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 &lt;p&gt;Pythonを使って、数学を勉強する時には便利そうです。今回は、実際に&lt;code&gt;Jupyter Notebook&lt;/code&gt;を使ってみます。そして、作成したノートをブログに掲載できる形式に変換できるかを検証します。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>PDFで公開されているMake本をマージする</title>
       <link>https://kantas-spike.github.io/portfolio/articles/2023/02/09-merge-make-book/</link>
       <pubDate>Wed, 08 Feb 2023 16:02:46 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/articles/2023/02/09-merge-make-book/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://www.oreilly.co.jp/library/4873112699/&#34;&gt;GNU Make 第3版&lt;/a&gt;がPDFで公開されていることを知りました。 &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 &lt;p&gt;ありがたいですね。でも、章ごとにPDFファイルが分割されているので少し読みにくいですね。
 章ごとに分割されたPDFを1つにまとめて、さらに目次情報を追加したいですね。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>ダウンロードしたPDFに目次を追加したい</title>
       <link>https://kantas-spike.github.io/portfolio/articles/2023/01/07-adding-toc-to-a-donwloaded-pdf/</link>
       <pubDate>Thu, 26 Jan 2023 04:14:58 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/articles/2023/01/07-adding-toc-to-a-donwloaded-pdf/</guid>
       <description>&lt;p&gt;プログラミングを学ぶために、数学を学びなおしたいと思っています。&lt;/p&gt;
 &lt;p&gt;米田優峻さんが公開されている&lt;a href=&#34;https://speakerdeck.com/e869120/150-fen-dexue-bugao-xiao-shu-xue-noji-chu&#34;&gt;150 分で学ぶ高校数学の基礎 - Speaker Deck&lt;/a&gt;という資料を知りました。&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; &lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
@@ -87,78 +73,62 @@
 全10章、259ページあるのですが、このPDFには目次がついていません。少し不便ですね。&lt;/p&gt;
 &lt;p&gt;目次を追加する方法がないか調べてみました。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>PythonでユニークなIDを生成する</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/01/39-generate-unique-id-by-python/</link>
       <pubDate>Wed, 18 Jan 2023 13:19:05 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2023/01/39-generate-unique-id-by-python/</guid>
       <description>&lt;p&gt;PythonでユニークなIDを生成したい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Simple Inkscape Scriptingでスクリプトに追加の引数を渡したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/01/38-parse-rest-args-with-argparse/</link>
       <pubDate>Tue, 17 Jan 2023 15:46:23 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2023/01/38-parse-rest-args-with-argparse/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://github.com/spakin/SimpInkScr&#34;&gt;Simple Inkscape Scripting&lt;/a&gt;をコマンドラインで実行するときに、スクリプトに&lt;code&gt;data.txt&lt;/code&gt;のような追加の引数を渡したい。&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;% simple_inkscape_scripting.py --py-source my_script.py input.svg data.txt
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
-    
     <item>
       <title>コマンドラインからSimple Inkscape Scriptingを使いたい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/01/37-use-commandline-by-simpinkscr/</link>
       <pubDate>Tue, 17 Jan 2023 13:32:46 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2023/01/37-use-commandline-by-simpinkscr/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://github.com/spakin/SimpInkScr&#34;&gt;Simple Inkscape Scripting&lt;/a&gt;を使って作成したスクリプトをコマンドラインから実行したい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>InkscapeでPythonを使う</title>
       <link>https://kantas-spike.github.io/portfolio/til/2022/12/36-inkscape-with-python/</link>
       <pubDate>Sun, 11 Dec 2022 08:24:09 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2022/12/36-inkscape-with-python/</guid>
       <description>&lt;p&gt;&lt;code&gt;Inkscape&lt;/code&gt;でPythonを使い、縁取り文字の作成を自動化したい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Makefileでリリース用と開発用で設定を切り替えたい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2022/12/35-switch-dev-or-release-with-makefile/</link>
       <pubDate>Fri, 09 Dec 2022 10:10:58 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2022/12/35-switch-dev-or-release-with-makefile/</guid>
       <description>&lt;p&gt;シェルとPythonを組合せたツールを配布する際に、Makefileでリリース用と開発用で設定を切り替えれるようにしたい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>自作ツールをインストールしたい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2022/12/33-tool-dir/</link>
       <pubDate>Sun, 04 Dec 2022 23:00:39 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2022/12/33-tool-dir/</guid>
       <description>&lt;p&gt;自作のShellなどのツールを作ったときに、どのディレクトリにインストールするべきなのか?&lt;/p&gt;
 &lt;p&gt;ツールのソースは、作業ディレクトリで開発しGitHubで管理するが、ツール自体はどうインストールするべき?&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>PythonスクリプトをBlenderで実行したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2022/11/31-run-python-script-from-blender/</link>
       <pubDate>Fri, 25 Nov 2022 06:08:32 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2022/11/31-run-python-script-from-blender/</guid>
       <description>&lt;p&gt;作成したPythonのスクリプトをBlender起動時に実行したい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Webサイトの配色とカラーホイール</title>
       <link>https://kantas-spike.github.io/portfolio/articles/2022/08/04-study-color-wheel/</link>
       <pubDate>Fri, 19 Aug 2022 00:25:51 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/articles/2022/08/04-study-color-wheel/</guid>
       <description>&lt;p&gt;プログラミング学習には、HTMLを書くと良い&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;そうです。
 なので、Webサイトを作りたいと思っています。&lt;/p&gt;
@@ -166,64 +136,51 @@
 &lt;p&gt;今回、夏休みの自由研究として、配色について学び、
 自分のWebサイトの配色を選びたいと思います。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Tkinterで部品を上手く配置したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2022/08/21-layout-widgits-with-tkinter/</link>
       <pubDate>Sun, 07 Aug 2022 02:18:55 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2022/08/21-layout-widgits-with-tkinter/</guid>
       <description>&lt;p&gt;Tkinterで画面に部品を上手く配置したいが、
 &lt;strong&gt;Geometry Manager&lt;/strong&gt; には幾つか種類があるが、どれを使って画面を作成するべきなのか。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Tkinterで部品の背景色を変更したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2022/08/19-fill-bg-color-with-tkinter/</link>
       <pubDate>Sat, 06 Aug 2022 15:59:38 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2022/08/19-fill-bg-color-with-tkinter/</guid>
       <description>&lt;p&gt;Tkinterでウィンドウの背景色を変更した時に、部品の周りに異なる背景色が表示される。
 ウィンドウの背景色に合せるために、Tkinterで部品の背景色を変更したい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Pythonで図形を回転させたい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2022/08/18-rotate-item-with-python/</link>
       <pubDate>Wed, 03 Aug 2022 23:01:11 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2022/08/18-rotate-item-with-python/</guid>
       <description>&lt;p&gt;&lt;code&gt;tkinter&lt;/code&gt;のCanvas内にある図形の位置を原点を中心に回転させたい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>2色のコントラストの差を知りたい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2022/08/17-color-contrast/</link>
       <pubDate>Mon, 01 Aug 2022 23:45:37 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2022/08/17-color-contrast/</guid>
       <description>&lt;p&gt;背景色にあったテキスト色を選べるようにしたい。
 赤に白い字は読めるが、薄黄に白い字は読めない。&lt;/p&gt;
 &lt;p&gt;背景色とテキスト色の差から文字色を変更できるようにしたい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Pythonでコマンドラインオプション取得したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2022/08/16-python-option-parser/</link>
       <pubDate>Mon, 01 Aug 2022 12:09:43 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2022/08/16-python-option-parser/</guid>
       <description>&lt;p&gt;Pythonで作った自作のコマンドラインツールで、コマンドラインオプションを利用したい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Pythonでグラフを描きたい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2022/07/15-python-graph/</link>
       <pubDate>Sun, 31 Jul 2022 21:13:04 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2022/07/15-python-graph/</guid>
       <description>&lt;p&gt;プログラムの処理中に出てくる数式の意味を理解するために、Pythonでグラフを描いて数式を確認したい。&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

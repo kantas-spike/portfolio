@@ -2,19 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/</loc>
+    <lastmod>2023-11-07T10:58:43+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/typescript/</loc>
+    <lastmod>2023-11-07T10:58:43+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/til/2023/11/90-using-type-alias-of-typescript/</loc>
+    <lastmod>2023-11-07T10:58:43+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/til/2023/11/89-using-tsc/</loc>
+    <lastmod>2023-11-07T10:53:40+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/eslint/</loc>
+    <lastmod>2023-11-05T11:29:23+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/javascript/</loc>
+    <lastmod>2023-11-05T11:29:23+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/vscode/</loc>
+    <lastmod>2023-11-05T11:29:23+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/til/2023/11/88-reload-eslint-results-of-vscode/</loc>
+    <lastmod>2023-11-05T11:29:23+09:00</lastmod>
+  </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/macos/</loc>
     <lastmod>2023-10-31T04:56:13+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2023/10/87-remove-extended-attrs/</loc>
     <lastmod>2023-10-31T04:56:13+09:00</lastmod>
   </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/</loc>
-    <lastmod>2023-10-31T04:56:13+09:00</lastmod>
-  </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/git/</loc>
-    <lastmod>2023-10-31T04:42:57+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/vscode/</loc>
     <lastmod>2023-10-31T04:42:57+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2023/10/86-canceling-git-commit---amend/</loc>
@@ -43,9 +61,6 @@
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2023/09/81-fix-multi-issues-in-github/</loc>
     <lastmod>2023-09-29T18:31:06+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/javascript/</loc>
-    <lastmod>2023-09-29T16:25:24+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/json/</loc>
     <lastmod>2023-09-29T16:25:24+09:00</lastmod>

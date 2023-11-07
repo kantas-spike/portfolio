@@ -7,28 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>© 2022 kanta&#39;s spike</copyright>
-    <lastBuildDate>Fri, 28 Jul 2023 16:23:27 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/color/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 28 Jul 2023 16:23:27 +0900</lastBuildDate>
+    <atom:link href="https://kantas-spike.github.io/portfolio/tags/color/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>JavaScriptを使ってCSSの色表記を変換したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/07/76-convert-css-color-notations-with-js/</link>
       <pubDate>Fri, 28 Jul 2023 16:23:27 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2023/07/76-convert-css-color-notations-with-js/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://storybook.js.org/&#34;&gt;Storybook: Frontend workshop for UI development&lt;/a&gt;の&lt;a href=&#34;https://storybook.js.org/docs/react/api/doc-block-colorpalette&#34;&gt;ColorPalette&lt;/a&gt;を使って、
 色調パレットを作成している。&lt;/p&gt;
 &lt;p&gt;色調作成時のトーン操作は&lt;code&gt;hsl()&lt;/code&gt;形式を使い、色の表記時には&lt;code&gt;16進数&lt;/code&gt;形式を使いたい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>2色のコントラストの差を知りたい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2022/08/17-color-contrast/</link>
       <pubDate>Mon, 01 Aug 2022 23:45:37 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2022/08/17-color-contrast/</guid>
       <description>&lt;p&gt;背景色にあったテキスト色を選べるようにしたい。
 赤に白い字は読めるが、薄黄に白い字は読めない。&lt;/p&gt;
 &lt;p&gt;背景色とテキスト色の差から文字色を変更できるようにしたい。&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

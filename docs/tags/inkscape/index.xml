@@ -7,42 +7,35 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>© 2022 kanta&#39;s spike</copyright>
-    <lastBuildDate>Tue, 14 Mar 2023 12:05:30 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/inkscape/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 14 Mar 2023 12:05:30 +0900</lastBuildDate>
+    <atom:link href="https://kantas-spike.github.io/portfolio/tags/inkscape/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Inkscapeでオブジェクトを作成する前に色を設定したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/03/48-set-color-to-object-with-inkscape/</link>
       <pubDate>Tue, 14 Mar 2023 12:05:30 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2023/03/48-set-color-to-object-with-inkscape/</guid>
       <description>&lt;p&gt;Inkscapeで矩形などのオブジェクトを配置する際に、配置してから色を設定するのではなく、事前にオブジェクトの色を設定しておきたい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Inkscapeを使ってコマンドラインからSVG画像をPNGに変換する</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/02/41-convert-svg-to-png-from-commandline-using-inkscape/</link>
       <pubDate>Tue, 07 Feb 2023 00:04:37 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2023/02/41-convert-svg-to-png-from-commandline-using-inkscape/</guid>
       <description>&lt;p&gt;Inkscapeを使ってコマンドラインからSVG画像をPNGに変換したい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>コマンドラインからSimple Inkscape Scriptingを使いたい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/01/37-use-commandline-by-simpinkscr/</link>
       <pubDate>Tue, 17 Jan 2023 13:32:46 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2023/01/37-use-commandline-by-simpinkscr/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://github.com/spakin/SimpInkScr&#34;&gt;Simple Inkscape Scripting&lt;/a&gt;を使って作成したスクリプトをコマンドラインから実行したい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>InkscapeでPythonを使う</title>
       <link>https://kantas-spike.github.io/portfolio/til/2022/12/36-inkscape-with-python/</link>
       <pubDate>Sun, 11 Dec 2022 08:24:09 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2022/12/36-inkscape-with-python/</guid>
       <description>&lt;p&gt;&lt;code&gt;Inkscape&lt;/code&gt;でPythonを使い、縁取り文字の作成を自動化したい。&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

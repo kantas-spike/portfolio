@@ -7,26 +7,23 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>© 2022 kanta&#39;s spike</copyright>
-    <lastBuildDate>Thu, 09 Feb 2023 07:21:11 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/makefile/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 09 Feb 2023 07:21:11 +0900</lastBuildDate>
+    <atom:link href="https://kantas-spike.github.io/portfolio/tags/makefile/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>makeを使って『Make本』をメイクする</title>
       <link>https://kantas-spike.github.io/portfolio/articles/2023/02/10-make-make-book-using-make/</link>
       <pubDate>Thu, 09 Feb 2023 07:21:11 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/articles/2023/02/10-make-make-book-using-make/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://kantas-spike.github.io/portfolio/blog/2023/02/09-merge-make-book/&#34;&gt;PDFで公開されているMake本をマージする | kanta&amp;rsquo;s spike&lt;/a&gt;で、公開されている&lt;a href=&#34;https://www.oreilly.co.jp/library/4873112699/&#34;&gt;GNU Make 第3版&lt;/a&gt;のPDFをマージするシェルスクリプトを作成したことを紹介しました。&lt;/p&gt;
 &lt;p&gt;折角なので、この『Make本』を読んで学びたいと思います。
 そして、勉強の成果として、&lt;a href=&#34;https://kantas-spike.github.io/portfolio/blog/2023/02/09-merge-make-book/&#34;&gt;PDFで公開されているMake本をマージする | kanta&amp;rsquo;s spike&lt;/a&gt;で作成したシェルスクリプトを&lt;code&gt;makefile&lt;/code&gt;に置き換えたいと思います。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Makefileでリリース用と開発用で設定を切り替えたい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2022/12/35-switch-dev-or-release-with-makefile/</link>
       <pubDate>Fri, 09 Dec 2022 10:10:58 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2022/12/35-switch-dev-or-release-with-makefile/</guid>
       <description>&lt;p&gt;シェルとPythonを組合せたツールを配布する際に、Makefileでリリース用と開発用で設定を切り替えれるようにしたい。&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

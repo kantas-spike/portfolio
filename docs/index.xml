@@ -7,83 +7,94 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>© 2022 kanta&#39;s spike</copyright>
-    <lastBuildDate>Fri, 22 Jul 2022 08:24:06 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 22 Jul 2022 08:24:06 +0900</lastBuildDate>
+    <atom:link href="https://kantas-spike.github.io/portfolio/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TypeScriptでtypeエイリアスはどこに定義するべき</title>
+      <link>https://kantas-spike.github.io/portfolio/til/2023/11/90-using-type-alias-of-typescript/</link>
+      <pubDate>Tue, 07 Nov 2023 10:58:43 +0900</pubDate>
+      <guid>https://kantas-spike.github.io/portfolio/til/2023/11/90-using-type-alias-of-typescript/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/kantas-spike/title_url_copier&#34;&gt;kantas-spike/title_url_copier&lt;/a&gt;をTypeScript化する際に、型エイリアスを定義した。&lt;/p&gt;
+&lt;p&gt;この型は2つのファイルで利用するが、その場合、型エイリアスはどこに定義するべきなのか?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>tscコマンドの基本的な使い方を知りたい</title>
+      <link>https://kantas-spike.github.io/portfolio/til/2023/11/89-using-tsc/</link>
+      <pubDate>Tue, 07 Nov 2023 10:53:40 +0900</pubDate>
+      <guid>https://kantas-spike.github.io/portfolio/til/2023/11/89-using-tsc/</guid>
+      <description>&lt;p&gt;&lt;code&gt;tsc&lt;/code&gt;は、主にTypeScriptで書かれたソースコードをJavaScriptにトランスパイルするためのコマンドです。&lt;/p&gt;
+&lt;p&gt;TypeScriptの学習にあたり、基本的な&lt;code&gt;tsc&lt;/code&gt;コマンドの使い方を知りたい。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>vscodeでeslintの結果をリロードしたい</title>
+      <link>https://kantas-spike.github.io/portfolio/til/2023/11/88-reload-eslint-results-of-vscode/</link>
+      <pubDate>Sun, 05 Nov 2023 11:29:23 +0900</pubDate>
+      <guid>https://kantas-spike.github.io/portfolio/til/2023/11/88-reload-eslint-results-of-vscode/</guid>
+      <description>&lt;p&gt;vscodeで&lt;code&gt;JavaScript&lt;/code&gt;や&lt;code&gt;TypeScript&lt;/code&gt;のコーディング中に、
+&lt;code&gt;問題&lt;/code&gt;パネルに表示される&lt;code&gt;eslint&lt;/code&gt;の結果が上手く更新されない場合がある。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;問題&lt;/code&gt;パネルの&lt;code&gt;eslint&lt;/code&gt;の結果をリロードしたい。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>MacOSで拡張属性を削除したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/10/87-remove-extended-attrs/</link>
       <pubDate>Tue, 31 Oct 2023 04:56:13 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2023/10/87-remove-extended-attrs/</guid>
       <description>&lt;p&gt;ダウンロードしたファイルなどを&lt;code&gt;ls -l&lt;/code&gt;すると&lt;code&gt;@&lt;/code&gt;が付く。&lt;/p&gt;
 &lt;p&gt;これは、&lt;code&gt;Extended Attributes(拡張属性)&lt;/code&gt;と呼ぶそうだ。
 この&lt;code&gt;拡張属性&lt;/code&gt;を削除したい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Vscodeでcommit(修正)をキャンセルしたい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/10/86-canceling-git-commit---amend/</link>
       <pubDate>Tue, 31 Oct 2023 04:42:57 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2023/10/86-canceling-git-commit---amend/</guid>
       <description>&lt;p&gt;vscodeの&lt;code&gt;コミット(修正)&lt;/code&gt;をキャンセルしたい。&lt;/p&gt;
 &lt;p&gt;vscodeのソース管理で、&lt;code&gt;コミット(修正)&lt;/code&gt;をクリックし、エディターにコミットメッセージが表示されるが、
 この状態でキャンセルしたい場合どうすればいい?&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Hugoのテーマモジュールをローカルのモジュールに置き換えたい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/10/85-replace-theme-module-with-local-module/</link>
       <pubDate>Fri, 27 Oct 2023 10:20:16 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2023/10/85-replace-theme-module-with-local-module/</guid>
       <description>&lt;p&gt;GitHubで管理している自作のHugoテーマをモジュール化した。&lt;/p&gt;
 &lt;p&gt;しかし、Hugoテーマを修正するたびに、毎回プッシュしモジュールをアップデートする必要があり面倒である。&lt;/p&gt;
 &lt;p&gt;もっと、手軽にHugoテーマを改修できるようにしたい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>gitのsubmoduleを削除したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/10/84-remove-git-submodule/</link>
       <pubDate>Thu, 26 Oct 2023 16:29:46 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2023/10/84-remove-git-submodule/</guid>
       <description>&lt;p&gt;Hugoテーマのモジュール化に伴ない、不要になったgitのsubmoduleを削除したい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Hugoのテーマをモジュールに移行したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/10/83-migrate-a-theme-of-hugo-to-module/</link>
       <pubDate>Thu, 26 Oct 2023 14:16:56 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2023/10/83-migrate-a-theme-of-hugo-to-module/</guid>
       <description>&lt;p&gt;Hugoのテーマをモジュールとして利用したい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Node.jsのバージョンを確認したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/09/82-check-nodejs-version/</link>
       <pubDate>Sat, 30 Sep 2023 01:42:04 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2023/09/82-check-nodejs-version/</guid>
       <description>&lt;p&gt;vscode拡張機能で利用できるNode.jsのAPIを確認するために、
 Electron上で動作しているNode.jsのバージョンを知りたい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>GitHubのコメントで複数のイシューをfixしたい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/09/81-fix-multi-issues-in-github/</link>
       <pubDate>Fri, 29 Sep 2023 18:31:06 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2023/09/81-fix-multi-issues-in-github/</guid>
       <description>&lt;p&gt;GitHubのプルリクエストのコメントに&lt;code&gt;fix #xx&lt;/code&gt;のようにイシュー番号を指定すると該当イシューをクローズできる。&lt;/p&gt;
 &lt;p&gt;同様の方法で複数のイシューをまとめてクローズしたい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>JSONの文字列値にダブルクォーテーションを含めたい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/09/80-use-dobulequote-in-json-string/</link>
       <pubDate>Fri, 29 Sep 2023 16:25:24 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2023/09/80-use-dobulequote-in-json-string/</guid>
       <description>&lt;p&gt;JSONの文字列値にダブルクォーテーションを含めるため、以下のように記載したらエラーとなった。
 正しい表記となるよう修正したい。&lt;/p&gt;
@@ -92,132 +103,104 @@ Electron上で動作しているNode.jsのバージョンを知りたい。&lt;/
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
-    
     <item>
       <title>Hugoのpartialテンプレートに複数の引数を渡したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/09/79-pass_multi_paramas_to_partial/</link>
       <pubDate>Fri, 29 Sep 2023 09:32:30 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2023/09/79-pass_multi_paramas_to_partial/</guid>
       <description>&lt;p&gt;Hugoのpartialテンプレートに、コンテキスト(&lt;code&gt;.&lt;/code&gt;)以外にも、追加の情報を渡したい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>エディタ基本設定をリポジトリに登録したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/09/78-using_editorconfig_in_vscode/</link>
       <pubDate>Thu, 07 Sep 2023 01:05:07 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2023/09/78-using_editorconfig_in_vscode/</guid>
       <description>&lt;p&gt;タブサイズや行内文字数などのエディタ基本設定をリポジトリに登録したい。&lt;/p&gt;
 &lt;p&gt;ただし、リポジトリの利用者が使用するエディタは不明なため、なるべく汎用的な方法でエディタ基本設定を管理したい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>idea_bank</title>
       <link>https://kantas-spike.github.io/portfolio/ihc/idea_bank/</link>
       <pubDate>Sat, 02 Sep 2023 04:05:04 +0000</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/ihc/idea_bank/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>kantas-theme</title>
       <link>https://kantas-spike.github.io/portfolio/ihc/kantas_theme/</link>
       <pubDate>Sat, 02 Sep 2023 04:02:37 +0000</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/ihc/kantas_theme/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>ibank-extension</title>
       <link>https://kantas-spike.github.io/portfolio/ihc/ibank_extension/</link>
       <pubDate>Fri, 01 Sep 2023 22:33:19 +0000</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/ihc/ibank_extension/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>learn_vscode_extension</title>
       <link>https://kantas-spike.github.io/portfolio/ihc/learn_vscode_extension/</link>
       <pubDate>Wed, 30 Aug 2023 15:31:00 +0000</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/ihc/learn_vscode_extension/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>add_ibank.py</title>
       <link>https://kantas-spike.github.io/portfolio/mytools/add_ibank.py/</link>
       <pubDate>Fri, 25 Aug 2023 11:51:50 +0000</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/mytools/add_ibank.py/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>perN</title>
       <link>https://kantas-spike.github.io/portfolio/ihc/pern/</link>
       <pubDate>Wed, 09 Aug 2023 22:26:49 +0000</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/ihc/pern/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Hugoで四則演算や論理演算や比較演算を使いたい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/07/77-leaning-arithmetic-and-logical-operation-of-hugo/</link>
       <pubDate>Mon, 31 Jul 2023 17:16:06 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2023/07/77-leaning-arithmetic-and-logical-operation-of-hugo/</guid>
       <description>&lt;p&gt;Hugoのテンプレート内で、四則演算や論理演算、比較演算を使いたい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>JavaScriptを使ってCSSの色表記を変換したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/07/76-convert-css-color-notations-with-js/</link>
       <pubDate>Fri, 28 Jul 2023 16:23:27 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2023/07/76-convert-css-color-notations-with-js/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://storybook.js.org/&#34;&gt;Storybook: Frontend workshop for UI development&lt;/a&gt;の&lt;a href=&#34;https://storybook.js.org/docs/react/api/doc-block-colorpalette&#34;&gt;ColorPalette&lt;/a&gt;を使って、
 色調パレットを作成している。&lt;/p&gt;
 &lt;p&gt;色調作成時のトーン操作は&lt;code&gt;hsl()&lt;/code&gt;形式を使い、色の表記時には&lt;code&gt;16進数&lt;/code&gt;形式を使いたい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Hugoでショートコードやコードブロックの子要素にMarkdownを渡したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/07/75-convert-markdown-to-html-with-hugo/</link>
       <pubDate>Thu, 27 Jul 2023 23:27:25 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2023/07/75-convert-markdown-to-html-with-hugo/</guid>
       <description>&lt;p&gt;ショートコードやレンダーブロックの子要素にMarkdownコンテンツを渡したい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>add_article.py</title>
       <link>https://kantas-spike.github.io/portfolio/mytools/add_article.py/</link>
       <pubDate>Wed, 26 Jul 2023 02:06:59 +0000</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/mytools/add_article.py/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>learn_react</title>
       <link>https://kantas-spike.github.io/portfolio/ihc/learn_react/</link>
       <pubDate>Sat, 22 Jul 2023 16:46:28 +0000</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/ihc/learn_react/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Siriに5分後にタイマーのアラームをセットして欲しい</title>
       <link>https://kantas-spike.github.io/portfolio/dialogues/08-hey-siri-set-a-timer/</link>
       <pubDate>Fri, 21 Jul 2023 16:13:15 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/dialogues/08-hey-siri-set-a-timer/</guid>
       <description>&lt;div class=&#34;quote text-[#ececf1] relative p-2 pr-4 bg-[#343542] border border-[#2b2b32] rounded-sm mt-2 mb-6&#34;&gt;
     &lt;div class=&#34;font-serif text-3xl absolute top-0 left-0 py-2 pl-2 pr-1 font-bold text-[#ffffff]&#34;&gt;&lt;div class=&#34;w-[2.25rem] h-[2.25rem] bg-[#e64b3b] text-center relative&#34;&gt;&lt;div class=&#34;absolute -top-[2px] inset-x-0&#34;&gt;Q&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
@@ -225,49 +208,39 @@ Electron上で動作しているNode.jsのバージョンを知りたい。&lt;/
 英語でこれを伝える場合、何と言えば良いのでしょうか?&lt;/div&gt;
 &lt;/div&gt;</description>
     </item>
-    
     <item>
       <title>Markdownのページ内にNext.jsアプリを埋め込みたい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/07/74-add-nextjs-app-in-md/</link>
       <pubDate>Mon, 10 Jul 2023 06:01:59 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2023/07/74-add-nextjs-app-in-md/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://kantas-spike.github.io/portfolio/til/2023/07/72-publich-next.js-app-with-hugo/&#34;&gt;以前の記事&lt;/a&gt;で公開した Next.jsアプリをMarkdownページにも埋め込みたい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>`Static Export`したNext.jsアプリをGitHub Pagesで表示できない</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/07/73-cannot-load-exported-nextjs-app-in-github-pages/</link>
       <pubDate>Mon, 10 Jul 2023 01:17:23 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2023/07/73-cannot-load-exported-nextjs-app-in-github-pages/</guid>
       <description>&lt;p&gt;&lt;code&gt;Static Export&lt;/code&gt;したNext.jsアプリをGitHub Pagesで表示できない。&lt;/p&gt;
 &lt;p&gt;どうやら&lt;code&gt;_next/&lt;/code&gt;配下のファイルを表示できないようだ。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>HugoでNext.jsアプリを公開したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/07/72-publich-next.js-app-with-hugo/</link>
       <pubDate>Mon, 10 Jul 2023 00:28:07 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2023/07/72-publich-next.js-app-with-hugo/</guid>
       <description>&lt;p&gt;Nest.jsで作成したアプリをHugoで作成したブログに公開したい。 &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>create-commit-link</title>
       <link>https://kantas-spike.github.io/portfolio/mytools/create_commit_link/</link>
       <pubDate>Sat, 08 Jul 2023 09:36:00 +0000</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/mytools/create_commit_link/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>ブログ記事のカテゴリ</title>
       <link>https://kantas-spike.github.io/portfolio/dialogues/07-category-of-blog/</link>
       <pubDate>Thu, 06 Jul 2023 16:59:02 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/dialogues/07-category-of-blog/</guid>
       <description>&lt;div class=&#34;quote text-[#ececf1] relative p-2 pr-4 bg-[#343542] border border-[#2b2b32] rounded-sm mt-2 mb-6&#34;&gt;
     &lt;div class=&#34;font-serif text-3xl absolute top-0 left-0 py-2 pl-2 pr-1 font-bold text-[#ffffff]&#34;&gt;&lt;div class=&#34;w-[2.25rem] h-[2.25rem] bg-[#e64b3b] text-center relative&#34;&gt;&lt;div class=&#34;absolute -top-[2px] inset-x-0&#34;&gt;Q&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
@@ -284,21 +257,17 @@ Electron上で動作しているNode.jsのバージョンを知りたい。&lt;/
 上記の3つをカテゴリに分類するとしたらどのような英語のカテゴリ名が良いでしょうか?&lt;/div&gt;
 &lt;/div&gt;</description>
     </item>
-    
     <item>
       <title>repo-info.py</title>
       <link>https://kantas-spike.github.io/portfolio/mytools/repo_info.py/</link>
       <pubDate>Thu, 06 Jul 2023 07:56:13 +0000</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/mytools/repo_info.py/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>開発環境が正しく動作するか確認するためのプロジェクトに名前をつけたい</title>
       <link>https://kantas-spike.github.io/portfolio/dialogues/06-project-name/</link>
       <pubDate>Wed, 05 Jul 2023 11:33:00 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/dialogues/06-project-name/</guid>
       <description>&lt;div class=&#34;quote text-[#ececf1] relative p-2 pr-4 bg-[#343542] border border-[#2b2b32] rounded-sm mt-2 mb-6&#34;&gt;
     &lt;div class=&#34;font-serif text-3xl absolute top-0 left-0 py-2 pl-2 pr-1 font-bold text-[#ffffff]&#34;&gt;&lt;div class=&#34;w-[2.25rem] h-[2.25rem] bg-[#e64b3b] text-center relative&#34;&gt;&lt;div class=&#34;absolute -top-[2px] inset-x-0&#34;&gt;Q&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
@@ -311,21 +280,17 @@ Electron上で動作しているNode.jsのバージョンを知りたい。&lt;/
 どのような英語が良いでしょうか?&lt;/div&gt;
 &lt;/div&gt;</description>
     </item>
-    
     <item>
       <title>Blenderでアニメーションと音を同期させたい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/06/71-sync-animation-to-audio-in-blender/</link>
       <pubDate>Fri, 30 Jun 2023 11:42:43 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2023/06/71-sync-animation-to-audio-in-blender/</guid>
       <description>&lt;p&gt;Blenderでアニメーションの動きをバックグラウンドミュージックと同期させたい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>「その他」を意味するタグ名をつけたい</title>
       <link>https://kantas-spike.github.io/portfolio/dialogues/05-tag-name/</link>
       <pubDate>Thu, 29 Jun 2023 05:51:41 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/dialogues/05-tag-name/</guid>
       <description>&lt;div class=&#34;quote text-[#ececf1] relative p-2 pr-4 bg-[#343542] border border-[#2b2b32] rounded-sm mt-2 mb-6&#34;&gt;
     &lt;div class=&#34;font-serif text-3xl absolute top-0 left-0 py-2 pl-2 pr-1 font-bold text-[#ffffff]&#34;&gt;&lt;div class=&#34;w-[2.25rem] h-[2.25rem] bg-[#e64b3b] text-center relative&#34;&gt;&lt;div class=&#34;absolute -top-[2px] inset-x-0&#34;&gt;Q&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
@@ -333,133 +298,105 @@ Electron上で動作しているNode.jsのバージョンを知りたい。&lt;/
 このようなタグに使える良い英単語を教えてくれないでしょうか?&lt;/div&gt;
 &lt;/div&gt;</description>
     </item>
-    
     <item>
       <title>Gitでマージ済みのローカルブランチを削除したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/06/70-deleting-merged-local-branch-in-git/</link>
       <pubDate>Thu, 22 Jun 2023 14:57:38 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2023/06/70-deleting-merged-local-branch-in-git/</guid>
       <description>&lt;p&gt;不要なブランチが増えてきたので、Gitでマージ済みのローカルブランチを削除したい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Blenderの入力フィールドに数式を入力したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/06/69-entering-formula-to-input-field-in-blender/</link>
       <pubDate>Thu, 22 Jun 2023 11:05:26 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2023/06/69-entering-formula-to-input-field-in-blender/</guid>
       <description>&lt;p&gt;Blenderの入力フィールドに数式を入力したい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Blenderでメッシュを曲げたい 〜「|」を「)」にしたい〜</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/06/68-bend-the-mesh-in-blender/</link>
       <pubDate>Thu, 22 Jun 2023 10:39:45 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2023/06/68-bend-the-mesh-in-blender/</guid>
       <description>&lt;p&gt;Blendrで&lt;em&gt;平面のメッシュ&lt;/em&gt;を曲げたい。
 &lt;code&gt;|&lt;/code&gt;を&lt;code&gt;)&lt;/code&gt;のように曲げたい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Blenderで3Dカーソルを移動させたい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/06/67-moving-the-3d-cursor-lin-blender.md/</link>
       <pubDate>Thu, 22 Jun 2023 10:08:30 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2023/06/67-moving-the-3d-cursor-lin-blender.md/</guid>
       <description>&lt;p&gt;&lt;code&gt;Shift-RMB(マウスの右ボタン)&lt;/code&gt;で、Blenderで3Dカーソルの位置を移動できるが、
 簡単に3Dカーソルをグローバル座標系の原点やオブジェクトの中心に移動させる方法を知りたい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>create-subsetted-font</title>
       <link>https://kantas-spike.github.io/portfolio/mytools/create_subsetted_font/</link>
       <pubDate>Sat, 10 Jun 2023 23:14:44 +0000</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/mytools/create_subsetted_font/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>HugoでWebフォントを利用したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/06/66-use-web-fonts-with-hugo/</link>
       <pubDate>Wed, 07 Jun 2023 14:50:17 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2023/06/66-use-web-fonts-with-hugo/</guid>
       <description>&lt;p&gt;サブセット化したWebフォントをHugoで利用したい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>サブセット化したWebフォントを作成したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/06/65-create-a-subsetted-font/</link>
       <pubDate>Wed, 07 Jun 2023 08:43:25 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2023/06/65-create-a-subsetted-font/</guid>
       <description>&lt;p&gt;ブログで使用するためにサブセット化したWebフォントを作成したい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>ブログ記事に使用されている文字を収集したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/06/64-collect-chars-used-in-articles/</link>
       <pubDate>Wed, 07 Jun 2023 04:30:48 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2023/06/64-collect-chars-used-in-articles/</guid>
       <description>&lt;p&gt;これまで作成した記事から文字集合を作成し、&lt;code&gt;JIS第1水準の漢字や常用漢字、ひらがなカタカナ、半角全角 英数字、半角全角 記号&lt;/code&gt;の文字集合と比較して確かめたい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Tailwind CSSでデフォルトのfont-familyを修正したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/06/63-customize-default-font-family-on-tailwindcss/</link>
       <pubDate>Tue, 06 Jun 2023 06:30:58 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2023/06/63-customize-default-font-family-on-tailwindcss/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://tailwindcss.com/docs/font-family&#34;&gt;Tailwind CSS&lt;/a&gt;でブログのフォントを読みやすいフォントに修正したい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>CSSで文章を読み易くしたい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/06/62-adjust-the-presentaion-of-text-blocks/</link>
       <pubDate>Tue, 06 Jun 2023 06:03:18 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2023/06/62-adjust-the-presentaion-of-text-blocks/</guid>
       <description>&lt;p&gt;私は文章を読むのが苦手なので、CSSでなるべく読み易い見た目に調整したい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Hugoのテーマで使用するパッケージは、テーマ内で管理したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/06/61-use-packages-in-a-theme-with-hugo/</link>
       <pubDate>Fri, 02 Jun 2023 06:20:26 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2023/06/61-use-packages-in-a-theme-with-hugo/</guid>
       <description>&lt;p&gt;Hugoのthemeで使用するJavascriptのパッケージは、&lt;code&gt;theme/THEME_NAME/package.json&lt;/code&gt; で管理したい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>scriptタグに設定されている`defer`って何？</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/06/60-what-is-defer-in-the-script-tag/</link>
       <pubDate>Fri, 02 Jun 2023 06:03:54 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2023/06/60-what-is-defer-in-the-script-tag/</guid>
       <description>&lt;p&gt;scriptタグに設定されている&lt;code&gt;defer&lt;/code&gt;って何だ?&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Hugoでテーマを利用時にサイト用のアセットも利用したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/06/59-use-site-assets-when-using-a-theme-with-hugo/</link>
       <pubDate>Thu, 01 Jun 2023 23:09:00 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2023/06/59-use-site-assets-when-using-a-theme-with-hugo/</guid>
       <description>&lt;p&gt;テーマを利用すると、サイトの&lt;code&gt;assets&lt;/code&gt;ディレクトリにアクセスができなくなるため、
 テーマの&lt;code&gt;assets&lt;/code&gt;ディレクトリにJavaScriptを配置しなければならない。&lt;/p&gt;
 &lt;p&gt;記事専用のJavaScriptは、テーマのアセットではなくサイトのアセットに配置したい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>メインブランチの保護方針を決める</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/05/58-decide-on-a-protection-policy-for-the-main-branch/</link>
       <pubDate>Wed, 31 May 2023 22:17:46 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2023/05/58-decide-on-a-protection-policy-for-the-main-branch/</guid>
       <description>&lt;p&gt;GitHubのプロジェクトに以下のメッセージが表示されていることに気づいた。
 何となくGitHubを使用してきたが、この機会にメインブランチの保護方針を決めたい。&lt;/p&gt;
@@ -468,49 +405,39 @@ Electron上で動作しているNode.jsのバージョンを知りたい。&lt;/
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;GitHubでメインブランチへの直接のプッシュを禁止し、プルリクエストが作成されたもののみマージしたい。
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
-    
     <item>
       <title>Reactを使って検索画面を作る</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/05/57-create-search-window-using-react/</link>
       <pubDate>Wed, 31 May 2023 02:16:55 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2023/05/57-create-search-window-using-react/</guid>
       <description>&lt;p&gt;Reactを使って検索画面を作りたい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Reactを使ってモーダルウィンドウを作成する</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/05/56-create-a-modal-window-using-react/</link>
       <pubDate>Tue, 30 May 2023 05:53:08 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2023/05/56-create-a-modal-window-using-react/</guid>
       <description>&lt;p&gt;Reactを使ってモーダルウィンドウを作成したい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Hugoで記事を更新日時でソートしたい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/05/55-sort-articles-by-lastmod-on-hugo/</link>
       <pubDate>Mon, 29 May 2023 13:17:25 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2023/05/55-sort-articles-by-lastmod-on-hugo/</guid>
       <description>&lt;p&gt;Hugoで記事を更新日時でソートしたい。&lt;/p&gt;
 &lt;p&gt;ただし、記事には更新日時(&lt;code&gt;lastmod&lt;/code&gt;)を持たないもの(作成日時＝更新日時)もある。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Reactを導入したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/05/54-introducing-react/</link>
       <pubDate>Fri, 26 May 2023 10:36:57 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2023/05/54-introducing-react/</guid>
       <description>&lt;p&gt;今後ブログに検索機能などを追加したいので、Hugoに &lt;a href=&#34;https://react.dev/&#34;&gt;React&lt;/a&gt; を導入したい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>名コンビといえば?</title>
       <link>https://kantas-spike.github.io/portfolio/dialogues/04-buddy/</link>
       <pubDate>Fri, 12 May 2023 23:25:58 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/dialogues/04-buddy/</guid>
       <description>&lt;div class=&#34;quote text-[#ececf1] relative p-2 pr-4 bg-[#343542] border border-[#2b2b32] rounded-sm mt-2 mb-6&#34;&gt;
     &lt;div class=&#34;font-serif text-3xl absolute top-0 left-0 py-2 pl-2 pr-1 font-bold text-[#ffffff]&#34;&gt;&lt;div class=&#34;w-[2.25rem] h-[2.25rem] bg-[#e64b3b] text-center relative&#34;&gt;&lt;div class=&#34;absolute -top-[2px] inset-x-0&#34;&gt;Q&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
@@ -520,70 +447,56 @@ Electron上で動作しているNode.jsのバージョンを知りたい。&lt;/
 フィクションやスポーツの世界で、それぞれ10個づつ、「名コンビ」をリストアップしてくれませんか?&lt;/div&gt;
 &lt;/div&gt;</description>
     </item>
-    
     <item>
       <title>疾走感のある曲を検索したい</title>
       <link>https://kantas-spike.github.io/portfolio/dialogues/03-shissoukan/</link>
       <pubDate>Fri, 12 May 2023 15:50:07 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/dialogues/03-shissoukan/</guid>
       <description>&lt;div class=&#34;quote text-[#ececf1] relative p-2 pr-4 bg-[#343542] border border-[#2b2b32] rounded-sm mt-2 mb-6&#34;&gt;
     &lt;div class=&#34;font-serif text-3xl absolute top-0 left-0 py-2 pl-2 pr-1 font-bold text-[#ffffff]&#34;&gt;&lt;div class=&#34;w-[2.25rem] h-[2.25rem] bg-[#e64b3b] text-center relative&#34;&gt;&lt;div class=&#34;absolute -top-[2px] inset-x-0&#34;&gt;Q&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
     &lt;div class=&#34;ml-12 mt-0.5 mb-2 whitespace-pre-wrap text_block&#34;&gt;疾走感のある曲を検索したいと思っています。日本語の「疾走感」って英語では何といいますか? また、英語で何と入力すれば「疾走感」のある曲を検索できるでしょうか?&lt;/div&gt;
 &lt;/div&gt;</description>
     </item>
-    
     <item>
       <title>Kindle.appで指定した購入済み書籍を直接開きたい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/04/53-open-book-by-kindle-app/</link>
       <pubDate>Tue, 25 Apr 2023 17:54:10 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2023/04/53-open-book-by-kindle-app/</guid>
       <description>&lt;p&gt;macOSのKindle.appで指定した購入済み書籍を直接開きたい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>「プログラミング演習 Python 2021」を学ぶ</title>
       <link>https://kantas-spike.github.io/portfolio/articles/2023/04/13-learn-programming-practice-python-2021/</link>
       <pubDate>Wed, 05 Apr 2023 02:16:01 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/articles/2023/04/13-learn-programming-practice-python-2021/</guid>
       <description>&lt;p&gt;京都大学が無料公開しているPythonの教科書『&lt;a href=&#34;https://repository.kulib.kyoto-u.ac.jp/dspace/handle/2433/265459&#34;&gt;プログラミング演習 Python 2021&lt;/a&gt;』の存在を知りました。&lt;/p&gt;
 &lt;p&gt;ありがとうございます。京都大学!! この演習をやっていきたいと思います。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Siriに天気を聞きたい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/03/52-using-wether-forecast-with-siri/</link>
       <pubDate>Tue, 14 Mar 2023 22:14:09 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2023/03/52-using-wether-forecast-with-siri/</guid>
       <description>&lt;p&gt;Siriに天気を聞きたい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Siriで英語を学びたい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/03/51-learning-english-with-siri/</link>
       <pubDate>Tue, 14 Mar 2023 21:59:31 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2023/03/51-learning-english-with-siri/</guid>
       <description>&lt;p&gt;Siriを使って英語を学びたい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Inkscapeでオブジェクトを作成する前に色を設定したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/03/48-set-color-to-object-with-inkscape/</link>
       <pubDate>Tue, 14 Mar 2023 12:05:30 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2023/03/48-set-color-to-object-with-inkscape/</guid>
       <description>&lt;p&gt;Inkscapeで矩形などのオブジェクトを配置する際に、配置してから色を設定するのではなく、事前にオブジェクトの色を設定しておきたい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>ホームページ用のコピーライトの書式を教えて</title>
       <link>https://kantas-spike.github.io/portfolio/dialogues/02-tell-me-howto-write-copyright/</link>
       <pubDate>Fri, 17 Feb 2023 11:58:17 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/dialogues/02-tell-me-howto-write-copyright/</guid>
       <description>&lt;div class=&#34;quote text-[#ececf1] relative p-2 pr-4 bg-[#343542] border border-[#2b2b32] rounded-sm mt-2 mb-6&#34;&gt;
     &lt;div class=&#34;font-serif text-3xl absolute top-0 left-0 py-2 pl-2 pr-1 font-bold text-[#ffffff]&#34;&gt;&lt;div class=&#34;w-[2.25rem] h-[2.25rem] bg-[#e64b3b] text-center relative&#34;&gt;&lt;div class=&#34;absolute -top-[2px] inset-x-0&#34;&gt;Q&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
@@ -595,125 +508,99 @@ Copyright 2022 my homepage name
 また、2022年からホームページを開始したので、2022年と記載していますが、毎年年数を更新するべきなのでしょうか?&lt;/div&gt;
 &lt;/div&gt;</description>
     </item>
-    
     <item>
       <title>Pythonプロジェクトのパッケージを管理する</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/02/47-use-poetry/</link>
       <pubDate>Fri, 17 Feb 2023 07:20:29 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2023/02/47-use-poetry/</guid>
       <description>&lt;p&gt;GitHubにPythonのプログラムを公開する時に、利用しているPythonのバージョンとパッケージを指定したい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Jupyter Notebookを使う</title>
       <link>https://kantas-spike.github.io/portfolio/articles/2023/02/12-use-jupyter-notebook/</link>
       <pubDate>Thu, 16 Feb 2023 08:44:35 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/articles/2023/02/12-use-jupyter-notebook/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://jupyter.org/&#34;&gt;Jupyter Notebook&lt;/a&gt;という、文書、プログラムコード、数式、や図形を1つのドキュメントとして表現できるWebアプリケーションがあるそうです。 &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 &lt;p&gt;Pythonを使って、数学を勉強する時には便利そうです。今回は、実際に&lt;code&gt;Jupyter Notebook&lt;/code&gt;を使ってみます。そして、作成したノートをブログに掲載できる形式に変換できるかを検証します。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>make_book_pdf</title>
       <link>https://kantas-spike.github.io/portfolio/mytools/make_book_pdf/</link>
       <pubDate>Thu, 09 Feb 2023 21:12:50 +0000</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/mytools/make_book_pdf/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>makeを使って『Make本』をメイクする</title>
       <link>https://kantas-spike.github.io/portfolio/articles/2023/02/10-make-make-book-using-make/</link>
       <pubDate>Thu, 09 Feb 2023 07:21:11 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/articles/2023/02/10-make-make-book-using-make/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://kantas-spike.github.io/portfolio/blog/2023/02/09-merge-make-book/&#34;&gt;PDFで公開されているMake本をマージする | kanta&amp;rsquo;s spike&lt;/a&gt;で、公開されている&lt;a href=&#34;https://www.oreilly.co.jp/library/4873112699/&#34;&gt;GNU Make 第3版&lt;/a&gt;のPDFをマージするシェルスクリプトを作成したことを紹介しました。&lt;/p&gt;
 &lt;p&gt;折角なので、この『Make本』を読んで学びたいと思います。
 そして、勉強の成果として、&lt;a href=&#34;https://kantas-spike.github.io/portfolio/blog/2023/02/09-merge-make-book/&#34;&gt;PDFで公開されているMake本をマージする | kanta&amp;rsquo;s spike&lt;/a&gt;で作成したシェルスクリプトを&lt;code&gt;makefile&lt;/code&gt;に置き換えたいと思います。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>シェルスクリプトでファイル内の各行を処理したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/02/46-process-each-line-in-a-file-using-shellscript/</link>
       <pubDate>Wed, 08 Feb 2023 23:53:39 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2023/02/46-process-each-line-in-a-file-using-shellscript/</guid>
       <description>&lt;p&gt;シェルスクリプトで、URL一覧ファイルから各URL行を取得し処理を行いたい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>複数のPDFファイルをマージしたい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/02/45-merge-pdfs-by-ghostscript/</link>
       <pubDate>Wed, 08 Feb 2023 19:54:23 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2023/02/45-merge-pdfs-by-ghostscript/</guid>
       <description>&lt;p&gt;複数あるPDFファイルをマージして1つのファイルにまとめたい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>PDFで公開されているMake本をマージする</title>
       <link>https://kantas-spike.github.io/portfolio/articles/2023/02/09-merge-make-book/</link>
       <pubDate>Wed, 08 Feb 2023 16:02:46 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/articles/2023/02/09-merge-make-book/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://www.oreilly.co.jp/library/4873112699/&#34;&gt;GNU Make 第3版&lt;/a&gt;がPDFで公開されていることを知りました。 &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 &lt;p&gt;ありがたいですね。でも、章ごとにPDFファイルが分割されているので少し読みにくいですね。
 章ごとに分割されたPDFを1つにまとめて、さらに目次情報を追加したいですね。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>HugoでPlotlyによるグラフを表示したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/02/44-add-render-hook-for-plotly/</link>
       <pubDate>Wed, 08 Feb 2023 09:46:02 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2023/02/44-add-render-hook-for-plotly/</guid>
       <description>&lt;p&gt;ブログにグラフを表示したい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>HugoでMathJaxによる数式を表示したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/02/43-add-render-hook-for-mathjax/</link>
       <pubDate>Wed, 08 Feb 2023 09:15:06 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2023/02/43-add-render-hook-for-mathjax/</guid>
       <description>&lt;p&gt;ブログに数式を表示したい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>create-subtitle-image</title>
       <link>https://kantas-spike.github.io/portfolio/mytools/create_subtitle_image/</link>
       <pubDate>Tue, 07 Feb 2023 11:30:15 +0000</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/mytools/create_subtitle_image/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Spotlightからシェルスクリプトを呼び出す</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/02/42-run-shellscript-using-spotlight/</link>
       <pubDate>Tue, 07 Feb 2023 00:30:31 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2023/02/42-run-shellscript-using-spotlight/</guid>
       <description>&lt;p&gt;macOSのSpotlightからシェルスクリプトを呼び出したい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Inkscapeを使ってコマンドラインからSVG画像をPNGに変換する</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/02/41-convert-svg-to-png-from-commandline-using-inkscape/</link>
       <pubDate>Tue, 07 Feb 2023 00:04:37 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2023/02/41-convert-svg-to-png-from-commandline-using-inkscape/</guid>
       <description>&lt;p&gt;Inkscapeを使ってコマンドラインからSVG画像をPNGに変換したい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>古い看板に使うようなフォントファミリーを教えて</title>
       <link>https://kantas-spike.github.io/portfolio/dialogues/01-tell-me-font-family/</link>
       <pubDate>Thu, 02 Feb 2023 15:33:58 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/dialogues/01-tell-me-font-family/</guid>
       <description>&lt;div class=&#34;quote text-[#ececf1] relative p-2 pr-4 bg-[#343542] border border-[#2b2b32] rounded-sm mt-2 mb-6&#34;&gt;
     &lt;div class=&#34;font-serif text-3xl absolute top-0 left-0 py-2 pl-2 pr-1 font-bold text-[#ffffff]&#34;&gt;&lt;div class=&#34;w-[2.25rem] h-[2.25rem] bg-[#e64b3b] text-center relative&#34;&gt;&lt;div class=&#34;absolute -top-[2px] inset-x-0&#34;&gt;Q&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
@@ -721,21 +608,17 @@ Copyright 2022 my homepage name
 もし、そのようなフォントファミリーの中で、open font licenseで公開されているフォントがあれば教えてください。&lt;/div&gt;
 &lt;/div&gt;</description>
     </item>
-    
     <item>
       <title>add_slide.py</title>
       <link>https://kantas-spike.github.io/portfolio/mytools/add_slide.py/</link>
       <pubDate>Thu, 26 Jan 2023 23:04:50 +0000</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/mytools/add_slide.py/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>ダウンロードしたPDFに目次を追加したい</title>
       <link>https://kantas-spike.github.io/portfolio/articles/2023/01/07-adding-toc-to-a-donwloaded-pdf/</link>
       <pubDate>Thu, 26 Jan 2023 04:14:58 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/articles/2023/01/07-adding-toc-to-a-donwloaded-pdf/</guid>
       <description>&lt;p&gt;プログラミングを学ぶために、数学を学びなおしたいと思っています。&lt;/p&gt;
 &lt;p&gt;米田優峻さんが公開されている&lt;a href=&#34;https://speakerdeck.com/e869120/150-fen-dexue-bugao-xiao-shu-xue-noji-chu&#34;&gt;150 分で学ぶ高校数学の基礎 - Speaker Deck&lt;/a&gt;という資料を知りました。&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; &lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
@@ -743,12 +626,10 @@ Copyright 2022 my homepage name
 全10章、259ページあるのですが、このPDFには目次がついていません。少し不便ですね。&lt;/p&gt;
 &lt;p&gt;目次を追加する方法がないか調べてみました。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Blenderアドオン開発時の命名規則</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/01/40-naming-convention-of-blender-addon/</link>
       <pubDate>Tue, 24 Jan 2023 22:56:25 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2023/01/40-naming-convention-of-blender-addon/</guid>
       <description>&lt;p&gt;Blenderを起動すると、アドオンの登録時に、以下の警告が表示される。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;% /Applications/Blender.app/Contents/MacOS/Blender
@@ -756,243 +637,191 @@ Copyright 2022 my homepage name
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Warning: &lt;span class=&#34;s1&#34;&gt;&amp;#39;SRTLOADER_SrtList&amp;#39;&lt;/span&gt; does not contain &lt;span class=&#34;s1&#34;&gt;&amp;#39;_PT_&amp;#39;&lt;/span&gt; with prefix and suffix
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
-    
     <item>
       <title>srt_loader</title>
       <link>https://kantas-spike.github.io/portfolio/ihc/srt_loader/</link>
       <pubDate>Sun, 22 Jan 2023 22:24:21 +0000</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/ihc/srt_loader/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>PythonでユニークなIDを生成する</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/01/39-generate-unique-id-by-python/</link>
       <pubDate>Wed, 18 Jan 2023 13:19:05 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2023/01/39-generate-unique-id-by-python/</guid>
       <description>&lt;p&gt;PythonでユニークなIDを生成したい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Simple Inkscape Scriptingでスクリプトに追加の引数を渡したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/01/38-parse-rest-args-with-argparse/</link>
       <pubDate>Tue, 17 Jan 2023 15:46:23 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2023/01/38-parse-rest-args-with-argparse/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://github.com/spakin/SimpInkScr&#34;&gt;Simple Inkscape Scripting&lt;/a&gt;をコマンドラインで実行するときに、スクリプトに&lt;code&gt;data.txt&lt;/code&gt;のような追加の引数を渡したい。&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;% simple_inkscape_scripting.py --py-source my_script.py input.svg data.txt
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
-    
     <item>
       <title>コマンドラインからSimple Inkscape Scriptingを使いたい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/01/37-use-commandline-by-simpinkscr/</link>
       <pubDate>Tue, 17 Jan 2023 13:32:46 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2023/01/37-use-commandline-by-simpinkscr/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://github.com/spakin/SimpInkScr&#34;&gt;Simple Inkscape Scripting&lt;/a&gt;を使って作成したスクリプトをコマンドラインから実行したい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Color-Wheel</title>
       <link>https://kantas-spike.github.io/portfolio/ihc/color_wheel/</link>
       <pubDate>Wed, 28 Dec 2022 11:37:26 +0000</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/ihc/color_wheel/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>title_url_copier</title>
       <link>https://kantas-spike.github.io/portfolio/mytools/title_url_copier/</link>
       <pubDate>Tue, 27 Dec 2022 15:36:30 +0000</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/mytools/title_url_copier/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>InkscapeでPythonを使う</title>
       <link>https://kantas-spike.github.io/portfolio/til/2022/12/36-inkscape-with-python/</link>
       <pubDate>Sun, 11 Dec 2022 08:24:09 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2022/12/36-inkscape-with-python/</guid>
       <description>&lt;p&gt;&lt;code&gt;Inkscape&lt;/code&gt;でPythonを使い、縁取り文字の作成を自動化したい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>slide2video.py</title>
       <link>https://kantas-spike.github.io/portfolio/mytools/slide2video.py/</link>
       <pubDate>Fri, 09 Dec 2022 11:50:43 +0000</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/mytools/slide2video.py/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Makefileでリリース用と開発用で設定を切り替えたい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2022/12/35-switch-dev-or-release-with-makefile/</link>
       <pubDate>Fri, 09 Dec 2022 10:10:58 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2022/12/35-switch-dev-or-release-with-makefile/</guid>
       <description>&lt;p&gt;シェルとPythonを組合せたツールを配布する際に、Makefileでリリース用と開発用で設定を切り替えれるようにしたい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>VSCodeでターミナルとコードの間を行き来する</title>
       <link>https://kantas-spike.github.io/portfolio/til/2022/12/34-switch-terminal-between-code-with-vscode/</link>
       <pubDate>Fri, 09 Dec 2022 03:28:37 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2022/12/34-switch-terminal-between-code-with-vscode/</guid>
       <description>&lt;p&gt;&lt;code&gt;vscode&lt;/code&gt;を操作中に、ターミナルとコードの行き来をショートカットで行いたい&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>create-subtitles-movie.sh</title>
       <link>https://kantas-spike.github.io/portfolio/mytools/create_subtitles_movie.sh/</link>
       <pubDate>Tue, 06 Dec 2022 15:03:57 +0000</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/mytools/create_subtitles_movie.sh/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>自作ツールをインストールしたい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2022/12/33-tool-dir/</link>
       <pubDate>Sun, 04 Dec 2022 23:00:39 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2022/12/33-tool-dir/</guid>
       <description>&lt;p&gt;自作のShellなどのツールを作ったときに、どのディレクトリにインストールするべきなのか?&lt;/p&gt;
 &lt;p&gt;ツールのソースは、作業ディレクトリで開発しGitHubで管理するが、ツール自体はどうインストールするべき?&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>PythonスクリプトをBlenderで実行したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2022/11/31-run-python-script-from-blender/</link>
       <pubDate>Fri, 25 Nov 2022 06:08:32 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2022/11/31-run-python-script-from-blender/</guid>
       <description>&lt;p&gt;作成したPythonのスクリプトをBlender起動時に実行したい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>spike.py</title>
       <link>https://kantas-spike.github.io/portfolio/mytools/spike.py/</link>
       <pubDate>Mon, 14 Nov 2022 07:41:52 +0000</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/mytools/spike.py/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>MacOSのFinderにVScodeを開く機能を追加したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2022/11/30-add-finder-service-of-vscode/</link>
       <pubDate>Mon, 14 Nov 2022 09:32:58 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2022/11/30-add-finder-service-of-vscode/</guid>
       <description>&lt;p&gt;MacOSのFinderでフォルダを選択して、右クリックですぐにVSCodeで開きたい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>表示時の幅を指定できるYoutube動画用のShortcodeを追加したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2022/09/29-add-shortcode-to-set-the-width-of-youtube-video/</link>
       <pubDate>Thu, 22 Sep 2022 20:19:54 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2022/09/29-add-shortcode-to-set-the-width-of-youtube-video/</guid>
       <description>&lt;p&gt;Hugo標準のYoutube用ショートコードを使用すると、横幅一杯にYoutube動画が表示される。
 幅をスタイル指定可能なYoutube動画用のShortcodeを追加したい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Blenderを学ぶ</title>
       <link>https://kantas-spike.github.io/portfolio/articles/2022/09/06-study-blender/</link>
       <pubDate>Wed, 21 Sep 2022 09:46:04 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/articles/2022/09/06-study-blender/</guid>
       <description>&lt;p&gt;CGってなんか素敵な響きですよね。3DCGなんて興奮しますね。
 でも、私にとって3DCGは使う機会もなくて遠い存在です。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>pdf2jpg.sh</title>
       <link>https://kantas-spike.github.io/portfolio/mytools/pdf2jpg.sh/</link>
       <pubDate>Tue, 06 Sep 2022 05:50:30 +0000</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/mytools/pdf2jpg.sh/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>英語を学ぶ</title>
       <link>https://kantas-spike.github.io/portfolio/articles/2022/09/05-study-english/</link>
       <pubDate>Sun, 04 Sep 2022 08:55:25 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/articles/2022/09/05-study-english/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://cruel.org/freeware/hacker.html&#34;&gt;ハッカーになろう&lt;/a&gt;では、&lt;strong&gt;基本的なハッキング技術&lt;/strong&gt; を4つ挙げています。
 その内の一つが&lt;strong&gt;英語&lt;/strong&gt;です。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>HugoでcssのURLにハッシュを付与したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2022/09/28-add-hash-to-url-with-hugo/</link>
       <pubDate>Sun, 04 Sep 2022 04:28:24 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2022/09/28-add-hash-to-url-with-hugo/</guid>
       <description>&lt;p&gt;キャッシュを回避するためにCSSやJavascriptなどのリソースファイルのURLにハッシュを付けたい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>create-color-wheel.py</title>
       <link>https://kantas-spike.github.io/portfolio/mytools/create_color_wheel.py/</link>
       <pubDate>Thu, 01 Sep 2022 07:16:10 +0000</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/mytools/create_color_wheel.py/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Hugoで一覧に表示するページをフィルタリングしたい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2022/08/27-filter-pages-with-hugo/</link>
       <pubDate>Mon, 29 Aug 2022 13:51:51 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2022/08/27-filter-pages-with-hugo/</guid>
       <description>&lt;p&gt;検索インデックスの元データに含めるページを選択したい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>tailwindcss で Responsive Design したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2022/08/26-responsive-with-tailwindcss/</link>
       <pubDate>Sun, 28 Aug 2022 10:52:51 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2022/08/26-responsive-with-tailwindcss/</guid>
       <description>&lt;p&gt;tailwindcss で Responsive なデザインをしたい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Hugoで引用した文を目立たせたい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2022/08/25-quotation-with-hugo/</link>
       <pubDate>Sat, 27 Aug 2022 04:23:14 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2022/08/25-quotation-with-hugo/</guid>
       <description>&lt;p&gt;引用した文を目立たせたい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>SearchIndexData</title>
       <link>https://kantas-spike.github.io/portfolio/search/index.json</link>
       <pubDate>Tue, 23 Aug 2022 01:58:01 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/search/index.json</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Webサイトの配色とカラーホイール</title>
       <link>https://kantas-spike.github.io/portfolio/articles/2022/08/04-study-color-wheel/</link>
       <pubDate>Fri, 19 Aug 2022 00:25:51 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/articles/2022/08/04-study-color-wheel/</guid>
       <description>&lt;p&gt;プログラミング学習には、HTMLを書くと良い&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;そうです。
 なので、Webサイトを作りたいと思っています。&lt;/p&gt;
@@ -1000,274 +829,217 @@ Copyright 2022 my homepage name
 &lt;p&gt;今回、夏休みの自由研究として、配色について学び、
 自分のWebサイトの配色を選びたいと思います。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Tkinterで部品を上手く配置したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2022/08/21-layout-widgits-with-tkinter/</link>
       <pubDate>Sun, 07 Aug 2022 02:18:55 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2022/08/21-layout-widgits-with-tkinter/</guid>
       <description>&lt;p&gt;Tkinterで画面に部品を上手く配置したいが、
 &lt;strong&gt;Geometry Manager&lt;/strong&gt; には幾つか種類があるが、どれを使って画面を作成するべきなのか。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>PDFの特定ページにリンクを貼りたい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2022/08/20-link-to-the-page-of-pdf/</link>
       <pubDate>Sat, 06 Aug 2022 16:02:01 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2022/08/20-link-to-the-page-of-pdf/</guid>
       <description>&lt;p&gt;PDFの特定ページにリンクを貼りたい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Tkinterで部品の背景色を変更したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2022/08/19-fill-bg-color-with-tkinter/</link>
       <pubDate>Sat, 06 Aug 2022 15:59:38 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2022/08/19-fill-bg-color-with-tkinter/</guid>
       <description>&lt;p&gt;Tkinterでウィンドウの背景色を変更した時に、部品の周りに異なる背景色が表示される。
 ウィンドウの背景色に合せるために、Tkinterで部品の背景色を変更したい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Pythonで図形を回転させたい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2022/08/18-rotate-item-with-python/</link>
       <pubDate>Wed, 03 Aug 2022 23:01:11 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2022/08/18-rotate-item-with-python/</guid>
       <description>&lt;p&gt;&lt;code&gt;tkinter&lt;/code&gt;のCanvas内にある図形の位置を原点を中心に回転させたい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>2色のコントラストの差を知りたい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2022/08/17-color-contrast/</link>
       <pubDate>Mon, 01 Aug 2022 23:45:37 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2022/08/17-color-contrast/</guid>
       <description>&lt;p&gt;背景色にあったテキスト色を選べるようにしたい。
 赤に白い字は読めるが、薄黄に白い字は読めない。&lt;/p&gt;
 &lt;p&gt;背景色とテキスト色の差から文字色を変更できるようにしたい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Pythonでコマンドラインオプション取得したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2022/08/16-python-option-parser/</link>
       <pubDate>Mon, 01 Aug 2022 12:09:43 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2022/08/16-python-option-parser/</guid>
       <description>&lt;p&gt;Pythonで作った自作のコマンドラインツールで、コマンドラインオプションを利用したい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Pythonでグラフを描きたい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2022/07/15-python-graph/</link>
       <pubDate>Sun, 31 Jul 2022 21:13:04 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2022/07/15-python-graph/</guid>
       <description>&lt;p&gt;プログラムの処理中に出てくる数式の意味を理解するために、Pythonでグラフを描いて数式を確認したい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>良いコミットメッセージを書きたい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2022/07/14-good-commit-message/</link>
       <pubDate>Wed, 27 Jul 2022 17:58:10 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2022/07/14-good-commit-message/</guid>
       <description>&lt;p&gt;良いコミットメッセージを書きたい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Hugoでtailwindcssを使いたい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2022/07/13-hugo-with-tailwindcss/</link>
       <pubDate>Wed, 27 Jul 2022 10:44:53 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2022/07/13-hugo-with-tailwindcss/</guid>
       <description>&lt;p&gt;Hugoで&lt;strong&gt;PostCSS&lt;/strong&gt;のプラグインとして&lt;strong&gt;tailwindcss&lt;/strong&gt;を使いたい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>ツールの学習 Git</title>
       <link>https://kantas-spike.github.io/portfolio/articles/2022/07/03-how-to-learn-git/</link>
       <pubDate>Mon, 25 Jul 2022 11:32:58 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/articles/2022/07/03-how-to-learn-git/</guid>
       <description>&lt;p&gt;プログラミングの学習ではGitHubをよく使います。
 GitHubを使うためには&lt;code&gt;git&lt;/code&gt;を使えないといけません。&lt;/p&gt;
 &lt;p&gt;そこで、&lt;a href=&#34;https://missing.csail.mit.edu/2020/version-control/&#34;&gt;Version Control (Git) · the missing semester of your cs education&lt;/a&gt;(&lt;a href=&#34;https://missing-semester-jp.github.io/2020/version-control/&#34;&gt;翻訳&lt;/a&gt;)で&lt;code&gt;git&lt;/code&gt;について学びたいと思います。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>ツールの学習 はじめに</title>
       <link>https://kantas-spike.github.io/portfolio/articles/2022/07/02-how-to-learn-tools/</link>
       <pubDate>Mon, 25 Jul 2022 07:40:38 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/articles/2022/07/02-how-to-learn-tools/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.catb.org/~esr/faqs/hacking-howto.html&#34;&gt;How To Learn Hacking&lt;/a&gt;(&lt;a href=&#34;https://github.com/kantas-spike/how-to-learn-hacking-japanese/blob/main/how-to-learn-hacking.md&#34;&gt;翻訳:ハッキングの学び方&lt;/a&gt;)では、「言語やツールを学習する」を学習の第一段階に挙げていました。&lt;/p&gt;
 &lt;p&gt;「言語の学習」については、公式・非公式文書、書籍、練習問題などで学習できます。
 「ツールの学習」はどうするのでしょうか？&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>HugoでSVGを埋め込みたい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2022/07/12-hugo-with-svg/</link>
       <pubDate>Sun, 24 Jul 2022 08:11:18 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2022/07/12-hugo-with-svg/</guid>
       <description>&lt;p&gt;HugoでSVGのアイコンを埋め込みたい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>vv_wav2slide_wav.py</title>
       <link>https://kantas-spike.github.io/portfolio/mytools/vv_wav2slide_wav.py/</link>
       <pubDate>Sat, 23 Jul 2022 05:25:29 +0000</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/mytools/vv_wav2slide_wav.py/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Hugoでショートコードの記述をエスケープして表示したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2022/07/11-hugo-escape-shortcodes/</link>
       <pubDate>Sat, 23 Jul 2022 12:34:13 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2022/07/11-hugo-escape-shortcodes/</guid>
       <description>&lt;p&gt;説明用に、ショートコードをエスケープして表記方法を記載したい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>HugoのMarkdownでHTMLをそのまま記述したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2022/07/10-hugo-with-rawhtml/</link>
       <pubDate>Sat, 23 Jul 2022 12:13:01 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2022/07/10-hugo-with-rawhtml/</guid>
       <description>&lt;p&gt;HugoのMarkdown内にHTMLを直接記述すると、&lt;code&gt;&amp;lt;!-- raw HTML omitted --&amp;gt;&lt;/code&gt;に変換され無視される。
 直接HTMLを書く手段が欲しい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>hugoでyoutubeのplaylistを埋め込みたい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2022/07/09-hugo-with-youtube-playlist/</link>
       <pubDate>Sat, 23 Jul 2022 11:55:13 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2022/07/09-hugo-with-youtube-playlist/</guid>
       <description>&lt;p&gt;youtube用の標準ショートコードのplaylist版が欲しい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>プログラミングの学び方</title>
       <link>https://kantas-spike.github.io/portfolio/articles/2022/07/00-how-to-learn-programming/</link>
       <pubDate>Fri, 22 Jul 2022 19:33:48 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/articles/2022/07/00-how-to-learn-programming/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.catb.org/~esr/faqs/hacker-howto.html&#34;&gt;How To Became A Hacker&lt;/a&gt;(&lt;a href=&#34;https://cruel.org/freeware/hacker.html#believe3&#34;&gt;翻訳:ハッカーになろう&lt;/a&gt;)と、
 &lt;a href=&#34;http://www.catb.org/~esr/faqs/hacking-howto.html&#34;&gt;How To Learn Hacking&lt;/a&gt;(&lt;a href=&#34;https://github.com/kantas-spike/how-to-learn-hacking-japanese/blob/main/how-to-learn-hacking.md&#34;&gt;翻訳:ハッキングの学び方&lt;/a&gt;)を読んで、自分にあったプログラミング学習方法がわかった気がします。&lt;/p&gt;
 &lt;p&gt;これらの文書で学んだことをまとめたいと思います。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>gitでsubmoduleの更新を取り込みたい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2022/07/08-git-submodule-update/</link>
       <pubDate>Fri, 22 Jul 2022 17:22:37 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2022/07/08-git-submodule-update/</guid>
       <description>gitでsubmoduleの上流での更新を取り込みたい。
 解決策 以下を実行する。
 git submodule update --remote 参考 上流の変更の取り込み </description>
     </item>
-    
     <item>
       <title>Markdown内でコードブロックを引用したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2022/07/07-quote-code-block-in-markdown/</link>
       <pubDate>Fri, 22 Jul 2022 15:31:39 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2022/07/07-quote-code-block-in-markdown/</guid>
       <description>&lt;p&gt;コードブロックの表記自体を引用したい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>HugoでシンタックスハイライトCSSを利用したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2022/07/06-hugo-with-syntax-highlighter-css/</link>
       <pubDate>Fri, 22 Jul 2022 14:35:35 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2022/07/06-hugo-with-syntax-highlighter-css/</guid>
       <description>&lt;p&gt;デフォルトだと&lt;code&gt;hugo&lt;/code&gt;の&lt;code&gt;Markdown&lt;/code&gt;のコードブロックには、シンタックスハイライト用の&lt;code&gt;style&lt;/code&gt;が直接埋め込まれる。&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;style&lt;/code&gt;ではなく&lt;code&gt;class&lt;/code&gt;名の埋め込みに変更し、&lt;code&gt;css&lt;/code&gt;によりハイライトの表示を変更可能にしたい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>hugoにコンテンツ追加時にvscodeですぐに編集したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2022/07/05-hugo-with-editor/</link>
       <pubDate>Fri, 22 Jul 2022 14:13:39 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2022/07/05-hugo-with-editor/</guid>
       <description>&lt;p&gt;&lt;code&gt;hugo&lt;/code&gt;でコンテンツを追加したときに、すぐに&lt;code&gt;vscode&lt;/code&gt;で編集したい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>hugoでmermaid.jsを使いたい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2022/07/04-hugo-with-mermaid/</link>
       <pubDate>Fri, 22 Jul 2022 13:49:28 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2022/07/04-hugo-with-mermaid/</guid>
       <description>&lt;p&gt;Hugoで&lt;a href=&#34;https://mermaid-js.github.io/mermaid/#/&#34;&gt;mermaid.js&lt;/a&gt;を使いたい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>hugoで環境に依存しないタグのリンクを取得したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2022/07/03-hugo-tag-link/</link>
       <pubDate>Fri, 15 Jul 2022 11:28:26 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2022/07/03-hugo-tag-link/</guid>
       <description>&lt;p&gt;ページに定義されたタグから環境に依存しないURLを生成したい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>hugoで出力ディレクトリを削除してから実行したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2022/07/02-hugo-options/</link>
       <pubDate>Fri, 15 Jul 2022 09:31:02 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2022/07/02-hugo-options/</guid>
       <description>&lt;p&gt;削除済みのファイルが出力ディレクトリに残るのを防ぐため、
 &lt;code&gt;hugo&lt;/code&gt;で、最初に出力ディレクトリを削除してから実行したい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>hugo serverをキャッシュ無しで表示させる</title>
       <link>https://kantas-spike.github.io/portfolio/til/2022/07/01-hugo-server-options/</link>
       <pubDate>Fri, 15 Jul 2022 09:16:56 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2022/07/01-hugo-server-options/</guid>
       <description>&lt;p&gt;&lt;code&gt;hugo server&lt;/code&gt; でサイトを確認してもキャッシュが表示される。
 キャッシュなしで表示したい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>ポートフォリオサイトを作成する</title>
       <link>https://kantas-spike.github.io/portfolio/articles/2022/07/01-create-my-portfolio-site/</link>
       <pubDate>Fri, 15 Jul 2022 06:13:30 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/articles/2022/07/01-create-my-portfolio-site/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;と&lt;a href=&#34;https://gohugo.io/hosting-and-deployment/hosting-on-github/&#34;&gt;GitHub Pages&lt;/a&gt;を使って、プログラミングの学習記録サイトを作りたいと思います。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>odp2jpg.sh</title>
       <link>https://kantas-spike.github.io/portfolio/mytools/odp2jpg.sh/</link>
       <pubDate>Mon, 11 Jul 2022 15:23:57 +0000</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/mytools/odp2jpg.sh/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Pong-Game-with-Pygame</title>
       <link>https://kantas-spike.github.io/portfolio/ihc/pong_game_with_pygame/</link>
       <pubDate>Tue, 05 Jul 2022 18:45:27 +0000</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/ihc/pong_game_with_pygame/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

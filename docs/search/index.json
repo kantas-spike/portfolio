@@ -1,6 +1,21 @@
 {
     "results": [
     {
+        "href": "https://kantas-spike.github.io/portfolio/til/2023/11/90-using-type-alias-of-typescript/",
+        "title": "TypeScriptでtypeエイリアスはどこに定義するべき",
+        "tags": "typescript"
+    },
+    {
+        "href": "https://kantas-spike.github.io/portfolio/til/2023/11/89-using-tsc/",
+        "title": "tscコマンドの基本的な使い方を知りたい",
+        "tags": "typescript"
+    },
+    {
+        "href": "https://kantas-spike.github.io/portfolio/til/2023/11/88-reload-eslint-results-of-vscode/",
+        "title": "vscodeでeslintの結果をリロードしたい",
+        "tags": "javascript typescript eslint vscode"
+    },
+    {
         "href": "https://kantas-spike.github.io/portfolio/til/2023/10/87-remove-extended-attrs/",
         "title": "MacOSで拡張属性を削除したい",
         "tags": "macos"

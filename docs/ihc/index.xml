@@ -7,87 +7,70 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>© 2022 kanta&#39;s spike</copyright>
-    <lastBuildDate>Fri, 22 Jul 2022 08:15:27 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/ihc/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 22 Jul 2022 08:15:27 +0900</lastBuildDate>
+    <atom:link href="https://kantas-spike.github.io/portfolio/ihc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>idea_bank</title>
       <link>https://kantas-spike.github.io/portfolio/ihc/idea_bank/</link>
       <pubDate>Sat, 02 Sep 2023 04:05:04 +0000</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/ihc/idea_bank/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>kantas-theme</title>
       <link>https://kantas-spike.github.io/portfolio/ihc/kantas_theme/</link>
       <pubDate>Sat, 02 Sep 2023 04:02:37 +0000</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/ihc/kantas_theme/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>ibank-extension</title>
       <link>https://kantas-spike.github.io/portfolio/ihc/ibank_extension/</link>
       <pubDate>Fri, 01 Sep 2023 22:33:19 +0000</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/ihc/ibank_extension/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>learn_vscode_extension</title>
       <link>https://kantas-spike.github.io/portfolio/ihc/learn_vscode_extension/</link>
       <pubDate>Wed, 30 Aug 2023 15:31:00 +0000</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/ihc/learn_vscode_extension/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>perN</title>
       <link>https://kantas-spike.github.io/portfolio/ihc/pern/</link>
       <pubDate>Wed, 09 Aug 2023 22:26:49 +0000</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/ihc/pern/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>learn_react</title>
       <link>https://kantas-spike.github.io/portfolio/ihc/learn_react/</link>
       <pubDate>Sat, 22 Jul 2023 16:46:28 +0000</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/ihc/learn_react/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>srt_loader</title>
       <link>https://kantas-spike.github.io/portfolio/ihc/srt_loader/</link>
       <pubDate>Sun, 22 Jan 2023 22:24:21 +0000</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/ihc/srt_loader/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Color-Wheel</title>
       <link>https://kantas-spike.github.io/portfolio/ihc/color_wheel/</link>
       <pubDate>Wed, 28 Dec 2022 11:37:26 +0000</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/ihc/color_wheel/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Pong-Game-with-Pygame</title>
       <link>https://kantas-spike.github.io/portfolio/ihc/pong_game_with_pygame/</link>
       <pubDate>Tue, 05 Jul 2022 18:45:27 +0000</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/ihc/pong_game_with_pygame/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

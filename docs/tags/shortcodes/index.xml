@@ -7,34 +7,29 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>© 2022 kanta&#39;s spike</copyright>
-    <lastBuildDate>Thu, 27 Jul 2023 23:27:25 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/shortcodes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 27 Jul 2023 23:27:25 +0900</lastBuildDate>
+    <atom:link href="https://kantas-spike.github.io/portfolio/tags/shortcodes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugoでショートコードやコードブロックの子要素にMarkdownを渡したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/07/75-convert-markdown-to-html-with-hugo/</link>
       <pubDate>Thu, 27 Jul 2023 23:27:25 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2023/07/75-convert-markdown-to-html-with-hugo/</guid>
       <description>&lt;p&gt;ショートコードやレンダーブロックの子要素にMarkdownコンテンツを渡したい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>表示時の幅を指定できるYoutube動画用のShortcodeを追加したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2022/09/29-add-shortcode-to-set-the-width-of-youtube-video/</link>
       <pubDate>Thu, 22 Sep 2022 20:19:54 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2022/09/29-add-shortcode-to-set-the-width-of-youtube-video/</guid>
       <description>&lt;p&gt;Hugo標準のYoutube用ショートコードを使用すると、横幅一杯にYoutube動画が表示される。
 幅をスタイル指定可能なYoutube動画用のShortcodeを追加したい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>hugoでyoutubeのplaylistを埋め込みたい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2022/07/09-hugo-with-youtube-playlist/</link>
       <pubDate>Sat, 23 Jul 2022 11:55:13 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2022/07/09-hugo-with-youtube-playlist/</guid>
       <description>&lt;p&gt;youtube用の標準ショートコードのplaylist版が欲しい。&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

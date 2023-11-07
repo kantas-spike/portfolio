@@ -7,61 +7,50 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>© 2022 kanta&#39;s spike</copyright>
-    <lastBuildDate>Thu, 27 Jul 2023 23:27:25 +0900</lastBuildDate><atom:link href="https://kantas-spike.github.io/portfolio/tags/render_hooks/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 27 Jul 2023 23:27:25 +0900</lastBuildDate>
+    <atom:link href="https://kantas-spike.github.io/portfolio/tags/render_hooks/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugoでショートコードやコードブロックの子要素にMarkdownを渡したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/07/75-convert-markdown-to-html-with-hugo/</link>
       <pubDate>Thu, 27 Jul 2023 23:27:25 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2023/07/75-convert-markdown-to-html-with-hugo/</guid>
       <description>&lt;p&gt;ショートコードやレンダーブロックの子要素にMarkdownコンテンツを渡したい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>HugoでPlotlyによるグラフを表示したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/02/44-add-render-hook-for-plotly/</link>
       <pubDate>Wed, 08 Feb 2023 09:46:02 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2023/02/44-add-render-hook-for-plotly/</guid>
       <description>&lt;p&gt;ブログにグラフを表示したい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>HugoでMathJaxによる数式を表示したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/02/43-add-render-hook-for-mathjax/</link>
       <pubDate>Wed, 08 Feb 2023 09:15:06 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2023/02/43-add-render-hook-for-mathjax/</guid>
       <description>&lt;p&gt;ブログに数式を表示したい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Hugoで引用した文を目立たせたい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2022/08/25-quotation-with-hugo/</link>
       <pubDate>Sat, 27 Aug 2022 04:23:14 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2022/08/25-quotation-with-hugo/</guid>
       <description>&lt;p&gt;引用した文を目立たせたい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>HugoのMarkdownでHTMLをそのまま記述したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2022/07/10-hugo-with-rawhtml/</link>
       <pubDate>Sat, 23 Jul 2022 12:13:01 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2022/07/10-hugo-with-rawhtml/</guid>
       <description>&lt;p&gt;HugoのMarkdown内にHTMLを直接記述すると、&lt;code&gt;&amp;lt;!-- raw HTML omitted --&amp;gt;&lt;/code&gt;に変換され無視される。
 直接HTMLを書く手段が欲しい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>hugoでmermaid.jsを使いたい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2022/07/04-hugo-with-mermaid/</link>
       <pubDate>Fri, 22 Jul 2022 13:49:28 +0900</pubDate>
-      
       <guid>https://kantas-spike.github.io/portfolio/til/2022/07/04-hugo-with-mermaid/</guid>
       <description>&lt;p&gt;Hugoで&lt;a href=&#34;https://mermaid-js.github.io/mermaid/#/&#34;&gt;mermaid.js&lt;/a&gt;を使いたい。&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>
