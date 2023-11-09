@@ -7,8 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>© 2022 kanta&#39;s spike</copyright>
-    <lastBuildDate>Tue, 07 Nov 2023 10:58:43 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 10 Nov 2023 00:03:58 +0900</lastBuildDate>
     <atom:link href="https://kantas-spike.github.io/portfolio/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>macos</title>
+      <link>https://kantas-spike.github.io/portfolio/tags/macos/</link>
+      <pubDate>Fri, 10 Nov 2023 00:03:58 +0900</pubDate>
+      <guid>https://kantas-spike.github.io/portfolio/tags/macos/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>動画編集</title>
+      <link>https://kantas-spike.github.io/portfolio/tags/%E5%8B%95%E7%94%BB%E7%B7%A8%E9%9B%86/</link>
+      <pubDate>Fri, 10 Nov 2023 00:03:58 +0900</pubDate>
+      <guid>https://kantas-spike.github.io/portfolio/tags/%E5%8B%95%E7%94%BB%E7%B7%A8%E9%9B%86/</guid>
+      <description></description>
+    </item>
     <item>
       <title>typescript</title>
       <link>https://kantas-spike.github.io/portfolio/tags/typescript/</link>
@@ -35,13 +49,6 @@
       <link>https://kantas-spike.github.io/portfolio/tags/vscode/</link>
       <pubDate>Sun, 05 Nov 2023 11:29:23 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/tags/vscode/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>macos</title>
-      <link>https://kantas-spike.github.io/portfolio/tags/macos/</link>
-      <pubDate>Tue, 31 Oct 2023 04:56:13 +0900</pubDate>
-      <guid>https://kantas-spike.github.io/portfolio/tags/macos/</guid>
       <description></description>
     </item>
     <item>

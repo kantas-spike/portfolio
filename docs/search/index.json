@@ -1,6 +1,16 @@
 {
     "results": [
     {
+        "href": "https://kantas-spike.github.io/portfolio/til/2023/11/92-stop-recording-screen-with-macos/",
+        "title": "Screenshotの録画をショートカットキーで止めたい",
+        "tags": "動画編集 macOS"
+    },
+    {
+        "href": "https://kantas-spike.github.io/portfolio/til/2023/11/91-what-is-short-video/",
+        "title": "ショート動画とは",
+        "tags": "動画編集"
+    },
+    {
         "href": "https://kantas-spike.github.io/portfolio/til/2023/11/90-using-type-alias-of-typescript/",
         "title": "TypeScriptでtypeエイリアスはどこに定義するべき",
         "tags": "typescript"

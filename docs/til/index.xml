@@ -10,6 +10,21 @@
     <lastBuildDate>Fri, 22 Jul 2022 08:15:27 +0900</lastBuildDate>
     <atom:link href="https://kantas-spike.github.io/portfolio/til/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Screenshotの録画をショートカットキーで止めたい</title>
+      <link>https://kantas-spike.github.io/portfolio/til/2023/11/92-stop-recording-screen-with-macos/</link>
+      <pubDate>Fri, 10 Nov 2023 00:03:58 +0900</pubDate>
+      <guid>https://kantas-spike.github.io/portfolio/til/2023/11/92-stop-recording-screen-with-macos/</guid>
+      <description>&lt;p&gt;&lt;code&gt;macOS&lt;/code&gt;の&lt;code&gt;スクリーンショット&lt;/code&gt;アプリで画面録画中に、ショートカットキーを使って録画を停止したい。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>ショート動画とは</title>
+      <link>https://kantas-spike.github.io/portfolio/til/2023/11/91-what-is-short-video/</link>
+      <pubDate>Fri, 10 Nov 2023 00:00:24 +0900</pubDate>
+      <guid>https://kantas-spike.github.io/portfolio/til/2023/11/91-what-is-short-video/</guid>
+      <description>&lt;p&gt;YouTube Shortsにショート動画を投稿したい。
+ショート動画とはどういうものなのか?&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>TypeScriptでtypeエイリアスはどこに定義するべき</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/11/90-using-type-alias-of-typescript/</link>
       <pubDate>Tue, 07 Nov 2023 10:58:43 +0900</pubDate>
