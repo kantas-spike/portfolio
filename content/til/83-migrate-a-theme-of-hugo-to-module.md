@@ -38,9 +38,12 @@ site-- モジュールとして利用 -->theme
 
 ### 解決策
 
-#### 前提
+```column {title="前提"}
 
-Hugo ModulesはGo言語のModule機能を利用しているため、予め[The Go Programming Language](https://go.dev/dl/)のインストールが必要。 [^2]
+Hugo ModulesはGo言語のModule機能を利用しているため、予め[The Go Programming Language](https://go.dev/dl/)のインストールが必要になる。
+
+参照: [Prerequisite | Use Hugo Modules | Hugo](https://gohugo.io/hugo-modules/use-modules/#prerequisite)
+```
 
 #### 移行方法
 
@@ -200,6 +203,5 @@ hugo mod init myblog
 - [gitのsubmoduleを削除したい | kanta's spike]({{< relref "til/84-remove-git-submodule.md" >}})
 
 [^1]: [Quick start | Hugo](https://gohugo.io/getting-started/quick-start/)に従った方法である。
-[^2]: [Prerequisite | Use Hugo Modules | Hugo](https://gohugo.io/hugo-modules/use-modules/#prerequisite)
 [^3]: [Configure Hugo | Hugo](https://gohugo.io/getting-started/configuration/#configure-build), [Configure Hugo | Hugo](https://gohugo.io/getting-started/configuration/#configure-cache-busters)
 [^4]: サイトはGitHubではなく、ローカルの`myblog`フォルダーで管理されているものとする。
