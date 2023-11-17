@@ -1,6 +1,16 @@
 {
     "results": [
     {
+        "href": "https://kantas-spike.github.io/portfolio/articles/2023/11/14-learning-about-color-palettes/",
+        "title": "カラーパレットについて学びたい",
+        "tags": "デザイン color"
+    },
+    {
+        "href": "https://kantas-spike.github.io/portfolio/til/2023/11/93-using-commandline-args-with-node/",
+        "title": "Nodejsでコマンドライン引数を扱いたい",
+        "tags": "nodejs javascript"
+    },
+    {
         "href": "https://kantas-spike.github.io/portfolio/til/2023/11/92-stop-recording-screen-with-macos/",
         "title": "Screenshotの録画をショートカットキーで止めたい",
         "tags": "動画編集 macOS"

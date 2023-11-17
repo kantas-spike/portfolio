@@ -2,13 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/color/</loc>
+    <lastmod>2023-11-17T10:27:20+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/</loc>
+    <lastmod>2023-11-17T10:27:20+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/articles/2023/11/14-learning-about-color-palettes/</loc>
+    <lastmod>2023-11-17T10:27:20+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3/</loc>
+    <lastmod>2023-11-17T10:27:20+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/javascript/</loc>
+    <lastmod>2023-11-17T10:23:01+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/nodejs/</loc>
+    <lastmod>2023-11-17T10:23:01+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/til/2023/11/93-using-commandline-args-with-node/</loc>
+    <lastmod>2023-11-17T10:23:01+09:00</lastmod>
+  </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/macos/</loc>
     <lastmod>2023-11-10T00:03:58+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2023/11/92-stop-recording-screen-with-macos/</loc>
-    <lastmod>2023-11-10T00:03:58+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/</loc>
     <lastmod>2023-11-10T00:03:58+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/%E5%8B%95%E7%94%BB%E7%B7%A8%E9%9B%86/</loc>
@@ -27,9 +45,6 @@
     <lastmod>2023-11-07T10:53:40+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/eslint/</loc>
-    <lastmod>2023-11-05T11:29:23+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/javascript/</loc>
     <lastmod>2023-11-05T11:29:23+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/vscode/</loc>
@@ -60,9 +75,6 @@
     <lastmod>2023-10-26T14:16:56+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2023/09/82-check-nodejs-version/</loc>
-    <lastmod>2023-09-30T01:42:04+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/nodejs/</loc>
     <lastmod>2023-09-30T01:42:04+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/github/</loc>
@@ -103,9 +115,6 @@
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2023/07/77-leaning-arithmetic-and-logical-operation-of-hugo/</loc>
     <lastmod>2023-07-31T17:16:06+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/color/</loc>
-    <lastmod>2023-07-28T16:23:27+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2023/07/76-convert-css-color-notations-with-js/</loc>
     <lastmod>2023-07-28T16:23:27+09:00</lastmod>

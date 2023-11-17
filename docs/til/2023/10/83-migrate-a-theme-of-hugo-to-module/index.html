@@ -4,10 +4,29 @@
         Hugoのテーマをモジュールに移行したい | kanta&#39;s spike
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preload" href="https://kantas-spike.github.io/portfolio/fonts/NotoSansJP-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-<link rel="preload" href="https://kantas-spike.github.io/portfolio/fonts/NotoSansJP-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link
+  rel="preload"
+  href="https://kantas-spike.github.io/portfolio/fonts/NotoSansJP-Regular.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin="anonymous"
+/>
+<link
+  rel="preload"
+  href="https://kantas-spike.github.io/portfolio/fonts/NotoSansJP-Bold.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin="anonymous"
+/>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Noto+Emoji:wght@400;500;700&family=Noto+Sans+JP:wght@400;700&display=swap"
+  rel="stylesheet"
+/>
 <link rel="stylesheet" href="https://kantas-spike.github.io/portfolio/css/fonts.978d33a6dcb8af5cc3fc6d102e0cbd3d4f2452dcaae53ff12d45609137df3ed9.css">
-    <link rel="stylesheet" href="https://kantas-spike.github.io/portfolio/css/theme.min.ff2fa79f97f35cfc84641150adb8290d4ea82ca17a8dd28a0fd26a99f69eb2a6.css">
+    <link rel="stylesheet" href="https://kantas-spike.github.io/portfolio/css/theme.min.6e59ed860ca25bd46bff99b51cadf62594cef6862a0637b72a5415717eb2cfd7.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" /><link rel="stylesheet" href="https://kantas-spike.github.io/portfolio/css/syntax.min.70c02160dee6bd55baaa2b10019d735294451730e282f7fa645466392ba0cfb6.css"><link rel="apple-touch-icon" sizes="180x180" href="https://kantas-spike.github.io/portfolio/icon180.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://kantas-spike.github.io/portfolio/icon32.png">
 <link rel="icon" type="image/svg+xml" href="https://kantas-spike.github.io/portfolio/icon.svg">
@@ -108,8 +127,17 @@ theme[Hugoテーマ]
 site-- モジュールとして利用 -->theme
 </div>
 <h3 id="解決策">解決策</h3>
-<h4 id="前提">前提</h4>
-<p>Hugo ModulesはGo言語のModule機能を利用しているため、予め<a href="https://go.dev/dl/">The Go Programming Language</a>のインストールが必要。 <sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></p>
+<div
+  class="column not-article my-l mx-1 my-4  px-4 py-4 border-2 !text-sm rounded-md "
+><div class="text-lg font-bold leading-m tracking-m mb-4">
+      <span class="inline-flex emoji">📄</span><span>前提</span>
+    </div>
+  <div class="mx-2 article">
+    <p>Hugo ModulesはGo言語のModule機能を利用しているため、予め<a href="https://go.dev/dl/">The Go Programming Language</a>のインストールが必要になる。</p>
+<p>参照: <a href="https://gohugo.io/hugo-modules/use-modules/#prerequisite">Prerequisite | Use Hugo Modules | Hugo</a></p>
+
+  </div>
+</div>
 <h4 id="移行方法">移行方法</h4>
 <p>今回のモジュール方式でテーマ導入に必要なことは以下になる。</p>
 <table>
@@ -147,7 +175,7 @@ site-- モジュールとして利用 -->theme
 <p>Hugoのモジュールを利用するためには、サイト側もモジュール化する必要がある。</p>
 <p>以下のコマンドを実行し、モジュール化する。</p>
 <p>サイトの場合、他のモジュールから利用されることはないため、
-<code>hogo mod init</code>の後には、適当な名前を付ける。今回は<code>myblog</code>を指定した。<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></p>
+<code>hogo mod init</code>の後には、適当な名前を付ける。今回は<code>myblog</code>を指定した。<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="nb">cd</span> myblog
 </span></span><span class="line"><span class="cl">hugo mod init myblog
 </span></span></code></pre></div><h4 id="手順3-サイト側のhugotomlを変更">手順3. サイト側のhugo.tomlを変更</h4>
@@ -173,7 +201,7 @@ site-- モジュールとして利用 -->theme
 <li>
 <p><code>hugo.toml</code>に必要なファイルをマウントする</p>
 <p>本ブログでは、<code>tailwindcss</code>を採用している。
-<code>tailwindcss</code>の不要CSSクラスの削除用に、Hugoの<code>hugo_stats.json</code>を利用している。<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup></p>
+<code>tailwindcss</code>の不要CSSクラスの削除用に、Hugoの<code>hugo_stats.json</code>を利用している。<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></p>
 <p><code>hugo_stats.json</code>を生成・監視用の設定として以下を追加している。</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="c"># テーマで使用するtailwindcss用の設定</span>
 </span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">build</span><span class="p">]</span>
@@ -246,13 +274,10 @@ site-- モジュールとして利用 -->theme
 <p><a href="https://gohugo.io/getting-started/quick-start/">Quick start | Hugo</a>に従った方法である。&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:2">
-<p><a href="https://gohugo.io/hugo-modules/use-modules/#prerequisite">Prerequisite | Use Hugo Modules | Hugo</a>&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>サイトはGitHubではなく、ローカルの<code>myblog</code>フォルダーで管理されているものとする。&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:3">
-<p>サイトはGitHubではなく、ローカルの<code>myblog</code>フォルダーで管理されているものとする。&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
-</li>
-<li id="fn:4">
-<p><a href="https://gohugo.io/getting-started/configuration/#configure-build">Configure Hugo | Hugo</a>, <a href="https://gohugo.io/getting-started/configuration/#configure-cache-busters">Configure Hugo | Hugo</a>&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p><a href="https://gohugo.io/getting-started/configuration/#configure-build">Configure Hugo | Hugo</a>, <a href="https://gohugo.io/getting-started/configuration/#configure-cache-busters">Configure Hugo | Hugo</a>&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </div></div>
