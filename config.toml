@@ -29,7 +29,8 @@ publishDir = "docs"
   # テーマのインポート
   [[module.imports]]
     path = 'github.com/kantas-spike/kantas-theme'
-  # テーマで使用するアセットの登録
+  [[module.imports]]
+    path = 'github.com/kantas-spike/my-shortcodes'
 
 
 [build]
