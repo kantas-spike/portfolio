@@ -1,0 +1,196 @@
+<!doctype html>
+<html><head>
+    <title>
+        GitでGithubの認証情報を何度も入力したくない | kanta&#39;s spike
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+  rel="preload"
+  href="https://kantas-spike.github.io/portfolio/fonts/NotoSansJP-Regular.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin="anonymous"
+/>
+<link
+  rel="preload"
+  href="https://kantas-spike.github.io/portfolio/fonts/NotoSansJP-Bold.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin="anonymous"
+/>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Noto+Emoji:wght@400;500;700&family=Noto+Sans+JP:wght@400;700&display=swap"
+  rel="stylesheet"
+/>
+<link rel="stylesheet" href="https://kantas-spike.github.io/portfolio/css/fonts.978d33a6dcb8af5cc3fc6d102e0cbd3d4f2452dcaae53ff12d45609137df3ed9.css">
+    <link rel="stylesheet" href="https://kantas-spike.github.io/portfolio/css/theme.min.6c7f1096598e367e45137add0d36fc2c3b711825ae2d67eec1775fd770723634.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" /><link rel="stylesheet" href="https://kantas-spike.github.io/portfolio/css/syntax.min.70c02160dee6bd55baaa2b10019d735294451730e282f7fa645466392ba0cfb6.css"><link rel="apple-touch-icon" sizes="180x180" href="https://kantas-spike.github.io/portfolio/icon180.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://kantas-spike.github.io/portfolio/icon32.png">
+<link rel="icon" type="image/svg+xml" href="https://kantas-spike.github.io/portfolio/icon.svg">
+<link rel="manifest" href="https://kantas-spike.github.io/portfolio/site.webmanifest">
+
+</head><body class="bg-background text-primary-dark pb-4"><header class="bg-primary-dark text-site_title text-6xl font-serif font-extrabold px-4 py-3">
+    <h1 class="container mx-auto px-4"><a href="https://kantas-spike.github.io/portfolio/">kanta&#39;s spike</a></h1>
+</header>
+<input type="checkbox" name="burger_cbx" id="burger_cbx">
+<label for="burger_cbx" class="burger_label">
+    <span class="burger_icon"><svg version="1.1" viewBox="0 0 12.7 12.7" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <rect x="1.0369" y="2.1007" width="10.634" height="1.0426" ry=".5213"/>
+  <rect x="1.0369" y="4.571" width="10.634" height="1.0426" ry=".5213"/>
+  <rect x="1.0369" y="7.0413" width="10.634" height="1.0426" ry=".5213"/>
+  <rect x="1.0369" y="9.5115" width="10.634" height="1.0426" ry=".5213"/>
+ </g>
+</svg>
+</span>
+</label>
+<label for="burger_cbx" class="close_label">
+    <span class="close_icon"><svg version="1.1" viewBox="0 0 12.7 12.7" xmlns="http://www.w3.org/2000/svg">
+ <rect transform="rotate(45.535)" x="3.6678" y="-.6148" width="10.634" height="1.0426" ry=".5213"/>
+ <rect transform="rotate(135.53)" x="-5.4104" y="-9.5059" width="10.634" height="1.0426" ry=".5213"/>
+</svg>
+</span>
+</label>
+<div class="nav_area">
+    <nav class="container mx-auto bg-primary text-on-primary text-center flex flex-col md:flex-row justify-start">
+            <a href="https://kantas-spike.github.io/portfolio/" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Home</a>
+            <a href="https://kantas-spike.github.io/portfolio/til" class="box-border flex-1 text-center no-underline bg-primary-light text-on-primary-light font-bold py-2">TIL</a>
+            <a href="https://kantas-spike.github.io/portfolio/dialogues" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Dialogues</a>
+            <a href="https://kantas-spike.github.io/portfolio/articles" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Articles</a>
+            <a href="https://kantas-spike.github.io/portfolio/mytools" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">My Tools</a>
+            <a href="https://kantas-spike.github.io/portfolio/ihc" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">IHC</a>
+            <a href="https://kantas-spike.github.io/portfolio/tags" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Tags</a>
+        <div class="flex-none" id="search_menu"></div>
+    </nav>
+</div>
+<main id="content" class="container mx-auto bg-surface pt-4 pb-8">
+<div class="area_border px-4 py-3 mx-4 md:mx-auto pb-4 max-w-[60rem]">
+  
+
+
+
+<div class="mb-4">
+    <h3 class="border-b-4 border-primary-dark text-primary-dark text-xl font-bold tracking-wider pl-[1em] -indent-[1ex]"><i class="fa-solid fa-circle-info"></i> <a href="https://kantas-spike.github.io/portfolio/til/2023/11/94-use-git-credential-osxkeychain/">GitでGithubの認証情報を何度も入力したくない</a></h3>
+    <div class="flex justify-between mt-1 mx-2">
+        <div>
+            <ul class="flex gap-2 justify-end">
+            
+            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/git/">#git</a></li>
+            
+            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/github/">#GitHub</a></li>
+            
+            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/macos/">#macos</a></li>
+            
+            </ul>
+        </div>
+        <div>
+            
+            
+            <div class="text-right text-sm font-bold">2023/11/22
+                
+                    <span class="text-xs text-red-600 font-thin">New</span>
+                
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+  <div class="article mx-2"><p>GitHubのリポジトリにPushする度に、毎回ユーザー名とパスワードをgitに入力したくない。(使用環境はmacOS)</p>
+<h3 id="解決策">解決策</h3>
+<p>いろいろ解決策はあるようだが、今回は<code>git credential-osxkeychain</code>を利用して、予めGitHubのユーザー名とパスワード(Personal Access Token)を登録しておく。</p>
+<p>登録が済めば、GitHubのリポジトリにPushする場合にも、gitコマンドが自動で認証情報を送信するため、ユーザー名とパスワードの入力が不要になる。</p>
+<h4 id="認証情報の登録手順">認証情報の登録手順</h4>
+<ol>
+<li>
+<p>gitの<code>credential.helper</code>設定が<code>osxkeychain</code>であることを確認</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">$ git config credential.helper
+</span></span><span class="line"><span class="cl">osxkeychain
+</span></span></code></pre></div></li>
+<li>
+<p><code>git credential-osxkeychain store</code>で認証情報を登録</p>
+<p>事前に<strong>Personal Access Token</strong>を取得しておく。(取得方法は、<a href="https://docs.github.com/ja/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens">個人用アクセス トークンを管理する - GitHub Docs</a>を参照)</p>
+<p>以下のように、コマンド実行後、<code>host</code>,<code>protocol</code>,<code>username</code>,<code>password</code>を入力し、最後に空行を入力する。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">$ git credential-osxkeychain store
+</span></span><span class="line"><span class="cl"><span class="nv">host</span><span class="o">=</span>github.com
+</span></span><span class="line"><span class="cl"><span class="nv">protocol</span><span class="o">=</span>https
+</span></span><span class="line"><span class="cl"><span class="nv">username</span><span class="o">=</span>ユーザー名
+</span></span><span class="line"><span class="cl"><span class="nv">password</span><span class="o">=</span>Personal Access Token
+</span></span><span class="line"><span class="cl"><span class="c1"># 空行(実際は、Enterキーを押すだけ)</span>
+</span></span></code></pre></div></li>
+<li>
+<p><code>git credential-osxkeychain get</code>で認証情報の登録状況を確認</p>
+<p>以下のように、コマンド実行後、<code>host</code>,<code>protocol</code>を入力し、最後に空行を入力する。
+すると、登録した<code>username</code>, <code>password</code>が表示される。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">$ git credential-osxkeychain get
+</span></span><span class="line"><span class="cl"><span class="nv">host</span><span class="o">=</span>github.com
+</span></span><span class="line"><span class="cl"><span class="nv">protocol</span><span class="o">=</span>https
+</span></span><span class="line"><span class="cl"><span class="c1"># 空行(実際は、Enterキーを押すだけ)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">username</span><span class="o">=</span>ユーザー名
+</span></span><span class="line"><span class="cl"><span class="nv">password</span><span class="o">=</span>Personal Access Token
+</span></span></code></pre></div></li>
+</ol>
+<h4 id="認証情報の更新方法">認証情報の更新方法</h4>
+<p>以下のように<code>git credential-osxkeychain erase</code>を実行し認証情報を削除してから、
+再度、新しい情報を登録することで認証情報を更新できる。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">   $ git credential-osxkeychain erase
+</span></span><span class="line"><span class="cl">   <span class="nv">host</span><span class="o">=</span>github.com
+</span></span><span class="line"><span class="cl">   <span class="nv">protocol</span><span class="o">=</span>https
+</span></span><span class="line"><span class="cl">   <span class="c1"># 空行(実際は、Enterキーを押すだけ)</span>
+</span></span></code></pre></div><p>また、<code>git credential-osxkeychain</code>で登録した認証情報は、macOS キーチェーンと連動しているため、
+キーチェーンを操作して認証情報を更新できる。</p>
+<p>キーチェーンから認証情報を更新する方法は以下を参照のこと。</p>
+<div class="column not-article mx-1 my-4  px-4 py-4 border-2 rounded-md ">
+  <div class="mx-2 article">
+    <a href="https://docs.github.com/ja/get-started/getting-started-with-git/updating-credentials-from-the-macos-keychain">macOS キーチェーンからの認証情報を更新する - GitHub Docs</a>
+  </div>
+</div>
+<h3 id="参考">参考</h3>
+<ul>
+<li><a href="https://git-scm.com/book/ja/v2/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-%E8%AA%8D%E8%A8%BC%E6%83%85%E5%A0%B1%E3%81%AE%E4%BF%9D%E5%AD%98">Git - 認証情報の保存</a></li>
+<li><a href="https://garsue.dev/posts/git-credential-osxkeychain/">git-credential-osxkeychainの使い方メモ | garsue.dev</a></li>
+<li><a href="https://docs.github.com/ja/get-started/getting-started-with-git/updating-credentials-from-the-macos-keychain">macOS キーチェーンからの認証情報を更新する - GitHub Docs</a>
+<ul>
+<li><a href="https://docs.github.com/ja/get-started/getting-started-with-git/updating-credentials-from-the-macos-keychain#deleting-your-credentials-via-the-command-line">コマンドラインで認証情報を削除する # macOS キーチェーンからの認証情報を更新する - GitHub Docs</a></li>
+</ul>
+</li>
+<li><a href="https://docs.github.com/ja/authentication/keeping-your-account-and-data-secure/about-authentication-to-github#authenticating-with-the-command-line">コマンドラインで認証する # GitHub への認証方法について - GitHub Docs</a></li>
+</ul></div>
+  <div class="mt-6">
+    <div class="border-t-2 border-primary-dark px-2 pt-2 text-right">
+        <span class="text-sm">作成日: 2023/11/22</span></div>
+</div>
+
+</div>
+
+
+    </main><footer class="bg-primary-dark text-center text-on-primary-dark fixed bottom-0 w-full h-8">
+    <div class="container mx-auto grid grid-cols-3">
+        <div class="col-start-1 col-span-2 ml-2 md:ml-0 md:col-start-2 md:col-span-1">
+            <div class="text-left md:text-center text-sm pt-2">© 2022 kanta&#39;s spike</div>
+        </div>
+        <div class="col-start-3 flex justify-end gap-2 mr-2">
+            
+                
+            <a title="Twitter" class="text-2xl" href="https://twitter.com/KantasSpike"><i class="fa-brands fa-twitter-square"></i></a>
+                
+            <a title="Youtube" class="text-2xl" href="https://www.youtube.com/channel/UCnVBuUGMYAt7ZuIkadxnMfw"><i class="fa-brands fa-youtube-square"></i></a>
+                
+            <a title="GitHub" class="text-2xl" href="https://github.com/kantas-spike"><i class="fa-brands fa-github-square"></i></a>
+                
+            <a title="Blog" class="text-2xl" href="https://kantas-spike.github.io/portfolio/"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                
+            
+        </div>
+    </div>
+</footer> 
+
+
+
+
+<script defer type="text/javascript" src="https://kantas-spike.github.io/portfolio/js/search-form.dd7ad4e4f203f408d461506b73a7cb128e641d61d86c7695ca9d2cd5e2768597efa3c2663c7a204016bb8d25de38097dc929682fc7aad45bd784ab2b4c3e6135.js" integrity="sha512-3XrU5PID9AjUYVBrc6fLEo5kHWHYbHaVyp0s1eJ2hZfvo8JmPHogQBa7jSXeOAl9ySloL8eq1FvXhKsrTD5hNQ=="></script></body>
+</html>

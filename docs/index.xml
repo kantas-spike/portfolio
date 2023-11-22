@@ -10,6 +10,13 @@
     <lastBuildDate>Fri, 22 Jul 2022 08:24:06 +0900</lastBuildDate>
     <atom:link href="https://kantas-spike.github.io/portfolio/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>GitでGithubの認証情報を何度も入力したくない</title>
+      <link>https://kantas-spike.github.io/portfolio/til/2023/11/94-use-git-credential-osxkeychain/</link>
+      <pubDate>Wed, 22 Nov 2023 22:41:26 +0900</pubDate>
+      <guid>https://kantas-spike.github.io/portfolio/til/2023/11/94-use-git-credential-osxkeychain/</guid>
+      <description>&lt;p&gt;GitHubのリポジトリにPushする度に、毎回ユーザー名とパスワードをgitに入力したくない。(使用環境はmacOS)&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>カラーパレットについて学びたい</title>
       <link>https://kantas-spike.github.io/portfolio/articles/2023/11/14-learning-about-color-palettes/</link>
       <pubDate>Fri, 17 Nov 2023 10:27:20 +0900</pubDate>

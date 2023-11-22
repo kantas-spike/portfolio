@@ -1,6 +1,11 @@
 {
     "results": [
     {
+        "href": "https://kantas-spike.github.io/portfolio/til/2023/11/94-use-git-credential-osxkeychain/",
+        "title": "GitでGithubの認証情報を何度も入力したくない",
+        "tags": "git GitHub macOS"
+    },
+    {
         "href": "https://kantas-spike.github.io/portfolio/articles/2023/11/14-learning-about-color-palettes/",
         "title": "カラーパレットについて学びたい",
         "tags": "デザイン color"
