@@ -1,0 +1,235 @@
+<!doctype html>
+<html><head>
+    <title>
+        BlenderのVSEのプレイヘッドのタイムスタンプを取得したい | kanta&#39;s spike
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+  rel="preload"
+  href="https://kantas-spike.github.io/portfolio/fonts/NotoSansJP-Regular.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin="anonymous"
+/>
+<link
+  rel="preload"
+  href="https://kantas-spike.github.io/portfolio/fonts/NotoSansJP-Bold.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin="anonymous"
+/>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Noto+Emoji:wght@400;500;700&family=Noto+Sans+JP:wght@400;700&display=swap"
+  rel="stylesheet"
+/>
+<link rel="stylesheet" href="https://kantas-spike.github.io/portfolio/css/fonts.978d33a6dcb8af5cc3fc6d102e0cbd3d4f2452dcaae53ff12d45609137df3ed9.css">
+    <link rel="stylesheet" href="https://kantas-spike.github.io/portfolio/css/theme.min.6c7f1096598e367e45137add0d36fc2c3b711825ae2d67eec1775fd770723634.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" /><link rel="stylesheet" href="https://kantas-spike.github.io/portfolio/css/syntax.min.70c02160dee6bd55baaa2b10019d735294451730e282f7fa645466392ba0cfb6.css"><link rel="apple-touch-icon" sizes="180x180" href="https://kantas-spike.github.io/portfolio/icon180.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://kantas-spike.github.io/portfolio/icon32.png">
+<link rel="icon" type="image/svg+xml" href="https://kantas-spike.github.io/portfolio/icon.svg">
+<link rel="manifest" href="https://kantas-spike.github.io/portfolio/site.webmanifest">
+
+</head><body class="bg-background text-primary-dark pb-4"><header class="bg-primary-dark text-site_title text-6xl font-serif font-extrabold px-4 py-3">
+    <h1 class="container mx-auto px-4"><a href="https://kantas-spike.github.io/portfolio/">kanta&#39;s spike</a></h1>
+</header>
+<input type="checkbox" name="burger_cbx" id="burger_cbx">
+<label for="burger_cbx" class="burger_label">
+    <span class="burger_icon"><svg version="1.1" viewBox="0 0 12.7 12.7" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <rect x="1.0369" y="2.1007" width="10.634" height="1.0426" ry=".5213"/>
+  <rect x="1.0369" y="4.571" width="10.634" height="1.0426" ry=".5213"/>
+  <rect x="1.0369" y="7.0413" width="10.634" height="1.0426" ry=".5213"/>
+  <rect x="1.0369" y="9.5115" width="10.634" height="1.0426" ry=".5213"/>
+ </g>
+</svg>
+</span>
+</label>
+<label for="burger_cbx" class="close_label">
+    <span class="close_icon"><svg version="1.1" viewBox="0 0 12.7 12.7" xmlns="http://www.w3.org/2000/svg">
+ <rect transform="rotate(45.535)" x="3.6678" y="-.6148" width="10.634" height="1.0426" ry=".5213"/>
+ <rect transform="rotate(135.53)" x="-5.4104" y="-9.5059" width="10.634" height="1.0426" ry=".5213"/>
+</svg>
+</span>
+</label>
+<div class="nav_area">
+    <nav class="container mx-auto bg-primary text-on-primary text-center flex flex-col md:flex-row justify-start">
+            <a href="https://kantas-spike.github.io/portfolio/" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Home</a>
+            <a href="https://kantas-spike.github.io/portfolio/til" class="box-border flex-1 text-center no-underline bg-primary-light text-on-primary-light font-bold py-2">TIL</a>
+            <a href="https://kantas-spike.github.io/portfolio/dialogues" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Dialogues</a>
+            <a href="https://kantas-spike.github.io/portfolio/articles" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Articles</a>
+            <a href="https://kantas-spike.github.io/portfolio/mytools" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">My Tools</a>
+            <a href="https://kantas-spike.github.io/portfolio/ihc" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">IHC</a>
+            <a href="https://kantas-spike.github.io/portfolio/tags" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Tags</a>
+        <div class="flex-none" id="search_menu"></div>
+    </nav>
+</div>
+<main id="content" class="container mx-auto bg-surface pt-4 pb-8">
+<div class="area_border px-4 py-3 mx-4 md:mx-auto pb-4 max-w-[60rem]">
+  
+
+
+
+<div class="mb-4">
+    <h3 class="border-b-4 border-primary-dark text-primary-dark text-xl font-bold tracking-wider pl-[1em] -indent-[1ex]"><i class="fa-solid fa-circle-info"></i> <a href="https://kantas-spike.github.io/portfolio/til/2023/12/95-get-timestamp-on-playhead-of-vse/">BlenderのVSEのプレイヘッドのタイムスタンプを取得したい</a></h3>
+    <div class="flex justify-between mt-1 mx-2">
+        <div>
+            <ul class="flex gap-2 justify-end">
+            
+            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/python/">#python</a></li>
+            
+            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/blender/">#blender</a></li>
+            
+            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/blender-addon/">#blender-addon</a></li>
+            
+            </ul>
+        </div>
+        <div>
+            
+            
+            <div class="text-right text-sm font-bold">2023/12/07
+                
+                    <span class="text-xs text-red-600 font-thin">New</span>
+                
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+  <div class="article mx-2"><p>Blenderで動画編集時に<a href="https://ja.wikipedia.org/wiki/SubRip">SubRip</a>形式の字幕ファイルも編集したいので、
+<strong>Video Sequence Editor</strong> のプレイヘッドのタイムスタンプを取得したい。</p>
+<p>やりたいことは以下になる。</p>
+<ul>
+<li>VSEのコンテキストメニューから呼び出したい</li>
+<li>タイムスタンプをクリップボードにコピーしたい
+<ul>
+<li>プレイヘッドの位置(フレーム番号)をタイムスタンプに変換したい</li>
+</ul>
+</li>
+</ul>
+<h3 id="解決策">解決策</h3>
+<p>実現方法を整理する</p>
+<h4 id="vseのコンテキストメニューを拡張する">VSEのコンテキストメニューを拡張する</h4>
+<p><code>SEQUENCER_MT_context_menu</code>がVSEのコンテキストメニューのようだ。</p>
+<p>以下でメニューを追加可能</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">menu_fn</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">context</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="bp">self</span><span class="o">.</span><span class="n">layout</span><span class="o">.</span><span class="n">separator</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="bp">self</span><span class="o">.</span><span class="n">layout</span><span class="o">.</span><span class="n">operator</span><span class="p">(</span><span class="n">xx</span><span class="o">.</span><span class="n">bl_idname</span><span class="p">)</span> <span class="c1"># オペレーターは要実装</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">bpy</span><span class="o">.</span><span class="n">types</span><span class="o">.</span><span class="n">SEQUENCER_MT_context_menu</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">menu_fn</span><span class="p">)</span>
+</span></span></code></pre></div><h4 id="アドオン内でクリップボードに文字列をコピーする">アドオン内でクリップボードに文字列をコピーする</h4>
+<p><a href="https://docs.blender.org/api/current/bpy.types.WindowManager.html#bpy.types.WindowManager.clipboard">clipboard # WindowManager(ID) — Blender Python API</a></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">timestamp</span> <span class="o">=</span> <span class="s2">&#34;00:00:00,123&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">context</span><span class="o">.</span><span class="n">window_manager</span><span class="o">.</span><span class="n">clipboard</span> <span class="o">=</span> <span class="n">timestamp</span> <span class="c1"># timestampがクリップボードにコピーされる</span>
+</span></span></code></pre></div><h4 id="プレイヘッドが指しているフレームナンバーを取得する">プレイヘッドが指しているフレームナンバーを取得する</h4>
+<p>以下で取得できる。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">cur_frame</span> <span class="o">=</span> <span class="n">bpy</span><span class="o">.</span><span class="n">context</span><span class="o">.</span><span class="n">scene</span><span class="o">.</span><span class="n">frame_current</span>
+</span></span></code></pre></div><h4 id="フレームnoをタイムスタンプに変換する">フレームNoをタイムスタンプに変換する</h4>
+<p>フレームNoを秒に変換するためには、フレームレートを知る必要がある。</p>
+<p>VSEでは以下で、フレームレートが計算できるようだ。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">frame_rate</span> <span class="o">=</span> <span class="n">bpy</span><span class="o">.</span><span class="n">context</span><span class="o">.</span><span class="n">scene</span><span class="o">.</span><span class="n">render</span><span class="o">.</span><span class="n">fps</span> <span class="o">/</span> <span class="n">bpy</span><span class="o">.</span><span class="n">context</span><span class="o">.</span><span class="n">scene</span><span class="o">.</span><span class="n">render</span><span class="o">.</span><span class="n">fps_base</span>
+</span></span></code></pre></div><p>あとは、以下でフレームNoを<code>timedelta</code>に変換できる。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">sec</span> <span class="o">=</span> <span class="n">cur_frame</span> <span class="o">/</span> <span class="n">frame_rate</span>
+</span></span><span class="line"><span class="cl"><span class="n">dlt</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">timedelta</span><span class="p">(</span><span class="n">seconds</span><span class="o">=</span><span class="n">sec</span><span class="p">)</span>
+</span></span></code></pre></div><h4 id="実装例">実装例</h4>
+<p><a href="https://github.com/kantas-spike/srt_loader/blob/main/__init__.py#L181">srt_loader/<strong>init</strong>.py at main · kantas-spike/srt_loader</a>に実装。</p>
+<p>以下はメニュー部分のみ抜粋</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">bpy</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">datetime</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">StrLoaderGetTimestampOfPlayhead</span><span class="p">(</span><span class="n">bpy</span><span class="o">.</span><span class="n">types</span><span class="o">.</span><span class="n">Operator</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">bl_idname</span> <span class="o">=</span> <span class="s2">&#34;srt_loader.copy_timestamp_of_playhead&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">bl_label</span> <span class="o">=</span> <span class="s2">&#34;Copy playhead timestamp&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">bl_description</span> <span class="o">=</span> <span class="s2">&#34;Playheadのタイムスタンプを取得する&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nd">@classmethod</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">poll</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">context</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">context</span><span class="o">.</span><span class="n">space_data</span><span class="o">.</span><span class="n">view_type</span> <span class="o">==</span> <span class="s2">&#34;SEQUENCER&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">format_srt_timestamp</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">delta</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">m</span><span class="p">,</span> <span class="n">s</span> <span class="o">=</span> <span class="nb">divmod</span><span class="p">(</span><span class="n">delta</span><span class="o">.</span><span class="n">seconds</span><span class="p">,</span> <span class="mi">60</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">h</span><span class="p">,</span> <span class="n">m</span> <span class="o">=</span> <span class="nb">divmod</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="mi">60</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="s2">&#34;</span><span class="si">{:02}</span><span class="s2">:</span><span class="si">{:02}</span><span class="s2">:</span><span class="si">{:02}</span><span class="s2">,</span><span class="si">{:03}</span><span class="s2">&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">            <span class="n">h</span><span class="p">,</span> <span class="n">m</span><span class="p">,</span> <span class="n">s</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">delta</span><span class="o">.</span><span class="n">microseconds</span> <span class="o">/</span> <span class="mi">1000</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">execute</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">context</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">frame_rate</span> <span class="o">=</span> <span class="n">bpy</span><span class="o">.</span><span class="n">context</span><span class="o">.</span><span class="n">scene</span><span class="o">.</span><span class="n">render</span><span class="o">.</span><span class="n">fps</span> <span class="o">/</span> <span class="n">bpy</span><span class="o">.</span><span class="n">context</span><span class="o">.</span><span class="n">scene</span><span class="o">.</span><span class="n">render</span><span class="o">.</span><span class="n">fps_base</span>
+</span></span><span class="line"><span class="cl">        <span class="n">cur_frame</span> <span class="o">=</span> <span class="n">bpy</span><span class="o">.</span><span class="n">context</span><span class="o">.</span><span class="n">scene</span><span class="o">.</span><span class="n">frame_current</span>
+</span></span><span class="line"><span class="cl">        <span class="n">delta</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">timedelta</span><span class="p">(</span><span class="n">seconds</span><span class="o">=</span><span class="p">(</span><span class="n">cur_frame</span> <span class="o">/</span> <span class="n">frame_rate</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">        <span class="n">timestamp</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">format_srt_timestamp</span><span class="p">(</span><span class="n">delta</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">            <span class="sa">f</span><span class="s2">&#34;frame_rate: </span><span class="si">{</span><span class="n">frame_rate</span><span class="si">}</span><span class="s2">, cur_frame: </span><span class="si">{</span><span class="n">cur_frame</span><span class="si">}</span><span class="s2">, timestamp: </span><span class="si">{</span><span class="n">timestamp</span><span class="si">}</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">report</span><span class="p">({</span><span class="s2">&#34;INFO&#34;</span><span class="p">},</span> <span class="n">timestamp</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">context</span><span class="o">.</span><span class="n">window_manager</span><span class="o">.</span><span class="n">clipboard</span> <span class="o">=</span> <span class="n">timestamp</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="p">{</span><span class="s2">&#34;FINISHED&#34;</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">menu_fn</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">context</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="bp">self</span><span class="o">.</span><span class="n">layout</span><span class="o">.</span><span class="n">separator</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="bp">self</span><span class="o">.</span><span class="n">layout</span><span class="o">.</span><span class="n">operator</span><span class="p">(</span><span class="n">StrLoaderGetTimestampOfPlayhead</span><span class="o">.</span><span class="n">bl_idname</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">classes</span> <span class="o">=</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">    <span class="n">StrLoaderGetTimestampOfPlayhead</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">register</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">classes</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">bpy</span><span class="o">.</span><span class="n">utils</span><span class="o">.</span><span class="n">register_class</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">bpy</span><span class="o">.</span><span class="n">types</span><span class="o">.</span><span class="n">SEQUENCER_MT_context_menu</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">menu_fn</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">unregister</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="n">bpy</span><span class="o">.</span><span class="n">types</span><span class="o">.</span><span class="n">SEQUENCER_MT_context_menu</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">menu_fn</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">classes</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">bpy</span><span class="o">.</span><span class="n">utils</span><span class="o">.</span><span class="n">unregister_class</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&#34;__main__&#34;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">register</span><span class="p">()</span>
+</span></span></code></pre></div><h3 id="参考">参考</h3>
+<ul>
+<li><a href="https://docs.blender.org/api/current/bpy.types.WindowManager.html#bpy.types.WindowManager.clipboard">clipboard # WindowManager(ID) — Blender Python API</a></li>
+<li><a href="https://qiita.com/yukimituki11/items/e40d4d5f7cc21e2b7c4b">Blenderでシェイプキー名一覧を取得・一覧から空のシェイプキーを作成 #Python - Qiita</a></li>
+<li><a href="https://blender.stackexchange.com/questions/71729/vse-playhead-position-variable">python - VSE playhead position variable - Blender Stack Exchange</a></li>
+<li><a href="https://blender.stackexchange.com/questions/193754/what-does-this-do-fps-scene-render-fps-scene-render-fps-base">python - What does this do: fps = scene.render.fps / scene.render.fps_base? - Blender Stack Exchange</a>
+<a href="https://github.com/blender/blender/blob/9c0bffcc89f174f160805de042b00ae7c201c40b/scripts/startup/bl_ui/space_sequencer.py#L1113">blender/scripts/startup/bl_ui/space_sequencer.py at 9c0bffcc89f174f160805de042b00ae7c201c40b · blender/blender</a></li>
+</ul></div>
+  <div class="mt-6">
+    <div class="border-t-2 border-primary-dark px-2 pt-2 text-right">
+        <span class="text-sm">作成日: 2023/12/07</span></div>
+</div>
+
+</div>
+
+
+    </main><footer class="bg-primary-dark text-center text-on-primary-dark fixed bottom-0 w-full h-8">
+    <div class="container mx-auto grid grid-cols-3">
+        <div class="col-start-1 col-span-2 ml-2 md:ml-0 md:col-start-2 md:col-span-1">
+            <div class="text-left md:text-center text-sm pt-2">© 2022 kanta&#39;s spike</div>
+        </div>
+        <div class="col-start-3 flex justify-end gap-2 mr-2">
+            
+                
+            <a title="Twitter" class="text-2xl" href="https://twitter.com/KantasSpike"><i class="fa-brands fa-twitter-square"></i></a>
+                
+            <a title="Youtube" class="text-2xl" href="https://www.youtube.com/channel/UCnVBuUGMYAt7ZuIkadxnMfw"><i class="fa-brands fa-youtube-square"></i></a>
+                
+            <a title="GitHub" class="text-2xl" href="https://github.com/kantas-spike"><i class="fa-brands fa-github-square"></i></a>
+                
+            <a title="Blog" class="text-2xl" href="https://kantas-spike.github.io/portfolio/"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                
+            
+        </div>
+    </div>
+</footer> 
+
+
+
+
+<script defer type="text/javascript" src="https://kantas-spike.github.io/portfolio/js/search-form.dd7ad4e4f203f408d461506b73a7cb128e641d61d86c7695ca9d2cd5e2768597efa3c2663c7a204016bb8d25de38097dc929682fc7aad45bd784ab2b4c3e6135.js" integrity="sha512-3XrU5PID9AjUYVBrc6fLEo5kHWHYbHaVyp0s1eJ2hZfvo8JmPHogQBa7jSXeOAl9ySloL8eq1FvXhKsrTD5hNQ=="></script></body>
+</html>

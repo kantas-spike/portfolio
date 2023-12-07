@@ -2,6 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/blender/</loc>
+    <lastmod>2023-12-07T21:09:45+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/blender-addon/</loc>
+    <lastmod>2023-12-07T21:09:45+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/til/2023/12/95-get-timestamp-on-playhead-of-vse/</loc>
+    <lastmod>2023-12-07T21:09:45+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/python/</loc>
+    <lastmod>2023-12-07T21:09:45+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/</loc>
+    <lastmod>2023-12-07T21:09:45+09:00</lastmod>
+  </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/git/</loc>
     <lastmod>2023-11-22T22:41:26+09:00</lastmod>
   </url><url>
@@ -12,9 +27,6 @@
     <lastmod>2023-11-22T22:41:26+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/macos/</loc>
-    <lastmod>2023-11-22T22:41:26+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/</loc>
     <lastmod>2023-11-22T22:41:26+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/color/</loc>
@@ -173,9 +185,6 @@
     <loc>https://kantas-spike.github.io/portfolio/dialogues/06-project-name/</loc>
     <lastmod>2023-07-05T11:33:00+09:00</lastmod>
   </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/blender/</loc>
-    <lastmod>2023-06-30T11:42:43+09:00</lastmod>
-  </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2023/06/71-sync-animation-to-audio-in-blender/</loc>
     <lastmod>2023-06-30T11:42:43+09:00</lastmod>
   </url><url>
@@ -186,9 +195,6 @@
     <lastmod>2023-06-22T14:57:38+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2023/06/69-entering-formula-to-input-field-in-blender/</loc>
-    <lastmod>2023-06-22T11:05:26+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/python/</loc>
     <lastmod>2023-06-22T11:05:26+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2023/06/68-bend-the-mesh-in-blender/</loc>
@@ -370,9 +376,6 @@
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/articles/2023/01/07-adding-toc-to-a-donwloaded-pdf/</loc>
     <lastmod>2023-01-26T04:14:58+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/blender-addon/</loc>
-    <lastmod>2023-01-24T22:56:25+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2023/01/40-naming-convention-of-blender-addon/</loc>
     <lastmod>2023-01-24T22:56:25+09:00</lastmod>

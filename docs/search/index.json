@@ -1,6 +1,11 @@
 {
     "results": [
     {
+        "href": "https://kantas-spike.github.io/portfolio/til/2023/12/95-get-timestamp-on-playhead-of-vse/",
+        "title": "BlenderのVSEのプレイヘッドのタイムスタンプを取得したい",
+        "tags": "python blender blender-addon"
+    },
+    {
         "href": "https://kantas-spike.github.io/portfolio/til/2023/11/94-use-git-credential-osxkeychain/",
         "title": "GitでGithubの認証情報を何度も入力したくない",
         "tags": "git GitHub macOS"

@@ -7,8 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>© 2022 kanta&#39;s spike</copyright>
-    <lastBuildDate>Fri, 30 Jun 2023 11:42:43 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 07 Dec 2023 21:09:45 +0900</lastBuildDate>
     <atom:link href="https://kantas-spike.github.io/portfolio/tags/blender/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BlenderのVSEのプレイヘッドのタイムスタンプを取得したい</title>
+      <link>https://kantas-spike.github.io/portfolio/til/2023/12/95-get-timestamp-on-playhead-of-vse/</link>
+      <pubDate>Thu, 07 Dec 2023 21:09:45 +0900</pubDate>
+      <guid>https://kantas-spike.github.io/portfolio/til/2023/12/95-get-timestamp-on-playhead-of-vse/</guid>
+      <description>&lt;p&gt;Blenderで動画編集時に&lt;a href=&#34;https://ja.wikipedia.org/wiki/SubRip&#34;&gt;SubRip&lt;/a&gt;形式の字幕ファイルも編集したいので、
+&lt;strong&gt;Video Sequence Editor&lt;/strong&gt; のプレイヘッドのタイムスタンプを取得したい。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Blenderでアニメーションと音を同期させたい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/06/71-sync-animation-to-audio-in-blender/</link>
