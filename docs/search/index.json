@@ -1,6 +1,11 @@
 {
     "results": [
     {
+        "href": "https://kantas-spike.github.io/portfolio/til/2023/12/96-using-gimp-with-python/",
+        "title": "GIMPをPythonで使う",
+        "tags": "python GIMP"
+    },
+    {
         "href": "https://kantas-spike.github.io/portfolio/til/2023/12/95-get-timestamp-on-playhead-of-vse/",
         "title": "BlenderのVSEのプレイヘッドのタイムスタンプを取得したい",
         "tags": "python blender blender-addon"

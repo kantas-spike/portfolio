@@ -1,0 +1,303 @@
+<!doctype html>
+<html><head>
+    <title>
+        GIMPをPythonで使う | kanta&#39;s spike
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+  rel="preload"
+  href="https://kantas-spike.github.io/portfolio/fonts/NotoSansJP-Regular.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin="anonymous"
+/>
+<link
+  rel="preload"
+  href="https://kantas-spike.github.io/portfolio/fonts/NotoSansJP-Bold.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin="anonymous"
+/>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Noto+Emoji:wght@400;500;700&family=Noto+Sans+JP:wght@400;700&display=swap"
+  rel="stylesheet"
+/>
+<link rel="stylesheet" href="https://kantas-spike.github.io/portfolio/css/fonts.978d33a6dcb8af5cc3fc6d102e0cbd3d4f2452dcaae53ff12d45609137df3ed9.css">
+    <link rel="stylesheet" href="https://kantas-spike.github.io/portfolio/css/theme.min.6c7f1096598e367e45137add0d36fc2c3b711825ae2d67eec1775fd770723634.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" /><link rel="stylesheet" href="https://kantas-spike.github.io/portfolio/css/syntax.min.70c02160dee6bd55baaa2b10019d735294451730e282f7fa645466392ba0cfb6.css"><link rel="apple-touch-icon" sizes="180x180" href="https://kantas-spike.github.io/portfolio/icon180.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://kantas-spike.github.io/portfolio/icon32.png">
+<link rel="icon" type="image/svg+xml" href="https://kantas-spike.github.io/portfolio/icon.svg">
+<link rel="manifest" href="https://kantas-spike.github.io/portfolio/site.webmanifest">
+
+</head><body class="bg-background text-primary-dark pb-4"><header class="bg-primary-dark text-site_title text-6xl font-serif font-extrabold px-4 py-3">
+    <h1 class="container mx-auto px-4"><a href="https://kantas-spike.github.io/portfolio/">kanta&#39;s spike</a></h1>
+</header>
+<input type="checkbox" name="burger_cbx" id="burger_cbx">
+<label for="burger_cbx" class="burger_label">
+    <span class="burger_icon"><svg version="1.1" viewBox="0 0 12.7 12.7" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <rect x="1.0369" y="2.1007" width="10.634" height="1.0426" ry=".5213"/>
+  <rect x="1.0369" y="4.571" width="10.634" height="1.0426" ry=".5213"/>
+  <rect x="1.0369" y="7.0413" width="10.634" height="1.0426" ry=".5213"/>
+  <rect x="1.0369" y="9.5115" width="10.634" height="1.0426" ry=".5213"/>
+ </g>
+</svg>
+</span>
+</label>
+<label for="burger_cbx" class="close_label">
+    <span class="close_icon"><svg version="1.1" viewBox="0 0 12.7 12.7" xmlns="http://www.w3.org/2000/svg">
+ <rect transform="rotate(45.535)" x="3.6678" y="-.6148" width="10.634" height="1.0426" ry=".5213"/>
+ <rect transform="rotate(135.53)" x="-5.4104" y="-9.5059" width="10.634" height="1.0426" ry=".5213"/>
+</svg>
+</span>
+</label>
+<div class="nav_area">
+    <nav class="container mx-auto bg-primary text-on-primary text-center flex flex-col md:flex-row justify-start">
+            <a href="https://kantas-spike.github.io/portfolio/" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Home</a>
+            <a href="https://kantas-spike.github.io/portfolio/til" class="box-border flex-1 text-center no-underline bg-primary-light text-on-primary-light font-bold py-2">TIL</a>
+            <a href="https://kantas-spike.github.io/portfolio/dialogues" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Dialogues</a>
+            <a href="https://kantas-spike.github.io/portfolio/articles" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Articles</a>
+            <a href="https://kantas-spike.github.io/portfolio/mytools" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">My Tools</a>
+            <a href="https://kantas-spike.github.io/portfolio/ihc" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">IHC</a>
+            <a href="https://kantas-spike.github.io/portfolio/tags" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Tags</a>
+        <div class="flex-none" id="search_menu"></div>
+    </nav>
+</div>
+<main id="content" class="container mx-auto bg-surface pt-4 pb-8">
+<div class="area_border px-4 py-3 mx-4 md:mx-auto pb-4 max-w-[60rem]">
+  
+
+
+
+<div class="mb-4">
+    <h3 class="border-b-4 border-primary-dark text-primary-dark text-xl font-bold tracking-wider pl-[1em] -indent-[1ex]"><i class="fa-solid fa-circle-info"></i> <a href="https://kantas-spike.github.io/portfolio/til/2023/12/96-using-gimp-with-python/">GIMPをPythonで使う</a></h3>
+    <div class="flex justify-between mt-1 mx-2">
+        <div>
+            <ul class="flex gap-2 justify-end">
+            
+            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/python/">#python</a></li>
+            
+            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/gimp/">#GIMP</a></li>
+            
+            </ul>
+        </div>
+        <div>
+            
+            
+            <div class="text-right text-sm font-bold">2023/12/11
+                
+                    <span class="text-xs text-red-600 font-thin">New</span>
+                
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+  <div class="article mx-2"><p>Pythonを使って、GIMPを操作したい。</p>
+<h3 id="解決策">解決策</h3>
+<p>GIMPにはPythonが内蔵されており、組み込みのAPIを利用して、
+アドオンを作成したり、コマンドラインからGIMPを操作したりできる。</p>
+<div class="column not-article mx-1 my-4  px-4 py-4 border-2 rounded-md "><div class="text-lg font-bold leading-m tracking-m mb-4 -mx-1">
+      <span class="inline-flex emoji">📄</span><span>APIの調べ方</span>
+    </div>
+  <div class="mx-2 article">
+    <p>PythonでGIMPを利用する場合、<strong>GIMP&rsquo;s Procedural Database (PDB)</strong> が提供するAPIを利用します。
+APIは、<strong>Python Procedure Browser</strong>で調べることができます。</p>
+<p><strong>Python Procedure Browser</strong>の使い方は以下になります。</p>
+<ol>
+<li>GIMPのメニュー<code>Filters &gt; Python-Fu &gt; Console</code>から<strong>Python Console</strong>を開く</li>
+<li><code>Browse</code>ボタンをクリックで、<strong>Python Procedure Browser</strong>を開く</li>
+<li><code>Search:</code>欄にAPI名やキーワードを入力し、検索結果を確認する</li>
+</ol>
+<p>また、<strong>PDB</strong>は、<strong>libgimp</strong>のAPIをPythonに提供しています。
+<strong>PDB</strong>が提供する機能を知るには<strong>libgimp</strong>のリファレンスが参考になりそうです。</p>
+<div class="column not-article mx-1 my-4  px-4 py-4 border-2 rounded-md ">
+  <div class="mx-2 article">
+    <a href="https://developer.gimp.org/api/2.0/libgimp/libgimp.html">Part I. GIMP Library: GIMP Library Reference Manual</a>
+  </div>
+</div>
+<p>ただし、<strong>libgimp</strong>と<strong>PDB</strong>のAPIには差異(引数の数や順序など)があるため、Pythonで利用する場合は、必ず<strong>Python Procedure Browser</strong>で確認してから利用する必要があります。</p>
+
+  </div>
+</div>
+<h4 id="バッチで呼びだす方法">バッチで呼びだす方法</h4>
+<p>例えば<code>xxx.py</code>というファイルにGimp操作用のコードを記載する場合、
+以下のコマンドを実行することにより、GIMPに処理させることができる。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">gimp --no-interface --console-messages --no-data --no-splash --batch-interpreter python-fu-eval --batch - &lt; xxx.py
+</span></span></code></pre></div><h4 id="スクリプトの内容">スクリプトの内容</h4>
+<p><code>xxx.py</code>の実行結果は以下になる。</p>
+<p><img src="https://kantas-spike.github.io/portfolio/til/96_label.png" alt=""></p>
+<div class="column not-article mx-1 my-4  px-4 py-4 border-2 rounded-md "><div class="text-lg font-bold leading-m tracking-m mb-4 -mx-1">
+      <span class="inline-flex emoji">📄</span><span>GIMPのPythonのバージョンについて</span>
+    </div>
+  <div class="mx-2 article">
+    <p>GIMP2.10に組み込まれているPythonのバージョンは2.7系です。</p>
+<p>そのため、スクリプトに日本語(UTF-8)を記載する場合は、先頭行に
+<code># -*- coding: utf-8 -*-</code> を記載する必要があります。</p>
+<p>また、2023年現在のPythonの最新バージョンは3.12.xです。</p>
+<p>PDBを利用するだけの簡単なスクリプトならあまりPythonのバージョンを意識することはありません。
+しかし、複雑なスクリプトなど作成する場合は、Pythonの2系と3系の差異についても意識する必要があるかもしれません。</p>
+
+  </div>
+</div>
+<p><code>xxx.py</code>の内容です。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># -*- coding: utf-8 -*-</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># plug-ins/pygimp/gimpfu.py · GIMP_2_10_34 · GNOME / GIMP · GitLab</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#  - https://gitlab.gnome.org/GNOME/gimp/-/blob/GIMP_2_10_34/plug-ins/pygimp/gimpfu.py?ref_type=tags</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">gimpfu</span> <span class="kn">import</span> <span class="o">*</span>  <span class="c1"># gimp のAPIをインポート pdbオブジェクト経由で各種APIを利用可能</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">os</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">add_text</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">hexColor</span><span class="p">,</span> <span class="n">font_name</span><span class="p">,</span> <span class="n">font_size</span><span class="p">,</span> <span class="n">label_layer</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">image</span> <span class="o">=</span> <span class="n">pdb</span><span class="o">.</span><span class="n">gimp_item_get_image</span><span class="p">(</span><span class="n">label_layer</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">text_layer</span> <span class="o">=</span> <span class="n">pdb</span><span class="o">.</span><span class="n">gimp_text_fontname</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="n">image</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">label_layer</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="mi">0</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="mi">0</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">text</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="mi">0</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">TRUE</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">font_size</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">PIXELS</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">font_name</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># 文字色を設定</span>
+</span></span><span class="line"><span class="cl">    <span class="n">pdb</span><span class="o">.</span><span class="n">gimp_text_layer_set_color</span><span class="p">(</span><span class="n">text_layer</span><span class="p">,</span> <span class="n">hexColor</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># テキストをセンタリング</span>
+</span></span><span class="line"><span class="cl">    <span class="n">pdb</span><span class="o">.</span><span class="n">gimp_text_layer_set_justification</span><span class="p">(</span><span class="n">text_layer</span><span class="p">,</span> <span class="n">TEXT_JUSTIFY_CENTER</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># 行間を調整</span>
+</span></span><span class="line"><span class="cl">    <span class="n">pdb</span><span class="o">.</span><span class="n">gimp_text_layer_set_line_spacing</span><span class="p">(</span><span class="n">text_layer</span><span class="p">,</span> <span class="n">font_size</span> <span class="o">*</span> <span class="o">-</span><span class="mf">0.25</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">layer_w</span> <span class="o">=</span> <span class="n">pdb</span><span class="o">.</span><span class="n">gimp_drawable_width</span><span class="p">(</span><span class="n">label_layer</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">layer_h</span> <span class="o">=</span> <span class="n">pdb</span><span class="o">.</span><span class="n">gimp_drawable_height</span><span class="p">(</span><span class="n">label_layer</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">text_w</span> <span class="o">=</span> <span class="n">pdb</span><span class="o">.</span><span class="n">gimp_drawable_width</span><span class="p">(</span><span class="n">text_layer</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">text_h</span> <span class="o">=</span> <span class="n">pdb</span><span class="o">.</span><span class="n">gimp_drawable_height</span><span class="p">(</span><span class="n">text_layer</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">offset_x</span> <span class="o">=</span> <span class="nb">round</span><span class="p">((</span><span class="n">layer_w</span> <span class="o">-</span> <span class="n">text_w</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">offset_y</span> <span class="o">=</span> <span class="nb">round</span><span class="p">((</span><span class="n">layer_h</span> <span class="o">-</span> <span class="n">text_h</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># 中央に移動</span>
+</span></span><span class="line"><span class="cl">    <span class="n">pdb</span><span class="o">.</span><span class="n">gimp_layer_set_offsets</span><span class="p">(</span><span class="n">text_layer</span><span class="p">,</span> <span class="n">offset_x</span><span class="p">,</span> <span class="n">offset_y</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1"># テキストをレイヤーに貼り付け</span>
+</span></span><span class="line"><span class="cl">    <span class="n">pdb</span><span class="o">.</span><span class="n">gimp_floating_sel_anchor</span><span class="p">(</span><span class="n">text_layer</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">img_w</span> <span class="o">=</span> <span class="mi">400</span>
+</span></span><span class="line"><span class="cl"><span class="n">img_h</span> <span class="o">=</span> <span class="mi">300</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 400x300のRGB画像を生成</span>
+</span></span><span class="line"><span class="cl"><span class="n">image</span> <span class="o">=</span> <span class="n">pdb</span><span class="o">.</span><span class="n">gimp_image_new</span><span class="p">(</span><span class="n">img_w</span><span class="p">,</span> <span class="n">img_h</span><span class="p">,</span> <span class="n">RGB</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">######</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 背景</span>
+</span></span><span class="line"><span class="cl"><span class="c1">######</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 背景用のレイヤーを追加</span>
+</span></span><span class="line"><span class="cl"><span class="n">bg_layer</span> <span class="o">=</span> <span class="n">pdb</span><span class="o">.</span><span class="n">gimp_layer_new</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="n">image</span><span class="p">,</span> <span class="n">img_w</span><span class="p">,</span> <span class="n">img_h</span><span class="p">,</span> <span class="n">RGBA_IMAGE</span><span class="p">,</span> <span class="s2">&#34;背景&#34;</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="n">LAYER_MODE_NORMAL_LEGACY</span>
+</span></span><span class="line"><span class="cl"><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># レイヤーを背景色で塗る</span>
+</span></span><span class="line"><span class="cl"><span class="n">pdb</span><span class="o">.</span><span class="n">gimp_context_set_background</span><span class="p">(</span><span class="s2">&#34;#40516a&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">pdb</span><span class="o">.</span><span class="n">gimp_drawable_fill</span><span class="p">(</span><span class="n">bg_layer</span><span class="p">,</span> <span class="n">FILL_BACKGROUND</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># レイヤーを画像の先頭に追加</span>
+</span></span><span class="line"><span class="cl"><span class="n">pdb</span><span class="o">.</span><span class="n">gimp_image_add_layer</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">bg_layer</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">################</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># ラベルの作成</span>
+</span></span><span class="line"><span class="cl"><span class="c1">################</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># テキスト用のレイヤーを追加</span>
+</span></span><span class="line"><span class="cl"><span class="n">label_layer</span> <span class="o">=</span> <span class="n">pdb</span><span class="o">.</span><span class="n">gimp_layer_new</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="n">image</span><span class="p">,</span> <span class="n">img_w</span><span class="p">,</span> <span class="n">img_h</span><span class="p">,</span> <span class="n">RGBA_IMAGE</span><span class="p">,</span> <span class="s2">&#34;ラベル用&#34;</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="n">LAYER_MODE_NORMAL_LEGACY</span>
+</span></span><span class="line"><span class="cl"><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># レイヤーを透明に</span>
+</span></span><span class="line"><span class="cl"><span class="n">pdb</span><span class="o">.</span><span class="n">gimp_drawable_fill</span><span class="p">(</span><span class="n">label_layer</span><span class="p">,</span> <span class="n">TRANSPARENT_FILL</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># レイヤーを画像の先頭に追加</span>
+</span></span><span class="line"><span class="cl"><span class="n">pdb</span><span class="o">.</span><span class="n">gimp_image_add_layer</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">label_layer</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># テキストを作成</span>
+</span></span><span class="line"><span class="cl"><span class="n">font_size</span> <span class="o">=</span> <span class="mi">48</span>
+</span></span><span class="line"><span class="cl"><span class="n">add_text</span><span class="p">(</span><span class="s2">&#34;はじめての</span><span class="se">\n</span><span class="s2">GIMP&#34;</span><span class="p">,</span> <span class="s2">&#34;#2877c0&#34;</span><span class="p">,</span> <span class="s2">&#34;Noto Sans JP Bold&#34;</span><span class="p">,</span> <span class="n">font_size</span><span class="p">,</span> <span class="n">label_layer</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">######################</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># アウトラインの作成</span>
+</span></span><span class="line"><span class="cl"><span class="c1">######################</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># ラベルレイヤーをコピーし、アウトライン用のレイヤーを作成</span>
+</span></span><span class="line"><span class="cl"><span class="n">outline_layer</span> <span class="o">=</span> <span class="n">pdb</span><span class="o">.</span><span class="n">gimp_layer_copy</span><span class="p">(</span><span class="n">label_layer</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># ラベルレイヤーのレイヤー番号を取得</span>
+</span></span><span class="line"><span class="cl"><span class="n">idx</span> <span class="o">=</span> <span class="n">pdb</span><span class="o">.</span><span class="n">gimp_image_get_item_position</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">label_layer</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># ラベルレイヤーの下にアウトラインレイヤーを配置</span>
+</span></span><span class="line"><span class="cl"><span class="n">pdb</span><span class="o">.</span><span class="n">gimp_image_add_layer</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">outline_layer</span><span class="p">,</span> <span class="n">idx</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># レイヤー内の画像のアウトラインを選択</span>
+</span></span><span class="line"><span class="cl"><span class="n">pdb</span><span class="o">.</span><span class="n">gimp_image_select_item</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">CHANNEL_OP_ADD</span><span class="p">,</span> <span class="n">outline_layer</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 選択範囲を拡大</span>
+</span></span><span class="line"><span class="cl"><span class="n">pdb</span><span class="o">.</span><span class="n">gimp_selection_grow</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">font_size</span> <span class="o">*</span> <span class="mf">0.08</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 選択範囲の境界をぼかす</span>
+</span></span><span class="line"><span class="cl"><span class="n">pdb</span><span class="o">.</span><span class="n">gimp_selection_feather</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">font_size</span> <span class="o">*</span> <span class="mf">0.08</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 背景色を白に</span>
+</span></span><span class="line"><span class="cl"><span class="n">pdb</span><span class="o">.</span><span class="n">gimp_context_set_background</span><span class="p">((</span><span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="n">pdb</span><span class="o">.</span><span class="n">gimp_drawable_edit_fill</span><span class="p">(</span><span class="n">outline_layer</span><span class="p">,</span> <span class="n">FILL_BACKGROUND</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 選択を解除</span>
+</span></span><span class="line"><span class="cl"><span class="n">pdb</span><span class="o">.</span><span class="n">gimp_selection_none</span><span class="p">(</span><span class="n">image</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#############</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 画像の保存</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#############</span>
+</span></span><span class="line"><span class="cl"><span class="n">output_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="s2">&#34;./label.png&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 可視レイヤーを1つに統合</span>
+</span></span><span class="line"><span class="cl"><span class="n">merged_layer</span> <span class="o">=</span> <span class="n">pdb</span><span class="o">.</span><span class="n">gimp_image_merge_visible_layers</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">CLIP_TO_IMAGE</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 保存</span>
+</span></span><span class="line"><span class="cl"><span class="n">pdb</span><span class="o">.</span><span class="n">gimp_file_save</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">merged_layer</span><span class="p">,</span> <span class="n">output_path</span><span class="p">,</span> <span class="n">output_path</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 画像をGimpで表示</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># pdb.gimp_display_new(image)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 終了処理</span>
+</span></span><span class="line"><span class="cl"><span class="n">pdb</span><span class="o">.</span><span class="n">gimp_image_delete</span><span class="p">(</span><span class="n">image</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">pdb</span><span class="o">.</span><span class="n">gimp_quit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</span></span></code></pre></div><h3 id="参考">参考</h3>
+<ul>
+<li><a href="https://gihyo.jp/admin/serial/01/ubuntu-recipe/0186">第186回　夏休み特別企画・GIMPでアスキーアートを3Dっぽくしよう！ | gihyo.jp</a></li>
+<li><a href="https://ytyaru.hatenablog.com/entry/2019/12/29/222222">GIMP python-fu CLI実行 - やってみる</a></li>
+<li><a href="https://www.gimp.org/docs/python/index.html#WHAT-IS-IT">Gimp Python Documentation</a></li>
+<li><a href="https://developer.gimp.org/api/2.0/libgimp/index.html">GIMP Library Reference Manual: GIMP Library Reference Manual</a></li>
+</ul></div>
+  <div class="mt-6">
+    <div class="border-t-2 border-primary-dark px-2 pt-2 text-right">
+        <span class="text-sm">作成日: 2023/12/11</span></div>
+</div>
+
+</div>
+
+
+    </main><footer class="bg-primary-dark text-center text-on-primary-dark fixed bottom-0 w-full h-8">
+    <div class="container mx-auto grid grid-cols-3">
+        <div class="col-start-1 col-span-2 ml-2 md:ml-0 md:col-start-2 md:col-span-1">
+            <div class="text-left md:text-center text-sm pt-2">© 2022 kanta&#39;s spike</div>
+        </div>
+        <div class="col-start-3 flex justify-end gap-2 mr-2">
+            
+                
+            <a title="Twitter" class="text-2xl" href="https://twitter.com/KantasSpike"><i class="fa-brands fa-twitter-square"></i></a>
+                
+            <a title="Youtube" class="text-2xl" href="https://www.youtube.com/channel/UCnVBuUGMYAt7ZuIkadxnMfw"><i class="fa-brands fa-youtube-square"></i></a>
+                
+            <a title="GitHub" class="text-2xl" href="https://github.com/kantas-spike"><i class="fa-brands fa-github-square"></i></a>
+                
+            <a title="Blog" class="text-2xl" href="https://kantas-spike.github.io/portfolio/"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                
+            
+        </div>
+    </div>
+</footer> 
+
+
+
+
+<script defer type="text/javascript" src="https://kantas-spike.github.io/portfolio/js/search-form.dd7ad4e4f203f408d461506b73a7cb128e641d61d86c7695ca9d2cd5e2768597efa3c2663c7a204016bb8d25de38097dc929682fc7aad45bd784ab2b4c3e6135.js" integrity="sha512-3XrU5PID9AjUYVBrc6fLEo5kHWHYbHaVyp0s1eJ2hZfvo8JmPHogQBa7jSXeOAl9ySloL8eq1FvXhKsrTD5hNQ=="></script></body>
+</html>

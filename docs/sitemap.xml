@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/gimp/</loc>
+    <lastmod>2023-12-11T10:17:21+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/til/2023/12/96-using-gimp-with-python/</loc>
+    <lastmod>2023-12-11T10:17:21+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/python/</loc>
+    <lastmod>2023-12-11T10:17:21+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/</loc>
+    <lastmod>2023-12-11T10:17:21+09:00</lastmod>
+  </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/blender/</loc>
     <lastmod>2023-12-07T21:09:45+09:00</lastmod>
   </url><url>
@@ -9,12 +21,6 @@
     <lastmod>2023-12-07T21:09:45+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2023/12/95-get-timestamp-on-playhead-of-vse/</loc>
-    <lastmod>2023-12-07T21:09:45+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/python/</loc>
-    <lastmod>2023-12-07T21:09:45+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/</loc>
     <lastmod>2023-12-07T21:09:45+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/git/</loc>

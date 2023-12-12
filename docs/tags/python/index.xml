@@ -7,8 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>© 2022 kanta&#39;s spike</copyright>
-    <lastBuildDate>Thu, 07 Dec 2023 21:09:45 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 11 Dec 2023 10:17:21 +0900</lastBuildDate>
     <atom:link href="https://kantas-spike.github.io/portfolio/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GIMPをPythonで使う</title>
+      <link>https://kantas-spike.github.io/portfolio/til/2023/12/96-using-gimp-with-python/</link>
+      <pubDate>Mon, 11 Dec 2023 10:17:21 +0900</pubDate>
+      <guid>https://kantas-spike.github.io/portfolio/til/2023/12/96-using-gimp-with-python/</guid>
+      <description>&lt;p&gt;Pythonを使って、GIMPを操作したい。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>BlenderのVSEのプレイヘッドのタイムスタンプを取得したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/12/95-get-timestamp-on-playhead-of-vse/</link>
