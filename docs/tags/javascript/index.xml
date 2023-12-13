@@ -21,30 +21,21 @@
       <link>https://kantas-spike.github.io/portfolio/til/2023/11/88-reload-eslint-results-of-vscode/</link>
       <pubDate>Sun, 05 Nov 2023 11:29:23 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/til/2023/11/88-reload-eslint-results-of-vscode/</guid>
-      <description>&lt;p&gt;vscodeで&lt;code&gt;JavaScript&lt;/code&gt;や&lt;code&gt;TypeScript&lt;/code&gt;のコーディング中に、
-&lt;code&gt;問題&lt;/code&gt;パネルに表示される&lt;code&gt;eslint&lt;/code&gt;の結果が上手く更新されない場合がある。&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;問題&lt;/code&gt;パネルの&lt;code&gt;eslint&lt;/code&gt;の結果をリロードしたい。&lt;/p&gt;</description>
+      <description>&lt;p&gt;vscodeで&lt;code&gt;JavaScript&lt;/code&gt;や&lt;code&gt;TypeScript&lt;/code&gt;のコーディング中に、&#xA;&lt;code&gt;問題&lt;/code&gt;パネルに表示される&lt;code&gt;eslint&lt;/code&gt;の結果が上手く更新されない場合がある。&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;問題&lt;/code&gt;パネルの&lt;code&gt;eslint&lt;/code&gt;の結果をリロードしたい。&lt;/p&gt;</description>
     </item>
     <item>
       <title>JSONの文字列値にダブルクォーテーションを含めたい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/09/80-use-dobulequote-in-json-string/</link>
       <pubDate>Fri, 29 Sep 2023 16:25:24 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/til/2023/09/80-use-dobulequote-in-json-string/</guid>
-      <description>&lt;p&gt;JSONの文字列値にダブルクォーテーションを含めるため、以下のように記載したらエラーとなった。
-正しい表記となるよう修正したい。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nt&#34;&gt;&amp;#34;string&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;文字列&amp;#34;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;です&amp;#39;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+      <description>&lt;p&gt;JSONの文字列値にダブルクォーテーションを含めるため、以下のように記載したらエラーとなった。&#xA;正しい表記となるよう修正したい。&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nt&#34;&gt;&amp;#34;string&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;文字列&amp;#34;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;です&amp;#39;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     <item>
       <title>JavaScriptを使ってCSSの色表記を変換したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/07/76-convert-css-color-notations-with-js/</link>
       <pubDate>Fri, 28 Jul 2023 16:23:27 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/til/2023/07/76-convert-css-color-notations-with-js/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://storybook.js.org/&#34;&gt;Storybook: Frontend workshop for UI development&lt;/a&gt;の&lt;a href=&#34;https://storybook.js.org/docs/react/api/doc-block-colorpalette&#34;&gt;ColorPalette&lt;/a&gt;を使って、
-色調パレットを作成している。&lt;/p&gt;
-&lt;p&gt;色調作成時のトーン操作は&lt;code&gt;hsl()&lt;/code&gt;形式を使い、色の表記時には&lt;code&gt;16進数&lt;/code&gt;形式を使いたい。&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://storybook.js.org/&#34;&gt;Storybook: Frontend workshop for UI development&lt;/a&gt;の&lt;a href=&#34;https://storybook.js.org/docs/react/api/doc-block-colorpalette&#34;&gt;ColorPalette&lt;/a&gt;を使って、&#xA;色調パレットを作成している。&lt;/p&gt;&#xA;&lt;p&gt;色調作成時のトーン操作は&lt;code&gt;hsl()&lt;/code&gt;形式を使い、色の表記時には&lt;code&gt;16進数&lt;/code&gt;形式を使いたい。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

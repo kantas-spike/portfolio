@@ -1,6 +1,11 @@
 {
     "results": [
     {
+        "href": "https://kantas-spike.github.io/portfolio/dialogues/09-pass-args-when-run-gimpfu-from-cli/",
+        "title": "コマンドライン経由でGIMPをPythonで使う時に、追加の情報を渡したい",
+        "tags": "ChatGPT python GIMP"
+    },
+    {
         "href": "https://kantas-spike.github.io/portfolio/til/2023/12/96-using-gimp-with-python/",
         "title": "GIMPをPythonで使う",
         "tags": "python GIMP"

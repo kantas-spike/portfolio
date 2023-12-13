@@ -21,28 +21,21 @@
       <link>https://kantas-spike.github.io/portfolio/til/2023/09/81-fix-multi-issues-in-github/</link>
       <pubDate>Fri, 29 Sep 2023 18:31:06 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/til/2023/09/81-fix-multi-issues-in-github/</guid>
-      <description>&lt;p&gt;GitHubのプルリクエストのコメントに&lt;code&gt;fix #xx&lt;/code&gt;のようにイシュー番号を指定すると該当イシューをクローズできる。&lt;/p&gt;
-&lt;p&gt;同様の方法で複数のイシューをまとめてクローズしたい。&lt;/p&gt;</description>
+      <description>&lt;p&gt;GitHubのプルリクエストのコメントに&lt;code&gt;fix #xx&lt;/code&gt;のようにイシュー番号を指定すると該当イシューをクローズできる。&lt;/p&gt;&#xA;&lt;p&gt;同様の方法で複数のイシューをまとめてクローズしたい。&lt;/p&gt;</description>
     </item>
     <item>
       <title>`Static Export`したNext.jsアプリをGitHub Pagesで表示できない</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/07/73-cannot-load-exported-nextjs-app-in-github-pages/</link>
       <pubDate>Mon, 10 Jul 2023 01:17:23 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/til/2023/07/73-cannot-load-exported-nextjs-app-in-github-pages/</guid>
-      <description>&lt;p&gt;&lt;code&gt;Static Export&lt;/code&gt;したNext.jsアプリをGitHub Pagesで表示できない。&lt;/p&gt;
-&lt;p&gt;どうやら&lt;code&gt;_next/&lt;/code&gt;配下のファイルを表示できないようだ。&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;code&gt;Static Export&lt;/code&gt;したNext.jsアプリをGitHub Pagesで表示できない。&lt;/p&gt;&#xA;&lt;p&gt;どうやら&lt;code&gt;_next/&lt;/code&gt;配下のファイルを表示できないようだ。&lt;/p&gt;</description>
     </item>
     <item>
       <title>メインブランチの保護方針を決める</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/05/58-decide-on-a-protection-policy-for-the-main-branch/</link>
       <pubDate>Wed, 31 May 2023 22:17:46 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/til/2023/05/58-decide-on-a-protection-policy-for-the-main-branch/</guid>
-      <description>&lt;p&gt;GitHubのプロジェクトに以下のメッセージが表示されていることに気づいた。
-何となくGitHubを使用してきたが、この機会にメインブランチの保護方針を決めたい。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Your main branch isn&amp;#39;t protected
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;方針は以下としたい。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;GitHubでメインブランチへの直接のプッシュを禁止し、プルリクエストが作成されたもののみマージしたい。
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+      <description>&lt;p&gt;GitHubのプロジェクトに以下のメッセージが表示されていることに気づいた。&#xA;何となくGitHubを使用してきたが、この機会にメインブランチの保護方針を決めたい。&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Your main branch isn&amp;#39;t protected&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;方針は以下としたい。&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;GitHubでメインブランチへの直接のプッシュを禁止し、プルリクエストが作成されたもののみマージしたい。&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
   </channel>
 </rss>

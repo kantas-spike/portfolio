@@ -21,8 +21,7 @@
       <link>https://kantas-spike.github.io/portfolio/til/2022/09/29-add-shortcode-to-set-the-width-of-youtube-video/</link>
       <pubDate>Thu, 22 Sep 2022 20:19:54 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/til/2022/09/29-add-shortcode-to-set-the-width-of-youtube-video/</guid>
-      <description>&lt;p&gt;Hugo標準のYoutube用ショートコードを使用すると、横幅一杯にYoutube動画が表示される。
-幅をスタイル指定可能なYoutube動画用のShortcodeを追加したい。&lt;/p&gt;</description>
+      <description>&lt;p&gt;Hugo標準のYoutube用ショートコードを使用すると、横幅一杯にYoutube動画が表示される。&#xA;幅をスタイル指定可能なYoutube動画用のShortcodeを追加したい。&lt;/p&gt;</description>
     </item>
     <item>
       <title>hugoでyoutubeのplaylistを埋め込みたい</title>

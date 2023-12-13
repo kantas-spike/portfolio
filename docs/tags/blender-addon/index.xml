@@ -14,19 +14,14 @@
       <link>https://kantas-spike.github.io/portfolio/til/2023/12/95-get-timestamp-on-playhead-of-vse/</link>
       <pubDate>Thu, 07 Dec 2023 21:09:45 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/til/2023/12/95-get-timestamp-on-playhead-of-vse/</guid>
-      <description>&lt;p&gt;Blenderで動画編集時に&lt;a href=&#34;https://ja.wikipedia.org/wiki/SubRip&#34;&gt;SubRip&lt;/a&gt;形式の字幕ファイルも編集したいので、
-&lt;strong&gt;Video Sequence Editor&lt;/strong&gt; のプレイヘッドのタイムスタンプを取得したい。&lt;/p&gt;</description>
+      <description>&lt;p&gt;Blenderで動画編集時に&lt;a href=&#34;https://ja.wikipedia.org/wiki/SubRip&#34;&gt;SubRip&lt;/a&gt;形式の字幕ファイルも編集したいので、&#xA;&lt;strong&gt;Video Sequence Editor&lt;/strong&gt; のプレイヘッドのタイムスタンプを取得したい。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Blenderアドオン開発時の命名規則</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/01/40-naming-convention-of-blender-addon/</link>
       <pubDate>Tue, 24 Jan 2023 22:56:25 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/til/2023/01/40-naming-convention-of-blender-addon/</guid>
-      <description>&lt;p&gt;Blenderを起動すると、アドオンの登録時に、以下の警告が表示される。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;% /Applications/Blender.app/Contents/MacOS/Blender
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;register_class&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;...&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;:
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Warning: &lt;span class=&#34;s1&#34;&gt;&amp;#39;SRTLOADER_SrtList&amp;#39;&lt;/span&gt; does not contain &lt;span class=&#34;s1&#34;&gt;&amp;#39;_PT_&amp;#39;&lt;/span&gt; with prefix and suffix
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+      <description>&lt;p&gt;Blenderを起動すると、アドオンの登録時に、以下の警告が表示される。&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;% /Applications/Blender.app/Contents/MacOS/Blender&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;register_class&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;...&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;:&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Warning: &lt;span class=&#34;s1&#34;&gt;&amp;#39;SRTLOADER_SrtList&amp;#39;&lt;/span&gt; does not contain &lt;span class=&#34;s1&#34;&gt;&amp;#39;_PT_&amp;#39;&lt;/span&gt; with prefix and suffix&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
   </channel>
 </rss>

@@ -7,114 +7,70 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>© 2022 kanta&#39;s spike</copyright>
-    <lastBuildDate>Fri, 21 Jul 2023 16:13:15 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 13 Dec 2023 07:19:59 +0900</lastBuildDate>
     <atom:link href="https://kantas-spike.github.io/portfolio/tags/chatgpt/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>コマンドライン経由でGIMPをPythonで使う時に、追加の情報を渡したい</title>
+      <link>https://kantas-spike.github.io/portfolio/dialogues/09-pass-args-when-run-gimpfu-from-cli/</link>
+      <pubDate>Wed, 13 Dec 2023 07:19:59 +0900</pubDate>
+      <guid>https://kantas-spike.github.io/portfolio/dialogues/09-pass-args-when-run-gimpfu-from-cli/</guid>
+      <description>&lt;div&#xA;  class=&#34;quote text-[#ececf1] relative p-2 pr-4 bg-[#343542] border border-[#2b2b32] rounded-sm mt-2 mb-6&#34;&#xA;&gt;&#xA;  &lt;div&#xA;    class=&#34;font-serif text-3xl absolute top-0 left-0 py-2 pl-2 pr-1 font-bold text-[#ffffff]&#34;&#xA;  &gt;&#xA;    &lt;div class=&#34;w-[2.25rem] h-[2.25rem] bg-[#e64b3b] text-center relative&#34;&gt;&#xA;      &lt;div class=&#34;absolute -top-[2px] inset-x-0&#34;&gt;Q&lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;  &lt;/div&gt;&#xA;  &lt;div class=&#34;ml-12 mt-0.5 mb-2 text_block&#34;&gt;&lt;p&gt;&lt;code&gt;something.py&lt;/code&gt;に処理を記述し、以下のようにgimpを呼びだすとコマンドラインからGIMPの機能を呼び出せることがわかりました。&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;gimp --no-interface --console-messages --no-data --no-splash --batch-interpreter python-fu-eval --batch - &amp;lt; something.py&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;ただ、&lt;code&gt;something.py&lt;/code&gt;に記載された固有の設定ではなく、追加のコマンドライン引数など、外部から設定を変更できるようにしたいと考えています。&lt;/p&gt;&#xA;&lt;p&gt;ここで質問です。&#xA;GIMPをコマンドラインからスクリプトを呼びだす時に、追加で設定情報などを渡す方法があれば教えてください。&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;</description>
+    </item>
     <item>
       <title>Siriに5分後にタイマーのアラームをセットして欲しい</title>
       <link>https://kantas-spike.github.io/portfolio/dialogues/08-hey-siri-set-a-timer/</link>
       <pubDate>Fri, 21 Jul 2023 16:13:15 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/dialogues/08-hey-siri-set-a-timer/</guid>
-      <description>&lt;div class=&#34;quote text-[#ececf1] relative p-2 pr-4 bg-[#343542] border border-[#2b2b32] rounded-sm mt-2 mb-6&#34;&gt;
-    &lt;div class=&#34;font-serif text-3xl absolute top-0 left-0 py-2 pl-2 pr-1 font-bold text-[#ffffff]&#34;&gt;&lt;div class=&#34;w-[2.25rem] h-[2.25rem] bg-[#e64b3b] text-center relative&#34;&gt;&lt;div class=&#34;absolute -top-[2px] inset-x-0&#34;&gt;Q&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
-    &lt;div class=&#34;ml-12 mt-0.5 mb-2 whitespace-pre-wrap text_block&#34;&gt;AppleのSiriに、5分後にタイマーのアラームをならして欲しいと伝えたいです。
-英語でこれを伝える場合、何と言えば良いのでしょうか?&lt;/div&gt;
-&lt;/div&gt;</description>
+      <description>&lt;div&#xA;  class=&#34;quote text-[#ececf1] relative p-2 pr-4 bg-[#343542] border border-[#2b2b32] rounded-sm mt-2 mb-6&#34;&#xA;&gt;&#xA;  &lt;div&#xA;    class=&#34;font-serif text-3xl absolute top-0 left-0 py-2 pl-2 pr-1 font-bold text-[#ffffff]&#34;&#xA;  &gt;&#xA;    &lt;div class=&#34;w-[2.25rem] h-[2.25rem] bg-[#e64b3b] text-center relative&#34;&gt;&#xA;      &lt;div class=&#34;absolute -top-[2px] inset-x-0&#34;&gt;Q&lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;  &lt;/div&gt;&#xA;  &lt;div class=&#34;ml-12 mt-0.5 mb-2 text_block&#34;&gt;AppleのSiriに、5分後にタイマーのアラームをならして欲しいと伝えたいです。&#xA;英語でこれを伝える場合、何と言えば良いのでしょうか?&lt;/div&gt;&#xA;&lt;/div&gt;</description>
     </item>
     <item>
       <title>ブログ記事のカテゴリ</title>
       <link>https://kantas-spike.github.io/portfolio/dialogues/07-category-of-blog/</link>
       <pubDate>Thu, 06 Jul 2023 16:59:02 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/dialogues/07-category-of-blog/</guid>
-      <description>&lt;div class=&#34;quote text-[#ececf1] relative p-2 pr-4 bg-[#343542] border border-[#2b2b32] rounded-sm mt-2 mb-6&#34;&gt;
-    &lt;div class=&#34;font-serif text-3xl absolute top-0 left-0 py-2 pl-2 pr-1 font-bold text-[#ffffff]&#34;&gt;&lt;div class=&#34;w-[2.25rem] h-[2.25rem] bg-[#e64b3b] text-center relative&#34;&gt;&lt;div class=&#34;absolute -top-[2px] inset-x-0&#34;&gt;Q&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
-    &lt;div class=&#34;ml-12 mt-0.5 mb-2 whitespace-pre-wrap text_block&#34;&gt;私はブログを書いています。
-ブログの記事が増えてきたので記事をカテゴリに分類したいと思っています。
-カテゴリ名は英語にしたいと思っています。カテゴリ名のお勧めがあれば教えてください。
-
-私は以下の種類の記事を書いています。
-
-1.  少し長いプログラミング関係の文章
-2. TIL(today i learned)といわれる短い技術的なメモ
-3. 雑多な短いメモ
-
-上記の3つをカテゴリに分類するとしたらどのような英語のカテゴリ名が良いでしょうか?&lt;/div&gt;
-&lt;/div&gt;</description>
+      <description>&lt;div&#xA;  class=&#34;quote text-[#ececf1] relative p-2 pr-4 bg-[#343542] border border-[#2b2b32] rounded-sm mt-2 mb-6&#34;&#xA;&gt;&#xA;  &lt;div&#xA;    class=&#34;font-serif text-3xl absolute top-0 left-0 py-2 pl-2 pr-1 font-bold text-[#ffffff]&#34;&#xA;  &gt;&#xA;    &lt;div class=&#34;w-[2.25rem] h-[2.25rem] bg-[#e64b3b] text-center relative&#34;&gt;&#xA;      &lt;div class=&#34;absolute -top-[2px] inset-x-0&#34;&gt;Q&lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;  &lt;/div&gt;&#xA;  &lt;div class=&#34;ml-12 mt-0.5 mb-2 text_block&#34;&gt;&lt;p&gt;私はブログを書いています。&#xA;ブログの記事が増えてきたので記事をカテゴリに分類したいと思っています。&#xA;カテゴリ名は英語にしたいと思っています。カテゴリ名のお勧めがあれば教えてください。&lt;/p&gt;&#xA;&lt;p&gt;私は以下の種類の記事を書いています。&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;少し長いプログラミング関係の文章&lt;/li&gt;&#xA;&lt;li&gt;TIL(today i learned)といわれる短い技術的なメモ&lt;/li&gt;&#xA;&lt;li&gt;雑多な短いメモ&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;上記の3つをカテゴリに分類するとしたらどのような英語のカテゴリ名が良いでしょうか?&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;</description>
     </item>
     <item>
       <title>開発環境が正しく動作するか確認するためのプロジェクトに名前をつけたい</title>
       <link>https://kantas-spike.github.io/portfolio/dialogues/06-project-name/</link>
       <pubDate>Wed, 05 Jul 2023 11:33:00 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/dialogues/06-project-name/</guid>
-      <description>&lt;div class=&#34;quote text-[#ececf1] relative p-2 pr-4 bg-[#343542] border border-[#2b2b32] rounded-sm mt-2 mb-6&#34;&gt;
-    &lt;div class=&#34;font-serif text-3xl absolute top-0 left-0 py-2 pl-2 pr-1 font-bold text-[#ffffff]&#34;&gt;&lt;div class=&#34;w-[2.25rem] h-[2.25rem] bg-[#e64b3b] text-center relative&#34;&gt;&lt;div class=&#34;absolute -top-[2px] inset-x-0&#34;&gt;Q&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
-    &lt;div class=&#34;ml-12 mt-0.5 mb-2 whitespace-pre-wrap text_block&#34;&gt;プログラミング開発に使用する用語を英語にしたいと思っています。
-
-あるアプリケーションフレームワークを勉強しようと思い、その動作環境をインストールしました。
-そして、その動作環境が正しく動作するか確認するために、アプリケーションフレームワークのプロジェクトを作成したいと思っています。
-
-そのプロジェクト名に英語にしたいのですが、「正しく動作するか確認するためのプロジェクト」であることがわかるプロジェクト名にしたいと思います。
-どのような英語が良いでしょうか?&lt;/div&gt;
-&lt;/div&gt;</description>
+      <description>&lt;div&#xA;  class=&#34;quote text-[#ececf1] relative p-2 pr-4 bg-[#343542] border border-[#2b2b32] rounded-sm mt-2 mb-6&#34;&#xA;&gt;&#xA;  &lt;div&#xA;    class=&#34;font-serif text-3xl absolute top-0 left-0 py-2 pl-2 pr-1 font-bold text-[#ffffff]&#34;&#xA;  &gt;&#xA;    &lt;div class=&#34;w-[2.25rem] h-[2.25rem] bg-[#e64b3b] text-center relative&#34;&gt;&#xA;      &lt;div class=&#34;absolute -top-[2px] inset-x-0&#34;&gt;Q&lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;  &lt;/div&gt;&#xA;  &lt;div class=&#34;ml-12 mt-0.5 mb-2 text_block&#34;&gt;&lt;p&gt;プログラミング開発に使用する用語を英語にしたいと思っています。&lt;/p&gt;&#xA;&lt;p&gt;あるアプリケーションフレームワークを勉強しようと思い、その動作環境をインストールしました。&#xA;そして、その動作環境が正しく動作するか確認するために、アプリケーションフレームワークのプロジェクトを作成したいと思っています。&lt;/p&gt;&#xA;&lt;p&gt;そのプロジェクト名に英語にしたいのですが、「正しく動作するか確認するためのプロジェクト」であることがわかるプロジェクト名にしたいと思います。&#xA;どのような英語が良いでしょうか?&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;</description>
     </item>
     <item>
       <title>「その他」を意味するタグ名をつけたい</title>
       <link>https://kantas-spike.github.io/portfolio/dialogues/05-tag-name/</link>
       <pubDate>Thu, 29 Jun 2023 05:51:41 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/dialogues/05-tag-name/</guid>
-      <description>&lt;div class=&#34;quote text-[#ececf1] relative p-2 pr-4 bg-[#343542] border border-[#2b2b32] rounded-sm mt-2 mb-6&#34;&gt;
-    &lt;div class=&#34;font-serif text-3xl absolute top-0 left-0 py-2 pl-2 pr-1 font-bold text-[#ffffff]&#34;&gt;&lt;div class=&#34;w-[2.25rem] h-[2.25rem] bg-[#e64b3b] text-center relative&#34;&gt;&lt;div class=&#34;absolute -top-[2px] inset-x-0&#34;&gt;Q&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
-    &lt;div class=&#34;ml-12 mt-0.5 mb-2 whitespace-pre-wrap text_block&#34;&gt;ブログ記事に`その他`や`未分類`のような意味のタグを付けたいです。
-このようなタグに使える良い英単語を教えてくれないでしょうか?&lt;/div&gt;
-&lt;/div&gt;</description>
+      <description>&lt;div&#xA;  class=&#34;quote text-[#ececf1] relative p-2 pr-4 bg-[#343542] border border-[#2b2b32] rounded-sm mt-2 mb-6&#34;&#xA;&gt;&#xA;  &lt;div&#xA;    class=&#34;font-serif text-3xl absolute top-0 left-0 py-2 pl-2 pr-1 font-bold text-[#ffffff]&#34;&#xA;  &gt;&#xA;    &lt;div class=&#34;w-[2.25rem] h-[2.25rem] bg-[#e64b3b] text-center relative&#34;&gt;&#xA;      &lt;div class=&#34;absolute -top-[2px] inset-x-0&#34;&gt;Q&lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;  &lt;/div&gt;&#xA;  &lt;div class=&#34;ml-12 mt-0.5 mb-2 text_block&#34;&gt;ブログ記事に&lt;code&gt;その他&lt;/code&gt;や&lt;code&gt;未分類&lt;/code&gt;のような意味のタグを付けたいです。&#xA;このようなタグに使える良い英単語を教えてくれないでしょうか?&lt;/div&gt;&#xA;&lt;/div&gt;</description>
     </item>
     <item>
       <title>名コンビといえば?</title>
       <link>https://kantas-spike.github.io/portfolio/dialogues/04-buddy/</link>
       <pubDate>Fri, 12 May 2023 23:25:58 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/dialogues/04-buddy/</guid>
-      <description>&lt;div class=&#34;quote text-[#ececf1] relative p-2 pr-4 bg-[#343542] border border-[#2b2b32] rounded-sm mt-2 mb-6&#34;&gt;
-    &lt;div class=&#34;font-serif text-3xl absolute top-0 left-0 py-2 pl-2 pr-1 font-bold text-[#ffffff]&#34;&gt;&lt;div class=&#34;w-[2.25rem] h-[2.25rem] bg-[#e64b3b] text-center relative&#34;&gt;&lt;div class=&#34;absolute -top-[2px] inset-x-0&#34;&gt;Q&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
-    &lt;div class=&#34;ml-12 mt-0.5 mb-2 whitespace-pre-wrap text_block&#34;&gt;「名コンビ」の例えを知りたいです。
-例えば、「シャーロック・ホームズとDr.ワトソン」のように。
-
-フィクションやスポーツの世界で、それぞれ10個づつ、「名コンビ」をリストアップしてくれませんか?&lt;/div&gt;
-&lt;/div&gt;</description>
+      <description>&lt;div&#xA;  class=&#34;quote text-[#ececf1] relative p-2 pr-4 bg-[#343542] border border-[#2b2b32] rounded-sm mt-2 mb-6&#34;&#xA;&gt;&#xA;  &lt;div&#xA;    class=&#34;font-serif text-3xl absolute top-0 left-0 py-2 pl-2 pr-1 font-bold text-[#ffffff]&#34;&#xA;  &gt;&#xA;    &lt;div class=&#34;w-[2.25rem] h-[2.25rem] bg-[#e64b3b] text-center relative&#34;&gt;&#xA;      &lt;div class=&#34;absolute -top-[2px] inset-x-0&#34;&gt;Q&lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;  &lt;/div&gt;&#xA;  &lt;div class=&#34;ml-12 mt-0.5 mb-2 text_block&#34;&gt;&lt;p&gt;「名コンビ」の例えを知りたいです。&#xA;例えば、「シャーロック・ホームズとDr.ワトソン」のように。&lt;/p&gt;&#xA;&lt;p&gt;フィクションやスポーツの世界で、それぞれ10個づつ、「名コンビ」をリストアップしてくれませんか?&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;</description>
     </item>
     <item>
       <title>疾走感のある曲を検索したい</title>
       <link>https://kantas-spike.github.io/portfolio/dialogues/03-shissoukan/</link>
       <pubDate>Fri, 12 May 2023 15:50:07 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/dialogues/03-shissoukan/</guid>
-      <description>&lt;div class=&#34;quote text-[#ececf1] relative p-2 pr-4 bg-[#343542] border border-[#2b2b32] rounded-sm mt-2 mb-6&#34;&gt;
-    &lt;div class=&#34;font-serif text-3xl absolute top-0 left-0 py-2 pl-2 pr-1 font-bold text-[#ffffff]&#34;&gt;&lt;div class=&#34;w-[2.25rem] h-[2.25rem] bg-[#e64b3b] text-center relative&#34;&gt;&lt;div class=&#34;absolute -top-[2px] inset-x-0&#34;&gt;Q&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
-    &lt;div class=&#34;ml-12 mt-0.5 mb-2 whitespace-pre-wrap text_block&#34;&gt;疾走感のある曲を検索したいと思っています。日本語の「疾走感」って英語では何といいますか? また、英語で何と入力すれば「疾走感」のある曲を検索できるでしょうか?&lt;/div&gt;
-&lt;/div&gt;</description>
+      <description>&lt;div&#xA;  class=&#34;quote text-[#ececf1] relative p-2 pr-4 bg-[#343542] border border-[#2b2b32] rounded-sm mt-2 mb-6&#34;&#xA;&gt;&#xA;  &lt;div&#xA;    class=&#34;font-serif text-3xl absolute top-0 left-0 py-2 pl-2 pr-1 font-bold text-[#ffffff]&#34;&#xA;  &gt;&#xA;    &lt;div class=&#34;w-[2.25rem] h-[2.25rem] bg-[#e64b3b] text-center relative&#34;&gt;&#xA;      &lt;div class=&#34;absolute -top-[2px] inset-x-0&#34;&gt;Q&lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;  &lt;/div&gt;&#xA;  &lt;div class=&#34;ml-12 mt-0.5 mb-2 text_block&#34;&gt;疾走感のある曲を検索したいと思っています。日本語の「疾走感」って英語では何といいますか? また、英語で何と入力すれば「疾走感」のある曲を検索できるでしょうか?&lt;/div&gt;&#xA;&lt;/div&gt;</description>
     </item>
     <item>
       <title>ホームページ用のコピーライトの書式を教えて</title>
       <link>https://kantas-spike.github.io/portfolio/dialogues/02-tell-me-howto-write-copyright/</link>
       <pubDate>Fri, 17 Feb 2023 11:58:17 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/dialogues/02-tell-me-howto-write-copyright/</guid>
-      <description>&lt;div class=&#34;quote text-[#ececf1] relative p-2 pr-4 bg-[#343542] border border-[#2b2b32] rounded-sm mt-2 mb-6&#34;&gt;
-    &lt;div class=&#34;font-serif text-3xl absolute top-0 left-0 py-2 pl-2 pr-1 font-bold text-[#ffffff]&#34;&gt;&lt;div class=&#34;w-[2.25rem] h-[2.25rem] bg-[#e64b3b] text-center relative&#34;&gt;&lt;div class=&#34;absolute -top-[2px] inset-x-0&#34;&gt;Q&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
-    &lt;div class=&#34;ml-12 mt-0.5 mb-2 whitespace-pre-wrap text_block&#34;&gt;自分のホームページのフッタに、以下のようなコピーライトを記載しています。
-
-Copyright 2022 my homepage name
-
-一般的なホームページのコピーライトの書式を教えてください。
-また、2022年からホームページを開始したので、2022年と記載していますが、毎年年数を更新するべきなのでしょうか?&lt;/div&gt;
-&lt;/div&gt;</description>
+      <description>&lt;div&#xA;  class=&#34;quote text-[#ececf1] relative p-2 pr-4 bg-[#343542] border border-[#2b2b32] rounded-sm mt-2 mb-6&#34;&#xA;&gt;&#xA;  &lt;div&#xA;    class=&#34;font-serif text-3xl absolute top-0 left-0 py-2 pl-2 pr-1 font-bold text-[#ffffff]&#34;&#xA;  &gt;&#xA;    &lt;div class=&#34;w-[2.25rem] h-[2.25rem] bg-[#e64b3b] text-center relative&#34;&gt;&#xA;      &lt;div class=&#34;absolute -top-[2px] inset-x-0&#34;&gt;Q&lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;  &lt;/div&gt;&#xA;  &lt;div class=&#34;ml-12 mt-0.5 mb-2 text_block&#34;&gt;&lt;p&gt;自分のホームページのフッタに、以下のようなコピーライトを記載しています。&lt;/p&gt;&#xA;&lt;p&gt;Copyright 2022 my homepage name&lt;/p&gt;&#xA;&lt;p&gt;一般的なホームページのコピーライトの書式を教えてください。&#xA;また、2022年からホームページを開始したので、2022年と記載していますが、毎年年数を更新するべきなのでしょうか?&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;</description>
     </item>
     <item>
       <title>古い看板に使うようなフォントファミリーを教えて</title>
       <link>https://kantas-spike.github.io/portfolio/dialogues/01-tell-me-font-family/</link>
       <pubDate>Thu, 02 Feb 2023 15:33:58 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/dialogues/01-tell-me-font-family/</guid>
-      <description>&lt;div class=&#34;quote text-[#ececf1] relative p-2 pr-4 bg-[#343542] border border-[#2b2b32] rounded-sm mt-2 mb-6&#34;&gt;
-    &lt;div class=&#34;font-serif text-3xl absolute top-0 left-0 py-2 pl-2 pr-1 font-bold text-[#ffffff]&#34;&gt;&lt;div class=&#34;w-[2.25rem] h-[2.25rem] bg-[#e64b3b] text-center relative&#34;&gt;&lt;div class=&#34;absolute -top-[2px] inset-x-0&#34;&gt;Q&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
-    &lt;div class=&#34;ml-12 mt-0.5 mb-2 whitespace-pre-wrap text_block&#34;&gt;昔の看板のような画像を作成したい。50年ぐらいの看板に使われているようフォントファミリーを教えてください。
-もし、そのようなフォントファミリーの中で、open font licenseで公開されているフォントがあれば教えてください。&lt;/div&gt;
-&lt;/div&gt;</description>
+      <description>&lt;div&#xA;  class=&#34;quote text-[#ececf1] relative p-2 pr-4 bg-[#343542] border border-[#2b2b32] rounded-sm mt-2 mb-6&#34;&#xA;&gt;&#xA;  &lt;div&#xA;    class=&#34;font-serif text-3xl absolute top-0 left-0 py-2 pl-2 pr-1 font-bold text-[#ffffff]&#34;&#xA;  &gt;&#xA;    &lt;div class=&#34;w-[2.25rem] h-[2.25rem] bg-[#e64b3b] text-center relative&#34;&gt;&#xA;      &lt;div class=&#34;absolute -top-[2px] inset-x-0&#34;&gt;Q&lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;  &lt;/div&gt;&#xA;  &lt;div class=&#34;ml-12 mt-0.5 mb-2 text_block&#34;&gt;昔の看板のような画像を作成したい。50年ぐらいの看板に使われているようフォントファミリーを教えてください。&#xA;もし、そのようなフォントファミリーの中で、open font licenseで公開されているフォントがあれば教えてください。&lt;/div&gt;&#xA;&lt;/div&gt;</description>
     </item>
   </channel>
 </rss>

@@ -14,25 +14,21 @@
       <link>https://kantas-spike.github.io/portfolio/til/2023/11/90-using-type-alias-of-typescript/</link>
       <pubDate>Tue, 07 Nov 2023 10:58:43 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/til/2023/11/90-using-type-alias-of-typescript/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/kantas-spike/title_url_copier&#34;&gt;kantas-spike/title_url_copier&lt;/a&gt;をTypeScript化する際に、型エイリアスを定義した。&lt;/p&gt;
-&lt;p&gt;この型は2つのファイルで利用するが、その場合、型エイリアスはどこに定義するべきなのか?&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/kantas-spike/title_url_copier&#34;&gt;kantas-spike/title_url_copier&lt;/a&gt;をTypeScript化する際に、型エイリアスを定義した。&lt;/p&gt;&#xA;&lt;p&gt;この型は2つのファイルで利用するが、その場合、型エイリアスはどこに定義するべきなのか?&lt;/p&gt;</description>
     </item>
     <item>
       <title>tscコマンドの基本的な使い方を知りたい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/11/89-using-tsc/</link>
       <pubDate>Tue, 07 Nov 2023 10:53:40 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/til/2023/11/89-using-tsc/</guid>
-      <description>&lt;p&gt;&lt;code&gt;tsc&lt;/code&gt;は、主にTypeScriptで書かれたソースコードをJavaScriptにトランスパイルするためのコマンドです。&lt;/p&gt;
-&lt;p&gt;TypeScriptの学習にあたり、基本的な&lt;code&gt;tsc&lt;/code&gt;コマンドの使い方を知りたい。&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;code&gt;tsc&lt;/code&gt;は、主にTypeScriptで書かれたソースコードをJavaScriptにトランスパイルするためのコマンドです。&lt;/p&gt;&#xA;&lt;p&gt;TypeScriptの学習にあたり、基本的な&lt;code&gt;tsc&lt;/code&gt;コマンドの使い方を知りたい。&lt;/p&gt;</description>
     </item>
     <item>
       <title>vscodeでeslintの結果をリロードしたい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/11/88-reload-eslint-results-of-vscode/</link>
       <pubDate>Sun, 05 Nov 2023 11:29:23 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/til/2023/11/88-reload-eslint-results-of-vscode/</guid>
-      <description>&lt;p&gt;vscodeで&lt;code&gt;JavaScript&lt;/code&gt;や&lt;code&gt;TypeScript&lt;/code&gt;のコーディング中に、
-&lt;code&gt;問題&lt;/code&gt;パネルに表示される&lt;code&gt;eslint&lt;/code&gt;の結果が上手く更新されない場合がある。&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;問題&lt;/code&gt;パネルの&lt;code&gt;eslint&lt;/code&gt;の結果をリロードしたい。&lt;/p&gt;</description>
+      <description>&lt;p&gt;vscodeで&lt;code&gt;JavaScript&lt;/code&gt;や&lt;code&gt;TypeScript&lt;/code&gt;のコーディング中に、&#xA;&lt;code&gt;問題&lt;/code&gt;パネルに表示される&lt;code&gt;eslint&lt;/code&gt;の結果が上手く更新されない場合がある。&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;問題&lt;/code&gt;パネルの&lt;code&gt;eslint&lt;/code&gt;の結果をリロードしたい。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

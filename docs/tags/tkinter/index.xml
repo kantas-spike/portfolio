@@ -14,16 +14,14 @@
       <link>https://kantas-spike.github.io/portfolio/til/2022/08/21-layout-widgits-with-tkinter/</link>
       <pubDate>Sun, 07 Aug 2022 02:18:55 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/til/2022/08/21-layout-widgits-with-tkinter/</guid>
-      <description>&lt;p&gt;Tkinterで画面に部品を上手く配置したいが、
-&lt;strong&gt;Geometry Manager&lt;/strong&gt; には幾つか種類があるが、どれを使って画面を作成するべきなのか。&lt;/p&gt;</description>
+      <description>&lt;p&gt;Tkinterで画面に部品を上手く配置したいが、&#xA;&lt;strong&gt;Geometry Manager&lt;/strong&gt; には幾つか種類があるが、どれを使って画面を作成するべきなのか。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Tkinterで部品の背景色を変更したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2022/08/19-fill-bg-color-with-tkinter/</link>
       <pubDate>Sat, 06 Aug 2022 15:59:38 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/til/2022/08/19-fill-bg-color-with-tkinter/</guid>
-      <description>&lt;p&gt;Tkinterでウィンドウの背景色を変更した時に、部品の周りに異なる背景色が表示される。
-ウィンドウの背景色に合せるために、Tkinterで部品の背景色を変更したい。&lt;/p&gt;</description>
+      <description>&lt;p&gt;Tkinterでウィンドウの背景色を変更した時に、部品の周りに異なる背景色が表示される。&#xA;ウィンドウの背景色に合せるために、Tkinterで部品の背景色を変更したい。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Pythonで図形を回転させたい</title>

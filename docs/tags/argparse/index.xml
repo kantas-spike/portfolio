@@ -14,9 +14,7 @@
       <link>https://kantas-spike.github.io/portfolio/til/2023/01/38-parse-rest-args-with-argparse/</link>
       <pubDate>Tue, 17 Jan 2023 15:46:23 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/til/2023/01/38-parse-rest-args-with-argparse/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/spakin/SimpInkScr&#34;&gt;Simple Inkscape Scripting&lt;/a&gt;をコマンドラインで実行するときに、スクリプトに&lt;code&gt;data.txt&lt;/code&gt;のような追加の引数を渡したい。&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;% simple_inkscape_scripting.py --py-source my_script.py input.svg data.txt
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/spakin/SimpInkScr&#34;&gt;Simple Inkscape Scripting&lt;/a&gt;をコマンドラインで実行するときに、スクリプトに&lt;code&gt;data.txt&lt;/code&gt;のような追加の引数を渡したい。&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;% simple_inkscape_scripting.py --py-source my_script.py input.svg data.txt&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     <item>
       <title>Pythonでコマンドラインオプション取得したい</title>

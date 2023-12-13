@@ -7835,7 +7835,7 @@
         };
         lunr2.version = "2.3.9";
         lunr2.utils = {};
-        lunr2.utils.warn = function(global2) {
+        lunr2.utils.warn = /* @__PURE__ */ function(global2) {
           return function(message) {
             if (global2.console && console.warn) {
               console.warn(message);
@@ -10105,7 +10105,7 @@
             }
             return tokens;
           };
-          lunr2.ja.stemmer = function() {
+          lunr2.ja.stemmer = /* @__PURE__ */ function() {
             return function(word) {
               return word;
             };
@@ -10145,7 +10145,7 @@
   // node_modules/axios/lib/utils.js
   var { toString } = Object.prototype;
   var { getPrototypeOf } = Object;
-  var kindOf = ((cache) => (thing) => {
+  var kindOf = /* @__PURE__ */ ((cache) => (thing) => {
     const str = toString.call(thing);
     return cache[str] || (cache[str] = str.slice(8, -1).toLowerCase());
   })(/* @__PURE__ */ Object.create(null));
@@ -10324,7 +10324,7 @@
     }
     return arr;
   };
-  var isTypedArray = ((TypedArray) => {
+  var isTypedArray = /* @__PURE__ */ ((TypedArray) => {
     return (thing) => {
       return TypedArray && thing instanceof TypedArray;
     };
@@ -11334,7 +11334,7 @@
   // node_modules/axios/lib/helpers/cookies.js
   var cookies_default = browser_default.isStandardBrowserEnv ? (
     // Standard browser envs support document.cookie
-    function standardBrowserEnv() {
+    /* @__PURE__ */ function standardBrowserEnv() {
       return {
         write: function write(name, value, expires, path, domain, secure) {
           const cookie = [];
@@ -11364,7 +11364,7 @@
     }()
   ) : (
     // Non standard browser env (web workers, react-native) lack needed support.
-    function nonStandardBrowserEnv() {
+    /* @__PURE__ */ function nonStandardBrowserEnv() {
       return {
         write: function write() {
         },
@@ -11429,7 +11429,7 @@
     }()
   ) : (
     // Non standard browser envs (web workers, react-native) lack needed support.
-    function nonStandardBrowserEnv2() {
+    /* @__PURE__ */ function nonStandardBrowserEnv2() {
       return function isURLSameOrigin() {
         return true;
       };

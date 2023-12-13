@@ -21,8 +21,7 @@
       <link>https://kantas-spike.github.io/portfolio/til/2023/12/95-get-timestamp-on-playhead-of-vse/</link>
       <pubDate>Thu, 07 Dec 2023 21:09:45 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/til/2023/12/95-get-timestamp-on-playhead-of-vse/</guid>
-      <description>&lt;p&gt;Blenderで動画編集時に&lt;a href=&#34;https://ja.wikipedia.org/wiki/SubRip&#34;&gt;SubRip&lt;/a&gt;形式の字幕ファイルも編集したいので、
-&lt;strong&gt;Video Sequence Editor&lt;/strong&gt; のプレイヘッドのタイムスタンプを取得したい。&lt;/p&gt;</description>
+      <description>&lt;p&gt;Blenderで動画編集時に&lt;a href=&#34;https://ja.wikipedia.org/wiki/SubRip&#34;&gt;SubRip&lt;/a&gt;形式の字幕ファイルも編集したいので、&#xA;&lt;strong&gt;Video Sequence Editor&lt;/strong&gt; のプレイヘッドのタイムスタンプを取得したい。&lt;/p&gt;</description>
     </item>
     <item>
       <title>GitでGithubの認証情報を何度も入力したくない</title>
@@ -50,60 +49,49 @@
       <link>https://kantas-spike.github.io/portfolio/til/2023/11/91-what-is-short-video/</link>
       <pubDate>Fri, 10 Nov 2023 00:00:24 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/til/2023/11/91-what-is-short-video/</guid>
-      <description>&lt;p&gt;YouTube Shortsにショート動画を投稿したい。
-ショート動画とはどういうものなのか?&lt;/p&gt;</description>
+      <description>&lt;p&gt;YouTube Shortsにショート動画を投稿したい。&#xA;ショート動画とはどういうものなのか?&lt;/p&gt;</description>
     </item>
     <item>
       <title>TypeScriptでtypeエイリアスはどこに定義するべき</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/11/90-using-type-alias-of-typescript/</link>
       <pubDate>Tue, 07 Nov 2023 10:58:43 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/til/2023/11/90-using-type-alias-of-typescript/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/kantas-spike/title_url_copier&#34;&gt;kantas-spike/title_url_copier&lt;/a&gt;をTypeScript化する際に、型エイリアスを定義した。&lt;/p&gt;
-&lt;p&gt;この型は2つのファイルで利用するが、その場合、型エイリアスはどこに定義するべきなのか?&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/kantas-spike/title_url_copier&#34;&gt;kantas-spike/title_url_copier&lt;/a&gt;をTypeScript化する際に、型エイリアスを定義した。&lt;/p&gt;&#xA;&lt;p&gt;この型は2つのファイルで利用するが、その場合、型エイリアスはどこに定義するべきなのか?&lt;/p&gt;</description>
     </item>
     <item>
       <title>tscコマンドの基本的な使い方を知りたい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/11/89-using-tsc/</link>
       <pubDate>Tue, 07 Nov 2023 10:53:40 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/til/2023/11/89-using-tsc/</guid>
-      <description>&lt;p&gt;&lt;code&gt;tsc&lt;/code&gt;は、主にTypeScriptで書かれたソースコードをJavaScriptにトランスパイルするためのコマンドです。&lt;/p&gt;
-&lt;p&gt;TypeScriptの学習にあたり、基本的な&lt;code&gt;tsc&lt;/code&gt;コマンドの使い方を知りたい。&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;code&gt;tsc&lt;/code&gt;は、主にTypeScriptで書かれたソースコードをJavaScriptにトランスパイルするためのコマンドです。&lt;/p&gt;&#xA;&lt;p&gt;TypeScriptの学習にあたり、基本的な&lt;code&gt;tsc&lt;/code&gt;コマンドの使い方を知りたい。&lt;/p&gt;</description>
     </item>
     <item>
       <title>vscodeでeslintの結果をリロードしたい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/11/88-reload-eslint-results-of-vscode/</link>
       <pubDate>Sun, 05 Nov 2023 11:29:23 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/til/2023/11/88-reload-eslint-results-of-vscode/</guid>
-      <description>&lt;p&gt;vscodeで&lt;code&gt;JavaScript&lt;/code&gt;や&lt;code&gt;TypeScript&lt;/code&gt;のコーディング中に、
-&lt;code&gt;問題&lt;/code&gt;パネルに表示される&lt;code&gt;eslint&lt;/code&gt;の結果が上手く更新されない場合がある。&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;問題&lt;/code&gt;パネルの&lt;code&gt;eslint&lt;/code&gt;の結果をリロードしたい。&lt;/p&gt;</description>
+      <description>&lt;p&gt;vscodeで&lt;code&gt;JavaScript&lt;/code&gt;や&lt;code&gt;TypeScript&lt;/code&gt;のコーディング中に、&#xA;&lt;code&gt;問題&lt;/code&gt;パネルに表示される&lt;code&gt;eslint&lt;/code&gt;の結果が上手く更新されない場合がある。&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;問題&lt;/code&gt;パネルの&lt;code&gt;eslint&lt;/code&gt;の結果をリロードしたい。&lt;/p&gt;</description>
     </item>
     <item>
       <title>MacOSで拡張属性を削除したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/10/87-remove-extended-attrs/</link>
       <pubDate>Tue, 31 Oct 2023 04:56:13 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/til/2023/10/87-remove-extended-attrs/</guid>
-      <description>&lt;p&gt;ダウンロードしたファイルなどを&lt;code&gt;ls -l&lt;/code&gt;すると&lt;code&gt;@&lt;/code&gt;が付く。&lt;/p&gt;
-&lt;p&gt;これは、&lt;code&gt;Extended Attributes(拡張属性)&lt;/code&gt;と呼ぶそうだ。
-この&lt;code&gt;拡張属性&lt;/code&gt;を削除したい。&lt;/p&gt;</description>
+      <description>&lt;p&gt;ダウンロードしたファイルなどを&lt;code&gt;ls -l&lt;/code&gt;すると&lt;code&gt;@&lt;/code&gt;が付く。&lt;/p&gt;&#xA;&lt;p&gt;これは、&lt;code&gt;Extended Attributes(拡張属性)&lt;/code&gt;と呼ぶそうだ。&#xA;この&lt;code&gt;拡張属性&lt;/code&gt;を削除したい。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Vscodeでcommit(修正)をキャンセルしたい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/10/86-canceling-git-commit---amend/</link>
       <pubDate>Tue, 31 Oct 2023 04:42:57 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/til/2023/10/86-canceling-git-commit---amend/</guid>
-      <description>&lt;p&gt;vscodeの&lt;code&gt;コミット(修正)&lt;/code&gt;をキャンセルしたい。&lt;/p&gt;
-&lt;p&gt;vscodeのソース管理で、&lt;code&gt;コミット(修正)&lt;/code&gt;をクリックし、エディターにコミットメッセージが表示されるが、
-この状態でキャンセルしたい場合どうすればいい?&lt;/p&gt;</description>
+      <description>&lt;p&gt;vscodeの&lt;code&gt;コミット(修正)&lt;/code&gt;をキャンセルしたい。&lt;/p&gt;&#xA;&lt;p&gt;vscodeのソース管理で、&lt;code&gt;コミット(修正)&lt;/code&gt;をクリックし、エディターにコミットメッセージが表示されるが、&#xA;この状態でキャンセルしたい場合どうすればいい?&lt;/p&gt;</description>
     </item>
     <item>
       <title>Hugoのテーマモジュールをローカルのモジュールに置き換えたい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/10/85-replace-theme-module-with-local-module/</link>
       <pubDate>Fri, 27 Oct 2023 10:20:16 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/til/2023/10/85-replace-theme-module-with-local-module/</guid>
-      <description>&lt;p&gt;GitHubで管理している自作のHugoテーマをモジュール化した。&lt;/p&gt;
-&lt;p&gt;しかし、Hugoテーマを修正するたびに、毎回プッシュしモジュールをアップデートする必要があり面倒である。&lt;/p&gt;
-&lt;p&gt;もっと、手軽にHugoテーマを改修できるようにしたい。&lt;/p&gt;</description>
+      <description>&lt;p&gt;GitHubで管理している自作のHugoテーマをモジュール化した。&lt;/p&gt;&#xA;&lt;p&gt;しかし、Hugoテーマを修正するたびに、毎回プッシュしモジュールをアップデートする必要があり面倒である。&lt;/p&gt;&#xA;&lt;p&gt;もっと、手軽にHugoテーマを改修できるようにしたい。&lt;/p&gt;</description>
     </item>
     <item>
       <title>gitのsubmoduleを削除したい</title>
@@ -124,28 +112,21 @@
       <link>https://kantas-spike.github.io/portfolio/til/2023/09/82-check-nodejs-version/</link>
       <pubDate>Sat, 30 Sep 2023 01:42:04 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/til/2023/09/82-check-nodejs-version/</guid>
-      <description>&lt;p&gt;vscode拡張機能で利用できるNode.jsのAPIを確認するために、
-Electron上で動作しているNode.jsのバージョンを知りたい。&lt;/p&gt;</description>
+      <description>&lt;p&gt;vscode拡張機能で利用できるNode.jsのAPIを確認するために、&#xA;Electron上で動作しているNode.jsのバージョンを知りたい。&lt;/p&gt;</description>
     </item>
     <item>
       <title>GitHubのコメントで複数のイシューをfixしたい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/09/81-fix-multi-issues-in-github/</link>
       <pubDate>Fri, 29 Sep 2023 18:31:06 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/til/2023/09/81-fix-multi-issues-in-github/</guid>
-      <description>&lt;p&gt;GitHubのプルリクエストのコメントに&lt;code&gt;fix #xx&lt;/code&gt;のようにイシュー番号を指定すると該当イシューをクローズできる。&lt;/p&gt;
-&lt;p&gt;同様の方法で複数のイシューをまとめてクローズしたい。&lt;/p&gt;</description>
+      <description>&lt;p&gt;GitHubのプルリクエストのコメントに&lt;code&gt;fix #xx&lt;/code&gt;のようにイシュー番号を指定すると該当イシューをクローズできる。&lt;/p&gt;&#xA;&lt;p&gt;同様の方法で複数のイシューをまとめてクローズしたい。&lt;/p&gt;</description>
     </item>
     <item>
       <title>JSONの文字列値にダブルクォーテーションを含めたい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/09/80-use-dobulequote-in-json-string/</link>
       <pubDate>Fri, 29 Sep 2023 16:25:24 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/til/2023/09/80-use-dobulequote-in-json-string/</guid>
-      <description>&lt;p&gt;JSONの文字列値にダブルクォーテーションを含めるため、以下のように記載したらエラーとなった。
-正しい表記となるよう修正したい。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nt&#34;&gt;&amp;#34;string&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;文字列&amp;#34;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;です&amp;#39;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+      <description>&lt;p&gt;JSONの文字列値にダブルクォーテーションを含めるため、以下のように記載したらエラーとなった。&#xA;正しい表記となるよう修正したい。&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nt&#34;&gt;&amp;#34;string&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;文字列&amp;#34;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;です&amp;#39;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     <item>
       <title>Hugoのpartialテンプレートに複数の引数を渡したい</title>
@@ -159,8 +140,7 @@ Electron上で動作しているNode.jsのバージョンを知りたい。&lt;/
       <link>https://kantas-spike.github.io/portfolio/til/2023/09/78-using_editorconfig_in_vscode/</link>
       <pubDate>Thu, 07 Sep 2023 01:05:07 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/til/2023/09/78-using_editorconfig_in_vscode/</guid>
-      <description>&lt;p&gt;タブサイズや行内文字数などのエディタ基本設定をリポジトリに登録したい。&lt;/p&gt;
-&lt;p&gt;ただし、リポジトリの利用者が使用するエディタは不明なため、なるべく汎用的な方法でエディタ基本設定を管理したい。&lt;/p&gt;</description>
+      <description>&lt;p&gt;タブサイズや行内文字数などのエディタ基本設定をリポジトリに登録したい。&lt;/p&gt;&#xA;&lt;p&gt;ただし、リポジトリの利用者が使用するエディタは不明なため、なるべく汎用的な方法でエディタ基本設定を管理したい。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Hugoで四則演算や論理演算や比較演算を使いたい</title>
@@ -174,9 +154,7 @@ Electron上で動作しているNode.jsのバージョンを知りたい。&lt;/
       <link>https://kantas-spike.github.io/portfolio/til/2023/07/76-convert-css-color-notations-with-js/</link>
       <pubDate>Fri, 28 Jul 2023 16:23:27 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/til/2023/07/76-convert-css-color-notations-with-js/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://storybook.js.org/&#34;&gt;Storybook: Frontend workshop for UI development&lt;/a&gt;の&lt;a href=&#34;https://storybook.js.org/docs/react/api/doc-block-colorpalette&#34;&gt;ColorPalette&lt;/a&gt;を使って、
-色調パレットを作成している。&lt;/p&gt;
-&lt;p&gt;色調作成時のトーン操作は&lt;code&gt;hsl()&lt;/code&gt;形式を使い、色の表記時には&lt;code&gt;16進数&lt;/code&gt;形式を使いたい。&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://storybook.js.org/&#34;&gt;Storybook: Frontend workshop for UI development&lt;/a&gt;の&lt;a href=&#34;https://storybook.js.org/docs/react/api/doc-block-colorpalette&#34;&gt;ColorPalette&lt;/a&gt;を使って、&#xA;色調パレットを作成している。&lt;/p&gt;&#xA;&lt;p&gt;色調作成時のトーン操作は&lt;code&gt;hsl()&lt;/code&gt;形式を使い、色の表記時には&lt;code&gt;16進数&lt;/code&gt;形式を使いたい。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Hugoでショートコードやコードブロックの子要素にMarkdownを渡したい</title>
@@ -197,8 +175,7 @@ Electron上で動作しているNode.jsのバージョンを知りたい。&lt;/
       <link>https://kantas-spike.github.io/portfolio/til/2023/07/73-cannot-load-exported-nextjs-app-in-github-pages/</link>
       <pubDate>Mon, 10 Jul 2023 01:17:23 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/til/2023/07/73-cannot-load-exported-nextjs-app-in-github-pages/</guid>
-      <description>&lt;p&gt;&lt;code&gt;Static Export&lt;/code&gt;したNext.jsアプリをGitHub Pagesで表示できない。&lt;/p&gt;
-&lt;p&gt;どうやら&lt;code&gt;_next/&lt;/code&gt;配下のファイルを表示できないようだ。&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;code&gt;Static Export&lt;/code&gt;したNext.jsアプリをGitHub Pagesで表示できない。&lt;/p&gt;&#xA;&lt;p&gt;どうやら&lt;code&gt;_next/&lt;/code&gt;配下のファイルを表示できないようだ。&lt;/p&gt;</description>
     </item>
     <item>
       <title>HugoでNext.jsアプリを公開したい</title>
@@ -233,16 +210,14 @@ Electron上で動作しているNode.jsのバージョンを知りたい。&lt;/
       <link>https://kantas-spike.github.io/portfolio/til/2023/06/68-bend-the-mesh-in-blender/</link>
       <pubDate>Thu, 22 Jun 2023 10:39:45 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/til/2023/06/68-bend-the-mesh-in-blender/</guid>
-      <description>&lt;p&gt;Blendrで&lt;em&gt;平面のメッシュ&lt;/em&gt;を曲げたい。
-&lt;code&gt;|&lt;/code&gt;を&lt;code&gt;)&lt;/code&gt;のように曲げたい。&lt;/p&gt;</description>
+      <description>&lt;p&gt;Blendrで&lt;em&gt;平面のメッシュ&lt;/em&gt;を曲げたい。&#xA;&lt;code&gt;|&lt;/code&gt;を&lt;code&gt;)&lt;/code&gt;のように曲げたい。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Blenderで3Dカーソルを移動させたい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/06/67-moving-the-3d-cursor-lin-blender.md/</link>
       <pubDate>Thu, 22 Jun 2023 10:08:30 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/til/2023/06/67-moving-the-3d-cursor-lin-blender.md/</guid>
-      <description>&lt;p&gt;&lt;code&gt;Shift-RMB(マウスの右ボタン)&lt;/code&gt;で、Blenderで3Dカーソルの位置を移動できるが、
-簡単に3Dカーソルをグローバル座標系の原点やオブジェクトの中心に移動させる方法を知りたい。&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;code&gt;Shift-RMB(マウスの右ボタン)&lt;/code&gt;で、Blenderで3Dカーソルの位置を移動できるが、&#xA;簡単に3Dカーソルをグローバル座標系の原点やオブジェクトの中心に移動させる方法を知りたい。&lt;/p&gt;</description>
     </item>
     <item>
       <title>HugoでWebフォントを利用したい</title>
@@ -298,21 +273,14 @@ Electron上で動作しているNode.jsのバージョンを知りたい。&lt;/
       <link>https://kantas-spike.github.io/portfolio/til/2023/06/59-use-site-assets-when-using-a-theme-with-hugo/</link>
       <pubDate>Thu, 01 Jun 2023 23:09:00 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/til/2023/06/59-use-site-assets-when-using-a-theme-with-hugo/</guid>
-      <description>&lt;p&gt;テーマを利用すると、サイトの&lt;code&gt;assets&lt;/code&gt;ディレクトリにアクセスができなくなるため、
-テーマの&lt;code&gt;assets&lt;/code&gt;ディレクトリにJavaScriptを配置しなければならない。&lt;/p&gt;
-&lt;p&gt;記事専用のJavaScriptは、テーマのアセットではなくサイトのアセットに配置したい。&lt;/p&gt;</description>
+      <description>&lt;p&gt;テーマを利用すると、サイトの&lt;code&gt;assets&lt;/code&gt;ディレクトリにアクセスができなくなるため、&#xA;テーマの&lt;code&gt;assets&lt;/code&gt;ディレクトリにJavaScriptを配置しなければならない。&lt;/p&gt;&#xA;&lt;p&gt;記事専用のJavaScriptは、テーマのアセットではなくサイトのアセットに配置したい。&lt;/p&gt;</description>
     </item>
     <item>
       <title>メインブランチの保護方針を決める</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/05/58-decide-on-a-protection-policy-for-the-main-branch/</link>
       <pubDate>Wed, 31 May 2023 22:17:46 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/til/2023/05/58-decide-on-a-protection-policy-for-the-main-branch/</guid>
-      <description>&lt;p&gt;GitHubのプロジェクトに以下のメッセージが表示されていることに気づいた。
-何となくGitHubを使用してきたが、この機会にメインブランチの保護方針を決めたい。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Your main branch isn&amp;#39;t protected
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;方針は以下としたい。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;GitHubでメインブランチへの直接のプッシュを禁止し、プルリクエストが作成されたもののみマージしたい。
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+      <description>&lt;p&gt;GitHubのプロジェクトに以下のメッセージが表示されていることに気づいた。&#xA;何となくGitHubを使用してきたが、この機会にメインブランチの保護方針を決めたい。&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Your main branch isn&amp;#39;t protected&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;方針は以下としたい。&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;GitHubでメインブランチへの直接のプッシュを禁止し、プルリクエストが作成されたもののみマージしたい。&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     <item>
       <title>Reactを使って検索画面を作る</title>
@@ -333,8 +301,7 @@ Electron上で動作しているNode.jsのバージョンを知りたい。&lt;/
       <link>https://kantas-spike.github.io/portfolio/til/2023/05/55-sort-articles-by-lastmod-on-hugo/</link>
       <pubDate>Mon, 29 May 2023 13:17:25 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/til/2023/05/55-sort-articles-by-lastmod-on-hugo/</guid>
-      <description>&lt;p&gt;Hugoで記事を更新日時でソートしたい。&lt;/p&gt;
-&lt;p&gt;ただし、記事には更新日時(&lt;code&gt;lastmod&lt;/code&gt;)を持たないもの(作成日時＝更新日時)もある。&lt;/p&gt;</description>
+      <description>&lt;p&gt;Hugoで記事を更新日時でソートしたい。&lt;/p&gt;&#xA;&lt;p&gt;ただし、記事には更新日時(&lt;code&gt;lastmod&lt;/code&gt;)を持たないもの(作成日時＝更新日時)もある。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Reactを導入したい</title>
@@ -425,11 +392,7 @@ Electron上で動作しているNode.jsのバージョンを知りたい。&lt;/
       <link>https://kantas-spike.github.io/portfolio/til/2023/01/40-naming-convention-of-blender-addon/</link>
       <pubDate>Tue, 24 Jan 2023 22:56:25 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/til/2023/01/40-naming-convention-of-blender-addon/</guid>
-      <description>&lt;p&gt;Blenderを起動すると、アドオンの登録時に、以下の警告が表示される。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;% /Applications/Blender.app/Contents/MacOS/Blender
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;register_class&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;...&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;:
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Warning: &lt;span class=&#34;s1&#34;&gt;&amp;#39;SRTLOADER_SrtList&amp;#39;&lt;/span&gt; does not contain &lt;span class=&#34;s1&#34;&gt;&amp;#39;_PT_&amp;#39;&lt;/span&gt; with prefix and suffix
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+      <description>&lt;p&gt;Blenderを起動すると、アドオンの登録時に、以下の警告が表示される。&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;% /Applications/Blender.app/Contents/MacOS/Blender&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;register_class&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;...&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;:&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Warning: &lt;span class=&#34;s1&#34;&gt;&amp;#39;SRTLOADER_SrtList&amp;#39;&lt;/span&gt; does not contain &lt;span class=&#34;s1&#34;&gt;&amp;#39;_PT_&amp;#39;&lt;/span&gt; with prefix and suffix&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     <item>
       <title>PythonでユニークなIDを生成する</title>
@@ -443,9 +406,7 @@ Electron上で動作しているNode.jsのバージョンを知りたい。&lt;/
       <link>https://kantas-spike.github.io/portfolio/til/2023/01/38-parse-rest-args-with-argparse/</link>
       <pubDate>Tue, 17 Jan 2023 15:46:23 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/til/2023/01/38-parse-rest-args-with-argparse/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/spakin/SimpInkScr&#34;&gt;Simple Inkscape Scripting&lt;/a&gt;をコマンドラインで実行するときに、スクリプトに&lt;code&gt;data.txt&lt;/code&gt;のような追加の引数を渡したい。&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;% simple_inkscape_scripting.py --py-source my_script.py input.svg data.txt
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/spakin/SimpInkScr&#34;&gt;Simple Inkscape Scripting&lt;/a&gt;をコマンドラインで実行するときに、スクリプトに&lt;code&gt;data.txt&lt;/code&gt;のような追加の引数を渡したい。&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;% simple_inkscape_scripting.py --py-source my_script.py input.svg data.txt&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     <item>
       <title>コマンドラインからSimple Inkscape Scriptingを使いたい</title>
@@ -480,8 +441,7 @@ Electron上で動作しているNode.jsのバージョンを知りたい。&lt;/
       <link>https://kantas-spike.github.io/portfolio/til/2022/12/33-tool-dir/</link>
       <pubDate>Sun, 04 Dec 2022 23:00:39 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/til/2022/12/33-tool-dir/</guid>
-      <description>&lt;p&gt;自作のShellなどのツールを作ったときに、どのディレクトリにインストールするべきなのか?&lt;/p&gt;
-&lt;p&gt;ツールのソースは、作業ディレクトリで開発しGitHubで管理するが、ツール自体はどうインストールするべき?&lt;/p&gt;</description>
+      <description>&lt;p&gt;自作のShellなどのツールを作ったときに、どのディレクトリにインストールするべきなのか?&lt;/p&gt;&#xA;&lt;p&gt;ツールのソースは、作業ディレクトリで開発しGitHubで管理するが、ツール自体はどうインストールするべき?&lt;/p&gt;</description>
     </item>
     <item>
       <title>PythonスクリプトをBlenderで実行したい</title>
@@ -502,8 +462,7 @@ Electron上で動作しているNode.jsのバージョンを知りたい。&lt;/
       <link>https://kantas-spike.github.io/portfolio/til/2022/09/29-add-shortcode-to-set-the-width-of-youtube-video/</link>
       <pubDate>Thu, 22 Sep 2022 20:19:54 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/til/2022/09/29-add-shortcode-to-set-the-width-of-youtube-video/</guid>
-      <description>&lt;p&gt;Hugo標準のYoutube用ショートコードを使用すると、横幅一杯にYoutube動画が表示される。
-幅をスタイル指定可能なYoutube動画用のShortcodeを追加したい。&lt;/p&gt;</description>
+      <description>&lt;p&gt;Hugo標準のYoutube用ショートコードを使用すると、横幅一杯にYoutube動画が表示される。&#xA;幅をスタイル指定可能なYoutube動画用のShortcodeを追加したい。&lt;/p&gt;</description>
     </item>
     <item>
       <title>HugoでcssのURLにハッシュを付与したい</title>
@@ -538,8 +497,7 @@ Electron上で動作しているNode.jsのバージョンを知りたい。&lt;/
       <link>https://kantas-spike.github.io/portfolio/til/2022/08/21-layout-widgits-with-tkinter/</link>
       <pubDate>Sun, 07 Aug 2022 02:18:55 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/til/2022/08/21-layout-widgits-with-tkinter/</guid>
-      <description>&lt;p&gt;Tkinterで画面に部品を上手く配置したいが、
-&lt;strong&gt;Geometry Manager&lt;/strong&gt; には幾つか種類があるが、どれを使って画面を作成するべきなのか。&lt;/p&gt;</description>
+      <description>&lt;p&gt;Tkinterで画面に部品を上手く配置したいが、&#xA;&lt;strong&gt;Geometry Manager&lt;/strong&gt; には幾つか種類があるが、どれを使って画面を作成するべきなのか。&lt;/p&gt;</description>
     </item>
     <item>
       <title>PDFの特定ページにリンクを貼りたい</title>
@@ -553,8 +511,7 @@ Electron上で動作しているNode.jsのバージョンを知りたい。&lt;/
       <link>https://kantas-spike.github.io/portfolio/til/2022/08/19-fill-bg-color-with-tkinter/</link>
       <pubDate>Sat, 06 Aug 2022 15:59:38 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/til/2022/08/19-fill-bg-color-with-tkinter/</guid>
-      <description>&lt;p&gt;Tkinterでウィンドウの背景色を変更した時に、部品の周りに異なる背景色が表示される。
-ウィンドウの背景色に合せるために、Tkinterで部品の背景色を変更したい。&lt;/p&gt;</description>
+      <description>&lt;p&gt;Tkinterでウィンドウの背景色を変更した時に、部品の周りに異なる背景色が表示される。&#xA;ウィンドウの背景色に合せるために、Tkinterで部品の背景色を変更したい。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Pythonで図形を回転させたい</title>
@@ -568,9 +525,7 @@ Electron上で動作しているNode.jsのバージョンを知りたい。&lt;/
       <link>https://kantas-spike.github.io/portfolio/til/2022/08/17-color-contrast/</link>
       <pubDate>Mon, 01 Aug 2022 23:45:37 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/til/2022/08/17-color-contrast/</guid>
-      <description>&lt;p&gt;背景色にあったテキスト色を選べるようにしたい。
-赤に白い字は読めるが、薄黄に白い字は読めない。&lt;/p&gt;
-&lt;p&gt;背景色とテキスト色の差から文字色を変更できるようにしたい。&lt;/p&gt;</description>
+      <description>&lt;p&gt;背景色にあったテキスト色を選べるようにしたい。&#xA;赤に白い字は読めるが、薄黄に白い字は読めない。&lt;/p&gt;&#xA;&lt;p&gt;背景色とテキスト色の差から文字色を変更できるようにしたい。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Pythonでコマンドラインオプション取得したい</title>
@@ -619,8 +574,7 @@ Electron上で動作しているNode.jsのバージョンを知りたい。&lt;/
       <link>https://kantas-spike.github.io/portfolio/til/2022/07/10-hugo-with-rawhtml/</link>
       <pubDate>Sat, 23 Jul 2022 12:13:01 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/til/2022/07/10-hugo-with-rawhtml/</guid>
-      <description>&lt;p&gt;HugoのMarkdown内にHTMLを直接記述すると、&lt;code&gt;&amp;lt;!-- raw HTML omitted --&amp;gt;&lt;/code&gt;に変換され無視される。
-直接HTMLを書く手段が欲しい。&lt;/p&gt;</description>
+      <description>&lt;p&gt;HugoのMarkdown内にHTMLを直接記述すると、&lt;code&gt;&amp;lt;!-- raw HTML omitted --&amp;gt;&lt;/code&gt;に変換され無視される。&#xA;直接HTMLを書く手段が欲しい。&lt;/p&gt;</description>
     </item>
     <item>
       <title>hugoでyoutubeのplaylistを埋め込みたい</title>
@@ -634,9 +588,7 @@ Electron上で動作しているNode.jsのバージョンを知りたい。&lt;/
       <link>https://kantas-spike.github.io/portfolio/til/2022/07/08-git-submodule-update/</link>
       <pubDate>Fri, 22 Jul 2022 17:22:37 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/til/2022/07/08-git-submodule-update/</guid>
-      <description>gitでsubmoduleの上流での更新を取り込みたい。
-解決策 以下を実行する。
-git submodule update --remote 参考 上流の変更の取り込み </description>
+      <description>gitでsubmoduleの上流での更新を取り込みたい。&#xA;解決策 以下を実行する。&#xA;git submodule update --remote 参考 上流の変更の取り込み </description>
     </item>
     <item>
       <title>Markdown内でコードブロックを引用したい</title>
@@ -650,8 +602,7 @@ git submodule update --remote 参考 上流の変更の取り込み </descriptio
       <link>https://kantas-spike.github.io/portfolio/til/2022/07/06-hugo-with-syntax-highlighter-css/</link>
       <pubDate>Fri, 22 Jul 2022 14:35:35 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/til/2022/07/06-hugo-with-syntax-highlighter-css/</guid>
-      <description>&lt;p&gt;デフォルトだと&lt;code&gt;hugo&lt;/code&gt;の&lt;code&gt;Markdown&lt;/code&gt;のコードブロックには、シンタックスハイライト用の&lt;code&gt;style&lt;/code&gt;が直接埋め込まれる。&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;style&lt;/code&gt;ではなく&lt;code&gt;class&lt;/code&gt;名の埋め込みに変更し、&lt;code&gt;css&lt;/code&gt;によりハイライトの表示を変更可能にしたい。&lt;/p&gt;</description>
+      <description>&lt;p&gt;デフォルトだと&lt;code&gt;hugo&lt;/code&gt;の&lt;code&gt;Markdown&lt;/code&gt;のコードブロックには、シンタックスハイライト用の&lt;code&gt;style&lt;/code&gt;が直接埋め込まれる。&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;style&lt;/code&gt;ではなく&lt;code&gt;class&lt;/code&gt;名の埋め込みに変更し、&lt;code&gt;css&lt;/code&gt;によりハイライトの表示を変更可能にしたい。&lt;/p&gt;</description>
     </item>
     <item>
       <title>hugoにコンテンツ追加時にvscodeですぐに編集したい</title>
@@ -679,16 +630,14 @@ git submodule update --remote 参考 上流の変更の取り込み </descriptio
       <link>https://kantas-spike.github.io/portfolio/til/2022/07/02-hugo-options/</link>
       <pubDate>Fri, 15 Jul 2022 09:31:02 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/til/2022/07/02-hugo-options/</guid>
-      <description>&lt;p&gt;削除済みのファイルが出力ディレクトリに残るのを防ぐため、
-&lt;code&gt;hugo&lt;/code&gt;で、最初に出力ディレクトリを削除してから実行したい。&lt;/p&gt;</description>
+      <description>&lt;p&gt;削除済みのファイルが出力ディレクトリに残るのを防ぐため、&#xA;&lt;code&gt;hugo&lt;/code&gt;で、最初に出力ディレクトリを削除してから実行したい。&lt;/p&gt;</description>
     </item>
     <item>
       <title>hugo serverをキャッシュ無しで表示させる</title>
       <link>https://kantas-spike.github.io/portfolio/til/2022/07/01-hugo-server-options/</link>
       <pubDate>Fri, 15 Jul 2022 09:16:56 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/til/2022/07/01-hugo-server-options/</guid>
-      <description>&lt;p&gt;&lt;code&gt;hugo server&lt;/code&gt; でサイトを確認してもキャッシュが表示される。
-キャッシュなしで表示したい。&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;code&gt;hugo server&lt;/code&gt; でサイトを確認してもキャッシュが表示される。&#xA;キャッシュなしで表示したい。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

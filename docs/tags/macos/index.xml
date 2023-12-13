@@ -28,9 +28,7 @@
       <link>https://kantas-spike.github.io/portfolio/til/2023/10/87-remove-extended-attrs/</link>
       <pubDate>Tue, 31 Oct 2023 04:56:13 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/til/2023/10/87-remove-extended-attrs/</guid>
-      <description>&lt;p&gt;ダウンロードしたファイルなどを&lt;code&gt;ls -l&lt;/code&gt;すると&lt;code&gt;@&lt;/code&gt;が付く。&lt;/p&gt;
-&lt;p&gt;これは、&lt;code&gt;Extended Attributes(拡張属性)&lt;/code&gt;と呼ぶそうだ。
-この&lt;code&gt;拡張属性&lt;/code&gt;を削除したい。&lt;/p&gt;</description>
+      <description>&lt;p&gt;ダウンロードしたファイルなどを&lt;code&gt;ls -l&lt;/code&gt;すると&lt;code&gt;@&lt;/code&gt;が付く。&lt;/p&gt;&#xA;&lt;p&gt;これは、&lt;code&gt;Extended Attributes(拡張属性)&lt;/code&gt;と呼ぶそうだ。&#xA;この&lt;code&gt;拡張属性&lt;/code&gt;を削除したい。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Spotlightからシェルスクリプトを呼び出す</title>

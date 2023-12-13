@@ -14,9 +14,7 @@
       <link>https://kantas-spike.github.io/portfolio/til/2023/10/85-replace-theme-module-with-local-module/</link>
       <pubDate>Fri, 27 Oct 2023 10:20:16 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/til/2023/10/85-replace-theme-module-with-local-module/</guid>
-      <description>&lt;p&gt;GitHubで管理している自作のHugoテーマをモジュール化した。&lt;/p&gt;
-&lt;p&gt;しかし、Hugoテーマを修正するたびに、毎回プッシュしモジュールをアップデートする必要があり面倒である。&lt;/p&gt;
-&lt;p&gt;もっと、手軽にHugoテーマを改修できるようにしたい。&lt;/p&gt;</description>
+      <description>&lt;p&gt;GitHubで管理している自作のHugoテーマをモジュール化した。&lt;/p&gt;&#xA;&lt;p&gt;しかし、Hugoテーマを修正するたびに、毎回プッシュしモジュールをアップデートする必要があり面倒である。&lt;/p&gt;&#xA;&lt;p&gt;もっと、手軽にHugoテーマを改修できるようにしたい。&lt;/p&gt;</description>
     </item>
     <item>
       <title>gitのsubmoduleを削除したい</title>
@@ -65,8 +63,7 @@
       <link>https://kantas-spike.github.io/portfolio/til/2023/07/73-cannot-load-exported-nextjs-app-in-github-pages/</link>
       <pubDate>Mon, 10 Jul 2023 01:17:23 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/til/2023/07/73-cannot-load-exported-nextjs-app-in-github-pages/</guid>
-      <description>&lt;p&gt;&lt;code&gt;Static Export&lt;/code&gt;したNext.jsアプリをGitHub Pagesで表示できない。&lt;/p&gt;
-&lt;p&gt;どうやら&lt;code&gt;_next/&lt;/code&gt;配下のファイルを表示できないようだ。&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;code&gt;Static Export&lt;/code&gt;したNext.jsアプリをGitHub Pagesで表示できない。&lt;/p&gt;&#xA;&lt;p&gt;どうやら&lt;code&gt;_next/&lt;/code&gt;配下のファイルを表示できないようだ。&lt;/p&gt;</description>
     </item>
     <item>
       <title>HugoでNext.jsアプリを公開したい</title>
@@ -94,17 +91,14 @@
       <link>https://kantas-spike.github.io/portfolio/til/2023/06/59-use-site-assets-when-using-a-theme-with-hugo/</link>
       <pubDate>Thu, 01 Jun 2023 23:09:00 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/til/2023/06/59-use-site-assets-when-using-a-theme-with-hugo/</guid>
-      <description>&lt;p&gt;テーマを利用すると、サイトの&lt;code&gt;assets&lt;/code&gt;ディレクトリにアクセスができなくなるため、
-テーマの&lt;code&gt;assets&lt;/code&gt;ディレクトリにJavaScriptを配置しなければならない。&lt;/p&gt;
-&lt;p&gt;記事専用のJavaScriptは、テーマのアセットではなくサイトのアセットに配置したい。&lt;/p&gt;</description>
+      <description>&lt;p&gt;テーマを利用すると、サイトの&lt;code&gt;assets&lt;/code&gt;ディレクトリにアクセスができなくなるため、&#xA;テーマの&lt;code&gt;assets&lt;/code&gt;ディレクトリにJavaScriptを配置しなければならない。&lt;/p&gt;&#xA;&lt;p&gt;記事専用のJavaScriptは、テーマのアセットではなくサイトのアセットに配置したい。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Hugoで記事を更新日時でソートしたい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/05/55-sort-articles-by-lastmod-on-hugo/</link>
       <pubDate>Mon, 29 May 2023 13:17:25 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/til/2023/05/55-sort-articles-by-lastmod-on-hugo/</guid>
-      <description>&lt;p&gt;Hugoで記事を更新日時でソートしたい。&lt;/p&gt;
-&lt;p&gt;ただし、記事には更新日時(&lt;code&gt;lastmod&lt;/code&gt;)を持たないもの(作成日時＝更新日時)もある。&lt;/p&gt;</description>
+      <description>&lt;p&gt;Hugoで記事を更新日時でソートしたい。&lt;/p&gt;&#xA;&lt;p&gt;ただし、記事には更新日時(&lt;code&gt;lastmod&lt;/code&gt;)を持たないもの(作成日時＝更新日時)もある。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Reactを導入したい</title>
@@ -132,16 +126,14 @@
       <link>https://kantas-spike.github.io/portfolio/til/2022/12/33-tool-dir/</link>
       <pubDate>Sun, 04 Dec 2022 23:00:39 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/til/2022/12/33-tool-dir/</guid>
-      <description>&lt;p&gt;自作のShellなどのツールを作ったときに、どのディレクトリにインストールするべきなのか?&lt;/p&gt;
-&lt;p&gt;ツールのソースは、作業ディレクトリで開発しGitHubで管理するが、ツール自体はどうインストールするべき?&lt;/p&gt;</description>
+      <description>&lt;p&gt;自作のShellなどのツールを作ったときに、どのディレクトリにインストールするべきなのか?&lt;/p&gt;&#xA;&lt;p&gt;ツールのソースは、作業ディレクトリで開発しGitHubで管理するが、ツール自体はどうインストールするべき?&lt;/p&gt;</description>
     </item>
     <item>
       <title>表示時の幅を指定できるYoutube動画用のShortcodeを追加したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2022/09/29-add-shortcode-to-set-the-width-of-youtube-video/</link>
       <pubDate>Thu, 22 Sep 2022 20:19:54 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/til/2022/09/29-add-shortcode-to-set-the-width-of-youtube-video/</guid>
-      <description>&lt;p&gt;Hugo標準のYoutube用ショートコードを使用すると、横幅一杯にYoutube動画が表示される。
-幅をスタイル指定可能なYoutube動画用のShortcodeを追加したい。&lt;/p&gt;</description>
+      <description>&lt;p&gt;Hugo標準のYoutube用ショートコードを使用すると、横幅一杯にYoutube動画が表示される。&#xA;幅をスタイル指定可能なYoutube動画用のShortcodeを追加したい。&lt;/p&gt;</description>
     </item>
     <item>
       <title>HugoでcssのURLにハッシュを付与したい</title>
@@ -197,8 +189,7 @@
       <link>https://kantas-spike.github.io/portfolio/til/2022/07/10-hugo-with-rawhtml/</link>
       <pubDate>Sat, 23 Jul 2022 12:13:01 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/til/2022/07/10-hugo-with-rawhtml/</guid>
-      <description>&lt;p&gt;HugoのMarkdown内にHTMLを直接記述すると、&lt;code&gt;&amp;lt;!-- raw HTML omitted --&amp;gt;&lt;/code&gt;に変換され無視される。
-直接HTMLを書く手段が欲しい。&lt;/p&gt;</description>
+      <description>&lt;p&gt;HugoのMarkdown内にHTMLを直接記述すると、&lt;code&gt;&amp;lt;!-- raw HTML omitted --&amp;gt;&lt;/code&gt;に変換され無視される。&#xA;直接HTMLを書く手段が欲しい。&lt;/p&gt;</description>
     </item>
     <item>
       <title>hugoでyoutubeのplaylistを埋め込みたい</title>
@@ -219,8 +210,7 @@
       <link>https://kantas-spike.github.io/portfolio/til/2022/07/06-hugo-with-syntax-highlighter-css/</link>
       <pubDate>Fri, 22 Jul 2022 14:35:35 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/til/2022/07/06-hugo-with-syntax-highlighter-css/</guid>
-      <description>&lt;p&gt;デフォルトだと&lt;code&gt;hugo&lt;/code&gt;の&lt;code&gt;Markdown&lt;/code&gt;のコードブロックには、シンタックスハイライト用の&lt;code&gt;style&lt;/code&gt;が直接埋め込まれる。&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;style&lt;/code&gt;ではなく&lt;code&gt;class&lt;/code&gt;名の埋め込みに変更し、&lt;code&gt;css&lt;/code&gt;によりハイライトの表示を変更可能にしたい。&lt;/p&gt;</description>
+      <description>&lt;p&gt;デフォルトだと&lt;code&gt;hugo&lt;/code&gt;の&lt;code&gt;Markdown&lt;/code&gt;のコードブロックには、シンタックスハイライト用の&lt;code&gt;style&lt;/code&gt;が直接埋め込まれる。&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;style&lt;/code&gt;ではなく&lt;code&gt;class&lt;/code&gt;名の埋め込みに変更し、&lt;code&gt;css&lt;/code&gt;によりハイライトの表示を変更可能にしたい。&lt;/p&gt;</description>
     </item>
     <item>
       <title>hugoにコンテンツ追加時にvscodeですぐに編集したい</title>
@@ -248,16 +238,14 @@
       <link>https://kantas-spike.github.io/portfolio/til/2022/07/02-hugo-options/</link>
       <pubDate>Fri, 15 Jul 2022 09:31:02 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/til/2022/07/02-hugo-options/</guid>
-      <description>&lt;p&gt;削除済みのファイルが出力ディレクトリに残るのを防ぐため、
-&lt;code&gt;hugo&lt;/code&gt;で、最初に出力ディレクトリを削除してから実行したい。&lt;/p&gt;</description>
+      <description>&lt;p&gt;削除済みのファイルが出力ディレクトリに残るのを防ぐため、&#xA;&lt;code&gt;hugo&lt;/code&gt;で、最初に出力ディレクトリを削除してから実行したい。&lt;/p&gt;</description>
     </item>
     <item>
       <title>hugo serverをキャッシュ無しで表示させる</title>
       <link>https://kantas-spike.github.io/portfolio/til/2022/07/01-hugo-server-options/</link>
       <pubDate>Fri, 15 Jul 2022 09:16:56 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/til/2022/07/01-hugo-server-options/</guid>
-      <description>&lt;p&gt;&lt;code&gt;hugo server&lt;/code&gt; でサイトを確認してもキャッシュが表示される。
-キャッシュなしで表示したい。&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;code&gt;hugo server&lt;/code&gt; でサイトを確認してもキャッシュが表示される。&#xA;キャッシュなしで表示したい。&lt;/p&gt;</description>
     </item>
     <item>
       <title>ポートフォリオサイトを作成する</title>

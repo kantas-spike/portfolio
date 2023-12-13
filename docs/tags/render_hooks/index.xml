@@ -42,8 +42,7 @@
       <link>https://kantas-spike.github.io/portfolio/til/2022/07/10-hugo-with-rawhtml/</link>
       <pubDate>Sat, 23 Jul 2022 12:13:01 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/til/2022/07/10-hugo-with-rawhtml/</guid>
-      <description>&lt;p&gt;HugoのMarkdown内にHTMLを直接記述すると、&lt;code&gt;&amp;lt;!-- raw HTML omitted --&amp;gt;&lt;/code&gt;に変換され無視される。
-直接HTMLを書く手段が欲しい。&lt;/p&gt;</description>
+      <description>&lt;p&gt;HugoのMarkdown内にHTMLを直接記述すると、&lt;code&gt;&amp;lt;!-- raw HTML omitted --&amp;gt;&lt;/code&gt;に変換され無視される。&#xA;直接HTMLを書く手段が欲しい。&lt;/p&gt;</description>
     </item>
     <item>
       <title>hugoでmermaid.jsを使いたい</title>

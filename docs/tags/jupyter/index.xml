@@ -14,8 +14,7 @@
       <link>https://kantas-spike.github.io/portfolio/articles/2023/02/12-use-jupyter-notebook/</link>
       <pubDate>Thu, 16 Feb 2023 08:44:35 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/articles/2023/02/12-use-jupyter-notebook/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://jupyter.org/&#34;&gt;Jupyter Notebook&lt;/a&gt;という、文書、プログラムコード、数式、や図形を1つのドキュメントとして表現できるWebアプリケーションがあるそうです。 &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-&lt;p&gt;Pythonを使って、数学を勉強する時には便利そうです。今回は、実際に&lt;code&gt;Jupyter Notebook&lt;/code&gt;を使ってみます。そして、作成したノートをブログに掲載できる形式に変換できるかを検証します。&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://jupyter.org/&#34;&gt;Jupyter Notebook&lt;/a&gt;という、文書、プログラムコード、数式、や図形を1つのドキュメントとして表現できるWebアプリケーションがあるそうです。 &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;&#xA;&lt;p&gt;Pythonを使って、数学を勉強する時には便利そうです。今回は、実際に&lt;code&gt;Jupyter Notebook&lt;/code&gt;を使ってみます。そして、作成したノートをブログに掲載できる形式に変換できるかを検証します。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
