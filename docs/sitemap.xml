@@ -2,16 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/python/</loc>
+    <lastmod>2023-12-20T22:56:37+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/til/2023/12/99-python%E3%81%A7%E9%95%B7%E3%81%84%E6%96%87%E5%AD%97%E5%88%97%E3%82%92%E4%B8%8A%E6%89%8B%E3%81%8F%E6%94%B9%E8%A1%8C%E3%81%97%E3%81%9F%E3%81%84/</loc>
+    <lastmod>2023-12-20T22:56:37+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/</loc>
+    <lastmod>2023-12-20T22:56:37+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/macos/</loc>
+    <lastmod>2023-12-20T22:15:43+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/til/2023/12/98-python%E3%81%A7%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%83%A9%E3%82%A4%E3%83%B3%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%A0%E3%82%92%E4%BD%9C%E6%88%90%E3%81%97%E3%81%9F%E3%81%84/</loc>
+    <lastmod>2023-12-20T22:15:43+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/til/2023/12/97-macos%E3%81%A7python%E3%81%AE%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%97%E3%83%88%E3%82%92%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%81%A8%E3%81%97%E3%81%A6%E5%91%BC%E3%81%B3%E5%87%BA%E3%81%97%E3%81%9F%E3%81%84/</loc>
+    <lastmod>2023-12-20T18:43:06+09:00</lastmod>
+  </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/chatgpt/</loc>
     <lastmod>2023-12-13T07:19:59+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/gimp/</loc>
-    <lastmod>2023-12-13T07:19:59+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/python/</loc>
-    <lastmod>2023-12-13T07:19:59+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/</loc>
     <lastmod>2023-12-13T07:19:59+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/dialogues/09-pass-args-when-run-gimpfu-from-cli/</loc>
@@ -36,9 +48,6 @@
     <lastmod>2023-11-22T22:41:26+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2023/11/94-use-git-credential-osxkeychain/</loc>
-    <lastmod>2023-11-22T22:41:26+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/macos/</loc>
     <lastmod>2023-11-22T22:41:26+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/color/</loc>

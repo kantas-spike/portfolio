@@ -7,8 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>© 2022 kanta&#39;s spike</copyright>
-    <lastBuildDate>Wed, 22 Nov 2023 22:41:26 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 20 Dec 2023 22:15:43 +0900</lastBuildDate>
     <atom:link href="https://kantas-spike.github.io/portfolio/tags/macos/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pythonでコマンドラインプログラムを作成したい</title>
+      <link>https://kantas-spike.github.io/portfolio/til/2023/12/98-python%E3%81%A7%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%83%A9%E3%82%A4%E3%83%B3%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%A0%E3%82%92%E4%BD%9C%E6%88%90%E3%81%97%E3%81%9F%E3%81%84/</link>
+      <pubDate>Wed, 20 Dec 2023 22:15:43 +0900</pubDate>
+      <guid>https://kantas-spike.github.io/portfolio/til/2023/12/98-python%E3%81%A7%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%83%A9%E3%82%A4%E3%83%B3%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%A0%E3%82%92%E4%BD%9C%E6%88%90%E3%81%97%E3%81%9F%E3%81%84/</guid>
+      <description>&lt;p&gt;Pythonでコマンドラインプログラムを作成する場合の一般的な方法を知りたい。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>MacOSでPythonのスクリプトをコマンドとして呼び出したい</title>
+      <link>https://kantas-spike.github.io/portfolio/til/2023/12/97-macos%E3%81%A7python%E3%81%AE%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%97%E3%83%88%E3%82%92%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%81%A8%E3%81%97%E3%81%A6%E5%91%BC%E3%81%B3%E5%87%BA%E3%81%97%E3%81%9F%E3%81%84/</link>
+      <pubDate>Wed, 20 Dec 2023 18:43:06 +0900</pubDate>
+      <guid>https://kantas-spike.github.io/portfolio/til/2023/12/97-macos%E3%81%A7python%E3%81%AE%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%97%E3%83%88%E3%82%92%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%81%A8%E3%81%97%E3%81%A6%E5%91%BC%E3%81%B3%E5%87%BA%E3%81%97%E3%81%9F%E3%81%84/</guid>
+      <description>&lt;p&gt;自分で作成したPythonスクリプトをmacOSでターミナルでコマンドとして実行できるようにしたい。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>GitでGithubの認証情報を何度も入力したくない</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/11/94-use-git-credential-osxkeychain/</link>

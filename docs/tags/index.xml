@@ -7,8 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>© 2022 kanta&#39;s spike</copyright>
-    <lastBuildDate>Wed, 13 Dec 2023 07:19:59 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 20 Dec 2023 22:56:37 +0900</lastBuildDate>
     <atom:link href="https://kantas-spike.github.io/portfolio/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>python</title>
+      <link>https://kantas-spike.github.io/portfolio/tags/python/</link>
+      <pubDate>Wed, 20 Dec 2023 22:56:37 +0900</pubDate>
+      <guid>https://kantas-spike.github.io/portfolio/tags/python/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>macos</title>
+      <link>https://kantas-spike.github.io/portfolio/tags/macos/</link>
+      <pubDate>Wed, 20 Dec 2023 22:15:43 +0900</pubDate>
+      <guid>https://kantas-spike.github.io/portfolio/tags/macos/</guid>
+      <description></description>
+    </item>
     <item>
       <title>ChatGPT</title>
       <link>https://kantas-spike.github.io/portfolio/tags/chatgpt/</link>
@@ -21,13 +35,6 @@
       <link>https://kantas-spike.github.io/portfolio/tags/gimp/</link>
       <pubDate>Wed, 13 Dec 2023 07:19:59 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/tags/gimp/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>python</title>
-      <link>https://kantas-spike.github.io/portfolio/tags/python/</link>
-      <pubDate>Wed, 13 Dec 2023 07:19:59 +0900</pubDate>
-      <guid>https://kantas-spike.github.io/portfolio/tags/python/</guid>
       <description></description>
     </item>
     <item>
@@ -56,13 +63,6 @@
       <link>https://kantas-spike.github.io/portfolio/tags/github/</link>
       <pubDate>Wed, 22 Nov 2023 22:41:26 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/tags/github/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>macos</title>
-      <link>https://kantas-spike.github.io/portfolio/tags/macos/</link>
-      <pubDate>Wed, 22 Nov 2023 22:41:26 +0900</pubDate>
-      <guid>https://kantas-spike.github.io/portfolio/tags/macos/</guid>
       <description></description>
     </item>
     <item>

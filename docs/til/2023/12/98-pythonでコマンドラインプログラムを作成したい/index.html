@@ -1,0 +1,192 @@
+<!doctype html>
+<html><head>
+    <title>
+        Pythonでコマンドラインプログラムを作成したい | kanta&#39;s spike
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+  rel="preload"
+  href="https://kantas-spike.github.io/portfolio/fonts/NotoSansJP-Regular.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin="anonymous"
+/>
+<link
+  rel="preload"
+  href="https://kantas-spike.github.io/portfolio/fonts/NotoSansJP-Bold.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin="anonymous"
+/>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Noto+Emoji:wght@400;500;700&family=Noto+Sans+JP:wght@400;700&display=swap"
+  rel="stylesheet"
+/>
+<link rel="stylesheet" href="https://kantas-spike.github.io/portfolio/css/fonts.978d33a6dcb8af5cc3fc6d102e0cbd3d4f2452dcaae53ff12d45609137df3ed9.css">
+    <link rel="stylesheet" href="https://kantas-spike.github.io/portfolio/css/theme.min.8bd876af72b7281c033be721d5cc088ab6cb09ec42e7dcb837cc06644fa83034.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" /><link rel="stylesheet" href="https://kantas-spike.github.io/portfolio/css/syntax.min.53132d5ecb321e785c36c5e94d619a0e0e5e50abd5435b10c105ebd046929b7a.css"><link rel="apple-touch-icon" sizes="180x180" href="https://kantas-spike.github.io/portfolio/icon180.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://kantas-spike.github.io/portfolio/icon32.png">
+<link rel="icon" type="image/svg+xml" href="https://kantas-spike.github.io/portfolio/icon.svg">
+<link rel="manifest" href="https://kantas-spike.github.io/portfolio/site.webmanifest">
+
+</head><body class="bg-background text-primary-dark pb-4"><header class="bg-primary-dark text-site_title text-6xl font-serif font-extrabold px-4 py-3">
+    <h1 class="container mx-auto px-4"><a href="https://kantas-spike.github.io/portfolio/">kanta&#39;s spike</a></h1>
+</header>
+<input type="checkbox" name="burger_cbx" id="burger_cbx">
+<label for="burger_cbx" class="burger_label">
+    <span class="burger_icon"><svg version="1.1" viewBox="0 0 12.7 12.7" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <rect x="1.0369" y="2.1007" width="10.634" height="1.0426" ry=".5213"/>
+  <rect x="1.0369" y="4.571" width="10.634" height="1.0426" ry=".5213"/>
+  <rect x="1.0369" y="7.0413" width="10.634" height="1.0426" ry=".5213"/>
+  <rect x="1.0369" y="9.5115" width="10.634" height="1.0426" ry=".5213"/>
+ </g>
+</svg>
+</span>
+</label>
+<label for="burger_cbx" class="close_label">
+    <span class="close_icon"><svg version="1.1" viewBox="0 0 12.7 12.7" xmlns="http://www.w3.org/2000/svg">
+ <rect transform="rotate(45.535)" x="3.6678" y="-.6148" width="10.634" height="1.0426" ry=".5213"/>
+ <rect transform="rotate(135.53)" x="-5.4104" y="-9.5059" width="10.634" height="1.0426" ry=".5213"/>
+</svg>
+</span>
+</label>
+<div class="nav_area">
+    <nav class="container mx-auto bg-primary text-on-primary text-center flex flex-col md:flex-row justify-start">
+            <a href="https://kantas-spike.github.io/portfolio/" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Home</a>
+            <a href="https://kantas-spike.github.io/portfolio/til" class="box-border flex-1 text-center no-underline bg-primary-light text-on-primary-light font-bold py-2">TIL</a>
+            <a href="https://kantas-spike.github.io/portfolio/dialogues" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Dialogues</a>
+            <a href="https://kantas-spike.github.io/portfolio/articles" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Articles</a>
+            <a href="https://kantas-spike.github.io/portfolio/mytools" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">My Tools</a>
+            <a href="https://kantas-spike.github.io/portfolio/ihc" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">IHC</a>
+            <a href="https://kantas-spike.github.io/portfolio/tags" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Tags</a>
+        <div class="flex-none" id="search_menu"></div>
+    </nav>
+</div>
+<main id="content" class="container mx-auto bg-surface pt-4 pb-8">
+<div class="area_border px-4 py-3 mx-4 md:mx-auto pb-4 max-w-[60rem]">
+  
+
+
+
+<div class="mb-4">
+    <h3 class="border-b-4 border-primary-dark text-primary-dark text-xl font-bold tracking-wider pl-[1em] -indent-[1ex]"><i class="fa-solid fa-circle-info"></i> <a href="https://kantas-spike.github.io/portfolio/til/2023/12/98-python%E3%81%A7%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%83%A9%E3%82%A4%E3%83%B3%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%A0%E3%82%92%E4%BD%9C%E6%88%90%E3%81%97%E3%81%9F%E3%81%84/">Pythonでコマンドラインプログラムを作成したい</a></h3>
+    <div class="flex justify-between mt-1 mx-2">
+        <div>
+            <ul class="flex gap-2 justify-end">
+            
+            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/python/">#python</a></li>
+            
+            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/macos/">#macos</a></li>
+            
+            </ul>
+        </div>
+        <div>
+            
+            
+            <div class="text-right text-sm font-bold">2023/12/20
+                
+                    <span class="text-xs text-red-600 font-thin">New</span>
+                
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+  <div class="article mx-2"><p>Pythonでコマンドラインプログラムを作成する場合の一般的な方法を知りたい。</p>
+<h3 id="解決策">解決策</h3>
+<p>Pythonでコマンドラインオプションを扱うには、<a href="https://docs.python.org/ja/3/library/argparse.html">argparse &mdash; コマンドラインオプション、引数、サブコマンドのパーサー — Python 3.12.1 ドキュメント</a>を利用する。<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+<p>GitHubで<code>import argparse</code>を含むソースコードを知らべてみると、<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>
+以下のような構造になっているようだ。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="ch">#!/usr/bin/env python3</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">argparse</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">sys</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="n">args</span> <span class="o">=</span> <span class="n">parse_args</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># 以下に処理を書く</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">parse_args</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="n">parser</span> <span class="o">=</span> <span class="n">argparse</span><span class="o">.</span><span class="n">ArgumentParser</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="s2">&#34;memoru&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># オプションを設定</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">parser</span><span class="o">.</span><span class="n">parse_args</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&#34;__main__&#34;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="n">main</span><span class="p">())</span>
+</span></span></code></pre></div><p>以下にコードを解説する。</p>
+<h4 id="シバンusrbinenv-python3">シバン(<code>#!/usr/bin/env python3</code>)</h4>
+<p>1行目の<code>#!/usr/bin/env python3</code>はシバンと呼ばれる。
+シバンは、スクリプト実行時に使用するインタプリタを指定するための特別な命令である。</p>
+<p>詳細は、<a href="https://kantas-spike.github.io/portfolio/til/2023/12/97-macos%E3%81%A7python%E3%81%AE%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%97%E3%83%88%E3%82%92%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%81%A8%E3%81%97%E3%81%A6%E5%91%BC%E3%81%B3%E5%87%BA%E3%81%97%E3%81%9F%E3%81%84/">macOSでPythonのスクリプトをコマンドとして呼び出したい</a>を参照。</p>
+<h4 id="if-__name__--__main__"><code>if __name__ == &quot;__main__&quot;:</code></h4>
+<p><code>if __name__ == &quot;__main__&quot;:</code>には、<code>python</code>によりスクリプトが直接実行され場合に、実行される処理を記述する。</p>
+<ul>
+<li><code>aaa.py</code>というモジュールがあり<code>import aaa</code>のようにモジュールをインポートした場合、<code>__name__</code>にはモジュールの名前(<code>aaa</code>)が設定される。</li>
+<li>一方、<code>python aaa.py</code>を実行した場合、その<code>__name__</code>は<code>__main__</code>になる。</li>
+</ul>
+<h4 id="def-parse_args"><code>def parse_args():</code></h4>
+<p><code>argparse</code>のオプション指定などは関数にまとめておくと、ロジックが整理されて良さそうだ。</p>
+<p>エラー時に、ヘルプを表示したいので、オプションのエラーチェックも、この関数内で行う方が良さそう。</p>
+<h4 id="sysexitmain"><code>sys.exit(main())</code></h4>
+<p><code>sys.exit()</code>の引数に<code>0</code>or<code>None</code>を指定した場合は終了ステータスは正常終了、それ以外は異常終了になる。</p>
+<p><code>sys.exit()</code>の引数に、エラーなどのオブジェクトを指定した場合は、<code>stderr</code>にオブジェクトを出力し、終了ステータス1(異常終了)になる。</p>
+<p>そのため、コマンドラインプログラムの処理を<code>main()</code>にまとめておけばその戻り値を<code>sys.exit()</code>に渡すことができる。</p>
+<h3 id="参考">参考</h3>
+<ul>
+<li><a href="https://docs.python.org/ja/3/library/__main__.html">__main__ &mdash; トップレベルのスクリプト環境 — Python 3.12.1 ドキュメント</a></li>
+<li><a href="https://docs.python.org/ja/3/tutorial/modules.html#tut-modules">6. モジュール — Python 3.12.1 ドキュメント</a></li>
+<li><a href="https://docs.python.org/ja/3.11/library/sys.html#sys.exit">sys.exit([arg]) # sys &mdash; システムパラメータと関数 — Python 3.11.7 ドキュメント</a></li>
+</ul>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p><a href="https://kantas-spike.github.io/portfolio/til/2022/08/16-python-option-parser/">Pythonでコマンドラインオプション取得したい</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p><a href="https://github.com/electron/electron/blob/95d094d75bddb99c83d2902fbc9a4335632a41cf/script/zip-symbols.py#L3C1-L3C1">electron/script/zip-symbols.py at 95d094d75bddb99c83d2902fbc9a4335632a41cf · electron/electron</a>&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div></div>
+  <div class="mt-6">
+    <div class="border-t-2 border-primary-dark px-2 pt-2 text-right">
+        <span class="text-sm">作成日: 2023/12/20</span></div>
+</div>
+
+</div>
+
+
+    </main><footer class="bg-primary-dark text-center text-on-primary-dark fixed bottom-0 w-full h-8">
+    <div class="container mx-auto grid grid-cols-3">
+        <div class="col-start-1 col-span-2 ml-2 md:ml-0 md:col-start-2 md:col-span-1">
+            <div class="text-left md:text-center text-sm pt-2">© 2022 kanta&#39;s spike</div>
+        </div>
+        <div class="col-start-3 flex justify-end gap-2 mr-2">
+            
+                
+            <a title="Twitter" class="text-2xl" href="https://twitter.com/KantasSpike"><i class="fa-brands fa-twitter-square"></i></a>
+                
+            <a title="Youtube" class="text-2xl" href="https://www.youtube.com/channel/UCnVBuUGMYAt7ZuIkadxnMfw"><i class="fa-brands fa-youtube-square"></i></a>
+                
+            <a title="GitHub" class="text-2xl" href="https://github.com/kantas-spike"><i class="fa-brands fa-github-square"></i></a>
+                
+            <a title="Blog" class="text-2xl" href="https://kantas-spike.github.io/portfolio/"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                
+            
+        </div>
+    </div>
+</footer> 
+
+
+
+
+<script defer type="text/javascript" src="https://kantas-spike.github.io/portfolio/js/search-form.07066240729fbbddf7f08e0938e5a7a060da185ec1c29e438984cfa6c2ff2386dd2ef58d9c7af295b66d187cc9c180f4aa62433709f8bf8813c39c1e239b641e.js" integrity="sha512-BwZiQHKfu9338I4JOOWnoGDaGF7Bwp5DiYTPpsL/I4bdLvWNnHrylbZtGHzJwYD0qmJDNwn4v4gTw5weI5tkHg=="></script></body>
+</html>
