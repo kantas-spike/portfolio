@@ -7,8 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>© 2022 kanta&#39;s spike</copyright>
-    <lastBuildDate>Wed, 20 Dec 2023 22:56:37 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 04 Jan 2024 12:02:29 +0900</lastBuildDate>
     <atom:link href="https://kantas-spike.github.io/portfolio/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pythonで操作できるアプリケーションを知りたい</title>
+      <link>https://kantas-spike.github.io/portfolio/til/2024/01/101-python%E3%81%A7%E6%93%8D%E4%BD%9C%E3%81%A7%E3%81%8D%E3%82%8B%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%92%E7%9F%A5%E3%82%8A%E3%81%9F%E3%81%84/</link>
+      <pubDate>Thu, 04 Jan 2024 12:02:29 +0900</pubDate>
+      <guid>https://kantas-spike.github.io/portfolio/til/2024/01/101-python%E3%81%A7%E6%93%8D%E4%BD%9C%E3%81%A7%E3%81%8D%E3%82%8B%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%92%E7%9F%A5%E3%82%8A%E3%81%9F%E3%81%84/</guid>
+      <description>&lt;p&gt;Pythonを勉強するために、日々の作業(ブログ記事作成や動画作成)でも積極的にPythonを利用したい。&lt;/p&gt;&#xA;&lt;p&gt;InkscapeやGimp、BlenderはPythonで操作できる事を知っているが、他にもPythonで操作できるアプリケーションを知りたい。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Pythonで長い文字列を上手く改行したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/12/99-python%E3%81%A7%E9%95%B7%E3%81%84%E6%96%87%E5%AD%97%E5%88%97%E3%82%92%E4%B8%8A%E6%89%8B%E3%81%8F%E6%94%B9%E8%A1%8C%E3%81%97%E3%81%9F%E3%81%84/</link>

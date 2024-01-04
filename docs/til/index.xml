@@ -10,6 +10,20 @@
     <lastBuildDate>Fri, 22 Jul 2022 08:15:27 +0900</lastBuildDate>
     <atom:link href="https://kantas-spike.github.io/portfolio/til/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Pythonで操作できるアプリケーションを知りたい</title>
+      <link>https://kantas-spike.github.io/portfolio/til/2024/01/101-python%E3%81%A7%E6%93%8D%E4%BD%9C%E3%81%A7%E3%81%8D%E3%82%8B%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%92%E7%9F%A5%E3%82%8A%E3%81%9F%E3%81%84/</link>
+      <pubDate>Thu, 04 Jan 2024 12:02:29 +0900</pubDate>
+      <guid>https://kantas-spike.github.io/portfolio/til/2024/01/101-python%E3%81%A7%E6%93%8D%E4%BD%9C%E3%81%A7%E3%81%8D%E3%82%8B%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%92%E7%9F%A5%E3%82%8A%E3%81%9F%E3%81%84/</guid>
+      <description>&lt;p&gt;Pythonを勉強するために、日々の作業(ブログ記事作成や動画作成)でも積極的にPythonを利用したい。&lt;/p&gt;&#xA;&lt;p&gt;InkscapeやGimp、BlenderはPythonで操作できる事を知っているが、他にもPythonで操作できるアプリケーションを知りたい。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Hugoの記事のタイトルからプレフィックスを削除したい</title>
+      <link>https://kantas-spike.github.io/portfolio/til/2023/12/100-hugo%E3%81%AE%E8%A8%98%E4%BA%8B%E3%81%AE%E3%82%BF%E3%82%A4%E3%83%88%E3%83%AB%E3%81%8B%E3%82%89%E3%83%97%E3%83%AC%E3%83%95%E3%82%A3%E3%83%83%E3%82%AF%E3%82%B9%E3%82%92%E5%89%8A%E9%99%A4%E3%81%97%E3%81%9F%E3%81%84/</link>
+      <pubDate>Thu, 21 Dec 2023 14:33:18 +0900</pubDate>
+      <guid>https://kantas-spike.github.io/portfolio/til/2023/12/100-hugo%E3%81%AE%E8%A8%98%E4%BA%8B%E3%81%AE%E3%82%BF%E3%82%A4%E3%83%88%E3%83%AB%E3%81%8B%E3%82%89%E3%83%97%E3%83%AC%E3%83%95%E3%82%A3%E3%83%83%E3%82%AF%E3%82%B9%E3%82%92%E5%89%8A%E9%99%A4%E3%81%97%E3%81%9F%E3%81%84/</guid>
+      <description>&lt;p&gt;Hugoで管理しているブログの記事のファイル名には、プレフィックスとして連番の数字を付与している。&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-txt&#34; data-lang=&#34;txt&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;100-Hugoの記事のタイトルからプレフィックスを削除したい.md&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;hugo new contet&lt;/code&gt;でこのようなファイルから記事を作成した場合、記事のタイトルにプレフィックスが残ってしまう。&lt;/p&gt;&#xA;&lt;p&gt;タイトルからプレフィックスを削除したい。&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Pythonで長い文字列を上手く改行したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/12/99-python%E3%81%A7%E9%95%B7%E3%81%84%E6%96%87%E5%AD%97%E5%88%97%E3%82%92%E4%B8%8A%E6%89%8B%E3%81%8F%E6%94%B9%E8%A1%8C%E3%81%97%E3%81%9F%E3%81%84/</link>
       <pubDate>Wed, 20 Dec 2023 22:56:37 +0900</pubDate>

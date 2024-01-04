@@ -7,13 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>© 2022 kanta&#39;s spike</copyright>
-    <lastBuildDate>Wed, 20 Dec 2023 22:56:37 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 04 Jan 2024 12:02:29 +0900</lastBuildDate>
     <atom:link href="https://kantas-spike.github.io/portfolio/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>python</title>
       <link>https://kantas-spike.github.io/portfolio/tags/python/</link>
-      <pubDate>Wed, 20 Dec 2023 22:56:37 +0900</pubDate>
+      <pubDate>Thu, 04 Jan 2024 12:02:29 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/tags/python/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>hugo</title>
+      <link>https://kantas-spike.github.io/portfolio/tags/hugo/</link>
+      <pubDate>Thu, 21 Dec 2023 14:33:18 +0900</pubDate>
+      <guid>https://kantas-spike.github.io/portfolio/tags/hugo/</guid>
       <description></description>
     </item>
     <item>
@@ -119,13 +126,6 @@
       <link>https://kantas-spike.github.io/portfolio/tags/vscode/</link>
       <pubDate>Sun, 05 Nov 2023 11:29:23 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/tags/vscode/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>hugo</title>
-      <link>https://kantas-spike.github.io/portfolio/tags/hugo/</link>
-      <pubDate>Fri, 27 Oct 2023 10:20:16 +0900</pubDate>
-      <guid>https://kantas-spike.github.io/portfolio/tags/hugo/</guid>
       <description></description>
     </item>
     <item>
