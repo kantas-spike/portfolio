@@ -18,7 +18,7 @@ cat - < test.txt
 
 ### 解決策
 
-[subprocess.Popen()](https://docs.python.org/ja/3/library/subprocess.html#popen-constructor)で外部プロセスを起動し、[Popen.communicate(inpput)](https://docs.python.org/ja/3/library/subprocess.html#subprocess.Popen.communicate)を使って、外部プロセスの標準入力に値を渡せば良い。
+[subprocess.Popen()](https://docs.python.org/ja/3/library/subprocess.html#popen-constructor)で外部プロセスを起動し、[Popen.communicate(input)](https://docs.python.org/ja/3/library/subprocess.html#subprocess.Popen.communicate)を使って、外部プロセスの標準入力に値を渡せば良い。
 
 以下は、`cat -`に対して、標準入力から`test1\ntest2\ntest3`を渡している。
 
