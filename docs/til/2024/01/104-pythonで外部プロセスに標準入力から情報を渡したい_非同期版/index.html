@@ -1,7 +1,7 @@
 <!doctype html>
 <html><head>
     <title>
-        Pythonで外部プロセスに標準入力から情報を渡したい | kanta&#39;s spike
+        Pythonで外部プロセスに標準入力から情報を渡したい(非同期版) | kanta&#39;s spike
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link
@@ -73,7 +73,7 @@
 
 
 <div class="mb-4">
-    <h3 class="border-b-4 border-primary-dark text-primary-dark text-xl font-bold tracking-wider pl-[1em] -indent-[1ex]"><i class="fa-solid fa-circle-info"></i> <a href="https://kantas-spike.github.io/portfolio/til/2024/01/103-python%E3%81%A7%E5%A4%96%E9%83%A8%E3%83%97%E3%83%AD%E3%82%BB%E3%82%B9%E3%81%AB%E6%A8%99%E6%BA%96%E5%85%A5%E5%8A%9B%E3%81%8B%E3%82%89%E6%83%85%E5%A0%B1%E3%82%92%E6%B8%A1%E3%81%97%E3%81%9F%E3%81%84/">Pythonで外部プロセスに標準入力から情報を渡したい</a></h3>
+    <h3 class="border-b-4 border-primary-dark text-primary-dark text-xl font-bold tracking-wider pl-[1em] -indent-[1ex]"><i class="fa-solid fa-circle-info"></i> <a href="https://kantas-spike.github.io/portfolio/til/2024/01/104-python%E3%81%A7%E5%A4%96%E9%83%A8%E3%83%97%E3%83%AD%E3%82%BB%E3%82%B9%E3%81%AB%E6%A8%99%E6%BA%96%E5%85%A5%E5%8A%9B%E3%81%8B%E3%82%89%E6%83%85%E5%A0%B1%E3%82%92%E6%B8%A1%E3%81%97%E3%81%9F%E3%81%84_%E9%9D%9E%E5%90%8C%E6%9C%9F%E7%89%88/">Pythonで外部プロセスに標準入力から情報を渡したい(非同期版)</a></h3>
     <div class="flex justify-between mt-1 mx-2">
         <div>
             <ul class="flex gap-2 justify-end">
@@ -85,7 +85,9 @@
         <div>
             
             
-            <div class="text-right text-sm font-bold">2024/01/16
+            <div class="text-right text-sm font-bold">2024/01/19
+                
+                    <span class="text-xs text-red-600 font-thin">New</span>
                 
             </div>
             
@@ -94,13 +96,14 @@
 </div>
 
   <div class="article mx-2"><p>Pythonで外部プロセスを実行し、その外部プロセスの標準入力を使って、Pythonから情報を与えたい。</p>
-<p>例えば、以下のように外部プロセス<code>cat -</code>に対して、<code>text.txt</code>の内容をPython経由で、<code>cat -</code>に渡したい。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">cat - &lt; test.txt
-</span></span></code></pre></div><h3 id="解決策">解決策</h3>
-<p><a href="https://docs.python.org/ja/3/library/subprocess.html#popen-constructor">subprocess.Popen()</a>で外部プロセスを起動し、<a href="https://docs.python.org/ja/3/library/subprocess.html#subprocess.Popen.communicate">Popen.communicate(input)</a>を使って、外部プロセスの標準入力に値を渡せば良い。</p>
-<p>以下は、<code>cat -</code>に対して、標準入力から<code>test1\ntest2\ntest3</code>を渡している。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># spike.py</span>
+<p>ただし、<a href="https://docs.python.org/ja/3/library/subprocess.html#subprocess.Popen.communicate">Popen.communicate(input)</a>を使うと、
+プロセス終了まで処理がブロックされるため、標準入力をプロセスに非同期で渡したい。</p>
+<h3 id="解決策">解決策</h3>
+<p><a href="https://docs.python.org/ja/3/library/subprocess.html#popen-constructor">subprocess.Popen</a>の<code>stdin</code>に直接データを書き込めば良い。</p>
+<p>以下は、cat -に対して、標準入力からtest1\ntest2\ntest3を渡している。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># spike2.py</span>
 </span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">subprocess</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">time</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
@@ -113,34 +116,49 @@
 </span></span><span class="line"><span class="cl">        <span class="n">text</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">    <span class="p">)</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="n">stdout</span><span class="p">,</span> <span class="n">stderr</span> <span class="o">=</span> <span class="n">proc</span><span class="o">.</span><span class="n">communicate</span><span class="p">(</span><span class="s2">&#34;test1</span><span class="se">\n</span><span class="s2">test2</span><span class="se">\n</span><span class="s2">test3&#34;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">stdout</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;stdout:&#34;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="n">stdout</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">stderr</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;stderr:&#34;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="n">stderr</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># 標準入力に直接書き込む</span>
+</span></span><span class="line"><span class="cl">    <span class="n">proc</span><span class="o">.</span><span class="n">stdin</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&#34;test1</span><span class="se">\n</span><span class="s2">test2</span><span class="se">\n</span><span class="s2">test3&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">proc</span><span class="o">.</span><span class="n">stdin</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>  <span class="c1"># クローズしないとプロセスが入力待ちのままになる</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1"># プロセスが終了するまで待つ</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># 終了を待つだけなら`proc.wait()`で良い</span>
+</span></span><span class="line"><span class="cl">    <span class="k">while</span> <span class="n">proc</span><span class="o">.</span><span class="n">poll</span><span class="p">()</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="c1"># 必要ならプロセス実行中に、ここで別の処理を行う</span>
+</span></span><span class="line"><span class="cl">        <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;returncode: </span><span class="si">{</span><span class="n">proc</span><span class="o">.</span><span class="n">poll</span><span class="p">()</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;stdout:&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">proc</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&#34;__main__&#34;</span><span class="p">:</span>
 </span></span><span class="line"><span class="cl">    <span class="n">main</span><span class="p">()</span>
 </span></span></code></pre></div><p>実行結果は以下となる。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">$ python spike.py
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">$ python spike2.py
+</span></span><span class="line"><span class="cl">returncode: <span class="m">0</span>
 </span></span><span class="line"><span class="cl">stdout:
 </span></span><span class="line"><span class="cl">test1
 </span></span><span class="line"><span class="cl">test2
 </span></span><span class="line"><span class="cl">test3
-</span></span></code></pre></div><h3 id="参考">参考</h3>
+</span></span></code></pre></div><p>ただし、以下の警告がある。</p>
+<div class="column not-article mx-1 my-4  px-4 py-4 border-2 rounded-md "><div class="text-lg font-bold leading-m tracking-m mb-4 -mx-1">
+      <span class="inline-flex emoji">📄</span><span>警告</span>
+    </div>
+  <div class="mx-2 article">
+    <a href="https://docs.python.org/ja/3/library/subprocess.html#subprocess.Popen.stdin">.stdin.write</a>, <a href="https://docs.python.org/ja/3/library/subprocess.html#subprocess.Popen.stdout">.stdout.read</a>, <a href="https://docs.python.org/ja/3/library/subprocess.html#subprocess.Popen.stderr">.stderr.read</a> を利用すると、別のパイプの OS パイプバッファーがいっぱいになってデッドロックが発生する恐れがあります。これを避けるためには <a href="https://docs.python.org/ja/3/library/subprocess.html#subprocess.Popen.communicate">communicate()</a> を利用してください。
+  </div>
+</div>
+<h3 id="参考">参考</h3>
 <ul>
-<li><a href="https://docs.python.org/ja/3/library/subprocess.html#popen-constructor">Popen コンストラクター このモジュー&hellip; # subprocess &mdash; サブプロセス管理 — Python 3.12.1 ドキュメント</a></li>
-<li><a href="https://docs.python.org/ja/3/library/subprocess.html#subprocess.Popen.communicate">Popen.communicate(inp&hellip; # subprocess &mdash; サブプロセス管理 — Python 3.12.1 ドキュメント</a></li>
-<li><a href="https://qiita.com/ground0state/items/cb7db426682e33cbe1e7">Pythonで外部プロセスと標準入出力で通信する #Python - Qiita</a></li>
-<li><a href="https://stackoverflow.com/questions/46191977/does-subprocess-communicate-close-stdin-after-writing-input-to-it">python - Does subprocess.communicate() close stdin after writing input to it? - Stack Overflow</a></li>
-<li><a href="https://dev.classmethod.jp/articles/python-subprocess-shell-command/#toc-6">非同期に使う # Pythonからシェルコマンドを実行！subprocessでサブプロセスを実行する方法まとめ | DevelopersIO</a></li>
+<li><a href="https://docs.python.org/ja/3/library/subprocess.html#subprocess.Popen.stdin">Popen.stdin # subprocess &mdash; サブプロセス管理 — Python 3.12.1 ドキュメント</a>
+<ul>
+<li><a href="https://docs.python.org/ja/3/library/subprocess.html#:~:text=%E3%81%AB%E3%81%AA%E3%81%A3%E3%81%A6-,%E3%83%87%E3%83%83%E3%83%89%E3%83%AD%E3%83%83%E3%82%AF%E3%81%8C%E7%99%BA%E7%94%9F%E3%81%99%E3%82%8B%E6%81%90%E3%82%8C,-%E3%81%8C%E3%81%82%E3%82%8A%E3%81%BE%E3%81%99">デッドロックが発生する恐れ</a></li>
+</ul>
+</li>
 </ul></div>
   <div class="mt-6">
     <div class="border-t-2 border-primary-dark px-2 pt-2 text-right">
-        <span class="text-sm">作成日: 2024/01/16</span></div>
+        <span class="text-sm">作成日: 2024/01/19</span></div>
 </div>
 
 </div>
