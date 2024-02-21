@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>curl on kanta&#39;s spike</title>
+    <link>https://kantas-spike.github.io/portfolio/tags/curl/</link>
+    <description>Recent content in curl on kanta&#39;s spike</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <copyright>© 2022 kanta&#39;s spike</copyright>
+    <lastBuildDate>Thu, 22 Feb 2024 00:31:17 +0900</lastBuildDate>
+    <atom:link href="https://kantas-spike.github.io/portfolio/tags/curl/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>curlでダウンロードする</title>
+      <link>https://kantas-spike.github.io/portfolio/til/2024/02/105-curl%E3%81%A7%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89%E3%81%99%E3%82%8B/</link>
+      <pubDate>Thu, 22 Feb 2024 00:31:17 +0900</pubDate>
+      <guid>https://kantas-spike.github.io/portfolio/til/2024/02/105-curl%E3%81%A7%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89%E3%81%99%E3%82%8B/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://curl.se/&#34;&gt;curl&lt;/a&gt;を使って、&lt;a href=&#34;https://brew.sh/&#34;&gt;Homebrew&lt;/a&gt;のFomulaファイルをダウンロードしたい。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

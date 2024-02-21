@@ -1,0 +1,209 @@
+<!doctype html>
+<html><head>
+    <title>
+        Homebrewで古いバージョンのパッケージをインストールしたい | kanta&#39;s spike
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+  rel="preload"
+  href="https://kantas-spike.github.io/portfolio/fonts/NotoSansJP-Regular.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin="anonymous"
+/>
+<link
+  rel="preload"
+  href="https://kantas-spike.github.io/portfolio/fonts/NotoSansJP-Bold.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin="anonymous"
+/>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Noto+Emoji:wght@400;500;700&family=Noto+Sans+JP:wght@400;700&display=swap"
+  rel="stylesheet"
+/>
+<link rel="stylesheet" href="https://kantas-spike.github.io/portfolio/css/fonts.978d33a6dcb8af5cc3fc6d102e0cbd3d4f2452dcaae53ff12d45609137df3ed9.css">
+    <link rel="stylesheet" href="https://kantas-spike.github.io/portfolio/css/theme.min.8bd876af72b7281c033be721d5cc088ab6cb09ec42e7dcb837cc06644fa83034.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" /><link rel="stylesheet" href="https://kantas-spike.github.io/portfolio/css/syntax.min.53132d5ecb321e785c36c5e94d619a0e0e5e50abd5435b10c105ebd046929b7a.css"><link rel="apple-touch-icon" sizes="180x180" href="https://kantas-spike.github.io/portfolio/icon180.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://kantas-spike.github.io/portfolio/icon32.png">
+<link rel="icon" type="image/svg+xml" href="https://kantas-spike.github.io/portfolio/icon.svg">
+<link rel="manifest" href="https://kantas-spike.github.io/portfolio/site.webmanifest">
+
+</head><body class="bg-background text-primary-dark pb-4"><header class="bg-primary-dark text-site_title text-6xl font-serif font-extrabold px-4 py-3">
+    <h1 class="container mx-auto px-4"><a href="https://kantas-spike.github.io/portfolio/">kanta&#39;s spike</a></h1>
+</header>
+<input type="checkbox" name="burger_cbx" id="burger_cbx">
+<label for="burger_cbx" class="burger_label">
+    <span class="burger_icon"><svg version="1.1" viewBox="0 0 12.7 12.7" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <rect x="1.0369" y="2.1007" width="10.634" height="1.0426" ry=".5213"/>
+  <rect x="1.0369" y="4.571" width="10.634" height="1.0426" ry=".5213"/>
+  <rect x="1.0369" y="7.0413" width="10.634" height="1.0426" ry=".5213"/>
+  <rect x="1.0369" y="9.5115" width="10.634" height="1.0426" ry=".5213"/>
+ </g>
+</svg>
+</span>
+</label>
+<label for="burger_cbx" class="close_label">
+    <span class="close_icon"><svg version="1.1" viewBox="0 0 12.7 12.7" xmlns="http://www.w3.org/2000/svg">
+ <rect transform="rotate(45.535)" x="3.6678" y="-.6148" width="10.634" height="1.0426" ry=".5213"/>
+ <rect transform="rotate(135.53)" x="-5.4104" y="-9.5059" width="10.634" height="1.0426" ry=".5213"/>
+</svg>
+</span>
+</label>
+<div class="nav_area">
+    <nav class="container mx-auto bg-primary text-on-primary text-center flex flex-col md:flex-row justify-start">
+            <a href="https://kantas-spike.github.io/portfolio/" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Home</a>
+            <a href="https://kantas-spike.github.io/portfolio/til" class="box-border flex-1 text-center no-underline bg-primary-light text-on-primary-light font-bold py-2">TIL</a>
+            <a href="https://kantas-spike.github.io/portfolio/dialogues" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Dialogues</a>
+            <a href="https://kantas-spike.github.io/portfolio/articles" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Articles</a>
+            <a href="https://kantas-spike.github.io/portfolio/mytools" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">My Tools</a>
+            <a href="https://kantas-spike.github.io/portfolio/ihc" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">IHC</a>
+            <a href="https://kantas-spike.github.io/portfolio/tags" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Tags</a>
+        <div class="flex-none" id="search_menu"></div>
+    </nav>
+</div>
+<main id="content" class="container mx-auto bg-surface pt-4 pb-8">
+<div class="area_border px-4 py-3 mx-4 md:mx-auto pb-4 max-w-[60rem]">
+  
+
+
+
+<div class="mb-4">
+    <h3 class="border-b-4 border-primary-dark text-primary-dark text-xl font-bold tracking-wider pl-[1em] -indent-[1ex]"><i class="fa-solid fa-circle-info"></i> <a href="https://kantas-spike.github.io/portfolio/til/2024/02/106-homebrew%E3%81%A7%E5%8F%A4%E3%81%84%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E3%81%AE%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%97%E3%81%9F%E3%81%84/">Homebrewで古いバージョンのパッケージをインストールしたい</a></h3>
+    <div class="flex justify-between mt-1 mx-2">
+        <div>
+            <ul class="flex gap-2 justify-end">
+            
+            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/homebrew/">#homebrew</a></li>
+            
+            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/tool/">#tool</a></li>
+            
+            </ul>
+        </div>
+        <div>
+            
+            
+            <div class="text-right text-sm font-bold">2024/02/22
+                
+                    <span class="text-xs text-red-600 font-thin">New</span>
+                
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+  <div class="article mx-2"><p><a href="https://brew.sh/">Homebrew</a>で、最新版の<a href="https://github.com/gohugoio/hugo">hugo</a>をインストールしたら、ブログの生成に失敗した。古いバージョンに戻したい。</p>
+<p>以下のコマンドで、<code>hugo v0.123.1</code>をインストールした。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">brew upgrade hugo
+</span></span></code></pre></div><p>しかし、このバージョンでは、私のブログは生成時にエラーになる。
+動作確認ができている<code>hugo</code>の<code>v0.122.0</code>にバージョンを戻したい。</p>
+<h4 id="brewのバージョン"><code>brew</code>のバージョン</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">$ brew -v
+</span></span><span class="line"><span class="cl">Homebrew 4.2.9-63-g6a9c9c0
+</span></span></code></pre></div><h3 id="解決策">解決策</h3>
+<p><code>brew</code>には <a href="https://docs.brew.sh/Taps">Taps (Third-Party Repositories)</a>という、独自の<code>Formula</code> <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> を管理するためのリポジトリを追加できる。
+新たな<code>tap</code>を作成し、古い<code>hugo</code>パッケージの<code>Formula</code>をダウンロードして管理すれば良い。<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></p>
+<p>手順は以下となる。</p>
+<ol>
+<li>
+<p>エラーが発生する最新の<code>hugo v0.123.1</code>をアンインストール</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">brew uninstall hugo
+</span></span></code></pre></div></li>
+<li>
+<p><code>kanta/olds</code>という名前の<code>tap</code>を以下のコマンドで作成</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">brew tap-new kanta/olds
+</span></span></code></pre></div></li>
+<li>
+<p>作成された<code>tap</code>(<code>kanta/olds</code>)のパスを確認</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">$ brew tap-info kanta/olds
+</span></span><span class="line"><span class="cl">kanta/olds: no commands/casks/formulae, private
+</span></span><span class="line"><span class="cl">/usr/local/Homebrew/Library/Taps/kanta/homebrew-olds <span class="o">(</span><span class="m">33</span> files, 34.2KB<span class="o">)</span>
+</span></span><span class="line"><span class="cl">From: N/A
+</span></span></code></pre></div></li>
+<li>
+<p><code>tap</code>(<code>kanta/olds</code>)の<code>Formula</code>ディレクトリに移動</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">$ <span class="nb">cd</span> /usr/local/Homebrew/Library/Taps/kanta/homebrew-olds
+</span></span><span class="line"><span class="cl">$ ls
+</span></span><span class="line"><span class="cl">Formula         README.md
+</span></span><span class="line"><span class="cl">$ <span class="nb">cd</span> Formula
+</span></span></code></pre></div></li>
+<li>
+<p><code>hugo v0.122.0</code>の<code>Formula</code>をダウンロード <sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">$ <span class="nb">pwd</span>
+</span></span><span class="line"><span class="cl">/usr/local/Homebrew/Library/Taps/kanta/homebrew-olds/Formula
+</span></span><span class="line"><span class="cl">$ curl -OL https://github.com/Homebrew/homebrew-core/raw/2fd8dba871a6a5412fa7c00b12ac99b5738cd199/Formula/h/hugo.rb
+</span></span><span class="line"><span class="cl">$ ls
+</span></span><span class="line"><span class="cl">hugo.rb
+</span></span></code></pre></div></li>
+<li>
+<p><code>brew search hugo</code>で追加した<code>Formula</code>を確認</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">$ brew search hugo --formula
+</span></span><span class="line"><span class="cl"><span class="o">==</span>&gt; Formulae
+</span></span><span class="line"><span class="cl">hugo                    kanta/olds/hugo <span class="c1"># &lt;= 追加されている!!</span>
+</span></span></code></pre></div></li>
+<li>
+<p><code>hugo v0.122.0</code>をインストール</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">$ brew install kanta/olds/hugo
+</span></span><span class="line"><span class="cl">$ hugo version
+</span></span><span class="line"><span class="cl">hugo v0.122.0-b9a03bd59d5f71a529acb3e33f995e0ef332b3aa+extended darwin/amd64 <span class="nv">BuildDate</span><span class="o">=</span>2024-01-26T15:54:24Z <span class="nv">VendorInfo</span><span class="o">=</span>brew
+</span></span></code></pre></div></li>
+</ol>
+<h3 id="参考">参考</h3>
+<ul>
+<li><a href="https://docs.brew.sh/Taps">Taps (Third-Party Repositories) — Homebrew Documentation</a></li>
+<li><a href="https://blog.chick-p.work/til/brew-install-specify-version">Homebrew で Formula にない任意のバージョンのパッケージをインストールする - ひよこまめ</a></li>
+<li><a href="https://github.com/Homebrew/homebrew-core/commits/1c4eb0bb51c67a74a1de9861ae6c837afbbb8406/Formula/h/hugo.rb">History for Formula/h/hugo.rb - Homebrew/homebrew-core</a></li>
+</ul>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p><code>Formula</code>とはパッケージのインストール手順を記載した<code>brew</code>専用のスクリプトファイル&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p><code>Homebrew</code>のv4以前であれば<code>brew extract</code>コマンドで<code>tap</code>に指定したバージョン<code>Formula</code>を作成できるようだ。しかし、v4以降ではできないため、<code>curl</code>を使って手動で<code>Formula</code>をダウンロードする方針とする。&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3">
+<p><a href="https://github.com/Homebrew/homebrew-core/commits/1c4eb0bb51c67a74a1de9861ae6c837afbbb8406/Formula/h/hugo.rb">History for Formula/h/hugo.rb - Homebrew/homebrew-core</a>から該当バージョンのURLを取得する&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div></div>
+  <div class="mt-6">
+    <div class="border-t-2 border-primary-dark px-2 pt-2 text-right">
+        <span class="text-sm">作成日: 2024/02/22</span></div>
+</div>
+
+</div>
+
+
+    </main><footer class="bg-primary-dark text-center text-on-primary-dark fixed bottom-0 w-full h-8">
+    <div class="container mx-auto grid grid-cols-3">
+        <div class="col-start-1 col-span-2 ml-2 md:ml-0 md:col-start-2 md:col-span-1">
+            <div class="text-left md:text-center text-sm pt-2">© 2022 kanta&#39;s spike</div>
+        </div>
+        <div class="col-start-3 flex justify-end gap-2 mr-2">
+            
+                
+            <a title="Twitter" class="text-2xl" href="https://twitter.com/KantasSpike"><i class="fa-brands fa-twitter-square"></i></a>
+                
+            <a title="Youtube" class="text-2xl" href="https://www.youtube.com/channel/UCnVBuUGMYAt7ZuIkadxnMfw"><i class="fa-brands fa-youtube-square"></i></a>
+                
+            <a title="GitHub" class="text-2xl" href="https://github.com/kantas-spike"><i class="fa-brands fa-github-square"></i></a>
+                
+            <a title="Blog" class="text-2xl" href="https://kantas-spike.github.io/portfolio/"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                
+            
+        </div>
+    </div>
+</footer> 
+
+
+
+
+<script defer type="text/javascript" src="https://kantas-spike.github.io/portfolio/js/search-form.07066240729fbbddf7f08e0938e5a7a060da185ec1c29e438984cfa6c2ff2386dd2ef58d9c7af295b66d187cc9c180f4aa62433709f8bf8813c39c1e239b641e.js" integrity="sha512-BwZiQHKfu9338I4JOOWnoGDaGF7Bwp5DiYTPpsL/I4bdLvWNnHrylbZtGHzJwYD0qmJDNwn4v4gTw5weI5tkHg=="></script></body>
+</html>
