@@ -1,5 +1,4 @@
 baseURL = 'https://kantas-spike.github.io/portfolio/'
-canonifyURLs = true
 
 languageCode = 'ja-jp'
 title = "kanta's spike"
