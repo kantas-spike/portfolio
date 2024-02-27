@@ -1,2 +1,4 @@
 github.com/kantas-spike/kantas-theme v0.0.0-20230928195921-52393738eda2 h1:66OadB78B84GrKd2w+rhdef2xRuA3gkHmKVEZLWxW88=
 github.com/kantas-spike/kantas-theme v0.0.0-20230928195921-52393738eda2/go.mod h1:JqwDpTVsoSYjatO4oXOFvZe7WnB+hTy91w+y+saDf7E=
+github.com/kantas-spike/my-shortcodes v0.0.0-20231115151810-93412b113e05 h1:KLfNfF+2Ayo4Om7TnejC4utP2+rcHSthWWPGiCU0khI=
+github.com/kantas-spike/my-shortcodes v0.0.0-20231115151810-93412b113e05/go.mod h1:zsyx2IQ/iD0m+Xu7klv9DIswsasOSmOWXScExg/3QVs=

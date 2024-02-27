@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>tool on kanta&#39;s spike</title>
+    <title>Tool on kanta&#39;s spike</title>
     <link>https://kantas-spike.github.io/portfolio/tags/tool/</link>
-    <description>Recent content in tool on kanta&#39;s spike</description>
+    <description>Recent content in Tool on kanta&#39;s spike</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>© 2022 kanta&#39;s spike</copyright>
-    <lastBuildDate>Thu, 22 Feb 2024 00:40:46 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 28 Feb 2024 02:04:22 +0900</lastBuildDate>
     <atom:link href="https://kantas-spike.github.io/portfolio/tags/tool/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Webページを PDF化したい</title>
+      <link>https://kantas-spike.github.io/portfolio/til/2024/02/107-web%E3%83%9A%E3%83%BC%E3%82%B8%E3%82%92pdf%E5%8C%96%E3%81%97%E3%81%9F%E3%81%84/</link>
+      <pubDate>Wed, 28 Feb 2024 02:04:22 +0900</pubDate>
+      <guid>https://kantas-spike.github.io/portfolio/til/2024/02/107-web%E3%83%9A%E3%83%BC%E3%82%B8%E3%82%92pdf%E5%8C%96%E3%81%97%E3%81%9F%E3%81%84/</guid>
+      <description>&lt;p&gt;Webサイトで公開したページをPDF化して、ブックリーダーなどでオフラインでも読めるようにしたい。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Homebrewで古いバージョンのパッケージをインストールしたい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2024/02/106-homebrew%E3%81%A7%E5%8F%A4%E3%81%84%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E3%81%AE%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%97%E3%81%9F%E3%81%84/</link>

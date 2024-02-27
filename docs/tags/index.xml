@@ -7,59 +7,66 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>© 2022 kanta&#39;s spike</copyright>
-    <lastBuildDate>Thu, 22 Feb 2024 00:40:46 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 28 Feb 2024 02:04:22 +0900</lastBuildDate>
     <atom:link href="https://kantas-spike.github.io/portfolio/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>homebrew</title>
+      <title>Pandoc</title>
+      <link>https://kantas-spike.github.io/portfolio/tags/pandoc/</link>
+      <pubDate>Wed, 28 Feb 2024 02:04:22 +0900</pubDate>
+      <guid>https://kantas-spike.github.io/portfolio/tags/pandoc/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tool</title>
+      <link>https://kantas-spike.github.io/portfolio/tags/tool/</link>
+      <pubDate>Wed, 28 Feb 2024 02:04:22 +0900</pubDate>
+      <guid>https://kantas-spike.github.io/portfolio/tags/tool/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Homebrew</title>
       <link>https://kantas-spike.github.io/portfolio/tags/homebrew/</link>
       <pubDate>Thu, 22 Feb 2024 00:40:46 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/tags/homebrew/</guid>
       <description></description>
     </item>
     <item>
-      <title>tool</title>
-      <link>https://kantas-spike.github.io/portfolio/tags/tool/</link>
-      <pubDate>Thu, 22 Feb 2024 00:40:46 +0900</pubDate>
-      <guid>https://kantas-spike.github.io/portfolio/tags/tool/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>curl</title>
+      <title>Curl</title>
       <link>https://kantas-spike.github.io/portfolio/tags/curl/</link>
       <pubDate>Thu, 22 Feb 2024 00:31:17 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/tags/curl/</guid>
       <description></description>
     </item>
     <item>
-      <title>python</title>
+      <title>Python</title>
       <link>https://kantas-spike.github.io/portfolio/tags/python/</link>
       <pubDate>Fri, 19 Jan 2024 23:35:31 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/tags/python/</guid>
       <description></description>
     </item>
     <item>
-      <title>blender</title>
+      <title>Blender</title>
       <link>https://kantas-spike.github.io/portfolio/tags/blender/</link>
       <pubDate>Fri, 12 Jan 2024 23:11:31 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/tags/blender/</guid>
       <description></description>
     </item>
     <item>
-      <title>blender-addon</title>
+      <title>Blender-Addon</title>
       <link>https://kantas-spike.github.io/portfolio/tags/blender-addon/</link>
       <pubDate>Fri, 12 Jan 2024 23:11:31 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/tags/blender-addon/</guid>
       <description></description>
     </item>
     <item>
-      <title>hugo</title>
+      <title>Hugo</title>
       <link>https://kantas-spike.github.io/portfolio/tags/hugo/</link>
       <pubDate>Thu, 21 Dec 2023 14:33:18 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/tags/hugo/</guid>
       <description></description>
     </item>
     <item>
-      <title>macos</title>
+      <title>Macos</title>
       <link>https://kantas-spike.github.io/portfolio/tags/macos/</link>
       <pubDate>Wed, 20 Dec 2023 22:15:43 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/tags/macos/</guid>
@@ -80,7 +87,7 @@
       <description></description>
     </item>
     <item>
-      <title>git</title>
+      <title>Git</title>
       <link>https://kantas-spike.github.io/portfolio/tags/git/</link>
       <pubDate>Wed, 22 Nov 2023 22:41:26 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/tags/git/</guid>
@@ -94,7 +101,7 @@
       <description></description>
     </item>
     <item>
-      <title>color</title>
+      <title>Color</title>
       <link>https://kantas-spike.github.io/portfolio/tags/color/</link>
       <pubDate>Fri, 17 Nov 2023 10:27:20 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/tags/color/</guid>
@@ -108,14 +115,14 @@
       <description></description>
     </item>
     <item>
-      <title>javascript</title>
+      <title>Javascript</title>
       <link>https://kantas-spike.github.io/portfolio/tags/javascript/</link>
       <pubDate>Fri, 17 Nov 2023 10:23:01 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/tags/javascript/</guid>
       <description></description>
     </item>
     <item>
-      <title>nodejs</title>
+      <title>Nodejs</title>
       <link>https://kantas-spike.github.io/portfolio/tags/nodejs/</link>
       <pubDate>Fri, 17 Nov 2023 10:23:01 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/tags/nodejs/</guid>
@@ -129,119 +136,119 @@
       <description></description>
     </item>
     <item>
-      <title>typescript</title>
+      <title>Typescript</title>
       <link>https://kantas-spike.github.io/portfolio/tags/typescript/</link>
       <pubDate>Tue, 07 Nov 2023 10:58:43 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/tags/typescript/</guid>
       <description></description>
     </item>
     <item>
-      <title>eslint</title>
+      <title>Eslint</title>
       <link>https://kantas-spike.github.io/portfolio/tags/eslint/</link>
       <pubDate>Sun, 05 Nov 2023 11:29:23 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/tags/eslint/</guid>
       <description></description>
     </item>
     <item>
-      <title>vscode</title>
+      <title>Vscode</title>
       <link>https://kantas-spike.github.io/portfolio/tags/vscode/</link>
       <pubDate>Sun, 05 Nov 2023 11:29:23 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/tags/vscode/</guid>
       <description></description>
     </item>
     <item>
-      <title>json</title>
+      <title>Json</title>
       <link>https://kantas-spike.github.io/portfolio/tags/json/</link>
       <pubDate>Fri, 29 Sep 2023 16:25:24 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/tags/json/</guid>
       <description></description>
     </item>
     <item>
-      <title>render_hooks</title>
+      <title>Render_hooks</title>
       <link>https://kantas-spike.github.io/portfolio/tags/render_hooks/</link>
       <pubDate>Thu, 27 Jul 2023 23:27:25 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/tags/render_hooks/</guid>
       <description></description>
     </item>
     <item>
-      <title>shortcodes</title>
+      <title>Shortcodes</title>
       <link>https://kantas-spike.github.io/portfolio/tags/shortcodes/</link>
       <pubDate>Thu, 27 Jul 2023 23:27:25 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/tags/shortcodes/</guid>
       <description></description>
     </item>
     <item>
-      <title>english</title>
+      <title>English</title>
       <link>https://kantas-spike.github.io/portfolio/tags/english/</link>
       <pubDate>Fri, 21 Jul 2023 16:13:15 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/tags/english/</guid>
       <description></description>
     </item>
     <item>
-      <title>siri</title>
+      <title>Siri</title>
       <link>https://kantas-spike.github.io/portfolio/tags/siri/</link>
       <pubDate>Fri, 21 Jul 2023 16:13:15 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/tags/siri/</guid>
       <description></description>
     </item>
     <item>
-      <title>next.js</title>
+      <title>Next.js</title>
       <link>https://kantas-spike.github.io/portfolio/tags/next.js/</link>
       <pubDate>Mon, 10 Jul 2023 06:01:59 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/tags/next.js/</guid>
       <description></description>
     </item>
     <item>
-      <title>font</title>
+      <title>Font</title>
       <link>https://kantas-spike.github.io/portfolio/tags/font/</link>
       <pubDate>Wed, 07 Jun 2023 14:50:17 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/tags/font/</guid>
       <description></description>
     </item>
     <item>
-      <title>css</title>
+      <title>Css</title>
       <link>https://kantas-spike.github.io/portfolio/tags/css/</link>
       <pubDate>Tue, 06 Jun 2023 06:30:58 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/tags/css/</guid>
       <description></description>
     </item>
     <item>
-      <title>tailwindcss</title>
+      <title>Tailwindcss</title>
       <link>https://kantas-spike.github.io/portfolio/tags/tailwindcss/</link>
       <pubDate>Tue, 06 Jun 2023 06:30:58 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/tags/tailwindcss/</guid>
       <description></description>
     </item>
     <item>
-      <title>html</title>
+      <title>Html</title>
       <link>https://kantas-spike.github.io/portfolio/tags/html/</link>
       <pubDate>Fri, 02 Jun 2023 06:03:54 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/tags/html/</guid>
       <description></description>
     </item>
     <item>
-      <title>react</title>
+      <title>React</title>
       <link>https://kantas-spike.github.io/portfolio/tags/react/</link>
       <pubDate>Wed, 31 May 2023 02:16:55 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/tags/react/</guid>
       <description></description>
     </item>
     <item>
-      <title>kindle</title>
+      <title>Kindle</title>
       <link>https://kantas-spike.github.io/portfolio/tags/kindle/</link>
       <pubDate>Tue, 25 Apr 2023 17:54:10 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/tags/kindle/</guid>
       <description></description>
     </item>
     <item>
-      <title>uri_scheme</title>
+      <title>Uri_scheme</title>
       <link>https://kantas-spike.github.io/portfolio/tags/uri_scheme/</link>
       <pubDate>Tue, 25 Apr 2023 17:54:10 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/tags/uri_scheme/</guid>
       <description></description>
     </item>
     <item>
-      <title>programming</title>
+      <title>Programming</title>
       <link>https://kantas-spike.github.io/portfolio/tags/programming/</link>
       <pubDate>Wed, 05 Apr 2023 02:16:01 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/tags/programming/</guid>
@@ -262,28 +269,28 @@
       <description></description>
     </item>
     <item>
-      <title>copyright</title>
+      <title>Copyright</title>
       <link>https://kantas-spike.github.io/portfolio/tags/copyright/</link>
       <pubDate>Fri, 17 Feb 2023 11:58:17 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/tags/copyright/</guid>
       <description></description>
     </item>
     <item>
-      <title>poetry</title>
+      <title>Poetry</title>
       <link>https://kantas-spike.github.io/portfolio/tags/poetry/</link>
       <pubDate>Fri, 17 Feb 2023 07:20:29 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/tags/poetry/</guid>
       <description></description>
     </item>
     <item>
-      <title>jupyter</title>
+      <title>Jupyter</title>
       <link>https://kantas-spike.github.io/portfolio/tags/jupyter/</link>
       <pubDate>Thu, 16 Feb 2023 08:44:35 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/tags/jupyter/</guid>
       <description></description>
     </item>
     <item>
-      <title>make</title>
+      <title>Make</title>
       <link>https://kantas-spike.github.io/portfolio/tags/make/</link>
       <pubDate>Thu, 09 Feb 2023 07:21:11 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/tags/make/</guid>
@@ -297,56 +304,56 @@
       <description></description>
     </item>
     <item>
-      <title>shellscript</title>
+      <title>Shellscript</title>
       <link>https://kantas-spike.github.io/portfolio/tags/shellscript/</link>
       <pubDate>Wed, 08 Feb 2023 23:53:39 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/tags/shellscript/</guid>
       <description></description>
     </item>
     <item>
-      <title>ghostscript</title>
+      <title>Ghostscript</title>
       <link>https://kantas-spike.github.io/portfolio/tags/ghostscript/</link>
       <pubDate>Wed, 08 Feb 2023 19:54:23 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/tags/ghostscript/</guid>
       <description></description>
     </item>
     <item>
-      <title>pdf</title>
+      <title>Pdf</title>
       <link>https://kantas-spike.github.io/portfolio/tags/pdf/</link>
       <pubDate>Wed, 08 Feb 2023 19:54:23 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/tags/pdf/</guid>
       <description></description>
     </item>
     <item>
-      <title>plotly</title>
+      <title>Plotly</title>
       <link>https://kantas-spike.github.io/portfolio/tags/plotly/</link>
       <pubDate>Wed, 08 Feb 2023 09:46:02 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/tags/plotly/</guid>
       <description></description>
     </item>
     <item>
-      <title>mathjax</title>
+      <title>Mathjax</title>
       <link>https://kantas-spike.github.io/portfolio/tags/mathjax/</link>
       <pubDate>Wed, 08 Feb 2023 09:15:06 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/tags/mathjax/</guid>
       <description></description>
     </item>
     <item>
-      <title>spotlight</title>
+      <title>Spotlight</title>
       <link>https://kantas-spike.github.io/portfolio/tags/spotlight/</link>
       <pubDate>Tue, 07 Feb 2023 00:30:31 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/tags/spotlight/</guid>
       <description></description>
     </item>
     <item>
-      <title>uuid</title>
+      <title>Uuid</title>
       <link>https://kantas-spike.github.io/portfolio/tags/uuid/</link>
       <pubDate>Wed, 18 Jan 2023 13:19:05 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/tags/uuid/</guid>
       <description></description>
     </item>
     <item>
-      <title>argparse</title>
+      <title>Argparse</title>
       <link>https://kantas-spike.github.io/portfolio/tags/argparse/</link>
       <pubDate>Tue, 17 Jan 2023 15:46:23 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/tags/argparse/</guid>
@@ -367,7 +374,7 @@
       <description></description>
     </item>
     <item>
-      <title>hacking</title>
+      <title>Hacking</title>
       <link>https://kantas-spike.github.io/portfolio/tags/hacking/</link>
       <pubDate>Sun, 04 Sep 2022 08:55:25 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/tags/hacking/</guid>
@@ -381,7 +388,7 @@
       <description></description>
     </item>
     <item>
-      <title>quotation</title>
+      <title>Quotation</title>
       <link>https://kantas-spike.github.io/portfolio/tags/quotation/</link>
       <pubDate>Sat, 27 Aug 2022 04:23:14 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/tags/quotation/</guid>
@@ -395,49 +402,49 @@
       <description></description>
     </item>
     <item>
-      <title>tkinter</title>
+      <title>Tkinter</title>
       <link>https://kantas-spike.github.io/portfolio/tags/tkinter/</link>
       <pubDate>Sun, 07 Aug 2022 02:18:55 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/tags/tkinter/</guid>
       <description></description>
     </item>
     <item>
-      <title>matplotlib</title>
+      <title>Matplotlib</title>
       <link>https://kantas-spike.github.io/portfolio/tags/matplotlib/</link>
       <pubDate>Sun, 31 Jul 2022 21:13:04 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/tags/matplotlib/</guid>
       <description></description>
     </item>
     <item>
-      <title>numpy</title>
+      <title>Numpy</title>
       <link>https://kantas-spike.github.io/portfolio/tags/numpy/</link>
       <pubDate>Sun, 31 Jul 2022 21:13:04 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/tags/numpy/</guid>
       <description></description>
     </item>
     <item>
-      <title>svg</title>
+      <title>Svg</title>
       <link>https://kantas-spike.github.io/portfolio/tags/svg/</link>
       <pubDate>Sun, 24 Jul 2022 08:11:18 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/tags/svg/</guid>
       <description></description>
     </item>
     <item>
-      <title>markdown</title>
+      <title>Markdown</title>
       <link>https://kantas-spike.github.io/portfolio/tags/markdown/</link>
       <pubDate>Sat, 23 Jul 2022 12:34:13 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/tags/markdown/</guid>
       <description></description>
     </item>
     <item>
-      <title>syntax_highlight</title>
+      <title>Syntax_highlight</title>
       <link>https://kantas-spike.github.io/portfolio/tags/syntax_highlight/</link>
       <pubDate>Fri, 22 Jul 2022 14:35:35 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/tags/syntax_highlight/</guid>
       <description></description>
     </item>
     <item>
-      <title>mermaid.js</title>
+      <title>Mermaid.js</title>
       <link>https://kantas-spike.github.io/portfolio/tags/mermaid.js/</link>
       <pubDate>Fri, 22 Jul 2022 13:49:28 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/tags/mermaid.js/</guid>
