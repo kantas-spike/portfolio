@@ -7,8 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>© 2022 kanta&#39;s spike</copyright>
-    <lastBuildDate>Tue, 14 Mar 2023 12:05:30 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 28 Mar 2024 06:15:17 +0900</lastBuildDate>
     <atom:link href="https://kantas-spike.github.io/portfolio/tags/inkscape/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Inkscapeでページサイズを図形サイズに合わせたい</title>
+      <link>https://kantas-spike.github.io/portfolio/til/2024/03/108-inkscape%E3%81%A7%E7%94%BB%E5%83%8F%E3%82%B5%E3%82%A4%E3%82%BA%E3%81%A8%E3%83%9A%E3%83%BC%E3%82%B8%E3%82%B5%E3%82%A4%E3%82%BA%E3%82%92%E5%90%88%E3%82%8F%E3%81%9B%E3%81%9F%E3%81%84/</link>
+      <pubDate>Thu, 28 Mar 2024 06:15:17 +0900</pubDate>
+      <guid>https://kantas-spike.github.io/portfolio/til/2024/03/108-inkscape%E3%81%A7%E7%94%BB%E5%83%8F%E3%82%B5%E3%82%A4%E3%82%BA%E3%81%A8%E3%83%9A%E3%83%BC%E3%82%B8%E3%82%B5%E3%82%A4%E3%82%BA%E3%82%92%E5%90%88%E3%82%8F%E3%81%9B%E3%81%9F%E3%81%84/</guid>
+      <description>&lt;p&gt;Inkscapeで、ドキュメントのサイズを、作成した図形のサイズに合せたい。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Inkscapeでオブジェクトを作成する前に色を設定したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2023/03/48-set-color-to-object-with-inkscape/</link>

@@ -1,0 +1,204 @@
+<!doctype html>
+<html><head>
+    <title>
+        Libre Officdeでドキュメントを指定したサイズの PNG画像でエクスポートしたい | kanta&#39;s spike
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<link
+  rel="preload"
+  href="/portfolio/fonts/notosansjp-bold.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin="anonymous"
+/>
+
+<link
+  rel="preload"
+  href="/portfolio/fonts/notosansjp-regular.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin="anonymous"
+/>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Noto+Emoji:wght@400;500;700&family=Noto+Sans+JP:wght@400;700&display=swap"
+  rel="stylesheet"
+/>
+<link rel="stylesheet" href="/portfolio/css/fonts.598ae1b8a36eef149fd604bc4a326391fe472bc4628f92811ed047364d446748.css">
+    <link rel="stylesheet" href="/portfolio/css/theme.min.8bd876af72b7281c033be721d5cc088ab6cb09ec42e7dcb837cc06644fa83034.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" /><link rel="stylesheet" href="/portfolio/css/syntax.min.53132d5ecb321e785c36c5e94d619a0e0e5e50abd5435b10c105ebd046929b7a.css">
+<link rel="icon" type="image/png" sizes="512x512" href="/portfolio/icon512.png" />
+ 
+<link rel="icon" type="image/png" sizes="192x192" href="/portfolio/icon192.png" />
+ 
+<link rel="apple-touch-icon" sizes="180x180" href="/portfolio/icon180.png" />
+ 
+<link rel="icon" type="image/png" sizes="32x32" href="/portfolio/icon32.png" />
+ 
+<link rel="icon" type="image/svg+xml" href="/portfolio/icon.svg" />
+ 
+<link rel="manifest" href="/portfolio/site.webmanifest" />
+
+
+</head><body class="bg-background text-primary-dark pb-4"><header class="bg-primary-dark text-site_title text-6xl font-serif font-extrabold px-4 py-3">
+    <h1 class="container mx-auto px-4"><a href="https://kantas-spike.github.io/portfolio/">kanta&#39;s spike</a></h1>
+</header>
+<input type="checkbox" name="burger_cbx" id="burger_cbx">
+<label for="burger_cbx" class="burger_label">
+    <span class="burger_icon"><svg version="1.1" viewBox="0 0 12.7 12.7" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <rect x="1.0369" y="2.1007" width="10.634" height="1.0426" ry=".5213"/>
+  <rect x="1.0369" y="4.571" width="10.634" height="1.0426" ry=".5213"/>
+  <rect x="1.0369" y="7.0413" width="10.634" height="1.0426" ry=".5213"/>
+  <rect x="1.0369" y="9.5115" width="10.634" height="1.0426" ry=".5213"/>
+ </g>
+</svg>
+</span>
+</label>
+<label for="burger_cbx" class="close_label">
+    <span class="close_icon"><svg version="1.1" viewBox="0 0 12.7 12.7" xmlns="http://www.w3.org/2000/svg">
+ <rect transform="rotate(45.535)" x="3.6678" y="-.6148" width="10.634" height="1.0426" ry=".5213"/>
+ <rect transform="rotate(135.53)" x="-5.4104" y="-9.5059" width="10.634" height="1.0426" ry=".5213"/>
+</svg>
+</span>
+</label>
+<div class="nav_area">
+    <nav class="container mx-auto bg-primary text-on-primary text-center flex flex-col md:flex-row justify-start">
+            <a href="/portfolio/" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Home</a>
+            <a href="/portfolio/til" class="box-border flex-1 text-center no-underline bg-primary-light text-on-primary-light font-bold py-2">TIL</a>
+            <a href="/portfolio/dialogues" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Dialogues</a>
+            <a href="/portfolio/articles" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Articles</a>
+            <a href="/portfolio/mytools" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">My Tools</a>
+            <a href="/portfolio/ihc" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">IHC</a>
+            <a href="/portfolio/tags" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Tags</a>
+        <div class="flex-none" id="search_menu"></div>
+    </nav>
+</div>
+<main id="content" class="container mx-auto bg-surface pt-4 pb-8">
+<div class="area_border px-4 py-3 mx-4 md:mx-auto pb-4 max-w-[60rem]">
+  
+
+
+
+<div class="mb-4">
+    <h3 class="border-b-4 border-primary-dark text-primary-dark text-xl font-bold tracking-wider pl-[1em] -indent-[1ex]"><i class="fa-solid fa-circle-info"></i> <a href="https://kantas-spike.github.io/portfolio/til/2024/03/109-libreofficde%E3%81%A7%E3%83%89%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88%E3%82%92%E6%8C%87%E5%AE%9A%E3%81%97%E3%81%9F%E3%82%B5%E3%82%A4%E3%82%BA%E3%81%AEpng%E7%94%BB%E5%83%8F%E3%81%A7%E3%82%A8%E3%82%AF%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%88%E3%81%97%E3%81%9F%E3%81%84/">Libre Officdeでドキュメントを指定したサイズの PNG画像でエクスポートしたい</a></h3>
+    <div class="flex justify-between mt-1 mx-2">
+        <div>
+            <ul class="flex gap-2 justify-end">
+            
+            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/libreoffice/">#LibreOffice</a></li>
+            
+            </ul>
+        </div>
+        <div>
+            
+            
+            <div class="text-right text-sm font-bold">2024/03/28
+                
+                    <span class="text-xs text-red-600 font-thin">New</span>
+                
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+  <div class="article mx-2"><div class="column not-article mx-1 my-4  px-4 py-4 border-2 rounded-md ">
+  <div class="text-lg font-bold leading-m tracking-m mb-4 -mx-1">
+      <span class="inline-flex emoji justify-center">
+        <span>Q. </span>
+        
+        <span>質問</span>
+      </span>
+    </div>
+  <div class="mx-2 article">
+    LibreOffice Drawで <code>1920 x 1080 px</code> のエクスポート画像(PNG)を作成するには、ドキュメントのサイズを 何cm × 何cm にすれば良いか?
+  </div>
+</div>
+<p>LibreOfficeのDrawでスライド原稿を作成したい。
+作成したスライドは最終的に動画にするため、ドキュメントを以下のサイズのPNG画像にエクスポートしたい。</p>
+<p><code>1920 x 1080 px</code> or <code>1080 x 1920 px</code></p>
+<h3 id="解決策">解決策</h3>
+<div class="column not-article mx-1 my-4  px-4 py-4 border-2 rounded-md ">
+  <div class="text-lg font-bold leading-m tracking-m mb-4 -mx-1">
+      <span class="inline-flex emoji justify-center">
+        <span>A. </span>
+        
+        <span>答え</span>
+      </span>
+    </div>
+  <div class="mx-2 article">
+    <code>1920 x 1080 px</code> のPNG画像を作成するには、<code>50.8 x 28.575 cm</code>のドキュメントが必要になる。
+  </div>
+</div>
+<h4 id="確認方法">確認方法</h4>
+<p><a href="https://help.libreoffice.org/latest/ja/text/shared/00/00000003.html">libreOfficeの単位</a> によると、1インチは以下となる。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt"><span class="line"><span class="cl">1 インチ -&gt; 2.54 cm
+</span></span></code></pre></div><p>また、LibreOfficeがドキュメントをPNGへの変換する際は、<code>96dpi</code>で変換しているようだ。</p>
+<p>上記の情報と推測から以下のスクリプトで必要なドキュメントのサイズ(単位:cm)を計算できる。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">dpi</span> <span class="o">=</span> <span class="mi">96</span> <span class="c1"># 想像の値(≒ 単位: px/inch)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 欲しい画像サイズ(単位:px)</span>
+</span></span><span class="line"><span class="cl"><span class="n">w_px</span> <span class="o">=</span> <span class="mi">1920</span>
+</span></span><span class="line"><span class="cl"><span class="n">h_px</span> <span class="o">=</span> <span class="mi">1080</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># px-&gt;cm変換ルール</span>
+</span></span><span class="line"><span class="cl"><span class="n">cm_per_in</span> <span class="o">=</span> <span class="mf">2.54</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># ドキュメントのサイズ(単位: cm)</span>
+</span></span><span class="line"><span class="cl"><span class="n">w_inch</span> <span class="o">=</span> <span class="n">w_px</span> <span class="o">/</span> <span class="n">dpi</span> <span class="c1"># pxをインチに変換</span>
+</span></span><span class="line"><span class="cl"><span class="n">w_cm</span> <span class="o">=</span> <span class="n">w_inch</span> <span class="o">*</span> <span class="n">cm_per_in</span> <span class="c1"># インチをcmに変換</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">h_inch</span> <span class="o">=</span> <span class="n">h_px</span> <span class="o">/</span> <span class="n">dpi</span> <span class="c1"># pxをインチに変換</span>
+</span></span><span class="line"><span class="cl"><span class="n">h_cm</span> <span class="o">=</span> <span class="n">h_inch</span> <span class="o">*</span> <span class="n">cm_per_in</span> <span class="c1"># インチをcmに変換</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 結果を出力</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;w x h (cm): </span><span class="si">{</span><span class="n">w_cm</span><span class="si">}</span><span class="s2"> x </span><span class="si">{</span><span class="n">h_cm</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span></code></pre></div><p>実行結果</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">w x h (cm): 50.8 x 28.575
+</span></span></code></pre></div><h4 id="確認">確認</h4>
+<p>このサイズで、ドキュメントを作成し、PNG形式でエクスポートしたところ、
+<code>1920 x 1080 px</code>のPNG画像が出力された。</p>
+<h3 id="参考">参考</h3>
+<ul>
+<li><a href="https://help.libreoffice.org/latest/ja/text/shared/00/00000003.html">libreOfficeの単位</a></li>
+<li><a href="https://help.libreoffice.org/latest/ja/text/shared/00/00000200.html?&amp;DbPAR=SHARED&amp;System=MAC">図のエクスポートオプション</a></li>
+</ul></div>
+  <div class="mt-6">
+    <div class="border-t-2 border-primary-dark px-2 pt-2 text-right">
+        <span class="text-sm">作成日: 2024/03/28</span></div>
+</div>
+
+</div>
+
+
+    </main><footer class="bg-primary-dark text-center text-on-primary-dark fixed bottom-0 w-full h-8">
+    <div class="container mx-auto grid grid-cols-3">
+        <div class="col-start-1 col-span-2 ml-2 md:ml-0 md:col-start-2 md:col-span-1">
+            <div class="text-left md:text-center text-sm pt-2">© 2022 kanta&#39;s spike</div>
+        </div>
+        <div class="col-start-3 flex justify-end gap-2 mr-2">
+            
+                
+            <a title="Twitter" class="text-2xl" href="https://twitter.com/KantasSpike"><i class="fa-brands fa-twitter-square"></i></a>
+                
+            <a title="Youtube" class="text-2xl" href="https://www.youtube.com/channel/UCnVBuUGMYAt7ZuIkadxnMfw"><i class="fa-brands fa-youtube-square"></i></a>
+                
+            <a title="GitHub" class="text-2xl" href="https://github.com/kantas-spike"><i class="fa-brands fa-github-square"></i></a>
+                
+            <a title="Blog" class="text-2xl" href="https://kantas-spike.github.io/portfolio/"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                
+            
+        </div>
+    </div>
+</footer> 
+
+
+
+
+<script defer type="text/javascript" src="/portfolio/js/search-form.07066240729fbbddf7f08e0938e5a7a060da185ec1c29e438984cfa6c2ff2386dd2ef58d9c7af295b66d187cc9c180f4aa62433709f8bf8813c39c1e239b641e.js" integrity="sha512-BwZiQHKfu9338I4JOOWnoGDaGF7Bwp5DiYTPpsL/I4bdLvWNnHrylbZtGHzJwYD0qmJDNwn4v4gTw5weI5tkHg=="></script></body>
+</html>

@@ -7,8 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>© 2022 kanta&#39;s spike</copyright>
-    <lastBuildDate>Wed, 28 Feb 2024 02:04:22 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 28 Mar 2024 06:38:37 +0900</lastBuildDate>
     <atom:link href="https://kantas-spike.github.io/portfolio/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LibreOffice</title>
+      <link>https://kantas-spike.github.io/portfolio/tags/libreoffice/</link>
+      <pubDate>Thu, 28 Mar 2024 06:38:37 +0900</pubDate>
+      <guid>https://kantas-spike.github.io/portfolio/tags/libreoffice/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Inkscape</title>
+      <link>https://kantas-spike.github.io/portfolio/tags/inkscape/</link>
+      <pubDate>Thu, 28 Mar 2024 06:15:17 +0900</pubDate>
+      <guid>https://kantas-spike.github.io/portfolio/tags/inkscape/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Pandoc</title>
       <link>https://kantas-spike.github.io/portfolio/tags/pandoc/</link>
@@ -259,13 +273,6 @@
       <link>https://kantas-spike.github.io/portfolio/tags/%E5%AD%A6%E7%BF%92%E8%A8%98%E9%8C%B2/</link>
       <pubDate>Wed, 05 Apr 2023 02:16:01 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/tags/%E5%AD%A6%E7%BF%92%E8%A8%98%E9%8C%B2/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Inkscape</title>
-      <link>https://kantas-spike.github.io/portfolio/tags/inkscape/</link>
-      <pubDate>Tue, 14 Mar 2023 12:05:30 +0900</pubDate>
-      <guid>https://kantas-spike.github.io/portfolio/tags/inkscape/</guid>
       <description></description>
     </item>
     <item>

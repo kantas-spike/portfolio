@@ -1,6 +1,16 @@
 {
     "results": [
     {
+        "href": "https://kantas-spike.github.io/portfolio/til/2024/03/109-libreofficde%E3%81%A7%E3%83%89%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88%E3%82%92%E6%8C%87%E5%AE%9A%E3%81%97%E3%81%9F%E3%82%B5%E3%82%A4%E3%82%BA%E3%81%AEpng%E7%94%BB%E5%83%8F%E3%81%A7%E3%82%A8%E3%82%AF%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%88%E3%81%97%E3%81%9F%E3%81%84/",
+        "title": "Libre Officdeでドキュメントを指定したサイズの PNG画像でエクスポートしたい",
+        "tags": "libreOffice"
+    },
+    {
+        "href": "https://kantas-spike.github.io/portfolio/til/2024/03/108-inkscape%E3%81%A7%E7%94%BB%E5%83%8F%E3%82%B5%E3%82%A4%E3%82%BA%E3%81%A8%E3%83%9A%E3%83%BC%E3%82%B8%E3%82%B5%E3%82%A4%E3%82%BA%E3%82%92%E5%90%88%E3%82%8F%E3%81%9B%E3%81%9F%E3%81%84/",
+        "title": "Inkscapeでページサイズを図形サイズに合わせたい",
+        "tags": "inkscape"
+    },
+    {
         "href": "https://kantas-spike.github.io/portfolio/til/2024/02/107-web%E3%83%9A%E3%83%BC%E3%82%B8%E3%82%92pdf%E5%8C%96%E3%81%97%E3%81%9F%E3%81%84/",
         "title": "Webページを PDF化したい",
         "tags": "pandoc tool"
