@@ -2,13 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/blender/</loc>
+    <lastmod>2024-03-28T13:39:00+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/articles/2024/03/15-blender-vse%E3%81%AE%E9%9D%9E%E5%85%AC%E5%BC%8F%E6%96%87%E6%9B%B8%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/</loc>
+    <lastmod>2024-03-28T13:39:00+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/</loc>
+    <lastmod>2024-03-28T13:39:00+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/vse/</loc>
+    <lastmod>2024-03-28T13:39:00+09:00</lastmod>
+  </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2024/03/109-libreofficde%E3%81%A7%E3%83%89%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88%E3%82%92%E6%8C%87%E5%AE%9A%E3%81%97%E3%81%9F%E3%82%B5%E3%82%A4%E3%82%BA%E3%81%AEpng%E7%94%BB%E5%83%8F%E3%81%A7%E3%82%A8%E3%82%AF%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%88%E3%81%97%E3%81%9F%E3%81%84/</loc>
     <lastmod>2024-03-28T06:38:37+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/libreoffice/</loc>
-    <lastmod>2024-03-28T06:38:37+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/</loc>
     <lastmod>2024-03-28T06:38:37+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/inkscape/</loc>
@@ -46,9 +55,6 @@
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2024/01/103-python%E3%81%A7%E5%A4%96%E9%83%A8%E3%83%97%E3%83%AD%E3%82%BB%E3%82%B9%E3%81%AB%E6%A8%99%E6%BA%96%E5%85%A5%E5%8A%9B%E3%81%8B%E3%82%89%E6%83%85%E5%A0%B1%E3%82%92%E6%B8%A1%E3%81%97%E3%81%9F%E3%81%84/</loc>
     <lastmod>2024-01-16T12:58:19+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/blender/</loc>
-    <lastmod>2024-01-12T23:11:31+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/blender-addon/</loc>
     <lastmod>2024-01-12T23:11:31+09:00</lastmod>

@@ -29,7 +29,7 @@
   rel="stylesheet"
 />
 <link rel="stylesheet" href="/portfolio/css/fonts.598ae1b8a36eef149fd604bc4a326391fe472bc4628f92811ed047364d446748.css">
-    <link rel="stylesheet" href="/portfolio/css/theme.min.8bd876af72b7281c033be721d5cc088ab6cb09ec42e7dcb837cc06644fa83034.css">
+    <link rel="stylesheet" href="/portfolio/css/theme.min.eb4e9e91d24479603e5da40815bb3d10aca46713f9f357723dd25598fc94da26.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" /><link rel="stylesheet" href="/portfolio/css/syntax.min.53132d5ecb321e785c36c5e94d619a0e0e5e50abd5435b10c105ebd046929b7a.css">
 <link rel="icon" type="image/png" sizes="512x512" href="/portfolio/icon512.png" />
  
@@ -114,7 +114,8 @@
 <h3 id="何を記録するのか">何を記録するのか？</h3>
 <p><a href="https://github.com/kantas-spike/how-to-learn-hacking-japanese/blob/main/how-to-learn-hacking.md">ハッキングの学び方</a>(<a href="http://www.catb.org/~esr/faqs/hacking-howto.html">How To Learn Hacking</a>)で、ハッキングの学習段階が紹介されています。</p>
 <p>この学習方法でプログラミングを学んでいきます。</p>
-<div class="mermaid">flowchart LR
+  
+<div class="mermaid ">flowchart LR
     subgraph one["第一段階"]
         direction LR
         s1-1["言語・ツールの学習"]<-->s1-2["小さなプログラム作成"]
@@ -126,10 +127,11 @@
         s3["オリジナルプロジェクト開発"]
     end
     one<-->two
-    two-->three
-</div>
+    two-->three</div>
+
 <p>本サイトでは、学んだ事や成果物を以下のルールで記録します。</p>
-<div class="mermaid">    flowchart LR;
+  
+<div class="mermaid ">    flowchart LR;
         s1["『言語・ツールの学習』"];
         s2["『小さなプログラム作成』"];
         s3["デザインセンスを磨く<br>(インクリメンタルハッキングサイクル)"]
@@ -140,8 +142,8 @@
         s1-- "学んだ事(メモ)" -->o1;
         s1-- "学んだ事のまとめ" -->o2;
         s2-->o3;
-        s3-->o4;
-</div>
+        s3-->o4;</div>
+
 <h3 id="どうやって記録するのか">どうやって記録するのか？</h3>
 <p>スタティックサイトジェネレータである<a href="https://gohugo.io/">Hugo</a>を使ってサイトを作成します。
 スタティックサイトジェネレータとは、静的コンテンツの作成に特化した手軽にWebサイトを構築できるツールです。</p>

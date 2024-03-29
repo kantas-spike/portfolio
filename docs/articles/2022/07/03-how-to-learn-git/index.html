@@ -29,7 +29,7 @@
   rel="stylesheet"
 />
 <link rel="stylesheet" href="/portfolio/css/fonts.598ae1b8a36eef149fd604bc4a326391fe472bc4628f92811ed047364d446748.css">
-    <link rel="stylesheet" href="/portfolio/css/theme.min.8bd876af72b7281c033be721d5cc088ab6cb09ec42e7dcb837cc06644fa83034.css">
+    <link rel="stylesheet" href="/portfolio/css/theme.min.eb4e9e91d24479603e5da40815bb3d10aca46713f9f357723dd25598fc94da26.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" /><link rel="stylesheet" href="/portfolio/css/syntax.min.53132d5ecb321e785c36c5e94d619a0e0e5e50abd5435b10c105ebd046929b7a.css">
 <link rel="icon" type="image/png" sizes="512x512" href="/portfolio/icon512.png" />
  
@@ -144,18 +144,20 @@ Gitでは、スナップショット(コミット)を <strong>有向非巡回グ
 <p>コミットは親の情報(図中の左方向の矢印)を持ちます。(注意: コミットは子の情報は持ちません。親を知るのみです。)
 下図では<code>C3</code>の親は<code>C2</code>になり、<code>C4</code>の親も<code>C2</code>になります。
 <code>C2</code>以降で2つの <strong>ブランチ</strong> に枝分れしています。</p>
-<div class="mermaid">stateDiagram-v2
+  
+<div class="mermaid ">stateDiagram-v2
     direction RL
     C3 --> C2
     C2 --> C1
     C1 --> C0
     C5 --> C4
-    C4 --> C2
-</div>
+    C4 --> C2</div>
+
 <p>また、コミットは複数の親を持つこともあります。
 下図では<code>C6</code>の親は<code>C3</code>と<code>C5</code>になります。
 別々の <strong>ブランチ</strong> が<code>C6</code>で1つに <strong>マージ</strong> されています。</p>
-<div class="mermaid">stateDiagram-v2
+  
+<div class="mermaid ">stateDiagram-v2
     direction RL
     C6 --> C3
     C3 --> C2
@@ -163,8 +165,8 @@ Gitでは、スナップショット(コミット)を <strong>有向非巡回グ
     C1 --> C0
     C6 --> C5
     C5 --> C4
-    C4 --> C2
-</div>
+    C4 --> C2</div>
+
 <p>このように、Gitではスナップショットを一直線ではなく、分岐したり、融合したりします。
 これが <strong>有向非巡回グラフ(DAG)</strong> です。</p>
 <h4 id="データモデル-1">データモデル</h4>
@@ -241,7 +243,8 @@ Gitはブロブとツリーとコミットで管理されるシンプルなデ�
 <li><code>git add</code>により、ファイルの変更内容を <strong>作業フォルダ</strong> から <strong>ステージングエリア</strong> へ反映される</li>
 <li><code>git commit</code>により、 <strong>ステージングエリア</strong> をもとに新しいコミットが作成され、 <strong>HEAD</strong> に反映される</li>
 </ol>
-<div class="mermaid">sequenceDiagram
+  
+<div class="mermaid ">sequenceDiagram
     participant u as 利用者
     participant g as git
     participant w as 作業フォルダ
@@ -262,29 +265,31 @@ Gitはブロブとツリーとコミットで管理されるシンプルなデ�
     u->>g : 4. git commit
     s-->>c : ステージングエリアの内容からコミットを作成
     Note over c: 作業フォルダの内容と同じ
-    Note over w,c: 3種類のファイルグループが同じ内容(最新コミットの内容)
-</div>
+    Note over w,c: 3種類のファイルグループが同じ内容(最新コミットの内容)</div>
+
 <h4 id="変更を1つ前に戻す">変更を1つ前に戻す</h4>
 <p>先程の変更を元に戻したいと思います。先程のコミットにより <strong>最新コミット(C3)</strong> が作成されたとします。</p>
 <p>データモデルで考えると、
 さきほど、編集したファイルを反映したコミットにより、メインブランチ、HEADともに<strong>C3</strong>を指すようになりました。</p>
-<div class="mermaid">stateDiagram-v2
+  
+<div class="mermaid ">stateDiagram-v2
     direction RL
     C3 --> C2
     C2 --> C1
     C1 --> C0
     note left of C3 : HEAD
-    note left of C3 : main
-</div>
+    note left of C3 : main</div>
+
 <p>これを、1つ前の <strong>C2</strong> に戻そうと思います。</p>
-<div class="mermaid">stateDiagram-v2
+  
+<div class="mermaid ">stateDiagram-v2
     direction RL
     C3 --> C2
     C2 --> C1
     C1 --> C0
     note left of C2 : HEAD
-    note left of C2 : main
-</div>
+    note left of C2 : main</div>
+
 <p>いろいろな方法で元に戻せますが、今回は<code>git reset C2</code>(もしくは<code>git reset HEAD^</code>)で戻します。</p>
 <p>ただし、<code>git reset</code> には3つのオプションがあります。</p>
 <ul>
@@ -328,7 +333,8 @@ Gitはブロブとツリーとコミットで管理されるシンプルなデ�
 3種類のファイルグループがどのように変更されるのかを意識する必要があります。</p>
 <h4 id="タイポなどの軽微な修正コミットのみ削除する">タイポなどの軽微な修正コミットのみ削除する</h4>
 <p>例えば、以下のようにタイポなどの軽微な修正だった<strong>C2</strong>を削除し、新たに<strong>C3</strong>と同じ内容を持つ <strong>C3&rsquo;</strong> を作成したい場合、</p>
-<div class="mermaid">stateDiagram-v2
+  
+<div class="mermaid ">stateDiagram-v2
     direction RL
     C3 --> C2
     C2 --> C1
@@ -336,15 +342,16 @@ Gitはブロブとツリーとコミットで管理されるシンプルなデ�
     C1 --> C0
     note left of C3' : 新しいHEADとmain
     note right of C3' : C2を削除した上で、<br>C3と同じ内容のコミットを作成
-    note left of C3 : 現在のHEADとmain
-</div>
+    note left of C3 : 現在のHEADとmain</div>
+
 <p><code>git reset --soft</code>で以下の操作をすると簡単です。</p>
 <ol>
 <li><strong>チェックアウト</strong> により、3種類のファイルグループは<strong>C3</strong>の内容に</li>
 <li><code>git reset --soft C1</code>により、<strong>HEAD</strong>の内容を<strong>C1</strong>に変更。ただし、<strong>作業フォルダ</strong>と<strong>ステージングエリア</strong>は<strong>C3</strong>のまま</li>
 <li><code>git commit</code>により、 <strong>C3</strong>の内容をもつ<strong>ステージングエリア</strong> から新しいコミット <strong>C3&rsquo;</strong> が作成され、 <strong>HEAD</strong> に反映</li>
 </ol>
-<div class="mermaid">sequenceDiagram
+  
+<div class="mermaid ">sequenceDiagram
     participant u as 利用者
     participant g as git
     participant w as 作業フォルダ
@@ -362,13 +369,14 @@ Gitはブロブとツリーとコミットで管理されるシンプルなデ�
     u->>g : 3. git commit
     s-->>c : ステージングエリア(C3)の内容からコミットを作成
     Note over c: C3'(C3の内容と同じ)
-    Note over w,c: 3種類のファイルグループ 全てC3(もしくはC3')と同じ内容に
-</div>
+    Note over w,c: 3種類のファイルグループ 全てC3(もしくはC3')と同じ内容に</div>
+
 <h4 id="作業フォルダの変更を破棄して最新コミットの内容に戻したい">作業フォルダの変更を破棄して最新コミットの内容に戻したい</h4>
 <p>例えば、いろいろ修正した <strong>作業フォルダ</strong> の内容を破棄して元に戻したい場合(図中 (a))、</p>
 <p><code>git reset --hard HEAD</code>を実行すると、<strong>最新のコミット</strong> の状態に <strong>作業フォルダ</strong> も <strong>ステージングエリア</strong> も強制的に更新されます。</p>
 <p>ただし、<strong>作業フォルダ</strong>の変更が完全に失なわれるため注意して実行してください。</p>
-<div class="mermaid">sequenceDiagram
+  
+<div class="mermaid ">sequenceDiagram
     participant u as 利用者
     participant g as git
     participant w as 作業フォルダ
@@ -389,8 +397,8 @@ Gitはブロブとツリーとコミットで管理されるシンプルなデ�
     c-->>c : 最新のコミットを取得
     c-->>s : 最新のコミットを反映
     c-->>w : 最新のコミットを反映(強制的に反映)
-    Note over w,c: 3種類のファイルグループが同じ内容
-</div>
+    Note over w,c: 3種類のファイルグループが同じ内容</div>
+
 <h4 id="参考-git-reset---hard-commit-と-git-checkout-commit-の違い">参考: <code>git reset --hard &lt;commit&gt;</code> と <code>git checkout &lt;commit&gt;</code> の違い</h4>
 <p><code>git reset --hard &lt;commit&gt;</code> と <code>git checkout &lt;commit&gt;</code> のどちらも、
 3つのファイルグループ(<strong>最新のコミット</strong>、<strong>ステージングエリア</strong>、<strong>作業フォルダ</strong>)を指定した <strong>&lt;commit&gt;</strong> の状態に更新します。</p>

@@ -7,8 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>© 2022 kanta&#39;s spike</copyright>
-    <lastBuildDate>Fri, 17 Nov 2023 10:27:20 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 28 Mar 2024 13:39:00 +0900</lastBuildDate>
     <atom:link href="https://kantas-spike.github.io/portfolio/articles/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blender VSE 非公式文書について</title>
+      <link>https://kantas-spike.github.io/portfolio/articles/2024/03/15-blender-vse%E3%81%AE%E9%9D%9E%E5%85%AC%E5%BC%8F%E6%96%87%E6%9B%B8%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/</link>
+      <pubDate>Thu, 28 Mar 2024 13:39:00 +0900</pubDate>
+      <guid>https://kantas-spike.github.io/portfolio/articles/2024/03/15-blender-vse%E3%81%AE%E9%9D%9E%E5%85%AC%E5%BC%8F%E6%96%87%E6%9B%B8%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://vse-docs.readthedocs.io/&#34;&gt;Blender VSE Unofficial Docs — Blender VSE Unofficial Documentation documentation&lt;/a&gt;という、&#xA;Blender VSEの学習に良さそうな文書を見つけましたので紹介します。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>カラーパレットについて学びたい</title>
       <link>https://kantas-spike.github.io/portfolio/articles/2023/11/14-learning-about-color-palettes/</link>

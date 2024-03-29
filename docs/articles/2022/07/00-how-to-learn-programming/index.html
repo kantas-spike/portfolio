@@ -29,7 +29,7 @@
   rel="stylesheet"
 />
 <link rel="stylesheet" href="/portfolio/css/fonts.598ae1b8a36eef149fd604bc4a326391fe472bc4628f92811ed047364d446748.css">
-    <link rel="stylesheet" href="/portfolio/css/theme.min.8bd876af72b7281c033be721d5cc088ab6cb09ec42e7dcb837cc06644fa83034.css">
+    <link rel="stylesheet" href="/portfolio/css/theme.min.eb4e9e91d24479603e5da40815bb3d10aca46713f9f357723dd25598fc94da26.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" /><link rel="stylesheet" href="/portfolio/css/syntax.min.53132d5ecb321e785c36c5e94d619a0e0e5e50abd5435b10c105ebd046929b7a.css">
 <link rel="icon" type="image/png" sizes="512x512" href="/portfolio/icon512.png" />
  
@@ -115,7 +115,8 @@
 <p>しかし、プログラミングの場合、<strong>インクリメンタルハッキングサイクル</strong> があります。
 この学習方法は画期的です。</p>
 <h4 id="音楽の場合">音楽の場合</h4>
-<div class="mermaid">flowchart LR
+  
+<div class="mermaid ">flowchart LR
 subgraph a["lvl.1 運指・音階の弾き方の学習"]
   direction LR
   a1["運指"]<--->a2["音階を弾く"]
@@ -129,10 +130,11 @@ subgraph c["lvl.3 オリジナルの作曲"]
    b2["習得した音楽の<br>パターンを使って作曲"]
 end
 
-a--->b--->c
-</div>
+a--->b--->c</div>
+
 <h4 id="プログラミングの場合">プログラミングの場合</h4>
-<div class="mermaid">flowchart LR
+  
+<div class="mermaid ">flowchart LR
 subgraph a["lvl.1 言語・ツールの学習、小さなプログラムの作成"]
   direction LR
   a1["言語・ツール<br>の学習"]<--->a2["小さなプログラム<br>の作成"]
@@ -146,8 +148,8 @@ subgraph c["lvl.3 オリジナルの開発"]
    b2["習得した開発の<br>パターンを使って<br>プロジェクト開発"]
 end
 
-a--->b--->c
-</div>
+a--->b--->c</div>
+
 <h3 id="インクリメンタルハッキングサイクル">インクリメンタルハッキングサイクル</h3>
 <p>私は「インクリメンタルハッキングサイクル」(IHC)を<a href="http://www.catb.org/~esr/faqs/hacking-howto.html">How To Learn Hacking</a>(<a href="https://github.com/kantas-spike/how-to-learn-hacking-japanese/blob/main/how-to-learn-hacking.md">翻訳:ハッキングの学び方</a>)で初めて知りました。</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">インクリメンタルハッキングサイクルの目的の一つは、コードを読むモチベーションを維持できる環境下で、複雑さの規模を拡大しながら、多くのコードに没頭することです。
@@ -156,7 +158,8 @@ a--->b--->c
 </span></span></code></pre></div><p>この学習方法は大変素晴しいと思います。簡単に手順を説明します。</p>
 <p>IHCは、デザインセンスを磨くためのプログラミングの学習方法です。
 以下の7つのステップを繰り返す。</p>
-<div class="mermaid">flowchart TD
+  
+<div class="mermaid ">flowchart TD
 s1["Step.1 興味のあるプログラムを選ぶ"]--->s2
 s2["Step.2 そのプログラムの使い方を学ぶ"]--->s3
 s3["Step.3 変更・追加する小さな機能を選ぶ"]--->s4
@@ -164,19 +167,20 @@ s4["Step.4 コードを探して変更箇所を見つける"]--->s5
 s5["Step.5 コードを変更、テスト・デバッグし、変更箇所を文書化する"]--->s6
 s6["Step.6 変更をパッチとしてメンテナに送付する"]--->s7
 s7["Step.7 プログラム全体を理解できていますか？"]-- "YES" -->e["IHCを終了する"]
-s7-- "NO" -->s3
-</div>
+s7-- "NO" -->s3</div>
+
 <p>また、IHCで選択するプロジェクトは、小さなプロジェクトから始めます。
 IHCを実施・完了し、同規模のプロジェクトを2,3個完了できたら、次の規模のプロジェクトに進みます。
 Mサイズを完了できるころには、デザインセンスが身についています。</p>
-<div class="mermaid">flowchart LR
+  
+<div class="mermaid ">flowchart LR
 s1["XS\n10行〜\n50行"]--->s2
 s1-- "2,3個完了" -->s1
 s2["S\n100行〜\n500行"]--->s3
 s2-- "2,3個完了" -->s2
 s3["M\n1000行〜\n5000行"]
-s3-- "2,3個完了" -->s3
-</div>
+s3-- "2,3個完了" -->s3</div>
+
 <p>興味のあるプロジェクトから始めて、モチベーションを維持しながら、段階的にレベルを上げることができます。飽きっぽい私に合った大変良い学習方法だと思います。</p>
 <h3 id="私の学習方針">私の学習方針</h3>
 <p>インクリメンタルハッキングサイクルをGitHubを活用しながら</p>
