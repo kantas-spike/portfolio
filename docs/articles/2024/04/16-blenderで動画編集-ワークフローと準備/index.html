@@ -1,0 +1,687 @@
+<!doctype html>
+<html><head>
+    <title>
+        Blenderで動画編集 ワークフローとセットアップ | kanta&#39;s spike
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<link
+  rel="preload"
+  href="/portfolio/fonts/notosansjp-bold.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin="anonymous"
+/>
+
+<link
+  rel="preload"
+  href="/portfolio/fonts/notosansjp-regular.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin="anonymous"
+/>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Noto+Emoji:wght@400;500;700&family=Noto+Sans+JP:wght@400;700&display=swap"
+  rel="stylesheet"
+/>
+<link rel="stylesheet" href="/portfolio/css/fonts.598ae1b8a36eef149fd604bc4a326391fe472bc4628f92811ed047364d446748.css">
+    <link rel="stylesheet" href="/portfolio/css/theme.min.53827012e007da26bb361e30d0510f188b8d2d4d380c009e65815e9e7380fda2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" /><link rel="stylesheet" href="/portfolio/css/syntax.min.53132d5ecb321e785c36c5e94d619a0e0e5e50abd5435b10c105ebd046929b7a.css">
+<link rel="icon" type="image/png" sizes="512x512" href="/portfolio/icon512.png" />
+ 
+<link rel="icon" type="image/png" sizes="192x192" href="/portfolio/icon192.png" />
+ 
+<link rel="apple-touch-icon" sizes="180x180" href="/portfolio/icon180.png" />
+ 
+<link rel="icon" type="image/png" sizes="32x32" href="/portfolio/icon32.png" />
+ 
+<link rel="icon" type="image/svg+xml" href="/portfolio/icon.svg" />
+ 
+<link rel="manifest" href="/portfolio/site.webmanifest" />
+
+
+</head><body class="bg-background text-primary-dark pb-4"><header class="bg-primary-dark text-site_title text-6xl font-serif font-extrabold px-4 py-3">
+    <h1 class="container mx-auto px-4"><a href="https://kantas-spike.github.io/portfolio/">kanta&#39;s spike</a></h1>
+</header>
+<input type="checkbox" name="burger_cbx" id="burger_cbx">
+<label for="burger_cbx" class="burger_label">
+    <span class="burger_icon"><svg version="1.1" viewBox="0 0 12.7 12.7" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <rect x="1.0369" y="2.1007" width="10.634" height="1.0426" ry=".5213"/>
+  <rect x="1.0369" y="4.571" width="10.634" height="1.0426" ry=".5213"/>
+  <rect x="1.0369" y="7.0413" width="10.634" height="1.0426" ry=".5213"/>
+  <rect x="1.0369" y="9.5115" width="10.634" height="1.0426" ry=".5213"/>
+ </g>
+</svg>
+</span>
+</label>
+<label for="burger_cbx" class="close_label">
+    <span class="close_icon"><svg version="1.1" viewBox="0 0 12.7 12.7" xmlns="http://www.w3.org/2000/svg">
+ <rect transform="rotate(45.535)" x="3.6678" y="-.6148" width="10.634" height="1.0426" ry=".5213"/>
+ <rect transform="rotate(135.53)" x="-5.4104" y="-9.5059" width="10.634" height="1.0426" ry=".5213"/>
+</svg>
+</span>
+</label>
+<div class="nav_area">
+    <nav class="container mx-auto bg-primary text-on-primary text-center flex flex-col md:flex-row justify-start">
+            <a href="/portfolio/" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Home</a>
+            <a href="/portfolio/til" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">TIL</a>
+            <a href="/portfolio/dialogues" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Dialogues</a>
+            <a href="/portfolio/articles" class="box-border flex-1 text-center no-underline bg-primary-light text-on-primary-light font-bold py-2">Articles</a>
+            <a href="/portfolio/mytools" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">My Tools</a>
+            <a href="/portfolio/ihc" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">IHC</a>
+            <a href="/portfolio/tags" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Tags</a>
+        <div class="flex-none" id="search_menu"></div>
+    </nav>
+</div>
+<main id="content" class="container mx-auto bg-surface pt-4 pb-8">
+<div class="area_border px-4 py-3 mx-4 md:mx-auto pb-4 max-w-[60rem]">
+  
+
+<div class="mb-4">
+    <h3 class="border-b-4 border-primary-dark text-primary-dark text-xl font-bold tracking-wider pl-[1em] -indent-[1ex]"><i class="fa-solid fa-file-lines"></i> <a href="https://kantas-spike.github.io/portfolio/articles/2024/04/16-blender%E3%81%A7%E5%8B%95%E7%94%BB%E7%B7%A8%E9%9B%86-%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%95%E3%83%AD%E3%83%BC%E3%81%A8%E6%BA%96%E5%82%99/">Blenderで動画編集 ワークフローとセットアップ</a></h3>
+    <div class="flex justify-between mt-1 mx-2">
+        <div>
+            <ul class="flex gap-2 justify-end">
+            
+            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/blender/">#Blender</a></li>
+            
+            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/vse/">#Vse</a></li>
+            
+            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/vse%E9%9D%9E%E5%85%AC%E5%BC%8F%E6%96%87%E6%9B%B8/">#Vse非公式文書</a></li>
+            
+            </ul>
+        </div>
+        <div>
+            
+            
+            <div class="text-right text-sm font-bold">2024/04/03
+                
+                    <span class="text-xs text-red-600 font-thin">New</span>
+                
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+  <div class="article mx-2"><p><a href="https://kantas-spike.github.io/vse-docs/video_editing/index.html">2. Video Editing — Blender VSE Unofficial Documentation</a>をもとに
+、Blenderで動画編集するための考え方や準備方法をまとめたいと思います。</p>
+<h3 id="動画編集のワークフロー">動画編集のワークフロー</h3>
+<p>一般的な動画編集は以下のワークフローで行うようです。</p>
+  
+ 
+<div class="mermaid flex justify-center">flowchart LR
+subgraph g1["動画編集"]
+  direction LR
+    f1["セットアップ"]
+    f2["編集"]
+    f3["レンダリング"]
+    f1 --> f2 --> f3
+end</div>
+
+<p>もう少し詳細にしてみると、こんな感じでしょうか。</p>
+  
+<div class="mermaid ">flowchart LR
+    subgraph g1["動画編集"]
+      direction LR
+      f1["セットアップ"]
+      f2["編集"]
+      f3["レンダリング"]
+    end
+    subgraph input["インプット"]
+        in1["各種素材
+        (動画、音声、画像など)"]
+        in2["シナリオや
+        ストリーボード"]
+    end
+    config["各種設定、ルール"]
+    out["動画ファイル"]
+    f1 --> f2 --> f3
+    config -.-> f1
+    input -.-> f2
+    f3 -.-> out
+    f1 -.素材やシナリオの準備.-> input</div>
+
+<div class="column not-article mx-1 my-4  px-4 py-4 border-2 rounded-md ">
+  <div class="text-lg font-bold leading-m tracking-m mb-4 -mx-1">
+      <span class="flex emoji content-start">
+        <span class="mr-1">
+          
+            📄
+          
+        </span>
+        <span class="font-sans">用語説明</span>
+      </span>
+    </div>
+  <div class="mx-2 article">
+    <ol>
+<li>
+<p>セットアップ</p>
+<ul>
+<li>作業環境やプロジェクトを設定したり、必要なものを準備したりして、動画編集作業を開始できるようにします。</li>
+</ul>
+</li>
+<li>
+<p>編集</p>
+<ul>
+<li>素材を編集して1つの作品を作ります。
+<ul>
+<li>モンタージュ <sup class="mr-1" id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">[1]</a></sup>、エフェクトの追加、カラーグレーディング <sup class="mr-1" id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">[2]</a></sup>、サウンドの編集</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>レンダリング <sup class="mr-1" id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">[3]</a></sup></p>
+<ul>
+<li>編集の結果を、動画ファイル形式(.mp4など)に変換します。</li>
+</ul>
+</li>
+</ol>
+
+  </div>
+</div>
+<p>大きなプロジェクトはもっと複雑で、他の動画編集作業(サブ)の結果がメインの動画編集作業のインプットになることもあるようです。</p>
+  
+ 
+<div class="mermaid flex justify-center">flowchart LR
+  subgraph sub["サブの動画編集"]
+    direction LR
+    s1["動画編集1"]
+    s2["動画編集2"]
+    sn["動画編集n"]
+  end
+  main["メインの動画編集"]
+  s1 -.-> main
+  s2 -.-> main
+  sn -.-> main
+  main -.-> out["動画ファイル"]</div>
+
+<h3 id="方針">方針</h3>
+<p>この記事は数回にわたる連載になります。</p>
+<p><strong>「Blenderの操作説明動画の作成」</strong> を例題として、
+<a href="https://kantas-spike.github.io/vse-docs/index.html">Blender VSE 非公式文書</a>の内容を動画編集ワークフローを体験しながら学んでいきたいと思います。</p>
+<p>作成する <strong>「Blenderの操作説明動画」</strong> シナリオ?(コンセプト?)は以下になります。</p>
+<div class="column not-article mx-1 my-4  px-4 py-4 border-2 rounded-md ">
+  <div class="text-lg font-bold leading-m tracking-m mb-4 -mx-1">
+      <span class="flex emoji content-start">
+        <span class="mr-1">
+          
+            📄
+          
+        </span>
+        <span class="font-sans">操作説明動画のシナリオ</span>
+      </span>
+    </div>
+  <div class="mx-2 article">
+    <p>目的: Blenderを起動し、Blenderの動画編集用プロジェクトを作成するまでの手順を説明する。</p>
+<ul>
+<li>起: Blenderをインストールする</li>
+<li>承: Blenderを起動する</li>
+<li>転: Video Editing プロジェクトを選択しプロジェクトを作成する</li>
+<li>結: Video Editingのワークスペースを確認する</li>
+</ul>
+  </div>
+</div>
+<p>また、一度に完全なアウトプットを作ることを目標にするのではなく、
+連載のなかで、段階的に何度も繰り返しながらアウトプットを改善していきたいと思います。<sup class="mr-1" id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">[4]</a></sup></p>
+<p>まず今回は、最初の繰り返し(1周目)を始めましょう。</p>
+<h3 id="1周目セットアップレンダリングまでやってみる">1周目：セットアップ〜レンダリングまでやってみる</h3>
+<p><strong>1周目</strong>の目標は、必要最小限の素材を使って、10秒の短い動画を作成することです。</p>
+<p>その中で、 <strong>セットアップ</strong> 、<strong>編集</strong>、<strong>レンダリング</strong> のワークフローを体験していきましょう。</p>
+<p>準備として、以下のスクリーンキャプチャ動画が必要になります。<sup class="mr-1" id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">[5]</a></sup></p>
+<div class="column not-article mx-1 my-4  px-4 py-4 border-2 rounded-md ">
+  <div class="text-lg font-bold leading-m tracking-m mb-4 -mx-1">
+      <span class="flex emoji content-start">
+        <span class="mr-1">
+          
+            📄
+          
+        </span>
+        <span class="font-sans">必要なもの</span>
+      </span>
+    </div>
+  <div class="mx-2 article">
+    <ul>
+<li>
+<p><strong>『承: Blenderを起動する』用の動画</strong></p>
+<p>Blenderアイコンをクリックしてから〜Blenderが起動するまでのもの</p>
+</li>
+</ul>
+<p>OS標準の画面収録ツールを使って、Blenderを起動するまでの動画を作成しておいてください。</p>
+
+  </div>
+</div>
+<p>では、実際にワークフローを体験していきましょう。</p>
+<h3 id="ワークフロー1-セットアップ">ワークフロー1: セットアップ</h3>
+<p>セットアップは、以下に分類できそうです。</p>
+<div class="column not-article mx-1 my-4  px-4 py-4 border-2 rounded-md ">
+  <div class="text-lg font-bold leading-m tracking-m mb-4 -mx-1">
+      <span class="flex emoji content-start">
+        <span class="mr-1">
+          
+            📄
+          
+        </span>
+        <span class="font-sans">セットアップの分類</span>
+      </span>
+    </div>
+  <div class="mx-2 article">
+    <ol>
+<li>Blenderのセットアップ
+<ol>
+<li>自身の環境や好みあわせて、Blenderのルック&amp;フィールや入力デバイスのエミュレーションなどを設定</li>
+<li>必要ならアドオンを導入</li>
+<li>編集作業のパフォーマンスを改善するための設定(Proxies &amp; cacheの設定。)  <sup class="mr-1" id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">[6]</a></sup></li>
+</ol>
+</li>
+<li>プロジェクトのセットアップ
+<ol>
+<li>プロジェクトのフォルダーを構成</li>
+<li>編集で使う素材を集める</li>
+</ol>
+</li>
+<li>Blenderプロジェクトファイルのセットアップ <sup class="mr-1" id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">[7]</a></sup>
+<ol>
+<li>レンダリングにより生成する動画ファイルの解像度やフレームレート、ファイル形式などを設定</li>
+<li>レンダリング結果の出力先を設定</li>
+</ol>
+</li>
+</ol>
+
+  </div>
+</div>
+<h4 id="1-blenderのセットアップ">1. Blenderのセットアップ</h4>
+<p>変更せずデフォルトのままとします。<sup class="mr-1" id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">[8]</a></sup></p>
+<h4 id="2-プロジェクトのセットアップ">2. プロジェクトのセットアップ</h4>
+<ul>
+<li>
+<p>プロジェクト用のフォルダーの作成</p>
+<p>素材やシナリオなど動画編集に関わる全てのデータを、
+今回は、以下のフォルダーで管理します。</p>
+<div class="column not-article mx-1 my-4  px-4 py-4 border-2 rounded-md ">
+  
+  <div class="mx-2 article">
+    <strong>~/wk/1st_cycle</strong>
+  </div>
+</div>
+</li>
+<li>
+<p>分類用のサブフォルダーの作成</p>
+<p>プロジェクト用フォルダー内のデータを整理するためのサブフォルダーを作成します。</p>
+<p>フォルダー構成は、<a href="https://kantas-spike.github.io/vse-docs/video_editing/setup/directory-structure.html">2.1.5. Directory structure — Blender VSE Unofficial Documentation ドキュメント</a> に基本的に従います。<sup class="mr-1" id="fnref:9"><a href="#fn:9" class="footnote-ref" role="doc-noteref">[9]</a></sup></p>
+<p>毎回手動で作成するのは大変なので、一度、一連の空のサブフォルダーを作成し、それをテンプレートとして、各プロジェクトにコピーすると良いかもしれません。<sup class="mr-1" id="fnref:10"><a href="#fn:10" class="footnote-ref" role="doc-noteref">[10]</a></sup></p>
+<div class="column not-article mx-1 my-4  px-4 py-4 border-2 rounded-md ">
+  <div class="text-lg font-bold leading-m tracking-m mb-4 -mx-1">
+      <span class="flex emoji content-start">
+        <span class="mr-1">
+          
+            📄
+          
+        </span>
+        <span class="font-sans">サブフォルダー構成</span>
+      </span>
+    </div>
+  <div class="mx-2 article">
+    <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">.
+</span></span><span class="line"><span class="cl">├── 1_video
+</span></span><span class="line"><span class="cl">│   ├── 1_movie
+</span></span><span class="line"><span class="cl">│   ├── 2_photo
+</span></span><span class="line"><span class="cl">│   ├── 3_graphic
+</span></span><span class="line"><span class="cl">│   ├── 4_vfx
+</span></span><span class="line"><span class="cl">│   └── 5_slide
+</span></span><span class="line"><span class="cl">├── 2_audio
+</span></span><span class="line"><span class="cl">│   ├── 1_dialog
+</span></span><span class="line"><span class="cl">│   ├── 2_music
+</span></span><span class="line"><span class="cl">│   ├── 3_sfx
+</span></span><span class="line"><span class="cl">│   └── 4_slide
+</span></span><span class="line"><span class="cl">└─── 3_project
+</span></span><span class="line"><span class="cl">    ├── 1_blender
+</span></span><span class="line"><span class="cl">    ├── 2_render
+</span></span><span class="line"><span class="cl">    ├── 3_doc
+</span></span><span class="line"><span class="cl">    ├── 4_voicevox
+</span></span><span class="line"><span class="cl">    └── 5_slide
+</span></span></code></pre></div>
+  </div>
+</div>
+</li>
+<li>
+<p>あらかじめ用意した編集用の素材を格納します。</p>
+<div class="column not-article mx-1 my-4  px-4 py-4 border-2 rounded-md ">
+  <div class="text-lg font-bold leading-m tracking-m mb-4 -mx-1">
+      <span class="flex emoji content-start">
+        <span class="mr-1">
+          
+            📄
+          
+        </span>
+        <span class="font-sans">使用する素材</span>
+      </span>
+    </div>
+  <div class="mx-2 article">
+    <ul>
+<li>
+<p>スクリーンキャプチャ動画 (<strong>シナリオの「承」</strong> の部分)を以下に保存</p>
+<p><strong>~/wk/1st_cycle/1_video/1_movie/01_start_blender.mov</strong></p>
+</li>
+</ul>
+
+  </div>
+</div>
+</li>
+</ul>
+<h4 id="3-blenderプロジェクトファイルのセットアップ">3. Blenderプロジェクトファイルのセットアップ</h4>
+<ul>
+<li>
+<p>Blenderの起動</p>
+<p>スプラッシュ画面の <strong>Video Editing</strong> をクリックし、動画編集用のプロジェクトファイルを作成しましょう。</p>
+</li>
+<li>
+<p>Blenderプロジェクトファイル(.blendファイル)の保存</p>
+<p><strong>[File]メニュー &gt; [Save]</strong> を選択し、以下にプロジェクトファイルを保存しましょう。</p>
+<div class="column not-article mx-1 my-4  px-4 py-4 border-2 rounded-md ">
+  <div class="text-lg font-bold leading-m tracking-m mb-4 -mx-1">
+      <span class="flex emoji content-start">
+        <span class="mr-1">
+          
+            📄
+          
+        </span>
+        <span class="font-sans">プロジェクトファイル</span>
+      </span>
+    </div>
+  <div class="mx-2 article">
+    <strong>~/wk/1st_cycle/3_project/1_blender/main.blend</strong>
+  </div>
+</div>
+</li>
+<li>
+<p><strong>[Properties]エディター &gt; [Output]タブ</strong> を設定</p>
+<p>以下の項目を設定します。</p>
+<div class="column not-article mx-1 my-4  px-4 py-4 border-2 rounded-md ">
+  <div class="text-lg font-bold leading-m tracking-m mb-4 -mx-1">
+      <span class="flex emoji content-start">
+        <span class="mr-1">
+          ⚙️
+          
+        </span>
+        <span class="font-sans">動画の形式</span>
+      </span>
+    </div>
+  <div class="mx-2 article">
+    <ul>
+<li>[Format]パネル:
+<ul>
+<li>Resolution X: <strong>1920</strong> px</li>
+<li>Resolution Y: <strong>1080</strong> px</li>
+<li>Resolution %: <strong>100</strong> %</li>
+<li>Frame Rate： <strong>60</strong> fps</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+</div>
+<div class="column not-article mx-1 my-4  px-4 py-4 border-2 rounded-md ">
+  <div class="text-lg font-bold leading-m tracking-m mb-4 -mx-1">
+      <span class="flex emoji content-start">
+        <span class="mr-1">
+          ⚙️
+          
+        </span>
+        <span class="font-sans">フレーム範囲</span>
+      </span>
+    </div>
+  <div class="mx-2 article">
+    <ul>
+<li>[Frame Range]パネル
+<ul>
+<li>Frame Start: <strong>1</strong></li>
+<li>Frame End: <strong>600</strong></li>
+</ul>
+</li>
+</ul>
+<p>レンダリングする動画の長さは 600フレーム (10秒)とします。
+また、 フレーム範囲はあとからでも可能です。編集時に必要に応じて増減できます。</p>
+  </div>
+</div>
+<div class="column not-article mx-1 my-4  px-4 py-4 border-2 rounded-md ">
+  <div class="text-lg font-bold leading-m tracking-m mb-4 -mx-1">
+      <span class="flex emoji content-start">
+        <span class="mr-1">
+          ⚙️
+          
+        </span>
+        <span class="font-sans">出力先とファイル形式</span>
+      </span>
+    </div>
+  <div class="mx-2 article">
+    <ul>
+<li>[Output]パネル
+<ul>
+<li>
+<p>出力先のパス</p>
+<div class="column not-article mx-1 my-4  px-4 py-4 border-2 rounded-md ">
+  
+  <div class="mx-2 article">
+    <strong>//../2_render/1st_cycle</strong>
+  </div>
+</div>
+</li>
+<li>
+<p>File Format: <strong>FFmpeg Video</strong></p>
+</li>
+<li>
+<p>Encoding:</p>
+<ul>
+<li>Container: <strong>MPEG-4</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+</div>
+<div class="column not-article mx-1 my-4  px-4 py-4 border-2 rounded-md ">
+  <div class="text-lg font-bold leading-m tracking-m mb-4 -mx-1">
+      <span class="flex emoji content-start">
+        <span class="mr-1">
+          ⚠️
+          
+        </span>
+        <span class="font-sans">出力先パスの表記について</span>
+      </span>
+    </div>
+  <div class="mx-2 article">
+    <p>出力先のパス(<code>//../2_render/1st_cycle</code>)の先頭にある <code>&quot;//&quot;</code> はプロジェクトファイル(.blendファイル)の位置からの相対パスを意味します。</p>
+<p>今回のプロジェクトファイルは、<code>~/wk/1st_cycle/3_project/1_blender/main.blend</code> なので、</p>
+<p>出力先のパス(<code>//../2_render/1st_cycle</code>)は、以下のフォルダーを指します。</p>
+<div class="column not-article mx-1 my-4  px-4 py-4 border-2 rounded-md ">
+  
+  <div class="mx-2 article">
+    <strong>~/wk/1st_cycle/3_project/2_render/1st_cycle</strong>
+  </div>
+</div>
+<p>また、出力先のパス <code>//../2_render/1st_cycle</code>のファイル名部分(<code>1st_cycle</code>)には拡張子が省略されています。</p>
+<p>拡張子を省略した場合は、<strong>ファイル名</strong> に <strong>開始・終了のフレーム番号</strong> と <strong>拡張子</strong> を付与した名前が採用されます。 <sup class="mr-1" id="fnref:11"><a href="#fn:11" class="footnote-ref" role="doc-noteref">[11]</a></sup></p>
+<div class="column not-article mx-1 my-4  px-4 py-4 border-2 rounded-md ">
+  <div class="text-lg font-bold leading-m tracking-m mb-4 -mx-1">
+      <span class="flex emoji content-start">
+        <span class="mr-1">
+          
+            📄
+          
+        </span>
+        <span class="font-sans">例: 60フレームの動画の場合</span>
+      </span>
+    </div>
+  <div class="mx-2 article">
+    <strong>~/wk/1st_cycle/3_project/2_render/1st_cycle0001-0600.mp4</strong>
+  </div>
+</div>
+
+  </div>
+</div>
+</li>
+</ul>
+<p>設定方法の詳細は、<a href="https://kantas-spike.github.io/vse-docs/video_editing/setup/project-settings.html">2.1.6. Project settings — Blender VSE Unofficial Documentation ドキュメント</a>を参照してください。</p>
+<h3 id="ワークフロー2-編集">ワークフロー2: 編集</h3>
+<p>今回は、<code>01_start_blender.mov</code> をタイムラインに追加するだけです。</p>
+<div class="column not-article mx-1 my-4  px-4 py-4 border-2 rounded-md ">
+  
+  <div class="mx-2 article">
+    <ol>
+<li>画面左上の <strong>File Browser</strong> に、ディレクトリのパス <code>//../../1_video/1_movie</code> を指定しましょう。</li>
+<li><code>01_start_blender.mov</code>が表示されるはずです。</li>
+<li>画面下中央の <strong>Sequencer</strong> の <strong>Playhead</strong> がフレーム1にあることを確認します。</li>
+<li>画面上中央の <strong>Preview</strong> に <code>01_start_blender.mov</code> をドラッグ&amp;ドロップしましょう。</li>
+<li>画面下中央の <strong>Sequencer</strong> の <strong>Playhead</strong> の位置に<code>01_start_blender.mov</code>が追加されました。</li>
+<li><strong>[Play]ボタン</strong> を押して <strong>Sequencer</strong> のタイムラインを再生してみましょう。</li>
+</ol>
+
+  </div>
+</div>
+<p>今回は、動画を追加するだけで、これ以上編集しません。このままレンダリングします。</p>
+<p>本格的な編集方法の詳細は、今後公開予定の記事で説明します。</p>
+<h3 id="ワークフロー3-レンダリング">ワークフロー3: レンダリング</h3>
+<p>レンダリングの手順は以下になります。</p>
+<div class="column not-article mx-1 my-4  px-4 py-4 border-2 rounded-md ">
+  
+  <div class="mx-2 article">
+    <ol>
+<li>
+<p><strong>Topbar</strong> の <strong>[Render]メニュー</strong> &gt; <strong>[Render Animation]</strong> 実行</p>
+<ul>
+<li>新しく<strong>Blender Render</strong>画面が表示され、VSEのタイムライン上の各フレームがレンダリングされていきます。
+<ul>
+<li>画面の上部には、レンダリング中のフレーム番号や処理時間などの情報が表示されます。</li>
+<li>一方、元の <strong>Video Editing</strong> の画面の <strong>Status bar</strong> 部分には、<strong>Sequence Render</strong> プログレスバーが表示されます。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>レンダリング完了</p>
+<p>レンダリングが完了すると、<strong>Video Editing</strong> の画面の <strong>Status bar</strong> の <strong>Sequence Render</strong> プログレスバーが消えます。<sup class="mr-1" id="fnref:12"><a href="#fn:12" class="footnote-ref" role="doc-noteref">[12]</a></sup></p>
+<p>以下のファイルが生成されているか確認しましょう。</p>
+<div class="column not-article mx-1 my-4  px-4 py-4 border-2 rounded-md ">
+  <div class="text-lg font-bold leading-m tracking-m mb-4 -mx-1">
+      <span class="flex emoji content-start">
+        <span class="mr-1">
+          
+            📄
+          
+        </span>
+        <span class="font-sans">生成ファイル</span>
+      </span>
+    </div>
+  <div class="mx-2 article">
+    <strong>~/wk/1st_cycle/3_project/2_render/1st_cycle0001-0600.mp4</strong>
+  </div>
+</div>
+</li>
+<li>
+<p>生成ファイルを動画再生ツールで再生して内容を確認しましょう。</p>
+</li>
+</ol>
+
+  </div>
+</div>
+<p>以上で、1周目のワークフローが完了しました。</p>
+<h3 id="まとめ">まとめ</h3>
+<p>今回は、<a href="https://kantas-spike.github.io/vse-docs/index.html">Blender VSE 非公式文書</a>の以下の章を中心に、ワークフローとセットアップについて説明しました。</p>
+<div class="column not-article mx-1 my-4  px-4 py-4 border-2 rounded-md ">
+  
+  <div class="mx-2 article">
+    <a href="https://kantas-spike.github.io/vse-docs/video_editing/setup/index.html">2.1. セットアップ — Blender VSE Unofficial Documentation</a>
+  </div>
+</div>
+<p>そして、お試しとしてワークフローに従い、動画を生成しました。</p>
+<p>実際に自分でやってみると、理解しやすいと思います。(レンダリングには時間がかかることもわかります。)</p>
+<p>最近のOSは画面キャプチャ機能を標準装備しているので、録画した動画を素材として、Blenderの動画編集を試してみましょう。</p>
+<div class="footnotes" role="doc-endnotes">
+  <hr />
+  <ul class="list-disc list-outside"><li id="fn:1">
+    <p><span class="mr-1">[1]:</span>映画用語で、複数のカットを組合せて作品を作る技法のこと。(参照: <a href="https://ja.wikipedia.org/wiki/%E3%83%A2%E3%83%B3%E3%82%BF%E3%83%BC%E3%82%B8%E3%83%A5">モンタージュ - Wikipedia</a>)&nbsp;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">↩︎</a></p>
+</li>
+<li id="fn:2">
+    <p><span class="mr-1">[2]:</span>映画などの映像作品で、映像の色彩を補正する作業のこと。(参照: <a href="https://ja.wikipedia.org/wiki/%E3%82%AB%E3%83%A9%E3%83%BC%E3%82%B3%E3%83%AC%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3">カラーコレクション - Wikipedia</a>)&nbsp;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">↩︎</a></p>
+</li>
+<li id="fn:3">
+    <p><span class="mr-1">[3]:</span>コンピューターのプログラムを用いて画像・映像(動画)・音声などを生成すること。 (参考: <a href="https://ja.wikipedia.org/wiki/%E3%83%AC%E3%83%B3%E3%83%80%E3%83%AA%E3%83%B3%E3%82%B0_(%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%82%BF)">レンダリング (コンピュータ) - Wikipedia</a>)&nbsp;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">↩︎</a></p>
+</li>
+<li id="fn:4">
+    <p><span class="mr-1">[4]:</span><a href="https://github.com/kantas-spike/how-to-learn-hacking-japanese/blob/main/how-to-learn-hacking.md">ハッキングの学び方(How To Learn Hacking)</a>の精神です。&nbsp;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">↩︎</a></p>
+</li>
+<li id="fn:5">
+    <p><span class="mr-1">[5]:</span>私の環境はmacOSなので、<a href="https://support.apple.com/ja-jp/guide/mac-help/mh26782/mac">スクリーンショット</a>を使って画面を収録しました。&nbsp;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">↩︎</a></p>
+</li>
+<li id="fn:6">
+    <p><span class="mr-1">[6]:</span>デフォルトの状態でProxies &amp; cacheは自動設定されています。
+もっと編集作業のパフォーマンスを改善したい場合は、<a href="https://kantas-spike.github.io/vse-docs/video_editing/setup/proxies.html">2.1.4. Proxies &amp; cache — Blender VSE Unofficial Documentation ドキュメント</a>を確認してください。&nbsp;<a href="#fnref:6" class="footnote-backref" role="doc-backlink">↩︎</a></p>
+</li>
+<li id="fn:7">
+    <p><span class="mr-1">[7]:</span>本文書では、Blenderの<code>.blend</code>ファイルをプロジェクトファイルと呼んでいます。&nbsp;<a href="#fnref:7" class="footnote-backref" role="doc-backlink">↩︎</a></p>
+</li>
+<li id="fn:8">
+    <p><span class="mr-1">[8]:</span>お使いの環境にホイールマウスやテンキーがない場合、設定によりエミュレートできます。(参照: <a href="https://kantas-spike.github.io/vse-docs/video_editing/setup/preferences.html">2.1.2. User Preferences — Blender VSE Unofficial Documentation ドキュメント</a>)&nbsp;<a href="#fnref:8" class="footnote-backref" role="doc-backlink">↩︎</a></p>
+</li>
+<li id="fn:9">
+    <p><span class="mr-1">[9]:</span>2点を修正しています。「1.個人的な好みでフォルダー名を短くする」、「2. スライドベースの画像や音声の利用を想定し<code>x_slide</code>を追加」&nbsp;<a href="#fnref:9" class="footnote-backref" role="doc-backlink">↩︎</a></p>
+</li>
+<li id="fn:10">
+    <p><span class="mr-1">[10]:</span>個人的なツールになりますが、私はスライドベースの動画作用に <a href="https://github.com/kantas-spike/add_slide.py">kantas-spike/add_slide.py</a>を使ってサブフォルダーをセットアップしています。&nbsp;<a href="#fnref:10" class="footnote-backref" role="doc-backlink">↩︎</a></p>
+</li>
+<li id="fn:11">
+    <p><span class="mr-1">[11]:</span>詳細は、<a href="https://kantas-spike.github.io/vse-docs/video_editing/setup/project-settings.html">2.1.6. Project settings — Blender VSE Unofficial Documentation ドキュメント</a>の<code>Output Path</code>の項目を参照してください。&nbsp;<a href="#fnref:11" class="footnote-backref" role="doc-backlink">↩︎</a></p>
+</li>
+<li id="fn:12">
+    <p><span class="mr-1">[12]:</span>レンダリング途中で、<strong>Blender Render</strong>画面を閉じるか、<strong>Sequence Render</strong> プログレスバーを閉じると、レンダリングが中止されます。&nbsp;<a href="#fnref:12" class="footnote-backref" role="doc-backlink">↩︎</a></p>
+</li>
+  </ul>
+</div></div>
+  <div class="mt-6">
+    <div class="border-t-2 border-primary-dark px-2 pt-2 text-right">
+        <span class="text-sm">作成日: 2024/04/03</span></div>
+</div>
+
+</div>
+
+
+    </main><footer class="bg-primary-dark text-center text-on-primary-dark fixed bottom-0 w-full h-8">
+    <div class="container mx-auto grid grid-cols-3">
+        <div class="col-start-1 col-span-2 ml-2 md:ml-0 md:col-start-2 md:col-span-1">
+            <div class="text-left md:text-center text-sm pt-2">© 2022 kanta&#39;s spike</div>
+        </div>
+        <div class="col-start-3 flex justify-end gap-2 mr-2">
+            
+                
+            <a title="Twitter" class="text-2xl" href="https://twitter.com/KantasSpike"><i class="fa-brands fa-twitter-square"></i></a>
+                
+            <a title="Youtube" class="text-2xl" href="https://www.youtube.com/channel/UCnVBuUGMYAt7ZuIkadxnMfw"><i class="fa-brands fa-youtube-square"></i></a>
+                
+            <a title="GitHub" class="text-2xl" href="https://github.com/kantas-spike"><i class="fa-brands fa-github-square"></i></a>
+                
+            <a title="Blog" class="text-2xl" href="https://kantas-spike.github.io/portfolio/"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                
+            
+        </div>
+    </div>
+</footer>
+    <script type="module">
+      import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
+      mermaid.initialize({ startOnLoad: true });
+    </script>
+     
+
+
+
+
+<script defer type="text/javascript" src="/portfolio/js/search-form.07066240729fbbddf7f08e0938e5a7a060da185ec1c29e438984cfa6c2ff2386dd2ef58d9c7af295b66d187cc9c180f4aa62433709f8bf8813c39c1e239b641e.js" integrity="sha512-BwZiQHKfu9338I4JOOWnoGDaGF7Bwp5DiYTPpsL/I4bdLvWNnHrylbZtGHzJwYD0qmJDNwn4v4gTw5weI5tkHg=="></script></body>
+</html>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shell on kanta&#39;s spike</title>
+    <link>https://kantas-spike.github.io/portfolio/tags/shell/</link>
+    <description>Recent content in Shell on kanta&#39;s spike</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <copyright>© 2022 kanta&#39;s spike</copyright>
+    <lastBuildDate>Fri, 29 Mar 2024 15:27:46 +0900</lastBuildDate>
+    <atom:link href="https://kantas-spike.github.io/portfolio/tags/shell/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>空のディレクトリにまとめて.gitkeepファイルを作成したい</title>
+      <link>https://kantas-spike.github.io/portfolio/til/2024/03/110-%E7%A9%BA%E3%81%AE%E3%83%87%E3%82%A3%E3%83%AC%E3%82%AF%E3%83%88%E3%83%AA%E3%81%AB%E3%81%BE%E3%81%A8%E3%82%81%E3%81%A6gitkeep%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%92%E4%BD%9C%E6%88%90%E3%81%99%E3%82%8B/</link>
+      <pubDate>Fri, 29 Mar 2024 15:27:46 +0900</pubDate>
+      <guid>https://kantas-spike.github.io/portfolio/til/2024/03/110-%E7%A9%BA%E3%81%AE%E3%83%87%E3%82%A3%E3%83%AC%E3%82%AF%E3%83%88%E3%83%AA%E3%81%AB%E3%81%BE%E3%81%A8%E3%82%81%E3%81%A6gitkeep%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%92%E4%BD%9C%E6%88%90%E3%81%99%E3%82%8B/</guid>
+      <description>&lt;p&gt;複数存在する空のディレクトリにまとめて&lt;code&gt;.gitkeep&lt;/code&gt;ファイルを作成したい。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

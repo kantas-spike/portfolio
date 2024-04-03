@@ -7,20 +7,41 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>© 2022 kanta&#39;s spike</copyright>
-    <lastBuildDate>Thu, 28 Mar 2024 13:39:00 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 03 Apr 2024 02:16:15 +0900</lastBuildDate>
     <atom:link href="https://kantas-spike.github.io/portfolio/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Blender</title>
       <link>https://kantas-spike.github.io/portfolio/tags/blender/</link>
-      <pubDate>Thu, 28 Mar 2024 13:39:00 +0900</pubDate>
+      <pubDate>Wed, 03 Apr 2024 02:16:15 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/tags/blender/</guid>
       <description></description>
     </item>
     <item>
       <title>Vse</title>
       <link>https://kantas-spike.github.io/portfolio/tags/vse/</link>
-      <pubDate>Thu, 28 Mar 2024 13:39:00 +0900</pubDate>
+      <pubDate>Wed, 03 Apr 2024 02:16:15 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/tags/vse/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Vse非公式文書</title>
+      <link>https://kantas-spike.github.io/portfolio/tags/vse%E9%9D%9E%E5%85%AC%E5%BC%8F%E6%96%87%E6%9B%B8/</link>
+      <pubDate>Wed, 03 Apr 2024 02:16:15 +0900</pubDate>
+      <guid>https://kantas-spike.github.io/portfolio/tags/vse%E9%9D%9E%E5%85%AC%E5%BC%8F%E6%96%87%E6%9B%B8/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Git</title>
+      <link>https://kantas-spike.github.io/portfolio/tags/git/</link>
+      <pubDate>Fri, 29 Mar 2024 15:27:46 +0900</pubDate>
+      <guid>https://kantas-spike.github.io/portfolio/tags/git/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Shell</title>
+      <link>https://kantas-spike.github.io/portfolio/tags/shell/</link>
+      <pubDate>Fri, 29 Mar 2024 15:27:46 +0900</pubDate>
+      <guid>https://kantas-spike.github.io/portfolio/tags/shell/</guid>
       <description></description>
     </item>
     <item>
@@ -105,13 +126,6 @@
       <link>https://kantas-spike.github.io/portfolio/tags/gimp/</link>
       <pubDate>Wed, 13 Dec 2023 07:19:59 +0900</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/tags/gimp/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Git</title>
-      <link>https://kantas-spike.github.io/portfolio/tags/git/</link>
-      <pubDate>Wed, 22 Nov 2023 22:41:26 +0900</pubDate>
-      <guid>https://kantas-spike.github.io/portfolio/tags/git/</guid>
       <description></description>
     </item>
     <item>
