@@ -1,0 +1,737 @@
+<!doctype html>
+<html><head>
+    <title>
+        Blenderで動画編集 ワークスペースの用語と基本操作 | kanta&#39;s spike
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<link
+  rel="preload"
+  href="/portfolio/fonts/notosansjp-bold.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin="anonymous"
+/>
+
+<link
+  rel="preload"
+  href="/portfolio/fonts/notosansjp-regular.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin="anonymous"
+/>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Noto+Emoji:wght@400;500;700&family=Noto+Sans+JP:wght@400;700&display=swap"
+  rel="stylesheet"
+/>
+<link rel="stylesheet" href="/portfolio/css/fonts.598ae1b8a36eef149fd604bc4a326391fe472bc4628f92811ed047364d446748.css">
+    <link rel="stylesheet" href="/portfolio/css/theme.min.c1e28e172e1a969472a73bd59d6d066cf677bd0a251db98e504f6f310d61ff36.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" /><link rel="stylesheet" href="/portfolio/css/syntax.min.53132d5ecb321e785c36c5e94d619a0e0e5e50abd5435b10c105ebd046929b7a.css">
+<link rel="icon" type="image/png" sizes="512x512" href="/portfolio/icon512.png" />
+ 
+<link rel="icon" type="image/png" sizes="192x192" href="/portfolio/icon192.png" />
+ 
+<link rel="apple-touch-icon" sizes="180x180" href="/portfolio/icon180.png" />
+ 
+<link rel="icon" type="image/png" sizes="32x32" href="/portfolio/icon32.png" />
+ 
+<link rel="icon" type="image/svg+xml" href="/portfolio/icon.svg" />
+ 
+<link rel="manifest" href="/portfolio/site.webmanifest" />
+
+
+</head><body class="bg-background text-primary-dark pb-4"><header class="bg-primary-dark text-site_title text-6xl font-serif font-extrabold px-4 py-3">
+    <h1 class="container mx-auto px-4"><a href="https://kantas-spike.github.io/portfolio/">kanta&#39;s spike</a></h1>
+</header>
+<input type="checkbox" name="burger_cbx" id="burger_cbx">
+<label for="burger_cbx" class="burger_label">
+    <span class="burger_icon"><svg version="1.1" viewBox="0 0 12.7 12.7" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <rect x="1.0369" y="2.1007" width="10.634" height="1.0426" ry=".5213"/>
+  <rect x="1.0369" y="4.571" width="10.634" height="1.0426" ry=".5213"/>
+  <rect x="1.0369" y="7.0413" width="10.634" height="1.0426" ry=".5213"/>
+  <rect x="1.0369" y="9.5115" width="10.634" height="1.0426" ry=".5213"/>
+ </g>
+</svg>
+</span>
+</label>
+<label for="burger_cbx" class="close_label">
+    <span class="close_icon"><svg version="1.1" viewBox="0 0 12.7 12.7" xmlns="http://www.w3.org/2000/svg">
+ <rect transform="rotate(45.535)" x="3.6678" y="-.6148" width="10.634" height="1.0426" ry=".5213"/>
+ <rect transform="rotate(135.53)" x="-5.4104" y="-9.5059" width="10.634" height="1.0426" ry=".5213"/>
+</svg>
+</span>
+</label>
+<div class="nav_area">
+    <nav class="container mx-auto bg-primary text-on-primary text-center flex flex-col md:flex-row justify-start">
+            <a href="/portfolio/" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Home</a>
+            <a href="/portfolio/til" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">TIL</a>
+            <a href="/portfolio/dialogues" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Dialogues</a>
+            <a href="/portfolio/articles" class="box-border flex-1 text-center no-underline bg-primary-light text-on-primary-light font-bold py-2">Articles</a>
+            <a href="/portfolio/mytools" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">My Tools</a>
+            <a href="/portfolio/ihc" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">IHC</a>
+            <a href="/portfolio/tags" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Tags</a>
+        <div class="flex-none" id="search_menu"></div>
+    </nav>
+</div>
+<main id="content" class="container mx-auto bg-surface pt-4 pb-8">
+<div class="area_border px-4 py-3 mx-4 md:mx-auto pb-4 max-w-[60rem]">
+  
+
+<div class="mb-4">
+    <h3 class="border-b-4 border-primary-dark text-primary-dark text-xl font-bold tracking-wider pl-[1em] -indent-[1ex]"><i class="fa-solid fa-file-lines"></i> <a href="https://kantas-spike.github.io/portfolio/articles/2024/04/17-blender%E3%81%A7%E5%8B%95%E7%94%BB%E7%B7%A8%E9%9B%86-%E3%83%AF%E3%83%BC%E3%82%AF%E3%82%B9%E3%83%9A%E3%83%BC%E3%82%B9%E3%81%AE%E7%94%A8%E8%AA%9E%E3%81%A8%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/">Blenderで動画編集 ワークスペースの用語と基本操作</a></h3>
+    <div class="flex justify-between mt-1 mx-2">
+        <div>
+            <ul class="flex gap-2 justify-end">
+            
+            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/blender/">#Blender</a></li>
+            
+            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/vse/">#Vse</a></li>
+            
+            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/vse%E9%9D%9E%E5%85%AC%E5%BC%8F%E6%96%87%E6%9B%B8/">#Vse非公式文書</a></li>
+            
+            </ul>
+        </div>
+        <div>
+            
+            
+            <div class="text-right text-sm font-bold">2024/04/07
+                
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+  <div class="article mx-2"><p><a href="/portfolio/articles/2024/04/16-blender%E3%81%A7%E5%8B%95%E7%94%BB%E7%B7%A8%E9%9B%86-%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%95%E3%83%AD%E3%83%BC%E3%81%A8%E6%BA%96%E5%82%99/">前回</a>、 <strong>ワークフロー: セットアップ</strong> について説明しました。</p>
+<p>今回は、編集ワークフローについて説明する前段階として、
+動画編集用ワークスペースの <strong>用語と基本操作</strong> について説明します。</p>
+<p>この記事では、<a href="https://vse-docs.readthedocs.io/video_sequencer/index.html#">1. Video Sequence Editor — Blender VSE Unofficial Documentation</a> をもとに概要を説明します。</p>
+<p>詳細については、<a href="https://vse-docs.readthedocs.io/">Blender VSE Unofficial Documentation</a> および Blender 公式リファレンス(<a href="https://docs.blender.org/manual/en/latest/editors/video_sequencer/index.html">Video Sequencer</a>, <a href="https://docs.blender.org/manual/en/latest/video_editing/index.html">Video Editing</a> ) を参照してください。</p>
+<h3 id="動画編集用ワークスペースの用語と基本操作">動画編集用ワークスペースの用語と基本操作</h3>
+<p>動画編集ワークスペースは5つのエディターから構成されます。</p>
+<ol>
+<li>File Browser</li>
+<li>Properties Editor</li>
+<li>Video Sequence Editor(Preview ビュー)</li>
+<li>Video Sequence Editor(Sequencer ビュー)</li>
+<li>Timeline Editor</li>
+</ol>
+<!-- raw HTML omitted -->
+<p><strong>編集</strong> というワークフローは、単純化すると以下の作業の繰り返しになります。</p>
+<ul>
+<li><strong>Video Sequence Editor(Sequencer ビュー)</strong> に編集用素材を追加</li>
+<li><strong>Video Sequence Editor(Preview ビュー)</strong> で内容を確認</li>
+<li>必要に応じて素材を修正(カットや長さ調整、移動や削除)</li>
+</ul>
+<!-- raw HTML omitted -->
+<p>今後の記事で、動画編集ワークスペースを使った <strong>編集</strong> 方法を説明する予定ですが、
+その前にまず、動画編集ワークスペースの用語と基本操作を説明します。</p>
+<h3 id="用語説明">用語説明</h3>
+<p>まずは、<strong>Video Sequence Editor(Sequencer ビュー)</strong> に注目して以下の用語について説明します。</p>
+<ul>
+<li>Timeline(タイムライン)</li>
+<li>Channel(チャンネル)</li>
+<li>Strip(ストリップ)</li>
+<li>Playhead(プレイヘッド)</li>
+</ul>
+<!-- raw HTML omitted -->
+<h4 id="timelineタイムライン">Timeline(タイムライン)</h4>
+<p><strong>Video Sequence Editor(Sequencer ビュー)</strong> にはタイムラインと呼ばれる横長の領域があります。
+(ここでいうタイムラインは、名前が似ていますがTimeline Editorとは異なります。 <strong>Video Sequence Editor(Sequencer ビュー)</strong> の1つの部品or領域になります。)</p>
+<p>左から右への水平方向が、時間の流れを表します。</p>
+<p>左から右に素材を繋いでいくことで、映像作品を作り上げることができます。</p>
+<p>また、タイムラインのヘッダー部分には、タイムコードが表示されています。
+これは、定規の目盛のようなものです。</p>
+<p>タイムコードは、タイムラインの該当位置が、作品内のどの時間を指すのかを意味するものです。</p>
+<h4 id="channelチャンネル">Channel(チャンネル)</h4>
+<p><strong>Video Sequence Editor(Sequencer ビュー)</strong> はチャンネルと呼ばれるレイヤーがあります。</p>
+<p>タイムラインの下から上への垂直方向が、チャンネルと呼ばれ、コンテンツの重なりを表します。</p>
+<p>初期状態では、チャンネルは1〜7まで表示されていますが、チャンネルは1から最大128まで利用可能です。</p>
+<p><strong>Video Sequence Editor(Preview ビュー)</strong> で確認すると、チャンネルの番号が大きい方(上のチャンネル)のストリップのコンテンツが、小さい方(下のチャンネル)のストリップのコンテンツの上に配置されます。</p>
+<p>動画上に画像や字幕を配置する場合は、動画よりも上のチャンネルに、画像や字幕を配置しましょう。</p>
+<!-- raw HTML omitted -->
+<p>また、表示サイズが同じ素材の場合、下のストリップは、完全に隠れてしまいますが、表示サイズの異なる素材の場合、サイズの小さい方を上に配置することで、2つの異なる動画を同時に表示(ピクチャ イン ピクチャ)することも可能です。</p>
+<!-- raw HTML omitted -->
+<h4 id="stripストリップ">Strip(ストリップ)</h4>
+<p>タイムラインに素材を追加したときに表示される横長の帯をストリップと呼びます。</p>
+<!-- raw HTML omitted -->
+<p>ストリップの横の長さがその素材の表示時間になります。
+ストリップにはいくつも種類があり、様々なコンテンツをタイムラインに配置できます。</p>
+<p>これらのストリップは、4つのグループに分類できます。</p>
+<div class="rawhtml"><table>
+  <thead>
+    <tr>
+      <th>No</th>
+      <th>分類</th>
+      <th colspan="2">ストリップの名前/グループ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th rowspan="3">A</th>
+      <td rowspan="3">
+        別のBlenderモジュールで作成したものが<br>入力ソースとなるもの
+      </td>
+      <td>1</td>
+      <td>Sceneストリップ</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Clipストリップ</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Maskストリップ</td>
+    </tr>
+    <tr>
+      <th rowspan="3">B</th>
+      <td rowspan="3">外部ファイルが入力ソースとなるもの</td>
+      <td>1</td>
+      <td>Movieストリップ</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Soundストリップ</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Image/Sequenceストリップ</td>
+    </tr>
+    <tr>
+      <th rowspan="2">C</th>
+      <td rowspan="2">
+        Video Sequence Editor(Sequencer ビュー)<br>で作成するもの
+      </td>
+      <td>1</td>
+      <td>Colorストリップ</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Textストリップ</td>
+    </tr>
+    <tr>
+      <th rowspan="3">D</th>
+      <td rowspan="3">別のストリップが入力ソースとなるもの</td>
+      <td>1</td>
+      <td>Adjustment Layerストリップ</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Effectストリップ(10種)</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Transition(4種)</td>
+    </tr>
+  </tbody>
+</table>
+</div><h4 id="playheadプレイヘッド">Playhead(プレイヘッド)</h4>
+<p>タイムラインには、Playheadがあり、それが指すフレームが、 <strong>Video Sequence Editor(Preview ビュー)</strong> に表示されます。</p>
+<p>Playheadはドラッグして動かし、該当フレームを <strong>Preview</strong> で確認すこともできますし、 <strong>Timeline Editor</strong> にある操作ボタンを使って再生・停止することもできます。</p>
+<h3 id="video-sequence-editorsequencer-ビュー-の操作"><strong>Video Sequence Editor(Sequencer ビュー)</strong> の操作</h3>
+<p>ここまでの用語を踏まえたうえで、まずは、<strong>Video Sequence Editor(Sequencer ビュー)</strong> の操作を説明します。</p>
+<div class="column not-article mx-1 my-4  px-4 py-4 border-2 rounded-md ">
+  <div class="text-lg font-bold leading-m tracking-m mb-4 -mx-1">
+      <span class="flex emoji content-start">
+        <span class="mr-1">
+          
+            📄
+          
+        </span>
+        <span class="font-sans">注意事項</span>
+      </span>
+    </div>
+  <div class="mx-2 article">
+    ショートカットキーで操作する場合は、該当エディターの該当領域にマウスカーソルをあわせている状態で操作してください。
+Blenderでは、マウスカーソルのある領域がショートカットキーの操作対象になります。
+  </div>
+</div>
+<h4 id="タイムライン操作">タイムライン操作</h4>
+<p>Blenderでは同じ種類の操作を、いろいろな方法で行えます。
+ただし、タイムラインの垂直方法の移動やズームは、デフォルトでは、1〜7チャンネルまでしか利用できません。7よりも大きいチャンネルにストリップを配置している場合は、ストリップを配置している最大チャンネルまで移動やズームが行えます。</p>
+<p>nuttiさんの、 <strong>Screencast Keys</strong> というアドオンを使って、キーボードやマウス操作が表示されるようにしています。
+マウスカーソルの横に、マウス操作やキー操作を表示するように設定しているのでこちらも注目してください。</p>
+<!-- raw HTML omitted -->
+<h5 id="タイムラインの移動">タイムラインの移動</h5>
+<table>
+<thead>
+<tr>
+<th>名前</th>
+<th>操作</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>水平移動</td>
+<td><strong>マウス中ボタン</strong> で左右ドラッグ</td>
+<td>左/右にドラッグすると、それぞれ、タイムラインの右/左方向へ移動</td>
+</tr>
+<tr>
+<td></td>
+<td><code>Ctrl</code>+ <strong>マウスホイール</strong> 上下</td>
+<td>上/下に回転すると、それぞれ、タイムライン左/右方向へ移動</td>
+</tr>
+<tr>
+<td></td>
+<td>水平スクロールバーのバー部分のドラッグ</td>
+<td>左/右にドラッグすると、それぞれ、タイムラインの左/右方向へ移動</td>
+</tr>
+<tr>
+<td>垂直移動</td>
+<td><strong>マウス中ボタン</strong> で上下ドラッグ</td>
+<td>上/下にドラッグすると、それぞれ、タイムラインの下/上方向へ移動</td>
+</tr>
+<tr>
+<td></td>
+<td><code>Shift</code>+マウスホイール上下</td>
+<td>上/下に回転すると、それぞれ、タイムライン上/下方向へ移動</td>
+</tr>
+<tr>
+<td></td>
+<td>垂直スクロールバーのバー部分のドラッグ</td>
+<td>上/下にドラッグすると、それぞれ、タイムライン上/下方向へ移動</td>
+</tr>
+</tbody>
+</table>
+<h5 id="タイムラインのズーム">タイムラインのズーム</h5>
+<table>
+<thead>
+<tr>
+<th>名前</th>
+<th>操作</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>水平ズーム</td>
+<td>テンキーの <code>+</code> or <code>-</code></td>
+<td><code>+</code>/<code>-</code> で、それぞれ、水平方向のズームイン/ズームアウト</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>マウスホイール</strong> 上下</td>
+<td>上/下に回転すると、それぞれ、水平方向のズームイン/ズームアウト</td>
+</tr>
+<tr>
+<td></td>
+<td><code>Ctrl</code>+ <strong>マウス中ボタン</strong> で左右ドラッグ</td>
+<td>左/右にドラッグすると、それぞれ、水平方向のズームアウト/ズームイン</td>
+</tr>
+<tr>
+<td></td>
+<td>水平スクロールバーのサークル部分のドラッグ</td>
+<td>内側/外側にドラッグすると、それぞれ、水平方向のズームイン/ズームアウト</td>
+</tr>
+<tr>
+<td>垂直ズーム</td>
+<td><code>Ctrl</code>+ <strong>マウス中ボタン</strong> で上下ドラッグ</td>
+<td>上/下にドラッグすると、それぞれ、垂直方向のズームイン/ズームアウト</td>
+</tr>
+<tr>
+<td></td>
+<td>垂直スクロールバーのサークル部分のドラッグ</td>
+<td>内側/外側にドラッグすると、それぞれ、垂直方向のズームイン/ズームアウト</td>
+</tr>
+</tbody>
+</table>
+<h5 id="特殊なズーム">特殊なズーム</h5>
+<table>
+<thead>
+<tr>
+<th>名前</th>
+<th>操作</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>選択範囲にズーム</td>
+<td>[View]メニュー &gt; [Zoom] (ショートカットキー: <code>Shift</code> + <code>B</code>)</td>
+<td>十字カーソルが表示され矩形選択が可能になる。タイムライン内を矩形選択するとその範囲がタイムラインとして表示</td>
+</tr>
+<tr>
+<td>選択ストリップを表示</td>
+<td>[View]メニュー&gt; [Frame Selected] (ショートカットキー: テンキーの<code>.</code>)</td>
+<td>タイムライン内で選択されているストリップをタイムライン全体に表示</td>
+</tr>
+<tr>
+<td>全体を表示</td>
+<td>[View]メニュー &gt; [Frame All] (ショートカットキー: <code>Home</code>)</td>
+<td>水平方向はフレーム範囲全体、垂直方向はチャンネル1〜使用している最大チャンネルの範囲(初期状態では1〜7チャンネル)をタイムラインとして表示</td>
+</tr>
+</tbody>
+</table>
+<p>いろいろ移動やズームの操作して、困った時は、<code>Home</code>キーを押すと(or [View] &gt; [Frame All]を選択)、全ての範囲が表示されるので、ここからやり直しましょう。</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h4 id="ストリップの操作">ストリップの操作</h4>
+<p>ストリップの詳細については、次回以降に説明します。</p>
+<h4 id="playheadの操作">Playheadの操作</h4>
+<table>
+<thead>
+<tr>
+<th>名前</th>
+<th>操作</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>再生/停止</td>
+<td><code>スペース</code>キー</td>
+<td>キーを押すとPlayheadの再生、停止を切替える</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>Timeline Editor</strong> の <code>Transport Controls</code>の再生/停止ボタン</td>
+<td>ボタンを押すとPlayheadを再生/停止する</td>
+</tr>
+<tr>
+<td>移動</td>
+<td>カーソルキー <code>Left</code>/<code>Right</code>キー</td>
+<td>キーを押すと、それぞれ、Playheadが1フレームずつ左/右へ移動する</td>
+</tr>
+<tr>
+<td></td>
+<td><code>Alt</code>+ <strong>マウスホイール</strong> 上下</td>
+<td>上/下に回転すると、それぞれ、Playheadが1フレームずつ左/右へ移動する</td>
+</tr>
+<tr>
+<td>特定位置へジャンプ</td>
+<td>タイムライン上部のタイムコード表示部をマウス左ボタンでクリック</td>
+<td>クリックした位置のフレームにPlayhaedが移動</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>Timeline Editor</strong>の[Current Frame]にフレーム番号を入力</td>
+<td>入力したフレーム番号の位置にPlayheadが移動</td>
+</tr>
+<tr>
+<td>フレームレンジの境界にジャンプ</td>
+<td><code>Shift</code>+<code>Left</code>/<code>Shift</code>+<code>Right</code>キー</td>
+<td>キーを押すと、それぞれ、プロジェクトのフレームレンジの開始フレーム/終了フレームへ移動</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>Timeline Editor</strong> の <code>Transport Controls</code>の[Jump to first]/[Jump to last]ボタン</td>
+<td>ボタンを押すと、それぞれ、プロジェクトのフレームレンジの開始フレーム/終了フレームへ移動</td>
+</tr>
+<tr>
+<td>ストリップの境界にジャンプ</td>
+<td><code>PgUp</code>/<code>PgDn</code>キー</td>
+<td>キーを押すと、それぞれ、Playheadの右側/左側にある、最初のストリップの先頭または末尾にジャンプする</td>
+</tr>
+<tr>
+<td></td>
+<td><code>Alt</code>+<code>PgUp</code>/<code>Alt</code>+<code>PgDn</code>キー</td>
+<td>キーを押すと、それぞれ、Playheadの右側/左側にある、最初のストリップの中央にジャンプする</td>
+</tr>
+<tr>
+<td>スクラブ (左右ににゴシゴシ)</td>
+<td>タイムライン上部のタイムコード表示部をマウス左ボタンで左右にドラッグ</td>
+<td>左/右にドラッグすると、それぞれ、Playheadが左/右へ移動す</td>
+</tr>
+<tr>
+<td></td>
+<td>タイムラインの内部(ストリップ以外の領域)を<code>Shift</code>+マウス右ボタンで左右にドラッグ</td>
+<td>左/右にドラッグすると、それぞれ、Playheadが左/右へ移動す</td>
+</tr>
+<tr>
+<td></td>
+<td>タイムラインのストリップ部分を<code>Shift</code>+マウス右ボタンで左右にドラッグ</td>
+<td>左/右にドラッグすると、それぞれ、Playheadが左/右へ移動。ただし<strong>Preview</strong>には該当ストリップのみ表示される</td>
+</tr>
+</tbody>
+</table>
+<p><code>Ctrl</code>キーを押しながら、スクラブすると、Playheadが各ストリップの境界(先頭、末尾)にスナップ(一旦ひっつく)します。</p>
+<h3 id="video-sequence-editorpreview-ビュー-の操作"><strong>Video Sequence Editor(Preview ビュー)</strong> の操作</h3>
+<p><strong>Preview</strong> には、Playheadが指すフレームの内容が表示されます。</p>
+<h4 id="移動">移動</h4>
+<p>移動の基本操作は、<strong>Sequencer</strong> とほとんど同じです。(<strong>Sequencer</strong>と違い、スクロールバーはありません。)</p>
+<table>
+<thead>
+<tr>
+<th>名前</th>
+<th>操作</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>水平移動</td>
+<td><strong>マウス中ボタン</strong> で左右ドラッグ</td>
+<td>左/右にドラッグすると、それぞれ、プレビューの右/左方向へ移動</td>
+</tr>
+<tr>
+<td></td>
+<td><code>Ctrl</code>+ <strong>マウスホイール</strong> 上下</td>
+<td>上/下に回転すると、それぞれ、プレビューの左/右方向へ移動</td>
+</tr>
+<tr>
+<td>垂直移動</td>
+<td><strong>マウス中ボタン</strong> で上下ドラッグ</td>
+<td>上/下にドラッグすると、それぞれ、プレビューの下/上方向へ移動</td>
+</tr>
+<tr>
+<td></td>
+<td><code>Shift</code>+マウスホイール上下</td>
+<td>上/下に回転すると、それぞれ、プレビューの上/下方向へ移動</td>
+</tr>
+</tbody>
+</table>
+<h4 id="基本的なズーム">基本的なズーム</h4>
+<p>ただし、ズームについては少し違います。水平・垂直ズームには分れていません。縦横の比率を保ってズームします。</p>
+<table>
+<thead>
+<tr>
+<th>名前</th>
+<th>操作</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ズーム</td>
+<td>テンキーの <code>+</code> or <code>-</code></td>
+<td><code>+</code>/<code>-</code> で、それぞれ、ズームイン/ズームアウト</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>マウスホイール</strong> 上下</td>
+<td>上/下に回転すると、それぞれ、ズームイン/ズームアウト</td>
+</tr>
+<tr>
+<td></td>
+<td><code>Ctrl</code>+ <strong>マウス中ボタン</strong> で上下ドラッグ</td>
+<td>上/下にドラッグすると、それぞれ、ズームイン/ズームアウト</td>
+</tr>
+</tbody>
+</table>
+<h4 id="特殊なズーム-1">特殊なズーム</h4>
+<table>
+<thead>
+<tr>
+<th>名前</th>
+<th>操作</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>選択範囲にズーム</td>
+<td>[View] &gt; [Zoom] (ショートカットキー: <code>Shift</code> + <code>B</code>)</td>
+<td>十字カーソルが表示され矩形選択が可能になる。<strong>Preview</strong>内を矩形選択するとその範囲を中心に表示</td>
+</tr>
+<tr>
+<td>選択コンテンツを表示</td>
+<td>[View]&gt; [Frame Selected] (ショートカットキー: テンキーの<code>.</code>)</td>
+<td>タイムライン内で選択されているストリップのコンテンツを <strong>Preview</strong> 全体に表示</td>
+</tr>
+<tr>
+<td>全体を表示</td>
+<td>[View] &gt; [Fit Preview in Window] (ショートカットキー: <code>Home</code>)</td>
+<td>コンテンツの表示サイズを <strong>Preview</strong> エリア全体に合せる</td>
+</tr>
+<tr>
+<td>倍率指定でズーム</td>
+<td>[View] &gt; [Zoom] &gt; [Zoom 1:8] (ショートカットキー: テンキーの<code>8</code>)</td>
+<td>コンテンツを1/8倍のサイズで表示</td>
+</tr>
+<tr>
+<td></td>
+<td>[View] &gt; [Zoom] &gt; [Zoom 1:4] (ショートカットキー: テンキーの<code>4</code>)</td>
+<td>コンテンツを1/4倍のサイズで表示</td>
+</tr>
+<tr>
+<td></td>
+<td>[View] &gt; [Zoom] &gt; [Zoom 1:2] (ショートカットキー: テンキーの<code>2</code>)</td>
+<td>コンテンツを1/2倍のサイズで表示</td>
+</tr>
+<tr>
+<td></td>
+<td>[View] &gt; [Zoom] &gt; [Zoom 1:1] (ショートカットキー: テンキーの<code>1</code>)</td>
+<td>コンテンツを等倍のサイズで表示</td>
+</tr>
+<tr>
+<td></td>
+<td>[View] &gt; [Zoom] &gt; [Zoom 2:1] (ショートカットキー: <code>Ctrl</code> + テンキーの<code>2</code>)</td>
+<td>コンテンツを2倍のサイズで表示</td>
+</tr>
+<tr>
+<td></td>
+<td>[View] &gt; [Zoom] &gt; [Zoom 4:1] (ショートカットキー: <code>Ctrl</code> + テンキーの<code>4</code>)</td>
+<td>コンテンツを4倍のサイズで表示</td>
+</tr>
+<tr>
+<td></td>
+<td>[View] &gt; [Zoom] &gt; [Zoom 8:1] (ショートカットキー: <code>Ctrl</code> + テンキーの<code>8</code>)</td>
+<td>コンテンツを8倍のサイズで表示</td>
+</tr>
+</tbody>
+</table>
+<h4 id="ストリップのコンテンツの操作">ストリップのコンテンツの操作</h4>
+<p>サイズの異なるストリップを重ねて表示したい場合には、ストリップのコンテンツの位置やサイズを変更する必要があります。</p>
+<p><strong>Preview</strong> 上で、<code>T</code>キーを押して(or [View]メニュー &gt; [Toolbar])、ツールバーを表示します。</p>
+<table>
+<thead>
+<tr>
+<th>名前</th>
+<th>操作</th>
+<th>説明</th>
+<th>備考</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>選択</td>
+<td>Select Tool(Tweak)</td>
+<td><strong>Preview</strong> 内でクリックした位置のストリップを選択。ストリップが重なる場合は、再度クリックすると選択対象のストリップが切り替わる</td>
+<td>アイコンを長押しして表示される選択肢を選択 or<code>W</code>キー</td>
+</tr>
+<tr>
+<td></td>
+<td>Select Tool(Select Box)</td>
+<td><strong>Preview</strong> 内で矩形選択したストリップを選択。矩形と重なるストリップが選択される</td>
+<td>アイコンを長押しして表示される選択肢を選択 or <code>B</code>キー</td>
+</tr>
+<tr>
+<td>移動</td>
+<td>Move Tool</td>
+<td>選択されたストリップに操作コントロールが表示され、コントロールをドラッグすることで水平方向、垂直方向、自由方向への移動を行える</td>
+<td></td>
+</tr>
+<tr>
+<td>回転</td>
+<td>Rotate Tool</td>
+<td>選択されたストリップに操作コントロールが表示され、コントロールをドラッグすることで回転できる</td>
+<td></td>
+</tr>
+<tr>
+<td>拡大縮小</td>
+<td>Scale Tool</td>
+<td>選択されたストリップに操作コントロールが表示され、コントロールをドラッグすることで水平方向、垂直方向、両方向への拡大縮小を行える</td>
+<td></td>
+</tr>
+<tr>
+<td>変形</td>
+<td>Transform Tool</td>
+<td>選択されたストリップに操作コントロールが表示され、コントロールをドラッグすることで移動、回転、拡大縮小を行える</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>これらの操作はショートカットキーでも操作可能です。(移動系のショートカットキーの操作は、Blenderの他のエディターでも共通で利用できます。)</p>
+<table>
+<thead>
+<tr>
+<th>名前</th>
+<th>操作</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>移動</td>
+<td><code>G</code>キー、マウスカーソル移動、左クリック</td>
+<td><code>G</code>キーを押すと、選択されたストリップが移動モードになり、マウスカーソルに合せて移動する。マウスを左クリックすると該当位置に移動が完了する</td>
+</tr>
+<tr>
+<td>移動(軸指定)</td>
+<td><code>G</code>キー、<code>X</code>/<code>Y</code>キー、マウスカーソル移動、左クリック</td>
+<td><code>G</code>キーを押すと、選択されたストリップが移動モードになり、さらに<code>X</code>/<code>Y</code>キーを押すと、それぞれ、X軸方向、Y軸方向への移動モードになり、マウスカーソルに合せてその軸の方向に移動する。マウスを左クリックすると該当位置に移動が完了する</td>
+</tr>
+<tr>
+<td>回転</td>
+<td><code>R</code>キー、マウスカーソル移動、左クリック</td>
+<td><code>R</code>キーを押すと、選択されたストリップが回転モードになり、マウスカーソルに合せて回転する。マウスを左クリックすると該当位置に回転が完了する</td>
+</tr>
+<tr>
+<td>拡大縮小</td>
+<td><code>S</code>キー、マウスカーソル移動、左クリック</td>
+<td><code>S</code>キーを押すと、選択されたストリップが拡大縮小モードになり、マウスカーソルに合せて拡大縮小する。マウスを左クリックすると該当位置に拡大縮小が完了する</td>
+</tr>
+<tr>
+<td>拡大縮小(軸指定)</td>
+<td><code>S</code>キー、<code>X</code>/<code>Y</code>キー、マウスカーソル移動、左クリック</td>
+<td><code>S</code>キーを押すと、選択されたストリップが拡大縮小モードになり、さらに<code>X</code>/<code>Y</code>キーを押すと、それぞれ、X軸方向、Y軸方向への拡大縮小モードになり、マウスカーソルに合せてその軸の方向に拡大縮小する。マウスを左クリックすると該当位置に拡大縮小が完了する</td>
+</tr>
+</tbody>
+</table>
+<p>ツールバーのツール操作やショートカットキー操作時に、ドラッグやマウス移動している最中に、<code>Shift</code>を押しつづけると、変化の大きさがが1/10になり、より細かい操作が可能になります。
+また、ドラッグやマウス移動している最中に、<code>Esc</code>キーを押すと(or マウスの右クリック)、操作が中止されます。</p>
+<h3 id="まとめ">まとめ</h3>
+<p>今回は、 <strong>ワークフロー: 編集</strong> について説明する前段階として、
+動画編集用ワークスペースの <strong>用語説明と基本操作</strong> について説明しました。</p>
+<p>これらの用語は、Blender VSE固有のものではなく、他の動画編集ソフトにも名称が違えど同様のモノがあると思います。
+操作方法については、Blender特有の操作になるので慣れる必要があります。</p>
+<h3 id="参考資料">参考資料</h3>
+<ul>
+<li>公式リファレンス
+<ul>
+<li><a href="https://docs.blender.org/manual/en/latest/editors/video_sequencer/index.html">Video Sequencer</a></li>
+<li><a href="https://docs.blender.org/manual/en/latest/video_editing/index.html">Video Editing</a></li>
+</ul>
+</li>
+<li>Blender VSE Unofficial Documentation
+<ul>
+<li><a href="https://vse-docs.readthedocs.io/">Blender VSE Unofficial Documentation</a>
+<ul>
+<li><a href="https://vse-docs.readthedocs.io/video_sequencer/sequencer/timeline.html">1.1.2. Timeline — Blender VSE Unofficial Documentation</a></li>
+<li><a href="https://vse-docs.readthedocs.io/video_editing/edit/montage/striptypes/index.html">2.2.1.1. Strip Types — Blender VSE Unofficial Documentation</a></li>
+</ul>
+</li>
+<li>翻訳版
+<ul>
+<li><a href="https://kantas-spike.github.io/vse-docs/index.html">Blender VSE 非公式文書 — Blender VSE Unofficial Documentation</a>
+<ul>
+<li><a href="https://kantas-spike.github.io/vse-docs/video_sequencer/sequencer/timeline.html">1.1.2. タイムライン — Blender VSE Unofficial Documentation</a></li>
+<li><a href="https://kantas-spike.github.io/vse-docs/video_editing/edit/montage/striptypes/index.html">2.2.1.1. ストリップの種類 — Blender VSE Unofficial Documentation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="https://github.com/nutti/Screencast-Keys">nutti/Screencast-Keys: Blender Add-on: Screencast Keys</a></li>
+</ul></div>
+  <div class="mt-6">
+    <div class="border-t-2 border-primary-dark px-2 pt-2 text-right">
+        <span class="text-sm">作成日: 2024/04/07</span></div>
+</div>
+
+</div>
+
+
+    </main><footer class="bg-primary-dark text-center text-on-primary-dark fixed bottom-0 w-full h-8">
+    <div class="container mx-auto grid grid-cols-3">
+        <div class="col-start-1 col-span-2 ml-2 md:ml-0 md:col-start-2 md:col-span-1">
+            <div class="text-left md:text-center text-sm pt-2">© 2022 kanta&#39;s spike</div>
+        </div>
+        <div class="col-start-3 flex justify-end gap-2 mr-2">
+            
+                
+            <a title="Twitter" class="text-2xl" href="https://twitter.com/KantasSpike"><i class="fa-brands fa-twitter-square"></i></a>
+                
+            <a title="Youtube" class="text-2xl" href="https://www.youtube.com/channel/UCnVBuUGMYAt7ZuIkadxnMfw"><i class="fa-brands fa-youtube-square"></i></a>
+                
+            <a title="GitHub" class="text-2xl" href="https://github.com/kantas-spike"><i class="fa-brands fa-github-square"></i></a>
+                
+            <a title="Blog" class="text-2xl" href="https://kantas-spike.github.io/portfolio/"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                
+            
+        </div>
+    </div>
+</footer> 
+
+
+
+
+<script defer type="text/javascript" src="/portfolio/js/search-form.07066240729fbbddf7f08e0938e5a7a060da185ec1c29e438984cfa6c2ff2386dd2ef58d9c7af295b66d187cc9c180f4aa62433709f8bf8813c39c1e239b641e.js" integrity="sha512-BwZiQHKfu9338I4JOOWnoGDaGF7Bwp5DiYTPpsL/I4bdLvWNnHrylbZtGHzJwYD0qmJDNwn4v4gTw5weI5tkHg=="></script></body>
+</html>

@@ -7,8 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>© 2022 kanta&#39;s spike</copyright>
-    <lastBuildDate>Wed, 03 Apr 2024 02:16:15 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 07 Apr 2024 22:28:19 +0900</lastBuildDate>
     <atom:link href="https://kantas-spike.github.io/portfolio/articles/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blenderで動画編集 ワークスペースの用語と基本操作</title>
+      <link>https://kantas-spike.github.io/portfolio/articles/2024/04/17-blender%E3%81%A7%E5%8B%95%E7%94%BB%E7%B7%A8%E9%9B%86-%E3%83%AF%E3%83%BC%E3%82%AF%E3%82%B9%E3%83%9A%E3%83%BC%E3%82%B9%E3%81%AE%E7%94%A8%E8%AA%9E%E3%81%A8%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/</link>
+      <pubDate>Sun, 07 Apr 2024 22:28:19 +0900</pubDate>
+      <guid>https://kantas-spike.github.io/portfolio/articles/2024/04/17-blender%E3%81%A7%E5%8B%95%E7%94%BB%E7%B7%A8%E9%9B%86-%E3%83%AF%E3%83%BC%E3%82%AF%E3%82%B9%E3%83%9A%E3%83%BC%E3%82%B9%E3%81%AE%E7%94%A8%E8%AA%9E%E3%81%A8%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://kantas-spike.github.io/portfolio/portfolio/articles/2024/04/16-blender%E3%81%A7%E5%8B%95%E7%94%BB%E7%B7%A8%E9%9B%86-%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%95%E3%83%AD%E3%83%BC%E3%81%A8%E6%BA%96%E5%82%99/&#34;&gt;前回&lt;/a&gt;、 &lt;strong&gt;ワークフロー: セットアップ&lt;/strong&gt; について説明しました。&lt;/p&gt;&#xA;&lt;p&gt;今回は、編集ワークフローについて説明する前段階として、&#xA;動画編集用ワークスペースの &lt;strong&gt;用語と基本操作&lt;/strong&gt; について説明します。&lt;/p&gt;&#xA;&lt;p&gt;この記事では、&lt;a href=&#34;https://vse-docs.readthedocs.io/video_sequencer/index.html#&#34;&gt;1. Video Sequence Editor — Blender VSE Unofficial Documentation&lt;/a&gt; をもとに概要を説明します。&lt;/p&gt;&#xA;&lt;p&gt;詳細については、&lt;a href=&#34;https://vse-docs.readthedocs.io/&#34;&gt;Blender VSE Unofficial Documentation&lt;/a&gt; および Blender 公式リファレンス(&lt;a href=&#34;https://docs.blender.org/manual/en/latest/editors/video_sequencer/index.html&#34;&gt;Video Sequencer&lt;/a&gt;, &lt;a href=&#34;https://docs.blender.org/manual/en/latest/video_editing/index.html&#34;&gt;Video Editing&lt;/a&gt; ) を参照してください。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Blenderで動画編集 ワークフローとセットアップ</title>
       <link>https://kantas-spike.github.io/portfolio/articles/2024/04/16-blender%E3%81%A7%E5%8B%95%E7%94%BB%E7%B7%A8%E9%9B%86-%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%95%E3%83%AD%E3%83%BC%E3%81%A8%E6%BA%96%E5%82%99/</link>
