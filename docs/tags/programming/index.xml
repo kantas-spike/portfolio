@@ -4,11 +4,18 @@
     <title>Programming on kanta&#39;s spike</title>
     <link>https://kantas-spike.github.io/portfolio/tags/programming/</link>
     <description>Recent content in Programming on kanta&#39;s spike</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo 0.125.1</generator>
     <language>ja-jp</language>
     <copyright>© 2022 kanta&#39;s spike</copyright>
-    <lastBuildDate>Wed, 05 Apr 2023 02:16:01 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 14 Apr 2024 03:54:34 +0900</lastBuildDate>
     <atom:link href="https://kantas-spike.github.io/portfolio/tags/programming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>動画編集のためのBlender ストリップの種類とその追加方法</title>
+      <link>https://kantas-spike.github.io/portfolio/articles/2024/04/18-blender%E3%81%A7%E5%8B%95%E7%94%BB%E7%B7%A8%E9%9B%86-%E3%82%B9%E3%83%88%E3%83%AA%E3%83%83%E3%83%97%E3%81%AE%E7%A8%AE%E9%A1%9E%E3%81%A8%E3%81%9D%E3%81%AE%E8%BF%BD%E5%8A%A0%E6%96%B9%E6%B3%95/</link>
+      <pubDate>Sun, 14 Apr 2024 03:54:34 +0900</pubDate>
+      <guid>https://kantas-spike.github.io/portfolio/articles/2024/04/18-blender%E3%81%A7%E5%8B%95%E7%94%BB%E7%B7%A8%E9%9B%86-%E3%82%B9%E3%83%88%E3%83%AA%E3%83%83%E3%83%97%E3%81%AE%E7%A8%AE%E9%A1%9E%E3%81%A8%E3%81%9D%E3%81%AE%E8%BF%BD%E5%8A%A0%E6%96%B9%E6%B3%95/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://kantas-spike.github.io/portfolio/portfolio/articles/2024/04/17-blender%E3%81%A7%E5%8B%95%E7%94%BB%E7%B7%A8%E9%9B%86-%E3%83%AF%E3%83%BC%E3%82%AF%E3%82%B9%E3%83%9A%E3%83%BC%E3%82%B9%E3%81%AE%E7%94%A8%E8%AA%9E%E3%81%A8%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/&#34;&gt;前回&lt;/a&gt;は、 &lt;strong&gt;ワークスペースの用語と基本操作&lt;/strong&gt; について説明しました。&lt;/p&gt;&#xA;&lt;p&gt;いよいよ &lt;strong&gt;編集&lt;/strong&gt; ワークフローについて説明します。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>「プログラミング演習 Python 2021」を学ぶ</title>
       <link>https://kantas-spike.github.io/portfolio/articles/2023/04/13-learn-programming-practice-python-2021/</link>

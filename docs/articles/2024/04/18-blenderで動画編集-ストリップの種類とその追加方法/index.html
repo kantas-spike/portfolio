@@ -1,0 +1,1281 @@
+<!doctype html>
+<html><head>
+    <title>
+        動画編集のためのBlender ストリップの種類とその追加方法 | kanta&#39;s spike
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<link
+  rel="preload"
+  href="/portfolio/fonts/notosansjp-bold.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin="anonymous"
+/>
+
+<link
+  rel="preload"
+  href="/portfolio/fonts/notosansjp-regular.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin="anonymous"
+/>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Noto+Emoji:wght@400;500;700&family=Noto+Sans+JP:wght@400;700&display=swap"
+  rel="stylesheet"
+/>
+<link rel="stylesheet" href="/portfolio/css/fonts.598ae1b8a36eef149fd604bc4a326391fe472bc4628f92811ed047364d446748.css">
+    <link rel="stylesheet" href="/portfolio/css/theme.min.ee3cd82055b1b581d28fe67f13a95ba130c24c7bf691394f7ca62c46cd11df07.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" /><link rel="stylesheet" href="/portfolio/css/syntax.min.53132d5ecb321e785c36c5e94d619a0e0e5e50abd5435b10c105ebd046929b7a.css">
+<link rel="icon" type="image/png" sizes="512x512" href="/portfolio/icon512.png" />
+ 
+<link rel="icon" type="image/png" sizes="192x192" href="/portfolio/icon192.png" />
+ 
+<link rel="apple-touch-icon" sizes="180x180" href="/portfolio/icon180.png" />
+ 
+<link rel="icon" type="image/png" sizes="32x32" href="/portfolio/icon32.png" />
+ 
+<link rel="icon" type="image/svg+xml" href="/portfolio/icon.svg" />
+ 
+<link rel="manifest" href="/portfolio/site.webmanifest" />
+
+
+</head><body class="bg-background text-primary-dark pb-4"><header class="bg-primary-dark text-site_title text-6xl font-serif font-extrabold px-4 py-3">
+    <h1 class="container mx-auto px-4"><a href="https://kantas-spike.github.io/portfolio/">kanta&#39;s spike</a></h1>
+</header>
+<input type="checkbox" name="burger_cbx" id="burger_cbx">
+<label for="burger_cbx" class="burger_label">
+    <span class="burger_icon"><svg version="1.1" viewBox="0 0 12.7 12.7" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <rect x="1.0369" y="2.1007" width="10.634" height="1.0426" ry=".5213"/>
+  <rect x="1.0369" y="4.571" width="10.634" height="1.0426" ry=".5213"/>
+  <rect x="1.0369" y="7.0413" width="10.634" height="1.0426" ry=".5213"/>
+  <rect x="1.0369" y="9.5115" width="10.634" height="1.0426" ry=".5213"/>
+ </g>
+</svg>
+</span>
+</label>
+<label for="burger_cbx" class="close_label">
+    <span class="close_icon"><svg version="1.1" viewBox="0 0 12.7 12.7" xmlns="http://www.w3.org/2000/svg">
+ <rect transform="rotate(45.535)" x="3.6678" y="-.6148" width="10.634" height="1.0426" ry=".5213"/>
+ <rect transform="rotate(135.53)" x="-5.4104" y="-9.5059" width="10.634" height="1.0426" ry=".5213"/>
+</svg>
+</span>
+</label>
+<div class="nav_area">
+    <nav class="container mx-auto bg-primary text-on-primary text-center flex flex-col md:flex-row justify-start">
+            <a href="/portfolio/" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Home</a>
+            <a href="/portfolio/til" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">TIL</a>
+            <a href="/portfolio/dialogues" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Dialogues</a>
+            <a href="/portfolio/articles" class="box-border flex-1 text-center no-underline bg-primary-light text-on-primary-light font-bold py-2">Articles</a>
+            <a href="/portfolio/mytools" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">My Tools</a>
+            <a href="/portfolio/ihc" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">IHC</a>
+            <a href="/portfolio/tags" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Tags</a>
+        <div class="flex-none" id="search_menu"></div>
+    </nav>
+</div>
+<main id="content" class="container mx-auto bg-surface pt-4 pb-8">
+<div class="area_border px-4 py-3 mx-4 md:mx-auto pb-4 max-w-[60rem]">
+  
+
+<div class="mb-4">
+    <h3 class="border-b-4 border-primary-dark text-primary-dark text-xl font-bold tracking-wider pl-[1em] -indent-[1ex]"><i class="fa-solid fa-file-lines"></i> <a href="https://kantas-spike.github.io/portfolio/articles/2024/04/18-blender%E3%81%A7%E5%8B%95%E7%94%BB%E7%B7%A8%E9%9B%86-%E3%82%B9%E3%83%88%E3%83%AA%E3%83%83%E3%83%97%E3%81%AE%E7%A8%AE%E9%A1%9E%E3%81%A8%E3%81%9D%E3%81%AE%E8%BF%BD%E5%8A%A0%E6%96%B9%E6%B3%95/">動画編集のためのBlender ストリップの種類とその追加方法</a></h3>
+    <div class="flex justify-between mt-1 mx-2">
+        <div>
+            <ul class="flex gap-2 justify-end">
+            
+            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/programming/">#Programming</a></li>
+            
+            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/hacking/">#Hacking</a></li>
+            
+            </ul>
+        </div>
+        <div>
+            
+            
+            <div class="text-right text-sm font-bold">2024/04/14
+                
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+  <div class="article mx-2"><p><a href="/portfolio/articles/2024/04/17-blender%E3%81%A7%E5%8B%95%E7%94%BB%E7%B7%A8%E9%9B%86-%E3%83%AF%E3%83%BC%E3%82%AF%E3%82%B9%E3%83%9A%E3%83%BC%E3%82%B9%E3%81%AE%E7%94%A8%E8%AA%9E%E3%81%A8%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/">前回</a>は、 <strong>ワークスペースの用語と基本操作</strong> について説明しました。</p>
+<p>いよいよ <strong>編集</strong> ワークフローについて説明します。</p>
+<p><strong>編集</strong> ワークフローは以下の作業から構成されるそうです。</p>
+  
+<div class="mermaid ">flowchart LR
+  a1["モンタージュ"]
+  a2["エフェクトの追加"]
+  a3["カラーグレーディング"]
+  a4["サウンドの編集"]
+  a1-->a2-->a3-->a4</div>
+
+<p>そして、今回は、 <strong>編集</strong> ワークフロー の <strong>モンタージュ</strong> から <strong>「ストリップの種類とその追加方法」</strong> について紹介します。</p>
+<p>この記事では、<a href="https://kantas-spike.github.io/vse-docs/video_editing/edit/montage/striptypes/index.html">2.2.1.1. ストリップの種類 — Blender VSE Unofficial Documentation ドキュメント</a> をもとに概要を説明します。</p>
+<h3 id="ストリップの種類">ストリップの種類</h3>
+<p>Blenderで利用できるストリップには以下のものがあります。</p>
+<table>
+<thead>
+<tr>
+<th>No</th>
+<th>ストリップの種類</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Scene ストリップ</td>
+<td>別シーンのデータを表示する</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Clip ストリップ</td>
+<td>Movie Clip Editorで作成したTrackingデータを表示する</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Mask ストリップ</td>
+<td>Movie Clip Editorで作成したMaskデータを表示する</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Movie ストリップ</td>
+<td>動画ファイルを表示する</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Sound ストリップ</td>
+<td>音声ファイルを再生する</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Image/Sequence ストリップ</td>
+<td>1枚または複数枚から構成される静止画を動画として表示する</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Color ストリップ</td>
+<td>指定された色を表示する</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Text ストリップ</td>
+<td>字幕を表示する</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Adjustment Layer ストリップ</td>
+<td>下にある全てのチャンネルを入力として扱えるようにする</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Effect Strip ストリップ(12種))</td>
+<td>1つまたは複数のストリップに対して効果を設定する(12種類の効果あり)</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Transition ストリップ(4種)</td>
+<td>2つのストリップに対して画面遷移効果をつける</td>
+</tr>
+</tbody>
+</table>
+<p>これらのストリップは、4つのグループに分類できます。</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>名前</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>Blender内部ソース</td>
+<td>別のシーンやVSE以外の別のBlenderのエディターで作成したものが入力ソースとなるもの</td>
+</tr>
+<tr>
+<td>B</td>
+<td>外部ソース</td>
+<td>外部ファイルが入力ソースとなるもの</td>
+</tr>
+<tr>
+<td>C</td>
+<td>VSE内部生成</td>
+<td>Video Sequence Editor(Sequencer ビュー)で作成するもの</td>
+</tr>
+<tr>
+<td>D</td>
+<td>エフェクト</td>
+<td>別のストリップが入力ソースとなるもの</td>
+</tr>
+</tbody>
+</table>
+<p>ストリップを分類すると以下になるようです。</p>
+<div class="rawhtml"><table>
+  <thead>
+    <tr>
+      <th>No</th>
+      <th>分類</th>
+      <th colspan="2">ストリップ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th rowspan="3">A</th>
+      <td rowspan="3">
+        Blender内部ソース
+      </td>
+      <td>1</td>
+      <td>Sceneストリップ</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Clipストリップ</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Maskストリップ</td>
+    </tr>
+    <tr>
+      <th rowspan="3">B</th>
+      <td rowspan="3">外部ソース</td>
+      <td>4</td>
+      <td>Movieストリップ</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Soundストリップ</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Image/Sequenceストリップ</td>
+    </tr>
+    <tr>
+      <th rowspan="2">C</th>
+      <td rowspan="2">VSE内部生成</td>
+      <td>7</td>
+      <td>Colorストリップ</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Textストリップ</td>
+    </tr>
+    <tr>
+      <th rowspan="3">D</th>
+      <td rowspan="3">エフェクト</td>
+      <td>9</td>
+      <td>Adjustment Layerストリップ</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Effectストリップ</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Transition</td>
+    </tr>
+  </tbody>
+</table>
+</div><h3 id="セットアップ">セットアップ</h3>
+<p>実際にストリップ追加したいのですが、その前にプロジェクトファイルやストリップの素材を準備しましょう。</p>
+<h4 id="プロジェクトファイル">プロジェクトファイル</h4>
+<p>Blenderの <strong>Video Editing</strong> プロジェクトを作成し、
+以下のようにプロジェクトファイルを設定します。</p>
+<p>今回は、Youtubeショート用(縦長のサイズで、60秒未満)に動画作成する場合を例としています。</p>
+<div class="column not-article mx-1 my-4  px-4 py-4 border-2 rounded-md ">
+  <div class="text-lg font-bold leading-m tracking-m mb-4 -mx-1">
+      <span class="flex emoji content-start">
+        <span class="mr-1">
+          ⚙️
+          
+        </span>
+        <span class="font-sans">Output Properties</span>
+      </span>
+    </div>
+  <div class="mx-2 article">
+    <ul>
+<li>[Format]パネル:
+<ul>
+<li>Resolution X: <strong>1080</strong> px</li>
+<li>Resolution Y: <strong>1920</strong> px</li>
+<li>Resolution %: <strong>100</strong> %</li>
+<li>Frame Rate： <strong>60</strong> fps</li>
+</ul>
+</li>
+<li>[Frame Range]パネル
+<ul>
+<li>Frame Start: <strong>1</strong></li>
+<li>Frame End: <strong>3570</strong> (59.5秒)</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+</div>
+<h4 id="外部ソース素材の準備">外部ソース素材の準備</h4>
+<h5 id="movie-ストリップ用素材">Movie ストリップ用素材</h5>
+<p>ffmepegで4つのテスト動画を作成します。</p>
+<p>1つ目は、60fpsのテスト動画(音声なし)です。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">ffmpeg -f lavfi -i <span class="nv">testsrc</span><span class="o">=</span><span class="nv">duration</span><span class="o">=</span>10:size<span class="o">=</span>1280x720:rate<span class="o">=</span><span class="m">60</span> -vf <span class="s2">&#34;format=yuv420p,drawtext=text=&#39;60fps&#39;:fontcolor=white:fontsize=64:x=max_glyph_w:y=main_h-line_h&#34;</span> ./1_video/1_movie/movie01_60fps_text.mp4
+</span></span></code></pre></div><p>2つ目は、30fpsのテスト動画(音声なし)です。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">ffmpeg -f lavfi -i <span class="nv">testsrc</span><span class="o">=</span><span class="nv">duration</span><span class="o">=</span>10:size<span class="o">=</span>1280x720:rate<span class="o">=</span><span class="m">30</span> -vf <span class="s2">&#34;format=yuv420p,drawtext=text=&#39;30fps&#39;:fontcolor=white:fontsize=64:x=max_glyph_w:y=main_h-line_h&#34;</span> ./1_video/1_movie/movie01_30fps_text.mp4
+</span></span></code></pre></div><p>3つ目は、60fpsのテスト動画(音声あり)です。音声は440Hzのシグナル音と1秒おきのビープ音です。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">ffmpeg -f lavfi -i <span class="nv">testsrc</span><span class="o">=</span><span class="nv">duration</span><span class="o">=</span>10:size<span class="o">=</span>1280x720:rate<span class="o">=</span><span class="m">60</span> -f lavfi -i <span class="nv">sine</span><span class="o">=</span><span class="nv">frequency</span><span class="o">=</span>440:beep_factor<span class="o">=</span>2:duration<span class="o">=</span><span class="m">10</span> -vf <span class="s2">&#34;format=yuv420p,drawtext=text=&#39;60fps with Sound&#39;:fontcolor=white:fontsize=64:x=max_glyph_w:y=main_h-line_h&#34;</span> ./1_video/1_movie/movie01_60fps_text_sound.mp4
+</span></span></code></pre></div><p>4つ目は、30fpsのテスト動画(音声あり)です。音声は440Hzのシグナル音と1秒おきのビープ音です。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">ffmpeg -f lavfi -i <span class="nv">testsrc</span><span class="o">=</span><span class="nv">duration</span><span class="o">=</span>10:size<span class="o">=</span>1280x720:rate<span class="o">=</span><span class="m">30</span> -f lavfi -i <span class="nv">sine</span><span class="o">=</span><span class="nv">frequency</span><span class="o">=</span>440:beep_factor<span class="o">=</span>2:duration<span class="o">=</span><span class="m">10</span> -vf <span class="s2">&#34;format=yuv420p,drawtext=text=&#39;30fps&#39;:fontcolor=white:fontsize=64:x=max_glyph_w:y=main_h-line_h&#34;</span> ./1_video/1_movie/movie01_30fps_text_sound.mp4
+</span></span></code></pre></div><!-- raw HTML omitted -->
+<h5 id="sound-ストリップ用素材">Sound ストリップ用素材</h5>
+<p>ffmepegで440Hzのシグナルと1秒ごとの880Hzビープ音の10秒のテストサウンドを作成します。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">ffmpeg -f lavfi -i <span class="nv">sine</span><span class="o">=</span><span class="nv">frequency</span><span class="o">=</span>440:beep_factor<span class="o">=</span>2:duration<span class="o">=</span><span class="m">10</span> ./2_audio/3_sfx/sine_with_beep.wav
+</span></span></code></pre></div><!-- raw HTML omitted -->
+<h5 id="imagesequence-ストリップ用素材">Image/Sequence ストリップ用素材</h5>
+<p>Image/Sequence ストリップは以下の2種類のストリップの総称です。</p>
+<ul>
+<li>
+<p>Imageストリップ</p>
+<p>静止画を表示するためのストリップ</p>
+</li>
+<li>
+<p>Image Sequence トリップ</p>
+<p>一連の画像ファイル(例: 001.png, 002.png&hellip;)から構成される動画ストリップ</p>
+</li>
+</ul>
+<p>Imageストリップは、Image Sequence トリップの画像ファイルが1つのみのバージョンとも言えます。</p>
+<p>今回は、<a href="https://imagemagick.org/index.php">ImageMagick – Create, Edit, Compose, or Convert Digital Images</a> を使ってアルファベットの画像を作成します。</p>
+<p>例えば、アルファベットの<code>A</code>が描かれた サイズ 800x600 の画像は、以下のコマンドで作成できます。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">magick convert -fill white -background <span class="s1">&#39;#4d6890&#39;</span> -size 800x600 -gravity center -pointsize <span class="m">600</span>  label:A alphabet_01.png
+</span></span></code></pre></div><p>上記コマンドを利用して、以下のシェルスクリプトを実行すると、 1秒分(60枚)のアルファベット画像を作成できます。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="nv">OUTPUT_DIR</span><span class="o">=</span><span class="s2">&#34;./1_video/2_photo/alphabets&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span> -d <span class="s2">&#34;</span><span class="nv">$OUTPUT_DIR</span><span class="s2">&#34;</span> <span class="o">]</span> <span class="o">||</span> mkdir -p <span class="nv">$OUTPUT_DIR</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">counter</span><span class="o">=</span><span class="m">1</span>
+</span></span><span class="line"><span class="cl"><span class="k">while</span> <span class="nb">true</span>
+</span></span><span class="line"><span class="cl"><span class="k">do</span>
+</span></span><span class="line"><span class="cl">  <span class="k">for</span> c in <span class="o">{</span>A..Z<span class="o">}</span>
+</span></span><span class="line"><span class="cl">  <span class="k">do</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="o">[</span> <span class="nv">$counter</span> -gt <span class="m">60</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+</span></span><span class="line"><span class="cl">      <span class="nb">break</span> <span class="m">2</span>
+</span></span><span class="line"><span class="cl">    <span class="k">fi</span>
+</span></span><span class="line"><span class="cl">    magick convert -fill white -background <span class="s1">&#39;#4d6890&#39;</span> -size 800x600 -gravity center -pointsize <span class="m">600</span>  label:<span class="nv">$c</span> <span class="nv">$OUTPUT_DIR</span>/alphabet_<span class="k">$(</span><span class="nb">printf</span> <span class="s1">&#39;%02d&#39;</span> <span class="nv">$counter</span><span class="k">)</span>.png
+</span></span><span class="line"><span class="cl">    <span class="nv">counter</span><span class="o">=</span><span class="k">$((</span>counter+1<span class="k">))</span>
+</span></span><span class="line"><span class="cl">  <span class="k">done</span>
+</span></span><span class="line"><span class="cl"><span class="k">done</span>
+</span></span></code></pre></div><h4 id="movieストリップのタイムプロパティー説明用素材の準備">Movieストリップのタイムプロパティー説明用素材の準備</h4>
+<p>Movie ストリップの 各種Offset の説明用に、アルファベット <strong>A〜J</strong> までの10フレームからなる動画を作成します。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">ffmpeg -r <span class="m">10</span> -pattern_type glob -i <span class="s1">&#39;./1_video/2_photo/alphabets/alphabet_{0*,10}.png&#39;</span> -vcodec libx264 -pix_fmt yuv420p  ./1_video/1_movie/alphabets10.mp4
+</span></span></code></pre></div><h4 id="内部ソース素材の準備">内部ソース素材の準備</h4>
+<h5 id="scene-ストリップ用素材">Scene ストリップ用素材</h5>
+<p>Blenderには、シーンと呼ばれるデータがあります。
+Blenderで作成した3Dオブジェクトやマテリアルなどのデータは、作業しているシーンに保存されます。
+同じく、 <strong>Video Sequence Editor</strong> で作成している動画編集のタイムラインも、作業しているシーンに保存されます。</p>
+<p>Scene ストリップ は、他のシーンで作成した、3Dオブジェクトや動画編集のタイムラインをストリップとして利用できます。</p>
+<p>今回は、別のシーンで作成した、3Dオブジェクトと動画編集のタイムラインのそれぞれの例を作成します。</p>
+<ul>
+<li>3Dオブジェクト(sample_scene1)</li>
+<li>動画編集のタイムライン(sample_scene2)</li>
+</ul>
+<h5 id="clip-ストリップ用素材">Clip ストリップ用素材</h5>
+<p>Blenderには、作成した3Dオブジェクトと映像を連携させるための <strong>Movie Clip Editor</strong> があります。
+Clipストリップは、<strong>Movie Clip Editor</strong>で作成した動画をストリップとして利用できます。</p>
+<p>私は、<strong>Movie Clip Editor</strong> を使ったことがないため、説明用として今回は、何の処理も行っていたいダミーの動画を登録しておきます。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">ffmpeg -f lavfi -i <span class="nv">testsrc2</span><span class="o">=</span><span class="nv">duration</span><span class="o">=</span>10:size<span class="o">=</span>1280x720:rate<span class="o">=</span><span class="m">60</span> -vf <span class="s2">&#34;format=yuv420p,drawtext=text=&#39;60fps&#39;:fontcolor=white:fontsize=64:x=max_glyph_w:y=main_h-line_h&#34;</span> ./1_video/1_movie/dummy_clip_60fps_text.mp4
+</span></span></code></pre></div><h5 id="mask-ストリップ">Mask ストリップ</h5>
+<p>動画編集では、いろいろな場面でマスクが利用されます。プライバシー保護のため顔や車のナンバーにモザイクを入れたり、グリーンバックのスクリーンからオブジェクトを抽出したり、などです。</p>
+<!-- raw HTML omitted -->
+<p><strong>Movie Clip Editor</strong> には、マスクを作成するモードがあり、
+Maskストリップは、<strong>Movie Clip Editor</strong>で作成したマスクをストリップとして利用できます。</p>
+<p>今回はストリップ説明用にダミーのマスクを作成します。</p>
+<p>ただし、 <strong>Movie Clip Editor</strong> で作成したマスクは、Maskモディファイア(今後紹介予定)から直接利用できるため、Maskストリップを利用する機会はあまりないかもしれません。</p>
+<h4 id="vse内部生成の準備">VSE内部生成の準備</h4>
+<p>Color ストリップ と Text ストリップ については、VSE内で作成するため、あらかじめ素材は用意しません。</p>
+<h4 id="エフェクトの準備">エフェクトの準備</h4>
+<p>Adjustment Layer ストリップ、Effect Strip ストリップ(10種))、Transition ストリップ(4種)については、
+今後、紹介予定の <strong>編集</strong> ワークフロー の <strong>エフェクトの追加</strong> で説明します。</p>
+<h3 id="ストリップの追加方法">ストリップの追加方法</h3>
+<p>ストリップは <strong>[Add]メニュー</strong>から追加できます。(ショートカットキー <code>Shift+A</code> からでも追加できます。)</p>
+<p>追加時には、配置するチャンネルやフィット方法などの各種オプションを指定できます。</p>
+<h4 id="実際に追加してみる">実際に追加してみる</h4>
+<p>まずは、実際に、各種ストリップを追加していきましょう。
+以下の順で説明します。</p>
+<p>1.「A. Blender内部ソース」系のストリップ2. 「B. 外部ソース」系のストリップ3. 「C. VSE内部生成」系のストリップ</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>各ストリップは色分けされています。</p>
+<h4 id="b-外部ソース系のストリップの追加方法">「B. 外部ソース」系のストリップの追加方法</h4>
+<p>「B. 外部ソース」系のストリップは、[Add]メニュー以外にも以下の追加方法を利用できます。</p>
+<p>「B. 外部ソース」系のストリップで利用できる追加方法は以下になります。</p>
+<ol>
+<li>[Add]メニュー(or <code>Shift + A</code>)から追加する方法</li>
+<li><strong>File Browser</strong>からドラッグして追加する方法</li>
+<li><strong>OSのファイルブラウザ</strong> からドラッグして追加する方法</li>
+</ol>
+<p>2,3の方法にはいくつか制限があります。</p>
+<ul>
+<li>複数のファイルを追加できない。複数ファイルをまとめて追加できるのは <strong>[Add]メニュー(or <code>Shift + A</code>)から追加する方法</strong> のみ</li>
+<li>オプション(配置するチャンネルやフィット方法など)を追加時に指定できない。(<strong>Adjust Last Opertaion</strong> で追加後にオプションを変更可能)</li>
+</ul>
+<div class="column not-article mx-1 my-4  px-4 py-4 border-2 rounded-md ">
+  <div class="text-lg font-bold leading-m tracking-m mb-4 -mx-1">
+      <span class="flex emoji content-start">
+        <span class="mr-1">
+          
+            📄
+          
+        </span>
+        <span class="font-sans">Movie ストリップ追加時のオプション</span>
+      </span>
+    </div>
+  <div class="mx-2 article">
+    <table>
+<thead>
+<tr>
+<th>オプション</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Relative Path</td>
+<td>ストリップのソースのパスをプロジェクトファイルからの相対パスで保持</td>
+</tr>
+<tr>
+<td>Start Frame</td>
+<td>タイムライン上でストリップを配置する位置</td>
+</tr>
+<tr>
+<td>Channel</td>
+<td>タイムライン上でストリップを配置するチャンネル</td>
+</tr>
+<tr>
+<td>Replace Selection</td>
+<td>タイムラインで選択中のストリップを追加したストリップで置き換える</td>
+</tr>
+<tr>
+<td>Fit Method</td>
+<td>プロジェクトのスクリーン解像度と素材の解像度のサイズ調整方法(<code>Scale to Fit</code>、<code>Scale to Fill</code>, <code>Stretch to Fill</code>から選択)</td>
+</tr>
+<tr>
+<td>Set View Transform</td>
+<td>インポートされた素材の色空間に基づきビュー変換する</td>
+</tr>
+<tr>
+<td>Adjust Playback Rate</td>
+<td>プロジェクトのFPSに合せて、素材の長さを維持するように素材のFPSを調整する</td>
+</tr>
+<tr>
+<td>Sound</td>
+<td>ムービーのオーディオトラックをSoundストリップとして追加する</td>
+</tr>
+<tr>
+<td>Use Movie Frame Rate</td>
+<td>プロジェクトのFPSを素材のFPSに設定する</td>
+</tr>
+</tbody>
+</table>
+
+  </div>
+</div>
+<div class="column not-article mx-1 my-4  px-4 py-4 border-2 rounded-md ">
+  <div class="text-lg font-bold leading-m tracking-m mb-4 -mx-1">
+      <span class="flex emoji content-start">
+        <span class="mr-1">
+          
+            📄
+          
+        </span>
+        <span class="font-sans">Movie ストリップ追加時の注意事項</span>
+      </span>
+    </div>
+  <div class="mx-2 article">
+    <p>VSE(Sequencerビュー)のタイムラインにストリップが配置されていない時に、最初のMovieストリップを追加した場合、
+最初のMovieストリップのフレームレートがプロジェクトのフレームレートに自動的に設定されてしまいます。</p>
+<p>プロジェクトファイルの設定でフレームレートに60fpsを設定している場合、30fpsのMovieストリップを最初に追加すると、
+プロジェクトファイルの設定が60fpsから30fpsに変更されてしまいます。</p>
+<p>これは回避するには、最初に別のストリップ(60fpsのMovieストリップ or Colorストリップなどfpsと関係のないストリップ)を追加してから、
+30fpsのMovieストリップを追加する必要があります。</p>
+<ul>
+<li><a href="https://kantas-spike.github.io/vse-docs/video_editing/setup/project-settings.html">2.1.6. Project settings — Blender VSE Unofficial Documentation ドキュメント</a>の <strong>Frame Rate</strong> を参照</li>
+</ul>
+
+  </div>
+</div>
+<div class="column not-article mx-1 my-4  px-4 py-4 border-2 rounded-md ">
+  <div class="text-lg font-bold leading-m tracking-m mb-4 -mx-1">
+      <span class="flex emoji content-start">
+        <span class="mr-1">
+          
+            📄
+          
+        </span>
+        <span class="font-sans">Movie ストリップのFPS と Sound ストリップ</span>
+      </span>
+    </div>
+  <div class="mx-2 article">
+    <p>プロジェクトと異なるFPSのMovieストリップを配置すると、意図した再生速度を再現できません。</p>
+<p>一方、SoundストリップにはFPSはないため、プロジェクトのFPSにかかわらず常に同じ速度で再生されます。</p>
+<p>例えば、30FPSの音声付き動画を60FPSのプロジェクトに追加すると、映像と音声の速度がズレることになります。
+Movieストリップの追加オプション &ldquo;Adjust Playback Rate&quot;を有効にすると、再生速度が調整されズレを防止できます。</p>
+
+  </div>
+</div>
+<h3 id="ストリップのプロパティー">ストリップのプロパティー</h3>
+<p>VSE(Sequencerビュー)のタイムラインに追加したストリップをクリックすると、Sequencerのサイドバーの <strong>Strip</strong> タブに、ストリップの情報(プロパティー)が表示されます。</p>
+<p>ストリップのプロパティーには以下のグループがあります。</p>
+<table>
+<thead>
+<tr>
+<th><strong>Strip</strong> タブの構成</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Header</td>
+<td>全ストリップで共通の名前、レンダリング有無を設定</td>
+</tr>
+<tr>
+<td>Scene</td>
+<td>Sceneストリップ独自のプロパティーを設定</td>
+</tr>
+<tr>
+<td>Mask</td>
+<td>Maskストリップ独自のプロパティーを設定</td>
+</tr>
+<tr>
+<td>Sound</td>
+<td>サウンド固有のプロパティーを設定</td>
+</tr>
+<tr>
+<td>Effect Strip</td>
+<td>Text、Colorやエフェクト用のプロパティーを設定</td>
+</tr>
+<tr>
+<td>Compositing</td>
+<td>下のチャンネルとのブレンド方法を設定</td>
+</tr>
+<tr>
+<td>Transform</td>
+<td>ストリップの変形用のプロパティーを設定</td>
+</tr>
+<tr>
+<td>Crop</td>
+<td>ストリップの切り抜き用のプロパティーを設定</td>
+</tr>
+<tr>
+<td>Video</td>
+<td>動画固有のプロパティーを設定</td>
+</tr>
+<tr>
+<td>Color</td>
+<td>ストリップの色合いを設定</td>
+</tr>
+<tr>
+<td>Time</td>
+<td>ストリップのタイムライン上の位置を設定</td>
+</tr>
+<tr>
+<td>Source</td>
+<td>ストリップのソースのプロパティーを設定</td>
+</tr>
+<tr>
+<td>Custom</td>
+<td>アドオンなどで利用するための独自の情報をストリップに設定する</td>
+</tr>
+</tbody>
+</table>
+<p>Header と Custom は全ストリップで常に表示されますが、
+その他のプロパティーは、ストリップにより異なります。</p>
+<table>
+<thead>
+<tr>
+<th>グループ</th>
+<th>ストリップ \ プロパティー</th>
+<th>Scene</th>
+<th>Mask</th>
+<th>Sound</th>
+<th>Effect Strip</th>
+<th>Compositing</th>
+<th>Transform</th>
+<th>Crop</th>
+<th>Video</th>
+<th>Color</th>
+<th>Time</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>Sceneストリップ</td>
+<td>○</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>○</td>
+<td>○</td>
+<td>○</td>
+<td>○</td>
+<td>○</td>
+<td>○</td>
+<td>-</td>
+</tr>
+<tr>
+<td></td>
+<td>Clipストリップ</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>○</td>
+<td>○</td>
+<td>○</td>
+<td>○</td>
+<td>○</td>
+<td>○</td>
+<td>-</td>
+</tr>
+<tr>
+<td></td>
+<td>Maskストリップ</td>
+<td>-</td>
+<td>○</td>
+<td>-</td>
+<td>-</td>
+<td>○</td>
+<td>○</td>
+<td>○</td>
+<td>○</td>
+<td>○</td>
+<td>○</td>
+<td>-</td>
+</tr>
+<tr>
+<td>B</td>
+<td>Movieストリップ</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>○</td>
+<td>○</td>
+<td>○</td>
+<td>○</td>
+<td>○</td>
+<td>○</td>
+<td>○</td>
+</tr>
+<tr>
+<td></td>
+<td>Soundストリップ</td>
+<td>-</td>
+<td>-</td>
+<td>○</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>○</td>
+<td>○ +α</td>
+</tr>
+<tr>
+<td></td>
+<td>Image/Sequence ストリップ</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>○</td>
+<td>○</td>
+<td>○</td>
+<td>○</td>
+<td>○</td>
+<td>○</td>
+<td>○</td>
+</tr>
+<tr>
+<td>C</td>
+<td>Colorストリップ</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>○</td>
+<td>○</td>
+<td>○</td>
+<td>○</td>
+<td>○</td>
+<td>○</td>
+<td>○</td>
+<td>-</td>
+</tr>
+<tr>
+<td></td>
+<td>Textストリップ</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>○</td>
+<td>○</td>
+<td>○</td>
+<td>○</td>
+<td>-</td>
+<td>-</td>
+<td>○</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ストリップの各プロパティーの紹介">ストリップの各プロパティーの紹介</h3>
+<p>実際のストリップを例に、各プロパティーの情報をざっと紹介します。(利用頻度の少なそうなMaskストリップのMaskプロパティーの紹介は省略します。)</p>
+<p>個別の紹介の前にまずは、プロパティーの操作方法を紹介します。</p>
+<h4 id="movie-ストリップ">Movie ストリップ</h4>
+<p>Movie ストリップのプロパティーをまとめました。
+詳細は、<a href="https://kantas-spike.github.io/vse-docs/video_editing/edit/montage/striptypes/movie.html">2.2.1.1.1. Movie ストリップ — Blender VSE Unofficial Documentation ドキュメント</a>を参照ください。</p>
+<h5 id="transform">Transform</h5>
+<p>Transformはストリップのコンテンツを変形するためのプロパティーです。</p>
+<p>前回紹介した、プレビューでのコンテンツの操作は、実はTransformプロパティーが操作されています。</p>
+<p>Transformのフィールドの値を変えると、プレビューのコンテンツの表示も変りますし、
+逆に、プレビューのコンテンツを操作すると、Transformのフィールドの値も変わります。</p>
+<p>プレビューでのコンテンツ操作よりも、機能が豊富です。</p>
+<table>
+<thead>
+<tr>
+<th>プロパティー</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Position</td>
+<td>コンテンツの位置(X,Y座標)</td>
+</tr>
+<tr>
+<td>Scale</td>
+<td>コンテンツの拡大縮小(X方向,Y方向)</td>
+</tr>
+<tr>
+<td>Rotation</td>
+<td>コンテンツの回転</td>
+</tr>
+<tr>
+<td>Origin</td>
+<td>コンテンツの変形操作時の基準点(X方向,Y方向の相対位置)</td>
+</tr>
+<tr>
+<td>Mirror</td>
+<td>コンテンツの反転(X方向、Y方向)</td>
+</tr>
+<tr>
+<td>Filter</td>
+<td>コンテンツ変形時の補間方法</td>
+</tr>
+</tbody>
+</table>
+<div class="column not-article mx-1 my-4  px-4 py-4 border-2 rounded-md ">
+  <div class="text-lg font-bold leading-m tracking-m mb-4 -mx-1">
+      <span class="flex emoji content-start">
+        <span class="mr-1">
+          
+            📄
+          
+        </span>
+        <span class="font-sans">プロパティー フィールドの操作方法</span>
+      </span>
+    </div>
+  <div class="mx-2 article">
+    <p><a href="https://docs.blender.org/manual/en/latest/interface/controls/buttons/fields.html">Fields - Blender 4.1 Manual</a>
+<a href="https://www.reddit.com/r/blenderhelp/comments/y68a1l/changing_multiple_object_data_properties_at_the/">Changing multiple Object Data Properties at the same time. : r/blenderhelp</a></p>
+<ul>
+<li>値の設定、変更
+<ul>
+<li>直接入力</li>
+<li>増分ステップ</li>
+<li>ドラッグによる増分</li>
+<li>式として入力も可能です。</li>
+</ul>
+</li>
+<li>複数値の編集</li>
+<li>複数オブジェクトの値編集</li>
+</ul>
+  </div>
+</div>
+<h5 id="crop">Crop</h5>
+<p>ストリップのコンテンツを切り抜きます。</p>
+<table>
+<thead>
+<tr>
+<th>プロパティー</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Left</td>
+<td>コンテンツを切り抜く時の左辺の位置</td>
+</tr>
+<tr>
+<td>Right</td>
+<td>コンテンツを切り抜く時の右辺の位置</td>
+</tr>
+<tr>
+<td>Top</td>
+<td>コンテンツを切り抜く時の上辺の位置</td>
+</tr>
+<tr>
+<td>Bottm</td>
+<td>コンテンツを切り抜く時の下辺の位置</td>
+</tr>
+</tbody>
+</table>
+<h5 id="header">Header</h5>
+<p>ストリップの名前とレンダリング有無を設定します。</p>
+<table>
+<thead>
+<tr>
+<th>プロパティー</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td>ストリップの名前</td>
+</tr>
+<tr>
+<td>Mute</td>
+<td>ストリップをレンダリング有無。チェック有はレンダリング <strong>されない</strong>、チェック無はレンダリング <strong>される</strong></td>
+</tr>
+</tbody>
+</table>
+<h5 id="compositing">Compositing</h5>
+<p>ストリップのブレンド方法と不透明度を設定します。</p>
+<table>
+<thead>
+<tr>
+<th>プロパティー</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Blend</td>
+<td>現在のストリップを下位のチャンネルのストリップとブレンドする方法</td>
+</tr>
+<tr>
+<td>Opacity</td>
+<td>ストリップの不透明度</td>
+</tr>
+</tbody>
+</table>
+<h5 id="time">Time</h5>
+<p>ストリップのタイムライン上の位置を設定します。</p>
+<table>
+<thead>
+<tr>
+<th>プロパティー</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lock (Panelヘッダーのアイコン)</td>
+<td>ストリップのタイムライン上での移動、長さ調整を禁止</td>
+</tr>
+<tr>
+<td>Show Retiming Keys</td>
+<td>Retiming Keys操作用のコントロールの表示</td>
+</tr>
+<tr>
+<td>Channel</td>
+<td>ストリップを配置するチャンネル番号</td>
+</tr>
+<tr>
+<td>Start</td>
+<td>タイムライン上でのストリップの開始フレーム番号</td>
+</tr>
+<tr>
+<td>Duration</td>
+<td>ストリップの長さ(フレーム数)</td>
+</tr>
+<tr>
+<td>End</td>
+<td>タイムライン上でのストリップの終了フレーム番号(修正不可. StartとDurationの値により決定される)</td>
+</tr>
+<tr>
+<td>Strip Offset Start/End</td>
+<td>プレビューに表示するストリップの長さを調整(FV/LVマーカーの位置を変更)</td>
+</tr>
+<tr>
+<td>Hold Offset Start/End</td>
+<td>ストリップで利用できるフレームの範囲を調整(FA/LAマーカーの位置を変更)</td>
+</tr>
+</tbody>
+</table>
+<!-- raw HTML omitted -->
+<p>「B. 外部ソース」系のストリップは、もとのソースファイルとの位置も意識する必要があるため少し複雑です。</p>
+<p>そのため、「B. 外部ソース」系のストリップの Timeプロパティーを理解しやすくするために、説明用にストリップに4つのマーカーを導入します。</p>
+<table>
+<thead>
+<tr>
+<th>マーカー名</th>
+<th>略称</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>First accessible frame</td>
+<td><strong>FA</strong></td>
+<td>ストリップが利用できる最初フレーム。通常は動画ファイルの最初のフレーム</td>
+</tr>
+<tr>
+<td>First visible frame</td>
+<td><strong>FV</strong></td>
+<td>プレビューに実際に表示される、ストリップ最初のフレーム。ストリップの先頭</td>
+</tr>
+<tr>
+<td>Last visible frame</td>
+<td><strong>LV</strong></td>
+<td>プレビューに実際に表示される、ストリップ最後のフレーム。ストリップの末尾</td>
+</tr>
+<tr>
+<td>Last accessible frame</td>
+<td><strong>LA</strong></td>
+<td>ストリップが利用できる最後フレーム。通常は動画ファイルの最後のフレーム</td>
+</tr>
+</tbody>
+</table>
+<p>アルファベット26文字を各フレームにもつ26フレーム分の長さの動画ファイルを用意しました。
+この26フレームの動画を例に、Movieストリップの Timeプロパティーについて説明します。</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h5 id="source">Source</h5>
+<p>ストリップのソースの情報を設定します。</p>
+<table>
+<thead>
+<tr>
+<th>プロパティー</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>File Path</td>
+<td>ストリップの素材ファイルのパス</td>
+</tr>
+<tr>
+<td>Color Space</td>
+<td>素材ファイルのカラースペース</td>
+</tr>
+<tr>
+<td>Alpha Mode</td>
+<td>アルファチャンネルのモード(アルファチャンネルを持つ素材のみ)</td>
+</tr>
+<tr>
+<td>Stream Index</td>
+<td>使用するストリームの番号(movieストリップの場合のみ)</td>
+</tr>
+<tr>
+<td>Deinterlace</td>
+<td>ビデオファイルのインターレースフィールドを削除</td>
+</tr>
+<tr>
+<td>Source Information</td>
+<td>素材の解像度やFPSを表示</td>
+</tr>
+</tbody>
+</table>
+<h5 id="video">Video</h5>
+<p>動画再生方法を設定します。</p>
+<!-- raw HTML omitted -->
+<table>
+<thead>
+<tr>
+<th>プロパティー</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Strobe</td>
+<td>指定したフレームごとに再生(例: 10を指定時は、1,11,21&hellip;)</td>
+</tr>
+<tr>
+<td>Reverse Frames</td>
+<td>逆順に再生</td>
+</tr>
+</tbody>
+</table>
+<h5 id="color">Color</h5>
+<p>ストリップの色合いを調整します。</p>
+<table>
+<thead>
+<tr>
+<th>プロパティー</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Saturation</td>
+<td>彩度を調整</td>
+</tr>
+<tr>
+<td>Multiply</td>
+<td>色を指定倍する(輝度が上る)</td>
+</tr>
+<tr>
+<td>Multiply Alpha</td>
+<td>オプション有効時、色と不透明度を指定倍する</td>
+</tr>
+<tr>
+<td>Convert to Float</td>
+<td>色を小数データに変換する</td>
+</tr>
+</tbody>
+</table>
+<h4 id="sound-ストリップ">Sound ストリップ</h4>
+<p>Sound ストリップのプロパティーをまとめました。
+詳細は、<a href="https://kantas-spike.github.io/vse-docs/video_editing/edit/montage/striptypes/sound.html">2.2.1.1.2. Sound ストリップ — Blender VSE Unofficial Documentation ドキュメント</a>を参照ください。</p>
+<h5 id="sound">Sound</h5>
+<p>サウンドに関するプロパティーを設定する。</p>
+<table>
+<thead>
+<tr>
+<th>プロパティー</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Volume</td>
+<td>音量を調整</td>
+</tr>
+<tr>
+<td>Pan</td>
+<td>マルチチャンネルのオーディオを出力するスピーカーの場所を調整する</td>
+</tr>
+<tr>
+<td>Display Waveform</td>
+<td>オーディオの波形を表示する</td>
+</tr>
+<tr>
+<td>Mono</td>
+<td>オーディオの複数チャンネルを1つのチャンネルにまとめる(モノラル)</td>
+</tr>
+</tbody>
+</table>
+<h5 id="source-options-for-sound-strips">Source (Options for Sound Strips)</h5>
+<table>
+<thead>
+<tr>
+<th>プロパティー</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sound</td>
+<td>プロジェクトファイルに登録されているSoundデータを選択</td>
+</tr>
+<tr>
+<td>File Path</td>
+<td>ストリップの素材ファイルのパス</td>
+</tr>
+<tr>
+<td>Pack</td>
+<td>Soundデータをプロジェクトファイル内に保存する</td>
+</tr>
+<tr>
+<td>Caching</td>
+<td>Soundデータをメモリにキャッシュする</td>
+</tr>
+<tr>
+<td>Source Information</td>
+<td>素材のサンプルレートやチャンネル数を表示</td>
+</tr>
+</tbody>
+</table>
+<h4 id="sceneストリップ">Sceneストリップ</h4>
+<p>Scene ストリップのプロパティーをまとめました。
+詳細は、<a href="https://kantas-spike.github.io/vse-docs/video_editing/edit/montage/striptypes/scene.html">2.2.1.1.5. Scene ストリップ — Blender VSE Unofficial Documentation ドキュメント</a>を参照ください。</p>
+<h5 id="scene">Scene</h5>
+<table>
+<thead>
+<tr>
+<th>プロパティー</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Scene</td>
+<td>プロジェクトファイルに登録されているSceneを選択</td>
+</tr>
+<tr>
+<td>Input</td>
+<td>選択したシーンから使用するソースを選択する(Camera、Sequencer から選択)</td>
+</tr>
+<tr>
+<td>Camera</td>
+<td>シーンで使用するカメラを切替える</td>
+</tr>
+<tr>
+<td>Annotation</td>
+<td>アノテーションを表示する</td>
+</tr>
+<tr>
+<td>Transparent</td>
+<td>シーンの背景を透明にする</td>
+</tr>
+</tbody>
+</table>
+<h4 id="colorストリップ">Colorストリップ</h4>
+<p>Color ストリップのプロパティーをまとめました。
+詳細は、<a href="https://kantas-spike.github.io/vse-docs/video_editing/edit/montage/striptypes/color.html">2.2.1.1.6. Color ストリップ — Blender VSE Unofficial Documentation ドキュメント</a>を参照ください。</p>
+<h5 id="effect-strip-color">Effect Strip (Color)</h5>
+<table>
+<thead>
+<tr>
+<th>プロパティー</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Color</td>
+<td>色を選択する</td>
+</tr>
+</tbody>
+</table>
+<h4 id="textストリップ">Textストリップ</h4>
+<p>Text ストリップのプロパティーをまとめました。
+詳細は、<a href="https://kantas-spike.github.io/vse-docs/video_editing/edit/montage/striptypes/text.html">2.2.1.1.8. Text ストリップ — Blender VSE Unofficial Documentation ドキュメント</a>を参照ください。</p>
+<h5 id="effect-strip-text">Effect Strip (Text)</h5>
+<table>
+<thead>
+<tr>
+<th>プロパティー</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Text</td>
+<td>ストリップに表示する文字列</td>
+</tr>
+<tr>
+<td>Wrap Width</td>
+<td>文字列を途中改行する長さをスクリーン幅の比率で指定。</td>
+</tr>
+<tr>
+<td>Font</td>
+<td>フォントの種類</td>
+</tr>
+<tr>
+<td>Size</td>
+<td>フォントサイズ</td>
+</tr>
+<tr>
+<td>Color</td>
+<td>フォント色</td>
+</tr>
+<tr>
+<td>Shadow</td>
+<td>テキストに影をつける</td>
+</tr>
+<tr>
+<td>Box</td>
+<td>テキストのボックス背景をつける</td>
+</tr>
+<tr>
+<td>Box Margin</td>
+<td>ボックス背景のマージン</td>
+</tr>
+<tr>
+<td>Location</td>
+<td>テキストを配置する位置をスクリーンのサイズの相対位置(x,y)で指定</td>
+</tr>
+<tr>
+<td>Anchor</td>
+<td>テキストを配置する時のアンカー(x, y)をLeft,Center,Rightから選択</td>
+</tr>
+</tbody>
+</table>
+<h3 id="参考url">参考URL</h3>
+<ul>
+<li>
+<p>Blender公式リファレンス</p>
+<ul>
+<li><a href="https://docs.blender.org/manual/en/latest/">Blender 4.1 Manual</a></li>
+</ul>
+</li>
+<li>
+<p>Blender VSE Unofficial Docs</p>
+<ul>
+<li><a href="https://vse-docs.readthedocs.io/">Blender VSE Unofficial Docs — Blender VSE Unofficial Documentation documentation</a></li>
+<li>日本語訳
+<ul>
+<li><a href="https://kantas-spike.github.io/vse-docs/">Blender VSE 非公式文書 — Blender VSE Unofficial Documentation ドキュメント</a></li>
+<li><a href="https://kantas-spike.github.io/vse-docs/video_editing/edit/montage/striptypes/index.html">2.2.1.1. ストリップの種類 — Blender VSE Unofficial Documentation ドキュメント</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>テスト動画の作成方法</p>
+<ul>
+<li><a href="https://kantas-spike.github.io/portfolio/articles/2024/04/18-blender%E3%81%A7%E5%8B%95%E7%94%BB%E7%B7%A8%E9%9B%86-%E3%82%B9%E3%83%88%E3%83%AA%E3%83%83%E3%83%97%E3%81%AE%E7%A8%AE%E9%A1%9E%E3%81%A8%E3%81%9D%E3%81%AE%E8%BF%BD%E5%8A%A0%E6%96%B9%E6%B3%95/">動画編集のためのBlender ストリップの種類とその追加方法 | kanta&rsquo;s spike</a></li>
+</ul>
+</li>
+</ul></div>
+  <div class="mt-6">
+    <div class="border-t-2 border-primary-dark px-2 pt-2 text-right">
+        <span class="text-sm">作成日: 2024/04/14</span></div>
+</div>
+
+</div>
+
+
+    </main><footer class="bg-primary-dark text-center text-on-primary-dark fixed bottom-0 w-full h-8">
+    <div class="container mx-auto grid grid-cols-3">
+        <div class="col-start-1 col-span-2 ml-2 md:ml-0 md:col-start-2 md:col-span-1">
+            <div class="text-left md:text-center text-sm pt-2">© 2022 kanta&#39;s spike</div>
+        </div>
+        <div class="col-start-3 flex justify-end gap-2 mr-2">
+            
+                
+            <a title="Twitter" class="text-2xl" href="https://twitter.com/KantasSpike"><i class="fa-brands fa-twitter-square"></i></a>
+                
+            <a title="Youtube" class="text-2xl" href="https://www.youtube.com/channel/UCnVBuUGMYAt7ZuIkadxnMfw"><i class="fa-brands fa-youtube-square"></i></a>
+                
+            <a title="GitHub" class="text-2xl" href="https://github.com/kantas-spike"><i class="fa-brands fa-github-square"></i></a>
+                
+            <a title="Blog" class="text-2xl" href="https://kantas-spike.github.io/portfolio/"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                
+            
+        </div>
+    </div>
+</footer>
+    <script type="module">
+      import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
+      mermaid.initialize({ startOnLoad: true });
+    </script>
+     
+
+
+
+
+<script defer type="text/javascript" src="/portfolio/js/search-form.07066240729fbbddf7f08e0938e5a7a060da185ec1c29e438984cfa6c2ff2386dd2ef58d9c7af295b66d187cc9c180f4aa62433709f8bf8813c39c1e239b641e.js" integrity="sha512-BwZiQHKfu9338I4JOOWnoGDaGF7Bwp5DiYTPpsL/I4bdLvWNnHrylbZtGHzJwYD0qmJDNwn4v4gTw5weI5tkHg=="></script></body>
+</html>
