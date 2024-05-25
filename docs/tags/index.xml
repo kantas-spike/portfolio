@@ -4,11 +4,18 @@
     <title>Tags on kanta&#39;s spike</title>
     <link>https://kantas-spike.github.io/portfolio/tags/</link>
     <description>Recent content in Tags on kanta&#39;s spike</description>
-    <generator>Hugo 0.125.1</generator>
+    <generator>Hugo</generator>
     <language>ja-jp</language>
     <copyright>© 2022 kanta&#39;s spike</copyright>
-    <lastBuildDate>Sun, 14 Apr 2024 03:54:34 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 25 May 2024 09:28:52 +0900</lastBuildDate>
     <atom:link href="https://kantas-spike.github.io/portfolio/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Inkscape</title>
+      <link>https://kantas-spike.github.io/portfolio/tags/inkscape/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kantas-spike.github.io/portfolio/tags/inkscape/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Hacking</title>
       <link>https://kantas-spike.github.io/portfolio/tags/hacking/</link>
@@ -63,13 +70,6 @@
       <link>https://kantas-spike.github.io/portfolio/tags/libreoffice/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://kantas-spike.github.io/portfolio/tags/libreoffice/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Inkscape</title>
-      <link>https://kantas-spike.github.io/portfolio/tags/inkscape/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://kantas-spike.github.io/portfolio/tags/inkscape/</guid>
       <description></description>
     </item>
     <item>
