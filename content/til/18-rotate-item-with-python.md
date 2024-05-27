@@ -3,9 +3,10 @@ title: "Pythonで図形を回転させたい"
 date: 2022-08-03T23:01:11+09:00
 draft: false
 tags:
-- python
-- tkinter
+  - python
+  - tkinter
 ---
+
 `tkinter`のCanvas内にある図形の位置を原点を中心に回転させたい。
 
 <!--more-->
@@ -14,7 +15,7 @@ tags:
 
 三角関数を使う。
 
-~~~mathjax
+```mathjax
 <div class="w-3/4 m-auto p-4 border border-gray-500 rounded">
 <ul>
 <li>回転の中心となる原点: \((0,0)\)
@@ -30,11 +31,11 @@ tags:
 \)
 </p>
 </div>
-~~~
+```
 
 #### 画像を原点を中心に回転させて配置する例
 
-~~~python
+```python
 import tkinter as tk
 import math
 
@@ -66,8 +67,8 @@ for d in range(30, 360, 30):
     canvas.create_text(nx, ny + 15, anchor=tk.N, text=f"{d}度回転", fill="gray")
 
 root.mainloop()
-~~~
+```
 
 - 画面イメージ
 
-  ![](/images/til/18-rotate.png)
+  ![]({{<relurl "images/til/18-rotate.png">}})

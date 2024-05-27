@@ -3,8 +3,8 @@ title: "Tkinterで部品を上手く配置したい"
 date: 2022-08-07T02:18:55+09:00
 draft: false
 tags:
-- python
-- tkinter
+  - python
+  - tkinter
 ---
 
 Tkinterで画面に部品を上手く配置したいが、
@@ -24,7 +24,7 @@ Tkinterで画面に部品を上手く配置したいが、
 
 #### 各列にボタンを配置
 
-~~~python
+```python
 from tkinter import ttk
 import tkinter as tk
 
@@ -37,17 +37,17 @@ btn1 = ttk.Button(root, text="ボタン1").grid(column=0, row=0)
 btn2 = ttk.Button(root, text="ボタン2").grid(column=1, row=0)
 
 root.mainloop()
-~~~
+```
 
 - 表示例
 
-   0列目と1列目にボタンが表示される
+  0列目と1列目にボタンが表示される
 
-  ![screenshot1](/images/til/21-buttons.png)
+  ![screenshot1]({{<relurl "images/til/21-buttons.png">}})
 
 ### 列を一つ飛してボタンを配置
 
-~~~python
+```python
 from tkinter import ttk
 import tkinter as tk
 
@@ -65,19 +65,19 @@ btn1 = ttk.Button(root, text="ボタン1").grid(column=0, row=0)
 btn2 = ttk.Button(root, text="ボタン2").grid(column=2, row=0)
 
 root.mainloop()
-~~~
+```
 
 - 表示例(列のミニマムサイズを指定時)
 
-   0列目と2列目にボタンが表示される
+  0列目と2列目にボタンが表示される
 
-  ![screenshot1](/images/til/21-buttons-with-colminsize.png)
+  ![screenshot1]({{<relurl "images/til/21-buttons-with-colminsize.png">}})
 
 - 表示例(列のミニマムサイズを未指定時)
 
-   0列目と2列目にボタンが表示されるが、1列目に要素がないため幅が詰められる
+  0列目と2列目にボタンが表示されるが、1列目に要素がないため幅が詰められる
 
-  ![screenshot1](/images/til/21-buttons-without-colminsize.png)
+  ![screenshot1]({{<relurl "images/til/21-buttons-without-colminsize.png">}})
 
 ### 参考
 

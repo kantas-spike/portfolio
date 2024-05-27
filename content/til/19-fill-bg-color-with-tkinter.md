@@ -3,8 +3,8 @@ title: "Tkinterで部品の背景色を変更したい"
 date: 2022-08-06T15:59:38+09:00
 draft: false
 tags:
-- python
-- tkinter
+  - python
+  - tkinter
 ---
 
 Tkinterでウィンドウの背景色を変更した時に、部品の周りに異なる背景色が表示される。
@@ -14,7 +14,7 @@ Tkinterでウィンドウの背景色を変更した時に、部品の周りに�
 
 #### コード例
 
-~~~python
+```python
 import tkinter as tk
 
 root = tk.Tk()
@@ -27,11 +27,11 @@ lbl.pack(anchor=tk.NW)
 btn = tk.Button(root, text="ボタン")
 btn.pack(anchor=tk.CENTER)
 root.mainloop()
-~~~
+```
 
 #### 表示例
 
-![スクリーンショット](/images/til/19-bg-color.png)
+![スクリーンショット]({{<relurl "images/til/19-bg-color.png">}})
 
 ### 解決策
 
@@ -40,7 +40,7 @@ root.mainloop()
 
 #### コード例
 
-~~~python
+```python
 import tkinter as tk
 
 root = tk.Tk()
@@ -59,13 +59,12 @@ btn2 = tk.Button(root, text="highlightbackgroundで変更可")
 btn2["highlightbackground"] = "#454199"
 btn2.pack(anchor=tk.CENTER)
 root.mainloop()
-~~~
+```
 
 #### 表示例
 
-![スクリーンショット](/images/til/19-bg-color2.png)
+![スクリーンショット]({{<relurl "images/til/19-bg-color2.png">}})
 
 ### 参考
 
 - [ウィジェットの体裁の調整|プログラミング演習 Python 2021](https://repository.kulib.kyoto-u.ac.jp/dspace/bitstream/2433/265459/1/Version2021_10_08_01.pdf#page=145)
-

@@ -3,8 +3,8 @@ title: "Webサイトの配色とカラーホイール"
 date: 2022-08-19T00:25:51+09:00
 draft: false
 tags:
-- python
-- 自由研究
+  - python
+  - 自由研究
 ---
 
 プログラミング学習には、HTMLを書くと良い[^1]そうです。
@@ -29,16 +29,16 @@ Wikipedia [^3] で調べてみると、「配色はカラーホイール上の�
 
 カラーホイール上の色の組み合わせにはいくつか種類[^2]があるそうです。
 
-|配色パターン|説明|
-|:--|:--|
-|単色(Monochromatic)|同一の色相(hue)だけで配色します。同一色相で、シェード(黒の量)やトーン(黒+白の量)、ティント(白の量)の異なる色の組み合せです。|
-|補色(Complementary)|ベースカラーと、その色の反対側にある色(互いの色相を打ち消し合う色)の、2色の組み合わせです。|
-|分割補色(Split-complementary)|ベースカラーと、ベースカラーから150度と210度離れた2色からなる、3色の組み合せです。|
-|無彩色(Achromatic)|彩度の低い色の組み合せです。ホイールの中心に近いほど彩度が低くなります。色相や明度は任意に指定できます。|
-|類似色(Analogous)|ベースカラーと、隣接する色の組合せです。|
-|トライアド(Triadic)|ベースカラーと、ベースカラーから120度と240度離れた2色からなる、3色の組み合わせです。|
-|テトラディック(Tetradic) 長方形|ベースカラーから60度、180度、240度離れた4色の組み合せです。|
-|テトラディック(Tetradic) 正方形|ベースカラーから90度、180度、270度離れた4色の組み合せです。|
+| 配色パターン                    | 説明                                                                                                                         |
+| :------------------------------ | :--------------------------------------------------------------------------------------------------------------------------- |
+| 単色(Monochromatic)             | 同一の色相(hue)だけで配色します。同一色相で、シェード(黒の量)やトーン(黒+白の量)、ティント(白の量)の異なる色の組み合せです。 |
+| 補色(Complementary)             | ベースカラーと、その色の反対側にある色(互いの色相を打ち消し合う色)の、2色の組み合わせです。                                  |
+| 分割補色(Split-complementary)   | ベースカラーと、ベースカラーから150度と210度離れた2色からなる、3色の組み合せです。                                           |
+| 無彩色(Achromatic)              | 彩度の低い色の組み合せです。ホイールの中心に近いほど彩度が低くなります。色相や明度は任意に指定できます。                     |
+| 類似色(Analogous)               | ベースカラーと、隣接する色の組合せです。                                                                                     |
+| トライアド(Triadic)             | ベースカラーと、ベースカラーから120度と240度離れた2色からなる、3色の組み合わせです。                                         |
+| テトラディック(Tetradic) 長方形 | ベースカラーから60度、180度、240度離れた4色の組み合せです。                                                                  |
+| テトラディック(Tetradic) 正方形 | ベースカラーから90度、180度、270度離れた4色の組み合せです。                                                                  |
 
 #### これからやること
 
@@ -81,7 +81,7 @@ GitHub[^4]で キーワード **Color Wheel**、使用言語 **Python**、最終
 
 全ての機能を追加したツールは以下になります。
 
-~~~rawhtml
+```rawhtml
 <img class="w-4/6" src="/images/til/04-screenshot.png">
 
 <div class="w-4/6 border-primary-dark border rounded p-4 mt-4">
@@ -96,7 +96,7 @@ GitHub[^4]で キーワード **Color Wheel**、使用言語 **Python**、最終
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Y_GyzQtuJVQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 </div>
-~~~
+```
 
 #### 4. 配色パターンを使って配色を検討
 
@@ -106,9 +106,9 @@ GitHub[^4]で キーワード **Color Wheel**、使用言語 **Python**、最終
 
 今回はカラーホイールツールで好きな青系の色を選択し、この色をベースカラーとしてスタートしたいと思います。
 
-~~~rawhtml
+```rawhtml
 <div class="w-24 h-24 bg-[#3e6cc1] text-white text-center flex flex-col justify-around rounded-3xl mr-4"><div>#3e6cc1</div></div>
-~~~
+```
 
 そして、**Material Design 3** のカラーシステム[^17]を参考に、キーとなる色とそのバリエーションを選んでいきます。
 
@@ -116,12 +116,12 @@ GitHub[^4]で キーワード **Color Wheel**、使用言語 **Python**、最終
 
 今回は配色パターンの色をそのままキーカラーとします。
 
-|キーカラー名|読み方|説明|
-|:--:|:--:|:--|
-|Primary|プライマリ|おもに使用する色。ベースカラー|
-|Secondary|セカンダリ|2番目に使用する色|
-|Tertiary|ターシャリ|3番目に使用する色|
-|Quaternary|クォータナリ|4番目に使用する色|
+| キーカラー名 |    読み方    | 説明                           |
+| :----------: | :----------: | :----------------------------- |
+|   Primary    |  プライマリ  | おもに使用する色。ベースカラー |
+|  Secondary   |  セカンダリ  | 2番目に使用する色              |
+|   Tertiary   |  ターシャリ  | 3番目に使用する色              |
+|  Quaternary  | クォータナリ | 4番目に使用する色              |
 
 ##### カラーバリエーション
 
@@ -130,230 +130,229 @@ GitHub[^4]で キーワード **Color Wheel**、使用言語 **Python**、最終
 今回は輝度(L)の値を変えてバリエーションを作成します。
 カラーバリエーション名は以下になります。名称は今回独自に命名しています。
 
-|カラーバリエーション名|輝度(L)|説明|
-|:--:|:--:|:--|
-|main|40|おもに利用する通常色|
-|light|90|通常色より明るい色|
-|on main|100|通常色が背景の時に利用する色|
-|on light|10|明るい色が背景の時に利用する色|
-
+| カラーバリエーション名 | 輝度(L) | 説明                           |
+| :--------------------: | :-----: | :----------------------------- |
+|          main          |   40    | おもに利用する通常色           |
+|         light          |   90    | 通常色より明るい色             |
+|        on main         |   100   | 通常色が背景の時に利用する色   |
+|        on light        |   10    | 明るい色が背景の時に利用する色 |
 
 ##### 単色
 
-  同一の色相の色(ホイールの同一角度上にある色)をプライマリ、セカンダリに選択します。
+同一の色相の色(ホイールの同一角度上にある色)をプライマリ、セカンダリに選択します。
 
-  ~~~rawhtml
-  <div class="flex items-center my-4">
-  <div class="w-24 h-24 bg-[#3e6cc1] text-white text-center flex flex-col justify-around rounded-3xl mr-4"><div>Primary</div><div>#3e6cc1</div></div>
-  <div class="w-28 h-24 bg-[#32569a] text-white text-center flex flex-col justify-around"><div>main</div><div>L:40</div></div>
-  <div class="w-28 h-24 bg-[#d8e2f3] text-[#0c1627] text-center flex flex-col justify-around"><div>light</div><div>L:90</div></div>
-  <div class="w-28 h-24 bg-[#ffffff] text-[#32569a] text-center flex flex-col justify-around"><div>on main</div><div>L:100</div></div>
-  <div class="w-28 h-24 bg-[#0c1627] text-[#d8e2f3] text-center flex flex-col justify-around"><div>on light</div><div>L:10</div></div>
-  </div>
-  <div class="flex items-center my-4">
-  <div class="w-24 h-24 bg-[#61779e] text-white text-center flex flex-col justify-around rounded-3xl mr-4"><div>Secondary</div><div>#61779e</div></div>
-  <div class="w-28 h-24 bg-[#4d5f7f] text-white text-center flex flex-col justify-around"><div>main</div><div>L:40</div></div>
-  <div class="w-28 h-24 bg-[#dfe4ec] text-[#131820] text-center flex flex-col justify-around"><div>light</div><div>L:90</div></div>
-  <div class="w-28 h-24 bg-[#ffffff] text-[#4d5f7f] text-center flex flex-col justify-around"><div>on main</div><div>L:100</div></div>
-  <div class="w-28 h-24 bg-[#131820] text-[#dfe4ec] text-center flex flex-col justify-around"><div>on light</div><div>L:10</div></div>
-  </div>
-  ~~~
+```rawhtml
+<div class="flex items-center my-4">
+<div class="w-24 h-24 bg-[#3e6cc1] text-white text-center flex flex-col justify-around rounded-3xl mr-4"><div>Primary</div><div>#3e6cc1</div></div>
+<div class="w-28 h-24 bg-[#32569a] text-white text-center flex flex-col justify-around"><div>main</div><div>L:40</div></div>
+<div class="w-28 h-24 bg-[#d8e2f3] text-[#0c1627] text-center flex flex-col justify-around"><div>light</div><div>L:90</div></div>
+<div class="w-28 h-24 bg-[#ffffff] text-[#32569a] text-center flex flex-col justify-around"><div>on main</div><div>L:100</div></div>
+<div class="w-28 h-24 bg-[#0c1627] text-[#d8e2f3] text-center flex flex-col justify-around"><div>on light</div><div>L:10</div></div>
+</div>
+<div class="flex items-center my-4">
+<div class="w-24 h-24 bg-[#61779e] text-white text-center flex flex-col justify-around rounded-3xl mr-4"><div>Secondary</div><div>#61779e</div></div>
+<div class="w-28 h-24 bg-[#4d5f7f] text-white text-center flex flex-col justify-around"><div>main</div><div>L:40</div></div>
+<div class="w-28 h-24 bg-[#dfe4ec] text-[#131820] text-center flex flex-col justify-around"><div>light</div><div>L:90</div></div>
+<div class="w-28 h-24 bg-[#ffffff] text-[#4d5f7f] text-center flex flex-col justify-around"><div>on main</div><div>L:100</div></div>
+<div class="w-28 h-24 bg-[#131820] text-[#dfe4ec] text-center flex flex-col justify-around"><div>on light</div><div>L:10</div></div>
+</div>
+```
 
 ##### 補色
 
-  プライマリカラーの反対側にある色をセカンダリに選択します。
+プライマリカラーの反対側にある色をセカンダリに選択します。
 
-  ~~~rawhtml
-  <div class="flex items-center my-4">
-  <div class="w-24 h-24 bg-[#3e6cc1] text-white text-center flex flex-col justify-around rounded-3xl mr-4"><div>Primary</div><div>#3e6cc1</div></div>
-  <div class="w-28 h-24 bg-[#32569a] text-white text-center flex flex-col justify-around"><div>main</div><div>L:40</div></div>
-  <div class="w-28 h-24 bg-[#d8e2f3] text-[#0c1627] text-center flex flex-col justify-around"><div>light</div><div>L:90</div></div>
-  <div class="w-28 h-24 bg-[#ffffff] text-[#32569a] text-center flex flex-col justify-around"><div>on main</div><div>L:100</div></div>
-  <div class="w-28 h-24 bg-[#0c1627] text-[#d8e2f3] text-center flex flex-col justify-around"><div>on light</div><div>L:10</div></div>
-  </div>
-  <div class="flex items-center my-4">
-  <div class="w-24 h-24 bg-[#c1933e] text-white text-center flex flex-col justify-around rounded-3xl mr-4"><div>Secondary</div><div>#c1933e</div></div>
-  <div class="w-28 h-24 bg-[#9a7632] text-white text-center flex flex-col  justify-around"><div>main</div><div>L:40</div></div>
-  <div class="w-28 h-24 bg-[#f3e9d8] text-[#271d0c] text-center flex flex-col justify-around"><div>light</div><div>L:90</div></div>
-  <div class="w-28 h-24 bg-[#ffffff] text-[#9a7632] text-center flex flex-col justify-around"><div>on main</div><div>L:100</div></div>
-  <div class="w-28 h-24 bg-[#271d0c] text-[#f3e9d8] text-center flex flex-col justify-around"><div>on light</div><div>L:10</div></div>
-  </div>
-  ~~~
+```rawhtml
+<div class="flex items-center my-4">
+<div class="w-24 h-24 bg-[#3e6cc1] text-white text-center flex flex-col justify-around rounded-3xl mr-4"><div>Primary</div><div>#3e6cc1</div></div>
+<div class="w-28 h-24 bg-[#32569a] text-white text-center flex flex-col justify-around"><div>main</div><div>L:40</div></div>
+<div class="w-28 h-24 bg-[#d8e2f3] text-[#0c1627] text-center flex flex-col justify-around"><div>light</div><div>L:90</div></div>
+<div class="w-28 h-24 bg-[#ffffff] text-[#32569a] text-center flex flex-col justify-around"><div>on main</div><div>L:100</div></div>
+<div class="w-28 h-24 bg-[#0c1627] text-[#d8e2f3] text-center flex flex-col justify-around"><div>on light</div><div>L:10</div></div>
+</div>
+<div class="flex items-center my-4">
+<div class="w-24 h-24 bg-[#c1933e] text-white text-center flex flex-col justify-around rounded-3xl mr-4"><div>Secondary</div><div>#c1933e</div></div>
+<div class="w-28 h-24 bg-[#9a7632] text-white text-center flex flex-col  justify-around"><div>main</div><div>L:40</div></div>
+<div class="w-28 h-24 bg-[#f3e9d8] text-[#271d0c] text-center flex flex-col justify-around"><div>light</div><div>L:90</div></div>
+<div class="w-28 h-24 bg-[#ffffff] text-[#9a7632] text-center flex flex-col justify-around"><div>on main</div><div>L:100</div></div>
+<div class="w-28 h-24 bg-[#271d0c] text-[#f3e9d8] text-center flex flex-col justify-around"><div>on light</div><div>L:10</div></div>
+</div>
+```
 
 ##### 分割補色
 
-  プライマリカラーから150度と210度離れた2色をそれぞれ、セカンダリ、ターシャリに選択します。
+プライマリカラーから150度と210度離れた2色をそれぞれ、セカンダリ、ターシャリに選択します。
 
-  ~~~rawhtml
-  <div class="flex items-center my-4">
-  <div class="w-24 h-24 bg-[#3e6cc1] text-white text-center flex flex-col justify-around rounded-3xl mr-4"><div>Primary</div><div>#3e6cc1</div></div>
-  <div class="w-28 h-24 bg-[#32569a] text-white text-center flex flex-col justify-around"><div>main</div><div>L:40</div></div>
-  <div class="w-28 h-24 bg-[#d8e2f3] text-[#0c1627] text-center flex flex-col justify-around"><div>light</div><div>L:90</div></div>
-  <div class="w-28 h-24 bg-[#ffffff] text-[#32569a] text-center flex flex-col justify-around"><div>on main</div><div>L:100</div></div>
-  <div class="w-28 h-24 bg-[#0c1627] text-[#d8e2f3] text-center flex flex-col justify-around"><div>on light</div><div>L:10</div></div>
-  </div>
-  <div class="flex items-center my-4">
-  <div class="w-24 h-24 bg-[#adc13e] text-white text-center flex flex-col justify-around rounded-3xl mr-4"><div>Secondary</div><div>#adc13e</div></div>
-  <div class="w-28 h-24 bg-[#8b9a32] text-white text-center flex flex-col  justify-around"><div>main</div><div>L:40</div></div>
-  <div class="w-28 h-24 bg-[#f3e9d8] text-[#271d0c] text-center flex flex-col justify-around"><div>light</div><div>L:90</div></div>
-  <div class="w-28 h-24 bg-[#ffffff] text-[#8b9a32] text-center flex flex-col justify-around"><div>on main</div><div>L:100</div></div>
-  <div class="w-28 h-24 bg-[#23270c] text-[#f3e9d8] text-center flex flex-col justify-around"><div>on light</div><div>L:10</div></div>
-  </div>
-  <div class="flex items-center my-4">
-  <div class="w-24 h-24 bg-[#c1523e] text-white text-center flex flex-col justify-around rounded-3xl mr-4"><div>Tertiary</div><div>#c1523e</div></div>
-  <div class="w-28 h-24 bg-[#9a4132] text-white text-center flex flex-col  justify-around"><div>main</div><div>main</div><div>L:40</div></div>
-  <div class="w-28 h-24 bg-[#f3dcd8] text-[#271d0c] text-center flex flex-col justify-around"><div>light</div><div>L:90</div></div>
-  <div class="w-28 h-24 bg-[#ffffff] text-[#9a4132] text-center flex flex-col justify-around"><div>on main</div><div>L:100</div></div>
-  <div class="w-28 h-24 bg-[#27100c] text-[#f3dcd8] text-center flex flex-col justify-around"><div>on light</div><div>L:10</div></div>
-  </div>
-  ~~~
+```rawhtml
+<div class="flex items-center my-4">
+<div class="w-24 h-24 bg-[#3e6cc1] text-white text-center flex flex-col justify-around rounded-3xl mr-4"><div>Primary</div><div>#3e6cc1</div></div>
+<div class="w-28 h-24 bg-[#32569a] text-white text-center flex flex-col justify-around"><div>main</div><div>L:40</div></div>
+<div class="w-28 h-24 bg-[#d8e2f3] text-[#0c1627] text-center flex flex-col justify-around"><div>light</div><div>L:90</div></div>
+<div class="w-28 h-24 bg-[#ffffff] text-[#32569a] text-center flex flex-col justify-around"><div>on main</div><div>L:100</div></div>
+<div class="w-28 h-24 bg-[#0c1627] text-[#d8e2f3] text-center flex flex-col justify-around"><div>on light</div><div>L:10</div></div>
+</div>
+<div class="flex items-center my-4">
+<div class="w-24 h-24 bg-[#adc13e] text-white text-center flex flex-col justify-around rounded-3xl mr-4"><div>Secondary</div><div>#adc13e</div></div>
+<div class="w-28 h-24 bg-[#8b9a32] text-white text-center flex flex-col  justify-around"><div>main</div><div>L:40</div></div>
+<div class="w-28 h-24 bg-[#f3e9d8] text-[#271d0c] text-center flex flex-col justify-around"><div>light</div><div>L:90</div></div>
+<div class="w-28 h-24 bg-[#ffffff] text-[#8b9a32] text-center flex flex-col justify-around"><div>on main</div><div>L:100</div></div>
+<div class="w-28 h-24 bg-[#23270c] text-[#f3e9d8] text-center flex flex-col justify-around"><div>on light</div><div>L:10</div></div>
+</div>
+<div class="flex items-center my-4">
+<div class="w-24 h-24 bg-[#c1523e] text-white text-center flex flex-col justify-around rounded-3xl mr-4"><div>Tertiary</div><div>#c1523e</div></div>
+<div class="w-28 h-24 bg-[#9a4132] text-white text-center flex flex-col  justify-around"><div>main</div><div>main</div><div>L:40</div></div>
+<div class="w-28 h-24 bg-[#f3dcd8] text-[#271d0c] text-center flex flex-col justify-around"><div>light</div><div>L:90</div></div>
+<div class="w-28 h-24 bg-[#ffffff] text-[#9a4132] text-center flex flex-col justify-around"><div>on main</div><div>L:100</div></div>
+<div class="w-28 h-24 bg-[#27100c] text-[#f3dcd8] text-center flex flex-col justify-around"><div>on light</div><div>L:10</div></div>
+</div>
+```
 
 ##### 無彩色
 
-  ホイールの円の中心に近い、彩度の低い色の組合せ(本例では補色)を、それぞれプライマリ、セカンダリに選択します。
+ホイールの円の中心に近い、彩度の低い色の組合せ(本例では補色)を、それぞれプライマリ、セカンダリに選択します。
 
-  ~~~rawhtml
-  <div class="flex items-center my-4">
-  <div class="w-24 h-24 bg-[#768489] text-white text-center flex flex-col justify-around rounded-3xl mr-4"><div>Primary</div><div>#768489</div></div>
-  <div class="w-28 h-24 bg-[#5e696e] text-white text-center flex flex-col justify-around"><div>main</div><div>L:40</div></div>
-  <div class="w-28 h-24 bg-[#e4e6e7] text-[#181a1b] text-center flex flex-col justify-around"><div>light</div><div>L:90</div></div>
-  <div class="w-28 h-24 bg-[#ffffff] text-[#5e696e] text-center flex flex-col justify-around"><div>on main</div><div>L:100</div></div>
-  <div class="w-28 h-24 bg-[#181a1b] text-[#e4e6e7] text-center flex flex-col justify-around"><div>on light</div><div>L:10</div></div>
-  </div>
-  <div class="flex items-center my-4">
-  <div class="w-24 h-24 bg-[#897b76] text-white text-center flex flex-col justify-around rounded-3xl mr-4"><div>Secondary</div><div>#897b76</div></div>
-  <div class="w-28 h-24 bg-[#6e635e] text-white text-center flex flex-col  justify-around"><div>main</div><div>main</div><div>L:40</div></div>
-  <div class="w-28 h-24 bg-[#e7e5e4] text-[#1b1918] text-center flex flex-col justify-around"><div>light</div><div>L:90</div></div>
-  <div class="w-28 h-24 bg-[#ffffff] text-[#6e635e] text-center flex flex-col justify-around"><div>on main</div><div>L:100</div></div>
-  <div class="w-28 h-24 bg-[#1b1918] text-[#e7e5e4] text-center flex flex-col justify-around"><div>on light</div><div>L:10</div></div>
-  </div>
-  ~~~
+```rawhtml
+<div class="flex items-center my-4">
+<div class="w-24 h-24 bg-[#768489] text-white text-center flex flex-col justify-around rounded-3xl mr-4"><div>Primary</div><div>#768489</div></div>
+<div class="w-28 h-24 bg-[#5e696e] text-white text-center flex flex-col justify-around"><div>main</div><div>L:40</div></div>
+<div class="w-28 h-24 bg-[#e4e6e7] text-[#181a1b] text-center flex flex-col justify-around"><div>light</div><div>L:90</div></div>
+<div class="w-28 h-24 bg-[#ffffff] text-[#5e696e] text-center flex flex-col justify-around"><div>on main</div><div>L:100</div></div>
+<div class="w-28 h-24 bg-[#181a1b] text-[#e4e6e7] text-center flex flex-col justify-around"><div>on light</div><div>L:10</div></div>
+</div>
+<div class="flex items-center my-4">
+<div class="w-24 h-24 bg-[#897b76] text-white text-center flex flex-col justify-around rounded-3xl mr-4"><div>Secondary</div><div>#897b76</div></div>
+<div class="w-28 h-24 bg-[#6e635e] text-white text-center flex flex-col  justify-around"><div>main</div><div>main</div><div>L:40</div></div>
+<div class="w-28 h-24 bg-[#e7e5e4] text-[#1b1918] text-center flex flex-col justify-around"><div>light</div><div>L:90</div></div>
+<div class="w-28 h-24 bg-[#ffffff] text-[#6e635e] text-center flex flex-col justify-around"><div>on main</div><div>L:100</div></div>
+<div class="w-28 h-24 bg-[#1b1918] text-[#e7e5e4] text-center flex flex-col justify-around"><div>on light</div><div>L:10</div></div>
+</div>
+```
 
 ##### 類似色
 
-  プライマリカラーに隣接する2色をそれぞれ、セカンダリ、ターシャリに選択します。
+プライマリカラーに隣接する2色をそれぞれ、セカンダリ、ターシャリに選択します。
 
-  ~~~rawhtml
-  <div class="flex items-center my-4">
-  <div class="w-24 h-24 bg-[#3e6cc1] text-white text-center flex flex-col justify-around rounded-3xl mr-4"><div>Primary</div><div>#3e6cc1</div></div>
-  <div class="w-28 h-24 bg-[#32569a] text-white text-center flex flex-col justify-around"><div>main</div><div>L:40</div></div>
-  <div class="w-28 h-24 bg-[#d8e2f3] text-[#0c1627] text-center flex flex-col justify-around"><div>light</div><div>L:90</div></div>
-  <div class="w-28 h-24 bg-[#ffffff] text-[#32569a] text-center flex flex-col justify-around"><div>on main</div><div>L:100</div></div>
-  <div class="w-28 h-24 bg-[#0c1627] text-[#d8e2f3] text-center flex flex-col justify-around"><div>on light</div><div>L:10</div></div>
-  </div>
-  <div class="flex items-center my-4">
-  <div class="w-24 h-24 bg-[#523ec1] text-white text-center flex flex-col justify-around rounded-3xl mr-4"><div>Secondary</div><div>#523ec1</div></div>
-  <div class="w-28 h-24 bg-[#42329a] text-white text-center flex flex-col  justify-around"><div>main</div><div>L:40</div></div>
-  <div class="w-28 h-24 bg-[#dcd8f3] text-[#271d0c] text-center flex flex-col justify-around"><div>light</div><div>L:90</div></div>
-  <div class="w-28 h-24 bg-[#ffffff] text-[#42329a] text-center flex flex-col justify-around"><div>on main</div><div>L:100</div></div>
-  <div class="w-28 h-24 bg-[#100c27] text-[#dcd8f3] text-center flex flex-col justify-around"><div>on light</div><div>L:10</div></div>
-  </div>
-  <div class="flex items-center my-4">
-  <div class="w-24 h-24 bg-[#3eadc1] text-white text-center flex flex-col justify-around rounded-3xl mr-4"><div>Tertiary</div><div>#3eadc1</div></div>
-  <div class="w-28 h-24 bg-[#328a9a] text-white text-center flex flex-col  justify-around"><div>main</div><div>L:40</div></div>
-  <div class="w-28 h-24 bg-[#d8eff3] text-[#271d0c] text-center flex flex-col justify-around"><div>light</div><div>L:90</div></div>
-  <div class="w-28 h-24 bg-[#ffffff] text-[#328a9a] text-center flex flex-col justify-around"><div>on main</div><div>L:100</div></div>
-  <div class="w-28 h-24 bg-[#0c2327] text-[#d8eff3] text-center flex flex-col justify-around"><div>on light</div><div>L:10</div></div>
-  </div>
-  ~~~
+```rawhtml
+<div class="flex items-center my-4">
+<div class="w-24 h-24 bg-[#3e6cc1] text-white text-center flex flex-col justify-around rounded-3xl mr-4"><div>Primary</div><div>#3e6cc1</div></div>
+<div class="w-28 h-24 bg-[#32569a] text-white text-center flex flex-col justify-around"><div>main</div><div>L:40</div></div>
+<div class="w-28 h-24 bg-[#d8e2f3] text-[#0c1627] text-center flex flex-col justify-around"><div>light</div><div>L:90</div></div>
+<div class="w-28 h-24 bg-[#ffffff] text-[#32569a] text-center flex flex-col justify-around"><div>on main</div><div>L:100</div></div>
+<div class="w-28 h-24 bg-[#0c1627] text-[#d8e2f3] text-center flex flex-col justify-around"><div>on light</div><div>L:10</div></div>
+</div>
+<div class="flex items-center my-4">
+<div class="w-24 h-24 bg-[#523ec1] text-white text-center flex flex-col justify-around rounded-3xl mr-4"><div>Secondary</div><div>#523ec1</div></div>
+<div class="w-28 h-24 bg-[#42329a] text-white text-center flex flex-col  justify-around"><div>main</div><div>L:40</div></div>
+<div class="w-28 h-24 bg-[#dcd8f3] text-[#271d0c] text-center flex flex-col justify-around"><div>light</div><div>L:90</div></div>
+<div class="w-28 h-24 bg-[#ffffff] text-[#42329a] text-center flex flex-col justify-around"><div>on main</div><div>L:100</div></div>
+<div class="w-28 h-24 bg-[#100c27] text-[#dcd8f3] text-center flex flex-col justify-around"><div>on light</div><div>L:10</div></div>
+</div>
+<div class="flex items-center my-4">
+<div class="w-24 h-24 bg-[#3eadc1] text-white text-center flex flex-col justify-around rounded-3xl mr-4"><div>Tertiary</div><div>#3eadc1</div></div>
+<div class="w-28 h-24 bg-[#328a9a] text-white text-center flex flex-col  justify-around"><div>main</div><div>L:40</div></div>
+<div class="w-28 h-24 bg-[#d8eff3] text-[#271d0c] text-center flex flex-col justify-around"><div>light</div><div>L:90</div></div>
+<div class="w-28 h-24 bg-[#ffffff] text-[#328a9a] text-center flex flex-col justify-around"><div>on main</div><div>L:100</div></div>
+<div class="w-28 h-24 bg-[#0c2327] text-[#d8eff3] text-center flex flex-col justify-around"><div>on light</div><div>L:10</div></div>
+</div>
+```
 
 ##### トライアド
 
-  プライマリカラーから120度と240度離れた2色をそれぞれ、セカンダリ、ターシャリに選択します。
+プライマリカラーから120度と240度離れた2色をそれぞれ、セカンダリ、ターシャリに選択します。
 
-  ~~~rawhtml
-  <div class="flex items-center my-4">
-  <div class="w-24 h-24 bg-[#3e6cc1] text-white text-center flex flex-col justify-around rounded-3xl mr-4"><div>Primary</div><div>#3e6cc1</div></div>
-  <div class="w-28 h-24 bg-[#32569a] text-white text-center flex flex-col justify-around"><div>main</div><div>L:40</div></div>
-  <div class="w-28 h-24 bg-[#d8e2f3] text-[#0c1627] text-center flex flex-col justify-around"><div>light</div><div>L:90</div></div>
-  <div class="w-28 h-24 bg-[#ffffff] text-[#32569a] text-center flex flex-col justify-around"><div>on main</div><div>L:100</div></div>
-  <div class="w-28 h-24 bg-[#0c1627] text-[#d8e2f3] text-center flex flex-col justify-around"><div>on light</div><div>L:10</div></div>
-  </div>
-  <div class="flex items-center my-4">
-  <div class="w-24 h-24 bg-[#6cc13e] text-white text-center flex flex-col justify-around rounded-3xl mr-4"><div>Secondary</div><div>#523ec1</div></div>
-  <div class="w-28 h-24 bg-[#569a32] text-white text-center flex flex-col  justify-around"><div>main</div><div>L:40</div></div>
-  <div class="w-28 h-24 bg-[#e2f3d8] text-[#16270c] text-center flex flex-col justify-around"><div>light</div><div>L:90</div></div>
-  <div class="w-28 h-24 bg-[#ffffff] text-[#569a32] text-center flex flex-col justify-around"><div>on main</div><div>L:100</div></div>
-  <div class="w-28 h-24 bg-[#16270c] text-[#e2f3d8] text-center flex flex-col justify-around"><div>on light</div><div>L:10</div></div>
-  </div>
-  <div class="flex items-center my-4">
-  <div class="w-24 h-24 bg-[#c13e6c] text-white text-center flex flex-col justify-around rounded-3xl mr-4"><div>Tertiary</div><div>#3eadc1</div></div>
-  <div class="w-28 h-24 bg-[#9a3256] text-white text-center flex flex-col  justify-around"><div>main</div><div>L:40</div></div>
-  <div class="w-28 h-24 bg-[#f3d8e2] text-[#270c16] text-center flex flex-col justify-around"><div>light</div><div>L:90</div></div>
-  <div class="w-28 h-24 bg-[#ffffff] text-[#9a3256] text-center flex flex-col justify-around"><div>on main</div><div>L:100</div></div>
-  <div class="w-28 h-24 bg-[#270c16] text-[#f3d8e2] text-center flex flex-col justify-around"><div>on light</div><div>L:10</div></div>
-  </div>
-  ~~~
+```rawhtml
+<div class="flex items-center my-4">
+<div class="w-24 h-24 bg-[#3e6cc1] text-white text-center flex flex-col justify-around rounded-3xl mr-4"><div>Primary</div><div>#3e6cc1</div></div>
+<div class="w-28 h-24 bg-[#32569a] text-white text-center flex flex-col justify-around"><div>main</div><div>L:40</div></div>
+<div class="w-28 h-24 bg-[#d8e2f3] text-[#0c1627] text-center flex flex-col justify-around"><div>light</div><div>L:90</div></div>
+<div class="w-28 h-24 bg-[#ffffff] text-[#32569a] text-center flex flex-col justify-around"><div>on main</div><div>L:100</div></div>
+<div class="w-28 h-24 bg-[#0c1627] text-[#d8e2f3] text-center flex flex-col justify-around"><div>on light</div><div>L:10</div></div>
+</div>
+<div class="flex items-center my-4">
+<div class="w-24 h-24 bg-[#6cc13e] text-white text-center flex flex-col justify-around rounded-3xl mr-4"><div>Secondary</div><div>#523ec1</div></div>
+<div class="w-28 h-24 bg-[#569a32] text-white text-center flex flex-col  justify-around"><div>main</div><div>L:40</div></div>
+<div class="w-28 h-24 bg-[#e2f3d8] text-[#16270c] text-center flex flex-col justify-around"><div>light</div><div>L:90</div></div>
+<div class="w-28 h-24 bg-[#ffffff] text-[#569a32] text-center flex flex-col justify-around"><div>on main</div><div>L:100</div></div>
+<div class="w-28 h-24 bg-[#16270c] text-[#e2f3d8] text-center flex flex-col justify-around"><div>on light</div><div>L:10</div></div>
+</div>
+<div class="flex items-center my-4">
+<div class="w-24 h-24 bg-[#c13e6c] text-white text-center flex flex-col justify-around rounded-3xl mr-4"><div>Tertiary</div><div>#3eadc1</div></div>
+<div class="w-28 h-24 bg-[#9a3256] text-white text-center flex flex-col  justify-around"><div>main</div><div>L:40</div></div>
+<div class="w-28 h-24 bg-[#f3d8e2] text-[#270c16] text-center flex flex-col justify-around"><div>light</div><div>L:90</div></div>
+<div class="w-28 h-24 bg-[#ffffff] text-[#9a3256] text-center flex flex-col justify-around"><div>on main</div><div>L:100</div></div>
+<div class="w-28 h-24 bg-[#270c16] text-[#f3d8e2] text-center flex flex-col justify-around"><div>on light</div><div>L:10</div></div>
+</div>
+```
 
 ##### テトラディック(長方形)
 
-  プライマリカラーから60度、180度、240度離れた2色をそれぞれ、セカンダリ、ターシャリ、クォータナリに選択します。
+プライマリカラーから60度、180度、240度離れた2色をそれぞれ、セカンダリ、ターシャリ、クォータナリに選択します。
 
-  ~~~rawhtml
-  <div class="flex items-center my-4">
-  <div class="w-24 h-24 bg-[#3e6cc1] text-white text-center flex flex-col justify-around rounded-3xl mr-4"><div>Primary</div><div>#3e6cc1</div></div>
-  <div class="w-28 h-24 bg-[#32569a] text-white text-center flex flex-col justify-around"><div>main</div><div>L:40</div></div>
-  <div class="w-28 h-24 bg-[#d8e2f3] text-[#0c1627] text-center flex flex-col justify-around"><div>light</div><div>L:90</div></div>
-  <div class="w-28 h-24 bg-[#ffffff] text-[#32569a] text-center flex flex-col justify-around"><div>on main</div><div>L:100</div></div>
-  <div class="w-28 h-24 bg-[#0c1627] text-[#d8e2f3] text-center flex flex-col justify-around"><div>on light</div><div>L:10</div></div>
-  </div>
-  <div class="flex items-center my-4">
-  <div class="w-24 h-24 bg-[#6cc13e] text-white text-center flex flex-col justify-around rounded-3xl mr-4"><div>Secondary</div><div>#523ec1</div></div>
-  <div class="w-28 h-24 bg-[#569a32] text-white text-center flex flex-col  justify-around"><div>main</div><div>L:40</div></div>
-  <div class="w-28 h-24 bg-[#e2f3d8] text-[#16270c] text-center flex flex-col justify-around"><div>light</div><div>L:90</div></div>
-  <div class="w-28 h-24 bg-[#ffffff] text-[#569a32] text-center flex flex-col justify-around"><div>on main</div><div>L:100</div></div>
-  <div class="w-28 h-24 bg-[#16270c] text-[#e2f3d8] text-center flex flex-col justify-around"><div>on light</div><div>L:10</div></div>
-  </div>
-  <div class="flex items-center my-4">
-  <div class="w-24 h-24 bg-[#c1933e] text-white text-center flex flex-col justify-around rounded-3xl mr-4"><div>Tertiary</div><div>#3eadc1</div></div>
-  <div class="w-28 h-24 bg-[#9a7632] text-white text-center flex flex-col  justify-around"><div>main</div><div>L:40</div></div>
-  <div class="w-28 h-24 bg-[#f3e9d8] text-[#270c16] text-center flex flex-col justify-around"><div>light</div><div>L:90</div></div>
-  <div class="w-28 h-24 bg-[#ffffff] text-[#9a7632] text-center flex flex-col justify-around"><div>on main</div><div>L:100</div></div>
-  <div class="w-28 h-24 bg-[#270c16] text-[#f3e9d8] text-center flex flex-col justify-around"><div>on light</div><div>L:10</div></div>
-  </div>
-  <div class="flex items-center my-4">
-  <div class="w-24 h-24 bg-[#943ec1] text-white text-center flex flex-col justify-around rounded-3xl mr-4"><div>Quaternary</div><div>#3eadc1</div></div>
-  <div class="w-28 h-24 bg-[#76329a] text-white text-center flex flex-col  justify-around"><div>main</div><div>L:40</div></div>
-  <div class="w-28 h-24 bg-[#ead8f3] text-[#270c16] text-center flex flex-col justify-around"><div>light</div><div>L:90</div></div>
-  <div class="w-28 h-24 bg-[#ffffff] text-[#76329a] text-center flex flex-col justify-around"><div>on main</div><div>L:100</div></div>
-  <div class="w-28 h-24 bg-[#270c16] text-[#ead8f3] text-center flex flex-col justify-around"><div>on light</div><div>L:10</div></div>
-  </div>
-  ~~~
+```rawhtml
+<div class="flex items-center my-4">
+<div class="w-24 h-24 bg-[#3e6cc1] text-white text-center flex flex-col justify-around rounded-3xl mr-4"><div>Primary</div><div>#3e6cc1</div></div>
+<div class="w-28 h-24 bg-[#32569a] text-white text-center flex flex-col justify-around"><div>main</div><div>L:40</div></div>
+<div class="w-28 h-24 bg-[#d8e2f3] text-[#0c1627] text-center flex flex-col justify-around"><div>light</div><div>L:90</div></div>
+<div class="w-28 h-24 bg-[#ffffff] text-[#32569a] text-center flex flex-col justify-around"><div>on main</div><div>L:100</div></div>
+<div class="w-28 h-24 bg-[#0c1627] text-[#d8e2f3] text-center flex flex-col justify-around"><div>on light</div><div>L:10</div></div>
+</div>
+<div class="flex items-center my-4">
+<div class="w-24 h-24 bg-[#6cc13e] text-white text-center flex flex-col justify-around rounded-3xl mr-4"><div>Secondary</div><div>#523ec1</div></div>
+<div class="w-28 h-24 bg-[#569a32] text-white text-center flex flex-col  justify-around"><div>main</div><div>L:40</div></div>
+<div class="w-28 h-24 bg-[#e2f3d8] text-[#16270c] text-center flex flex-col justify-around"><div>light</div><div>L:90</div></div>
+<div class="w-28 h-24 bg-[#ffffff] text-[#569a32] text-center flex flex-col justify-around"><div>on main</div><div>L:100</div></div>
+<div class="w-28 h-24 bg-[#16270c] text-[#e2f3d8] text-center flex flex-col justify-around"><div>on light</div><div>L:10</div></div>
+</div>
+<div class="flex items-center my-4">
+<div class="w-24 h-24 bg-[#c1933e] text-white text-center flex flex-col justify-around rounded-3xl mr-4"><div>Tertiary</div><div>#3eadc1</div></div>
+<div class="w-28 h-24 bg-[#9a7632] text-white text-center flex flex-col  justify-around"><div>main</div><div>L:40</div></div>
+<div class="w-28 h-24 bg-[#f3e9d8] text-[#270c16] text-center flex flex-col justify-around"><div>light</div><div>L:90</div></div>
+<div class="w-28 h-24 bg-[#ffffff] text-[#9a7632] text-center flex flex-col justify-around"><div>on main</div><div>L:100</div></div>
+<div class="w-28 h-24 bg-[#270c16] text-[#f3e9d8] text-center flex flex-col justify-around"><div>on light</div><div>L:10</div></div>
+</div>
+<div class="flex items-center my-4">
+<div class="w-24 h-24 bg-[#943ec1] text-white text-center flex flex-col justify-around rounded-3xl mr-4"><div>Quaternary</div><div>#3eadc1</div></div>
+<div class="w-28 h-24 bg-[#76329a] text-white text-center flex flex-col  justify-around"><div>main</div><div>L:40</div></div>
+<div class="w-28 h-24 bg-[#ead8f3] text-[#270c16] text-center flex flex-col justify-around"><div>light</div><div>L:90</div></div>
+<div class="w-28 h-24 bg-[#ffffff] text-[#76329a] text-center flex flex-col justify-around"><div>on main</div><div>L:100</div></div>
+<div class="w-28 h-24 bg-[#270c16] text-[#ead8f3] text-center flex flex-col justify-around"><div>on light</div><div>L:10</div></div>
+</div>
+```
 
 ##### テトラディック(正方形)
 
-  プライマリカラーから90度、180度、270度離れた2色をそれぞれ、セカンダリ、ターシャリ、クォータナリに選択します。
+プライマリカラーから90度、180度、270度離れた2色をそれぞれ、セカンダリ、ターシャリ、クォータナリに選択します。
 
-  ~~~rawhtml
-  <div class="flex items-center my-4">
-  <div class="w-24 h-24 bg-[#3e6cc1] text-white text-center flex flex-col justify-around rounded-3xl mr-4"><div>Primary</div><div>#3e6cc1</div></div>
-  <div class="w-28 h-24 bg-[#32569a] text-white text-center flex flex-col justify-around"><div>main</div><div>L:40</div></div>
-  <div class="w-28 h-24 bg-[#d8e2f3] text-[#0c1627] text-center flex flex-col justify-around"><div>light</div><div>L:90</div></div>
-  <div class="w-28 h-24 bg-[#ffffff] text-[#32569a] text-center flex flex-col justify-around"><div>on main</div><div>L:100</div></div>
-  <div class="w-28 h-24 bg-[#0c1627] text-[#d8e2f3] text-center flex flex-col justify-around"><div>on light</div><div>L:10</div></div>
-  </div>
-  <div class="flex items-center my-4">
-  <div class="w-24 h-24 bg-[#3ec152] text-white text-center flex flex-col justify-around rounded-3xl mr-4"><div>Secondary</div><div>#523ec1</div></div>
-  <div class="w-28 h-24 bg-[#329a42] text-white text-center flex flex-col  justify-around"><div>main</div><div>L:40</div></div>
-  <div class="w-28 h-24 bg-[#d8f3dc] text-[#0c2710] text-center flex flex-col justify-around"><div>light</div><div>L:90</div></div>
-  <div class="w-28 h-24 bg-[#ffffff] text-[#329a42] text-center flex flex-col justify-around"><div>on main</div><div>L:100</div></div>
-  <div class="w-28 h-24 bg-[#0c2710] text-[#d8f3dc] text-center flex flex-col justify-around"><div>on light</div><div>L:10</div></div>
-  </div>
-  <div class="flex items-center my-4">
-  <div class="w-24 h-24 bg-[#c1933e] text-white text-center flex flex-col justify-around rounded-3xl mr-4"><div>Tertiary</div><div>#3eadc1</div></div>
-  <div class="w-28 h-24 bg-[#9a7632] text-white text-center flex flex-col  justify-around"><div>main</div><div>L:40</div></div>
-  <div class="w-28 h-24 bg-[#f3e9d8] text-[#271d0c] text-center flex flex-col justify-around"><div>light</div><div>L:90</div></div>
-  <div class="w-28 h-24 bg-[#ffffff] text-[#9a7632] text-center flex flex-col justify-around"><div>on main</div><div>L:100</div></div>
-  <div class="w-28 h-24 bg-[#271d0c] text-[#f3e9d8] text-center flex flex-col justify-around"><div>on light</div><div>L:10</div></div>
-  </div>
-  <div class="flex items-center my-4">
-  <div class="w-24 h-24 bg-[#c13ead] text-white text-center flex flex-col justify-around rounded-3xl mr-4"><div>Quaternary</div><div>#3eadc1</div></div>
-  <div class="w-28 h-24 bg-[#9a328a] text-white text-center flex flex-col  justify-around"><div>main</div><div>L:40</div></div>
-  <div class="w-28 h-24 bg-[#f3d8ef] text-[#270c23] text-center flex flex-col justify-around"><div>light</div><div>L:90</div></div>
-  <div class="w-28 h-24 bg-[#ffffff] text-[#9a328a] text-center flex flex-col justify-around"><div>on main</div><div>L:100</div></div>
-  <div class="w-28 h-24 bg-[#270c23] text-[#f3d8ef] text-center flex flex-col justify-around"><div>on light</div><div>L:10</div></div>
-  </div>
-  ~~~
+```rawhtml
+<div class="flex items-center my-4">
+<div class="w-24 h-24 bg-[#3e6cc1] text-white text-center flex flex-col justify-around rounded-3xl mr-4"><div>Primary</div><div>#3e6cc1</div></div>
+<div class="w-28 h-24 bg-[#32569a] text-white text-center flex flex-col justify-around"><div>main</div><div>L:40</div></div>
+<div class="w-28 h-24 bg-[#d8e2f3] text-[#0c1627] text-center flex flex-col justify-around"><div>light</div><div>L:90</div></div>
+<div class="w-28 h-24 bg-[#ffffff] text-[#32569a] text-center flex flex-col justify-around"><div>on main</div><div>L:100</div></div>
+<div class="w-28 h-24 bg-[#0c1627] text-[#d8e2f3] text-center flex flex-col justify-around"><div>on light</div><div>L:10</div></div>
+</div>
+<div class="flex items-center my-4">
+<div class="w-24 h-24 bg-[#3ec152] text-white text-center flex flex-col justify-around rounded-3xl mr-4"><div>Secondary</div><div>#523ec1</div></div>
+<div class="w-28 h-24 bg-[#329a42] text-white text-center flex flex-col  justify-around"><div>main</div><div>L:40</div></div>
+<div class="w-28 h-24 bg-[#d8f3dc] text-[#0c2710] text-center flex flex-col justify-around"><div>light</div><div>L:90</div></div>
+<div class="w-28 h-24 bg-[#ffffff] text-[#329a42] text-center flex flex-col justify-around"><div>on main</div><div>L:100</div></div>
+<div class="w-28 h-24 bg-[#0c2710] text-[#d8f3dc] text-center flex flex-col justify-around"><div>on light</div><div>L:10</div></div>
+</div>
+<div class="flex items-center my-4">
+<div class="w-24 h-24 bg-[#c1933e] text-white text-center flex flex-col justify-around rounded-3xl mr-4"><div>Tertiary</div><div>#3eadc1</div></div>
+<div class="w-28 h-24 bg-[#9a7632] text-white text-center flex flex-col  justify-around"><div>main</div><div>L:40</div></div>
+<div class="w-28 h-24 bg-[#f3e9d8] text-[#271d0c] text-center flex flex-col justify-around"><div>light</div><div>L:90</div></div>
+<div class="w-28 h-24 bg-[#ffffff] text-[#9a7632] text-center flex flex-col justify-around"><div>on main</div><div>L:100</div></div>
+<div class="w-28 h-24 bg-[#271d0c] text-[#f3e9d8] text-center flex flex-col justify-around"><div>on light</div><div>L:10</div></div>
+</div>
+<div class="flex items-center my-4">
+<div class="w-24 h-24 bg-[#c13ead] text-white text-center flex flex-col justify-around rounded-3xl mr-4"><div>Quaternary</div><div>#3eadc1</div></div>
+<div class="w-28 h-24 bg-[#9a328a] text-white text-center flex flex-col  justify-around"><div>main</div><div>L:40</div></div>
+<div class="w-28 h-24 bg-[#f3d8ef] text-[#270c23] text-center flex flex-col justify-around"><div>light</div><div>L:90</div></div>
+<div class="w-28 h-24 bg-[#ffffff] text-[#9a328a] text-center flex flex-col justify-around"><div>on main</div><div>L:100</div></div>
+<div class="w-28 h-24 bg-[#270c23] text-[#f3d8ef] text-center flex flex-col justify-around"><div>on light</div><div>L:10</div></div>
+</div>
+```
 
 #### 5. サイトの配色を決定
 
@@ -364,37 +363,37 @@ GitHub[^4]で キーワード **Color Wheel**、使用言語 **Python**、最終
 
 そこで、今回は、 **分割補色パターン** から1色選び、セカンダリカラーとし、カラーバリエーションに **dark** を追加したいと思います。
 
-|カラー名|輝度(L)|説明|
-|:--:|:--:|:--|
-|main|40|おもに利用する通常色|
-|light|90|通常色より明るい色|
-|dark|20|通常色より暗い色|
-|on main|100|通常色が背景の時に利用する色|
-|on light|10|明るい色が背景の時に利用する色|
-|on dark|100|暗い色が背景の時に利用する色|
+| カラー名 | 輝度(L) | 説明                           |
+| :------: | :-----: | :----------------------------- |
+|   main   |   40    | おもに利用する通常色           |
+|  light   |   90    | 通常色より明るい色             |
+|   dark   |   20    | 通常色より暗い色               |
+| on main  |   100   | 通常色が背景の時に利用する色   |
+| on light |   10    | 明るい色が背景の時に利用する色 |
+| on dark  |   100   | 暗い色が背景の時に利用する色   |
 
 以上の結果、私が選んだ色は以下になります。
 
-  ~~~rawhtml
-  <div class="flex items-center my-4">
-  <div class="w-24 h-24 bg-[#3e6cc1] text-white text-center flex flex-col justify-around rounded-3xl mr-4"><div>Primary</div><div>#3e6cc1</div></div>
-  <div class="w-28 h-24 bg-[#32569a] text-white text-center flex flex-col justify-around"><div>main</div><div>L:40</div></div>
-  <div class="w-28 h-24 bg-[#d8e2f3] text-[#0c1627] text-center flex flex-col justify-around"><div>light</div><div>L:90</div></div>
-  <div class="w-28 h-24 bg-[#192b4d] text-[#ffffff] text-center flex flex-col justify-around"><div>dark</div><div>L:20</div></div>
-  <div class="w-28 h-24 bg-[#ffffff] text-[#32569a] text-center flex flex-col justify-around"><div>on main</div><div>L:100</div></div>
-  <div class="w-28 h-24 bg-[#0c1627] text-[#d8e2f3] text-center flex flex-col justify-around"><div>on light</div><div>L:10</div></div>
-  <div class="w-28 h-24 bg-[#ffffff] text-[#192b4d] text-center flex flex-col justify-around"><div>on dark</div><div>L:100</div></div>
-  </div>
-  <div class="flex items-center my-4">
-  <div class="w-24 h-24 bg-[#adc13e] text-white text-center flex flex-col justify-around rounded-3xl mr-4"><div>Secondary</div><div>#adc13e</div></div>
-  <div class="w-28 h-24 bg-[#8b9a32] text-white text-center flex flex-col  justify-around"><div>main</div><div>L:40</div></div>
-  <div class="w-28 h-24 bg-[#f3e9d8] text-[#271d0c] text-center flex flex-col justify-around"><div>light</div><div>L:90</div></div>
-  <div class="w-28 h-24 bg-[#454d19] text-white text-center flex flex-col justify-around"><div>dark</div><div>L:20</div></div>
-  <div class="w-28 h-24 bg-[#ffffff] text-[#8b9a32] text-center flex flex-col justify-around"><div>on main</div><div>L:100</div></div>
-  <div class="w-28 h-24 bg-[#23270c] text-[#f3e9d8] text-center flex flex-col justify-around"><div>on light</div><div>L:10</div></div>
-  <div class="w-28 h-24 bg-[#ffffff] text-[#454d19] text-center flex flex-col justify-around"><div>on dark</div><div>L:100</div></div>
-  </div>
-  ~~~
+```rawhtml
+<div class="flex items-center my-4">
+<div class="w-24 h-24 bg-[#3e6cc1] text-white text-center flex flex-col justify-around rounded-3xl mr-4"><div>Primary</div><div>#3e6cc1</div></div>
+<div class="w-28 h-24 bg-[#32569a] text-white text-center flex flex-col justify-around"><div>main</div><div>L:40</div></div>
+<div class="w-28 h-24 bg-[#d8e2f3] text-[#0c1627] text-center flex flex-col justify-around"><div>light</div><div>L:90</div></div>
+<div class="w-28 h-24 bg-[#192b4d] text-[#ffffff] text-center flex flex-col justify-around"><div>dark</div><div>L:20</div></div>
+<div class="w-28 h-24 bg-[#ffffff] text-[#32569a] text-center flex flex-col justify-around"><div>on main</div><div>L:100</div></div>
+<div class="w-28 h-24 bg-[#0c1627] text-[#d8e2f3] text-center flex flex-col justify-around"><div>on light</div><div>L:10</div></div>
+<div class="w-28 h-24 bg-[#ffffff] text-[#192b4d] text-center flex flex-col justify-around"><div>on dark</div><div>L:100</div></div>
+</div>
+<div class="flex items-center my-4">
+<div class="w-24 h-24 bg-[#adc13e] text-white text-center flex flex-col justify-around rounded-3xl mr-4"><div>Secondary</div><div>#adc13e</div></div>
+<div class="w-28 h-24 bg-[#8b9a32] text-white text-center flex flex-col  justify-around"><div>main</div><div>L:40</div></div>
+<div class="w-28 h-24 bg-[#f3e9d8] text-[#271d0c] text-center flex flex-col justify-around"><div>light</div><div>L:90</div></div>
+<div class="w-28 h-24 bg-[#454d19] text-white text-center flex flex-col justify-around"><div>dark</div><div>L:20</div></div>
+<div class="w-28 h-24 bg-[#ffffff] text-[#8b9a32] text-center flex flex-col justify-around"><div>on main</div><div>L:100</div></div>
+<div class="w-28 h-24 bg-[#23270c] text-[#f3e9d8] text-center flex flex-col justify-around"><div>on light</div><div>L:10</div></div>
+<div class="w-28 h-24 bg-[#ffffff] text-[#454d19] text-center flex flex-col justify-around"><div>on dark</div><div>L:100</div></div>
+</div>
+```
 
 ### 結果
 
@@ -409,26 +408,26 @@ GitHub[^4]で キーワード **Color Wheel**、使用言語 **Python**、最終
 
 #### 私が決めたサイトの配色(再掲)
 
-  ~~~rawhtml
-  <div class="flex items-center my-4">
-  <div class="w-24 h-24 bg-[#3e6cc1] text-white text-center flex flex-col justify-around rounded-3xl mr-4"><div>Primary</div><div>#3e6cc1</div></div>
-  <div class="w-28 h-24 bg-[#32569a] text-white text-center flex flex-col justify-around"><div>main</div><div>L:40</div></div>
-  <div class="w-28 h-24 bg-[#d8e2f3] text-[#0c1627] text-center flex flex-col justify-around"><div>light</div><div>L:90</div></div>
-  <div class="w-28 h-24 bg-[#192b4d] text-[#ffffff] text-center flex flex-col justify-around"><div>dark</div><div>L:20</div></div>
-  <div class="w-28 h-24 bg-[#ffffff] text-[#32569a] text-center flex flex-col justify-around"><div>on main</div><div>L:100</div></div>
-  <div class="w-28 h-24 bg-[#0c1627] text-[#d8e2f3] text-center flex flex-col justify-around"><div>on light</div><div>L:10</div></div>
-  <div class="w-28 h-24 bg-[#ffffff] text-[#192b4d] text-center flex flex-col justify-around"><div>on dark</div><div>L:100</div></div>
-  </div>
-  <div class="flex items-center my-4">
-  <div class="w-24 h-24 bg-[#adc13e] text-white text-center flex flex-col justify-around rounded-3xl mr-4"><div>Secondary</div><div>#adc13e</div></div>
-  <div class="w-28 h-24 bg-[#8b9a32] text-white text-center flex flex-col  justify-around"><div>main</div><div>L:40</div></div>
-  <div class="w-28 h-24 bg-[#f3e9d8] text-[#271d0c] text-center flex flex-col justify-around"><div>light</div><div>L:90</div></div>
-  <div class="w-28 h-24 bg-[#454d19] text-white text-center flex flex-col justify-around"><div>dark</div><div>L:20</div></div>
-  <div class="w-28 h-24 bg-[#ffffff] text-[#8b9a32] text-center flex flex-col justify-around"><div>on main</div><div>L:100</div></div>
-  <div class="w-28 h-24 bg-[#23270c] text-[#f3e9d8] text-center flex flex-col justify-around"><div>on light</div><div>L:10</div></div>
-  <div class="w-28 h-24 bg-[#ffffff] text-[#454d19] text-center flex flex-col justify-around"><div>on dark</div><div>L:100</div></div>
-  </div>
-  ~~~
+```rawhtml
+<div class="flex items-center my-4">
+<div class="w-24 h-24 bg-[#3e6cc1] text-white text-center flex flex-col justify-around rounded-3xl mr-4"><div>Primary</div><div>#3e6cc1</div></div>
+<div class="w-28 h-24 bg-[#32569a] text-white text-center flex flex-col justify-around"><div>main</div><div>L:40</div></div>
+<div class="w-28 h-24 bg-[#d8e2f3] text-[#0c1627] text-center flex flex-col justify-around"><div>light</div><div>L:90</div></div>
+<div class="w-28 h-24 bg-[#192b4d] text-[#ffffff] text-center flex flex-col justify-around"><div>dark</div><div>L:20</div></div>
+<div class="w-28 h-24 bg-[#ffffff] text-[#32569a] text-center flex flex-col justify-around"><div>on main</div><div>L:100</div></div>
+<div class="w-28 h-24 bg-[#0c1627] text-[#d8e2f3] text-center flex flex-col justify-around"><div>on light</div><div>L:10</div></div>
+<div class="w-28 h-24 bg-[#ffffff] text-[#192b4d] text-center flex flex-col justify-around"><div>on dark</div><div>L:100</div></div>
+</div>
+<div class="flex items-center my-4">
+<div class="w-24 h-24 bg-[#adc13e] text-white text-center flex flex-col justify-around rounded-3xl mr-4"><div>Secondary</div><div>#adc13e</div></div>
+<div class="w-28 h-24 bg-[#8b9a32] text-white text-center flex flex-col  justify-around"><div>main</div><div>L:40</div></div>
+<div class="w-28 h-24 bg-[#f3e9d8] text-[#271d0c] text-center flex flex-col justify-around"><div>light</div><div>L:90</div></div>
+<div class="w-28 h-24 bg-[#454d19] text-white text-center flex flex-col justify-around"><div>dark</div><div>L:20</div></div>
+<div class="w-28 h-24 bg-[#ffffff] text-[#8b9a32] text-center flex flex-col justify-around"><div>on main</div><div>L:100</div></div>
+<div class="w-28 h-24 bg-[#23270c] text-[#f3e9d8] text-center flex flex-col justify-around"><div>on light</div><div>L:10</div></div>
+<div class="w-28 h-24 bg-[#ffffff] text-[#454d19] text-center flex flex-col justify-around"><div>on dark</div><div>L:100</div></div>
+</div>
+```
 
 ### 感想と課題
 
@@ -471,7 +470,7 @@ CSSフレームワークの**tailwindcss**[^19]の場合、以下のように設
 
 設定変更だけで配色を簡単に変更できるので、CSSフレームワークを積極的に採用するべきです。
 
-~~~js
+```js
 # tailwind.config
 #   .. 略 ..
 module.exports = {
@@ -492,7 +491,7 @@ module.exports = {
             dark: '#ffffff',
           },
 #   .. 略 ..
-~~~
+```
 
 #### ダークモード
 
@@ -530,18 +529,18 @@ HSV色[^9]のカラーホイールを作成する方法[^8]が見つかりまし
 
 まとめると、以下になります。
 
-|HLS|算出方法|
-|:--:|:--|
-|H(Hue)|`math.atan2(y, x)`で算出|
-|L(Lightness)|固定値。スライダーなどで値を選択し、外部から指定|
-|S(Saturation)|座標から円の中心までの距離から算出|
+|      HLS      | 算出方法                                         |
+| :-----------: | :----------------------------------------------- |
+|    H(Hue)     | `math.atan2(y, x)`で算出                         |
+| L(Lightness)  | 固定値。スライダーなどで値を選択し、外部から指定 |
+| S(Saturation) | 座標から円の中心までの距離から算出               |
 
 #### atan2の使い方の理解
 
 atan2が難しそうなので、使い方をイメージするためにグラフにしてみました。
 座標のx, yとatan2の値の3次元グラフ(円内のみ色付けしています。)になります。
 
-  ![atan2グラフ](/images/til/04-atan2.png)
+![atan2グラフ]({{<relurl "images/til/04-atan2.png">}})
 
 atan2(y, x)そのままグラフにすると、Y軸のマイナス側を北とした場合、
 西側から時計周りに色相が変化します。
@@ -550,7 +549,7 @@ atan2(y, x)そのままグラフにすると、Y軸のマイナス側を北と�
 
 atan2(-x, y)をグラフにすると北から時計回りに色相が変化しました。この呼び出し方を採用します。
 
-  ![atan2グラフ](/images/til/04-atan2-xy.png)
+![atan2グラフ]({{<relurl "images/til/04-atan2-xy.png">}})
 
 #### カラーホイール作成ツール(kantas-spike/create-color-wheel.py)の作成
 
@@ -558,15 +557,15 @@ atan2(-x, y)をグラフにすると北から時計回りに色相が変化し�
 
 以下を実行するとツールで使用する輝度0〜100(間隔は50刻み)の半径365pxのカラーホイールを作成します。(例外的な間隔を追加したい場合は`--append-values`オプションで指定します。)
 
-~~~shell
+```shell
 poetry run python3 create-color-wheel.py -r 365 --outputdir ./images --color hls --start 0 --end 1.0 --step 0.05 --append-values 0.97 0.98 0.99
-~~~
+```
 
 ##### ツールで作成したカラーホイールの例
 
-|輝度|0|20|50|70|90|100|
-|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-|ホイール|![](/images/til/04-wheel/wheel_0.00.png)|![](/images/til/04-wheel/wheel_0.20.png) |![](/images/til/04-wheel/wheel_0.50.png) |![](/images/til/04-wheel/wheel_0.70.png) |![](/images/til/04-wheel/wheel_0.90.png) |![](/images/til/04-wheel/wheel_1.00.png) |
+|   輝度   |                           0                            |                           20                           |                           50                           |                           70                           |                           90                           |                          100                           |
+| :------: | :----------------------------------------------------: | :----------------------------------------------------: | :----------------------------------------------------: | :----------------------------------------------------: | :----------------------------------------------------: | :----------------------------------------------------: |
+| ホイール | ![]({{<relurl "images/til/04-wheel/wheel_0.00.png">}}) | ![]({{<relurl "images/til/04-wheel/wheel_0.20.png">}}) | ![]({{<relurl "images/til/04-wheel/wheel_0.50.png">}}) | ![]({{<relurl "images/til/04-wheel/wheel_0.70.png">}}) | ![]({{<relurl "images/til/04-wheel/wheel_0.90.png">}}) | ![]({{<relurl "images/til/04-wheel/wheel_1.00.png">}}) |
 
 ### 付録2 **色の論理的な組み合わせ名** で表示するカーソルの構成を変更可能に
 
@@ -574,24 +573,24 @@ poetry run python3 create-color-wheel.py -r 365 --outputdir ./images --color hls
 
 ツールにおける配色パターンの組み合わせカラーの数と、カーソル表示位置を以下に整理しました。
 
-  |配色パターン|組み合わせカラー数|カーソル表示位置|
-  |:--|:--:|:--:|
-  |単色(Monochromatic)| 1 | - |
-  |補色(Complementary)| 2 | ベースカラーを180度回転 |
-  |分割補色(Split-complementary)| 3 | ベースカラーを150, 210度回転|
-  |無彩色(Achromatic)| 1 | - |
-  |類似色(Analogous)| 3 | ベースカラーを30, 330度回転|
-  |トライアド(Triadic)| 3 | ベースカラーを120, 240度回転|
-  |テトラディック(Tetradic) 長方形| 4 | ベースカラーを60, 180, 240度回転|
-  |テトラディック(Tetradic) 正方形| 4 | ベースカラーを90, 180, 270度回転|
+| 配色パターン                    | 組み合わせカラー数 |         カーソル表示位置         |
+| :------------------------------ | :----------------: | :------------------------------: |
+| 単色(Monochromatic)             |         1          |                -                 |
+| 補色(Complementary)             |         2          |     ベースカラーを180度回転      |
+| 分割補色(Split-complementary)   |         3          |   ベースカラーを150, 210度回転   |
+| 無彩色(Achromatic)              |         1          |                -                 |
+| 類似色(Analogous)               |         3          |   ベースカラーを30, 330度回転    |
+| トライアド(Triadic)             |         3          |   ベースカラーを120, 240度回転   |
+| テトラディック(Tetradic) 長方形 |         4          | ベースカラーを60, 180, 240度回転 |
+| テトラディック(Tetradic) 正方形 |         4          | ベースカラーを90, 180, 270度回転 |
 
 それでは、実現方法を考えましょう。
 
 **Tkinter**[^6] では、座標を指定して画像を配置できます[^12]。(デフォルトでは、画像の中心が指定座標に配置されます。)
 
-~~~python
+```python
 canvas.create_image(x, y, image=cursor_image)
-~~~
+```
 
 ベースカラーのカーソル座標を、さきほど整理したカーソル表示位置の角度に回転させれば、組合せカラー用のカーソルを配置できます。
 
@@ -599,7 +598,7 @@ canvas.create_image(x, y, image=cursor_image)
 
 三角関数を使えば実現できるそうです[^13]。
 
-~~~mathjax
+```mathjax
 <div class="m-4 p-4 border border-gray-500 rounded">
 <ul>
 <li>回転の中心となる原点: \((0,0)\)
@@ -615,18 +614,18 @@ canvas.create_image(x, y, image=cursor_image)
 \)
 </p>
 </div>
-~~~
+```
 
 以下のような関数を用意すれば、ベースカラーのカーソル座標を任意の角度で回転させることができます。
 
-~~~python
+```python
 def rotate(x, y, deg, center_x, center_y):
     rad = math.radians(deg)
     rx, ry = (x - center_x), (y - center_y)
     nx = rx * math.cos(rad) - ry * math.sin(rad) + center_x
     ny = rx * math.sin(rad) + ry * math.cos(rad) + center_y
     return int(nx), int(ny)
-~~~
+```
 
 これまでの調査結果をふまえ、配色パターンに合せたカーソルを表示する機能を追加しました。
 
@@ -634,46 +633,27 @@ def rotate(x, y, deg, center_x, center_y):
 
 この自由研究を紹介する動画を作成しています。ご興味があれば参照ください。
 
-~~~rawhtml
+```rawhtml
 <div class="w-[560px]">
 {{< youtube 0hrfqnDhU6I >}}
-~~~
-
+```
 
 [^1]: [World Wide Web を使う方法を学び、HTML を書くこと | How To Become A Hacker](https://cruel.org/freeware/hacker.html#skills3)
-
 [^2]: [Color scheme](https://en.wikipedia.org/wiki/Color_scheme)
-
 [^3]: [Color wheel](https://en.wikipedia.org/wiki/Color_wheel#Color_schemes)
-
 [^4]: [GitHub Advanced search](https://github.com/search/advanced)
-
 [^6]: [tkinter](https://docs.python.org/ja/3/library/tkinter.html)
-
 [^7]: [israel-dryer/Color-Wheel](https://github.com/israel-dryer/Color-Wheel)
-
 [^8]: [Color wheel | Rosetta Code](https://rosettacode.org/wiki/Color_wheel#Python)
-
 [^9]: [HSV色空間](https://ja.wikipedia.org/wiki/HSV%E8%89%B2%E7%A9%BA%E9%96%93)
-
 [^10]: [atan2](https://ja.wikipedia.org/wiki/Atan2)
-
 [^11]: [kantas-spike/create-color-wheel.py](https://github.com/kantas-spike/create-color-wheel.py)
-
 [^12]: https://tkdocs.com/shipman/create_image.html
-
 [^13]: [数学ガールの秘密ノート／丸い三角関数](https://www.amazon.co.jp/%E6%95%B0%E5%AD%A6%E3%82%AC%E3%83%BC%E3%83%AB%E3%81%AE%E7%A7%98%E5%AF%86%E3%83%8E%E3%83%BC%E3%83%88%EF%BC%8F%E4%B8%B8%E3%81%84%E4%B8%89%E8%A7%92%E9%96%A2%E6%95%B0-%E7%B5%90%E5%9F%8E-%E6%B5%A9-ebook/dp/B00W6NCLJM/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=&sr=) p.155
-
 [^14]: [kantas-spike/Color-Wheel](https://github.com/kantas-spike/Color-Wheel)
-
 [^15]: [インクリメンタル ハッキングサイクル | ハッキングの学び方](https://github.com/kantas-spike/how-to-learn-hacking-japanese/blob/main/how-to-learn-hacking.md#%E3%82%A4%E3%83%B3%E3%82%AF%E3%83%AA%E3%83%A1%E3%83%B3%E3%82%BF%E3%83%AB-%E3%83%8F%E3%83%83%E3%82%AD%E3%83%B3%E3%82%B0%E3%82%B5%E3%82%A4%E3%82%AF%E3%83%AB)
-
 [^16]: [HLS色空間](https://ja.wikipedia.org/wiki/HLS%E8%89%B2%E7%A9%BA%E9%96%93)
-
 [^17]: [Color system | Material Design 3](https://m3.material.io/styles/color/the-color-system/key-colors-tones)
-
 [^18]: [COLOR TOOL | Material Design 2](https://material.io/resources/color/#!/?view.left=0&view.right=0)
-
 [^19]: [Customizing Colors | tailwindcss](https://tailwindcss.com/docs/customizing-colors#using-custom-colors)
-
-[^20]: [Roles in a scheme |  Material Design 3](https://m3.material.io/styles/color/the-color-system/color-roles#55d2b7d2-0202-4616-887e-f575a7946aac)
+[^20]: [Roles in a scheme | Material Design 3](https://m3.material.io/styles/color/the-color-system/color-roles#55d2b7d2-0202-4616-887e-f575a7946aac)
