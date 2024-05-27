@@ -160,10 +160,55 @@
 </span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">input</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">input</span><span class="p">))</span>  <span class="c1"># foo.txt &lt;class &#39;str&#39;&gt; が表示</span>
 </span></span><span class="line"><span class="cl"><span class="n">args</span> <span class="o">=</span> <span class="n">parser</span><span class="o">.</span><span class="n">parse_args</span><span class="p">([])</span> <span class="c1"># 引数未指定時</span>
 </span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">n</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">n</span><span class="p">))</span>  <span class="c1"># エラーが発生 : error: the following arguments are required: --input</span>
-</span></span></code></pre></div><h3 id="参考">参考</h3>
+</span></span></code></pre></div><h3 id="まとめ">まとめ</h3>
+<p>登場したAPIは以下になる。</p>
+<table>
+<thead>
+<tr>
+<th>モジュール/パッケージ</th>
+<th>API</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>argparse <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></td>
+<td>ArgumentParser コンストラクタ</td>
+<td>コマンドライン引数のパーザオブジェクトを生成する</td>
+</tr>
+<tr>
+<td>arange.ArgumentParser <sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></td>
+<td>add_argument <sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></td>
+<td>解析したいコマンドライン引数の解析ルールを定義する</td>
+</tr>
+<tr>
+<td></td>
+<td>parse_args <sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup></td>
+<td>コマンドライン引数を<code>add_argument</code>に定義したルールでパースし、解析結果を返す。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="参考">参考</h3>
 <ul>
 <li><a href="https://docs.python.org/ja/3/library/argparse.html">argparse</a></li>
-</ul></div>
+</ul>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p><a href="https://docs.python.org/ja/3/library/argparse.html">argparse &mdash; Parser for command-line options, arguments and sub-commands — Python 3.12.3 ドキュメント</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p><a href="https://docs.python.org/ja/3/library/argparse.html#argparse.ArgumentParser">class argparse.Argume&hellip; # argparse &mdash; Parser for command-line options, arguments and sub-commands — Python 3.12.3 ドキュメント</a>&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3">
+<p><a href="https://docs.python.org/ja/3/library/argparse.html#the-add-argument-method">add_argument() メソッド A&hellip; # argparse &mdash; Parser for command-line options, arguments and sub-commands — Python 3.12.3 ドキュメント</a>&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4">
+<p><a href="https://docs.python.org/ja/3/library/argparse.html#the-parse-args-method">parse_args() メソッド Arg&hellip; # argparse &mdash; Parser for command-line options, arguments and sub-commands — Python 3.12.3 ドキュメント</a>&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div></div>
   <div class="mt-6">
     <div class="border-t-2 border-primary-dark px-2 pt-2 text-right">
         <span class="text-sm">作成日: 2022/08/01</span></div>

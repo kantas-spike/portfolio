@@ -149,6 +149,41 @@
 <p><code>sys.exit()</code>の引数に<code>0</code>or<code>None</code>を指定した場合は終了ステータスは正常終了、それ以外は異常終了になる。</p>
 <p><code>sys.exit()</code>の引数に、エラーなどのオブジェクトを指定した場合は、<code>stderr</code>にオブジェクトを出力し、終了ステータス1(異常終了)になる。</p>
 <p>そのため、コマンドラインプログラムの処理を<code>main()</code>にまとめておけばその戻り値を<code>sys.exit()</code>に渡すことができる。</p>
+<h3 id="まとめ">まとめ</h3>
+<p>登場したAPIは以下になる。</p>
+<table>
+<thead>
+<tr>
+<th>モジュール/パッケージ</th>
+<th>API</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sys</td>
+<td>exit <sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></td>
+<td><code>SystemExit</code> 例外を発生させインタプリタを終了します。引数で終了ステータスを指定できます。</td>
+</tr>
+</tbody>
+</table>
+<p>登場した用語は以下になる。</p>
+<table>
+<thead>
+<tr>
+<th>分類</th>
+<th>用語</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Python</td>
+<td>トップレベルのスクリプト環境 <sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup></td>
+<td>実行を開始した最初のPythonモジュールのこと。 トップレベルのスクリプト環境では、<code>__name__</code> 属性に <code>__main__</code> が設定されます。</td>
+</tr>
+</tbody>
+</table>
 <h3 id="参考">参考</h3>
 <ul>
 <li><a href="https://docs.python.org/ja/3/library/__main__.html">__main__ &mdash; トップレベルのスクリプト環境 — Python 3.12.1 ドキュメント</a></li>
@@ -163,6 +198,12 @@
 </li>
 <li id="fn:2">
 <p><a href="https://github.com/electron/electron/blob/95d094d75bddb99c83d2902fbc9a4335632a41cf/script/zip-symbols.py#L3C1-L3C1">electron/script/zip-symbols.py at 95d094d75bddb99c83d2902fbc9a4335632a41cf · electron/electron</a>&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3">
+<p><a href="https://docs.python.org/ja/3.11/library/sys.html#sys.exit">sys.exit([arg]) # sys &mdash; システムパラメータと関数 — Python 3.11.8 ドキュメント</a>&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4">
+<p><a href="https://docs.python.org/ja/3/library/__main__.html#what-is-the-top-level-code-environment">「トップレベルのスクリプト環境」とは **&hellip; # **main__ &mdash; Top-level code environment — Python 3.12.3 ドキュメント</a>&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </div></div>

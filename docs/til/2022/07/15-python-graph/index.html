@@ -134,7 +134,7 @@
 </span></span></code></pre></div><ul>
 <li>実際のグラフ</li>
 </ul>
-<p><img src="/images/til/15-sin.png" alt="sin"></p>
+<p><img src="/portfolio/images/til/15-sin.png" alt="sin"></p>
 <h4 id="3次元グラフ">3次元グラフ</h4>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">matplotlib</span>
 </span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">cm</span>
@@ -170,15 +170,133 @@
 </span></span><span class="line"><span class="cl"><span class="n">axes</span><span class="o">.</span><span class="n">set_zlabel</span><span class="p">(</span><span class="s1">&#39;atan2&#39;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </span></span></code></pre></div><ul>
-<li>実際のグラフ</li>
+<li>実際のグラフ
+<img src="/portfolio/images/til/15-atan2.png" alt="atan2"></li>
 </ul>
-<p><img src="/images/til/15-atan2.png" alt="atan2"></p>
+<h3 id="まとめ">まとめ</h3>
+<p>登場したAPIは以下になる。</p>
+<table>
+<thead>
+<tr>
+<th>モジュール/パッケージ</th>
+<th>API</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>matplotlib</td>
+<td>rc <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></td>
+<td>matplotlibの設定パラメータを更新する。第1引数に設定のグループ名を指定し、更新する設定値をキーワード引数で指定する。</td>
+</tr>
+<tr>
+<td>matplotlib.pyplot</td>
+<td>plot <sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></td>
+<td>x,yの座標を線やマーカーとしてプロットする。</td>
+</tr>
+<tr>
+<td></td>
+<td>title <sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></td>
+<td>グラフのタイトルを設定する。</td>
+</tr>
+<tr>
+<td></td>
+<td>xlabel <sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup></td>
+<td>X軸のラベルを設定する。</td>
+</tr>
+<tr>
+<td></td>
+<td>ylabel <sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup></td>
+<td>Y軸のラベルを設定する。</td>
+</tr>
+<tr>
+<td></td>
+<td>show <sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup></td>
+<td>用意したすべての図を表示する。</td>
+</tr>
+<tr>
+<td></td>
+<td>axes <sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup></td>
+<td>図のグラフを管理するオブジェクト。</td>
+</tr>
+<tr>
+<td>numpy</td>
+<td>arange <sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup></td>
+<td>指定された間隔の数例を返す。</td>
+</tr>
+<tr>
+<td></td>
+<td>sin <sup id="fnref:9"><a href="#fn:9" class="footnote-ref" role="doc-noteref">9</a></sup></td>
+<td>指定された <code>array_line</code>な引数の各要素のsinを求める。</td>
+</tr>
+<tr>
+<td></td>
+<td>meshgrid <sup id="fnref:10"><a href="#fn:10" class="footnote-ref" role="doc-noteref">10</a></sup></td>
+<td>座標ベクトルから座標行列のリストを返す。</td>
+</tr>
+</tbody>
+</table>
+<p>登場した用語は以下になる。</p>
+<table>
+<thead>
+<tr>
+<th>分類</th>
+<th>用語</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Python文法</td>
+<td>引数リストのアンパック <sup id="fnref:11"><a href="#fn:11" class="footnote-ref" role="doc-noteref">11</a></sup></td>
+<td><code>**</code>オペレーターを使って、辞書をアンパックし、キーワード引数として利用することができる。</td>
+</tr>
+</tbody>
+</table>
 <h3 id="参考">参考</h3>
 <ul>
 <li><a href="https://repository.kulib.kyoto-u.ac.jp/dspace/bitstream/2433/265459/1/Version2021_10_08_01.pdf#page=208">Pythonの学術利用 | プログラミング演習 Python 2021</a></li>
 <li><a href="https://matplotlib.org/2.0.2/mpl_examples/mplot3d/surface3d_demo.py">3D surface (color map)</a></li>
 <li><a href="https://matplotlib.org/stable/tutorials/colors/colormaps.html">Choosing Colormaps in Matplotlib</a></li>
-</ul></div>
+</ul>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p><a href="https://matplotlib.org/stable/api/matplotlib_configuration_api.html#matplotlib.rc">matplotlib.rc(group, &hellip; # matplotlib — Matplotlib 3.9.0 documentation</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p><a href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.plot.html#matplotlib.pyplot.plot">matplotlib.pyplot.plo&hellip; # matplotlib.pyplot.plot — Matplotlib 3.9.0 documentation</a>&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3">
+<p><a href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.title.html">matplotlib.pyplot.title — Matplotlib 3.9.0 documentation</a>&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4">
+<p><a href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.xlabel.html">matplotlib.pyplot.xlabel — Matplotlib 3.9.0 documentation</a>&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:5">
+<p><a href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.ylabel.html">matplotlib.pyplot.ylabel — Matplotlib 3.9.0 documentation</a>&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:6">
+<p><a href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.show.html">matplotlib.pyplot.show — Matplotlib 3.9.0 documentation</a>&#160;<a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:7">
+<p><a href="https://matplotlib.org/stable/api/axes_api.html">matplotlib.axes — Matplotlib 3.9.0 documentation</a>&#160;<a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:8">
+<p><a href="https://numpy.org/doc/stable/reference/generated/numpy.arange.html">numpy.arange — NumPy v1.26 Manual</a>&#160;<a href="#fnref:8" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:9">
+<p><a href="https://numpy.org/doc/stable/reference/generated/numpy.sin.html#numpy.sin">numpy.sin(x, /, out=N&hellip; # numpy.sin — NumPy v1.26 Manual</a>&#160;<a href="#fnref:9" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:10">
+<p><a href="https://numpy.org/doc/stable/reference/generated/numpy.meshgrid.html#numpy-meshgrid">numpy.meshgrid numpy&hellip;. # numpy.meshgrid — NumPy v1.26 Manual</a>&#160;<a href="#fnref:10" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:11">
+<p><a href="https://docs.python.org/ja/3/tutorial/controlflow.html#unpacking-argument-lists">4.8.5. 引数リストのアンパック 引数&hellip; # 4. その他の制御フローツール — Python 3.12.3 ドキュメント</a>&#160;<a href="#fnref:11" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div></div>
   <div class="mt-6">
     <div class="border-t-2 border-primary-dark px-2 pt-2 text-right">
         <span class="text-sm">作成日: 2022/07/31</span></div>
