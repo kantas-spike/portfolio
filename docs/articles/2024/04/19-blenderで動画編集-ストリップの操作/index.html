@@ -1,0 +1,970 @@
+<!doctype html>
+<html><head>
+    <title>
+        Blenderで動画編集 ストリップの操作 | kanta&#39;s spike
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<link
+  rel="preload"
+  href="/portfolio/fonts/notosansjp-bold.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin="anonymous"
+/>
+
+<link
+  rel="preload"
+  href="/portfolio/fonts/notosansjp-regular.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin="anonymous"
+/>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Noto+Emoji:wght@400;500;700&family=Noto+Sans+JP:wght@400;700&display=swap"
+  rel="stylesheet"
+/>
+<link rel="stylesheet" href="/portfolio/css/fonts.598ae1b8a36eef149fd604bc4a326391fe472bc4628f92811ed047364d446748.css">
+    <link rel="stylesheet" href="/portfolio/css/theme.min.ee3cd82055b1b581d28fe67f13a95ba130c24c7bf691394f7ca62c46cd11df07.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" /><link rel="stylesheet" href="/portfolio/css/syntax.min.53132d5ecb321e785c36c5e94d619a0e0e5e50abd5435b10c105ebd046929b7a.css">
+<link rel="icon" type="image/png" sizes="512x512" href="/portfolio/icon512.png" />
+ 
+<link rel="icon" type="image/png" sizes="192x192" href="/portfolio/icon192.png" />
+ 
+<link rel="apple-touch-icon" sizes="180x180" href="/portfolio/icon180.png" />
+ 
+<link rel="icon" type="image/png" sizes="32x32" href="/portfolio/icon32.png" />
+ 
+<link rel="icon" type="image/svg+xml" href="/portfolio/icon.svg" />
+ 
+<link rel="manifest" href="/portfolio/site.webmanifest" />
+
+
+</head><body class="bg-background text-primary-dark pb-4"><header class="bg-primary-dark text-site_title text-6xl font-serif font-extrabold px-4 py-3">
+    <h1 class="container mx-auto px-4"><a href="https://kantas-spike.github.io/portfolio/">kanta&#39;s spike</a></h1>
+</header>
+<input type="checkbox" name="burger_cbx" id="burger_cbx">
+<label for="burger_cbx" class="burger_label">
+    <span class="burger_icon"><svg version="1.1" viewBox="0 0 12.7 12.7" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <rect x="1.0369" y="2.1007" width="10.634" height="1.0426" ry=".5213"/>
+  <rect x="1.0369" y="4.571" width="10.634" height="1.0426" ry=".5213"/>
+  <rect x="1.0369" y="7.0413" width="10.634" height="1.0426" ry=".5213"/>
+  <rect x="1.0369" y="9.5115" width="10.634" height="1.0426" ry=".5213"/>
+ </g>
+</svg>
+</span>
+</label>
+<label for="burger_cbx" class="close_label">
+    <span class="close_icon"><svg version="1.1" viewBox="0 0 12.7 12.7" xmlns="http://www.w3.org/2000/svg">
+ <rect transform="rotate(45.535)" x="3.6678" y="-.6148" width="10.634" height="1.0426" ry=".5213"/>
+ <rect transform="rotate(135.53)" x="-5.4104" y="-9.5059" width="10.634" height="1.0426" ry=".5213"/>
+</svg>
+</span>
+</label>
+<div class="nav_area">
+    <nav class="container mx-auto bg-primary text-on-primary text-center flex flex-col md:flex-row justify-start">
+            <a href="/portfolio/" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Home</a>
+            <a href="/portfolio/til" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">TIL</a>
+            <a href="/portfolio/dialogues" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Dialogues</a>
+            <a href="/portfolio/articles" class="box-border flex-1 text-center no-underline bg-primary-light text-on-primary-light font-bold py-2">Articles</a>
+            <a href="/portfolio/mytools" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">My Tools</a>
+            <a href="/portfolio/ihc" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">IHC</a>
+            <a href="/portfolio/tags" class="flex-1 text-center no-underline text-on-primary py-2 hover:font-bold">Tags</a>
+        <div class="flex-none" id="search_menu"></div>
+    </nav>
+</div>
+<main id="content" class="container mx-auto bg-surface pt-4 pb-8">
+<div class="area_border px-4 py-3 mx-4 md:mx-auto pb-4 max-w-[60rem]">
+  
+
+<div class="mb-4">
+    <h3 class="border-b-4 border-primary-dark text-primary-dark text-xl font-bold tracking-wider pl-[1em] -indent-[1ex]"><i class="fa-solid fa-file-lines"></i> <a href="https://kantas-spike.github.io/portfolio/articles/2024/04/19-blender%E3%81%A7%E5%8B%95%E7%94%BB%E7%B7%A8%E9%9B%86-%E3%82%B9%E3%83%88%E3%83%AA%E3%83%83%E3%83%97%E3%81%AE%E6%93%8D%E4%BD%9C/">Blenderで動画編集 ストリップの操作</a></h3>
+    <div class="flex justify-between mt-1 mx-2">
+        <div>
+            <ul class="flex gap-2 justify-end">
+            
+            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/blender/">#Blender</a></li>
+            
+            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/vse/">#Vse</a></li>
+            
+            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/vse%E9%9D%9E%E5%85%AC%E5%BC%8F%E6%96%87%E6%9B%B8/">#Vse非公式文書</a></li>
+            
+            </ul>
+        </div>
+        <div>
+            
+            
+            <div class="text-right text-sm font-bold">2024/04/23
+                
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+  <div class="article mx-2"><p><a href="https://kantas-spike.github.io/vse-docs/video_editing/index.html">2. Video Editing — Blender VSE Unofficial Documentation</a>をもとに
+、ストリップの操作について説明します。</p>
+<p>今回説明する操作は以下の7つです。</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>操作名</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Select</td>
+<td>ストリップを選択する操作。ストリップのパーツ選択や、複数のストリップを選択</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Trim</td>
+<td>ストリップの長さを変更する操作</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Split</td>
+<td>ストリップを分割する</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Remove</td>
+<td>ストリップを削除する</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Move</td>
+<td>ストリップを移動する</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Copy</td>
+<td>ストリップをコピーする</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Disable</td>
+<td>ストリップの非表示やストリップのロックについて説明</td>
+</tr>
+</tbody>
+</table>
+<!-- raw HTML omitted -->
+<h3 id="用語解説">用語解説</h3>
+<p>ストリップの操作を説明する前に、まず、ストリップの各パーツの名称を紹介します。</p>
+<p>以下のカラーストリップを例にします。</p>
+<p><img src="./images/strip.png" alt="ストリップ"></p>
+<p>ストリップをよく見ると左右の両端に色の暗い部分があります。
+この部分をハンドルと呼びます。</p>
+<p>ハンドルの内側の部分をボディーと呼びます。</p>
+<p><img src="./images/page1_parts_strip_detail.png" alt="ストリップ"></p>
+<table>
+<thead>
+<tr>
+<th>パーツ名</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ハンドル</td>
+<td>ドラッグすることで、ストリップの長さを調整できます。</td>
+</tr>
+<tr>
+<td>ボディー</td>
+<td>ドラッグすることで、ストリップ全体を移動できます。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="select選択">Select(選択)</h3>
+<p>ストリップを選択する操作です。選択したストリップが Remove, Move, Copy、Disable といった編集操作の対象になります。</p>
+<!-- raw HTML omitted -->
+<p>選択操作の具体的な説明の前に、ストリップの選択状態について説明します。</p>
+<h4 id="ストリップの選択状態">ストリップの選択状態</h4>
+<p>ストリップには、アクティブ状態と選択状態の2種類の選択に関連する状態があります。</p>
+<ul>
+<li>アクティブ状態</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>アクティブ状態</th>
+<th>ストリップの見た目</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>アクティブ</td>
+<td>ストリップ内のテキストは白色で表示</td>
+<td>ストリップがSidebarのStripタブに表示される。</td>
+</tr>
+<tr>
+<td>非アクティブ</td>
+<td>ストリップ内のテキストは黒色で表示</td>
+<td>ストリップがSidebarのStripタブに表示されない。</td>
+</tr>
+</tbody>
+</table>
+<p>以下の例では、<strong>白色で名前が表示</strong>されている右側のストリップが<strong>アクティブ</strong>です。
+左側のストリップは非アクティブのため、黒色で名前が表示されます。</p>
+<p>アクティブなストリップの情報がSidebarに表示されます。</p>
+<p><img src="./images/select01.jpg" alt="アクティブ状態"></p>
+<ul>
+<li>選択状態</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>選択状態</th>
+<th>ストリップの見た目</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>選択</td>
+<td>ストリップの周りに枠線が付く</td>
+<td>編集操作(移動や削除など)の処理対象となる</td>
+</tr>
+<tr>
+<td>未選択</td>
+<td>ストリップの周りに枠線が付かない</td>
+<td>編集操作(移動や削除など)の処理対象とならない</td>
+</tr>
+</tbody>
+</table>
+<p>以下の例では、<strong>枠線が表示</strong>されている右側のストリップが<strong>選択</strong>されています。
+枠線のない右側のストリップは<strong>未選択</strong>です。</p>
+<p><img src="./images/select02.jpg" alt="選択状態"></p>
+<p>この2種類の状態が組み合せにより、編集対象が決まります。</p>
+<table>
+<thead>
+<tr>
+<th>アクティブ x 選択</th>
+<th>ストリップの見た目</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>アクティブ ・ 選択</td>
+<td>テキスト白色、枠線白色</td>
+<td>Sidebarに表示。編集操作の処理対象</td>
+</tr>
+<tr>
+<td>アクティブ ・ 未選択</td>
+<td>テキスト白色、枠線なし</td>
+<td>Sidebarに表示。編集操作の処理対象ではない</td>
+</tr>
+<tr>
+<td>非アクティブ ・ 選択</td>
+<td>テキスト黒色、枠線オレンジ色</td>
+<td>Sidebarに表示されない。編集操作の処理対象</td>
+</tr>
+<tr>
+<td>非アクティブ ・ 未選択</td>
+<td>テキスト黒色、枠線なし</td>
+<td>Sidebarに表示されない。編集操作の処理対象ではない</td>
+</tr>
+</tbody>
+</table>
+<p>以下の例では、左側のストリップは <strong>アクティブかつ選択</strong> 状態です。<strong>白色の枠線</strong>があり、白色で名前が表示されています。
+一方、右側のストリップは <strong>非アクティブかつ選択</strong> 状態です。<strong>オレンジの枠線</strong>があり、黒色で名前が表示されています。</p>
+<p><img src="./images/select03.jpg" alt="選択"></p>
+<p>以下の例では、左側のストリップは <strong>非アクティブかつ未選択</strong> 状態です。枠線がなく、黒色で名前が表示されています。
+一方、右側のストリップは <strong>アクティブかつ未選択</strong> 状態です。枠線がなく、白色で名前が表示されています。</p>
+<p><img src="./images/select04.jpg" alt="未選択"></p>
+<p>ボディーやハンドルといったストリップのパーツ選択や、複数のストリップを選択する操作について説明します。</p>
+<h4 id="1つのストリップの選択">1つのストリップの選択</h4>
+<table>
+<thead>
+<tr>
+<th>操作名</th>
+<th>方法</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ストリップの選択</td>
+<td>ストリップのボディー部分を <strong>左Click</strong></td>
+<td>クリックしたストリップが選択されアクティブになります。</td>
+</tr>
+</tbody>
+</table>
+<h4 id="複数のストリップの選択">複数のストリップの選択</h4>
+<table>
+<thead>
+<tr>
+<th>操作名</th>
+<th>方法</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>個別に追加選択</td>
+<td><strong>Shift+左Click</strong></td>
+<td>Shiftキーを押しながら左クリックすると、ストリップを選択できます。最後にクリックしたストリップがアクティブになります。選択されたストリップを解除するには、再度、Shiftキーを押しながら左クリックすると解除できます。(ストリップがアクティブでない場合は、Shift+左クリックし、ストリップをアクティブに変更後、再度、Shift+左クリックすると、選択解除できます。)</td>
+</tr>
+<tr>
+<td>全選択</td>
+<td><strong>[Select]メニュー &gt; [All]</strong> or <strong>Aキー</strong></td>
+<td>タイムラインにある全てのストリップを選択する。最後にアクティブだったストリップが再びアクティブになる。</td>
+</tr>
+<tr>
+<td>全選択解除</td>
+<td><strong>[Select]メニュー &gt; [None]</strong> or <strong>Alt+A</strong> or <strong>A を素早く2回タイプ</strong> or <strong>タイムラインのストリップがないエリアを左Click</strong></td>
+<td>タイムライン内の全てのストリップを選択解除する。</td>
+</tr>
+<tr>
+<td>選択の反転</td>
+<td><strong>Ctrl+I</strong> or <strong>[Select]メニュー &gt; [Invert]</strong></td>
+<td>現在選択されているストリップの状態を反転する。</td>
+</tr>
+<tr>
+<td>ストリップのBox選択</td>
+<td><strong>Bキー</strong> or <strong>[Select]メニュー &gt; [Box Select]</strong> or <strong>左ドラッグによる矩形選択</strong></td>
+<td>矩形選択すると、矩形の選択範囲と交差するすべてのストリップが選択される。</td>
+</tr>
+</tbody>
+</table>
+<h4 id="場所に基づいたストリップの選択">場所に基づいたストリップの選択</h4>
+<h5 id="playheadの位置に基づいた選択">Playheadの位置に基づいた選択</h5>
+<table>
+<thead>
+<tr>
+<th>操作名</th>
+<th>操作</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Playhead左側の全選択</td>
+<td><strong><code>[</code>キー</strong> or <strong>[Select]メニュー &gt; [Side of Frame] &gt; [Left]</strong> or <strong>タイムライン上のPlayheadの左側のエリアで Ctrl+左Click</strong></td>
+<td>Playheadの左側のすべてのストリップが選択される。ただし、Playhead上のストリップは選択されない。</td>
+</tr>
+<tr>
+<td>Playhead右側の全選択</td>
+<td><strong><code>]</code>キー</strong> or <strong>[Select]メニュー &gt; [Side of Frame] &gt; [Right]</strong> or <strong>タイムライン上のPlayheadの右側のエリアで Ctrl+左Click</strong></td>
+<td>Playheadの右側のすべてのストリップが選択される。ただし、Playhead上のストリップは選択されない。</td>
+</tr>
+<tr>
+<td>Playhead上のストリップを全選択</td>
+<td><strong>[Select]メニュー &gt; [Side of Frame] &gt; [Current]</strong></td>
+<td>Playheadと重なるすべてのストリップを選択する。</td>
+</tr>
+</tbody>
+</table>
+<h5 id="チャンネル内のストリップの選択">チャンネル内のストリップの選択</h5>
+<table>
+<thead>
+<tr>
+<th>操作名</th>
+<th>操作</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>チャンネルの左側の全選択</td>
+<td><strong>[Select]メニュー &gt; [Channel] &gt; [Left]</strong></td>
+<td>選択されたストリップと同じチャンネルの左側にあるすべてのストリップを選択する</td>
+</tr>
+<tr>
+<td>チャンネルの右側の全選択</td>
+<td><strong>[Select]メニュー &gt; [Channel] &gt; [Right]</strong></td>
+<td>選択されたストリップと同じチャンネルの右側にあるすべてのストリップを選択する</td>
+</tr>
+<tr>
+<td>チャンネルの左右両側の全選択</td>
+<td><strong>[Select]メニュー &gt; [Channel] &gt; [Both Sides]</strong></td>
+<td>選択されたストリップと同じチャンネルの左右両側にあるすべてのストリップを選択する</td>
+</tr>
+</tbody>
+</table>
+<h5 id="リンクされたストリップの選択">リンクされたストリップの選択</h5>
+<table>
+<thead>
+<tr>
+<th>操作名</th>
+<th>操作</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>水平方向に連結しているストリップの全選択</td>
+<td><strong>Ctrl+Lキー</strong> or <strong>[Select]メニュー &gt; [Linked] &gt; [All]</strong></td>
+<td>選択されたストリップと水平方向に連結しているすべてのストリップを選択する</td>
+</tr>
+<tr>
+<td>開始・終了時刻が同じストリップの全選択</td>
+<td><strong>Ctrl+左クリック</strong></td>
+<td>クリックされたストリップと開始・終了時刻が同じであるすべてのストリップをを選択する</td>
+</tr>
+</tbody>
+</table>
+<h4 id="属性ベースのストリップの選択">属性ベースのストリップの選択</h4>
+<table>
+<thead>
+<tr>
+<th>操作名</th>
+<th>操作</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>属性が同じストリップの全選択</td>
+<td><strong>Shift+Gキーで表示されるメニューから属性を選択</strong> or <strong>[Select]メニュー &gt; [Grouped]から属性を選択</strong></td>
+<td>アクティブストリップと同じ属性をもつすべてのストリップを選択する</td>
+</tr>
+</tbody>
+</table>
+<p>メニューから選択できる属性は以下になります。</p>
+<table>
+<thead>
+<tr>
+<th>属性名</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Type</td>
+<td>アクティブなストリップと同じタイプのすべてのストリップを選択する</td>
+</tr>
+<tr>
+<td>Global Type</td>
+<td>アクティブなストリップと同じグローバルタイプ(オーディオ or オーディオ以外)のすべてのストリップを選択する</td>
+</tr>
+<tr>
+<td>Effect Type</td>
+<td>アクティブなストリップと同じエフェクトタイプ(エフェクト or エフェクト以外)のすべてのストリップを選択する</td>
+</tr>
+<tr>
+<td>Data</td>
+<td>アクティブなストリップと同じソース(ファイル、シーン、ムービークリック or マスク)を持つすべてのストリップを選択する</td>
+</tr>
+<tr>
+<td>Effect</td>
+<td>アクティブなストリップに適用されているエフェクトと同じ種類のエフェクトが適用されているすべてのストリップを選択する</td>
+</tr>
+<tr>
+<td>Effect/Linked</td>
+<td>アクティブなストリップの影響を受ける他のストリップを選択します?? (意味不明)</td>
+</tr>
+<tr>
+<td>Overlap</td>
+<td>アクティブなストリップとタイムライン上でオーバーラップ(一部のみ or 完全)しているすべてのストリップを選択する</td>
+</tr>
+</tbody>
+</table>
+<p>ここまでは、ストリップ全体を選択する方法を説明してきました。次はハンドルの選択方法について説明します。</p>
+<h4 id="ハンドルの選択">ハンドルの選択</h4>
+<table>
+<thead>
+<tr>
+<th>操作名</th>
+<th>操作</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ハンドルを選択</td>
+<td>ハンドル付近を <strong>左Click</strong></td>
+<td>クリックしたハンドルが選択されます。(ハンドル部分が白色に変ります。) また、該当ハンドルのストリップは選択されアクティブになります。</td>
+</tr>
+<tr>
+<td>ハンドルを追加選択</td>
+<td>ハンドル付近を <strong>Shift+左Click</strong></td>
+<td>クリックしたハンドルが追加選択されます。(アクティブストリップのハンドル部分は白色に、アクティブでないストリップのハンドルはオレンジに変ります。) また、該当ハンドルのストリップは選択されアクティブになります。</td>
+</tr>
+<tr>
+<td>ハンドルを選択(メニュー)</td>
+<td>ストリップを選択後に、<strong>[Select] &gt; [Handle]</strong></td>
+<td>ストリップが短くハンドルをクリックしにくい場合などに利用します。事前にストリップを選択しておく必要があります。</td>
+</tr>
+<tr>
+<td>ハンドルのBox選択</td>
+<td><strong>Ctrl + Bキー</strong> or <strong>[Select]メニュー &gt; [Box Select (Include Handles)]</strong></td>
+<td>矩形選択すると、矩形の選択範囲と交差するすべてのハンドルが選択されます。</td>
+</tr>
+<tr>
+<td>ハンドルに隣接するハンドルを選択</td>
+<td>ハンドル付近を <strong>Alt+左Click</strong></td>
+<td>クリックしたハンドルと、それに隣接するハンドルを選択する</td>
+</tr>
+<tr>
+<td>ストリップの両ハンドルに隣接するハンドルを選択</td>
+<td>ストリップのボディーを <strong>Alt+左Click</strong></td>
+<td>クリックしたストリップの両端のハンドルと、それらに隣接するハンドルを選択する</td>
+</tr>
+</tbody>
+</table>
+<div class="column not-article mx-1 my-4  px-4 py-4 border-2 rounded-md ">
+  <div class="text-lg font-bold leading-m tracking-m mb-4 -mx-1">
+      <span class="flex emoji content-start">
+        <span class="mr-1">
+          
+            📄
+          
+        </span>
+        <span class="font-sans">選択されたストリップのプロパティーをまとめて変更する方法</span>
+      </span>
+    </div>
+  <div class="mx-2 article">
+    <p>これまでの説明で、複数のストリップを選択する方法がわかりました。
+そうなると、複数のストリップのプロパティーをまとめて変更する方法が知りたくなります。</p>
+<p>既に説明した通り、複数のストリップが選択されている場合でも、Sidebarには、アクティブなストリップのプロパティーのみが表示されます。</p>
+<p>Sidebarのプロパティーのフィールドを右クリックし、 <strong>コンテキストメニュー &gt; [Copy to Selected]</strong> を選ぶと、該当フィールドの値が、選択されているすべてのストリップに反映されます。</p>
+<p>また、Sidebarのプロパティーのフィールドの値を入力し、<strong>Alt+Enterキー</strong> を押すと、該当フィールドの値が、選択されているすべてのストリップに反映されます。</p>
+
+  </div>
+</div>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h3 id="trim長さ調整">Trim(長さ調整)</h3>
+<p>ストリップの長さを変更する操作です。</p>
+<p>Sidebarの <strong>Timeパネル</strong> にある <strong>Strip Offset</strong> フィールドを変更することで、ストリップの長さを変更できます。</p>
+<h4 id="ストリップの長さの変更">ストリップの長さの変更</h4>
+<p>Sidebarの <strong>Timeパネル</strong> を設定する以外の方法でもストリップの長さの変更できます。</p>
+<table>
+<thead>
+<tr>
+<th>操作名</th>
+<th>操作</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ハンドルのドラッグ</td>
+<td><strong>ハンドルを左Drag</strong></td>
+<td>ドラッグにあわせてストリップが伸縮する</td>
+</tr>
+<tr>
+<td>ハンドルのグラブ</td>
+<td>ハンドルを選択後、 <strong>Gキー</strong> でグラブ状態に</td>
+<td>グラブ状態に設定後ははマウスカーソルの位置にあわせてストリップが伸縮する。ストリップの長さを確定するには、<strong>Enterキー</strong> or <strong>Spaceキー</strong> を押すか <strong>左Click</strong> する。キャンセルする場合は <strong>Escキー</strong>を押すか <strong>右Click</strong> する</td>
+</tr>
+<tr>
+<td>ストリップのエクステンド</td>
+<td>ストリップを選択後、<strong>Eキー</strong> or <strong>[Strip]メニュー&gt;[Transform]&gt;[Move/Extend from Current Frame]</strong></td>
+<td>Playheadの位置に応じて、選択されたストリップを <strong>移動</strong> または <strong>長さを伸縮</strong> します。 Playheadが選択したストリップの範囲外にある場合、ウスカーソルの位置にあわせてストリップが移動します(確定、キャンセル方法はグラブと同様)。 Playheadが選択したストリップの範囲内にある場合、エクステンド開始時のマウスカーソルの位置により動作が変ります。 マウスカーソルがPlayheadの左側にあった場合は、マウスカーソルの動きにあわせてストリップの左側が伸縮します。マウスカーソルがPlayheadの右側にあった場合は、マウスカーソルの動きにあわせてストリップの右側が伸縮します(どちらも確定、キャンセル方法はグラブと同様)。</td>
+</tr>
+</tbody>
+</table>
+<h4 id="slip-strip-contents">Slip Strip Contents</h4>
+<table>
+<thead>
+<tr>
+<th>操作名</th>
+<th>操作</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>スリップコンテンツ</td>
+<td><strong>Sキー</strong> or <strong>[Strip]メニュー &gt; [Transform] &gt; [Slip Strip Contents]</strong></td>
+<td>マウスカーソルの左右の移動により、ストリップの長さは変更せずに、ストリップのオフセット位置のみ変更する。確定する場合は <strong>Enterキー</strong> or <strong>Spaceキー</strong> を押すか <strong>左Click</strong> する。キャンセルする場合は <strong>Escキー</strong>を押すか <strong>右Click</strong> する</td>
+</tr>
+</tbody>
+</table>
+<h4 id="トリミングのクリア">トリミングのクリア</h4>
+<p>ストリップのトリミングした結果は、Strip Offsetプロパティーに保持されます。
+ストリップをトリミング前の状態に戻すには、Strip Offsetプロパティーを0に設定します。</p>
+<p>また、<strong>Alt+Oキー</strong> or <strong>[Strip]メニュー&gt;[Transform]&gt;[Clear Strip Offset]</strong> を選択すると、Strip Offsetプロパティーを0に設定します。</p>
+<h4 id="精密なトリミング">精密なトリミング</h4>
+<p>プレビューの <strong>[View]メニュー &gt; [Preview during Transform]</strong> を有効にすると、トリミング操作中のハンドルの位置のフレームが一時的にプレビューに表示されるので、細かい調整が可能になります。</p>
+<h3 id="split分割">Split(分割)</h3>
+<p>ストリップを分割する操作です。</p>
+<p>2種類のSplit方法があります。</p>
+<table>
+<thead>
+<tr>
+<th>操作名</th>
+<th>操作</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Split</td>
+<td><strong>Kキー</strong> or <strong>[Strip]メニュー &gt; [Split]</strong></td>
+<td>Playhead の位置でストリップを分割します。<strong>Split</strong>は、もとのストリップを複製し、それぞれ、Playheadの位置にトリムして並べたものと同じになります。</td>
+</tr>
+<tr>
+<td>Hold Split</td>
+<td><strong>Shift+Kキー</strong> or <strong>[Strip]メニュー &gt; [Hold Split]</strong></td>
+<td>Playhead の位置でストリップを分割します。<strong>Hold Split</strong> は <strong>Hold Offset</strong> の位置を変更します。</td>
+</tr>
+</tbody>
+</table>
+<h4 id="フリーズフレーム">フリーズフレーム</h4>
+<p><strong>Split</strong> と <strong>Hold Split</strong> の使い分けの例として、</p>
+<p><a href="https://en.wikipedia.org/wiki/Freeze-frame_shot#:~:text=In%20film%20and%20video%2C%20a,that%20resembles%20a%20still%20photograph.">Freeze-frame shot - Wikipedia</a> という編集手法を紹介します。</p>
+<p><strong>Freeze frames</strong> とは、ムービーの中で、一部シーンを静止画にすることで、シーンを強調させる手法です。</p>
+<p>Wikipediaでは、<strong>Freeze frames</strong> を使用した映画の例として、 <a href="https://ja.wikipedia.org/wiki/%E6%98%8E%E6%97%A5%E3%81%AB%E5%90%91%E3%81%A3%E3%81%A6%E6%92%83%E3%81%A6!">明日に向って撃て! - Wikipedia</a> が紹介されています。</p>
+<p><strong>明日に向って打て!</strong> では、主人公の2人が、絶対絶命の状況から銃も構えて外へ飛び出すところで、静止画になるようです。</p>
+<p>サンプル動画を例に、 <strong>明日に向って打て!</strong> を再現しましょう。</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h4 id="ショートカットキーによるsplit時のマウスカーソルの位置">ショートカットキーによるSplit時のマウスカーソルの位置</h4>
+<p>ショートカットキー <strong>Kキー</strong>(Split) や <strong>Shift+Kキー</strong>(Hold Split)を使って Split した場合、
+Playheadのどちら側に マウスカーソルがあるかによって、ストリップ分割後のストリップの選択状態が変わります。</p>
+<table>
+<thead>
+<tr>
+<th>Split or Hold Split 時のカーソルの位置</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>マウスカーソルがPlayheadの右側</td>
+<td>分割後の右側のストリップは <strong>アクティブで未選択</strong> になります。逆に、分割後の左のストリップは <strong>非アクティブで選択</strong> になります。</td>
+</tr>
+<tr>
+<td>マウスカーソルがPlayheadの左側</td>
+<td>分割後の左側のストリップは <strong>アクティブで未選択</strong> になります。逆に、分割後の右のストリップは <strong>非アクティブで選択</strong> になります。</td>
+</tr>
+</tbody>
+</table>
+<p>これは動作は、ストリップの不要な部分を削除する時に便利です。</p>
+<p>ショートカットキー <strong>Kキー</strong>(Split) や <strong>Shift+Kキー</strong>(Hold Split)で分割後に、右側or左側の不要なストリップを削除したい場合、
+Playheadの右or左にマウスカーソルを配置し、ショートカットキー <strong>Kキー</strong>(Split) や <strong>Shift+Kキー</strong>(Hold Split)をタイプします。
+そして、そのまま、<strong>Delete</strong> 操作(<strong>Xキー</strong>)をすれば、 <strong>非アクティブで選択</strong> ストリップがそのまま削除されます。</p>
+<!-- raw HTML omitted -->
+<h3 id="remove削除">Remove(削除)</h3>
+<table>
+<thead>
+<tr>
+<th>操作名</th>
+<th>操作</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>削除</td>
+<td><strong>Xキー</strong> or <strong>[Strip]メニュー &gt; [Delete]</strong> or <strong>コンテキストメニュー &gt; [Delete]</strong></td>
+<td>選択されたストリップを削除します。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="move移動">Move(移動)</h3>
+<p>ストリップを移動します。</p>
+<table>
+<thead>
+<tr>
+<th>操作名</th>
+<th>操作</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ドラッグ</td>
+<td><strong>左ドラッグ</strong></td>
+<td>1つまたは複数のストリップを選択し、新しい場所にマウスの左ボタンでドラッグします。ストリップはマウスの左ボタンをはなした位置に配置されます。また、ドラッグ中に、<strong>Escキー</strong> や <strong>右クリック</strong> すると移動がキャンセルされます。</td>
+</tr>
+<tr>
+<td>グラブ</td>
+<td><strong>Gキー</strong> or <strong>[Strip]メニュー&gt;[Transform]&gt;[Move]</strong></td>
+<td>1つまたは複数のストリップを選択し、<strong>Gキー</strong>や <strong>[Strip]&gt;[Transform]&gt;[Move]</strong> を選択すると、ストリップがグラブ状態になり、マウスカーソルを動かして移動できます。目的の位置までマウスカーソルを移動し確定(<strong>Enter</strong> or <strong>Space</strong> or <strong>左クリック</strong>)します。 確定前に <strong>Escキー</strong> や <strong>右クリック</strong> すると移動がキャンセルされます。</td>
+</tr>
+</tbody>
+</table>
+<h4 id="ドラッグやグラブの修飾キー">ドラッグやグラブの修飾キー</h4>
+<table>
+<thead>
+<tr>
+<th>修飾キー</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Xキー</strong> or <strong>Yキー</strong></td>
+<td>ストリップが <strong>左ドラッグ中</strong> や <strong>グラブ状態</strong> の時に、<strong>Xキー</strong> や <strong>Yキー</strong> を1度押すと、移動方向をそれぞれ <strong>水平方向</strong> や <strong>垂直方向</strong> に限定できます。</td>
+</tr>
+<tr>
+<td><strong>Shiftキー</strong></td>
+<td>ストリップが <strong>左ドラッグ中</strong> や <strong>グラブ状態</strong> の時に、<strong>Shiftキー</strong> を押し続けると、ストリップの移動量が小さくなり、細かい移動ができます。</td>
+</tr>
+<tr>
+<td><strong>Ctrlキー</strong></td>
+<td>ストリップが <strong>左ドラッグ中</strong> や <strong>グラブ状態</strong> の時に、<strong>Ctrlキー</strong> を押し続けると、スナップの有無が切り替わります。デフォルトでスナップを無効にしている場合は、<strong>Ctrlキー</strong> を押している間だけスナップが有効になります。</td>
+</tr>
+</tbody>
+</table>
+<h4 id="グラブ-キー入力による移動">グラブ: キー入力による移動</h4>
+<p>ストリップをグラブ状態にした後は、マウスカーソル以外にも、キーボード操作により、ストリップを移動することもできます。</p>
+<table>
+<thead>
+<tr>
+<th>操作名</th>
+<th>操作</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>左右1フレームずつ移動</td>
+<td><strong>←キー</strong> or <strong>→キー</strong></td>
+<td>グラブ状態の時に、矢印キーの方向に1フレームずつ移動する</td>
+</tr>
+<tr>
+<td>右方向に指定フレーム分移動</td>
+<td>数値</td>
+<td>グラブ状態の時に、数値を入力すると、右方向に入力した数値のフレーム分移動する。<strong>-10</strong> のように負の値を入力すると左方向に指定したフレーム分移動する。また、四則演算などの計算式を入力し、計算結果分の移動可能です。<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></td>
+</tr>
+</tbody>
+</table>
+<h4 id="その他の移動">その他の移動</h4>
+<table>
+<thead>
+<tr>
+<th>操作名</th>
+<th>操作</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Playheadへの移動</td>
+<td><strong>Shift+Sキー</strong> or <strong>[Strip]メニュー&gt;[Transform]&gt;[Snap Strips to the Current Frame}</strong></td>
+<td>選択したストリップの開始位置をPlayheadに移動する</td>
+</tr>
+<tr>
+<td>ギャップの挿入</td>
+<td><strong>Shift+=キー</strong> or <strong>[Strip]メニュー&gt;[Transform]&gt;[Insert Gaps}</strong></td>
+<td>Playheadと右隣のストリップの間にギャップ((全チャンネルを横断する空フレーム))を挿入する</td>
+</tr>
+<tr>
+<td>ギャップの削除</td>
+<td><strong>BackSpaceキー</strong> or <strong>[Strip]メニュー&gt;[Transform]&gt;[Remove Gaps}</strong></td>
+<td>Playheadの右側にあるギャップ(全チャンネルを横断する空フレーム)を削除する</td>
+</tr>
+</tbody>
+</table>
+<h4 id="snapping">Snapping</h4>
+<p>ストリップを移動する際に、他のストリップと開始位置や終了位置を揃えたい場合があります。
+スナップ機能を利用すると、ストリップの位置を揃えやすくなります。</p>
+<p>Sequencerのヘッダー部にある磁石のマークを有効にすると、グラブやドラッグによりストリップを移動させると、他のストリップの端やPlayheadに近づく<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>と、移動中のストリップが一時的に、端やPlayheadの位置に固定されます。</p>
+<p>移動中に常にスナップされるのが面倒な場合は、ヘッダー部にある磁石のマークを無効にしておき、グラブやドラッグによりストリップを移動中に <strong>Ctrlキー</strong> を押しつづけると、スナップが有効になります。</p>
+<p>どこにスナップするさせるかは、ヘッダー部にある磁石のマークの右側にあるメニューを展開すると設定できます。</p>
+<table>
+<thead>
+<tr>
+<th>分類</th>
+<th>スナップ設定</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Snap to</td>
+<td>Current Frame</td>
+<td>Playheadにスナップする</td>
+</tr>
+<tr>
+<td></td>
+<td>Hold Offset</td>
+<td>他のストリップのエッジにスナップする</td>
+</tr>
+<tr>
+<td>Ignore</td>
+<td>Muted Strips</td>
+<td>ミュートされているストリップはスナップしない</td>
+</tr>
+<tr>
+<td></td>
+<td>Sound Strips</td>
+<td>Sound ストリップはスナップしない</td>
+</tr>
+<tr>
+<td>Current Frame</td>
+<td>Snap to Strips</td>
+<td>Playheadの移動時に、ストリップのエッジにスナップする</td>
+</tr>
+</tbody>
+</table>
+<h4 id="オーバーラップモード">オーバーラップモード</h4>
+<p>ストリップを移動した結果、他のストリップと重なる場合の処理方法を選択できます。
+Sequencerのヘッダー部にあるオーバーラッププルダウンで設定します。</p>
+<table>
+<thead>
+<tr>
+<th>オーバーラップモード</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Shuffle</td>
+<td>他のストリップは変更せず、移動対象のストリップを直近の空いている領域に移動させる。</td>
+</tr>
+<tr>
+<td>Overwrite</td>
+<td>移動対象のストリップを他のストリップの上に配置し、他のストリップはtrimやSplitして調整する。</td>
+</tr>
+<tr>
+<td>Expand</td>
+<td>移動対象のストリップの右側にあるストリップを重なった分だけ右に移動させる。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="copyコピー">Copy(コピー)</h3>
+<p>以下の2種類の方法でコピーできます。</p>
+<ul>
+<li>Copy &amp; Paste</li>
+<li>Duplicate</li>
+</ul>
+<p><strong>コピー&amp;ペースト</strong> と <strong>Duplicate</strong> の違いは、
+複製したストリップが配置される位置です。</p>
+<p>前者は、Playheadの位置に複製を貼りつけます。
+後者は、複製したストリップはグラブ状態になるため目的の位置までマウスカーソルで移動します。</p>
+<h4 id="コピーペースト">コピー&amp;ペースト</h4>
+<table>
+<thead>
+<tr>
+<th>操作名</th>
+<th>操作</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>コピー</td>
+<td><strong>Ctrl+Cキー</strong> or <strong>[Strip]メニュー &gt; [Copy]</strong> or <strong>コンテキストメニュー &gt; [Copy]</strong></td>
+<td>選択されたストリップをコピーします。</td>
+</tr>
+<tr>
+<td>ペースト</td>
+<td><strong>Ctrl+Vキー</strong> or <strong>[Strip]メニュー &gt; [Paste]</strong> or <strong>コンテキストメニュー &gt; [Paste]</strong></td>
+<td>Playheadの位置にコピーしたストリップを貼りつけます。異なるシーンにもペーストできます。</td>
+</tr>
+</tbody>
+</table>
+<h4 id="duplicate複製">Duplicate(複製)</h4>
+<table>
+<thead>
+<tr>
+<th>操作名</th>
+<th>操作</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>複製</td>
+<td><strong>Shift+Dキー</strong> or <strong>[Strip]メニュー &gt; [Duplicate Strips]</strong> or <strong>コンテキストメニュー &gt; [Duplicate Strips]</strong></td>
+<td>操作により複製されたストリップはグラブ状態になるので、マウスカーソルを動かして移動できます。配置する位置の確定は <strong>Enterキー</strong> or <strong>Spaceキー</strong> or <strong>左クリック</strong> で行います。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="disable無効とロック">Disable(無効)とロック</h3>
+<p>ストリップをミュートすると無効になり、該当ストリップはレンダリングされません。</p>
+<p>また、ストリップをロックすると、該当ストリップの <strong>[Time]パネル</strong> の操作が禁止されます。そのため、ストリップの移動やトリミング、Splitが禁止されます。(ストリップの削除は可能です。)</p>
+<table>
+<thead>
+<tr>
+<th>操作名</th>
+<th>操作</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ストリップのミュート</td>
+<td><strong>[Strip]メニュー&gt;[Lock/Mute]&gt;[Mute Strips]</strong> or <strong>Hキー</strong> or <strong>Sidebarのヘッダー部のチェックボックスを有効にする</strong></td>
+<td>選択されたストリップがすべてミュートされる</td>
+</tr>
+<tr>
+<td>ストリップのミュート解除</td>
+<td><strong>[Strip]メニュー&gt;[Lock/Mute]&gt;[UnMute Strips]</strong> or <strong>Alt+Hキー</strong> or <strong>Sidebarのヘッダー部のチェックボックスを無効にする</strong></td>
+<td>選択されたストリップがすべてミュート解除される</td>
+</tr>
+<tr>
+<td>ストリップのロック</td>
+<td><strong>[Strip]メニュー&gt;[Lock/Mute]&gt;[Lock Strips]</strong> or <strong>Ctrl+Hキー</strong> or <strong>Sidebarの[Time]パネルのヘッダー部の鍵アイコンを有効にする</strong></td>
+<td>選択されたストリップがすべてロックされる</td>
+</tr>
+<tr>
+<td>ストリップのロック解除</td>
+<td><strong>[Strip]メニュー&gt;[Lock/Mute]&gt;[UnLock Strips]</strong> or <strong>Ctrl+Alt+Hキー</strong> or <strong>Sidebarの[Time]パネルのヘッダー部の鍵アイコンを無効にする</strong></td>
+<td>選択されたストリップがすべてロック解除される</td>
+</tr>
+<tr>
+<td>チャンネル全体のミュート</td>
+<td>VSEのSequencerのチャンネル名の右にあるチェックボックスを有効にする</td>
+<td>該当チャンネルにあるすべてのストリップがミュートされる</td>
+</tr>
+<tr>
+<td>チャンネル全体のロック</td>
+<td>VSEのSequencerのチャンネル名の右にある鍵アイコンを有効にする</td>
+<td>該当チャンネルにあるすべてのストリップがロックされる</td>
+</tr>
+</tbody>
+</table>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<pre tabindex="0"><code></code></pre><div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>計算式を入力する場合は、はじめに<code>*</code>を入力し、計算モードに変更後に式を入力する必要があるようです。&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>15ピクセル未満の距離に入る&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div></div>
+  <div class="mt-6">
+    <div class="border-t-2 border-primary-dark px-2 pt-2 text-right">
+        <span class="text-sm">作成日: 2024/04/23</span></div>
+</div>
+
+</div>
+
+
+    </main><footer class="bg-primary-dark text-center text-on-primary-dark fixed bottom-0 w-full h-8">
+    <div class="container mx-auto grid grid-cols-3">
+        <div class="col-start-1 col-span-2 ml-2 md:ml-0 md:col-start-2 md:col-span-1">
+            <div class="text-left md:text-center text-sm pt-2">© 2022 kanta&#39;s spike</div>
+        </div>
+        <div class="col-start-3 flex justify-end gap-2 mr-2">
+            
+                
+            <a title="Twitter" class="text-2xl" href="https://twitter.com/KantasSpike"><i class="fa-brands fa-twitter-square"></i></a>
+                
+            <a title="Youtube" class="text-2xl" href="https://www.youtube.com/channel/UCnVBuUGMYAt7ZuIkadxnMfw"><i class="fa-brands fa-youtube-square"></i></a>
+                
+            <a title="GitHub" class="text-2xl" href="https://github.com/kantas-spike"><i class="fa-brands fa-github-square"></i></a>
+                
+            <a title="Blog" class="text-2xl" href="https://kantas-spike.github.io/portfolio/"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                
+            
+        </div>
+    </div>
+</footer> 
+
+
+
+
+<script defer type="text/javascript" src="/portfolio/js/search-form.07066240729fbbddf7f08e0938e5a7a060da185ec1c29e438984cfa6c2ff2386dd2ef58d9c7af295b66d187cc9c180f4aa62433709f8bf8813c39c1e239b641e.js" integrity="sha512-BwZiQHKfu9338I4JOOWnoGDaGF7Bwp5DiYTPpsL/I4bdLvWNnHrylbZtGHzJwYD0qmJDNwn4v4gTw5weI5tkHg=="></script></body>
+</html>
