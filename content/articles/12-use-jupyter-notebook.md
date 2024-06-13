@@ -3,8 +3,8 @@ title: "Jupyter Notebookを使う"
 date: 2023-02-16T08:44:35+09:00
 draft: false
 tags:
-- python
-- jupyter
+  - python
+  - jupyter
 ---
 
 [Jupyter Notebook](https://jupyter.org/)という、文書、プログラムコード、数式、や図形を1つのドキュメントとして表現できるWebアプリケーションがあるそうです。 [^1]
@@ -33,21 +33,21 @@ Pythonを使って、数学を勉強する時には便利そうです。今回�
 
 2. Anaconda/Miniconda or another Python environment の導入、およびnotebook等のパッケージ導入
 
-    今回は、`pyenv`を使って`python`をインストールし、`poetry`を使ってpythonのパッケージおよび仮想環境を管理します。
+   今回は、`pyenv`を使って`python`をインストールし、`poetry`を使ってpythonのパッケージおよび仮想環境を管理します。
 
-    `python`、`poetry`のインストールと`notebook`等のパッケージ導入手順については、 [Pythonプロジェクトのパッケージを管理する](/til/2023/02/47-use-poetry/)を参照してください。
+   `python`、`poetry`のインストールと`notebook`等のパッケージ導入手順については、 [Pythonプロジェクトのパッケージを管理する]({{% ref "/til/47-use-poetry/" %}})を参照してください。
 
 3. VsCodeのPython拡張機能の導入
 
-    [Install Visual Studio Code and the Python Extension](https://code.visualstudio.com/docs/python/python-tutorial#_install-visual-studio-code-and-the-python-extension)に従い、Python拡張機能を導入しましょう。
+   [Install Visual Studio Code and the Python Extension](https://code.visualstudio.com/docs/python/python-tutorial#_install-visual-studio-code-and-the-python-extension)に従い、Python拡張機能を導入しましょう。
 
 4. VsCodeのJupyter拡張機能の導入
 
-    [Installed extensions | Jupyter - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter#installed-extensions)に従い、Jupyter拡張機能を導入しましょう。
+   [Installed extensions | Jupyter - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter#installed-extensions)に従い、Jupyter拡張機能を導入しましょう。
 
 5. 以上で完了です。実際にnotebookを作成しましょう
 
-    [Working with Python | Jupyter - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter#working-with-python)に従い、`Jupyter: Create New Jupyter Notebook`コマンドを実行し、ノートブックを作成し利用しましょう。
+   [Working with Python | Jupyter - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter#working-with-python)に従い、`Jupyter: Create New Jupyter Notebook`コマンドを実行し、ノートブックを作成し利用しましょう。
 
 ### 参考
 
