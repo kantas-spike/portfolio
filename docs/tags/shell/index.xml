@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>ja-jp</language>
     <copyright>© 2022 kanta&#39;s spike</copyright>
-    <lastBuildDate>Fri, 29 Mar 2024 15:27:46 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 23 Jun 2024 14:59:53 +0900</lastBuildDate>
     <atom:link href="https://kantas-spike.github.io/portfolio/tags/shell/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>フレーム番号付きサンプル動画を作成したい</title>
+      <link>https://kantas-spike.github.io/portfolio/til/2024/06/112-%E3%83%95%E3%83%AC%E3%83%BC%E3%83%A0%E7%95%AA%E5%8F%B7%E4%BB%98%E3%81%8D%E3%81%AE%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB%E5%8B%95%E7%94%BB%E3%82%92%E4%BD%9C%E6%88%90%E3%81%97%E3%81%9F%E3%81%84/</link>
+      <pubDate>Sun, 23 Jun 2024 14:59:53 +0900</pubDate>
+      <guid>https://kantas-spike.github.io/portfolio/til/2024/06/112-%E3%83%95%E3%83%AC%E3%83%BC%E3%83%A0%E7%95%AA%E5%8F%B7%E4%BB%98%E3%81%8D%E3%81%AE%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB%E5%8B%95%E7%94%BB%E3%82%92%E4%BD%9C%E6%88%90%E3%81%97%E3%81%9F%E3%81%84/</guid>
+      <description>&lt;p&gt;Blender VSEの動作確認用にフレーム番号がついたダミーのサンプル動画を作成したい。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>空のディレクトリにまとめて.gitkeepファイルを作成したい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2024/03/110-%E7%A9%BA%E3%81%AE%E3%83%87%E3%82%A3%E3%83%AC%E3%82%AF%E3%83%88%E3%83%AA%E3%81%AB%E3%81%BE%E3%81%A8%E3%82%81%E3%81%A6gitkeep%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%92%E4%BD%9C%E6%88%90%E3%81%99%E3%82%8B/</link>
