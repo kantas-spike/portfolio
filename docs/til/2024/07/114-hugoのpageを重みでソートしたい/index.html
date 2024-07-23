@@ -1,6 +1,6 @@
 <!doctype html>
 <html><head>
-  <title> Homebrewで Formulaファイルからパッケージをビルドしたい | kanta&#39;s spike
+  <title> Hugoの Pageを重みでソートしたい | kanta&#39;s spike
   </title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
@@ -98,21 +98,21 @@
 
 
 <div class="mb-4">
-    <h3 class="border-b-4 border-primary-dark text-primary-dark text-xl font-bold tracking-wider pl-[1em] -indent-[1ex]"><i class="fa-solid fa-circle-info"></i> <a href="https://kantas-spike.github.io/portfolio/til/2024/06/113-homebrew%E3%81%A7formula%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%8B%E3%82%89%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8%E3%82%92%E3%83%93%E3%83%AB%E3%83%89%E3%81%97%E3%81%9F%E3%81%84/">Homebrewで Formulaファイルからパッケージをビルドしたい</a></h3>
+    <h3 class="border-b-4 border-primary-dark text-primary-dark text-xl font-bold tracking-wider pl-[1em] -indent-[1ex]"><i class="fa-solid fa-circle-info"></i> <a href="https://kantas-spike.github.io/portfolio/til/2024/07/114-hugo%E3%81%AEpage%E3%82%92%E9%87%8D%E3%81%BF%E3%81%A7%E3%82%BD%E3%83%BC%E3%83%88%E3%81%97%E3%81%9F%E3%81%84/">Hugoの Pageを重みでソートしたい</a></h3>
     <div class="flex justify-between mt-1 mx-2">
         <div>
             <ul class="flex gap-2 justify-end">
             
-            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/homebrew/">#Homebrew</a></li>
-            
-            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/ffmpeg/">#Ffmpeg</a></li>
+            <li><a class="tag_link text-sm" href="https://kantas-spike.github.io/portfolio/tags/hugo/">#Hugo</a></li>
             
             </ul>
         </div>
         <div>
             
             
-            <div class="text-right text-sm font-bold">2024/06/25
+            <div class="text-right text-sm font-bold">2024/07/23
+                
+                    <span class="text-xs text-red-600 font-thin">New</span>
                 
             </div>
             
@@ -120,18 +120,33 @@
     </div>
 </div>
 
-  <div class="article mx-2"><p>Homebrewで Formulaファイルからパッケージをビルドしたい。</p>
+  <div class="article mx-2"><p>Hugoで作成したブログで、作成日時の新しい順に記事一覧を表示している。
+この記事一覧で一部記事を常に上位に表示したい。</p>
 <h3 id="解決策">解決策</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">brew install --build-from-source --formula Formulaファイル.rb
+<p><code>Page</code> オブジェクトの <code>Weight</code> にページの重みを設定しておき <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> 、
+作成日時でソート済みの記事一覧をさらに<code>Weight</code>の大きい順にソートすれば良い。</p>
+<h4 id="例-weigthで再ソートした記事一覧">例: Weigthで再ソートした記事一覧</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nx">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">{{</span> <span class="k">range</span> <span class="p">(</span><span class="nx">sort</span> <span class="p">.</span><span class="nx">Site</span><span class="p">.</span><span class="nx">RegularPages</span><span class="p">.</span><span class="nx">ByDate</span><span class="p">.</span><span class="nx">Reverse</span> <span class="s">&#34;Weight&#34;</span> <span class="s">&#34;desc&#34;</span> <span class="p">)</span> <span class="p">}}</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nx">div</span><span class="p">&gt;&lt;!</span><span class="o">--</span> <span class="nx">略</span> <span class="o">--</span><span class="p">&gt;&lt;</span><span class="o">/</span><span class="nx">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">{{</span> <span class="nx">end</span> <span class="p">}}</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="o">/</span><span class="nx">div</span><span class="p">&gt;</span>
 </span></span></code></pre></div><h3 id="参考">参考</h3>
 <ul>
-<li><a href="https://stackoverflow.com/questions/75609300/how-do-i-install-a-software-via-homebrew-from-rb-file">ruby - How do I install a software via Homebrew from .rb file - Stack Overflow</a></li>
-<li><a href="https://github.com/Homebrew/homebrew-core/blob/master/Formula/f/ffmpeg.rb">homebrew-core/Formula/f/ffmpeg.rb at master · Homebrew/homebrew-core</a></li>
-<li><a href="https://github.com/kantas-spike/homebrew-ffmpeg/blob/master/README.md">homebrew-ffmpeg/README.md at master · kantas-spike/homebrew-ffmpeg</a></li>
-</ul></div>
+<li><a href="https://gohugo.io/methods/page/weight/">Weight | Hugo</a></li>
+<li><a href="https://gohugo.io/functions/collections/sort/">collections.Sort | Hugo</a></li>
+</ul>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p><code>Page</code> オブジェクトの <code>Weight</code>は、フロントマターの<code>weight</code>により設定できる。&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div></div>
   <div class="mt-6">
     <div class="border-t-2 border-primary-dark px-2 pt-2 text-right">
-        <span class="text-sm">作成日: 2024/06/25</span></div>
+        <span class="text-sm">作成日: 2024/07/23</span></div>
 </div>
 
 </div>

@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>ja-jp</language>
     <copyright>© 2022 kanta&#39;s spike</copyright>
-    <lastBuildDate>Tue, 25 Jun 2024 11:19:51 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 23 Jul 2024 23:57:26 +0900</lastBuildDate>
     <atom:link href="https://kantas-spike.github.io/portfolio/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugoの Pageを重みでソートしたい</title>
+      <link>https://kantas-spike.github.io/portfolio/til/2024/07/114-hugo%E3%81%AEpage%E3%82%92%E9%87%8D%E3%81%BF%E3%81%A7%E3%82%BD%E3%83%BC%E3%83%88%E3%81%97%E3%81%9F%E3%81%84/</link>
+      <pubDate>Tue, 23 Jul 2024 23:57:26 +0900</pubDate>
+      <guid>https://kantas-spike.github.io/portfolio/til/2024/07/114-hugo%E3%81%AEpage%E3%82%92%E9%87%8D%E3%81%BF%E3%81%A7%E3%82%BD%E3%83%BC%E3%83%88%E3%81%97%E3%81%9F%E3%81%84/</guid>
+      <description>&lt;p&gt;Hugoで作成したブログで、作成日時の新しい順に記事一覧を表示している。&#xA;この記事一覧で一部記事を常に上位に表示したい。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Homebrewで Formulaファイルからパッケージをビルドしたい</title>
       <link>https://kantas-spike.github.io/portfolio/til/2024/06/113-homebrew%E3%81%A7formula%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%8B%E3%82%89%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8%E3%82%92%E3%83%93%E3%83%AB%E3%83%89%E3%81%97%E3%81%9F%E3%81%84/</link>

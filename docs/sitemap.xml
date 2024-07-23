@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/hugo/</loc>
+    <lastmod>2024-07-23T23:57:26+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/til/2024/07/114-hugo%E3%81%AEpage%E3%82%92%E9%87%8D%E3%81%BF%E3%81%A7%E3%82%BD%E3%83%BC%E3%83%88%E3%81%97%E3%81%9F%E3%81%84/</loc>
+    <lastmod>2024-07-23T23:57:26+09:00</lastmod>
+  </url><url>
+    <loc>https://kantas-spike.github.io/portfolio/tags/</loc>
+    <lastmod>2024-07-23T23:57:26+09:00</lastmod>
+  </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/ffmpeg/</loc>
     <lastmod>2024-06-25T11:19:51+09:00</lastmod>
   </url><url>
@@ -9,9 +18,6 @@
     <lastmod>2024-06-25T11:19:51+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2024/06/113-homebrew%E3%81%A7formula%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%8B%E3%82%89%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8%E3%82%92%E3%83%93%E3%83%AB%E3%83%89%E3%81%97%E3%81%9F%E3%81%84/</loc>
-    <lastmod>2024-06-25T11:19:51+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/</loc>
     <lastmod>2024-06-25T11:19:51+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/tags/imagemagick/</loc>
@@ -109,9 +115,6 @@
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2024/01/101-python%E3%81%A7%E6%93%8D%E4%BD%9C%E3%81%A7%E3%81%8D%E3%82%8B%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%92%E7%9F%A5%E3%82%8A%E3%81%9F%E3%81%84/</loc>
     <lastmod>2024-01-04T12:02:29+09:00</lastmod>
-  </url><url>
-    <loc>https://kantas-spike.github.io/portfolio/tags/hugo/</loc>
-    <lastmod>2023-12-21T14:33:18+09:00</lastmod>
   </url><url>
     <loc>https://kantas-spike.github.io/portfolio/til/2023/12/100-hugo%E3%81%AE%E8%A8%98%E4%BA%8B%E3%81%AE%E3%82%BF%E3%82%A4%E3%83%88%E3%83%AB%E3%81%8B%E3%82%89%E3%83%97%E3%83%AC%E3%83%95%E3%82%A3%E3%83%83%E3%82%AF%E3%82%B9%E3%82%92%E5%89%8A%E9%99%A4%E3%81%97%E3%81%9F%E3%81%84/</loc>
     <lastmod>2023-12-21T14:33:18+09:00</lastmod>
